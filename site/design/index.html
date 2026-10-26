@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design System · The Valhalla Archive</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400..800&family=Zilla+Slab:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bone); color: var(--ink); font: 16px/1.55 var(--font-ui); }
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 var(--space); }
+  header.top { background: var(--ink); color: var(--bone); padding: 28px 0 22px; border-bottom: 3px solid var(--brass-bright); }
+  header.top .kicker { font: 600 12px/1 var(--font-ui); letter-spacing: .18em; text-transform: uppercase; color: var(--brass-bright); }
+  header.top h1 { font: 700 clamp(28px, 5vw, 44px)/1.05 var(--font-display); margin: 8px 0 6px; }
+  header.top p { margin: 0; color: #c9c6be; max-width: 60ch; }
+  h2.sec { font: 700 26px/1.2 var(--font-display); margin: 48px 0 6px; }
+  .lede { color: var(--muted); margin: 0 0 20px; max-width: 70ch; }
+
+  .swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+  .sw { background: var(--paper); border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; }
+  .sw .chip { height: 70px; display: flex; align-items: flex-end; padding: 8px 10px; font: 700 15px var(--font-ui); }
+  .sw .meta { padding: 8px 10px 10px; font-size: 13px; line-height: 1.35; }
+  .sw .meta b { display: block; font-size: 13px; }
+  .sw code { font-size: 12px; color: var(--muted); }
+  .aa { display: inline-block; font: 700 10px/1 var(--font-ui); padding: 3px 5px; border-radius: 3px; margin-top: 4px; }
+  .aa.pass { background: #e3f1e7; color: #1d6b3a; }
+  .aa.large { background: #fbf1d9; color: #7a5a12; }
+  .aa.fail { background: #f8e1e3; color: #a3222d; }
+
+  /* Program showcase */
+  .program { margin-top: 28px; background: var(--paper); border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; }
+  .band { background: var(--p-primary); color: var(--p-on-primary); position: relative; padding: 26px var(--space) 22px; display: flex; gap: 20px; align-items: center; overflow: hidden; }
+  .band::after { content: ""; position: absolute; inset: auto 0 0 0; height: 6px; background: var(--p-accent); }
+  [data-program="CLEV"] .band::before { content: ""; position: absolute; right: -40px; top: 0; bottom: 0; width: 46%; background: repeating-linear-gradient(135deg, transparent 0 22px, rgba(255,255,255,.05) 22px 24px); }
+  [data-program="OHIO"] .band { border-radius: 0 0 28px 28px; }
+  [data-program="OHIO"] .band::after { left: 28px; right: 28px; border-radius: 6px 6px 0 0; }
+  [data-program="M-OH"] .band::before { content: ""; position: absolute; right: 8%; top: -20%; bottom: -20%; width: 120px; background: var(--p-secondary); transform: skewX(-18deg); box-shadow: 30px 0 0 rgba(255,255,255,.12); }
+  .band img { width: 84px; height: 84px; object-fit: contain; position: relative; z-index: 1; filter: drop-shadow(0 2px 6px rgba(0,0,0,.35)); }
+  .band .t { position: relative; z-index: 1; }
+  /* Logo plates: keep each logo readable on its own team color */
+  [data-program="OHIO"] .band img { background: var(--p-surface); border-radius: 50%; padding: 10px; width: 96px; height: 96px; filter: none; box-shadow: 0 0 0 4px var(--p-accent); }
+  [data-program="M-OH"] .band img { background: #fff; padding: 10px 14px; width: 104px; height: 84px; filter: none; clip-path: polygon(12px 0, 100% 0, calc(100% - 12px) 100%, 0 100%); }
+  .band .eyebrow { font: 600 12px/1 var(--font-ui); letter-spacing: .16em; text-transform: uppercase; opacity: .85; }
+  .band h3 { margin: 6px 0 4px; font-family: var(--p-font-display); font-weight: var(--p-display-weight); text-transform: var(--p-display-case); font-style: var(--p-display-style); letter-spacing: var(--p-display-tracking); font-size: clamp(30px, 6vw, 52px); line-height: .95; }
+  [data-program="M-OH"] .band h3 { font-stretch: 112%; }
+  .band .sub { font-size: 14px; opacity: .9; }
+  .inner { padding: 22px var(--space) 26px; background: var(--p-surface); }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+  .stat { background: var(--paper); padding: 16px 16px 14px; border-radius: var(--p-radius); clip-path: var(--p-shape); border-top: 4px solid var(--p-primary); }
+  [data-program="OHIO"] .stat { border-top: 0; border-left: 6px solid var(--p-primary); box-shadow: 0 1px 0 var(--rule); }
+  [data-program="M-OH"] .stat { border-top: 0; border-bottom: 4px solid var(--p-primary); padding-left: 26px; }
+  .stat .n { font-family: var(--p-font-display); font-weight: var(--p-display-weight); font-style: var(--p-display-style); font-size: 42px; line-height: 1; color: var(--p-primary); font-variant-numeric: tabular-nums; }
+  [data-program="M-OH"] .stat .n { font-stretch: 110%; }
+  .stat .l { font: 600 12px/1.3 var(--font-ui); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-top: 6px; }
+  .tags { margin-top: 16px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .tag { font: 700 12px/1 var(--font-ui); letter-spacing: .06em; text-transform: uppercase; padding: 7px 11px; background: var(--p-primary); color: var(--p-on-primary); border-radius: var(--p-radius); }
+  .tag.alt { background: transparent; color: var(--p-accent-text); box-shadow: inset 0 0 0 2px currentColor; }
+  [data-program="OHIO"] .tag { border-radius: 999px; }
+  [data-program="M-OH"] .tag { transform: skewX(-12deg); }
+  .mini { width: 100%; margin-top: 18px; border-collapse: collapse; font-size: 14px; background: var(--paper); }
+  .mini th { text-align: left; font: 700 11px/1 var(--font-ui); letter-spacing: .08em; text-transform: uppercase; color: var(--p-on-primary); background: var(--p-deep); padding: 9px 10px; }
+  .mini td { padding: 8px 10px; border-bottom: 1px solid var(--rule); font-variant-numeric: tabular-nums; }
+  .mini td.r, .mini th.r { text-align: right; }
+  .mini tr.hl td { background: color-mix(in srgb, var(--p-accent) 22%, white); font-weight: 600; }
+  .why { margin-top: 16px; font-size: 14px; color: var(--ink-2); }
+  .why b { color: var(--p-accent-text); }
+  .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 14px; }
+  .compare .band { min-height: 120px; }
+  @media (max-width: 640px) { .compare { grid-template-columns: 1fr; } .band img { width: 64px; height: 64px; } }
+  footer { margin: 56px 0 0; padding: 22px 0 40px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="kicker">Design System · Draft for approval</div>
+    <h1>The Valhalla Archive</h1>
+    <p>Shared Archive chrome, plus a full re-theme for each program. Every number on this page comes from the Site Database.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <h2 class="sec">Archive chrome (shared on every page)</h2>
+  <p class="lede">The nav, footer and almanac pages wear a neutral "archive" look: ink, bone paper and brass, with an editorial serif for headlines and a clean sans for tables and numbers.</p>
+  <div class="swatches" id="chrome"></div>
+
+  <section class="program" data-program="CLEV">
+    <div class="band"><img src="../assets/logos/CLEV.png" alt="Cleveland State Vikings logo"><div class="t">
+      <div class="eyebrow">Cleveland State · Big 12 · Coach Josh Dolan</div>
+      <h3>Vikings</h3><div class="sub">2037 National Champions</div></div></div>
+    <div class="inner">
+      <div class="swatches" data-swatches></div>
+      <div class="stats" style="margin-top:16px">
+        <div class="stat"><div class="n">180-29</div><div class="l">Career record (.861)</div></div>
+        <div class="stat"><div class="n">2</div><div class="l">National titles · 2028, 2037</div></div>
+        <div class="stat"><div class="n">4</div><div class="l">Big 12 titles</div></div>
+        <div class="stat"><div class="n">10</div><div class="l">Playoff appearances</div></div>
+      </div>
+      <div class="tags"><span class="tag">2037 National Champions</span><span class="tag alt">Coach of the Year 2030 · 2031</span></div>
+      <table class="mini"><thead><tr><th>Season</th><th class="r">Record</th><th class="r">Conf</th><th>Finish</th></tr></thead>
+        <tbody><tr class="hl"><td>2037</td><td class="r">16-1</td><td class="r">9-0</td><td>National Champions</td></tr><tr><td>2036</td><td class="r">14-2</td><td class="r">8-1</td><td>Lost national title game</td></tr></tbody></table>
+      <p class="why"><b>Look:</b> near-black forest green with Norse helmet steel and Valhalla gold. Tall condensed capitals, chamfered "axe-cut" corners and hard steel rules. Cool and angular.</p>
+    </div>
+  </section>
+
+  <section class="program" data-program="OHIO">
+    <div class="band"><img src="../assets/logos/OHIO.png" alt="Ohio Bobcats logo"><div class="t">
+      <div class="eyebrow">Ohio · Big 12 · Coach Tim Slocombe</div>
+      <h3>Bobcats</h3><div class="sub">Five straight national titles, 2029-2033</div></div></div>
+    <div class="inner">
+      <div class="swatches" data-swatches></div>
+      <div class="stats" style="margin-top:16px">
+        <div class="stat"><div class="n">175-34</div><div class="l">Career record (.837)</div></div>
+        <div class="stat"><div class="n">5</div><div class="l">National titles · 2029-33</div></div>
+        <div class="stat"><div class="n">3</div><div class="l">Big 12 titles</div></div>
+        <div class="stat"><div class="n">11</div><div class="l">Playoff appearances</div></div>
+      </div>
+      <div class="tags"><span class="tag">2033 · 16-0</span><span class="tag alt">Five straight titles</span></div>
+      <table class="mini"><thead><tr><th>Season</th><th class="r">Record</th><th class="r">Conf</th><th>Finish</th></tr></thead>
+        <tbody><tr class="hl"><td>2033</td><td class="r">16-0</td><td class="r">9-0</td><td>National Champions</td></tr><tr><td>2032</td><td class="r">16-1</td><td class="r">9-0</td><td>National Champions</td></tr></tbody></table>
+      <p class="why"><b>Look:</b> brighter kelly green on warm cream, with bobcat tan. Friendly collegiate slab serif in normal case, soft rounded corners and pill tags. Warm and round, the opposite of CSU's angles.</p>
+    </div>
+  </section>
+
+  <section class="program" data-program="M-OH">
+    <div class="band"><img src="../assets/logos/M-OH.png" alt="Miami (OH) RedHawks logo"><div class="t">
+      <div class="eyebrow">Miami (OH) · Big 12 · Coach Joe Snyderwine</div>
+      <h3>RedHawks</h3><div class="sub">Three straight national titles, 2034-2036</div></div></div>
+    <div class="inner">
+      <div class="swatches" data-swatches></div>
+      <div class="stats" style="margin-top:16px">
+        <div class="stat"><div class="n">174-32</div><div class="l">Career record (.845)</div></div>
+        <div class="stat"><div class="n">3</div><div class="l">National titles · 2034-36</div></div>
+        <div class="stat"><div class="n">4</div><div class="l">Big 12 titles</div></div>
+        <div class="stat"><div class="n">10</div><div class="l">Playoff appearances</div></div>
+      </div>
+      <div class="tags"><span class="tag">2035 · 16-0</span><span class="tag alt">Three-peat 2034-36</span></div>
+      <table class="mini"><thead><tr><th>Season</th><th class="r">Record</th><th class="r">Conf</th><th>Finish</th></tr></thead>
+        <tbody><tr class="hl"><td>2036</td><td class="r">16-1</td><td class="r">9-0</td><td>National Champions</td></tr><tr><td>2035</td><td class="r">16-0</td><td class="r">9-0</td><td>National Champions</td></tr></tbody></table>
+      <p class="why"><b>Look:</b> RedHawk red with black and white. Wide, heavy italic capitals and diagonal slash cuts that lean forward. Fast and aggressive.</p>
+    </div>
+  </section>
+
+  <h2 class="sec">The two greens, side by side</h2>
+  <p class="lede">CSU and OHIO both wear green, so everything except the hue family differs: shade, partner colors, typeface, letter case and shape.</p>
+  <div class="compare">
+    <div data-program="CLEV"><div class="band"><img src="../assets/logos/CLEV.png" alt=""><div class="t"><div class="eyebrow">Season 2028</div><h3>Vikings</h3></div></div></div>
+    <div data-program="OHIO"><div class="band"><img src="../assets/logos/OHIO.png" alt=""><div class="t"><div class="eyebrow">Season 2029</div><h3>Bobcats</h3></div></div></div>
+  </div>
+</main>
+<footer><div class="wrap">Unofficial fan site. Not affiliated with Cleveland State University, any other school, EA Sports or the NCAA. Dynasty content is fictional.</div></footer>
+
+<script>
+  // WCAG contrast for each swatch against white and against the program's surface/paper.
+  function lum(hex){ const c=hex.replace('#','').match(/../g).map(h=>parseInt(h,16)/255).map(v=>v<=.03928?v/12.92:Math.pow((v+.055)/1.055,2.4)); return .2126*c[0]+.7152*c[1]+.0722*c[2]; }
+  function ratio(a,b){ const [x,y]=[lum(a),lum(b)].sort((p,q)=>q-p); return (x+.05)/(y+.05); }
+  function badge(r){ return r>=4.5?`<span class="aa pass">AA ${r.toFixed(1)}:1</span>`:r>=3?`<span class="aa large">Large text ${r.toFixed(1)}:1</span>`:`<span class="aa fail">Decor only ${r.toFixed(1)}:1</span>`; }
+  function sw(name, hex, role, against){ const r=ratio(hex,against); const light=lum(hex)>.4; return `<div class="sw"><div class="chip" style="background:${hex};color:${light?'#15171b':'#fff'}">${name}</div><div class="meta"><b>${role}</b><code>${hex}</code><br>${badge(r)} <span style="font-size:11px;color:#5e6168">vs ${against}</span></div></div>`; }
+  const chrome=[['Ink','#15171b','Text, nav','#f6f3ec'],['Bone','#f6f3ec','Page background','#15171b'],['Paper','#fffdf8','Cards, tables','#15171b'],['Brass','#7a6030','Links, labels','#f6f3ec'],['Brass bright','#c4a35a','Accents on ink','#15171b'],['Rule','#d9d3c5','Dividers','#fffdf8']];
+  document.getElementById('chrome').innerHTML=chrome.map(c=>sw(...c)).join('');
+  const P={
+    'CLEV':[['Forest','#024731','Primary (from tracker)','#ffffff'],['Deep forest','#012a1d','Table heads','#ffffff'],['Helmet steel','#8c9399','Secondary, rules','#012a1d'],['Steel text','#5b6268','Secondary text','#eef2f0'],['Valhalla gold','#c9a54e','Accent on dark','#024731'],['Gold text','#7d6223','Accent text','#eef2f0'],['Frost','#eef2f0','Surface','#024731']],
+    'OHIO':[['Bobcat green','#00694e','Primary (from tracker)','#ffffff'],['Deep green','#00402f','Table heads','#ffffff'],['Bobcat tan','#c8a27a','Secondary','#00402f'],['Tan text','#7a5634','Secondary text','#f4efe1'],['Light tan','#e9d8b4','Accent on dark','#00694e'],['Cream','#f4efe1','Surface','#00694e']],
+    'M-OH':[['RedHawk red','#b61e2e','Primary (from tracker)','#ffffff'],['Deep red','#7a0f1b','Table heads','#ffffff'],['Black','#111111','Secondary','#ffffff'],['White','#ffffff','Accent on red','#b61e2e'],['Mist','#f5f5f4','Surface','#b61e2e']]
+  };
+  document.querySelectorAll('section.program').forEach(s=>{ s.querySelector('[data-swatches]').innerHTML=P[s.dataset.program].map(c=>sw(...c)).join(''); });
+</script>
+</body>
+</html>

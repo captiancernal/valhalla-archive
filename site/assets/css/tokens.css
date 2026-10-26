@@ -1,0 +1,100 @@
+/* The Valhalla Archive: design tokens.
+   Shared "Archive" chrome stays constant; each program page sets data-program
+   on <body> to re-theme everything below the nav. */
+
+:root {
+  /* Archive chrome */
+  --ink: #15171b;
+  --ink-2: #3b3f46;
+  --muted: #5e6168;
+  --bone: #f6f3ec;
+  --paper: #fffdf8;
+  --rule: #d9d3c5;
+  --brass: #7a6030;        /* text-safe on bone (AA) */
+  --brass-bright: #c4a35a; /* decorative / on dark */
+  --win: #1d6b3a;
+  --loss: #a3222d;
+
+  /* Type */
+  --font-display: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-ui: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-num: "Inter", system-ui, sans-serif;
+
+  /* Program defaults (overridden per program) */
+  --p-primary: var(--ink);
+  --p-deep: #000;
+  --p-on-primary: #fff;
+  --p-secondary: var(--muted);
+  --p-accent: var(--brass-bright);
+  --p-accent-text: var(--brass);
+  --p-surface: var(--bone);
+  --p-font-display: var(--font-display);
+  --p-display-weight: 700;
+  --p-display-case: none;
+  --p-display-style: normal;
+  --p-display-tracking: 0;
+  --p-radius: 6px;
+  --p-shape: none; /* clip-path for cards */
+
+  --space: clamp(16px, 4vw, 32px);
+  --maxw: 1200px;
+}
+
+/* ---- Cleveland State Vikings: "Valhalla Forest"
+   Deep forest + Norse steel + Valhalla gold. Angular: chamfered corners, steel rules,
+   tall condensed capitals. */
+[data-program="CLEV"] {
+  --p-primary: #024731;
+  --p-deep: #012a1d;
+  --p-on-primary: #ffffff;
+  --p-secondary: #8c9399;    /* helmet steel */
+  --p-secondary-text: #5b6268;
+  --p-accent: #c9a54e;       /* Valhalla gold (on dark) */
+  --p-accent-text: #7d6223;  /* gold, text-safe on light */
+  --p-surface: #eef2f0;      /* frost */
+  --p-font-display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --p-display-weight: 800;
+  --p-display-case: uppercase;
+  --p-display-tracking: 0.02em;
+  --p-radius: 0;
+  --p-shape: polygon(14px 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%, 0 14px);
+}
+
+/* ---- Ohio Bobcats: "Bobcat Green"
+   Brighter kelly green + cream + bobcat tan. Rounded, warm, collegiate slab serif. */
+[data-program="OHIO"] {
+  --p-primary: #00694e;
+  --p-deep: #00402f;
+  --p-on-primary: #ffffff;
+  --p-secondary: #c8a27a;    /* bobcat tan */
+  --p-secondary-text: #7a5634;
+  --p-accent: #e9d8b4;       /* light tan (on dark) */
+  --p-accent-text: #7a5634;
+  --p-surface: #f4efe1;      /* cream */
+  --p-font-display: "Zilla Slab", Rockwell, Georgia, serif;
+  --p-display-weight: 700;
+  --p-display-case: none;
+  --p-display-tracking: 0;
+  --p-radius: 16px;
+  --p-shape: none;
+}
+
+/* ---- Miami (OH) RedHawks: "RedHawk"
+   Red + black + white. Fast: italic wide sans, diagonal slash cuts. */
+[data-program="M-OH"] {
+  --p-primary: #b61e2e;
+  --p-deep: #7a0f1b;
+  --p-on-primary: #ffffff;
+  --p-secondary: #111111;
+  --p-secondary-text: #111111;
+  --p-accent: #ffffff;
+  --p-accent-text: #b61e2e;
+  --p-surface: #f5f5f4;
+  --p-font-display: "Archivo", "Arial Black", sans-serif;
+  --p-display-weight: 800;
+  --p-display-case: uppercase;
+  --p-display-style: italic;
+  --p-display-tracking: -0.01em;
+  --p-radius: 2px;
+  --p-shape: polygon(18px 0, 100% 0, calc(100% - 18px) 100%, 0 100%);
+}
