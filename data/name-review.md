@@ -63,7 +63,7 @@ Nothing here changes your tracker. Approved names go into `data/aliases.json`.
 |---|---|---|
 | B1 (APPROVED: Kenny Tongues) | Kenny Tongues (8 sheets) / Kenny Tonges (coach sheet, depth chart) / **Keenan** Tonges (Recruiting, Records) | A different first name as well as two last names. CLEV legend, so the name matters. |
 | B2 (APPROVED: Burt Oldenburg) | Bret Oldenburg (All-Americans) / Burt Oldenburg (Coach Tim) | OHIO. One each. |
-| B3 | Cade Borud (All-Americans) / Cade Bourd (Awards) | IOWA 2026 Outland and Rimington winner. One each. |
+| B3 (APPROVED: Cade Bourd) | Cade Borud (All-Americans) / Cade Bourd (Awards) | IOWA 2026 Outland and Rimington winner. One each. |
 | B4 | Chad Ogletree (Depth Chart, Graduates, Recruiting) / **Caleb** Ogletree (2035-36 Stats) | Different first name. Same CLEV backup QB? |
 | B5 | DeQuan Way / DaQuan Way (both on 2033 Awards) | OHIO. One each. |
 | B6 | Deshawn Sturm / Deshaun Sturm (All-Americans 2030 and 2031) | GT. One each. |

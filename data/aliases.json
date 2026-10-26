@@ -3,7 +3,8 @@
   "approved": {
     "list_A": "2026-10-26",
     "B1": "2026-10-26",
-    "B2": "2026-10-26"
+    "B2": "2026-10-26",
+    "B3": "2026-10-26"
   },
   "players": {
     "Alan Rasheed": [
@@ -158,6 +159,9 @@
     ],
     "Burt Oldenburg": [
       "Bret Oldenburg"
+    ],
+    "Cade Bourd": [
+      "Cade Borud"
     ]
   },
   "not_the_same_person": [
