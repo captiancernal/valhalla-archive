@@ -32,7 +32,10 @@ Logos: 150 team logos + 11 conference marks extracted. Team colors come from the
 | 2 | APPROVED (F02) | 2034 Big 12 title game. Schedule says OHIO vs M-OH 57-42 (M-OH won). Conference Champions says M-OH vs **CLEV** 57-42. Coach sheet says CLEV 15-2, but the Schedule only adds up to 15-1. | Treat it as a CLEV loss to M-OH, 57-42, in the 2034 Big 12 title game (CLEV 15-2). |
 | 3 | APPROVED (F03) | 2029 Conference Champions table: Big 12 and MAC labels are swapped (CLEV vs M-OH on the "MAC" row; BUFF vs MASS on the "B12" row). | Swap the two labels for 2029. |
 | 4 | APPROVED (F04) | 2032 receiving: Sam Fatafehi 13 catches for 2,219 yards (long 44, 170.7 per catch). Impossible. | Read as 219 yards (16.8 per catch). Or the owner gives the real number. |
-| 5 | OPEN | Schedule rows for games CLEV wasn't in disagree with other sheets (2027 title game shows M-OH beating BAMA 0-0; Standings, AP and the bracket say BAMA won). | Use the Schedule only for CLEV games. Take other teams' title games from Conference Champions and the Playoff Tree. |
+| 5 | APPROVED (F05) | Schedule rows for games CLEV wasn't in disagree with other sheets (2027 title game shows M-OH beating BAMA 0-0; Standings, AP and the bracket say BAMA won). | Owner: the Playoff Tree decides playoff scores and champions. Schedule is used only for CLEV games. |
+| 5a | APPROVED (F05) | Two CLEV playoff scores differ between Schedule and Playoff Tree: 2036 first round vs LSU (Schedule 37-27, Tree 37-3); 2037 national title vs OHIO (Schedule 56-35, Tree 56-39). | Under F05 the Tree wins: 37-3 and 56-39. Owner to confirm. |
+| 5b | NOTE | 2035 national title score is written "73*" for M-OH in the bracket. | Ask the owner what the asterisk means (overtime?). Until then, show the score without a note. |
+| 5c | NOTE | All 15 bracket champions (2023-2037) match the Standings sheet. Every other CLEV playoff score matches the Schedule. | None. |
 | 6 | OPEN | Final scores are usually winner-first, but 2031 title game reads "34-35" (CLEV's score first, CLEV lost). | Store every game as CLEV score / opponent score using the W/L result. |
 | 7 | OPEN | Result column says W/L in early years and a team name ("CLEV", "M-OH") from 2034 on. | Convert to W/L from CLEV's point of view. |
 | 8 | OPEN | Empty placeholder games (2024-26 "B12-CH" and "NC" rows with N/A and 0-0). | Drop them. |

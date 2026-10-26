@@ -48,6 +48,25 @@
       "set": {"YARDS": 219},
       "recompute": ["YPC", "YPG"],
       "expected_at_approval": {"YPC": 16.8, "YPG": 15.6, "CLEV_2032_receiving_leader": "Dakota McNitt 1853"}
+    },
+    {
+      "id": "F05-source-of-truth-for-games",
+      "approved": "2026-10-26",
+      "owner_words": "use the CFB playoff tree to help determine scores and champions for the playoffs",
+      "problem": "Schedule rows for games CLEV wasn't in conflict with other sheets (2027 title game shows M-OH beating BAMA 0-0).",
+      "rule": "source_priority",
+      "set": {
+        "playoff_games_scores_champions_rounds": "CFB Playoff Tree (all teams, all seasons)",
+        "conference_title_games_not_involving_clev": "Conference Champions",
+        "clev_regular_season_and_bowls": "Schedule",
+        "schedule_rows_without_clev": "ignored"
+      },
+      "notes": "Playoff round names come from the bracket (first round / quarterfinal / semifinal / final), not the Schedule's RD 1/RD 2/RD 3 labels, which count CLEV's own games and skip byes.",
+      "expected_at_approval": {"2027_national_champion": "BAMA (31-17 over M-OH)"},
+      "confirmed_conflicts": [
+        {"season": 2036, "game": "playoff first round vs LSU", "schedule_value": "37-27", "used": "37-3 (CLEV-LSU)", "confirmed": "2026-10-26"},
+        {"season": 2037, "game": "national title vs OHIO", "schedule_value": "56-35", "used": "56-39 (CLEV-OHIO)", "confirmed": "2026-10-26"}
+      ]
     }
   ]
 }
