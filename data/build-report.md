@@ -36,4 +36,4 @@ Source: `2026-10-26 CSU Vikings Tracker.xlsx`
 - F02 applied: 2034 Big 12 title game -> CLEV vs M-OH 42-57 L
 - Conference title games: 140 across 14 seasons
 - F04 applied: 2032 Sam Fatafehi receiving yards 2219 -> 219
-- Hall of Fame: 6 eligible, 6 awaiting a vote
+- Hall of Fame: 6 eligible, 0 awaiting a vote

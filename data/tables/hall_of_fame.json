@@ -7,8 +7,8 @@
   "overall": 95,
   "awards": 1,
   "all_american": 1,
-  "status": "pending",
-  "class_of": null
+  "status": "inducted",
+  "class_of": 2037
  },
  {
   "player": "Baraka Nwangwu",
@@ -18,8 +18,8 @@
   "overall": 95,
   "awards": 2,
   "all_american": 2,
-  "status": "pending",
-  "class_of": null
+  "status": "inducted",
+  "class_of": 2037
  },
  {
   "player": "Robert Okoronkwo",
@@ -29,8 +29,8 @@
   "overall": 94,
   "awards": 3,
   "all_american": 1,
-  "status": "pending",
-  "class_of": null
+  "status": "inducted",
+  "class_of": 2037
  },
  {
   "player": "Seth Molinaro",
@@ -40,8 +40,8 @@
   "overall": 96,
   "awards": 2,
   "all_american": 2,
-  "status": "pending",
-  "class_of": null
+  "status": "inducted",
+  "class_of": 2037
  },
  {
   "player": "Titus Reece",
@@ -51,8 +51,8 @@
   "overall": 93,
   "awards": 3,
   "all_american": 2,
-  "status": "pending",
-  "class_of": null
+  "status": "inducted",
+  "class_of": 2037
  },
  {
   "player": "Vonn Ladd",
@@ -62,7 +62,7 @@
   "overall": 92,
   "awards": 2,
   "all_american": 1,
-  "status": "pending",
-  "class_of": null
+  "status": "inducted",
+  "class_of": 2037
  }
 ]

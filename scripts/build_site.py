@@ -466,6 +466,7 @@ class Site:
             self.render("player.html", f"players/{p['id']}/", program=prog, active_nav="players",
                         theme_color=prog["colors"]["primary"] if prog else None, p=p, stats=stats, spark=spark,
                         ratings=ratings, journey=journey, seasons_text=seasons_text,
+                        hof=next((h for h in self.T["hall_of_fame"] if h["id"] == p["id"] and h["status"] == "inducted"), None),
                         page_title=f"{title} · The Valhalla Archive",
                         description=" · ".join(desc_bits + honors) or f"{title} in the Valhalla Archive.")
             index.append({"id": p["id"], "n": p["name"], "t": pid or (p["teams"][0] if p["teams"] else ""),

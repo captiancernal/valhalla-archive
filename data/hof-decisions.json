@@ -1,5 +1,36 @@
 {
   "about": "Owner's Hall of Fame (Ring of Honor) votes. Eligibility alone inducts no one. A player listed here is never asked about again.",
   "criteria": "Left the roster (graduated, drafted or transferred out) as a 90+ overall, won at least one award from the Awards tab, and earned at least one All-American selection.",
-  "decisions": {}
+  "decisions": {
+    "Harold Fannin Jr.": {
+      "inducted": true,
+      "decided": "2026-10-26",
+      "class_of": 2037
+    },
+    "Baraka Nwangwu": {
+      "inducted": true,
+      "decided": "2026-10-26",
+      "class_of": 2037
+    },
+    "Robert Okoronkwo": {
+      "inducted": true,
+      "decided": "2026-10-26",
+      "class_of": 2037
+    },
+    "Seth Molinaro": {
+      "inducted": true,
+      "decided": "2026-10-26",
+      "class_of": 2037
+    },
+    "Titus Reece": {
+      "inducted": true,
+      "decided": "2026-10-26",
+      "class_of": 2037
+    },
+    "Vonn Ladd": {
+      "inducted": true,
+      "decided": "2026-10-26",
+      "class_of": 2037
+    }
+  }
 }

@@ -31,7 +31,7 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 - [x] M2 Clean data tables + build scripts (build_data.py, validate.py: 76 checks passing). All queue items resolved; awaiting owner sign-off.
 - [x] M3 Design system: palettes approved 2026-10-26; shell (header/nav/banner/footer, program band + tabs) built. Awaiting owner sign-off.
 - [x] M4 Program / season / game / player pages: 1,158 pages (program sections, 42 season pages, 209 game pages, 886 player cards, searchable index). Awaiting owner sign-off.
-- [ ] M5 Almanac, Records Book, rivalry hub, Hall of Fame
+- [x] M5 Almanac (almanac/, almanac/<year>/, almanac/awards/), Records Book (records/), Rivalry Hub + Coaches' Cup (rivalry/), Hall of Fame (hall-of-fame/). Class of 2037 inducted: Fannin, Nwangwu, Okoronkwo, Molinaro, Reece, Ladd. Awaiting owner sign-off.
 - [ ] M6 Front page
 - [ ] M7 Split Decision (bible, 2024 pilot, backfill)
 - [ ] M8 Games
@@ -71,6 +71,8 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 - Program URLs: programs/cleveland-state/, programs/ohio/, programs/miami-oh/. Sections: seasons/, leaders/, honors/, titles/, plus CLEV-only records/, recruiting/, departures/, transfers/. Seasons: programs/<slug>/<year>/. Games: games/<id>/. Players: players/<id>/ and players/ (search).
 - Templates: base.html -> program_layout.html (band + tabs) -> section templates; components in assets/css/components.css. Jinja helpers: team(), plink(), fmt(), stars(), season_href(), game_href().
 - Link check: `py -P scripts/check_links.py` (must report 0 broken).
+- Hall of Fame: eligibility computed in build_data.py (table hall_of_fame); votes in data/hof-decisions.json via `py -P scripts/hof_review.py [decide "<name>" yes|no]`.
+- Coaches' Cup (my format, owner may change): 8 categories, 3/2/1 points, ties share the higher score.
 - Fonts load from Google Fonts for now; self-host before launch (M10).
 
 ## Data model and build (M2)

@@ -6,6 +6,7 @@
     <div>
       <div class="eyebrow">{% for t in p.teams %}{{ team(t, logo=False, link=False) }}{% if not loop.last %} → {% endif %}{% endfor %}{% if p.positions %} · {{ p.positions[:3]|join(' / ') }}{% endif %}{% if seasons_text %} · {{ seasons_text }}{% endif %}</div>
       <h1>{{ p.name }}</h1>
+      {% if hof %}<a class="pill gold hof-pill" href="{{ base }}hall-of-fame/">Hall of Fame · Class of {{ hof.class_of }}</a>{% endif %}
       <div class="sub">{% if p.home_state %}From {{ p.home_state }}{% endif %}{% if p.peak_rating %}{% if p.home_state %} · {% endif %}Peak {{ p.peak_rating }} overall{% endif %}</div>
     </div>
   </div>
