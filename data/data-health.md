@@ -43,7 +43,7 @@ Logos: 150 team logos + 11 conference marks extracted. Team colors come from the
 | 10 | APPROVED (F10) | Error cells: #DIV/0! (empty future seasons on coach sheets; yards-per-catch for 0-catch players), #REF! (future year headers on Schedule). | Treat as blank. Recompute averages where the inputs exist. |
 | 11 | APPROVED (F11) | Numbers stored as text ("3,817", "1,085") and records as text ("(5-4)"). | Convert to numbers; parse conference records. |
 | 12 | APPROVED (F12) | Records sheet is short and out of date: 21 records, newest from 2029. Example: Baraka Nwangwu's 2,536 rush yards in 2029 beat the listed 2,329 season record. | Show the tracker's records as entered, and add a separate "Computed from the stats" school list (CLEV only). |
-| 13 | OPEN | Recruiting class summaries for 2029, 2030 and 2031 are exact copies of the 2025 numbers for all three programs; 2026-28 say "did not track". | Show class summaries only for 2024 and 2025. For CLEV, compute star counts from the recruit list every year. |
+| 13 | APPROVED (F13) | Recruiting class summaries for 2029, 2030 and 2031 are exact copies of the 2025 numbers for all three programs; 2026-28 say "did not track". | Show class summaries only for 2024 and 2025. For CLEV, compute star counts from the recruit list every year. |
 | 14 | OPEN | 2026 recruit list has no star ratings filled in. | Show stars as "not tracked" for 2026. |
 | 15 | OPEN | 2025 Transfers "Class" column holds numbers (1, 50, 74, 80, 91, 158), not classes. | Treat them as transfer-portal rankings. Or the owner says what they are. |
 | 16 | OPEN | Standings 2034: ECU appears in both the AAC (#4) and the MAC (#2). | Owner to confirm the MAC #2 team. |

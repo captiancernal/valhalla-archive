@@ -133,6 +133,19 @@
         "computed_bests": "Separate CLEV list 'Season & Career Bests (computed from the season stats)': single-season and career totals for passing, rushing, receiving and kicking, built only from the stats tabs.",
         "record_watch": "2038 Record Watch measures returning players against the computed CLEV list and, where they apply, the official NCAA / Big 12 records."
       }
+    },
+    {
+      "id": "F13-recruiting-class-summaries",
+      "approved": "2026-10-26",
+      "sheets": ["Recruiting"],
+      "problem": "Summary rows for 2029-2031 are copies of the 2025 numbers; 2026-28 say 'did not track'; CLEV 2025 summary (2/8/13) differs from the recruit list (2/6/11).",
+      "rule": "derive_and_restrict",
+      "set": {
+        "clev_star_counts": "Counted from the CLEV recruit lists for every recruiting cycle.",
+        "national_class_rank": "Shown for CLEV, M-OH and OHIO for 2024 and 2025 only (rows 41-43, columns C-H and K-P).",
+        "ignored": "Summary blocks for 2029, 2030, 2031 (rows 44-46) and the 'did not track' cells."
+      },
+      "expected_at_approval": {"CLEV_2025_stars_5_4_3": "2/6/11", "CLEV_2025_rank": "15th", "CLEV_2029_stars_5_4_3": "3/7/7"}
     }
   ]
 }

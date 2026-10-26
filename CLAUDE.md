@@ -49,6 +49,7 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 - Only CLEV has schedule, stat tables, depth chart, recruit lists, graduates and transfers. All three coach sheets have the same fields; columns sit in slightly different places.
 - Stats tabs use real Excel tables (4 per tab: passing, rushing, receiving, kicking). Conference Champions has 15 Excel tables (2024-2038; the first has no year in its title).
 - Standings blocks (top 4 each) in order: AAC, ACC, Big 12, Big Ten, C-USA, Independents, MAC, Mountain West, Pac-12, SEC, Sun Belt. Row 3 = national champion, row 4 = runner-up.
+- Recruiting block year = the recruiting cycle; those players arrive the NEXT season (Amar'e Hocker is in the 2024 block and was a 2025 FR). The 2037 block (which adds a "Stage" column) is the class now being recruited for 2038 and is empty: it fills during the Final Recruiting phase.
 - Recruiting summary rows 41-43 (2024 at C-H, 2025 at K-P) are CLEV, M-OH, OHIO (identified by logos). 2029-31 summaries are copies of 2025.
 - Depth chart cells are "Name - OVR"; bold = 90+, italic = drafted, * = transfer. Coaching staff (HC/OC/DC) with footnotes sits in rows 25-31.
 - Playoff Tree: one 16-row block per year starting at row 2 (2023) in a fixed bracket layout; logos overlay the cells.
