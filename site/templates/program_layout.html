@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block band %}
+<section class="program-band" aria-labelledby="program-name">
+  <div class="wrap">
+    <img class="logo" src="{{ base }}{{ program.logo }}" alt="{{ program.school }} {{ program.nickname }} logo" width="120" height="120">
+    <div>
+      <div class="eyebrow">{% block band_eyebrow %}{{ program.school }} · {{ program.conference }} · Coach {{ program.coach }}{% endblock %}</div>
+      <h1 id="program-name">{% block band_title %}{{ program.nickname }}{% endblock %}</h1>
+      <div class="sub">{% block band_sub %}{{ program.tagline }}{% endblock %}</div>
+    </div>
+  </div>
+</section>
+{% if program_tabs %}
+<nav class="program-tabs" aria-label="{{ program.nickname }} sections">
+  <ul>{% for t in program_tabs %}<li><a href="{{ base }}{{ t.href }}"{% if t.key == active_tab %} aria-current="page"{% endif %}>{{ t.label }}</a></li>{% endfor %}</ul>
+</nav>
+{% endif %}
+{% endblock %}

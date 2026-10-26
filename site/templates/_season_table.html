@@ -1,0 +1,21 @@
+<div class="table-wrap">
+  <table class="data">
+    <caption class="visually-hidden">{{ program.school }} season-by-season results</caption>
+    <thead><tr><th scope="col">Season</th><th scope="col" class="r">W-L</th><th scope="col" class="r">Conf</th><th scope="col">Big 12</th><th scope="col" class="r">AP</th><th scope="col">Postseason</th>{% if with_leaders %}<th scope="col">Passing</th><th scope="col">Rushing</th><th scope="col">Receiving</th>{% endif %}</tr></thead>
+    <tbody>
+    {% for s in seasons %}
+      <tr{% if s.national_champion %} class="hl"{% endif %}>
+        <th scope="row"><a href="{{ s.href }}">{{ s.season }}</a></th>
+        <td class="r">{{ s.w }}-{{ s.l }}</td>
+        <td class="r">{% if s.conf_w is not none %}{{ s.conf_w }}-{{ s.conf_l }}{% endif %}</td>
+        <td>{{ s.conf_rank_text or '' }}{% if s.conference_champion %} <span class="pill">Champion</span>{% endif %}</td>
+        <td class="r">{{ s.ap_final_rank or '' }}</td>
+        <td>{{ s.postseason_text }}{% if s.national_champion %} <span class="pill gold">National Champions</span>{% endif %}</td>
+        {% if with_leaders %}
+        {% for cat in ['passing', 'rushing', 'receiving'] %}{% set e = s.leaders.get(cat) %}<td class="nowrap">{% if e %}{{ plink(e.player) }} <span class="muted">{{ fmt(e.value) }}</span>{% endif %}</td>{% endfor %}
+        {% endif %}
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>

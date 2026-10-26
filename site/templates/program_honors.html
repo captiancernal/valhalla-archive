@@ -1,0 +1,20 @@
+{% extends "program_layout.html" %}
+{% block content %}
+<div class="wrap">
+  <h2 class="section">National awards</h2>
+  {% if awards %}
+  <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Season</th><th scope="col">Award</th><th scope="col">Player</th></tr></thead><tbody>
+  {% for a in awards %}<tr><th scope="row">{{ a.season }}</th><td><b>{{ a.award }}</b> <span class="muted">{{ a.award_note or '' }}</span></td><td>{{ plink(a.player) }}</td></tr>{% endfor %}
+  </tbody></table></div>
+  <p class="note">The Walter Camp award in this dynasty honors the Most Outstanding Player, chosen by Coach Dolan; the same player can't win it in back-to-back years.</p>
+  {% else %}<p class="note">No national award winners yet.</p>{% endif %}
+
+  <h2 class="section">All-Americans <span class="muted" style="font:500 15px var(--font-ui)">({{ aas|length }})</span></h2>
+  {% if aas %}
+  <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Season</th><th scope="col">Unit</th><th scope="col">Pos</th><th scope="col">Player</th></tr></thead><tbody>
+  {% for a in aas %}<tr><th scope="row">{{ a.season }}</th><td>{{ a.unit }}</td><td>{{ a.position }}</td><td>{{ plink(a.player) }}</td></tr>{% endfor %}
+  </tbody></table></div>
+  <p class="note">The tracker records first-team All-Americans.</p>
+  {% endif %}
+</div>
+{% endblock %}

@@ -316,7 +316,7 @@ def parse_schedule(wb):
             else:
                 kind = "bowl"
                 name = re.sub(r"\s*(BWL\.?|Bwl)\s*$", " Bowl", label_s, flags=re.I).strip()
-                name = " ".join(w if w.isupper() and len(w) <= 3 else w.capitalize() for w in name.split())
+                name = " ".join(w.capitalize() if w.isupper() and len(w) > 3 else w for w in name.split())
             # F02 override
             f02 = FIXES["F02-2034-big12-title-game"]
             if season == f02["match"]["season"] and kind == "conference_championship":

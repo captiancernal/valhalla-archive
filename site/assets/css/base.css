@@ -131,3 +131,11 @@ table.data a { color: inherit; text-decoration-color: color-mix(in srgb, current
   [data-program="M-OH"] .program-band .logo { width: 76px; height: 64px; padding: 8px 10px; }
   .program-band h1 { overflow-wrap: anywhere; }
 }
+@media (min-width: 561px) and (max-width: 999px) {
+  .stat-grid { grid-template-columns: repeat(3, 1fr); }
+}
+.program-tabs a { padding: 13px 12px; }
+@media (max-width: 560px) {
+  /* Only stretch the first card when the count is odd, so rows stay even */
+  .stat-grid:has(> .stat:nth-child(2n):last-child) .stat:first-child { grid-column: auto; }
+}

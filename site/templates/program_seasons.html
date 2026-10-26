@@ -1,0 +1,17 @@
+{% extends "program_layout.html" %}
+{% block content %}
+<div class="wrap">
+  <h2 class="section">Every season</h2>
+  {% set with_leaders = True %}
+  {% include "_season_table.html" %}
+  <div class="season-cards">
+    {% for s in seasons %}
+    <a class="season-card{% if s.national_champion %} champ{% endif %}" href="{{ s.href }}">
+      <span class="sc-year">{{ s.season }}</span>
+      <span class="sc-rec">{{ s.w }}-{{ s.l }}</span>
+      <span class="sc-note">{% if s.national_champion %}National Champions{% elif s.postseason_text %}{{ s.postseason_text }}{% else %}{{ s.conf_rank_text }} in the Big 12{% endif %}</span>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

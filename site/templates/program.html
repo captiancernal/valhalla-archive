@@ -1,19 +1,4 @@
-{% extends "base.html" %}
-{% block band %}
-<section class="program-band" aria-labelledby="program-name">
-  <div class="wrap">
-    <img class="logo" src="{{ base }}{{ program.logo }}" alt="{{ program.school }} {{ program.nickname }} logo" width="120" height="120">
-    <div>
-      <div class="eyebrow">{{ program.school }} · {{ program.conference }} · Coach {{ program.coach }}</div>
-      <h1 id="program-name">{{ program.nickname }}</h1>
-      <div class="sub">{{ program.tagline }}</div>
-    </div>
-  </div>
-</section>
-<nav class="program-tabs" aria-label="{{ program.nickname }} sections">
-  <ul>{% for t in program_tabs %}<li><a href="{{ base }}{{ t.href }}"{% if t.key == active_tab %} aria-current="page"{% endif %}>{{ t.label }}</a></li>{% endfor %}</ul>
-</nav>
-{% endblock %}
+{% extends "program_layout.html" %}
 {% block content %}
 <div class="wrap">
   <div class="stat-grid">
@@ -24,24 +9,53 @@
     <div class="stat"><div class="n">{{ program.ap_top25_finishes }}</div><div class="l">Final AP Top 25 finishes</div></div>
   </div>
 
-  <h2 class="section">Season by season</h2>
-  <div class="table-wrap">
-    <table class="data">
-      <caption class="visually-hidden">{{ program.school }} season-by-season results</caption>
-      <thead><tr><th scope="col">Season</th><th scope="col" class="r">W-L</th><th scope="col" class="r">Conf</th><th scope="col">Big 12 finish</th><th scope="col" class="r">AP</th><th scope="col">Postseason</th></tr></thead>
-      <tbody>
-      {% for s in seasons %}
-        <tr{% if s.national_champion %} class="hl"{% endif %}>
-          <th scope="row">{{ s.season }}</th>
-          <td class="r">{{ s.w }}-{{ s.l }}</td>
-          <td class="r">{% if s.conf_w is not none %}{{ s.conf_w }}-{{ s.conf_l }}{% endif %}</td>
-          <td>{{ s.conf_rank_text or '' }}{% if s.conference_champion %} <span class="pill">Champion</span>{% endif %}</td>
-          <td class="r">{{ s.ap_final_rank or '' }}</td>
-          <td>{{ s.postseason_text }}{% if s.national_champion %} <span class="pill gold">National Champions</span>{% endif %}</td>
-        </tr>
+  <h2 class="section">The {{ latest.season }} season <a class="more" href="{{ latest.href }}">Full season →</a></h2>
+  <div class="latest">
+    <div class="latest-head">
+      <div class="big-record">{{ latest.w }}-{{ latest.l }}</div>
+      <div>
+        <div class="latest-line">{% if latest.conf_w is not none %}{{ latest.conf_w }}-{{ latest.conf_l }} Big 12 · {% endif %}{{ latest.conf_rank_text }} in conference{% if latest.ap_final_rank %} · No. {{ latest.ap_final_rank }} in the final AP poll{% endif %}</div>
+        <div class="latest-tags">
+          {% if latest.national_champion %}<span class="pill gold">National Champions</span>{% endif %}
+          {% if latest.conference_champion %}<span class="pill">Big 12 Champions</span>{% endif %}
+          {% if latest.postseason_text %}<span class="muted">{{ latest.postseason_text }}</span>{% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="leader-grid">
+      {% for cat, e in latest.leaders.items() %}
+      <div class="leader"><div class="lcat">{{ LEADER_LABELS[cat] }}</div><div class="lname">{{ plink(e.player) }}</div><div class="lval">{{ fmt(e.value) }} <span>{{ LEADER_UNITS[cat] }}</span></div></div>
       {% endfor %}
-      </tbody>
-    </table>
+    </div>
   </div>
+
+  {% if greats %}
+  <h2 class="section">Program greats</h2>
+  <p class="note">Players who led {{ program.school }} in a stat category most often, plus national award winners and All-Americans.</p>
+  <div class="greats">
+    {% for g in greats %}
+    <div class="great">
+      <div class="gname">{{ plink(g.name) }}</div>
+      <div class="gfacts">
+        {% if g.leads %}<span>Led team {{ g.leads }}×</span>{% endif %}
+        {% for a in g.awards %}<span class="pill gold">{{ a.season }} {{ a.award }}</span>{% endfor %}
+        {% if g.aa %}<span>All-American {{ year_ranges(g.aa|map(attribute='season')|list) }}</span>{% endif %}
+        {% if g.peak %}<span>Peak {{ g.peak }} OVR</span>{% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <h2 class="section">Season by season <a class="more" href="{{ base }}{{ program.href }}seasons/">All seasons →</a></h2>
+  {% include "_season_table.html" %}
+
+  {% if class_ranks %}
+  <h2 class="section">Recruiting class rankings</h2>
+  <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Cycle</th><th scope="col" class="r">National rank</th><th scope="col" class="r">5★</th><th scope="col" class="r">4★</th><th scope="col" class="r">3★</th></tr></thead><tbody>
+  {% for c in class_ranks %}<tr><th scope="row">{{ c.cycle }}</th><td class="r">{{ c.natl_rank_text }}</td><td class="r">{{ c.summary_stars['5'] }}</td><td class="r">{{ c.summary_stars['4'] }}</td><td class="r">{{ c.summary_stars['3'] }}</td></tr>{% endfor %}
+  </tbody></table></div>
+  <p class="note">Class rankings were recorded for 2024 and 2025.</p>
+  {% endif %}
 </div>
 {% endblock %}

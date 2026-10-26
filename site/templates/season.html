@@ -1,0 +1,129 @@
+{% extends "program_layout.html" %}
+{% block band_eyebrow %}{{ program.school }} · {{ s.season }} season · Coach {{ s.coach }}{% endblock %}
+{% block band_title %}{{ s.season }} {{ program.nickname }}{% endblock %}
+{% block band_sub %}{{ s.w }}-{{ s.l }}{% if s.conf_w is not none %} ({{ s.conf_w }}-{{ s.conf_l }} Big 12){% endif %}{% if s.national_champion %} · National Champions{% elif s.postseason_text %} · {{ s.postseason_text }}{% endif %}{% endblock %}
+{% block content %}
+<div class="wrap">
+  <nav class="pager" aria-label="Seasons">
+    {% if prev %}<a href="{{ prev.href }}">← {{ prev.season }}</a>{% else %}<span></span>{% endif %}
+    <a href="{{ base }}{{ program.href }}seasons/">All seasons</a>
+    {% if nxt %}<a href="{{ nxt.href }}">{{ nxt.season }} →</a>{% else %}<span></span>{% endif %}
+  </nav>
+
+  <div class="stat-grid">
+    <div class="stat"><div class="n">{{ s.w }}-{{ s.l }}</div><div class="l">Record ({{ '%.3f'|format(s.win_pct)|replace('0.', '.') }})</div></div>
+    <div class="stat"><div class="n">{{ s.conf_rank_text or '–' }}</div><div class="l">Big 12 finish{% if s.conf_w is not none %} · {{ s.conf_w }}-{{ s.conf_l }}{% endif %}</div></div>
+    <div class="stat"><div class="n">{{ s.ap_final_rank or 'NR' }}</div><div class="l">Final AP poll</div></div>
+    <div class="stat"><div class="n">{{ fmt(s.team.ppg) }}</div><div class="l">Points per game{% if s.team.ppg_rank %} · {{ ordinal(s.team.ppg_rank) }} nationally{% elif s.team.offense_rank %} · offense {{ ordinal(s.team.offense_rank) }}{% endif %}</div></div>
+    <div class="stat"><div class="n">{{ fmt(s.team.pass_yds) }}</div><div class="l">Passing yards</div></div>
+    <div class="stat"><div class="n">{{ fmt(s.team.rush_yds) }}</div><div class="l">Rushing yards</div></div>
+  </div>
+  {% if s.national_champion or s.conference_champion %}
+  <div class="latest-tags" style="margin-top:14px">{% if s.national_champion %}<span class="pill gold">National Champions</span>{% endif %}{% if s.conference_champion %}<span class="pill">Big 12 Champions</span>{% endif %}</div>
+  {% endif %}
+
+  <h2 class="section">Team leaders</h2>
+  <div class="leader-grid">
+    {% for cat, e in s.leaders.items() %}
+    <div class="leader"><div class="lcat">{{ LEADER_LABELS[cat] }}</div><div class="lname">{{ plink(e.player) }}{% if e.class %} <span class="muted">{{ e.class }}</span>{% endif %}</div><div class="lval">{{ fmt(e.value) }} <span>{{ LEADER_UNITS[cat] }}</span></div></div>
+    {% endfor %}
+  </div>
+
+  {% if games %}
+  <h2 class="section">Schedule &amp; results</h2>
+  <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Game</th>{% if games[0].date %}<th scope="col">Date</th>{% endif %}<th scope="col">Opponent</th><th scope="col">Result</th><th scope="col" class="r">Record</th></tr></thead><tbody>
+  {% for g in games %}<tr{% if g.kind != 'regular' %} class="post"{% endif %}>
+    <td><a href="{{ game_href(g.id) }}">{{ g.name or ('Week ' ~ g.week) }}</a></td>
+    {% if games[0].date %}<td class="nowrap">{{ g.date[5:]|replace('-', '/') if g.date else '' }}</td>{% endif %}
+    <td><span class="site-mark">{{ '@' if g.site == 'away' else ('vs' if g.site == 'home' else 'n') }}</span> {{ team(g.opponent) }}</td>
+    <td class="{{ 'res-w' if g.result == 'W' else 'res-l' }}"><a href="{{ game_href(g.id) }}">{{ g.result }} {{ g.clev_score }}-{{ g.opp_score }}</a></td>
+    <td class="r muted">{{ g.running }}</td></tr>{% endfor %}
+  </tbody></table></div>
+  <p class="note">vs = home, @ = away, n = neutral site.</p>
+  {% endif %}
+
+  {% if vs_clev %}
+  <h2 class="section">Against Cleveland State</h2>
+  <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Game</th><th scope="col">Result</th></tr></thead><tbody>
+  {% for g in vs_clev %}<tr><td><a href="{{ game_href(g.id) }}">{{ g.name or ('Week ' ~ g.week) }}</a></td><td class="{{ 'res-w' if g.won else 'res-l' }}">{{ 'W' if g.won else 'L' }} {{ g.us }}-{{ g.them }}</td></tr>{% endfor %}
+  </tbody></table></div>
+  {% endif %}
+
+  {% if ccg and (program.id in [ccg.champion, ccg.runner_up]) and not games %}
+  <h2 class="section">Big 12 Championship</h2>
+  <p>{{ team(ccg.champion) }} def. {{ team(ccg.runner_up) }}, {{ ccg.champion_score }}-{{ ccg.runner_up_score }}</p>
+  {% endif %}
+
+  {% if playoffs %}
+  <h2 class="section">Playoff run</h2>
+  <ol class="bracket-path">
+  {% for x in playoffs %}<li class="{{ 'won' if x.won else 'lost' }}"><span class="round">{{ x.round_name }}</span><span>{{ 'def.' if x.won else 'lost to' }} {{ team(x.opp) }}</span><b>{{ x.us }}-{{ x.them }}</b></li>{% endfor %}
+  </ol>
+  {% endif %}
+
+  {% if stats %}
+  {% for cat, rows in stats.items() if rows %}
+  <h2 class="section">{{ cat|capitalize }}</h2>
+  <div class="table-wrap"><table class="data">
+  {% if cat == 'passing' %}
+    <thead><tr><th scope="col">Player</th><th scope="col" class="r">CMP</th><th scope="col" class="r">ATT</th><th scope="col" class="r">PCT</th><th scope="col" class="r">YDS</th><th scope="col" class="r">TD</th><th scope="col" class="r">INT</th><th scope="col" class="r">Y/A</th><th scope="col" class="r">RATE</th><th scope="col" class="r">LONG</th><th scope="col" class="r">GP</th></tr></thead><tbody>
+    {% for r in rows %}<tr><td>{{ plink(r.player) }}</td><td class="r">{{ r.comp }}</td><td class="r">{{ r.att }}</td><td class="r">{{ r.comp_pct or '' }}</td><td class="r"><b>{{ fmt(r.yds) }}</b></td><td class="r">{{ r.td }}</td><td class="r">{{ r.int }}</td><td class="r">{{ r.ypa or '' }}</td><td class="r">{{ r.rate or '' }}</td><td class="r">{{ r.long }}</td><td class="r">{{ r.gp }}</td></tr>{% endfor %}
+  {% elif cat == 'rushing' %}
+    <thead><tr><th scope="col">Player</th><th scope="col">Pos</th><th scope="col" class="r">CAR</th><th scope="col" class="r">YDS</th><th scope="col" class="r">Y/C</th><th scope="col" class="r">TD</th><th scope="col" class="r">Y/G</th><th scope="col" class="r">20+</th><th scope="col" class="r">FUM</th><th scope="col" class="r">LONG</th></tr></thead><tbody>
+    {% for r in rows %}<tr><td>{{ plink(r.player) }}</td><td>{{ r.position or '' }}</td><td class="r">{{ r.car }}</td><td class="r"><b>{{ fmt(r.yds) }}</b></td><td class="r">{{ r.ypc or '' }}</td><td class="r">{{ r.td }}</td><td class="r">{{ r.ypg or '' }}</td><td class="r">{{ r.plays_20 if r.plays_20 is not none else '' }}</td><td class="r">{{ r.fumb }}</td><td class="r">{{ r.long }}</td></tr>{% endfor %}
+  {% elif cat == 'receiving' %}
+    <thead><tr><th scope="col">Player</th><th scope="col">Pos</th><th scope="col" class="r">REC</th><th scope="col" class="r">YDS</th><th scope="col" class="r">Y/R</th><th scope="col" class="r">TD</th><th scope="col" class="r">YAC</th><th scope="col" class="r">Y/G</th><th scope="col" class="r">DROPS</th><th scope="col" class="r">LONG</th></tr></thead><tbody>
+    {% for r in rows %}<tr><td>{{ plink(r.player) }}</td><td>{{ r.position or '' }}</td><td class="r">{{ r.rec }}</td><td class="r"><b>{{ fmt(r.yds) }}</b></td><td class="r">{{ r.ypr or '' }}</td><td class="r">{{ r.td }}</td><td class="r">{{ r.yac }}</td><td class="r">{{ r.ypg or '' }}</td><td class="r">{{ r.drops }}</td><td class="r">{{ r.long }}</td></tr>{% endfor %}
+  {% else %}
+    <thead><tr><th scope="col">Player</th><th scope="col" class="r">FG</th><th scope="col" class="r">PCT</th><th scope="col" class="r">XP</th><th scope="col" class="r">LONG</th><th scope="col" class="r">50+</th></tr></thead><tbody>
+    {% for r in rows %}<tr><td>{{ plink(r.player) }}</td><td class="r">{{ r.fgm }}/{{ r.fga }}</td><td class="r">{{ r.fg_pct or '' }}</td><td class="r">{{ r.xpm }}/{{ r.xpa }}</td><td class="r">{{ r.long }}</td><td class="r">{{ r.fg_50_plus[0] }}/{{ r.fg_50_plus[1] }}</td></tr>{% endfor %}
+  {% endif %}
+  </tbody></table></div>
+  {% endfor %}
+  {% endif %}
+
+  {% if depth %}
+  <h2 class="section">Depth chart</h2>
+  <div class="depth">
+  {% for u in depth %}
+    <section class="depth-unit"><h3>{{ u.unit }}</h3>
+    <dl>{% for row in u.rows %}<div class="drow"><dt>{{ row.slot }}</dt><dd>{% for d in row.players %}<span class="dp{% if loop.first %} starter{% endif %}">{{ plink(d.player) }}{% if d.rating %} <b>{{ d.rating }}</b>{% endif %}</span>{% endfor %}</dd></div>{% endfor %}</dl>
+    </section>
+  {% endfor %}
+  </div>
+  {% if s.season > 2032 %}<p class="note">Player ratings were recorded through 2032.</p>{% endif %}
+  {% endif %}
+
+  {% if staff %}
+  <h2 class="section">Coaching staff</h2>
+  <ul class="staff">{% for c in staff %}<li>{% if c.role != 'note' %}<b>{{ c.role }}</b> {{ c.name }}{% endif %}{% for n in c.notes or [] %} <span class="muted">· {{ n }}</span>{% endfor %}</li>{% endfor %}</ul>
+  {% endif %}
+
+  {% if awards or aas %}
+  <h2 class="section">Honors</h2>
+  {% if awards %}<div class="latest-tags">{% for a in awards %}<span class="pill gold">{{ a.award }}: {{ a.player }}</span>{% endfor %}</div>{% endif %}
+  {% if aas %}<p><b>All-Americans:</b> {% for a in aas %}{{ plink(a.player) }} <span class="muted">({{ a.position }})</span>{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
+  {% endif %}
+
+  {% if recruits %}
+  <h2 class="section">Freshman class <span class="muted" style="font:500 15px var(--font-ui)">· signed in the {{ s.season - 1 }} cycle</span></h2>
+  <div class="table-wrap"><table class="data"><thead><tr><th scope="col" class="r">Nat. rank</th><th scope="col">Player</th><th scope="col">Pos</th><th scope="col">Stars</th><th scope="col">State</th></tr></thead><tbody>
+  {% for r in recruits %}<tr><td class="r">{{ r.natl_rank or '' }}</td><td>{{ plink(r.player) }}</td><td>{{ r.position or '' }}</td><td>{{ stars(r.stars) }}</td><td>{{ r.state or '' }}</td></tr>{% endfor %}
+  </tbody></table></div>
+  {% endif %}
+
+  {% if transfers_in %}
+  <h2 class="section">Transfers in</h2>
+  <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Player</th><th scope="col">Pos</th><th scope="col">From</th></tr></thead><tbody>
+  {% for t in transfers_in %}<tr><td>{{ plink(t.player) }}</td><td>{{ t.position or '' }}</td><td>{{ team(t.from) }}</td></tr>{% endfor %}
+  </tbody></table></div>
+  {% endif %}
+
+  {% if departures %}
+  <h2 class="section">Departures after {{ s.season }}</h2>
+  <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Player</th><th scope="col">Pos</th><th scope="col" class="r">OVR</th><th scope="col">Outcome</th></tr></thead><tbody>
+  {% for d in departures %}<tr><td>{{ plink(d.player) }}</td><td>{{ d.position or '' }}</td><td class="r">{{ d.overall or '' }}</td><td>{% if d.outcome == 'drafted' %}<b>Round {{ d.draft_round }}</b>{% elif d.outcome == 'pending' %}<span class="muted">Draft to come</span>{% elif d.outcome == 'cut' %}Cut{% else %}Not drafted{% endif %}</td></tr>{% endfor %}
+  </tbody></table></div>
+  {% endif %}
+</div>
+{% endblock %}

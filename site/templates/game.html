@@ -1,0 +1,39 @@
+{% extends "program_layout.html" %}
+{% block band_eyebrow %}{{ g.season }} · {{ label }}{% if g.date %} · {{ g.date }}{% endif %}{% endblock %}
+{% block band_title %}{{ 'Win' if g.result == 'W' else 'Loss' }}{% endblock %}
+{% block band_sub %}Cleveland State {{ g.clev_score }}, {{ opp.school or g.opponent }} {{ g.opp_score }}{% endblock %}
+{% block content %}
+<div class="wrap">
+  <nav class="pager" aria-label="Games">
+    {% if prev %}<a href="{{ game_href(prev.id) }}">← {{ prev.name or ('Week ' ~ prev.week) }}</a>{% else %}<span></span>{% endif %}
+    <a href="{{ season_href('CLEV', g.season) }}">{{ g.season }} season</a>
+    {% if nxt %}<a href="{{ game_href(nxt.id) }}">{{ nxt.name or ('Week ' ~ nxt.week) }} →</a>{% else %}<span></span>{% endif %}
+  </nav>
+
+  <div class="scoreboard">
+    <div class="sb-team{% if g.result == 'W' %} win{% endif %}">
+      <img src="{{ base }}assets/logos/CLEV.png" alt="" width="72" height="72">
+      <div class="sb-name">Cleveland State</div>
+      <div class="sb-score">{{ g.clev_score }}</div>
+    </div>
+    <div class="sb-mid"><span class="sb-res {{ 'res-w' if g.result == 'W' else 'res-l' }}">{{ 'Final · W' if g.result == 'W' else 'Final · L' }}</span><span class="muted">{{ {'home': 'Home', 'away': 'Away', 'neutral': 'Neutral site'}[g.site] }}</span></div>
+    <div class="sb-team{% if g.result == 'L' %} win{% endif %}">
+      {% if opp.logo %}<img src="{{ base }}{{ opp.logo }}" alt="" width="72" height="72">{% else %}<span class="sb-noimg">{{ g.opponent }}</span>{% endif %}
+      <div class="sb-name">{{ team(g.opponent, logo=False) }}</div>
+      <div class="sb-score">{{ g.opp_score }}</div>
+    </div>
+  </div>
+
+  <div class="facts">
+    <div><span class="k">Game</span><span class="v">{{ label }}{% if g.kind == 'playoff' %} (College Football Playoff){% endif %}</span></div>
+    <div><span class="k">Margin</span><span class="v">{{ (g.clev_score - g.opp_score)|abs }} points</span></div>
+    <div><span class="k">Record after</span><span class="v">{{ record_after }}</span></div>
+    <div><span class="k">Season</span><span class="v"><a href="{{ season_href('CLEV', g.season) }}">{{ season.w }}-{{ season.l }}{% if season.national_champion %}, National Champions{% endif %}</a></span></div>
+  </div>
+
+  <h2 class="section">All-time vs {{ opp.school or g.opponent }} <span class="muted" style="font:500 15px var(--font-ui)">· CLEV {{ series_rec }}</span></h2>
+  <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Season</th><th scope="col">Game</th><th scope="col">Result</th></tr></thead><tbody>
+  {% for x in series %}<tr{% if x.id == g.id %} class="hl"{% endif %}><th scope="row">{{ x.season }}</th><td><a href="{{ game_href(x.id) }}">{{ x.name or ('Week ' ~ x.week) }}</a></td><td class="{{ 'res-w' if x.result == 'W' else 'res-l' }}">{{ x.result }} {{ x.clev_score }}-{{ x.opp_score }}</td></tr>{% endfor %}
+  </tbody></table></div>
+</div>
+{% endblock %}

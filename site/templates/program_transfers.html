@@ -1,0 +1,12 @@
+{% extends "program_layout.html" %}
+{% block content %}
+<div class="wrap">
+  <p class="note" style="margin-top:28px">Transfers are listed under the cycle they signed; they play the following season.</p>
+  {% for cycle, rows in cycles %}
+  <h2 class="section">{{ cycle }} cycle <span class="muted" style="font:500 15px var(--font-ui)">· played {{ cycle + 1 }}</span></h2>
+  <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Player</th><th scope="col">Class</th><th scope="col">Pos</th><th scope="col">From</th><th scope="col">To</th></tr></thead><tbody>
+  {% for t in rows %}<tr><td>{{ plink(t.player) }}</td><td>{{ t.class or 'Not recorded' }}</td><td>{{ t.position or '' }}</td><td>{{ team(t.from) }}</td><td>{{ team(t.to) }}</td></tr>{% endfor %}
+  </tbody></table></div>
+  {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <div class="eyebrow">The Archive</div>
+    <h1>Players</h1>
+    <p>{{ rows|length }} players: everyone who played for Cleveland State, every Ohio and Miami (OH) team leader, and every national award winner and All-American.</p>
+  </div>
+</section>
+<div class="wrap">
+  <form class="filters" role="search" onsubmit="return false">
+    <label class="f-search"><span class="visually-hidden">Search players</span><input type="search" id="q" placeholder="Search by name…" autocomplete="off"></label>
+    <label><span>Team</span><select id="team"><option value="">All</option><option value="CLEV">Cleveland State</option><option value="OHIO">Ohio</option><option value="M-OH">Miami (OH)</option><option value="other">Other schools</option></select></label>
+    <label><span>Position</span><select id="fam"><option value="">All</option>{% for f in families %}<option>{{ f }}</option>{% endfor %}</select></label>
+    <label class="f-check"><input type="checkbox" id="honored"> Award winners &amp; All-Americans</label>
+  </form>
+  <p class="note" id="count" aria-live="polite"></p>
+  <div class="table-wrap"><table class="data" id="players"><thead><tr><th scope="col">Player</th><th scope="col">Team</th><th scope="col">Pos</th><th scope="col">Seasons</th><th scope="col" class="r">Peak</th><th scope="col" class="r">Honors</th></tr></thead><tbody>
+  {% for r in rows %}<tr data-n="{{ r.n|lower }}" data-t="{{ r.t }}" data-f="{{ r.f }}" data-h="{{ r.h }}"><td><a href="{{ base }}players/{{ r.id }}/">{{ r.n }}</a></td><td>{{ team(r.t, link=False) }}</td><td>{{ r.pos }}</td><td>{{ r.y }}</td><td class="r">{{ r.pk or '' }}</td><td class="r">{{ r.h or '' }}</td></tr>{% endfor %}
+  </tbody></table></div>
+</div>
+<script>
+(function () {
+  var q = document.getElementById('q'), t = document.getElementById('team'), f = document.getElementById('fam'), h = document.getElementById('honored');
+  var rows = Array.prototype.slice.call(document.querySelectorAll('#players tbody tr')), count = document.getElementById('count');
+  var programs = ['CLEV', 'OHIO', 'M-OH'];
+  function apply() {
+    var qs = q.value.trim().toLowerCase(), ts = t.value, fs = f.value, hs = h.checked, shown = 0;
+    rows.forEach(function (r) {
+      var ok = (!qs || r.dataset.n.indexOf(qs) !== -1) && (!fs || r.dataset.f === fs) && (!hs || +r.dataset.h > 0) &&
+               (!ts || (ts === 'other' ? programs.indexOf(r.dataset.t) === -1 : r.dataset.t === ts));
+      r.hidden = !ok; if (ok) shown++;
+    });
+    count.textContent = shown + ' of ' + rows.length + ' players';
+  }
+  [q, t, f, h].forEach(function (el) { el.addEventListener('input', apply); el.addEventListener('change', apply); });
+  try { var saved = JSON.parse(sessionStorage.getItem('va-players') || '{}'); if (saved.t) t.value = saved.t; } catch (e) {}
+  t.addEventListener('change', function () { try { sessionStorage.setItem('va-players', JSON.stringify({ t: t.value })); } catch (e) {} });
+  apply();
+})();
+</script>
+{% endblock %}

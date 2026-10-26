@@ -30,7 +30,7 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 - [x] M1 Workbook inventory, logo extraction, data-health queue. All 21 items resolved: 20 fixes in `data/fixes.json` (F01-F22, F20/F21 live in `data/aliases.json`), 56 canonical player names + 3 coach names in `data/aliases.json`. Awaiting owner sign-off before M2.
 - [x] M2 Clean data tables + build scripts (build_data.py, validate.py: 76 checks passing). All queue items resolved; awaiting owner sign-off.
 - [x] M3 Design system: palettes approved 2026-10-26; shell (header/nav/banner/footer, program band + tabs) built. Awaiting owner sign-off.
-- [ ] M4 Program / season / game / player pages
+- [x] M4 Program / season / game / player pages: 1,158 pages (program sections, 42 season pages, 209 game pages, 886 player cards, searchable index). Awaiting owner sign-off.
 - [ ] M5 Almanac, Records Book, rivalry hub, Hall of Fame
 - [ ] M6 Front page
 - [ ] M7 Split Decision (bible, 2024 pilot, backfill)
@@ -68,7 +68,9 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 - `py -P scripts/build_site.py` renders into `_site/` (git-ignored). `BASE_PATH=/valhalla-archive/` for the GitHub Pages build; default `/` for local.
 - Local preview: `py -m http.server 8037 --bind 127.0.0.1 --directory _site` then http://localhost:8037/ (also in `.claude/launch.json`).
 - Nav only links sections that exist (no dead links). Program pages set `data-program` on <body> to re-theme; Archive chrome stays constant.
-- Program URLs: programs/cleveland-state/, programs/ohio/, programs/miami-oh/.
+- Program URLs: programs/cleveland-state/, programs/ohio/, programs/miami-oh/. Sections: seasons/, leaders/, honors/, titles/, plus CLEV-only records/, recruiting/, departures/, transfers/. Seasons: programs/<slug>/<year>/. Games: games/<id>/. Players: players/<id>/ and players/ (search).
+- Templates: base.html -> program_layout.html (band + tabs) -> section templates; components in assets/css/components.css. Jinja helpers: team(), plink(), fmt(), stars(), season_href(), game_href().
+- Link check: `py -P scripts/check_links.py` (must report 0 broken).
 - Fonts load from Google Fonts for now; self-host before launch (M10).
 
 ## Data model and build (M2)

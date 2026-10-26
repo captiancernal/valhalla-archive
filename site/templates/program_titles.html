@@ -1,0 +1,39 @@
+{% extends "program_layout.html" %}
+{% block content %}
+<div class="wrap">
+  <h2 class="section">National championship games</h2>
+  {% if nat %}
+  <div class="title-cards">
+  {% for n in nat|sort(attribute='season', reverse=True) %}
+    {% set won = n.champion == program.id %}
+    <a class="title-card{% if won %} won{% endif %}" href="{{ season_href(program.id, n.season) }}">
+      <span class="tc-year">{{ n.season }}</span>
+      <span class="tc-res">{{ 'National Champions' if won else 'Runner-up' }}</span>
+      <span class="tc-score">{{ 'def.' if won else 'lost to' }} {{ team(n.runner_up if won else n.champion, link=False) }} {{ n.score }}</span>
+    </a>
+  {% endfor %}
+  </div>
+  {% else %}<p class="note">No national championship game appearances yet.</p>{% endif %}
+
+  {% if ccg %}
+  <h2 class="section">Big 12 Championship games</h2>
+  <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Season</th><th scope="col">Result</th><th scope="col">Opponent</th><th scope="col" class="r">Score</th></tr></thead><tbody>
+  {% for c in ccg %}{% set won = c.champion == program.id %}<tr><th scope="row">{{ c.season }}</th><td class="{{ 'res-w' if won else 'res-l' }}">{{ 'Won' if won else 'Lost' }}</td><td>{{ team(c.runner_up if won else c.champion) }}</td><td class="r">{{ c.champion_score }}-{{ c.runner_up_score }}</td></tr>{% endfor %}
+  </tbody></table></div>
+  {% endif %}
+
+  {% if playoffs %}
+  <h2 class="section">College Football Playoff</h2>
+  <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Season</th><th scope="col">Round</th><th scope="col">Opponent</th><th scope="col">Result</th></tr></thead><tbody>
+  {% for yr, games in playoffs %}{% for g in games %}<tr><th scope="row">{% if loop.first %}{{ yr }}{% endif %}</th><td>{{ g.round_name }}</td><td>{{ team(g.opp) }}</td><td class="{{ 'res-w' if g.won else 'res-l' }}">{{ 'W' if g.won else 'L' }} {{ g.us }}-{{ g.them }}</td></tr>{% endfor %}{% endfor %}
+  </tbody></table></div>
+  {% endif %}
+
+  {% if bowls %}
+  <h2 class="section">Bowl games</h2>
+  <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Season</th><th scope="col">Bowl</th><th scope="col">Opponent</th><th scope="col">Result</th></tr></thead><tbody>
+  {% for g in bowls %}<tr><th scope="row">{{ g.season }}</th><td><a href="{{ game_href(g.id) }}">{{ g.name }}</a></td><td>{{ team(g.opponent) }}</td><td class="{{ 'res-w' if g.result == 'W' else 'res-l' }}">{{ g.result }} {{ g.clev_score }}-{{ g.opp_score }}</td></tr>{% endfor %}
+  </tbody></table></div>
+  {% endif %}
+</div>
+{% endblock %}

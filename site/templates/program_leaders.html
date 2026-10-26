@@ -1,0 +1,33 @@
+{% extends "program_layout.html" %}
+{% block content %}
+<div class="wrap">
+  <h2 class="section">Season leaders</h2>
+  <p class="note">The player who led {{ program.school }} in each category, every season.</p>
+  <div class="leader-tables">
+  {% for c in cats if c.rows %}
+    <section class="lt">
+      <h3>{{ c.label }}</h3>
+      {% if c.best %}<p class="lt-best">Best season: {{ plink(c.best.player) }}, {{ fmt(c.best.value) }} {{ LEADER_UNITS[c.key] }} ({{ c.best.season }})</p>{% endif %}
+      <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Season</th><th scope="col">Player</th>{% if program.id == 'CLEV' %}<th scope="col">Class</th>{% endif %}<th scope="col" class="r">{{ LEADER_UNITS[c.key]|upper }}</th></tr></thead><tbody>
+      {% for r in c.rows %}<tr><th scope="row">{{ r.season }}</th><td>{{ plink(r.player) }}</td>{% if program.id == 'CLEV' %}<td>{{ r.class or '' }}</td>{% endif %}<td class="r">{{ fmt(r.value) }}</td></tr>{% endfor %}
+      </tbody></table></div>
+    </section>
+  {% endfor %}
+  </div>
+
+  {% if career %}
+  <h2 class="section">Career leaders (from the season stats)</h2>
+  <p class="note">Totals add up every season in the stats tabs (2024 onward).</p>
+  <div class="leader-tables">
+  {% for r in career %}
+    <section class="lt">
+      <h3>{{ r.label }}</h3>
+      <div class="table-wrap"><table class="data"><thead><tr><th scope="col">#</th><th scope="col">Player</th><th scope="col">Seasons</th><th scope="col" class="r">Total</th></tr></thead><tbody>
+      {% for x in r.leaders[:5] %}<tr><td>{{ loop.index }}</td><td>{{ plink(x.player) }}</td><td>{{ x.first }}{% if x.last != x.first %}-{{ x.last }}{% endif %}</td><td class="r">{{ fmt(x.value) }}</td></tr>{% endfor %}
+      </tbody></table></div>
+    </section>
+  {% endfor %}
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

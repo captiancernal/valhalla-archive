@@ -1,0 +1,26 @@
+{% extends "program_layout.html" %}
+{% block content %}
+<div class="wrap">
+  <h2 class="section">Official records</h2>
+  <p class="note">As entered in the tracker's Records sheet.</p>
+  {% for mag, groups in official %}
+    <h3 class="sub-h">{{ mag }}</h3>
+    <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Type</th><th scope="col">Record</th><th scope="col" class="r">Mark</th><th scope="col">Player</th><th scope="col">Set</th></tr></thead><tbody>
+    {% for dur, rows in groups %}{% for r in rows %}<tr><td>{{ dur }}</td><td>{{ r.type }}</td><td class="r"><b>{{ fmt(r.value) }}</b></td><td>{{ plink(r.player) }}</td><td>{{ r.year_set }}</td></tr>{% endfor %}{% endfor %}
+    </tbody></table></div>
+  {% endfor %}
+
+  <h2 class="section">Season &amp; career bests (computed from the stats)</h2>
+  <p class="note">Calculated from the season stats tabs, 2024 onward. These include marks set after the Records sheet was last updated.</p>
+  <div class="leader-tables">
+  {% for r in computed %}
+    <section class="lt">
+      <h3>{{ r.label }} <span class="muted">· {{ r.scope }}</span></h3>
+      <div class="table-wrap"><table class="data"><thead><tr><th scope="col">#</th><th scope="col">Player</th><th scope="col">{{ 'Season' if r.scope == 'season' else 'Seasons' }}</th><th scope="col" class="r">Total</th></tr></thead><tbody>
+      {% for x in r.leaders[:10] %}<tr{% if loop.first %} class="hl"{% endif %}><td>{{ loop.index }}</td><td>{{ plink(x.player) }}</td><td>{% if r.scope == 'season' %}{{ x.season }}{% else %}{{ x.first }}{% if x.last != x.first %}-{{ x.last }}{% endif %}{% endif %}</td><td class="r">{{ fmt(x.value) }}</td></tr>{% endfor %}
+      </tbody></table></div>
+    </section>
+  {% endfor %}
+  </div>
+</div>
+{% endblock %}

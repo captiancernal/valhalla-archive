@@ -1,0 +1,16 @@
+{% extends "program_layout.html" %}
+{% block content %}
+<div class="wrap">
+  <div class="stat-grid">
+    <div class="stat"><div class="n">{{ total_drafted }}</div><div class="l">Players drafted</div></div>
+    <div class="stat"><div class="n">{{ first_round }}</div><div class="l">First-round picks</div></div>
+  </div>
+  {% for d in deps %}
+  <h2 class="section">After the {{ d.season }} season {% if d.pending %}<span class="pill gold">Draft to come</span>{% else %}<span class="muted" style="font:500 15px var(--font-ui)">· {{ d.drafted }} drafted{% if d.first %}, {{ d.first }} in round 1{% endif %}</span>{% endif %}</h2>
+  <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Player</th><th scope="col">Class</th><th scope="col">Pos</th><th scope="col" class="r">OVR</th><th scope="col">Outcome</th></tr></thead><tbody>
+  {% for p in d.players %}<tr><td>{{ plink(p.player) }}</td><td>{{ p.class or '' }}</td><td>{{ p.position or '' }}</td><td class="r">{{ p.overall or '' }}</td>
+  <td>{% if p.outcome == 'drafted' %}<b>Round {{ p.draft_round }}</b>{% elif p.outcome == 'pending' %}<span class="muted">Draft to come</span>{% elif p.outcome == 'cut' %}Cut{% else %}Not drafted{% endif %}</td></tr>{% endfor %}
+  </tbody></table></div>
+  {% endfor %}
+</div>
+{% endblock %}

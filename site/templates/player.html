@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block band %}
+<section class="player-head{% if program %} program-band{% endif %}">
+  <div class="wrap">
+    {% if program %}<img class="logo" src="{{ base }}{{ program.logo }}" alt="" width="96" height="96">{% endif %}
+    <div>
+      <div class="eyebrow">{% for t in p.teams %}{{ team(t, logo=False, link=False) }}{% if not loop.last %} → {% endif %}{% endfor %}{% if p.positions %} · {{ p.positions[:3]|join(' / ') }}{% endif %}{% if seasons_text %} · {{ seasons_text }}{% endif %}</div>
+      <h1>{{ p.name }}</h1>
+      <div class="sub">{% if p.home_state %}From {{ p.home_state }}{% endif %}{% if p.peak_rating %}{% if p.home_state %} · {% endif %}Peak {{ p.peak_rating }} overall{% endif %}</div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+{% block content %}
+<div class="wrap">
+  <div class="stat-grid">
+    {% if p.peak_rating %}<div class="stat"><div class="n">{{ p.peak_rating }}</div><div class="l">Peak overall</div></div>{% endif %}
+    {% if p.recruit and p.recruit.stars %}<div class="stat"><div class="n">{{ p.recruit.stars }}★</div><div class="l">Recruit{% if p.recruit.natl_rank %} · #{{ p.recruit.natl_rank }} nationally{% endif %}</div></div>{% elif p.recruit and p.recruit.natl_rank %}<div class="stat"><div class="n">#{{ p.recruit.natl_rank }}</div><div class="l">National recruit rank</div></div>{% endif %}
+    {% if p.departure and p.departure.drafted %}<div class="stat"><div class="n">Rd {{ p.departure.draft_round }}</div><div class="l">Drafted after {{ p.departure.season }}</div></div>{% endif %}
+    {% if p.awards %}<div class="stat"><div class="n">{{ p.awards|length }}</div><div class="l">National {{ 'award' if p.awards|length == 1 else 'awards' }}</div></div>{% endif %}
+    {% if p.all_american %}<div class="stat"><div class="n">{{ p.all_american|length }}×</div><div class="l">All-American</div></div>{% endif %}
+    {% if p.leader_seasons %}<div class="stat"><div class="n">{{ p.leader_seasons|length }}</div><div class="l">Seasons leading the team in a category</div></div>{% endif %}
+  </div>
+
+  {% if p.career_note %}<p class="callout">{{ p.career_note }}</p>{% endif %}
+
+  {% if journey %}
+  <h2 class="section">Career path</h2>
+  <ol class="journey">{% for j in journey %}<li>{{ j }}</li>{% endfor %}</ol>
+  {% endif %}
+
+  {% if p.awards or p.all_american %}
+  <h2 class="section">Honors</h2>
+  <div class="latest-tags">
+    {% for a in p.awards|sort(attribute='season') %}<span class="pill gold">{{ a.season }} {{ a.award }}</span>{% endfor %}
+    {% for a in p.all_american|sort(attribute='season') %}<span class="pill">{{ a.season }} All-American · {{ a.position }}{% if a.school not in p.teams[:1] or p.teams|length > 1 %} · {{ a.school }}{% endif %}</span>{% endfor %}
+  </div>
+  {% endif %}
+
+  {% if spark %}
+  <h2 class="section">Rating progression</h2>
+  <div class="spark-wrap">{{ spark }}</div>
+  {% endif %}
+
+  {% if p.leader_seasons %}
+  <h2 class="section">Team leader</h2>
+  <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Season</th><th scope="col">Team</th><th scope="col">Category</th>{% if p.leader_seasons|selectattr('class')|list %}<th scope="col">Class</th>{% endif %}<th scope="col" class="r">Total</th></tr></thead><tbody>
+  {% for l in p.leader_seasons|sort(attribute='season') %}<tr><th scope="row"><a href="{{ season_href(l.program, l.season) }}">{{ l.season }}</a></th><td>{{ team(l.program, link=False) }}</td><td>{{ LEADER_LABELS[l.category] }}</td>{% if p.leader_seasons|selectattr('class')|list %}<td>{{ l.class or '' }}</td>{% endif %}<td class="r"><b>{{ fmt(l.value) }}</b> {{ LEADER_UNITS[l.category] }}</td></tr>{% endfor %}
+  </tbody></table></div>
+  {% endif %}
+
+  {% for cat, st in stats.items() %}
+  <h2 class="section">{{ cat|capitalize }}</h2>
+  <div class="table-wrap"><table class="data">
+  {% if cat == 'passing' %}
+    <thead><tr><th scope="col">Season</th><th scope="col" class="r">CMP</th><th scope="col" class="r">ATT</th><th scope="col" class="r">YDS</th><th scope="col" class="r">TD</th><th scope="col" class="r">INT</th><th scope="col" class="r">RATE</th><th scope="col" class="r">GP</th></tr></thead><tbody>
+    {% for r in st.rows %}<tr><th scope="row"><a href="{{ season_href('CLEV', r.season) }}">{{ r.season }}</a></th><td class="r">{{ r.comp }}</td><td class="r">{{ r.att }}</td><td class="r">{{ fmt(r.yds) }}</td><td class="r">{{ r.td }}</td><td class="r">{{ r.int }}</td><td class="r">{{ r.rate or '' }}</td><td class="r">{{ r.gp }}</td></tr>{% endfor %}
+    {% if st.rows|length > 1 %}<tr class="total"><th scope="row">Career</th><td class="r">{{ fmt(st.total.comp) }}</td><td class="r">{{ fmt(st.total.att) }}</td><td class="r">{{ fmt(st.total.yds) }}</td><td class="r">{{ st.total.td }}</td><td class="r">{{ st.total.int }}</td><td></td><td class="r">{{ st.total.gp }}</td></tr>{% endif %}
+  {% elif cat == 'rushing' %}
+    <thead><tr><th scope="col">Season</th><th scope="col" class="r">CAR</th><th scope="col" class="r">YDS</th><th scope="col" class="r">Y/C</th><th scope="col" class="r">TD</th><th scope="col" class="r">LONG</th><th scope="col" class="r">GP</th></tr></thead><tbody>
+    {% for r in st.rows %}<tr><th scope="row"><a href="{{ season_href('CLEV', r.season) }}">{{ r.season }}</a></th><td class="r">{{ r.car }}</td><td class="r">{{ fmt(r.yds) }}</td><td class="r">{{ r.ypc or '' }}</td><td class="r">{{ r.td }}</td><td class="r">{{ r.long }}</td><td class="r">{{ r.gp }}</td></tr>{% endfor %}
+    {% if st.rows|length > 1 %}<tr class="total"><th scope="row">Career</th><td class="r">{{ fmt(st.total.car) }}</td><td class="r">{{ fmt(st.total.yds) }}</td><td class="r">{{ '%.1f'|format(st.total.yds / st.total.car) if st.total.car else '' }}</td><td class="r">{{ st.total.td }}</td><td class="r">{{ st.total.long }}</td><td class="r">{{ st.total.gp }}</td></tr>{% endif %}
+  {% elif cat == 'receiving' %}
+    <thead><tr><th scope="col">Season</th><th scope="col" class="r">REC</th><th scope="col" class="r">YDS</th><th scope="col" class="r">Y/R</th><th scope="col" class="r">TD</th><th scope="col" class="r">LONG</th><th scope="col" class="r">GP</th></tr></thead><tbody>
+    {% for r in st.rows %}<tr><th scope="row"><a href="{{ season_href('CLEV', r.season) }}">{{ r.season }}</a></th><td class="r">{{ r.rec }}</td><td class="r">{{ fmt(r.yds) }}</td><td class="r">{{ r.ypr or '' }}</td><td class="r">{{ r.td }}</td><td class="r">{{ r.long }}</td><td class="r">{{ r.gp }}</td></tr>{% endfor %}
+    {% if st.rows|length > 1 %}<tr class="total"><th scope="row">Career</th><td class="r">{{ fmt(st.total.rec) }}</td><td class="r">{{ fmt(st.total.yds) }}</td><td class="r">{{ '%.1f'|format(st.total.yds / st.total.rec) if st.total.rec else '' }}</td><td class="r">{{ st.total.td }}</td><td class="r">{{ st.total.long }}</td><td class="r">{{ st.total.gp }}</td></tr>{% endif %}
+  {% else %}
+    <thead><tr><th scope="col">Season</th><th scope="col" class="r">FG</th><th scope="col" class="r">XP</th><th scope="col" class="r">LONG</th></tr></thead><tbody>
+    {% for r in st.rows %}<tr><th scope="row"><a href="{{ season_href('CLEV', r.season) }}">{{ r.season }}</a></th><td class="r">{{ r.fgm }}/{{ r.fga }}</td><td class="r">{{ r.xpm }}/{{ r.xpa }}</td><td class="r">{{ r.long }}</td></tr>{% endfor %}
+    {% if st.rows|length > 1 %}<tr class="total"><th scope="row">Career</th><td class="r">{{ st.total.fgm }}/{{ st.total.fga }}</td><td class="r">{{ st.total.xpm }}/{{ st.total.xpa }}</td><td class="r">{{ st.total.long }}</td></tr>{% endif %}
+  {% endif %}
+  </tbody></table></div>
+  {% endfor %}
+
+  {% if p.records %}
+  <h2 class="section">Records held</h2>
+  <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Level</th><th scope="col">Record</th><th scope="col" class="r">Mark</th><th scope="col">Set</th></tr></thead><tbody>
+  {% for r in p.records %}<tr><td>{{ r.magnitude }}</td><td>{{ r.duration }} {{ r.type|lower }}</td><td class="r"><b>{{ fmt(r.value) }}</b></td><td>{{ r.year_set }}</td></tr>{% endfor %}
+  </tbody></table></div>
+  <p class="note">Official records as entered in the tracker.</p>
+  {% endif %}
+</div>
+{% endblock %}
