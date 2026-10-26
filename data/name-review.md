@@ -4,7 +4,7 @@ Proposed canonical spellings for players whose names appear more than one way in
 Rule used for proposals: **the spelling used on the most sheets wins**. When it's a tie, the more common real-world spelling wins.
 Nothing here changes your tracker. Approved names go into `data/aliases.json`.
 
-## A. Clear-cut (47 groups): proposed canonical spelling in bold
+## A. Clear-cut (48 groups): APPROVED 2026-10-26
 
 | # | Proposed name | Other spellings seen (where) |
 |---|---|---|
