@@ -199,6 +199,30 @@
           {"sheet": "Coach Josh Dolan", "season": 2036, "player": "Vonn Ladd", "seen_value": "SR (SR)", "class": "SR (RS)", "evidence": "Same season tackle-leader cell and 2036 Graduates: SR (RS)"}
         ]
       }
+    },
+    {
+      "id": "F19-position-families",
+      "approved": "2026-10-26",
+      "sheets": ["all"],
+      "problem": "Sheets use different position systems (LE/ROLB/FS vs EDGE/LB/S; HB vs RB).",
+      "rule": "add_derived_field",
+      "set": {
+        "position": "Kept exactly as entered and shown on cards and depth charts.",
+        "position_family": {
+          "QB": ["QB"],
+          "RB": ["HB", "RB", "FB"],
+          "WR": ["WR", "WR/ATH"],
+          "TE": ["TE", "WR/TE"],
+          "OL": ["LT", "LG", "C", "RG", "RT", "OT", "OG", "ATH/OL"],
+          "DL": ["LE", "RE", "DT", "DE", "EDGE"],
+          "LB": ["LOLB", "MLB", "ROLB", "OLB", "LB"],
+          "DB": ["CB", "FS", "SS", "S"],
+          "K": ["K"],
+          "P": ["P"],
+          "Other": ["KR", "ATH"]
+        },
+        "used_for": "Search filters, leaderboards and the games."
+      }
     }
   ]
 }
