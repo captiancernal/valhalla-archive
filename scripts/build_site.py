@@ -684,6 +684,72 @@ class Site:
                     count=len(inducted), page_title="Hall of Fame · The Valhalla Archive",
                     description=f"The Ring of Honor: {len(inducted)} inductees, the best of the Valhalla Archive.")
 
+
+    # ---------------------------------------------------------------- front page
+    def build_home(self):
+        T = self.T
+        cur = self.site["current_season"]
+        order = ["Heisman", "Maxwell", "Camp", "Bednarik", "Nagurski", "O'Brien", "Walker", "Biletnikoff", "Mackey",
+                 "Outland", "Rimington", "Lombardi", "Butkus", "Thorpe", "Groza", "Guy"]
+        by_year = defaultdict(list)
+        for a in T["awards"]:
+            t = self.teams.get(a["school"], {})
+            pl = self.player_by_name.get(a["player"])
+            by_year[a["season"]].append({
+                "award": a["award"], "note": a["award_note"], "player": a["player"], "school": a["school"],
+                "school_name": t.get("school") or a["school"], "logo": (BASE + t["logo"]) if t.get("logo") else None,
+                "href": f"{BASE}players/{pl['id']}/" if pl else None, "ours": a["school"] in PROGRAMS})
+        for y in by_year:
+            by_year[y].sort(key=lambda a: (a["school"] != "CLEV", order.index(a["award"]) if a["award"] in order else 99))
+        years = sorted(by_year, reverse=True)
+        aa_counts = {y: Counter(a["school"] for a in T["all_americans"] if a["season"] == y) for y in years}
+        award_json = {str(y): {"awards": by_year[y], "aa": {p: aa_counts[y].get(p, 0) for p in PROGRAMS},
+                               "clev": sum(1 for a in by_year[y] if a["school"] == "CLEV")} for y in years}
+
+        # Road to next season: phase tracker + teasers built only from logged data
+        nxt = cur + 1
+        phases = self.site["phases"]
+        cur_phase = self.site["current_phase"]
+        phase_idx = phases.index(cur_phase) if cur_phase in phases else 0
+        deps = sorted([d for d in T["departures"] if d["season"] == cur], key=lambda d: -(d["overall"] or 0))
+        proj = [d for d in T["depth_chart"] if d["season"] == nxt and d["depth"] == 1]
+        key_slots = ["QB", "RB", "WR", "TE", "LT", "LE", "MLB", "CB1", "FS"]
+        proj_show, seen = [], set()
+        for sl in key_slots:
+            for d in proj:
+                if d["slot"] == sl and (sl, d["player"]) not in seen:
+                    seen.add((sl, d["player"]))
+                    proj_show.append(d)
+                    break
+        incoming = sorted([r for r in T["recruits"] if r["arrival_season"] == nxt], key=lambda r: r["natl_rank"] or 99999)
+        next_games = [g for g in T["games"] if g["season"] == nxt]
+        teasers = [
+            {"key": "departures", "title": "Departing seniors & draft watch", "unlocked": bool(deps),
+             "unlock_phase": "Player Departures and Draft",
+             "summary": f"{len(deps)} players leaving after {cur}" + (f"; {sum(1 for d in deps if d['drafted'])} drafted" if any(d['drafted'] for d in deps) else "; draft to come"),
+             "rows": [{"name": d["player"], "meta": f"{d['position']} · {d['overall']} OVR", "tag": (f"Rd {d['draft_round']}" if d["drafted"] else None)} for d in deps[:5]]},
+            {"key": "depth", "title": f"Projected {nxt} depth chart", "unlocked": bool(proj),
+             "unlock_phase": f"{nxt} Preseason",
+             "summary": f"Early look at the {nxt} starters" + (" (players still listed as departing are flagged)" if any(d["departing"] for d in proj) else ""),
+             "rows": [{"name": d["player"], "meta": d["slot"].replace("CB1", "CB"), "tag": "Departing" if d["departing"] else None} for d in proj_show]},
+            {"key": "recruits", "title": f"Incoming {nxt} recruits", "unlocked": bool(incoming), "unlock_phase": "Final Recruiting",
+             "summary": f"{len(incoming)} signees logged" if incoming else "Cards reveal as each recruit is logged",
+             "rows": [{"name": r["player"], "meta": f"{r['position'] or ''} · #{r['natl_rank']}" if r["natl_rank"] else (r["position"] or ""), "tag": (f"{int(r['stars'])}★" if r["stars"] else None)} for r in incoming[:5]]},
+            {"key": "schedule", "title": f"{nxt} schedule & rivalry previews", "unlocked": bool(next_games), "unlock_phase": f"{nxt} Preseason",
+             "summary": f"{len(next_games)} games set" if next_games else "Unlocks when the schedule is set",
+             "rows": [{"name": self.teams.get(g["opponent"], {}).get("school") or g["opponent"], "meta": g["name"] or f"Week {g['week']}", "tag": None} for g in next_games[:5]]},
+        ]
+        champ = next((n for n in T["national_championships"] if n["season"] == cur), None)
+        champ_season = self.season(champ["champion"], cur) if champ and champ["champion"] in self.prog else None
+        columns = T.get("columns") or []
+        clips = T.get("clips") or []
+        self.render("home.html", "", page_title="The Valhalla Archive", active_nav="home",
+                    description=f"The almanac of a College Football 25 dynasty: Cleveland State, Ohio and Miami (OH). {cur} national champions: "
+                                + (f"{self.prog[champ['champion']]['school']} {self.prog[champ['champion']]['nickname']}." if champ_season else f"{(self.teams.get(champ['champion'], {}) or {}).get('school', '')}." if champ else ""),
+                    years=years, award_year=years[0], award_json=award_json, cur=cur, nxt=nxt,
+                    phases=phases, phase_idx=phase_idx, teasers=teasers, champ=champ, champ_season=champ_season,
+                    columns=columns[:1], clips=clips)
+
     # ---------------------------------------------------------------- run
     def build(self):
         if os.path.isdir(OUT):
@@ -692,8 +758,7 @@ class Site:
         shutil.copytree(os.path.join(SRC, "assets"), os.path.join(OUT, "assets"))
         shutil.copytree(os.path.join(SRC, "design"), os.path.join(OUT, "design"))
         open(os.path.join(OUT, ".nojekyll"), "w").close()
-        self.render("home.html", "", page_title="The Valhalla Archive", active_nav="home",
-                    description="The almanac of a College Football 25 dynasty: Cleveland State, Ohio and Miami (OH), 2024 to today.")
+        self.build_home()
         for p in self.programs:
             self.build_program(p)
         self.build_games()

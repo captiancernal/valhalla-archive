@@ -1,45 +1,118 @@
 {% extends "base.html" %}
 {% block content %}
-<section class="page-head">
+{% if champ %}
+<section class="masthead"{% if champ_season %} data-program="{{ champ.champion }}"{% endif %}>
   <div class="wrap">
-    <div class="eyebrow">{{ site.phase_display }} · {{ site.current_season }}</div>
-    <h1>The Valhalla Archive</h1>
-    <p>Fourteen seasons of a College Football 25 dynasty: every game, title, award and record for Cleveland State, Ohio and Miami (OH).</p>
+    {% if champ_season %}<img class="mh-logo" src="{{ base }}{{ programs|selectattr('id', 'equalto', champ.champion)|map(attribute='logo')|first }}" alt="" width="120" height="120">{% endif %}
+    <div class="mh-text">
+      <div class="eyebrow">{{ site.phase_display }} · {{ cur }}</div>
+      <h1>{{ cur }} National Champions</h1>
+      <p class="mh-sub">{{ team(champ.champion) }}{% if champ_season %} <span>{{ champ_season.w }}-{{ champ_season.l }}</span>{% endif %} <span class="mh-dot">·</span> <span>def. {{ team(champ.runner_up, link=False) }} {{ champ.score }}</span></p>
+    </div>
   </div>
 </section>
-<div class="wrap">
-  <h2 class="section">The programs</h2>
-  <div class="program-cards">
-    {% for p in programs %}
-    <a class="program-card" data-program="{{ p.id }}" href="{{ base }}{{ p.href }}">
-      <span class="pc-band"><img src="{{ base }}{{ p.logo }}" alt=""><span class="pc-name">{{ p.nickname }}</span></span>
-      <span class="pc-body">
-        <span class="pc-school">{{ p.school }} · Coach {{ p.coach }}</span>
-        <span class="pc-stats">
-          <span><b>{{ p.career.w }}-{{ p.career.l }}</b> record</span>
-          <span><b>{{ p.national_titles|length }}</b> national {{ 'title' if p.national_titles|length == 1 else 'titles' }}</span>
-          <span><b>{{ p.big12_titles|length }}</b> Big 12 {{ 'title' if p.big12_titles|length == 1 else 'titles' }}</span>
-        </span>
-      </span>
-    </a>
-    {% endfor %}
+{% endif %}
+
+<section class="awards-show" id="awards" aria-labelledby="awards-title">
+  <div class="wrap">
+    <div class="as-head">
+      <div>
+        <div class="kicker">Honors</div>
+        <h2 id="awards-title" class="as-title">The <span data-year-label>{{ award_year }}</span> award winners</h2>
+      </div>
+      <div class="year-picker" role="group" aria-label="Choose a season">
+        {% for y in years %}<button type="button" data-year="{{ y }}" aria-pressed="{{ 'true' if y == award_year else 'false' }}">{{ y }}</button>{% endfor %}
+      </div>
+    </div>
+    <div class="as-summary" data-summary>
+      {% set yd = award_json[award_year|string] %}
+      {% for pid in ['CLEV', 'OHIO', 'M-OH'] %}{% set n = yd.awards|selectattr('school', 'equalto', pid)|list|length %}
+      <span class="as-chip" data-program="{{ pid }}">{{ team(pid, link=False) }} <b>{{ n }}</b> {{ 'award' if n == 1 else 'awards' }} · <b>{{ yd.aa[pid] }}</b> All-Americans</span>
+      {% endfor %}
+    </div>
+    <div class="aw-grid" data-grid aria-live="polite">
+      {% for a in award_json[award_year|string].awards %}
+      <article class="aw-card{% if a.school == 'CLEV' %} spot{% elif a.ours %} ours{% endif %}">
+        <div class="aw-top"><svg class="aw-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10v3a5 5 0 0 1-10 0V3Zm0 1H4v1a3 3 0 0 0 3 3M17 4h3v1a3 3 0 0 1-3 3M12 11v5m-4 4h8m-6-4h4v4h-4z"/></svg><span class="aw-name">{{ a.award }}</span>{% if a.school == 'CLEV' %}<span class="aw-flag">Vikings</span>{% endif %}</div>
+        <div class="aw-note">{{ a.note or '' }}</div>
+        <div class="aw-player">{% if a.href %}<a href="{{ a.href }}">{{ a.player }}</a>{% else %}{{ a.player }}{% endif %}</div>
+        <div class="aw-school">{% if a.logo %}<img src="{{ a.logo }}" alt="" width="22" height="22" loading="lazy">{% endif %}{{ a.school_name }}</div>
+      </article>
+      {% endfor %}
+    </div>
+    <p class="as-more"><a href="{{ base }}almanac/awards/">Every award winner since 2023 →</a></p>
   </div>
-</div>
-{% endblock %}
-{% block head %}
-<style>
-  .program-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
-  .program-card { display: block; text-decoration: none; color: var(--ink); background: var(--paper); border: 1px solid var(--rule); border-radius: var(--p-radius); overflow: hidden; transition: transform .15s ease, box-shadow .15s ease; }
-  .program-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.08); }
-  .pc-band { display: flex; align-items: center; gap: 14px; background: var(--p-primary); color: var(--p-on-primary); padding: 18px; position: relative; border-bottom: 5px solid var(--p-accent); }
-  .pc-band img { width: 56px; height: 56px; object-fit: contain; }
-  [data-program="OHIO"] .pc-band img { background: var(--p-surface); border-radius: 50%; padding: 6px; }
-  [data-program="M-OH"] .pc-band img { background: #fff; padding: 6px 8px; width: 64px; clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%); }
-  .pc-name { font-family: var(--p-font-display); font-weight: var(--p-display-weight); text-transform: var(--p-display-case); font-style: var(--p-display-style); letter-spacing: var(--p-display-tracking); font-size: clamp(26px, 2.6vw, 34px); line-height: 1; min-width: 0; overflow-wrap: anywhere; }
-  [data-program="M-OH"] .pc-name { font-stretch: 100%; }
-  .pc-body { display: block; padding: 14px 18px 18px; }
-  .pc-school { display: block; font-size: 13px; color: var(--muted); margin-bottom: 10px; }
-  .pc-stats { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px; }
-  .pc-stats b { font-size: 18px; color: var(--p-primary); font-variant-numeric: tabular-nums; }
-</style>
+</section>
+
+{% if columns %}
+<section class="home-sd" aria-labelledby="sd-title">
+  <div class="wrap">
+    {% include "_split_decision_teaser.html" %}
+  </div>
+</section>
+{% endif %}
+
+{% if clips %}
+<section class="home-reel" aria-labelledby="reel-title">
+  <div class="wrap">
+    {% include "_highlight_reel.html" %}
+  </div>
+</section>
+{% endif %}
+
+<section class="road" aria-labelledby="road-title">
+  <div class="wrap">
+    <div class="kicker">The offseason</div>
+    <h2 id="road-title" class="road-title">Road to {{ nxt }}</h2>
+    <ol class="phases" aria-label="Offseason phases">
+      {% for ph in phases %}<li class="{% if loop.index0 < phase_idx %}done{% elif loop.index0 == phase_idx %}now{% endif %}"{% if loop.index0 == phase_idx %} aria-current="step"{% endif %}><span class="dot"></span><span class="ph">{{ ph }}</span>{% if loop.index0 == phase_idx %}<span class="now-tag">Now</span>{% endif %}</li>{% endfor %}
+    </ol>
+    <div class="teasers">
+      {% for t in teasers %}
+      <article class="teaser{% if not t.unlocked %} locked{% endif %}">
+        <h3>{{ t.title }}</h3>
+        <p class="t-sum">{{ t.summary }}</p>
+        {% if t.unlocked %}
+        <ul>{% for r in t.rows %}<li><span class="t-name">{{ plink(r.name) }}</span><span class="t-meta">{{ r.meta }}</span>{% if r.tag %}<span class="t-tag">{{ r.tag }}</span>{% endif %}</li>{% endfor %}</ul>
+        {% else %}
+        <div class="lock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 11V8a5 5 0 0 1 10 0v3M5 11h14v10H5z"/></svg><span>Unlocks during <b>{{ t.unlock_phase }}</b></span></div>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="home-programs">
+  <div class="wrap">
+    <h2 class="section">The programs</h2>
+    <div class="program-cards">
+      {% for p in programs %}
+      <a class="program-card" data-program="{{ p.id }}" href="{{ base }}{{ p.href }}">
+        <span class="pc-band"><img src="{{ base }}{{ p.logo }}" alt=""><span class="pc-name">{{ p.nickname }}</span></span>
+        <span class="pc-body">
+          <span class="pc-school">{{ p.school }} · Coach {{ p.coach }}</span>
+          <span class="pc-stats">
+            <span><b>{{ p.career.w }}-{{ p.career.l }}</b> record</span>
+            <span><b>{{ p.national_titles|length }}</b> national {{ 'title' if p.national_titles|length == 1 else 'titles' }}</span>
+            <span><b>{{ p.big12_titles|length }}</b> Big 12 {{ 'title' if p.big12_titles|length == 1 else 'titles' }}</span>
+          </span>
+        </span>
+      </a>
+      {% endfor %}
+    </div>
+
+    <h2 class="section">Explore the Archive</h2>
+    <div class="explore">
+      <a href="{{ base }}almanac/"><b>League Almanac</b><span>Champions, brackets, polls and All-Americans for every season</span></a>
+      <a href="{{ base }}records/"><b>Records Book</b><span>Official records and the best seasons across all three programs</span></a>
+      <a href="{{ base }}rivalry/"><b>Rivalry Hub</b><span>Head-to-head results and the Coaches' Cup</span></a>
+      <a href="{{ base }}hall-of-fame/"><b>Hall of Fame</b><span>The Ring of Honor</span></a>
+      <a href="{{ base }}players/"><b>Players</b><span>Search every player card</span></a>
+    </div>
+  </div>
+</section>
+
+<script type="application/json" id="award-data">{{ award_json|tojson }}</script>
+<script src="{{ base }}assets/js/home.js?v={{ build_id }}" defer></script>
 {% endblock %}
