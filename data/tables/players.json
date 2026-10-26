@@ -23150,8 +23150,7 @@
   "id": "ollie-gordon-iii",
   "name": "Ollie Gordon III",
   "teams": [
-   "OKST",
-   "ORST"
+   "OKST"
   ],
   "positions": [
    "RB"
@@ -23172,7 +23171,7 @@
    {
     "season": 2023,
     "position": "RB",
-    "school": "ORST"
+    "school": "OKST"
    }
   ],
   "records": [],

@@ -422,6 +422,25 @@
       "rule": "strip_marker",
       "set": "Read as 73. Show M-OH 73, CLEV 70 with no footnote or OT label.",
       "owner_words": "the asterisk was due to some funky stuff happening in-game, but besides it being sour grapes for me, it has no other meaning"
+    },
+    {
+      "id": "F23-2023-gordon-all-american-school",
+      "approved": "2026-10-26",
+      "sheets": [
+        "All-Americans"
+      ],
+      "problem": "2023 All-American RB Ollie Gordon III listed at ORST; the 2023 Walker Award lists him at OKST.",
+      "rule": "override_value",
+      "match": {
+        "sheet": "All-Americans",
+        "season": 2023,
+        "player": "Ollie Gordon III",
+        "cell": "C6",
+        "seen_value": "ORST"
+      },
+      "set": {
+        "school": "OKST"
+      }
     }
   ]
 }

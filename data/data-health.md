@@ -61,6 +61,6 @@ Logos: 150 team logos + 11 conference marks extracted. Team colors come from the
 | # | Status | Problem | Proposed fix |
 |---|---|---|---|
 | 25 | APPROVED (one player, left CLEV for KU) | Kawhi Fusco is a CLEV recruit (2031 cycle, so a 2032 freshman; CB, 3-star, GA) and a 2035 All-American CB for **KU**. One player who left CLEV for Kansas, or two players with the same name? | Owner to say. |
-| 26 | OPEN | 2023 baseline: Ollie Gordon III is listed at OKST (Walker Award) and ORST (All-Americans). | Treat as one OKST player; show the All-American school as OKST. |
+| 26 | APPROVED (F23) | 2023 baseline: Ollie Gordon III is listed at OKST (Walker Award) and ORST (All-Americans). | Treat as one OKST player; show the All-American school as OKST. |
 | 27 | OPEN | 2023-24 baseline: Graham Nicholson is listed at AFA (2023 Groza), UMD (2023 All-Americans) and BAMA (2024 All-Americans). | Treat as one player; show each school as entered. |
 | 28 | NOTE | Your Depth Chart footnotes mark you as **Coach of the Year in 2030 and 2031**, and record OC/DC hires and departures (2028-2036). | Shown on the CLEV coach and season pages. |

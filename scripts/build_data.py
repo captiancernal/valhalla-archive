@@ -487,6 +487,9 @@ def parse_all_americans(wb):
             if lab in ("Offense", "Defense", "ST"):
                 unit = {"ST": "Special Teams"}.get(lab, lab)
             player, pos, school = sh.v(c + 2, row), sh.v(c + 3, row), sh.v(c, row)
+            f23 = FIXES["F23-2023-gordon-all-american-school"]["match"]
+            if f"{CL(c)}{row}" == f23["cell"] and school == f23["seen_value"]:
+                school = FIXES["F23-2023-gordon-all-american-school"]["set"]["school"]
             if player and school:
                 out.append({"season": season, "unit": unit, "position": pos, "player": canon(player), "school": school,
                             "team": "First Team"})

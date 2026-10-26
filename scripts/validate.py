@@ -63,6 +63,10 @@ check("CLEV 2025 class stars 2/6/11 from list (F13)", [c25["stars"][k] for k in 
 c26 = next(c for c in classes if c["program"] == "CLEV" and c["cycle"] == 2026)
 check("CLEV 2026 stars not tracked (F14)", c26["stars"] is None)
 
+aa = load("all_americans")
+og = [a["school"] for a in aa if a["player"] == "Ollie Gordon III" and a["season"] == 2023]
+check("2023 Ollie Gordon III All-American at OKST (F23)", og == ["OKST"], og)
+
 # --- Internal consistency
 by = defaultdict(lambda: [0, 0])
 for g in games:
