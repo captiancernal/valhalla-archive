@@ -185,6 +185,20 @@
         "ignored": "Every block after the next season (2039+ at approval); bold and italic formatting.",
         "status_sources": "90+ comes from the ratings or the Graduates Ovr; drafted status comes from the Graduates sheet."
       }
+    },
+    {
+      "id": "F18-class-labels",
+      "approved": "2026-10-26",
+      "sheets": ["Coach Josh Dolan", "Graduates", "Transfers"],
+      "problem": "Class labels vary in punctuation and a few hold the wrong value.",
+      "rule": "normalize_class",
+      "set": {
+        "general": "Store year (FR/SO/JR/SR) plus redshirt true/false; display as 'SR (RS)'. Accept missing dash ('Dave Shelley SO (RS)'), missing bracket ('JR (RS'), stray spaces.",
+        "overrides": [
+          {"sheet": "Coach Josh Dolan", "season": 2028, "player": "Dorian Pringle", "seen_value": "ROLB", "class": "SR (RS)", "evidence": "2028 Graduates: SR (RS), ROLB, 84"},
+          {"sheet": "Coach Josh Dolan", "season": 2036, "player": "Vonn Ladd", "seen_value": "SR (SR)", "class": "SR (RS)", "evidence": "Same season tackle-leader cell and 2036 Graduates: SR (RS)"}
+        ]
+      }
     }
   ]
 }
