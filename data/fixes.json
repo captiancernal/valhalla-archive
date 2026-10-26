@@ -154,6 +154,14 @@
       "problem": "2026 recruiting block (columns Q-V) has an empty Stars column for all 17 recruits.",
       "rule": "mark_not_tracked",
       "set": "stars = null with display 'Not tracked' for the 2026 cycle; exclude the 2026 class from star-count totals. National rank, position and state still shown. Never estimate stars from rank."
+    },
+    {
+      "id": "F15-2025-transfer-class-not-recorded",
+      "approved": "2026-10-26",
+      "sheets": ["Transfers"],
+      "problem": "2025 transfer block (columns J-N) holds numbers (1, 50, 74, 80, 91, 158) in the Class column.",
+      "rule": "ignore_cells",
+      "set": "Hide those numbers; class = null with display 'Not recorded' for the six 2025 transfers."
     }
   ]
 }
