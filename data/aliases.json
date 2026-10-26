@@ -2,7 +2,8 @@
   "about": "Owner-approved canonical names. Each key is the canonical spelling; the list holds every variant seen in the tracker. Matching ignores case and extra spaces.",
   "approved": {
     "list_A": "2026-10-26",
-    "B1": "2026-10-26"
+    "B1": "2026-10-26",
+    "B2": "2026-10-26"
   },
   "players": {
     "Alan Rasheed": [
@@ -154,6 +155,9 @@
     "Kenny Tongues": [
       "Kenny Tonges",
       "Keenan Tonges"
+    ],
+    "Burt Oldenburg": [
+      "Bret Oldenburg"
     ]
   },
   "not_the_same_person": [
