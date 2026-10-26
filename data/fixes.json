@@ -171,6 +171,20 @@
       "rule": "override_value",
       "match": {"sheet": "Standings", "season": 2034, "conference": "MAC", "place": 2, "cell": "N37", "seen_value": "ECU"},
       "set": {"team": "EMU"}
+    },
+    {
+      "id": "F17-depth-chart-scope",
+      "approved": "2026-10-26",
+      "sheets": ["Depth Chart"],
+      "problem": "Ratings exist only 2024-32; 2038 block is an in-progress projected chart that still lists 4 players from the 2037 Graduates list; 2039+ blocks are copies of 2024; bold/italic markers are inconsistent.",
+      "rule": "scope",
+      "set": {
+        "ratings": "Parse 'Name - NN' ratings for 2024-2032.",
+        "unrated_years": "2033-2037 charts shown with names only.",
+        "projected_2038": "2038 block = Projected 2038 depth chart. Players also on the latest Graduates list get a 'departing' flag (at approval: Dom Iverson, Wade Luter, Simon Banks, Sammy Haddad).",
+        "ignored": "Every block after the next season (2039+ at approval); bold and italic formatting.",
+        "status_sources": "90+ comes from the ratings or the Graduates Ovr; drafted status comes from the Graduates sheet."
+      }
     }
   ]
 }
