@@ -1,0 +1,21 @@
+# Tracker copies stay on this computer (and in Google Drive), never in the public repo
+source/
+
+# Raw clips waiting to be compressed
+content/clips/incoming/
+
+# Secrets and local settings
+.env
+.env.*
+*.local
+.claude/settings.local.json
+
+# Tools and OS clutter
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
