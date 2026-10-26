@@ -27,7 +27,7 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 
 ## Milestone status
 - [x] M0 Setup Day: repo created and linked, folder layout made, Drive folders created, tracker copied to source/
-- [~] M1 Workbook inventory, logo extraction, data-health queue (one fix at a time). Inventory and logos done; queue in `data/data-health.md`, being resolved item by item.
+- [x] M1 Workbook inventory, logo extraction, data-health queue. All 21 items resolved: 20 fixes in `data/fixes.json` (F01-F22, F20/F21 live in `data/aliases.json`), 56 canonical player names + 3 coach names in `data/aliases.json`. Awaiting owner sign-off before M2.
 - [ ] M2 Clean data tables + build scripts
 - [ ] M3 Design system (palettes need owner approval)
 - [ ] M4 Program / season / game / player pages
@@ -42,6 +42,11 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 ## Decisions log (approved by the owner after the spec)
 - 2026-10-26: Project lives at `C:\Users\Owner\Documents\valhalla-archive` (not the OneDrive Desktop, to avoid sync clashes with Git).
 - 2026-10-26: `source/` is git-ignored. Tracker copies are never pushed to the public repo.
+- 2026-10-26: Source priority for games (F05): Playoff Tree decides playoff scores, champions and round names; Conference Champions decides other teams' title games; Schedule is used only for CLEV games.
+- 2026-10-26: Coach display names: Josh Dolan, Tim Slocombe, Joe Snyderwine.
+- 2026-10-26: Records Book = the tracker's Records sheet as entered + a separate CLEV "computed from the stats" bests list (F12).
+- 2026-10-26: Don't publish the Awards-sheet trophy photos (auction watermarks); design our own award marks.
+- 2026-10-26: Owner context for Split Decision color (use lightly, never as fact): the 2035 title-game loss (M-OH 73, CLEV 70) still stings ("sour grapes"); "funky stuff happened in-game".
 
 ## Workbook facts learned in M1 (see data/data-health.md for the full picture)
 - Python: run scripts as `py -P scripts/<name>.py` (openpyxl + pillow installed with `--user`; `-I` would hide them).

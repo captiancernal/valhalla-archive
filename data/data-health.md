@@ -34,7 +34,7 @@ Logos: 150 team logos + 11 conference marks extracted. Team colors come from the
 | 4 | APPROVED (F04) | 2032 receiving: Sam Fatafehi 13 catches for 2,219 yards (long 44, 170.7 per catch). Impossible. | Read as 219 yards (16.8 per catch). Or the owner gives the real number. |
 | 5 | APPROVED (F05) | Schedule rows for games CLEV wasn't in disagree with other sheets (2027 title game shows M-OH beating BAMA 0-0; Standings, AP and the bracket say BAMA won). | Owner: the Playoff Tree decides playoff scores and champions. Schedule is used only for CLEV games. |
 | 5a | APPROVED (F05) | Two CLEV playoff scores differ between Schedule and Playoff Tree: 2036 first round vs LSU (Schedule 37-27, Tree 37-3); 2037 national title vs OHIO (Schedule 56-35, Tree 56-39). | Under F05 the Tree wins: 37-3 and 56-39. Owner to confirm. |
-| 5b | NOTE | 2035 national title score is written "73*" for M-OH in the bracket. | Ask the owner what the asterisk means (overtime?). Until then, show the score without a note. |
+| 5b | APPROVED (F22) | 2035 national title score is written "73*" for M-OH in the bracket. | Owner: no meaning (in-game oddity). Show 73-70 with no note. |
 | 5c | NOTE | All 15 bracket champions (2023-2037) match the Standings sheet. Every other CLEV playoff score matches the Schedule. | None. |
 | 6 | APPROVED (F06) | Final scores are usually winner-first, but 2031 title game reads "34-35" (CLEV's score first, CLEV lost). | Store every game as CLEV score / opponent score using the W/L result. |
 | 7 | APPROVED (F07) | Result column says W/L in early years and a team name ("CLEV", "M-OH") from 2034 on. | Convert to W/L from CLEV's point of view. |

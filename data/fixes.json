@@ -4,50 +4,121 @@
     {
       "id": "F01-career-record-computed",
       "approved": "2026-10-26",
-      "sheets": ["Coach Josh Dolan", "Coach Tim Slocombe ", "Coach Joe Snyderwine"],
+      "sheets": [
+        "Coach Josh Dolan",
+        "Coach Tim Slocombe ",
+        "Coach Joe Snyderwine"
+      ],
       "problem": "Career Record and Career WP% cells are stale (CLEV 41-11, OHIO 46-21, M-OH 51-19).",
       "rule": "ignore_cells",
       "cells": {
-        "Coach Josh Dolan": ["E35", "F35", "G35"],
-        "Coach Tim Slocombe ": ["F35", "G35", "H35"],
-        "Coach Joe Snyderwine": ["E34", "G34", "H34"]
+        "Coach Josh Dolan": [
+          "E35",
+          "F35",
+          "G35"
+        ],
+        "Coach Tim Slocombe ": [
+          "F35",
+          "G35",
+          "H35"
+        ],
+        "Coach Joe Snyderwine": [
+          "E34",
+          "G34",
+          "H34"
+        ]
       },
       "replacement": "Career W, L and win % are computed by summing the season rows (2024 onward) for each program.",
-      "expected_at_approval": {"CLEV": "180-29", "OHIO": "175-34", "M-OH": "174-32"}
+      "expected_at_approval": {
+        "CLEV": "180-29",
+        "OHIO": "175-34",
+        "M-OH": "174-32"
+      }
     },
     {
       "id": "F02-2034-big12-title-game",
       "approved": "2026-10-26",
-      "sheets": ["Schedule"],
+      "sheets": [
+        "Schedule"
+      ],
       "problem": "2034 B12-CH row lists OHIO vs M-OH 57-42 (M-OH). Conference Champions and the coach sheet (15-2) show CLEV played M-OH.",
       "rule": "override_game",
-      "match": {"sheet": "Schedule", "season": 2034, "game": "B12-CH", "cell_team": "CJ18", "seen_value": "OHIO"},
-      "set": {"team": "CLEV", "opponent": "M-OH", "clev_score": 42, "opp_score": 57, "result": "L"},
-      "expected_at_approval": {"CLEV_2034_record": "15-2"}
+      "match": {
+        "sheet": "Schedule",
+        "season": 2034,
+        "game": "B12-CH",
+        "cell_team": "CJ18",
+        "seen_value": "OHIO"
+      },
+      "set": {
+        "team": "CLEV",
+        "opponent": "M-OH",
+        "clev_score": 42,
+        "opp_score": 57,
+        "result": "L"
+      },
+      "expected_at_approval": {
+        "CLEV_2034_record": "15-2"
+      }
     },
     {
       "id": "F03-2029-conference-labels-swapped",
       "approved": "2026-10-26",
-      "sheets": ["Conference Champions"],
+      "sheets": [
+        "Conference Champions"
+      ],
       "problem": "2029 table: 'B12' row holds BUFF vs MASS and 'MAC' row holds CLEV vs M-OH.",
       "rule": "relabel_conference",
-      "match": {"sheet": "Conference Champions", "season": 2029},
+      "match": {
+        "sheet": "Conference Champions",
+        "season": 2029
+      },
       "set": [
-        {"cell": "A64", "seen_value": "B12", "conference": "MAC", "game": "BUFF vs MASS 38-36, MASS"},
-        {"cell": "A65", "seen_value": "MAC", "conference": "B12", "game": "CLEV vs M-OH 34-28, M-OH"}
+        {
+          "cell": "A64",
+          "seen_value": "B12",
+          "conference": "MAC",
+          "game": "BUFF vs MASS 38-36, MASS"
+        },
+        {
+          "cell": "A65",
+          "seen_value": "MAC",
+          "conference": "B12",
+          "game": "CLEV vs M-OH 34-28, M-OH"
+        }
       ],
-      "expected_at_approval": {"2029_B12_champion": "M-OH", "2029_MAC_champion": "MASS"}
+      "expected_at_approval": {
+        "2029_B12_champion": "M-OH",
+        "2029_MAC_champion": "MASS"
+      }
     },
     {
       "id": "F04-2032-fatafehi-receiving-yards",
       "approved": "2026-10-26",
-      "sheets": ["2032 Stats"],
+      "sheets": [
+        "2032 Stats"
+      ],
       "problem": "Sam Fatafehi receiving: 13 catches for 2,219 yards with a 44-yard long (impossible).",
       "rule": "override_value",
-      "match": {"sheet": "2032 Stats", "table": "receiving", "player": "Sam Fatafehi", "cell": "D20", "seen_value": 2219},
-      "set": {"YARDS": 219},
-      "recompute": ["YPC", "YPG"],
-      "expected_at_approval": {"YPC": 16.8, "YPG": 15.6, "CLEV_2032_receiving_leader": "Dakota McNitt 1853"}
+      "match": {
+        "sheet": "2032 Stats",
+        "table": "receiving",
+        "player": "Sam Fatafehi",
+        "cell": "D20",
+        "seen_value": 2219
+      },
+      "set": {
+        "YARDS": 219
+      },
+      "recompute": [
+        "YPC",
+        "YPG"
+      ],
+      "expected_at_approval": {
+        "YPC": 16.8,
+        "YPG": 15.6,
+        "CLEV_2032_receiving_leader": "Dakota McNitt 1853"
+      }
     },
     {
       "id": "F05-source-of-truth-for-games",
@@ -62,17 +133,33 @@
         "schedule_rows_without_clev": "ignored"
       },
       "notes": "Playoff round names come from the bracket (first round / quarterfinal / semifinal / final), not the Schedule's RD 1/RD 2/RD 3 labels, which count CLEV's own games and skip byes.",
-      "expected_at_approval": {"2027_national_champion": "BAMA (31-17 over M-OH)"},
+      "expected_at_approval": {
+        "2027_national_champion": "BAMA (31-17 over M-OH)"
+      },
       "confirmed_conflicts": [
-        {"season": 2036, "game": "playoff first round vs LSU", "schedule_value": "37-27", "used": "37-3 (CLEV-LSU)", "confirmed": "2026-10-26"},
-        {"season": 2037, "game": "national title vs OHIO", "schedule_value": "56-35", "used": "56-39 (CLEV-OHIO)", "confirmed": "2026-10-26"}
+        {
+          "season": 2036,
+          "game": "playoff first round vs LSU",
+          "schedule_value": "37-27",
+          "used": "37-3 (CLEV-LSU)",
+          "confirmed": "2026-10-26"
+        },
+        {
+          "season": 2037,
+          "game": "national title vs OHIO",
+          "schedule_value": "56-35",
+          "used": "56-39 (CLEV-OHIO)",
+          "confirmed": "2026-10-26"
+        }
       ]
     },
     {
       "id": "F06-scores-clev-perspective",
       "approved": "2026-10-26",
       "batch": "F06-F11 approved together by the owner",
-      "sheets": ["Schedule"],
+      "sheets": [
+        "Schedule"
+      ],
       "problem": "Final Score is usually winner-first but sometimes CLEV-first (2031 title game '34-35').",
       "rule": "normalize_score",
       "set": "Parse both numbers; assign the larger to the winner given by the result column; store clev_score and opp_score. Strip stray spaces (e.g. ' 56-38 ')."
@@ -81,7 +168,9 @@
       "id": "F07-results-as-w-l",
       "approved": "2026-10-26",
       "batch": "F06-F11 approved together by the owner",
-      "sheets": ["Schedule"],
+      "sheets": [
+        "Schedule"
+      ],
       "problem": "Result column holds W/L in early seasons and the winning team's abbreviation later.",
       "rule": "normalize_result",
       "set": "W if the value is W or CLEV; L if it is L or any other team abbreviation."
@@ -90,7 +179,9 @@
       "id": "F08-drop-placeholder-games",
       "approved": "2026-10-26",
       "batch": "F06-F11 approved together by the owner",
-      "sheets": ["Schedule"],
+      "sheets": [
+        "Schedule"
+      ],
       "problem": "2024-26 B12-CH and NC rows hold N/A opponents and 0-0 scores.",
       "rule": "drop_rows",
       "set": "Skip any Schedule row whose opponent is N/A or whose score is 0-0 with result N/A."
@@ -99,7 +190,9 @@
       "id": "F09-season-from-tab-name",
       "approved": "2026-10-26",
       "batch": "F06-F11 approved together by the owner",
-      "sheets": ["2024 Stats ... 2037 Stats"],
+      "sheets": [
+        "2024 Stats ... 2037 Stats"
+      ],
       "problem": "Table titles name the wrong season in places (2026 tab says 2025, 2035 says 20235, 2037 says 2036, others blank).",
       "rule": "ignore_cells",
       "set": "The season of every stats row comes from the tab name 'YYYY Stats'. Table title cells are ignored."
@@ -108,7 +201,9 @@
       "id": "F10-error-cells-blank",
       "approved": "2026-10-26",
       "batch": "F06-F11 approved together by the owner",
-      "sheets": ["all"],
+      "sheets": [
+        "all"
+      ],
       "problem": "#DIV/0! and #REF! cells.",
       "rule": "error_to_blank",
       "set": "Treat any #DIV/0!, #REF!, #N/A, #VALUE! cell as blank. Recompute averages (YPC, YPG, YPA, COMP %, WP%) from their inputs when the inputs exist and the divisor is above zero."
@@ -117,7 +212,9 @@
       "id": "F11-text-to-numbers",
       "approved": "2026-10-26",
       "batch": "F06-F11 approved together by the owner",
-      "sheets": ["all"],
+      "sheets": [
+        "all"
+      ],
       "problem": "Numbers stored as text ('3,817', '1,085') and records as text ('(5-4)').",
       "rule": "parse_text",
       "set": "Strip commas and spaces and convert to numbers; parse '(W-L)' into conference wins and losses; parse ordinals ('5th', '9TH') into numbers while keeping the display form."
@@ -125,7 +222,10 @@
     {
       "id": "F12-records-official-plus-computed",
       "approved": "2026-10-26",
-      "sheets": ["RecordsHall of Fame", "2024 Stats ... 2037 Stats"],
+      "sheets": [
+        "RecordsHall of Fame",
+        "2024 Stats ... 2037 Stats"
+      ],
       "problem": "Records sheet has 21 records, newest 2029; several have since been beaten in the stats tabs.",
       "rule": "add_derived_table",
       "set": {
@@ -137,7 +237,9 @@
     {
       "id": "F13-recruiting-class-summaries",
       "approved": "2026-10-26",
-      "sheets": ["Recruiting"],
+      "sheets": [
+        "Recruiting"
+      ],
       "problem": "Summary rows for 2029-2031 are copies of the 2025 numbers; 2026-28 say 'did not track'; CLEV 2025 summary (2/8/13) differs from the recruit list (2/6/11).",
       "rule": "derive_and_restrict",
       "set": {
@@ -145,12 +247,18 @@
         "national_class_rank": "Shown for CLEV, M-OH and OHIO for 2024 and 2025 only (rows 41-43, columns C-H and K-P).",
         "ignored": "Summary blocks for 2029, 2030, 2031 (rows 44-46) and the 'did not track' cells."
       },
-      "expected_at_approval": {"CLEV_2025_stars_5_4_3": "2/6/11", "CLEV_2025_rank": "15th", "CLEV_2029_stars_5_4_3": "3/7/7"}
+      "expected_at_approval": {
+        "CLEV_2025_stars_5_4_3": "2/6/11",
+        "CLEV_2025_rank": "15th",
+        "CLEV_2029_stars_5_4_3": "3/7/7"
+      }
     },
     {
       "id": "F14-2026-recruit-stars-not-tracked",
       "approved": "2026-10-26",
-      "sheets": ["Recruiting"],
+      "sheets": [
+        "Recruiting"
+      ],
       "problem": "2026 recruiting block (columns Q-V) has an empty Stars column for all 17 recruits.",
       "rule": "mark_not_tracked",
       "set": "stars = null with display 'Not tracked' for the 2026 cycle; exclude the 2026 class from star-count totals. National rank, position and state still shown. Never estimate stars from rank."
@@ -158,7 +266,9 @@
     {
       "id": "F15-2025-transfer-class-not-recorded",
       "approved": "2026-10-26",
-      "sheets": ["Transfers"],
+      "sheets": [
+        "Transfers"
+      ],
       "problem": "2025 transfer block (columns J-N) holds numbers (1, 50, 74, 80, 91, 158) in the Class column.",
       "rule": "ignore_cells",
       "set": "Hide those numbers; class = null with display 'Not recorded' for the six 2025 transfers."
@@ -166,16 +276,29 @@
     {
       "id": "F16-2034-mac-standings-emu",
       "approved": "2026-10-26",
-      "sheets": ["Standings"],
+      "sheets": [
+        "Standings"
+      ],
       "problem": "2034 MAC #2 lists ECU (an AAC team also listed AAC #4). The 2034 MAC title game was EMU vs BUFF, and every other season's MAC title game matches Standings #1 and #2.",
       "rule": "override_value",
-      "match": {"sheet": "Standings", "season": 2034, "conference": "MAC", "place": 2, "cell": "N37", "seen_value": "ECU"},
-      "set": {"team": "EMU"}
+      "match": {
+        "sheet": "Standings",
+        "season": 2034,
+        "conference": "MAC",
+        "place": 2,
+        "cell": "N37",
+        "seen_value": "ECU"
+      },
+      "set": {
+        "team": "EMU"
+      }
     },
     {
       "id": "F17-depth-chart-scope",
       "approved": "2026-10-26",
-      "sheets": ["Depth Chart"],
+      "sheets": [
+        "Depth Chart"
+      ],
       "problem": "Ratings exist only 2024-32; 2038 block is an in-progress projected chart that still lists 4 players from the 2037 Graduates list; 2039+ blocks are copies of 2024; bold/italic markers are inconsistent.",
       "rule": "scope",
       "set": {
@@ -189,40 +312,116 @@
     {
       "id": "F18-class-labels",
       "approved": "2026-10-26",
-      "sheets": ["Coach Josh Dolan", "Graduates", "Transfers"],
+      "sheets": [
+        "Coach Josh Dolan",
+        "Graduates",
+        "Transfers"
+      ],
       "problem": "Class labels vary in punctuation and a few hold the wrong value.",
       "rule": "normalize_class",
       "set": {
         "general": "Store year (FR/SO/JR/SR) plus redshirt true/false; display as 'SR (RS)'. Accept missing dash ('Dave Shelley SO (RS)'), missing bracket ('JR (RS'), stray spaces.",
         "overrides": [
-          {"sheet": "Coach Josh Dolan", "season": 2028, "player": "Dorian Pringle", "seen_value": "ROLB", "class": "SR (RS)", "evidence": "2028 Graduates: SR (RS), ROLB, 84"},
-          {"sheet": "Coach Josh Dolan", "season": 2036, "player": "Vonn Ladd", "seen_value": "SR (SR)", "class": "SR (RS)", "evidence": "Same season tackle-leader cell and 2036 Graduates: SR (RS)"}
+          {
+            "sheet": "Coach Josh Dolan",
+            "season": 2028,
+            "player": "Dorian Pringle",
+            "seen_value": "ROLB",
+            "class": "SR (RS)",
+            "evidence": "2028 Graduates: SR (RS), ROLB, 84"
+          },
+          {
+            "sheet": "Coach Josh Dolan",
+            "season": 2036,
+            "player": "Vonn Ladd",
+            "seen_value": "SR (SR)",
+            "class": "SR (RS)",
+            "evidence": "Same season tackle-leader cell and 2036 Graduates: SR (RS)"
+          }
         ]
       }
     },
     {
       "id": "F19-position-families",
       "approved": "2026-10-26",
-      "sheets": ["all"],
+      "sheets": [
+        "all"
+      ],
       "problem": "Sheets use different position systems (LE/ROLB/FS vs EDGE/LB/S; HB vs RB).",
       "rule": "add_derived_field",
       "set": {
         "position": "Kept exactly as entered and shown on cards and depth charts.",
         "position_family": {
-          "QB": ["QB"],
-          "RB": ["HB", "RB", "FB"],
-          "WR": ["WR", "WR/ATH"],
-          "TE": ["TE", "WR/TE"],
-          "OL": ["LT", "LG", "C", "RG", "RT", "OT", "OG", "ATH/OL"],
-          "DL": ["LE", "RE", "DT", "DE", "EDGE"],
-          "LB": ["LOLB", "MLB", "ROLB", "OLB", "LB"],
-          "DB": ["CB", "FS", "SS", "S"],
-          "K": ["K"],
-          "P": ["P"],
-          "Other": ["KR", "ATH"]
+          "QB": [
+            "QB"
+          ],
+          "RB": [
+            "HB",
+            "RB",
+            "FB"
+          ],
+          "WR": [
+            "WR",
+            "WR/ATH"
+          ],
+          "TE": [
+            "TE",
+            "WR/TE"
+          ],
+          "OL": [
+            "LT",
+            "LG",
+            "C",
+            "RG",
+            "RT",
+            "OT",
+            "OG",
+            "ATH/OL"
+          ],
+          "DL": [
+            "LE",
+            "RE",
+            "DT",
+            "DE",
+            "EDGE"
+          ],
+          "LB": [
+            "LOLB",
+            "MLB",
+            "ROLB",
+            "OLB",
+            "LB"
+          ],
+          "DB": [
+            "CB",
+            "FS",
+            "SS",
+            "S"
+          ],
+          "K": [
+            "K"
+          ],
+          "P": [
+            "P"
+          ],
+          "Other": [
+            "KR",
+            "ATH"
+          ]
         },
         "used_for": "Search filters, leaderboards and the games."
       }
+    },
+    {
+      "id": "F22-2035-title-score-asterisk",
+      "approved": "2026-10-26",
+      "sheets": [
+        "CFB Playoff Tree"
+      ],
+      "problem": "2035 national title score written '73*' for M-OH.",
+      "rule": "strip_marker",
+      "set": "Read as 73. Show M-OH 73, CLEV 70 with no footnote or OT label.",
+      "owner_words": "the asterisk was due to some funky stuff happening in-game, but besides it being sour grapes for me, it has no other meaning"
     }
   ]
 }
