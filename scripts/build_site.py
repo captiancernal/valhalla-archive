@@ -82,7 +82,7 @@ class Site:
         T = {n: load(n) for n in ["site_control", "programs", "seasons", "games", "playoffs", "conference_championships",
                                    "national_championships", "standings", "ap_top25", "player_seasons", "players",
                                    "recruits", "recruiting_classes", "transfers", "departures", "depth_chart", "awards",
-                                   "all_americans", "records_official", "records_computed", "teams", "coaches"]}
+                                   "all_americans", "records_official", "records_computed", "teams", "coaches", "hall_of_fame"]}
         self.T = T
         self.site = T["site_control"]
         self.build_id = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
@@ -107,7 +107,12 @@ class Site:
         self.nav = [{"key": "home", "label": "Home", "href": "", "footer": True}, {"sep": True}]
         for p in self.programs:
             self.nav.append({"key": p["id"], "label": p["short"], "href": p["href"], "logo": p["logo"]})
-        self.nav += [{"sep": True}, {"key": "players", "label": "Players", "href": "players/", "footer": True}]
+        self.nav += [{"sep": True},
+                     {"key": "players", "label": "Players", "href": "players/", "footer": True},
+                     {"key": "almanac", "label": "Almanac", "href": "almanac/", "footer": True},
+                     {"key": "records", "label": "Records", "href": "records/", "footer": True},
+                     {"key": "rivalry", "label": "Rivalry", "href": "rivalry/", "footer": True},
+                     {"key": "hof", "label": "Hall of Fame", "href": "hall-of-fame/", "footer": True}]
 
         cur = self.site["current_season"]
         champ = next((n for n in T["national_championships"] if n["season"] == cur), None)
@@ -491,6 +496,193 @@ class Site:
         return Markup(f'<svg class="spark" viewBox="0 -4 {w} {h + 14}" role="img" aria-label="Overall rating by season: {label}">'
                       f'<path d="{path}"/>{dots}</svg>')
 
+
+    # ---------------------------------------------------------------- league almanac
+    def build_almanac(self):
+        T = self.T
+        natl = sorted(T["national_championships"], key=lambda n: -n["season"])
+        tally = Counter(n["champion"] for n in natl)
+        seasons = sorted({n["season"] for n in natl}, reverse=True)
+        confs = ["ACC", "Big 12", "Big Ten", "SEC", "Pac-12", "AAC", "C-USA", "MAC", "Mountain West", "Sun Belt"]
+        ccg = {(c["season"], c["conference"]): c for c in T["conference_championships"]}
+        matrix = [{"season": y, "cells": [ccg.get((y, c)) for c in confs]} for y in seasons if any(ccg.get((y, c)) for c in confs)]
+        self.render("almanac.html", "almanac/", active_nav="almanac", natl=natl, tally=tally.most_common(),
+                    seasons=seasons, confs=confs, matrix=matrix,
+                    page_title="League Almanac · The Valhalla Archive",
+                    description="National champions, playoff brackets, conference champions, AP polls, awards and All-Americans for every season of the dynasty.")
+        awards = defaultdict(list)
+        for a in T["awards"]:
+            awards[a["award"]].append(a)
+        order = ["Heisman", "Maxwell", "Camp", "Bednarik", "Nagurski", "O'Brien", "Walker", "Biletnikoff", "Mackey",
+                 "Outland", "Rimington", "Lombardi", "Butkus", "Thorpe", "Groza", "Guy"]
+        award_list = [{"name": k, "note": awards[k][0]["award_note"], "rows": sorted(awards[k], key=lambda a: -a["season"]),
+                       "by_school": Counter(a["school"] for a in awards[k]).most_common(3)} for k in order if k in awards]
+        school_tally = Counter(a["school"] for a in T["awards"] if a["season"] >= 2024)
+        self.render("almanac_awards.html", "almanac/awards/", active_nav="almanac", awards=award_list,
+                    school_tally=school_tally.most_common(10),
+                    page_title="Awards by year · League Almanac · The Valhalla Archive",
+                    description="Every national award winner in the dynasty, from the Heisman to the Ray Guy.")
+        rounds = [("first_round", "First Round"), ("quarterfinal", "Quarterfinals"), ("semifinal", "Semifinals"), ("final", "National Championship")]
+        std_order = ["Big 12", "ACC", "Big Ten", "SEC", "Pac-12", "AAC", "C-USA", "Independents", "MAC", "Mountain West", "Sun Belt"]
+        for i, y in enumerate(seasons):
+            games = [g for g in T["playoffs"] if g["season"] == y]
+            bracket = [{"key": k, "label": l, "games": [g for g in games if g["round"] == k]} for k, l in rounds]
+            bracket = [r for r in bracket if r["games"]]
+            std = defaultdict(list)
+            for x in T["standings"]:
+                if x["season"] == y:
+                    std[x["conference"]].append(x)
+            aa = [a for a in T["all_americans"] if a["season"] == y]
+            self.render("almanac_year.html", f"almanac/{y}/", active_nav="almanac", y=y,
+                        natl=next((n for n in natl if n["season"] == y), None), bracket=bracket,
+                        ccg=sorted([c for c in T["conference_championships"] if c["season"] == y], key=lambda c: confs.index(c["conference"]) if c["conference"] in confs else 99),
+                        standings=[(c, sorted(std[c], key=lambda x: x["place"])) for c in std_order if std.get(c)],
+                        ap=[a for a in T["ap_top25"] if a["season"] == y],
+                        awards=sorted([a for a in T["awards"] if a["season"] == y], key=lambda a: order.index(a["award"]) if a["award"] in order else 99),
+                        aa_units=[(u, [a for a in aa if a["unit"] == u]) for u in ("Offense", "Defense", "Special Teams") if any(a["unit"] == u for a in aa)],
+                        prev=seasons[i + 1] if i + 1 < len(seasons) else None, nxt=seasons[i - 1] if i > 0 else None,
+                        page_title=f"{y} season · League Almanac · The Valhalla Archive",
+                        description=f"The {y} college football season: national champion, playoff bracket, conference champions, final AP Top 25, award winners and All-Americans.")
+
+    # ---------------------------------------------------------------- records book
+    def build_records(self):
+        T = self.T
+        off = defaultdict(lambda: defaultdict(list))
+        for r in T["records_official"]:
+            off[r["magnitude"]][r["duration"]].append(r)
+        official = [(m, sorted(off[m].items(), key=lambda kv: ["Game", "Season", "Career"].index(kv[0]) if kv[0] in ["Game", "Season", "Career"] else 9))
+                    for m in ["NCAA", "Big 12", "Cleveland State"] if m in off]
+        seasons = T["seasons"]
+
+        def ranked(rows, keyfn):
+            keys = [keyfn(r) for r in rows]
+            for r, k in zip(rows, keys):
+                n = 1 + sum(1 for o in keys if o > k)
+                r["rank"] = f"T-{n}" if keys.count(k) > 1 else str(n)
+            return rows
+
+        def top(label, unit, fn, n=5, key=None, disp=None):
+            key = key or fn
+            rows = sorted((s for s in seasons if fn(s) is not None), key=lambda s: key(s), reverse=True)[:n]
+            out = [{"program": s["program"], "season": s["season"], "value": disp(s) if disp else fn(s), "_k": key(s)} for s in rows]
+            ranked(out, lambda r: r["_k"])
+            return {"label": label, "unit": unit, "rows": out}
+        team_bests = [
+            top("Best record", "", lambda s: s["w"], key=lambda s: (s["w"], -s["l"]), disp=lambda s: f"{s['w']}-{s['l']}"),
+            top("Points per game", "", lambda s: s["team"].get("ppg")),
+            top("Team passing yards", "", lambda s: s["team"].get("pass_yds")),
+            top("Team rushing yards", "", lambda s: s["team"].get("rush_yds")),
+        ]
+        leader_bests = []
+        for cat in LEADER_LABELS:
+            rows = sorted(((s, s["leaders"][cat]) for s in seasons if cat in s["leaders"] and s["leaders"][cat]["value"] is not None),
+                          key=lambda x: -x[1]["value"])[:5]
+            lrows = [{"program": s["program"], "season": s["season"], "player": e["player"], "value": e["value"]} for s, e in rows]
+            ranked(lrows, lambda r: r["value"])
+            leader_bests.append({"label": f"{LEADER_LABELS[cat]}", "unit": LEADER_UNITS[cat], "rows": lrows})
+        self.render("records_book.html", "records/", active_nav="records", official=official, computed=T["records_computed"],
+                    team_bests=team_bests, leader_bests=leader_bests,
+                    page_title="Records Book · The Valhalla Archive",
+                    description="Official NCAA, Big 12 and Cleveland State records, plus team and individual bests across Cleveland State, Ohio and Miami (OH).")
+
+    # ---------------------------------------------------------------- rivalry hub
+    def build_rivalry(self):
+        T = self.T
+        pids = PROGRAMS
+        meetings = defaultdict(list)
+        for g in T["games"]:
+            if g["opponent"] in ("OHIO", "M-OH"):
+                meetings[("CLEV", g["opponent"])].append({"season": g["season"], "name": g["name"] or f"Week {g['week']}", "id": g["id"],
+                                                          "winner": "CLEV" if g["result"] == "W" else g["opponent"],
+                                                          "score": f"{max(g['clev_score'], g['opp_score'])}-{min(g['clev_score'], g['opp_score'])}"})
+        for x in T["playoffs"]:
+            if {x["team_a"], x["team_b"]} == {"OHIO", "M-OH"}:
+                meetings[("OHIO", "M-OH")].append({"season": x["season"], "name": "CFP " + x["round_name"] if x["round"] != "final" else "National Championship",
+                                                   "id": None, "winner": x["winner"], "score": f"{max(x['score_a'], x['score_b'])}-{min(x['score_a'], x['score_b'])}"})
+        for c in T["conference_championships"]:
+            if {c["champion"], c["runner_up"]} == {"OHIO", "M-OH"}:
+                meetings[("OHIO", "M-OH")].append({"season": c["season"], "name": "Big 12 Championship", "id": None, "winner": c["champion"],
+                                                   "score": f"{c['champion_score']}-{c['runner_up_score']}"})
+        series = []
+        for (a, b), ms in meetings.items():
+            ms.sort(key=lambda m: -m["season"])
+            wa = sum(1 for m in ms if m["winner"] == a)
+            streak_team, streak = None, 0
+            for m in ms:
+                if streak_team in (None, m["winner"]):
+                    streak_team, streak = m["winner"], streak + 1
+                else:
+                    break
+            series.append({"a": a, "b": b, "games": ms, "wa": wa, "wb": len(ms) - wa, "streak_team": streak_team,
+                           "streak": streak, "complete": a == "CLEV"})
+        series.sort(key=lambda x: (not x["complete"], x["b"]))
+
+        tallies = {}
+        for pid in pids:
+            p = self.prog[pid]
+            ss = [x for x in T["seasons"] if x["program"] == pid]
+            po = [x for x in T["playoffs"] if pid in (x["team_a"], x["team_b"])]
+            h2h_w = sum(1 for ser in series for m in ser["games"] if pid in (ser["a"], ser["b"]) and m["winner"] == pid)
+            h2h_g = sum(len(ser["games"]) for ser in series if pid in (ser["a"], ser["b"]))
+            tallies[pid] = {
+                "win_pct": p["career"]["win_pct"], "record": f"{p['career']['w']}-{p['career']['l']}",
+                "natl": len(p["national_titles"]), "natl_years": p["national_titles"], "b12": len(p["big12_titles"]),
+                "b12_years": p["big12_titles"], "playoff_wins": sum(1 for x in po if x["winner"] == pid),
+                "playoff_apps": len(p["playoff_appearances"]),
+                "title_games": len([n for n in T["national_championships"] if pid in (n["champion"], n["runner_up"]) and n["season"] >= 2024]),
+                "h2h_pct": round(h2h_w / h2h_g, 3) if h2h_g else 0, "h2h": f"{h2h_w}-{h2h_g - h2h_w}",
+                "awards": sum(1 for a in T["awards"] if a["school"] == pid),
+                "heismans": sum(1 for a in T["awards"] if a["school"] == pid and a["award"] == "Heisman"),
+                "aas": sum(1 for a in T["all_americans"] if a["school"] == pid),
+                "top10": sum(1 for x in ss if x["ap_final_rank"] and x["ap_final_rank"] <= 10),
+                "unbeaten": [x["season"] for x in ss if x["l"] == 0],
+            }
+        cup_cats = [("Career winning percentage", lambda t: t["win_pct"], lambda t: f"{t['win_pct']:.3f}".lstrip("0") + f" ({t['record']})"),
+                    ("National titles", lambda t: t["natl"], lambda t: str(t["natl"])),
+                    ("Big 12 titles", lambda t: t["b12"], lambda t: str(t["b12"])),
+                    ("Playoff wins", lambda t: t["playoff_wins"], lambda t: str(t["playoff_wins"])),
+                    ("Head-to-head vs the other two", lambda t: t["h2h_pct"], lambda t: t["h2h"]),
+                    ("National award winners", lambda t: t["awards"], lambda t: str(t["awards"])),
+                    ("All-Americans", lambda t: t["aas"], lambda t: str(t["aas"])),
+                    ("Final AP top-10 finishes", lambda t: t["top10"], lambda t: str(t["top10"]))]
+        cup_rows, totals = [], Counter()
+        for label, val, disp in cup_cats:
+            vals = {pid: val(tallies[pid]) for pid in pids}
+            row = []
+            for pid in pids:
+                pts = 3 - sum(1 for o in pids if vals[o] > vals[pid])
+                totals[pid] += pts
+                row.append({"pid": pid, "disp": disp(tallies[pid]), "pts": pts, "best": vals[pid] == max(vals.values())})
+            cup_rows.append({"label": label, "cells": row})
+        standings = sorted(pids, key=lambda pid: -totals[pid])
+
+        def finish_key(x):
+            po = x.get("playoff")
+            rnd = {"First Round": 1, "Quarterfinal": 2, "Semifinal": 3, "National Championship": 4}.get(po["exit_round"], 0) if po else 0
+            return (x["national_champion"], x["national_runner_up"], rnd, -(x["ap_final_rank"] or 99), x["w"])
+        years = []
+        for y in sorted({x["season"] for x in T["seasons"]}, reverse=True):
+            row = [self.season(pid, y) for pid in pids]
+            best = max(row, key=finish_key)
+            years.append({"season": y, "cells": [{"pid": x["program"], "s": x, "best": x is best,
+                                                  "text": "National Champions" if x["national_champion"] else self.postseason_text(x)} for x in row]})
+        crowns = Counter(c["pid"] for yr in years for c in yr["cells"] if c["best"])
+        self.render("rivalry.html", "rivalry/", active_nav="rivalry", series=series, tallies=tallies, pids=pids,
+                    cup_rows=cup_rows, totals=totals, standings=standings, years=years, crowns=crowns,
+                    page_title="Rivalry Hub · The Valhalla Archive",
+                    description="Josh Dolan vs Tim Slocombe vs Joe Snyderwine: head-to-head results, title counts and the Coaches' Cup.")
+
+    # ---------------------------------------------------------------- hall of fame
+    def build_hof(self):
+        inducted = [dict(h, p=self.players[h["id"]]) for h in self.T["hall_of_fame"] if h["status"] == "inducted"]
+        inducted.sort(key=lambda h: (h["class_of"] or 0, h["left_after"] or 0))
+        classes = defaultdict(list)
+        for h in inducted:
+            classes[h["class_of"]].append(h)
+        self.render("hall_of_fame.html", "hall-of-fame/", active_nav="hof", classes=sorted(classes.items(), key=lambda kv: -kv[0]),
+                    count=len(inducted), page_title="Hall of Fame · The Valhalla Archive",
+                    description=f"The Ring of Honor: {len(inducted)} inductees, the best of the Valhalla Archive.")
+
     # ---------------------------------------------------------------- run
     def build(self):
         if os.path.isdir(OUT):
@@ -505,6 +697,10 @@ class Site:
             self.build_program(p)
         self.build_games()
         self.build_players()
+        self.build_almanac()
+        self.build_records()
+        self.build_rivalry()
+        self.build_hof()
         print(f"Built {self.pages} pages into _site/ (base path {BASE})")
 
 

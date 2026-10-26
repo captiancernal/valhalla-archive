@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <div class="eyebrow">The Archive</div>
+    <h1>Records Book</h1>
+    <p>The official records as entered in the tracker, plus bests calculated from the season stats and the three coaches' season sheets.</p>
+  </div>
+</section>
+<div class="wrap">
+  <nav class="chips" aria-label="Sections"><a href="#official">Official records</a><a href="#team">Team-season bests</a><a href="#leaders">Individual season bests</a><a href="#clev">Cleveland State season &amp; career</a></nav>
+
+  <h2 class="section" id="official">Official records</h2>
+  <p class="note">NCAA, Big 12 and Cleveland State records exactly as the tracker lists them.</p>
+  {% for mag, groups in official %}
+    <h3 class="sub-h">{{ mag }}</h3>
+    <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Type</th><th scope="col">Record</th><th scope="col" class="r">Mark</th><th scope="col">Player</th><th scope="col">Set</th></tr></thead><tbody>
+    {% for dur, rows in groups %}{% for r in rows %}<tr><td>{{ dur }}</td><td>{{ r.type }}</td><td class="r"><b>{{ fmt(r.value) }}</b></td><td>{{ plink(r.player) }}</td><td>{{ r.year_set }}</td></tr>{% endfor %}{% endfor %}
+    </tbody></table></div>
+  {% endfor %}
+
+  <h2 class="section" id="team">Team-season bests <span class="muted" style="font:500 15px var(--font-ui)">· CLEV, OHIO and M-OH</span></h2>
+  <div class="leader-tables">
+  {% for b in team_bests %}
+    <section class="lt"><h3>{{ b.label }}</h3>
+      <div class="table-wrap"><table class="data"><tbody>
+      {% for r in b.rows %}<tr{% if r.rank in ['1', 'T-1'] %} class="hl"{% endif %}><td>{{ r.rank }}</td><td>{{ team(r.program) }}</td><td><a href="{{ season_href(r.program, r.season) }}">{{ r.season }}</a></td><td class="r"><b>{{ fmt(r.value) }}</b></td></tr>{% endfor %}
+      </tbody></table></div>
+    </section>
+  {% endfor %}
+  </div>
+
+  <h2 class="section" id="leaders">Individual season bests <span class="muted" style="font:500 15px var(--font-ui)">· from each team's season leaders</span></h2>
+  <div class="leader-tables">
+  {% for b in leader_bests %}
+    <section class="lt"><h3>{{ b.label }}</h3>
+      <div class="table-wrap"><table class="data"><tbody>
+      {% for r in b.rows %}<tr{% if r.rank in ['1', 'T-1'] %} class="hl"{% endif %}><td>{{ r.rank }}</td><td>{{ plink(r.player) }}<br><span class="muted">{{ team(r.program, logo=False, link=False) }} · {{ r.season }}</span></td><td class="r"><b>{{ fmt(r.value) }}</b> {{ b.unit }}</td></tr>{% endfor %}
+      </tbody></table></div>
+    </section>
+  {% endfor %}
+  </div>
+  <p class="note">Ohio and Miami (OH) only track their team leaders, so these lists compare each program's top player in each category.</p>
+
+  <h2 class="section" id="clev">Cleveland State season &amp; career bests</h2>
+  <p class="note">Calculated from the Cleveland State season stats, 2024 onward. These include marks set after the Records sheet was last updated.</p>
+  <div class="leader-tables">
+  {% for r in computed %}
+    <section class="lt"><h3>{{ r.label }} <span class="muted">· {{ r.scope }}</span></h3>
+      <div class="table-wrap"><table class="data"><tbody>
+      {% for x in r.leaders[:5] %}<tr{% if loop.first %} class="hl"{% endif %}><td>{{ loop.index }}</td><td>{{ plink(x.player) }}</td><td>{% if r.scope == 'season' %}{{ x.season }}{% else %}{{ x.first }}{% if x.last != x.first %}-{{ x.last }}{% endif %}{% endif %}</td><td class="r"><b>{{ fmt(x.value) }}</b></td></tr>{% endfor %}
+      </tbody></table></div>
+    </section>
+  {% endfor %}
+  </div>
+</div>
+{% endblock %}

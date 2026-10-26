@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <div class="eyebrow">The Archive</div>
+    <h1>Rivalry Hub</h1>
+    <p>Three coaches, one conference, fourteen seasons. Who's really running the Big 12?</p>
+  </div>
+</section>
+<div class="wrap">
+  <div class="coach-cards">
+  {% for pid in pids %}{% set p = programs|selectattr('id', 'equalto', pid)|first %}{% set t = tallies[pid] %}
+    <a class="coach-card" data-program="{{ pid }}" href="{{ base }}{{ p.href }}">
+      <span class="cc-band"><img src="{{ base }}{{ p.logo }}" alt=""><span><span class="cc-coach">Coach {{ p.coach }}</span><span class="cc-name">{{ p.nickname }}</span></span></span>
+      <span class="cc-body">
+        <span><b>{{ t.record }}</b> overall</span>
+        <span><b>{{ t.natl }}</b> national {{ 'title' if t.natl == 1 else 'titles' }}{% if t.natl_years %} <span class="muted">({{ year_ranges(t.natl_years) }})</span>{% endif %}</span>
+        <span><b>{{ t.b12 }}</b> Big 12 titles</span>
+        <span><b>{{ t.title_games }}</b> title-game appearances</span>
+        {% if t.unbeaten %}<span><b>Unbeaten:</b> {{ t.unbeaten|join(', ') }}</span>{% endif %}
+      </span>
+    </a>
+  {% endfor %}
+  </div>
+
+  <h2 class="section">The Coaches' Cup</h2>
+  <p class="note">Eight categories. Each coach gets 3 points for first, 2 for second and 1 for third (ties share the higher score). Most points holds the Cup.</p>
+  <div class="cup-standings">
+  {% for pid in standings %}{% set p = programs|selectattr('id', 'equalto', pid)|first %}
+    <div class="cup-place{% if loop.first %} holder{% endif %}" data-program="{{ pid }}"><span class="cp-rank">{{ loop.index }}</span><img src="{{ base }}{{ p.logo }}" alt=""><span class="cp-name">Coach {{ p.coach }}</span><span class="cp-pts">{{ totals[pid] }} pts</span>{% if loop.first %}<span class="pill gold">Cup holder</span>{% endif %}</div>
+  {% endfor %}
+  </div>
+  <div class="table-wrap" style="margin-top:14px"><table class="data cup"><thead><tr><th scope="col">Category</th>{% for pid in pids %}<th scope="col" class="r">{{ (programs|selectattr('id', 'equalto', pid)|first).short }}</th>{% endfor %}</tr></thead><tbody>
+  {% for row in cup_rows %}<tr><td>{{ row.label }}</td>{% for c in row.cells %}<td class="r{% if c.best %} best{% endif %}">{{ c.disp }} <span class="pts">+{{ c.pts }}</span></td>{% endfor %}</tr>{% endfor %}
+  <tr class="total"><th scope="row">Total</th>{% for pid in pids %}<td class="r">{{ totals[pid] }}</td>{% endfor %}</tr>
+  </tbody></table></div>
+
+  <h2 class="section">Head to head</h2>
+  <div class="series-grid">
+  {% for s in series %}
+    <section class="series">
+      <div class="series-head">
+        <span class="sh-team">{{ team(s.a) }}<b>{{ s.wa }}</b></span>
+        <span class="vs">vs</span>
+        <span class="sh-team"><b>{{ s.wb }}</b>{{ team(s.b) }}</span>
+      </div>
+      <p class="muted series-note">{% if s.streak > 1 %}{{ (programs|selectattr('id', 'equalto', s.streak_team)|first).short }} has won the last {{ s.streak }}.{% endif %}{% if not s.complete %} Only playoff and Big 12 title-game meetings are tracked for this matchup.{% endif %}</p>
+      <div class="table-wrap"><table class="data"><tbody>
+      {% for m in s.games %}<tr><th scope="row">{{ m.season }}</th><td>{% if m.id %}<a href="{{ game_href(m.id) }}">{{ m.name }}</a>{% else %}{{ m.name }}{% endif %}</td><td>{{ team(m.winner, link=False) }}</td><td class="r">{{ m.score }}</td></tr>{% endfor %}
+      </tbody></table></div>
+    </section>
+  {% endfor %}
+  </div>
+
+  <h2 class="section">Season by season <span class="muted" style="font:500 15px var(--font-ui)">· best finish highlighted</span></h2>
+  <p class="note">Best finish: national title, then title-game appearance, then deepest playoff run, then final AP rank. Seasons won: {% for pid in pids %}{{ (programs|selectattr('id', 'equalto', pid)|first).short }} {{ crowns[pid] }}{% if not loop.last %} · {% endif %}{% endfor %}.</p>
+  <div class="table-wrap"><table class="data yby"><thead><tr><th scope="col">Season</th>{% for pid in pids %}<th scope="col">{{ (programs|selectattr('id', 'equalto', pid)|first).short }}</th>{% endfor %}</tr></thead><tbody>
+  {% for y in years %}<tr><th scope="row"><a href="{{ base }}almanac/{{ y.season }}/">{{ y.season }}</a></th>{% for c in y.cells %}<td class="{% if c.best %}best{% endif %}" data-program="{{ c.pid }}"><a href="{{ season_href(c.pid, y.season) }}"><b>{{ c.s.w }}-{{ c.s.l }}</b></a> <span class="muted">{{ c.text }}</span></td>{% endfor %}</tr>{% endfor %}
+  </tbody></table></div>
+</div>
+{% endblock %}

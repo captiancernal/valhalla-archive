@@ -1,5 +1,5 @@
 {
- "built": "2026-10-26T19:35:16",
+ "built": "2026-10-26T19:37:42",
  "source_file": "2026-10-26 CSU Vikings Tracker.xlsx",
  "source_sha256": "d1ecf275043cf4ddc57830e1ca329f262a715d697dc00c1e34ead8d6ff30bf8f",
  "fixes_applied": [
@@ -48,6 +48,7 @@
   "records_official": 21,
   "records_computed": 18,
   "teams": 152,
+  "hall_of_fame": 6,
   "clips": 0,
   "columns": 0
  }

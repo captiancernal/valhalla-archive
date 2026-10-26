@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <div class="eyebrow"><a href="{{ base }}almanac/" style="color:inherit">League Almanac</a></div>
+    <h1>The {{ y }} season</h1>
+    {% if natl %}<p class="champ-line">{{ team(natl.champion) }} <span>won the national title over</span> {{ team(natl.runner_up) }}, {{ natl.score }}</p>{% endif %}
+  </div>
+</section>
+<div class="wrap">
+  <nav class="pager" aria-label="Seasons">
+    {% if prev %}<a href="{{ base }}almanac/{{ prev }}/">← {{ prev }}</a>{% else %}<span></span>{% endif %}
+    <a href="{{ base }}almanac/">All seasons</a>
+    {% if nxt %}<a href="{{ base }}almanac/{{ nxt }}/">{{ nxt }} →</a>{% else %}<span></span>{% endif %}
+  </nav>
+
+  {% if bracket %}
+  <h2 class="section">College Football Playoff</h2>
+  <div class="bracket" style="--rounds: {{ bracket|length }}">
+    {% for r in bracket %}
+    <section class="round"><h3>{{ r.label }}</h3>
+      {% for g in r.games %}
+      <div class="bgame{% if r.key == 'final' %} final{% endif %}">
+        {% for side in [('a'), ('b')] %}{% set t = g['team_' ~ side] %}{% set sc = g['score_' ~ side] %}
+        <div class="bteam{% if g.winner == t %} won{% endif %}">{{ team(t) }}<b>{{ sc if sc is not none else '' }}</b></div>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </section>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <div class="two-col">
+    <section>
+      <h2 class="section">Final AP Top 25</h2>
+      <ol class="poll">{% for a in ap %}<li class="{% if a.team in ['CLEV', 'OHIO', 'M-OH'] %}ours{% endif %}"><span class="rk">{{ a.rank }}</span>{{ team(a.team) }}</li>{% endfor %}</ol>
+    </section>
+    <section>
+      {% if ccg %}
+      <h2 class="section">Conference champions</h2>
+      <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Conference</th><th scope="col">Champion</th><th scope="col">Title game</th></tr></thead><tbody>
+      {% for c in ccg %}<tr><td>{{ c.conference }}</td><td><b>{{ team(c.champion) }}</b></td><td class="nowrap">def. {{ team(c.runner_up, logo=False) }} {{ c.champion_score }}-{{ c.runner_up_score }}</td></tr>{% endfor %}
+      </tbody></table></div>
+      {% endif %}
+      {% if awards %}
+      <h2 class="section">Award winners</h2>
+      <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Award</th><th scope="col">Winner</th><th scope="col">School</th></tr></thead><tbody>
+      {% for a in awards %}<tr><td><b>{{ a.award }}</b></td><td>{{ plink(a.player) }}</td><td>{{ team(a.school) }}</td></tr>{% endfor %}
+      </tbody></table></div>
+      {% endif %}
+    </section>
+  </div>
+
+  {% if standings %}
+  <h2 class="section">Final conference standings <span class="muted" style="font:500 15px var(--font-ui)">· top four</span></h2>
+  <div class="std-grid">
+  {% for conf, rows in standings %}
+    <section class="std"><h3>{{ conf }}</h3><ol>{% for r in rows %}<li>{{ team(r.team) }}</li>{% endfor %}</ol></section>
+  {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if aa_units %}
+  <h2 class="section">All-Americans <span class="muted" style="font:500 15px var(--font-ui)">· first team</span></h2>
+  <div class="std-grid aa-grid">
+  {% for unit, rows in aa_units %}
+    <section class="std"><h3>{{ unit }}</h3><ul class="aa-list">{% for a in rows %}<li><span class="pos">{{ a.position }}</span>{{ plink(a.player) }} <span class="muted">{{ a.school }}</span></li>{% endfor %}</ul></section>
+  {% endfor %}
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

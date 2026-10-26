@@ -995,6 +995,22 @@ def build(path):
     for p in multi:
         note(f"Player listed with more than one school (check it's one person): {p['name']} {p['teams']}")
 
+    # Hall of Fame eligibility (spec section 6). Decisions live in data/hof-decisions.json.
+    hof_dec = load_json("hof-decisions.json")["decisions"]
+    hof = []
+    for p in players.values():
+        d = p.get("departure")
+        left = d is not None or bool(p.get("career_note") and "left" in p["career_note"].lower())
+        ovr = (d or {}).get("overall") or 0
+        if left and ovr >= 90 and p["awards"] and p["all_american"]:
+            dec = hof_dec.get(p["name"])
+            hof.append({"player": p["name"], "id": p["id"], "program": p["program"], "left_after": d["season"] if d else None,
+                        "overall": ovr, "awards": len(p["awards"]), "all_american": len(p["all_american"]),
+                        "status": "inducted" if dec and dec.get("inducted") else ("declined" if dec else "pending"),
+                        "class_of": dec.get("class_of") if dec else None})
+    hof.sort(key=lambda h: (h["left_after"] or 0, h["player"]))
+    note(f"Hall of Fame: {len(hof)} eligible, {sum(1 for h in hof if h['status'] == 'pending')} awaiting a vote")
+
     # Team table
     teams = []
     names = TEAMS_REF["teams"]
@@ -1024,7 +1040,7 @@ def build(path):
         "player_seasons": pstats, "players": sorted(players.values(), key=lambda p: p["id"]), "recruits": recruits,
         "recruiting_classes": sorted(rclasses, key=lambda c: (c["program"], c["cycle"])), "transfers": transfers,
         "departures": departures, "depth_chart": depth, "awards": awards, "all_americans": aas,
-        "records_official": records, "records_computed": bests, "teams": teams, "clips": [], "columns": [],
+        "records_official": records, "records_computed": bests, "teams": teams, "hall_of_fame": hof, "clips": [], "columns": [],
     }
     os.makedirs(OUT, exist_ok=True)
     manifest = {}

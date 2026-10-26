@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <div class="eyebrow"><a href="{{ base }}almanac/" style="color:inherit">League Almanac</a></div>
+    <h1>Awards by year</h1>
+    <p>Sixteen national awards, every winner since 2023.</p>
+  </div>
+</section>
+<div class="wrap">
+  <h2 class="section">Most award winners since 2024</h2>
+  <div class="tally">{% for t, c in school_tally %}<div class="tally-row">{{ team(t) }}<span class="bar" style="--w: {{ (c / school_tally[0][1] * 100)|round }}%"></span><b>{{ c }}</b></div>{% endfor %}</div>
+
+  <nav class="chips" aria-label="Awards" style="margin-top:28px">{% for a in awards %}<a href="#{{ a.name|lower|replace("'", "") }}">{{ a.name }}</a>{% endfor %}</nav>
+  <div class="award-grid">
+  {% for a in awards %}
+    <section class="award" id="{{ a.name|lower|replace("'", "") }}">
+      <h2>{{ a.name }}{% if a.name == 'Camp' %}*{% endif %}</h2>
+      <p class="muted">{{ a.note }}</p>
+      <div class="table-wrap"><table class="data"><tbody>
+      {% for r in a.rows %}<tr{% if r.school in ['CLEV', 'OHIO', 'M-OH'] %} class="hl"{% endif %}><th scope="row">{{ r.season }}</th><td>{{ plink(r.player) }}</td><td>{{ team(r.school) }}</td></tr>{% endfor %}
+      </tbody></table></div>
+      {% if a.name == 'Camp' %}<p class="note">*In this dynasty the Walter Camp honors the Most Outstanding Player, chosen by Coach Dolan. The same player can't win it in back-to-back years.</p>{% endif %}
+    </section>
+  {% endfor %}
+  </div>
+</div>
+{% endblock %}

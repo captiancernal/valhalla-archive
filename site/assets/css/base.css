@@ -36,7 +36,7 @@ a { color: inherit; }
 .site-nav a[aria-current="page"] { color: #fff; box-shadow: inset 0 -2px 0 var(--brass-bright); border-radius: 0; }
 .site-nav .prog img { width: 24px; height: 24px; object-fit: contain; }
 .site-nav .sep { width: 1px; height: 22px; background: #3a3d44; margin: 0 6px; }
-@media (max-width: 900px) {
+@media (max-width: 1180px) {
   .nav-toggle { display: inline-flex; }
   .site-nav { position: absolute; left: 0; right: 0; top: 100%; background: var(--ink); border-bottom: 3px solid var(--brass-bright); display: none; }
   .site-nav.open { display: block; }
@@ -95,7 +95,7 @@ body:not([data-program]) .stat { --p-primary: var(--ink); }
 .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; }
 table.data { width: 100%; border-collapse: collapse; font-size: 14px; }
 table.data th { text-align: left; font: 700 11px/1.2 var(--font-ui); letter-spacing: .08em; text-transform: uppercase; color: #fff; background: var(--p-deep, var(--ink)); padding: 10px 12px; white-space: nowrap; position: sticky; top: 0; }
-body:not([data-program]) table.data th { background: var(--ink); }
+body:not([data-program]) table.data thead th { background: var(--ink); }
 table.data tbody th { background: none; color: inherit; font: 600 14px/1.4 var(--font-ui); letter-spacing: 0; text-transform: none; position: static; padding: 9px 12px; border-bottom: 1px solid var(--rule); }
 table.data tr.hl th { background: color-mix(in srgb, var(--p-accent, var(--brass-bright)) 20%, white); }
 table.data td { padding: 9px 12px; border-bottom: 1px solid var(--rule); font-variant-numeric: tabular-nums; vertical-align: top; }
@@ -139,3 +139,4 @@ table.data a { color: inherit; text-decoration-color: color-mix(in srgb, current
   /* Only stretch the first card when the count is odd, so rows stay even */
   .stat-grid:has(> .stat:nth-child(2n):last-child) .stat:first-child { grid-column: auto; }
 }
+table.data td.r { white-space: nowrap; }

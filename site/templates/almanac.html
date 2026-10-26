@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <div class="eyebrow">The Archive</div>
+    <h1>League Almanac</h1>
+    <p>Every season of the dynasty at a glance: national champions, playoff brackets, conference champions, final polls, awards and All-Americans.</p>
+  </div>
+</section>
+<div class="wrap">
+  <nav class="chips" aria-label="Seasons">
+    {% for y in seasons %}<a href="{{ base }}almanac/{{ y }}/">{{ y }}</a>{% endfor %}
+    <a class="chip-alt" href="{{ base }}almanac/awards/">Awards by year</a>
+  </nav>
+
+  <h2 class="section">National champions</h2>
+  <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Season</th><th scope="col">Champion</th><th scope="col">Runner-up</th><th scope="col" class="r">Score</th></tr></thead><tbody>
+  {% for n in natl %}<tr{% if n.champion in ['CLEV', 'OHIO', 'M-OH'] %} class="hl"{% endif %}><th scope="row"><a href="{{ base }}almanac/{{ n.season }}/">{{ n.season }}</a></th><td><b>{{ team(n.champion) }}</b></td><td>{{ team(n.runner_up) }}</td><td class="r">{{ n.score }}</td></tr>{% endfor %}
+  </tbody></table></div>
+  {% if natl[-1].season == 2023 %}<p class="note">2023 is the real-world season the dynasty started from.</p>{% endif %}
+
+  <h2 class="section">Titles by school</h2>
+  <div class="tally">{% for t, c in tally %}<div class="tally-row">{{ team(t) }}<span class="bar" style="--w: {{ (c / tally[0][1] * 100)|round }}%"></span><b>{{ c }}</b></div>{% endfor %}</div>
+
+  <h2 class="section">Conference champions</h2>
+  <div class="table-wrap"><table class="data matrix"><thead><tr><th scope="col">Season</th>{% for c in confs %}<th scope="col">{{ c }}</th>{% endfor %}</tr></thead><tbody>
+  {% for row in matrix %}<tr><th scope="row"><a href="{{ base }}almanac/{{ row.season }}/">{{ row.season }}</a></th>{% for c in row.cells %}<td>{% if c %}{{ team(c.champion) }}{% endif %}</td>{% endfor %}</tr>{% endfor %}
+  </tbody></table></div>
+</div>
+{% endblock %}

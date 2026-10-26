@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-head hof-head">
+  <div class="wrap">
+    <div class="eyebrow">The Archive</div>
+    <h1>Hall of Fame</h1>
+    <p>The Ring of Honor. To be eligible, a player must leave the roster as a 90+ overall with at least one national award and at least one All-American selection. Eligibility alone inducts no one; every member is voted in.</p>
+  </div>
+</section>
+<div class="wrap">
+  {% for cls, members in classes %}
+  <h2 class="section">Class of {{ cls }} <span class="muted" style="font:500 15px var(--font-ui)">· {{ members|length }} inductees</span></h2>
+  <div class="hof-grid">
+  {% for h in members %}{% set p = h.p %}
+    <a class="hof-card" data-program="{{ h.program }}" href="{{ base }}players/{{ p.id }}/">
+      <span class="hof-top"><img src="{{ base }}assets/logos/{{ h.program }}.png" alt=""><span class="hof-pos">{{ p.positions[:2]|join(' / ') }}</span></span>
+      <span class="hof-name">{{ p.name }}</span>
+      <span class="hof-years">{{ year_ranges(p.seasons) }} · {{ h.overall }} OVR</span>
+      <span class="hof-honors">{% for a in p.awards|sort(attribute='season') %}<span>{{ a.season }} {{ a.award }}</span>{% endfor %}</span>
+      <span class="hof-foot">All-American {{ year_ranges(p.all_american|map(attribute='season')|list) }}{% if p.departure and p.departure.drafted %} · Round {{ p.departure.draft_round }} pick{% endif %}</span>
+    </a>
+  {% endfor %}
+  </div>
+  {% endfor %}
+  {% if not classes %}
+  <p class="note" style="margin-top:28px">The first class is being chosen.</p>
+  {% endif %}
+</div>
+{% endblock %}

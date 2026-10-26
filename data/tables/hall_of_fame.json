@@ -1,0 +1,68 @@
+[
+ {
+  "player": "Harold Fannin Jr.",
+  "id": "harold-fannin-jr",
+  "program": "CLEV",
+  "left_after": 2024,
+  "overall": 95,
+  "awards": 1,
+  "all_american": 1,
+  "status": "pending",
+  "class_of": null
+ },
+ {
+  "player": "Baraka Nwangwu",
+  "id": "baraka-nwangwu",
+  "program": "CLEV",
+  "left_after": 2029,
+  "overall": 95,
+  "awards": 2,
+  "all_american": 2,
+  "status": "pending",
+  "class_of": null
+ },
+ {
+  "player": "Robert Okoronkwo",
+  "id": "robert-okoronkwo",
+  "program": "CLEV",
+  "left_after": 2031,
+  "overall": 94,
+  "awards": 3,
+  "all_american": 1,
+  "status": "pending",
+  "class_of": null
+ },
+ {
+  "player": "Seth Molinaro",
+  "id": "seth-molinaro",
+  "program": "CLEV",
+  "left_after": 2033,
+  "overall": 96,
+  "awards": 2,
+  "all_american": 2,
+  "status": "pending",
+  "class_of": null
+ },
+ {
+  "player": "Titus Reece",
+  "id": "titus-reece",
+  "program": "CLEV",
+  "left_after": 2035,
+  "overall": 93,
+  "awards": 3,
+  "all_american": 2,
+  "status": "pending",
+  "class_of": null
+ },
+ {
+  "player": "Vonn Ladd",
+  "id": "vonn-ladd",
+  "program": "CLEV",
+  "left_after": 2036,
+  "overall": 92,
+  "awards": 2,
+  "all_american": 1,
+  "status": "pending",
+  "class_of": null
+ }
+]
