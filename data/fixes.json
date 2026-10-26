@@ -121,6 +121,18 @@
       "problem": "Numbers stored as text ('3,817', '1,085') and records as text ('(5-4)').",
       "rule": "parse_text",
       "set": "Strip commas and spaces and convert to numbers; parse '(W-L)' into conference wins and losses; parse ordinals ('5th', '9TH') into numbers while keeping the display form."
+    },
+    {
+      "id": "F12-records-official-plus-computed",
+      "approved": "2026-10-26",
+      "sheets": ["RecordsHall of Fame", "2024 Stats ... 2037 Stats"],
+      "problem": "Records sheet has 21 records, newest 2029; several have since been beaten in the stats tabs.",
+      "rule": "add_derived_table",
+      "set": {
+        "official_records": "Records sheet shown exactly as entered (names still pass through aliases.json), labeled 'Official Records'.",
+        "computed_bests": "Separate CLEV list 'Season & Career Bests (computed from the season stats)': single-season and career totals for passing, rushing, receiving and kicking, built only from the stats tabs.",
+        "record_watch": "2038 Record Watch measures returning players against the computed CLEV list and, where they apply, the official NCAA / Big 12 records."
+      }
     }
   ]
 }
