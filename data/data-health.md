@@ -28,10 +28,10 @@ Logos: 150 team logos + 11 conference marks extracted. Team colors come from the
 
 | # | Status | Problem | Proposed fix |
 |---|---|---|---|
-| 1 | OPEN | Career Record cells are stale on all three coach sheets: CLEV shows 41-11, OHIO 46-21, M-OH 51-19. Summing the season rows gives CLEV 180-29, OHIO 175-34, M-OH 174-32. | Ignore the career cells; always compute career record and win % from the season rows. |
-| 2 | OPEN | 2034 Big 12 title game. Schedule says OHIO vs M-OH 57-42 (M-OH won). Conference Champions says M-OH vs **CLEV** 57-42. Coach sheet says CLEV 15-2, but the Schedule only adds up to 15-1. | Treat it as a CLEV loss to M-OH, 57-42, in the 2034 Big 12 title game (CLEV 15-2). |
-| 3 | OPEN | 2029 Conference Champions table: Big 12 and MAC labels are swapped (CLEV vs M-OH on the "MAC" row; BUFF vs MASS on the "B12" row). | Swap the two labels for 2029. |
-| 4 | OPEN | 2032 receiving: Sam Fatafehi 13 catches for 2,219 yards (long 44, 170.7 per catch). Impossible. | Read as 219 yards (16.8 per catch). Or the owner gives the real number. |
+| 1 | APPROVED (F01) | Career Record cells are stale on all three coach sheets: CLEV shows 41-11, OHIO 46-21, M-OH 51-19. Summing the season rows gives CLEV 180-29, OHIO 175-34, M-OH 174-32. | Ignore the career cells; always compute career record and win % from the season rows. |
+| 2 | APPROVED (F02) | 2034 Big 12 title game. Schedule says OHIO vs M-OH 57-42 (M-OH won). Conference Champions says M-OH vs **CLEV** 57-42. Coach sheet says CLEV 15-2, but the Schedule only adds up to 15-1. | Treat it as a CLEV loss to M-OH, 57-42, in the 2034 Big 12 title game (CLEV 15-2). |
+| 3 | APPROVED (F03) | 2029 Conference Champions table: Big 12 and MAC labels are swapped (CLEV vs M-OH on the "MAC" row; BUFF vs MASS on the "B12" row). | Swap the two labels for 2029. |
+| 4 | APPROVED (F04) | 2032 receiving: Sam Fatafehi 13 catches for 2,219 yards (long 44, 170.7 per catch). Impossible. | Read as 219 yards (16.8 per catch). Or the owner gives the real number. |
 | 5 | OPEN | Schedule rows for games CLEV wasn't in disagree with other sheets (2027 title game shows M-OH beating BAMA 0-0; Standings, AP and the bracket say BAMA won). | Use the Schedule only for CLEV games. Take other teams' title games from Conference Champions and the Playoff Tree. |
 | 6 | OPEN | Final scores are usually winner-first, but 2031 title game reads "34-35" (CLEV's score first, CLEV lost). | Store every game as CLEV score / opponent score using the W/L result. |
 | 7 | OPEN | Result column says W/L in early years and a team name ("CLEV", "M-OH") from 2034 on. | Convert to W/L from CLEV's point of view. |

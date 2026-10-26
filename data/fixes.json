@@ -1,4 +1,53 @@
 {
   "about": "Owner-approved data fixes. Applied on every rebuild. Never add an entry without the owner's yes.",
-  "fixes": []
+  "fixes": [
+    {
+      "id": "F01-career-record-computed",
+      "approved": "2026-10-26",
+      "sheets": ["Coach Josh Dolan", "Coach Tim Slocombe ", "Coach Joe Snyderwine"],
+      "problem": "Career Record and Career WP% cells are stale (CLEV 41-11, OHIO 46-21, M-OH 51-19).",
+      "rule": "ignore_cells",
+      "cells": {
+        "Coach Josh Dolan": ["E35", "F35", "G35"],
+        "Coach Tim Slocombe ": ["F35", "G35", "H35"],
+        "Coach Joe Snyderwine": ["E34", "G34", "H34"]
+      },
+      "replacement": "Career W, L and win % are computed by summing the season rows (2024 onward) for each program.",
+      "expected_at_approval": {"CLEV": "180-29", "OHIO": "175-34", "M-OH": "174-32"}
+    },
+    {
+      "id": "F02-2034-big12-title-game",
+      "approved": "2026-10-26",
+      "sheets": ["Schedule"],
+      "problem": "2034 B12-CH row lists OHIO vs M-OH 57-42 (M-OH). Conference Champions and the coach sheet (15-2) show CLEV played M-OH.",
+      "rule": "override_game",
+      "match": {"sheet": "Schedule", "season": 2034, "game": "B12-CH", "cell_team": "CJ18", "seen_value": "OHIO"},
+      "set": {"team": "CLEV", "opponent": "M-OH", "clev_score": 42, "opp_score": 57, "result": "L"},
+      "expected_at_approval": {"CLEV_2034_record": "15-2"}
+    },
+    {
+      "id": "F03-2029-conference-labels-swapped",
+      "approved": "2026-10-26",
+      "sheets": ["Conference Champions"],
+      "problem": "2029 table: 'B12' row holds BUFF vs MASS and 'MAC' row holds CLEV vs M-OH.",
+      "rule": "relabel_conference",
+      "match": {"sheet": "Conference Champions", "season": 2029},
+      "set": [
+        {"cell": "A64", "seen_value": "B12", "conference": "MAC", "game": "BUFF vs MASS 38-36, MASS"},
+        {"cell": "A65", "seen_value": "MAC", "conference": "B12", "game": "CLEV vs M-OH 34-28, M-OH"}
+      ],
+      "expected_at_approval": {"2029_B12_champion": "M-OH", "2029_MAC_champion": "MASS"}
+    },
+    {
+      "id": "F04-2032-fatafehi-receiving-yards",
+      "approved": "2026-10-26",
+      "sheets": ["2032 Stats"],
+      "problem": "Sam Fatafehi receiving: 13 catches for 2,219 yards with a 44-yard long (impossible).",
+      "rule": "override_value",
+      "match": {"sheet": "2032 Stats", "table": "receiving", "player": "Sam Fatafehi", "cell": "D20", "seen_value": 2219},
+      "set": {"YARDS": 219},
+      "recompute": ["YPC", "YPG"],
+      "expected_at_approval": {"YPC": 16.8, "YPG": 15.6, "CLEV_2032_receiving_leader": "Dakota McNitt 1853"}
+    }
+  ]
 }
