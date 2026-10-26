@@ -35,7 +35,5 @@ Source: `2026-10-26 CSU Vikings Tracker.xlsx`
 - F02 applied: 2034 Big 12 title game -> CLEV vs M-OH 42-57 L
 - Conference title games: 140 across 14 seasons
 - F04 applied: 2032 Sam Fatafehi receiving yards 2219 -> 219
-- Player listed with more than one school (check it's one person): Kawhi Fusco ['CLEV', 'KU']
 - Player listed with more than one school (check it's one person): Ollie Gordon III ['OKST', 'ORST']
 - Player listed with more than one school (check it's one person): Graham Nicholson ['AFA', 'UMD', 'BAMA']
-- Player listed with more than one school (check it's one person): Walter Nolen ['MISS', 'MICH']

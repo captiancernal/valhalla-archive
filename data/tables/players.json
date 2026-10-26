@@ -17494,7 +17494,8 @@
   "home_state": "GA",
   "position_family": "DB",
   "peak_rating": 70,
-  "program": "CLEV"
+  "program": "CLEV",
+  "career_note": "Signed with CLEV (2031 cycle); left for Kansas, where he was a 2035 All-American."
  },
  {
   "id": "keke-kwenkeu",
@@ -31413,7 +31414,8 @@
   "position_family": "DL",
   "peak_rating": null,
   "program": "MISS",
-  "home_state": null
+  "home_state": null,
+  "career_note": "Transferred from Ole Miss (2024) to Michigan (2025)."
  },
  {
   "id": "warren-roberson",

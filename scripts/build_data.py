@@ -984,7 +984,11 @@ def build(path):
         p["peak_rating"] = max(peaks) if peaks else None
         p["program"] = next((t for t in p["teams"] if t in PROGRAMS), p["teams"][0] if p["teams"] else None)
         p.setdefault("home_state", None)
-    multi = [p for p in players.values() if len([t for t in p["teams"] if t not in (None,)]) > 1 and not p["transfer"]]
+    confirmed = ALIASES.get("confirmed_same_person", {})
+    for name, info in confirmed.items():
+        if slug(name) in players:
+            players[slug(name)]["career_note"] = info["note"]
+    multi = [p for p in players.values() if len([t for t in p["teams"] if t not in (None,)]) > 1 and not p["transfer"] and p["name"] not in confirmed]
     for p in multi:
         note(f"Player listed with more than one school (check it's one person): {p['name']} {p['teams']}")
 

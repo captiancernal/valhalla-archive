@@ -245,5 +245,23 @@
   "notes": {
     "Kenny Tongues": "Owner: the name was changed in-game; use Kenny Tongues everywhere (approved 2026-10-26).",
     "Walter Nolen": "Owner: same player; transferred from MISS (2024) to MICH (2025)."
+  },
+  "confirmed_same_person": {
+    "Walter Nolen": {
+      "schools": [
+        "MISS",
+        "MICH"
+      ],
+      "note": "Transferred from Ole Miss (2024) to Michigan (2025).",
+      "approved": "2026-10-26"
+    },
+    "Kawhi Fusco": {
+      "schools": [
+        "CLEV",
+        "KU"
+      ],
+      "note": "Signed with CLEV (2031 cycle); left for Kansas, where he was a 2035 All-American.",
+      "approved": "2026-10-26"
+    }
   }
 }
