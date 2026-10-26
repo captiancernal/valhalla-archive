@@ -29,7 +29,7 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 - [x] M0 Setup Day: repo created and linked, folder layout made, Drive folders created, tracker copied to source/
 - [x] M1 Workbook inventory, logo extraction, data-health queue. All 21 items resolved: 20 fixes in `data/fixes.json` (F01-F22, F20/F21 live in `data/aliases.json`), 56 canonical player names + 3 coach names in `data/aliases.json`. Awaiting owner sign-off before M2.
 - [x] M2 Clean data tables + build scripts (build_data.py, validate.py: 76 checks passing). All queue items resolved; awaiting owner sign-off.
-- [ ] M3 Design system (palettes need owner approval)
+- [x] M3 Design system: palettes approved 2026-10-26; shell (header/nav/banner/footer, program band + tabs) built. Awaiting owner sign-off.
 - [ ] M4 Program / season / game / player pages
 - [ ] M5 Almanac, Records Book, rivalry hub, Hall of Fame
 - [ ] M6 Front page
@@ -45,6 +45,8 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 - 2026-10-26: `source/` is git-ignored. Tracker copies are never pushed to the public repo.
 - 2026-10-26: Source priority for games (F05): Playoff Tree decides playoff scores, champions and round names; Conference Champions decides other teams' title games; Schedule is used only for CLEV games.
 - 2026-10-26: Coach display names: Josh Dolan, Tim Slocombe, Joe Snyderwine.
+- 2026-10-26: Palettes approved: CLEV "Valhalla Forest" (#024731, steel, gold; condensed caps; chamfered corners), OHIO "Bobcat Green" (#00694E, cream, tan; slab serif; rounded), M-OH "RedHawk" (#B61E2E, black, white; wide italic caps; diagonal cuts). Archive chrome: ink/bone/brass, Source Serif 4 + Inter.
+- 2026-10-26: Static pages are generated at build time (one HTML page per program/season/player/game) for real titles and share previews; GitHub Actions will build and deploy.
 - 2026-10-26: Records Book = the tracker's Records sheet as entered + a separate CLEV "computed from the stats" bests list (F12).
 - 2026-10-26: Don't publish the Awards-sheet trophy photos (auction watermarks); design our own award marks.
 - 2026-10-26: Owner context for Split Decision color (use lightly, never as fact): the 2035 title-game loss (M-OH 73, CLEV 70) still stings ("sour grapes"); "funky stuff happened in-game".
@@ -60,6 +62,14 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 - Depth chart cells are "Name - OVR"; bold = 90+, italic = drafted, * = transfer. Coaching staff (HC/OC/DC) with footnotes sits in rows 25-31.
 - Playoff Tree: one 16-row block per year starting at row 2 (2023) in a fixed bracket layout; logos overlay the cells.
 - Logos: `site/assets/logos/<ABBR>.png` (resized to 256px), conference marks in `site/assets/conferences/`. Team colors in `data/source-meta/team-colors.json`.
+
+## Website build (M3)
+- `site/` is SOURCE: `templates/` (Jinja2), `assets/` (css: tokens.css + base.css; js/site.js; logos; img), `design/` (style guide, noindex).
+- `py -P scripts/build_site.py` renders into `_site/` (git-ignored). `BASE_PATH=/valhalla-archive/` for the GitHub Pages build; default `/` for local.
+- Local preview: `py -m http.server 8037 --bind 127.0.0.1 --directory _site` then http://localhost:8037/ (also in `.claude/launch.json`).
+- Nav only links sections that exist (no dead links). Program pages set `data-program` on <body> to re-theme; Archive chrome stays constant.
+- Program URLs: programs/cleveland-state/, programs/ohio/, programs/miami-oh/.
+- Fonts load from Google Fonts for now; self-host before launch (M10).
 
 ## Data model and build (M2)
 - Full table list and conventions: [docs/data-model.md](docs/data-model.md).

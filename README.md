@@ -18,7 +18,7 @@ The official unofficial almanac of a College Football 25 dynasty: the Cleveland 
 | `content/split-decision/` | The Split Decision columns and the columnists' character bible |
 | `content/clips/` | Highlight clips. Drop new MP4s in `incoming/`. |
 | `scripts/` | The tools that read the tracker and build the site |
-| `site/` | The website itself |
+| `site/` | The website's design and page templates (the finished pages are generated from these) |
 | `docs/` | The master plan for the project |
 
 ## How to update the site

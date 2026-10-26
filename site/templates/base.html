@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ page_title }}{% endblock %}</title>
+<meta name="description" content="{{ description }}">
+<meta property="og:site_name" content="The Valhalla Archive">
+<meta property="og:title" content="{{ page_title }}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:type" content="website">
+{% if og_image %}<meta property="og:image" content="{{ og_image }}">{% endif %}
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="{{ theme_color or '#15171b' }}">
+<link rel="icon" href="{{ base }}assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400..800&family=Zilla+Slab:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ base }}assets/css/tokens.css?v={{ build_id }}">
+<link rel="stylesheet" href="{{ base }}assets/css/base.css?v={{ build_id }}">
+{% block head %}{% endblock %}
+</head>
+<body{% if program %} data-program="{{ program.id }}"{% endif %}>
+<a class="skip" href="#main">Skip to content</a>
+{% if banner %}
+<div class="banner" role="note">
+  <div class="wrap">
+    {% if banner.logo %}<img src="{{ base }}{{ banner.logo }}" alt="">{% endif %}
+    {% if banner.href %}<a href="{{ base }}{{ banner.href }}">{{ banner.text }}</a>{% else %}<span>{{ banner.text }}</span>{% endif %}
+  </div>
+</div>
+{% endif %}
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="{{ base }}" aria-label="The Valhalla Archive, home">
+      <svg viewBox="0 0 30 34" aria-hidden="true"><path d="M15 1 L28 6 V17 C28 25 22 30 15 33 C8 30 2 25 2 17 V6 Z" fill="none" stroke="#c4a35a" stroke-width="2"/><path d="M8 10 L15 25 L22 10" fill="none" stroke="#f6f3ec" stroke-width="2.6" stroke-linejoin="round"/></svg>
+      <span class="word"><small>The</small>Valhalla Archive</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul>
+        {% for item in nav %}
+          {% if item.sep %}<li class="sep" aria-hidden="true"></li>
+          {% else %}<li><a href="{{ base }}{{ item.href }}"{% if item.logo %} class="prog"{% endif %}{% if item.key == active_nav %} aria-current="page"{% endif %}>{% if item.logo %}<img src="{{ base }}{{ item.logo }}" alt="">{% endif %}{{ item.label }}</a></li>{% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
+
+{% block band %}{% endblock %}
+
+<main id="main" tabindex="-1">
+{% block content %}{% endblock %}
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <p class="brandline">The Valhalla Archive</p>
+      <p>The almanac of a College Football 25 dynasty: the Cleveland State Vikings, with equal coverage of Ohio and Miami (OH). Data through the {{ site.latest_season_in_tracker }} season.</p>
+    </div>
+    <div>
+      <h2>Programs</h2>
+      <ul>{% for p in programs %}<li><a href="{{ base }}{{ p.href }}">{{ p.school }} {{ p.nickname }}</a></li>{% endfor %}</ul>
+    </div>
+    <div>
+      <h2>The Archive</h2>
+      <ul>{% for item in nav if item.footer %}<li><a href="{{ base }}{{ item.href }}">{{ item.label }}</a></li>{% endfor %}</ul>
+    </div>
+    <div class="legal">
+      <span>Unofficial fan site. Not affiliated with Cleveland State University, any other school, EA Sports or the NCAA. Dynasty content is fictional.</span>
+      <span>Updated {{ site.last_updated_display }}</span>
+    </div>
+  </div>
+</footer>
+<script src="{{ base }}assets/js/site.js?v={{ build_id }}" defer></script>
+</body>
+</html>

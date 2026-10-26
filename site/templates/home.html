@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <div class="eyebrow">{{ site.phase_display }} · {{ site.current_season }}</div>
+    <h1>The Valhalla Archive</h1>
+    <p>Fourteen seasons of a College Football 25 dynasty: every game, title, award and record for Cleveland State, Ohio and Miami (OH).</p>
+  </div>
+</section>
+<div class="wrap">
+  <h2 class="section">The programs</h2>
+  <div class="program-cards">
+    {% for p in programs %}
+    <a class="program-card" data-program="{{ p.id }}" href="{{ base }}{{ p.href }}">
+      <span class="pc-band"><img src="{{ base }}{{ p.logo }}" alt=""><span class="pc-name">{{ p.nickname }}</span></span>
+      <span class="pc-body">
+        <span class="pc-school">{{ p.school }} · Coach {{ p.coach }}</span>
+        <span class="pc-stats">
+          <span><b>{{ p.career.w }}-{{ p.career.l }}</b> record</span>
+          <span><b>{{ p.national_titles|length }}</b> national {{ 'title' if p.national_titles|length == 1 else 'titles' }}</span>
+          <span><b>{{ p.big12_titles|length }}</b> Big 12 {{ 'title' if p.big12_titles|length == 1 else 'titles' }}</span>
+        </span>
+      </span>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
+{% block head %}
+<style>
+  .program-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .program-card { display: block; text-decoration: none; color: var(--ink); background: var(--paper); border: 1px solid var(--rule); border-radius: var(--p-radius); overflow: hidden; transition: transform .15s ease, box-shadow .15s ease; }
+  .program-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+  .pc-band { display: flex; align-items: center; gap: 14px; background: var(--p-primary); color: var(--p-on-primary); padding: 18px; position: relative; border-bottom: 5px solid var(--p-accent); }
+  .pc-band img { width: 56px; height: 56px; object-fit: contain; }
+  [data-program="OHIO"] .pc-band img { background: var(--p-surface); border-radius: 50%; padding: 6px; }
+  [data-program="M-OH"] .pc-band img { background: #fff; padding: 6px 8px; width: 64px; clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%); }
+  .pc-name { font-family: var(--p-font-display); font-weight: var(--p-display-weight); text-transform: var(--p-display-case); font-style: var(--p-display-style); letter-spacing: var(--p-display-tracking); font-size: clamp(26px, 2.6vw, 34px); line-height: 1; min-width: 0; overflow-wrap: anywhere; }
+  [data-program="M-OH"] .pc-name { font-stretch: 100%; }
+  .pc-body { display: block; padding: 14px 18px 18px; }
+  .pc-school { display: block; font-size: 13px; color: var(--muted); margin-bottom: 10px; }
+  .pc-stats { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px; }
+  .pc-stats b { font-size: 18px; color: var(--p-primary); font-variant-numeric: tabular-nums; }
+</style>
+{% endblock %}

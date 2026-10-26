@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block band %}
+<section class="program-band" aria-labelledby="program-name">
+  <div class="wrap">
+    <img class="logo" src="{{ base }}{{ program.logo }}" alt="{{ program.school }} {{ program.nickname }} logo" width="120" height="120">
+    <div>
+      <div class="eyebrow">{{ program.school }} · {{ program.conference }} · Coach {{ program.coach }}</div>
+      <h1 id="program-name">{{ program.nickname }}</h1>
+      <div class="sub">{{ program.tagline }}</div>
+    </div>
+  </div>
+</section>
+<nav class="program-tabs" aria-label="{{ program.nickname }} sections">
+  <ul>{% for t in program_tabs %}<li><a href="{{ base }}{{ t.href }}"{% if t.key == active_tab %} aria-current="page"{% endif %}>{{ t.label }}</a></li>{% endfor %}</ul>
+</nav>
+{% endblock %}
+{% block content %}
+<div class="wrap">
+  <div class="stat-grid">
+    <div class="stat"><div class="n">{{ program.career.w }}-{{ program.career.l }}</div><div class="l">Record, {{ program.first_season }}-{{ program.last_season }} ({{ program.win_pct_text }})</div></div>
+    <div class="stat"><div class="n">{{ program.national_titles|length }}</div><div class="l">National {{ 'title' if program.national_titles|length == 1 else 'titles' }}{% if program.national_titles %} · {{ program.national_titles|join(', ') }}{% endif %}</div></div>
+    <div class="stat"><div class="n">{{ program.big12_titles|length }}</div><div class="l">Big 12 {{ 'title' if program.big12_titles|length == 1 else 'titles' }}{% if program.big12_titles %} · {{ program.big12_titles|join(', ') }}{% endif %}</div></div>
+    <div class="stat"><div class="n">{{ program.playoff_appearances|length }}</div><div class="l">Playoff appearances</div></div>
+    <div class="stat"><div class="n">{{ program.ap_top25_finishes }}</div><div class="l">Final AP Top 25 finishes</div></div>
+  </div>
+
+  <h2 class="section">Season by season</h2>
+  <div class="table-wrap">
+    <table class="data">
+      <caption class="visually-hidden">{{ program.school }} season-by-season results</caption>
+      <thead><tr><th scope="col">Season</th><th scope="col" class="r">W-L</th><th scope="col" class="r">Conf</th><th scope="col">Big 12 finish</th><th scope="col" class="r">AP</th><th scope="col">Postseason</th></tr></thead>
+      <tbody>
+      {% for s in seasons %}
+        <tr{% if s.national_champion %} class="hl"{% endif %}>
+          <th scope="row">{{ s.season }}</th>
+          <td class="r">{{ s.w }}-{{ s.l }}</td>
+          <td class="r">{% if s.conf_w is not none %}{{ s.conf_w }}-{{ s.conf_l }}{% endif %}</td>
+          <td>{{ s.conf_rank_text or '' }}{% if s.conference_champion %} <span class="pill">Champion</span>{% endif %}</td>
+          <td class="r">{{ s.ap_final_rank or '' }}</td>
+          <td>{{ s.postseason_text }}{% if s.national_champion %} <span class="pill gold">National Champions</span>{% endif %}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}
