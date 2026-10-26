@@ -162,6 +162,15 @@
       "problem": "2025 transfer block (columns J-N) holds numbers (1, 50, 74, 80, 91, 158) in the Class column.",
       "rule": "ignore_cells",
       "set": "Hide those numbers; class = null with display 'Not recorded' for the six 2025 transfers."
+    },
+    {
+      "id": "F16-2034-mac-standings-emu",
+      "approved": "2026-10-26",
+      "sheets": ["Standings"],
+      "problem": "2034 MAC #2 lists ECU (an AAC team also listed AAC #4). The 2034 MAC title game was EMU vs BUFF, and every other season's MAC title game matches Standings #1 and #2.",
+      "rule": "override_value",
+      "match": {"sheet": "Standings", "season": 2034, "conference": "MAC", "place": 2, "cell": "N37", "seen_value": "ECU"},
+      "set": {"team": "EMU"}
     }
   ]
 }

@@ -46,7 +46,7 @@ Logos: 150 team logos + 11 conference marks extracted. Team colors come from the
 | 13 | APPROVED (F13) | Recruiting class summaries for 2029, 2030 and 2031 are exact copies of the 2025 numbers for all three programs; 2026-28 say "did not track". | Show class summaries only for 2024 and 2025. For CLEV, compute star counts from the recruit list every year. |
 | 14 | APPROVED (F14) | 2026 recruit list has no star ratings filled in. | Show stars as "not tracked" for 2026. |
 | 15 | APPROVED (F15) | 2025 Transfers "Class" column holds numbers (1, 50, 74, 80, 91, 158), not classes. | Treat them as transfer-portal rankings. Or the owner says what they are. |
-| 16 | OPEN | Standings 2034: ECU appears in both the AAC (#4) and the MAC (#2). | Owner to confirm the MAC #2 team. |
+| 16 | APPROVED (F16) | Standings 2034: ECU appears in both the AAC (#4) and the MAC (#2). | Owner to confirm the MAC #2 team. |
 | 17 | OPEN | Depth Chart: no ratings after 2032; the 2038+ columns hold leftover copies of 2024 names. | Use ratings 2024-32 only; ignore every column after 2037. |
 | 18 | OPEN | Class labels are inconsistent: "SR (RS)", "SR(RS)", "Dave Shelley SO (RS)" (no dash), "SR (SR)", "Dorian Pringle - ROLB" (a position where the class should be). | Normalize to FR / SO / JR / SR with a separate redshirt flag; ask about the two odd ones. |
 | 19 | OPEN | Position labels vary: RB/HB, OG/LG/RG, OT/LT/RT, LE/RE vs EDGE, LOLB/ROLB/MLB vs LB, FS/SS vs S, "WR/ATH". | Keep the exact position for depth charts; use a family (QB, RB, WR, TE, OL, DL, LB, DB, K, P) for filters and games. |
