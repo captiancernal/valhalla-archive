@@ -67,6 +67,60 @@
         {"season": 2036, "game": "playoff first round vs LSU", "schedule_value": "37-27", "used": "37-3 (CLEV-LSU)", "confirmed": "2026-10-26"},
         {"season": 2037, "game": "national title vs OHIO", "schedule_value": "56-35", "used": "56-39 (CLEV-OHIO)", "confirmed": "2026-10-26"}
       ]
+    },
+    {
+      "id": "F06-scores-clev-perspective",
+      "approved": "2026-10-26",
+      "batch": "F06-F11 approved together by the owner",
+      "sheets": ["Schedule"],
+      "problem": "Final Score is usually winner-first but sometimes CLEV-first (2031 title game '34-35').",
+      "rule": "normalize_score",
+      "set": "Parse both numbers; assign the larger to the winner given by the result column; store clev_score and opp_score. Strip stray spaces (e.g. ' 56-38 ')."
+    },
+    {
+      "id": "F07-results-as-w-l",
+      "approved": "2026-10-26",
+      "batch": "F06-F11 approved together by the owner",
+      "sheets": ["Schedule"],
+      "problem": "Result column holds W/L in early seasons and the winning team's abbreviation later.",
+      "rule": "normalize_result",
+      "set": "W if the value is W or CLEV; L if it is L or any other team abbreviation."
+    },
+    {
+      "id": "F08-drop-placeholder-games",
+      "approved": "2026-10-26",
+      "batch": "F06-F11 approved together by the owner",
+      "sheets": ["Schedule"],
+      "problem": "2024-26 B12-CH and NC rows hold N/A opponents and 0-0 scores.",
+      "rule": "drop_rows",
+      "set": "Skip any Schedule row whose opponent is N/A or whose score is 0-0 with result N/A."
+    },
+    {
+      "id": "F09-season-from-tab-name",
+      "approved": "2026-10-26",
+      "batch": "F06-F11 approved together by the owner",
+      "sheets": ["2024 Stats ... 2037 Stats"],
+      "problem": "Table titles name the wrong season in places (2026 tab says 2025, 2035 says 20235, 2037 says 2036, others blank).",
+      "rule": "ignore_cells",
+      "set": "The season of every stats row comes from the tab name 'YYYY Stats'. Table title cells are ignored."
+    },
+    {
+      "id": "F10-error-cells-blank",
+      "approved": "2026-10-26",
+      "batch": "F06-F11 approved together by the owner",
+      "sheets": ["all"],
+      "problem": "#DIV/0! and #REF! cells.",
+      "rule": "error_to_blank",
+      "set": "Treat any #DIV/0!, #REF!, #N/A, #VALUE! cell as blank. Recompute averages (YPC, YPG, YPA, COMP %, WP%) from their inputs when the inputs exist and the divisor is above zero."
+    },
+    {
+      "id": "F11-text-to-numbers",
+      "approved": "2026-10-26",
+      "batch": "F06-F11 approved together by the owner",
+      "sheets": ["all"],
+      "problem": "Numbers stored as text ('3,817', '1,085') and records as text ('(5-4)').",
+      "rule": "parse_text",
+      "set": "Strip commas and spaces and convert to numbers; parse '(W-L)' into conference wins and losses; parse ordinals ('5th', '9TH') into numbers while keeping the display form."
     }
   ]
 }

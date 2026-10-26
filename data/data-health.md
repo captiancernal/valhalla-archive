@@ -36,12 +36,12 @@ Logos: 150 team logos + 11 conference marks extracted. Team colors come from the
 | 5a | APPROVED (F05) | Two CLEV playoff scores differ between Schedule and Playoff Tree: 2036 first round vs LSU (Schedule 37-27, Tree 37-3); 2037 national title vs OHIO (Schedule 56-35, Tree 56-39). | Under F05 the Tree wins: 37-3 and 56-39. Owner to confirm. |
 | 5b | NOTE | 2035 national title score is written "73*" for M-OH in the bracket. | Ask the owner what the asterisk means (overtime?). Until then, show the score without a note. |
 | 5c | NOTE | All 15 bracket champions (2023-2037) match the Standings sheet. Every other CLEV playoff score matches the Schedule. | None. |
-| 6 | OPEN | Final scores are usually winner-first, but 2031 title game reads "34-35" (CLEV's score first, CLEV lost). | Store every game as CLEV score / opponent score using the W/L result. |
-| 7 | OPEN | Result column says W/L in early years and a team name ("CLEV", "M-OH") from 2034 on. | Convert to W/L from CLEV's point of view. |
-| 8 | OPEN | Empty placeholder games (2024-26 "B12-CH" and "NC" rows with N/A and 0-0). | Drop them. |
-| 9 | OPEN | Stats tab titles are wrong in places (2026 tab says 2025; 2027 kicking says 2025; 2029 says 2027; 2035 says "20235"; 2037 says 2036; 2029-37 passing title blank). | Take the season from the tab name; ignore the titles. |
-| 10 | OPEN | Error cells: #DIV/0! (empty future seasons on coach sheets; yards-per-catch for 0-catch players), #REF! (future year headers on Schedule). | Treat as blank. Recompute averages where the inputs exist. |
-| 11 | OPEN | Numbers stored as text ("3,817", "1,085") and records as text ("(5-4)"). | Convert to numbers; parse conference records. |
+| 6 | APPROVED (F06) | Final scores are usually winner-first, but 2031 title game reads "34-35" (CLEV's score first, CLEV lost). | Store every game as CLEV score / opponent score using the W/L result. |
+| 7 | APPROVED (F07) | Result column says W/L in early years and a team name ("CLEV", "M-OH") from 2034 on. | Convert to W/L from CLEV's point of view. |
+| 8 | APPROVED (F08) | Empty placeholder games (2024-26 "B12-CH" and "NC" rows with N/A and 0-0). | Drop them. |
+| 9 | APPROVED (F09) | Stats tab titles are wrong in places (2026 tab says 2025; 2027 kicking says 2025; 2029 says 2027; 2035 says "20235"; 2037 says 2036; 2029-37 passing title blank). | Take the season from the tab name; ignore the titles. |
+| 10 | APPROVED (F10) | Error cells: #DIV/0! (empty future seasons on coach sheets; yards-per-catch for 0-catch players), #REF! (future year headers on Schedule). | Treat as blank. Recompute averages where the inputs exist. |
+| 11 | APPROVED (F11) | Numbers stored as text ("3,817", "1,085") and records as text ("(5-4)"). | Convert to numbers; parse conference records. |
 | 12 | OPEN | Records sheet is short and out of date: 21 records, newest from 2029. Example: Baraka Nwangwu's 2,536 rush yards in 2029 beat the listed 2,329 season record. | Show the tracker's records as entered, and add a separate "Computed from the stats" school list (CLEV only). |
 | 13 | OPEN | Recruiting class summaries for 2029, 2030 and 2031 are exact copies of the 2025 numbers for all three programs; 2026-28 say "did not track". | Show class summaries only for 2024 and 2025. For CLEV, compute star counts from the recruit list every year. |
 | 14 | OPEN | 2026 recruit list has no star ratings filled in. | Show stars as "not tracked" for 2026. |
