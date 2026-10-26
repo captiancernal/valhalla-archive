@@ -262,6 +262,22 @@
       ],
       "note": "Signed with CLEV (2031 cycle); left for Kansas, where he was a 2035 All-American.",
       "approved": "2026-10-26"
+    },
+    "Graham Nicholson": {
+      "schools": [
+        "AFA",
+        "UMD",
+        "BAMA"
+      ],
+      "note": "Kicker. Schools shown as entered in the tracker (2023 Groza: AFA; 2023 All-American: UMD; 2024 All-American: BAMA).",
+      "approved": "2026-10-26"
+    },
+    "Ollie Gordon III": {
+      "schools": [
+        "OKST"
+      ],
+      "note": "Oklahoma State running back (2023).",
+      "approved": "2026-10-26"
     }
   }
 }

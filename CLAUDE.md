@@ -28,7 +28,7 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 ## Milestone status
 - [x] M0 Setup Day: repo created and linked, folder layout made, Drive folders created, tracker copied to source/
 - [x] M1 Workbook inventory, logo extraction, data-health queue. All 21 items resolved: 20 fixes in `data/fixes.json` (F01-F22, F20/F21 live in `data/aliases.json`), 56 canonical player names + 3 coach names in `data/aliases.json`. Awaiting owner sign-off before M2.
-- [x] M2 Clean data tables + build scripts (build_data.py, validate.py: 76 checks passing). Awaiting owner sign-off; queue items 25-27 open.
+- [x] M2 Clean data tables + build scripts (build_data.py, validate.py: 76 checks passing). All queue items resolved; awaiting owner sign-off.
 - [ ] M3 Design system (palettes need owner approval)
 - [ ] M4 Program / season / game / player pages
 - [ ] M5 Almanac, Records Book, rivalry hub, Hall of Fame

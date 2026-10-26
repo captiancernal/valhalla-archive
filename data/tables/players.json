@@ -11814,7 +11814,8 @@
   "position_family": "K",
   "peak_rating": null,
   "program": "AFA",
-  "home_state": null
+  "home_state": null,
+  "career_note": "Kicker. Schools shown as entered in the tracker (2023 Groza: AFA; 2023 All-American: UMD; 2024 All-American: BAMA)."
  },
  {
   "id": "greg-biggs",
@@ -23179,7 +23180,8 @@
   "position_family": "RB",
   "peak_rating": null,
   "program": "OKST",
-  "home_state": null
+  "home_state": null,
+  "career_note": "Oklahoma State running back (2023)."
  },
  {
   "id": "orlando-foucha",
