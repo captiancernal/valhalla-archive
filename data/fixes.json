@@ -146,6 +146,14 @@
         "ignored": "Summary blocks for 2029, 2030, 2031 (rows 44-46) and the 'did not track' cells."
       },
       "expected_at_approval": {"CLEV_2025_stars_5_4_3": "2/6/11", "CLEV_2025_rank": "15th", "CLEV_2029_stars_5_4_3": "3/7/7"}
+    },
+    {
+      "id": "F14-2026-recruit-stars-not-tracked",
+      "approved": "2026-10-26",
+      "sheets": ["Recruiting"],
+      "problem": "2026 recruiting block (columns Q-V) has an empty Stars column for all 17 recruits.",
+      "rule": "mark_not_tracked",
+      "set": "stars = null with display 'Not tracked' for the 2026 cycle; exclude the 2026 class from star-count totals. National rank, position and state still shown. Never estimate stars from rank."
     }
   ]
 }
