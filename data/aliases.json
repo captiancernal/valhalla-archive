@@ -9,7 +9,8 @@
     "B5": "2026-10-26",
     "B6": "2026-10-26",
     "B7": "2026-10-26",
-    "B8": "2026-10-26"
+    "B8": "2026-10-26",
+    "coaches": "2026-10-26"
   },
   "players": {
     "Alan Rasheed": [
@@ -215,7 +216,32 @@
       "Trey Taylor"
     ]
   ],
-  "coaches": {},
+  "coaches": {
+    "Josh Dolan": {
+      "program": "CLEV",
+      "variants": [
+        "Joshua Dolan",
+        "Coach Josh Dolan",
+        "HC - Josh Dolan"
+      ]
+    },
+    "Tim Slocombe": {
+      "program": "OHIO",
+      "variants": [
+        "Timmy Slocombe",
+        "Coach Timmy Slocombe",
+        "Coach Tim Slocombe"
+      ]
+    },
+    "Joe Snyderwine": {
+      "program": "M-OH",
+      "variants": [
+        "Joseph Snyderwine",
+        "Coach Joseph Snyderwine",
+        "Coach Joe Snyderwine"
+      ]
+    }
+  },
   "notes": {
     "Kenny Tongues": "Owner: the name was changed in-game; use Kenny Tongues everywhere (approved 2026-10-26).",
     "Walter Nolen": "Owner: same player; transferred from MISS (2024) to MICH (2025)."

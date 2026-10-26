@@ -51,7 +51,7 @@ Logos: 150 team logos + 11 conference marks extracted. Team colors come from the
 | 18 | APPROVED (F18) | Class labels are inconsistent: "SR (RS)", "SR(RS)", "Dave Shelley SO (RS)" (no dash), "SR (SR)", "Dorian Pringle - ROLB" (a position where the class should be). | Normalize to FR / SO / JR / SR with a separate redshirt flag; ask about the two odd ones. |
 | 19 | APPROVED (F19) | Position labels vary: RB/HB, OG/LG/RG, OT/LT/RT, LE/RE vs EDGE, LOLB/ROLB/MLB vs LB, FS/SS vs S, "WR/ATH". | Keep the exact position for depth charts; use a family (QB, RB, WR, TE, OL, DL, LB, DB, K, P) for filters and games. |
 | 20 | APPROVED (aliases.json, 56 names) | Name variants: about 50 groups (list in `data/source-meta/name-variant-groups.json`). Examples: Kenny Tongues / Kenny Tonges / Keenan Tonges; Emmett / Emmit / Emmitt Mosley V; Damian / Damien Ferrario. | One canonical spelling per player in `aliases.json`. Owner picks. |
-| 21 | OPEN | Coach names vary: Josh / Joshua Dolan, Tim / Timmy Slocombe, Joe / Joseph Snyderwine. | Owner picks the display name for each. |
+| 21 | APPROVED (aliases.json coaches) | Coach names vary: Josh / Joshua Dolan, Tim / Timmy Slocombe, Joe / Joseph Snyderwine. | Owner picks the display name for each. |
 | 22 | NOTE | Columns sit in slightly different places on each coach sheet (OHIO's conference record sits under the "Conf Rank" header). | Parser handles it; no data change. |
 | 23 | NOTE | 2027 Walter Camp is a custom award ("Most Outstanding Player determined by JD"), plus the "Lynel Billups-Williams Rule". | Show as footnotes on the awards pages. |
 | 24 | NOTE | Trophy photos on the Awards sheet carry an auction-house watermark. | Don't publish them; design our own award marks. |
