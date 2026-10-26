@@ -28,7 +28,7 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 ## Milestone status
 - [x] M0 Setup Day: repo created and linked, folder layout made, Drive folders created, tracker copied to source/
 - [x] M1 Workbook inventory, logo extraction, data-health queue. All 21 items resolved: 20 fixes in `data/fixes.json` (F01-F22, F20/F21 live in `data/aliases.json`), 56 canonical player names + 3 coach names in `data/aliases.json`. Awaiting owner sign-off before M2.
-- [ ] M2 Clean data tables + build scripts
+- [x] M2 Clean data tables + build scripts (build_data.py, validate.py: 76 checks passing). Awaiting owner sign-off; queue items 25-27 open.
 - [ ] M3 Design system (palettes need owner approval)
 - [ ] M4 Program / season / game / player pages
 - [ ] M5 Almanac, Records Book, rivalry hub, Hall of Fame
@@ -38,6 +38,7 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 - [ ] M9 Road to 2038, Record Watch, phase tracker
 - [ ] M10 Clips pipeline, print mode, accessibility, QA
 - [ ] M11 Deploy, README, hand-off
+- [ ] **Final task (owner request, 2026-10-26):** produce a corrected COPY of the latest tracker (`source/corrected/<date> CSU Vikings Tracker (corrected).xlsx`) with every approved fix from `data/fixes.json` and every alias from `data/aliases.json` applied, plus a "Valhalla Changes" sheet listing sheet / cell / old value / new value / fix id, so the owner can copy-paste the edits into the live spreadsheet. Never modify the original or any dated copy in `source/`.
 
 ## Decisions log (approved by the owner after the spec)
 - 2026-10-26: Project lives at `C:\Users\Owner\Documents\valhalla-archive` (not the OneDrive Desktop, to avoid sync clashes with Git).
@@ -60,8 +61,12 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 - Playoff Tree: one 16-row block per year starting at row 2 (2023) in a fixed bracket layout; logos overlay the cells.
 - Logos: `site/assets/logos/<ABBR>.png` (resized to 256px), conference marks in `site/assets/conferences/`. Team colors in `data/source-meta/team-colors.json`.
 
-## Data model
-To be written in M2.
+## Data model and build (M2)
+- Full table list and conventions: [docs/data-model.md](docs/data-model.md).
+- Build: `py -P scripts/build_data.py` (newest `source/*.xlsx`, or pass a path). Writes `data/tables/*.json`, `data/snapshot/*.json` (raw cell values, for diffs), `data/build-report.md`.
+- Validate: `py -P scripts/validate.py` writes `data/validation-report.md` and exits 1 on any failure. Add a check whenever the owner approves a new fix.
+- Fixes are applied in code by fix id (search `FIXES[` in build_data.py). A new fix in fixes.json needs matching code.
+- Owner-set inputs not in the tracker: `data/site-control.json` (season + phase), `data/reference/teams.json` (abbreviation -> school).
 
 ## Update workflow
 To be written when `/update-archive` is built (see spec section 13).

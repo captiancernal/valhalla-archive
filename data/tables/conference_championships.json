@@ -1,0 +1,1122 @@
+[
+ {
+  "season": 2024,
+  "conference": "C-USA",
+  "champion": "LIB",
+  "runner_up": "SHSU",
+  "champion_score": 33,
+  "runner_up_score": 30
+ },
+ {
+  "season": 2024,
+  "conference": "Pac-12",
+  "champion": "WSU",
+  "runner_up": "BOIS",
+  "champion_score": 38,
+  "runner_up_score": 31
+ },
+ {
+  "season": 2024,
+  "conference": "Big 12",
+  "champion": "ASU",
+  "runner_up": "UTAH",
+  "champion_score": 38,
+  "runner_up_score": 31
+ },
+ {
+  "season": 2024,
+  "conference": "MAC",
+  "champion": "BALL",
+  "runner_up": "EMU",
+  "champion_score": 38,
+  "runner_up_score": 24
+ },
+ {
+  "season": 2024,
+  "conference": "Sun Belt",
+  "champion": "TXST",
+  "runner_up": "MRSH",
+  "champion_score": 35,
+  "runner_up_score": 30
+ },
+ {
+  "season": 2024,
+  "conference": "AAC",
+  "champion": "ECU",
+  "runner_up": "UNT",
+  "champion_score": 34,
+  "runner_up_score": 31
+ },
+ {
+  "season": 2024,
+  "conference": "Mountain West",
+  "champion": "NEV",
+  "runner_up": "UNLV",
+  "champion_score": 35,
+  "runner_up_score": 21
+ },
+ {
+  "season": 2024,
+  "conference": "SEC",
+  "champion": "BAMA",
+  "runner_up": "MISS",
+  "champion_score": 45,
+  "runner_up_score": 24
+ },
+ {
+  "season": 2024,
+  "conference": "ACC",
+  "champion": "MIA",
+  "runner_up": "CLEM",
+  "champion_score": 28,
+  "runner_up_score": 24
+ },
+ {
+  "season": 2024,
+  "conference": "Big Ten",
+  "champion": "ORE",
+  "runner_up": "UMD",
+  "champion_score": 33,
+  "runner_up_score": 23
+ },
+ {
+  "season": 2025,
+  "conference": "C-USA",
+  "champion": "SHSU",
+  "runner_up": "FIU",
+  "champion_score": 35,
+  "runner_up_score": 17
+ },
+ {
+  "season": 2025,
+  "conference": "Pac-12",
+  "champion": "CAL",
+  "runner_up": "WSU",
+  "champion_score": 31,
+  "runner_up_score": 21
+ },
+ {
+  "season": 2025,
+  "conference": "Big 12",
+  "champion": "BU",
+  "runner_up": "SMU",
+  "champion_score": 27,
+  "runner_up_score": 21
+ },
+ {
+  "season": 2025,
+  "conference": "MAC",
+  "champion": "BALL",
+  "runner_up": "BUFF",
+  "champion_score": 26,
+  "runner_up_score": 21
+ },
+ {
+  "season": 2025,
+  "conference": "Sun Belt",
+  "champion": "TXST",
+  "runner_up": "MRSH",
+  "champion_score": 38,
+  "runner_up_score": 31
+ },
+ {
+  "season": 2025,
+  "conference": "AAC",
+  "champion": "TLSA",
+  "runner_up": "TULN",
+  "champion_score": 27,
+  "runner_up_score": 24
+ },
+ {
+  "season": 2025,
+  "conference": "Mountain West",
+  "champion": "SJSU",
+  "runner_up": "USU",
+  "champion_score": 20,
+  "runner_up_score": 14
+ },
+ {
+  "season": 2025,
+  "conference": "SEC",
+  "champion": "BAMA",
+  "runner_up": "TEX",
+  "champion_score": 24,
+  "runner_up_score": 16
+ },
+ {
+  "season": 2025,
+  "conference": "ACC",
+  "champion": "GT",
+  "runner_up": "CLEM",
+  "champion_score": 17,
+  "runner_up_score": 7
+ },
+ {
+  "season": 2025,
+  "conference": "Big Ten",
+  "champion": "ORE",
+  "runner_up": "USC",
+  "champion_score": 59,
+  "runner_up_score": 21
+ },
+ {
+  "season": 2026,
+  "conference": "C-USA",
+  "champion": "LIB",
+  "runner_up": "MTSU",
+  "champion_score": 20,
+  "runner_up_score": 17
+ },
+ {
+  "season": 2026,
+  "conference": "Pac-12",
+  "champion": "BOIS",
+  "runner_up": "STAN",
+  "champion_score": 39,
+  "runner_up_score": 35
+ },
+ {
+  "season": 2026,
+  "conference": "Big 12",
+  "champion": "KSU",
+  "runner_up": "ASU",
+  "champion_score": 35,
+  "runner_up_score": 32
+ },
+ {
+  "season": 2026,
+  "conference": "MAC",
+  "champion": "CMU",
+  "runner_up": "BUFF",
+  "champion_score": 31,
+  "runner_up_score": 17
+ },
+ {
+  "season": 2026,
+  "conference": "Sun Belt",
+  "champion": "UL",
+  "runner_up": "APP",
+  "champion_score": 41,
+  "runner_up_score": 0
+ },
+ {
+  "season": 2026,
+  "conference": "AAC",
+  "champion": "TULN",
+  "runner_up": "UNT",
+  "champion_score": 24,
+  "runner_up_score": 20
+ },
+ {
+  "season": 2026,
+  "conference": "Mountain West",
+  "champion": "NEV",
+  "runner_up": "UNLV",
+  "champion_score": 35,
+  "runner_up_score": 21
+ },
+ {
+  "season": 2026,
+  "conference": "SEC",
+  "champion": "FLA",
+  "runner_up": "UGA",
+  "champion_score": 23,
+  "runner_up_score": 20
+ },
+ {
+  "season": 2026,
+  "conference": "ACC",
+  "champion": "MIA",
+  "runner_up": "CLEM",
+  "champion_score": 31,
+  "runner_up_score": 23
+ },
+ {
+  "season": 2026,
+  "conference": "Big Ten",
+  "champion": "USC",
+  "runner_up": "ORE",
+  "champion_score": 43,
+  "runner_up_score": 26
+ },
+ {
+  "season": 2027,
+  "conference": "C-USA",
+  "champion": "MTSU",
+  "runner_up": "WKU",
+  "champion_score": 42,
+  "runner_up_score": 34
+ },
+ {
+  "season": 2027,
+  "conference": "Pac-12",
+  "champion": "ORST",
+  "runner_up": "CAL",
+  "champion_score": 49,
+  "runner_up_score": 9
+ },
+ {
+  "season": 2027,
+  "conference": "Big 12",
+  "champion": "OHIO",
+  "runner_up": "COLO",
+  "champion_score": 38,
+  "runner_up_score": 0
+ },
+ {
+  "season": 2027,
+  "conference": "MAC",
+  "champion": "AKR",
+  "runner_up": "MASS",
+  "champion_score": 23,
+  "runner_up_score": 15
+ },
+ {
+  "season": 2027,
+  "conference": "Sun Belt",
+  "champion": "ODU",
+  "runner_up": "UL",
+  "champion_score": 38,
+  "runner_up_score": 3
+ },
+ {
+  "season": 2027,
+  "conference": "AAC",
+  "champion": "TEM",
+  "runner_up": "RICE",
+  "champion_score": 34,
+  "runner_up_score": 20
+ },
+ {
+  "season": 2027,
+  "conference": "Mountain West",
+  "champion": "CSU",
+  "runner_up": "SJSU",
+  "champion_score": 35,
+  "runner_up_score": 7
+ },
+ {
+  "season": 2027,
+  "conference": "SEC",
+  "champion": "TAMU",
+  "runner_up": "BAMA",
+  "champion_score": 40,
+  "runner_up_score": 37
+ },
+ {
+  "season": 2027,
+  "conference": "ACC",
+  "champion": "UC",
+  "runner_up": "NCST",
+  "champion_score": 25,
+  "runner_up_score": 17
+ },
+ {
+  "season": 2027,
+  "conference": "Big Ten",
+  "champion": "USC",
+  "runner_up": "PSU",
+  "champion_score": 35,
+  "runner_up_score": 14
+ },
+ {
+  "season": 2028,
+  "conference": "C-USA",
+  "champion": "MTSU",
+  "runner_up": "LT",
+  "champion_score": 25,
+  "runner_up_score": 21
+ },
+ {
+  "season": 2028,
+  "conference": "Pac-12",
+  "champion": "CAL",
+  "runner_up": "SDSU",
+  "champion_score": 23,
+  "runner_up_score": 17
+ },
+ {
+  "season": 2028,
+  "conference": "Big 12",
+  "champion": "CLEV",
+  "runner_up": "OHIO",
+  "champion_score": 48,
+  "runner_up_score": 17
+ },
+ {
+  "season": 2028,
+  "conference": "MAC",
+  "champion": "MASS",
+  "runner_up": "BALL",
+  "champion_score": 34,
+  "runner_up_score": 20
+ },
+ {
+  "season": 2028,
+  "conference": "Sun Belt",
+  "champion": "UL",
+  "runner_up": "MRSH",
+  "champion_score": 24,
+  "runner_up_score": 17
+ },
+ {
+  "season": 2028,
+  "conference": "AAC",
+  "champion": "CHAR",
+  "runner_up": "UNT",
+  "champion_score": 13,
+  "runner_up_score": 5
+ },
+ {
+  "season": 2028,
+  "conference": "Mountain West",
+  "champion": "AFA",
+  "runner_up": "UNM",
+  "champion_score": 27,
+  "runner_up_score": 21
+ },
+ {
+  "season": 2028,
+  "conference": "SEC",
+  "champion": "UGA",
+  "runner_up": "LSU",
+  "champion_score": 33,
+  "runner_up_score": 14
+ },
+ {
+  "season": 2028,
+  "conference": "ACC",
+  "champion": "NCST",
+  "runner_up": "CLEM",
+  "champion_score": 20,
+  "runner_up_score": 17
+ },
+ {
+  "season": 2028,
+  "conference": "Big Ten",
+  "champion": "ORE",
+  "runner_up": "USC",
+  "champion_score": 49,
+  "runner_up_score": 21
+ },
+ {
+  "season": 2029,
+  "conference": "C-USA",
+  "champion": "NMS",
+  "runner_up": "UTEP",
+  "champion_score": 38,
+  "runner_up_score": 15
+ },
+ {
+  "season": 2029,
+  "conference": "Pac-12",
+  "champion": "STAN",
+  "runner_up": "ORST",
+  "champion_score": 29,
+  "runner_up_score": 24
+ },
+ {
+  "season": 2029,
+  "conference": "MAC",
+  "champion": "MASS",
+  "runner_up": "BUFF",
+  "champion_score": 38,
+  "runner_up_score": 36
+ },
+ {
+  "season": 2029,
+  "conference": "Big 12",
+  "champion": "M-OH",
+  "runner_up": "CLEV",
+  "champion_score": 34,
+  "runner_up_score": 28
+ },
+ {
+  "season": 2029,
+  "conference": "Sun Belt",
+  "champion": "ODU",
+  "runner_up": "TXST",
+  "champion_score": 30,
+  "runner_up_score": 28
+ },
+ {
+  "season": 2029,
+  "conference": "AAC",
+  "champion": "TULN",
+  "runner_up": "UTSA",
+  "champion_score": 24,
+  "runner_up_score": 13
+ },
+ {
+  "season": 2029,
+  "conference": "Mountain West",
+  "champion": "USU",
+  "runner_up": "SJSU",
+  "champion_score": 17,
+  "runner_up_score": 14
+ },
+ {
+  "season": 2029,
+  "conference": "SEC",
+  "champion": "UGA",
+  "runner_up": "OU",
+  "champion_score": 52,
+  "runner_up_score": 24
+ },
+ {
+  "season": 2029,
+  "conference": "ACC",
+  "champion": "UC",
+  "runner_up": "GT",
+  "champion_score": 27,
+  "runner_up_score": 24
+ },
+ {
+  "season": 2029,
+  "conference": "Big Ten",
+  "champion": "ORE",
+  "runner_up": "ILL",
+  "champion_score": 30,
+  "runner_up_score": 7
+ },
+ {
+  "season": 2030,
+  "conference": "C-USA",
+  "champion": "FIU",
+  "runner_up": "WKU",
+  "champion_score": 20,
+  "runner_up_score": 10
+ },
+ {
+  "season": 2030,
+  "conference": "Pac-12",
+  "champion": "FRES",
+  "runner_up": "STAN",
+  "champion_score": 40,
+  "runner_up_score": 27
+ },
+ {
+  "season": 2030,
+  "conference": "Big 12",
+  "champion": "CLEV",
+  "runner_up": "OHIO",
+  "champion_score": 45,
+  "runner_up_score": 42
+ },
+ {
+  "season": 2030,
+  "conference": "MAC",
+  "champion": "BALL",
+  "runner_up": "WMU",
+  "champion_score": 27,
+  "runner_up_score": 24
+ },
+ {
+  "season": 2030,
+  "conference": "Sun Belt",
+  "champion": "TROY",
+  "runner_up": "MRSH",
+  "champion_score": 46,
+  "runner_up_score": 13
+ },
+ {
+  "season": 2030,
+  "conference": "AAC",
+  "champion": "TULN",
+  "runner_up": "ARMY",
+  "champion_score": 16,
+  "runner_up_score": 10
+ },
+ {
+  "season": 2030,
+  "conference": "Mountain West",
+  "champion": "SJSU",
+  "runner_up": "UNLV",
+  "champion_score": 38,
+  "runner_up_score": 17
+ },
+ {
+  "season": 2030,
+  "conference": "SEC",
+  "champion": "UT",
+  "runner_up": "OU",
+  "champion_score": 21,
+  "runner_up_score": 17
+ },
+ {
+  "season": 2030,
+  "conference": "Big Ten",
+  "champion": "ORE",
+  "runner_up": "MSU",
+  "champion_score": 34,
+  "runner_up_score": 13
+ },
+ {
+  "season": 2030,
+  "conference": "ACC",
+  "champion": "FSU",
+  "runner_up": "MIA",
+  "champion_score": 37,
+  "runner_up_score": 34
+ },
+ {
+  "season": 2031,
+  "conference": "C-USA",
+  "champion": "MTSU",
+  "runner_up": "NMS",
+  "champion_score": 34,
+  "runner_up_score": 14
+ },
+ {
+  "season": 2031,
+  "conference": "Pac-12",
+  "champion": "FRES",
+  "runner_up": "CAL",
+  "champion_score": 17,
+  "runner_up_score": 7
+ },
+ {
+  "season": 2031,
+  "conference": "Big 12",
+  "champion": "CLEV",
+  "runner_up": "KSU",
+  "champion_score": 52,
+  "runner_up_score": 30
+ },
+ {
+  "season": 2031,
+  "conference": "MAC",
+  "champion": "CMU",
+  "runner_up": "AKR",
+  "champion_score": 20,
+  "runner_up_score": 17
+ },
+ {
+  "season": 2031,
+  "conference": "Sun Belt",
+  "champion": "MRSH",
+  "runner_up": "UL",
+  "champion_score": 27,
+  "runner_up_score": 19
+ },
+ {
+  "season": 2031,
+  "conference": "AAC",
+  "champion": "USF",
+  "runner_up": "MEM",
+  "champion_score": 24,
+  "runner_up_score": 16
+ },
+ {
+  "season": 2031,
+  "conference": "Mountain West",
+  "champion": "CSU",
+  "runner_up": "SJSU",
+  "champion_score": 38,
+  "runner_up_score": 35
+ },
+ {
+  "season": 2031,
+  "conference": "SEC",
+  "champion": "UGA",
+  "runner_up": "BAMA",
+  "champion_score": 38,
+  "runner_up_score": 23
+ },
+ {
+  "season": 2031,
+  "conference": "ACC",
+  "champion": "NCST",
+  "runner_up": "MIA",
+  "champion_score": 24,
+  "runner_up_score": 17
+ },
+ {
+  "season": 2031,
+  "conference": "Big Ten",
+  "champion": "WASH",
+  "runner_up": "MICH",
+  "champion_score": 31,
+  "runner_up_score": 28
+ },
+ {
+  "season": 2032,
+  "conference": "C-USA",
+  "champion": "UTEP",
+  "runner_up": "SHSU",
+  "champion_score": 14,
+  "runner_up_score": 10
+ },
+ {
+  "season": 2032,
+  "conference": "Pac-12",
+  "champion": "WSU",
+  "runner_up": "STAN",
+  "champion_score": 42,
+  "runner_up_score": 24
+ },
+ {
+  "season": 2032,
+  "conference": "Big 12",
+  "champion": "CLEV",
+  "runner_up": "OHIO",
+  "champion_score": 45,
+  "runner_up_score": 35
+ },
+ {
+  "season": 2032,
+  "conference": "MAC",
+  "champion": "BUFF",
+  "runner_up": "CMU",
+  "champion_score": 38,
+  "runner_up_score": 14
+ },
+ {
+  "season": 2032,
+  "conference": "Sun Belt",
+  "champion": "UL",
+  "runner_up": "GSU",
+  "champion_score": 38,
+  "runner_up_score": 31
+ },
+ {
+  "season": 2032,
+  "conference": "AAC",
+  "champion": "ECU",
+  "runner_up": "RICE",
+  "champion_score": 21,
+  "runner_up_score": 20
+ },
+ {
+  "season": 2032,
+  "conference": "Mountain West",
+  "champion": "UNM",
+  "runner_up": "CSU",
+  "champion_score": 27,
+  "runner_up_score": 13
+ },
+ {
+  "season": 2032,
+  "conference": "SEC",
+  "champion": "FLA",
+  "runner_up": "OU",
+  "champion_score": 39,
+  "runner_up_score": 31
+ },
+ {
+  "season": 2032,
+  "conference": "ACC",
+  "champion": "UNC",
+  "runner_up": "CLEM",
+  "champion_score": 34,
+  "runner_up_score": 24
+ },
+ {
+  "season": 2032,
+  "conference": "Big Ten",
+  "champion": "MICH",
+  "runner_up": "ORE",
+  "champion_score": 28,
+  "runner_up_score": 26
+ },
+ {
+  "season": 2033,
+  "conference": "C-USA",
+  "champion": "MTSU",
+  "runner_up": "WKU",
+  "champion_score": 17,
+  "runner_up_score": 9
+ },
+ {
+  "season": 2033,
+  "conference": "Pac-12",
+  "champion": "STAN",
+  "runner_up": "FRES",
+  "champion_score": 26,
+  "runner_up_score": 23
+ },
+ {
+  "season": 2033,
+  "conference": "Big 12",
+  "champion": "OHIO",
+  "runner_up": "M-OH",
+  "champion_score": 56,
+  "runner_up_score": 42
+ },
+ {
+  "season": 2033,
+  "conference": "MAC",
+  "champion": "BUFF",
+  "runner_up": "BALL",
+  "champion_score": 31,
+  "runner_up_score": 21
+ },
+ {
+  "season": 2033,
+  "conference": "Sun Belt",
+  "champion": "MRSH",
+  "runner_up": "TROY",
+  "champion_score": 27,
+  "runner_up_score": 24
+ },
+ {
+  "season": 2033,
+  "conference": "Mountain West",
+  "champion": "TLSA",
+  "runner_up": "MEM",
+  "champion_score": 27,
+  "runner_up_score": 20
+ },
+ {
+  "season": 2033,
+  "conference": "AAC",
+  "champion": "CSU",
+  "runner_up": "UNM",
+  "champion_score": 23,
+  "runner_up_score": 9
+ },
+ {
+  "season": 2033,
+  "conference": "SEC",
+  "champion": "OU",
+  "runner_up": "TAMU",
+  "champion_score": 24,
+  "runner_up_score": 20
+ },
+ {
+  "season": 2033,
+  "conference": "Big Ten",
+  "champion": "IOWA",
+  "runner_up": "NEB",
+  "champion_score": 38,
+  "runner_up_score": 30
+ },
+ {
+  "season": 2033,
+  "conference": "ACC",
+  "champion": "FSU",
+  "runner_up": "MIA",
+  "champion_score": 42,
+  "runner_up_score": 28
+ },
+ {
+  "season": 2034,
+  "conference": "C-USA",
+  "champion": "LT",
+  "runner_up": "MTSU",
+  "champion_score": 24,
+  "runner_up_score": 17
+ },
+ {
+  "season": 2034,
+  "conference": "Pac-12",
+  "champion": "STAN",
+  "runner_up": "ORST",
+  "champion_score": 32,
+  "runner_up_score": 29
+ },
+ {
+  "season": 2034,
+  "conference": "Big 12",
+  "champion": "M-OH",
+  "runner_up": "CLEV",
+  "champion_score": 57,
+  "runner_up_score": 42
+ },
+ {
+  "season": 2034,
+  "conference": "MAC",
+  "champion": "BUFF",
+  "runner_up": "EMU",
+  "champion_score": 31,
+  "runner_up_score": 10
+ },
+ {
+  "season": 2034,
+  "conference": "Sun Belt",
+  "champion": "MRSH",
+  "runner_up": "TROY",
+  "champion_score": 41,
+  "runner_up_score": 10
+ },
+ {
+  "season": 2034,
+  "conference": "Mountain West",
+  "champion": "CSU",
+  "runner_up": "SJSU",
+  "champion_score": 36,
+  "runner_up_score": 17
+ },
+ {
+  "season": 2034,
+  "conference": "AAC",
+  "champion": "MEM",
+  "runner_up": "CHAR",
+  "champion_score": 35,
+  "runner_up_score": 28
+ },
+ {
+  "season": 2034,
+  "conference": "SEC",
+  "champion": "TEX",
+  "runner_up": "UGA",
+  "champion_score": 35,
+  "runner_up_score": 10
+ },
+ {
+  "season": 2034,
+  "conference": "Big Ten",
+  "champion": "ORE",
+  "runner_up": "UCLA",
+  "champion_score": 27,
+  "runner_up_score": 14
+ },
+ {
+  "season": 2034,
+  "conference": "ACC",
+  "champion": "UNC",
+  "runner_up": "MIA",
+  "champion_score": 40,
+  "runner_up_score": 28
+ },
+ {
+  "season": 2035,
+  "conference": "C-USA",
+  "champion": "LT",
+  "runner_up": "NMS",
+  "champion_score": 48,
+  "runner_up_score": 14
+ },
+ {
+  "season": 2035,
+  "conference": "Pac-12",
+  "champion": "CAL",
+  "runner_up": "STAN",
+  "champion_score": 21,
+  "runner_up_score": 14
+ },
+ {
+  "season": 2035,
+  "conference": "Big 12",
+  "champion": "M-OH",
+  "runner_up": "OKST",
+  "champion_score": 66,
+  "runner_up_score": 31
+ },
+ {
+  "season": 2035,
+  "conference": "MAC",
+  "champion": "CMU",
+  "runner_up": "BUFF",
+  "champion_score": 21,
+  "runner_up_score": 15
+ },
+ {
+  "season": 2035,
+  "conference": "Sun Belt",
+  "champion": "MRSH",
+  "runner_up": "UL",
+  "champion_score": 31,
+  "runner_up_score": 13
+ },
+ {
+  "season": 2035,
+  "conference": "Mountain West",
+  "champion": "CSU",
+  "runner_up": "UNLV",
+  "champion_score": 45,
+  "runner_up_score": 16
+ },
+ {
+  "season": 2035,
+  "conference": "AAC",
+  "champion": "ECU",
+  "runner_up": "NAVY",
+  "champion_score": 49,
+  "runner_up_score": 38
+ },
+ {
+  "season": 2035,
+  "conference": "SEC",
+  "champion": "TAMU",
+  "runner_up": "LSU",
+  "champion_score": 34,
+  "runner_up_score": 21
+ },
+ {
+  "season": 2035,
+  "conference": "Big Ten",
+  "champion": "WASH",
+  "runner_up": "ORE",
+  "champion_score": 27,
+  "runner_up_score": 24
+ },
+ {
+  "season": 2035,
+  "conference": "ACC",
+  "champion": "FSU",
+  "runner_up": "DUKE",
+  "champion_score": 24,
+  "runner_up_score": 17
+ },
+ {
+  "season": 2036,
+  "conference": "C-USA",
+  "champion": "LIB",
+  "runner_up": "JKST",
+  "champion_score": 31,
+  "runner_up_score": 14
+ },
+ {
+  "season": 2036,
+  "conference": "Pac-12",
+  "champion": "STAN",
+  "runner_up": "ORST",
+  "champion_score": 36,
+  "runner_up_score": 34
+ },
+ {
+  "season": 2036,
+  "conference": "Big 12",
+  "champion": "OHIO",
+  "runner_up": "M-OH",
+  "champion_score": 49,
+  "runner_up_score": 35
+ },
+ {
+  "season": 2036,
+  "conference": "MAC",
+  "champion": "AKR",
+  "runner_up": "EMU",
+  "champion_score": 45,
+  "runner_up_score": 7
+ },
+ {
+  "season": 2036,
+  "conference": "Sun Belt",
+  "champion": "ARST",
+  "runner_up": "MRSH",
+  "champion_score": 34,
+  "runner_up_score": 24
+ },
+ {
+  "season": 2036,
+  "conference": "Mountain West",
+  "champion": "NEV",
+  "runner_up": "UNLV",
+  "champion_score": 34,
+  "runner_up_score": 22
+ },
+ {
+  "season": 2036,
+  "conference": "AAC",
+  "champion": "USF",
+  "runner_up": "CHAR",
+  "champion_score": 17,
+  "runner_up_score": 14
+ },
+ {
+  "season": 2036,
+  "conference": "SEC",
+  "champion": "AUB",
+  "runner_up": "BAMA",
+  "champion_score": 28,
+  "runner_up_score": 17
+ },
+ {
+  "season": 2036,
+  "conference": "Big Ten",
+  "champion": "IOWA",
+  "runner_up": "MICH",
+  "champion_score": 30,
+  "runner_up_score": 25
+ },
+ {
+  "season": 2036,
+  "conference": "ACC",
+  "champion": "DUKE",
+  "runner_up": "FSU",
+  "champion_score": 39,
+  "runner_up_score": 35
+ },
+ {
+  "season": 2037,
+  "conference": "C-USA",
+  "champion": "LIB",
+  "runner_up": "WKU",
+  "champion_score": 41,
+  "runner_up_score": 14
+ },
+ {
+  "season": 2037,
+  "conference": "Pac-12",
+  "champion": "BOIS",
+  "runner_up": "ORST",
+  "champion_score": 20,
+  "runner_up_score": 17
+ },
+ {
+  "season": 2037,
+  "conference": "Big 12",
+  "champion": "M-OH",
+  "runner_up": "CLEV",
+  "champion_score": 63,
+  "runner_up_score": 42
+ },
+ {
+  "season": 2037,
+  "conference": "MAC",
+  "champion": "BUFF",
+  "runner_up": "AKR",
+  "champion_score": 39,
+  "runner_up_score": 37
+ },
+ {
+  "season": 2037,
+  "conference": "Sun Belt",
+  "champion": "ARST",
+  "runner_up": "MRSH",
+  "champion_score": 31,
+  "runner_up_score": 23
+ },
+ {
+  "season": 2037,
+  "conference": "Mountain West",
+  "champion": "AFA",
+  "runner_up": "UNLV",
+  "champion_score": 20,
+  "runner_up_score": 13
+ },
+ {
+  "season": 2037,
+  "conference": "AAC",
+  "champion": "UNT",
+  "runner_up": "UAB",
+  "champion_score": 28,
+  "runner_up_score": 21
+ },
+ {
+  "season": 2037,
+  "conference": "SEC",
+  "champion": "UK",
+  "runner_up": "LSU",
+  "champion_score": 31,
+  "runner_up_score": 17
+ },
+ {
+  "season": 2037,
+  "conference": "Big Ten",
+  "champion": "ORE",
+  "runner_up": "IOWA",
+  "champion_score": 23,
+  "runner_up_score": 21
+ },
+ {
+  "season": 2037,
+  "conference": "ACC",
+  "champion": "FSU",
+  "runner_up": "UVA",
+  "champion_score": 48,
+  "runner_up_score": 24
+ }
+]

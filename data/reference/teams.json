@@ -1,0 +1,43 @@
+{
+  "about": "Abbreviation -> school name. Reference data (not from the tracker). The tracker's Instructions sheet lists the abbreviations in alphabetical order of school name, which confirms each mapping. Owner can correct any entry.",
+  "teams": {
+    "AFA": "Air Force", "AKR": "Akron", "BAMA": "Alabama", "APP": "App State", "ARIZ": "Arizona",
+    "ASU": "Arizona State", "ARK": "Arkansas", "ARST": "Arkansas State", "ARMY": "Army", "AUB": "Auburn",
+    "BALL": "Ball State", "BU": "Baylor", "BOIS": "Boise State", "BC": "Boston College", "BGSU": "Bowling Green",
+    "BUFF": "Buffalo", "BYU": "BYU", "CAL": "California", "CMU": "Central Michigan", "CHAR": "Charlotte",
+    "UC": "Cincinnati", "CLEM": "Clemson", "CCU": "Coastal Carolina", "COLO": "Colorado", "CLEV": "Cleveland State",
+    "CSU": "Colorado State", "DUKE": "Duke", "ECU": "East Carolina", "EMU": "Eastern Michigan", "FAU": "Florida Atlantic",
+    "FIU": "FIU", "FLA": "Florida", "FSU": "Florida State", "FRES": "Fresno State", "UGA": "Georgia",
+    "GS": "Georgia Southern", "GSU": "Georgia State", "GT": "Georgia Tech", "HAW": "Hawai'i", "UH": "Houston",
+    "ILL": "Illinois", "IU": "Indiana", "IOWA": "Iowa", "ISU": "Iowa State", "JKST": "Jacksonville State",
+    "JMU": "James Madison", "KU": "Kansas", "KSU": "Kansas State", "KENN": "Kennesaw State", "KENT": "Kent State",
+    "UK": "Kentucky", "LIB": "Liberty", "UL": "Louisiana", "ULM": "Louisiana-Monroe", "LT": "Louisiana Tech",
+    "LOU": "Louisville", "LSU": "LSU", "MRSH": "Marshall", "UMD": "Maryland", "MEM": "Memphis",
+    "MIA": "Miami", "M-OH": "Miami (OH)", "MICH": "Michigan", "MSU": "Michigan State", "MTSU": "Middle Tennessee",
+    "MINN": "Minnesota", "MSST": "Mississippi State", "MIZ": "Missouri", "NAVY": "Navy", "NCST": "NC State",
+    "NEB": "Nebraska", "NEV": "Nevada", "UNM": "New Mexico", "NMS": "New Mexico State", "UNC": "North Carolina",
+    "UNT": "North Texas", "NIU": "Northern Illinois", "NU": "Northwestern", "ND": "Notre Dame", "OHIO": "Ohio",
+    "OSU": "Ohio State", "OU": "Oklahoma", "OKST": "Oklahoma State", "ODU": "Old Dominion", "MISS": "Ole Miss",
+    "ORE": "Oregon", "ORST": "Oregon State", "PSU": "Penn State", "PITT": "Pittsburgh", "PUR": "Purdue",
+    "RICE": "Rice", "RUTG": "Rutgers", "SHSU": "Sam Houston", "SDSU": "San Diego State", "SJSU": "San Jose State",
+    "SMU": "SMU", "USA": "South Alabama", "SCAR": "South Carolina", "USF": "South Florida", "USM": "Southern Miss",
+    "STAN": "Stanford", "SYR": "Syracuse", "TCU": "TCU", "TEM": "Temple", "UT": "Tennessee",
+    "TEX": "Texas", "TAMU": "Texas A&M", "TXST": "Texas State", "TTU": "Texas Tech", "TOL": "Toledo",
+    "TROY": "Troy", "TLSA": "Tulsa", "TULN": "Tulane", "UAB": "UAB", "UCF": "UCF", "UCLA": "UCLA",
+    "CONN": "UConn", "MASS": "UMass", "UNLV": "UNLV", "USC": "USC", "UTEP": "UTEP",
+    "UTSA": "UTSA", "UTAH": "Utah", "USU": "Utah State", "VAN": "Vanderbilt", "UVA": "Virginia",
+    "VT": "Virginia Tech", "WAKE": "Wake Forest", "WASH": "Washington", "WSU": "Washington State", "WVU": "West Virginia",
+    "WKU": "Western Kentucky", "WMU": "Western Michigan", "WIS": "Wisconsin", "UW": "Wyoming",
+    "MONT": "Montana", "NDSU": "North Dakota State", "NOVA": "Villanova", "DEL": "Delaware", "EWU": "Eastern Washington",
+    "GRAM": "Grambling State", "MTST": "Montana State", "YSU": "Youngstown State", "EKU": "Eastern Kentucky",
+    "FUR": "Furman", "RICH": "Richmond", "UNI": "Northern Iowa", "SIU": "Southern Illinois", "CSM": "Charleston Southern",
+    "UNH": "New Hampshire",
+    "FCSNW": "FCS Northwest", "FCS SE": "FCS Southeast"
+  },
+  "fcs": ["MONT", "NDSU", "NOVA", "DEL", "EWU", "GRAM", "MTST", "YSU", "EKU", "FUR", "RICH", "UNI", "SIU", "CSM", "UNH", "FCSNW", "FCS SE"],
+  "notes": {
+    "SDSU": "The tracker lists SDSU twice (FBS San Diego State and FCS South Dakota State). Treated as San Diego State.",
+    "CSU": "Colorado State. Cleveland State is CLEV.",
+    "UW": "Wyoming (the alphabetical list places UW after WIS). Washington is WASH."
+  }
+}

@@ -1,0 +1,3794 @@
+[
+ {
+  "season": 2023,
+  "conference": "AAC",
+  "place": 1,
+  "team": "SMU"
+ },
+ {
+  "season": 2023,
+  "conference": "AAC",
+  "place": 2,
+  "team": "TULN"
+ },
+ {
+  "season": 2023,
+  "conference": "AAC",
+  "place": 3,
+  "team": "UTSA"
+ },
+ {
+  "season": 2023,
+  "conference": "AAC",
+  "place": 4,
+  "team": "MEM"
+ },
+ {
+  "season": 2023,
+  "conference": "ACC",
+  "place": 1,
+  "team": "FSU"
+ },
+ {
+  "season": 2023,
+  "conference": "ACC",
+  "place": 2,
+  "team": "LOU"
+ },
+ {
+  "season": 2023,
+  "conference": "ACC",
+  "place": 3,
+  "team": "NCST"
+ },
+ {
+  "season": 2023,
+  "conference": "ACC",
+  "place": 4,
+  "team": "GT"
+ },
+ {
+  "season": 2023,
+  "conference": "Big 12",
+  "place": 1,
+  "team": "TEX"
+ },
+ {
+  "season": 2023,
+  "conference": "Big 12",
+  "place": 2,
+  "team": "OKST"
+ },
+ {
+  "season": 2023,
+  "conference": "Big 12",
+  "place": 3,
+  "team": "OU"
+ },
+ {
+  "season": 2023,
+  "conference": "Big 12",
+  "place": 4,
+  "team": "ISU"
+ },
+ {
+  "season": 2023,
+  "conference": "Big Ten",
+  "place": 1,
+  "team": "MICH"
+ },
+ {
+  "season": 2023,
+  "conference": "Big Ten",
+  "place": 2,
+  "team": "OSU"
+ },
+ {
+  "season": 2023,
+  "conference": "Big Ten",
+  "place": 3,
+  "team": "IOWA"
+ },
+ {
+  "season": 2023,
+  "conference": "Big Ten",
+  "place": 4,
+  "team": "PSU"
+ },
+ {
+  "season": 2023,
+  "conference": "C-USA",
+  "place": 1,
+  "team": "LIB"
+ },
+ {
+  "season": 2023,
+  "conference": "C-USA",
+  "place": 2,
+  "team": "UNM"
+ },
+ {
+  "season": 2023,
+  "conference": "C-USA",
+  "place": 3,
+  "team": "JKST"
+ },
+ {
+  "season": 2023,
+  "conference": "C-USA",
+  "place": 4,
+  "team": "WKU"
+ },
+ {
+  "season": 2023,
+  "conference": "Independents",
+  "place": 1,
+  "team": "ND"
+ },
+ {
+  "season": 2023,
+  "conference": "Independents",
+  "place": 2,
+  "team": "ARMY"
+ },
+ {
+  "season": 2023,
+  "conference": "Independents",
+  "place": 3,
+  "team": "CONN"
+ },
+ {
+  "season": 2023,
+  "conference": "Independents",
+  "place": 4,
+  "team": "MASS"
+ },
+ {
+  "season": 2023,
+  "conference": "MAC",
+  "place": 1,
+  "team": "BGSU"
+ },
+ {
+  "season": 2023,
+  "conference": "MAC",
+  "place": 2,
+  "team": "M-OH"
+ },
+ {
+  "season": 2023,
+  "conference": "MAC",
+  "place": 3,
+  "team": "OHIO"
+ },
+ {
+  "season": 2023,
+  "conference": "MAC",
+  "place": 4,
+  "team": "NIU"
+ },
+ {
+  "season": 2023,
+  "conference": "Mountain West",
+  "place": 1,
+  "team": "BOIS"
+ },
+ {
+  "season": 2023,
+  "conference": "Mountain West",
+  "place": 2,
+  "team": "SJSU"
+ },
+ {
+  "season": 2023,
+  "conference": "Mountain West",
+  "place": 3,
+  "team": "UNLV"
+ },
+ {
+  "season": 2023,
+  "conference": "Mountain West",
+  "place": 4,
+  "team": "AFA"
+ },
+ {
+  "season": 2023,
+  "conference": "Pac-12",
+  "place": 1,
+  "team": "WASH"
+ },
+ {
+  "season": 2023,
+  "conference": "Pac-12",
+  "place": 2,
+  "team": "ORE"
+ },
+ {
+  "season": 2023,
+  "conference": "Pac-12",
+  "place": 3,
+  "team": "ARIZ"
+ },
+ {
+  "season": 2023,
+  "conference": "Pac-12",
+  "place": 4,
+  "team": "ORST"
+ },
+ {
+  "season": 2023,
+  "conference": "SEC",
+  "place": 1,
+  "team": "UGA"
+ },
+ {
+  "season": 2023,
+  "conference": "SEC",
+  "place": 2,
+  "team": "BAMA"
+ },
+ {
+  "season": 2023,
+  "conference": "SEC",
+  "place": 3,
+  "team": "MIZ"
+ },
+ {
+  "season": 2023,
+  "conference": "SEC",
+  "place": 4,
+  "team": "MISS"
+ },
+ {
+  "season": 2023,
+  "conference": "Sun Belt",
+  "place": 1,
+  "team": "JMU"
+ },
+ {
+  "season": 2023,
+  "conference": "Sun Belt",
+  "place": 2,
+  "team": "TROY"
+ },
+ {
+  "season": 2023,
+  "conference": "Sun Belt",
+  "place": 3,
+  "team": "APP"
+ },
+ {
+  "season": 2023,
+  "conference": "Sun Belt",
+  "place": 4,
+  "team": "CCU"
+ },
+ {
+  "season": 2024,
+  "conference": "AAC",
+  "place": 1,
+  "team": "ECU"
+ },
+ {
+  "season": 2024,
+  "conference": "AAC",
+  "place": 2,
+  "team": "UNT"
+ },
+ {
+  "season": 2024,
+  "conference": "AAC",
+  "place": 3,
+  "team": "UAB"
+ },
+ {
+  "season": 2024,
+  "conference": "AAC",
+  "place": 4,
+  "team": "USF"
+ },
+ {
+  "season": 2024,
+  "conference": "ACC",
+  "place": 1,
+  "team": "MIA"
+ },
+ {
+  "season": 2024,
+  "conference": "ACC",
+  "place": 2,
+  "team": "CLEM"
+ },
+ {
+  "season": 2024,
+  "conference": "ACC",
+  "place": 3,
+  "team": "NCST"
+ },
+ {
+  "season": 2024,
+  "conference": "ACC",
+  "place": 4,
+  "team": "SYR"
+ },
+ {
+  "season": 2024,
+  "conference": "Big 12",
+  "place": 1,
+  "team": "ASU"
+ },
+ {
+  "season": 2024,
+  "conference": "Big 12",
+  "place": 2,
+  "team": "UTAH"
+ },
+ {
+  "season": 2024,
+  "conference": "Big 12",
+  "place": 3,
+  "team": "COLO"
+ },
+ {
+  "season": 2024,
+  "conference": "Big 12",
+  "place": 4,
+  "team": "KSU"
+ },
+ {
+  "season": 2024,
+  "conference": "Big Ten",
+  "place": 1,
+  "team": "ORE"
+ },
+ {
+  "season": 2024,
+  "conference": "Big Ten",
+  "place": 2,
+  "team": "UMD"
+ },
+ {
+  "season": 2024,
+  "conference": "Big Ten",
+  "place": 3,
+  "team": "OSU"
+ },
+ {
+  "season": 2024,
+  "conference": "Big Ten",
+  "place": 4,
+  "team": "PSU"
+ },
+ {
+  "season": 2024,
+  "conference": "C-USA",
+  "place": 1,
+  "team": "LIB"
+ },
+ {
+  "season": 2024,
+  "conference": "C-USA",
+  "place": 2,
+  "team": "SHSU"
+ },
+ {
+  "season": 2024,
+  "conference": "C-USA",
+  "place": 3,
+  "team": "MTSU"
+ },
+ {
+  "season": 2024,
+  "conference": "C-USA",
+  "place": 4,
+  "team": "JKST"
+ },
+ {
+  "season": 2024,
+  "conference": "Independents",
+  "place": 1,
+  "team": "ND"
+ },
+ {
+  "season": 2024,
+  "conference": "Independents",
+  "place": 2,
+  "team": "CONN"
+ },
+ {
+  "season": 2024,
+  "conference": "MAC",
+  "place": 1,
+  "team": "BALL"
+ },
+ {
+  "season": 2024,
+  "conference": "MAC",
+  "place": 2,
+  "team": "EMU"
+ },
+ {
+  "season": 2024,
+  "conference": "MAC",
+  "place": 3,
+  "team": "CMU"
+ },
+ {
+  "season": 2024,
+  "conference": "MAC",
+  "place": 4,
+  "team": "MASS"
+ },
+ {
+  "season": 2024,
+  "conference": "Mountain West",
+  "place": 1,
+  "team": "NEV"
+ },
+ {
+  "season": 2024,
+  "conference": "Mountain West",
+  "place": 2,
+  "team": "UNLV"
+ },
+ {
+  "season": 2024,
+  "conference": "Mountain West",
+  "place": 3,
+  "team": "AFA"
+ },
+ {
+  "season": 2024,
+  "conference": "Mountain West",
+  "place": 4,
+  "team": "CSU"
+ },
+ {
+  "season": 2024,
+  "conference": "Pac-12",
+  "place": 1,
+  "team": "WSU"
+ },
+ {
+  "season": 2024,
+  "conference": "Pac-12",
+  "place": 2,
+  "team": "BOIS"
+ },
+ {
+  "season": 2024,
+  "conference": "Pac-12",
+  "place": 3,
+  "team": "ORST"
+ },
+ {
+  "season": 2024,
+  "conference": "Pac-12",
+  "place": 4,
+  "team": "CAL"
+ },
+ {
+  "season": 2024,
+  "conference": "SEC",
+  "place": 1,
+  "team": "BAMA"
+ },
+ {
+  "season": 2024,
+  "conference": "SEC",
+  "place": 2,
+  "team": "MISS"
+ },
+ {
+  "season": 2024,
+  "conference": "SEC",
+  "place": 3,
+  "team": "UGA"
+ },
+ {
+  "season": 2024,
+  "conference": "SEC",
+  "place": 4,
+  "team": "TEX"
+ },
+ {
+  "season": 2024,
+  "conference": "Sun Belt",
+  "place": 1,
+  "team": "TXST"
+ },
+ {
+  "season": 2024,
+  "conference": "Sun Belt",
+  "place": 2,
+  "team": "MRSH"
+ },
+ {
+  "season": 2024,
+  "conference": "Sun Belt",
+  "place": 3,
+  "team": "APP"
+ },
+ {
+  "season": 2024,
+  "conference": "Sun Belt",
+  "place": 4,
+  "team": "CCU"
+ },
+ {
+  "season": 2025,
+  "conference": "AAC",
+  "place": 1,
+  "team": "TLSA"
+ },
+ {
+  "season": 2025,
+  "conference": "AAC",
+  "place": 2,
+  "team": "TULN"
+ },
+ {
+  "season": 2025,
+  "conference": "AAC",
+  "place": 3,
+  "team": "NAVY"
+ },
+ {
+  "season": 2025,
+  "conference": "AAC",
+  "place": 4,
+  "team": "CHAR"
+ },
+ {
+  "season": 2025,
+  "conference": "ACC",
+  "place": 1,
+  "team": "GT"
+ },
+ {
+  "season": 2025,
+  "conference": "ACC",
+  "place": 2,
+  "team": "CLEM"
+ },
+ {
+  "season": 2025,
+  "conference": "ACC",
+  "place": 3,
+  "team": "BC"
+ },
+ {
+  "season": 2025,
+  "conference": "ACC",
+  "place": 4,
+  "team": "MIA"
+ },
+ {
+  "season": 2025,
+  "conference": "Big 12",
+  "place": 1,
+  "team": "SMU"
+ },
+ {
+  "season": 2025,
+  "conference": "Big 12",
+  "place": 2,
+  "team": "BU"
+ },
+ {
+  "season": 2025,
+  "conference": "Big 12",
+  "place": 3,
+  "team": "KSU"
+ },
+ {
+  "season": 2025,
+  "conference": "Big 12",
+  "place": 4,
+  "team": "ARIZ"
+ },
+ {
+  "season": 2025,
+  "conference": "Big Ten",
+  "place": 1,
+  "team": "ORE"
+ },
+ {
+  "season": 2025,
+  "conference": "Big Ten",
+  "place": 2,
+  "team": "USC"
+ },
+ {
+  "season": 2025,
+  "conference": "Big Ten",
+  "place": 3,
+  "team": "MICH"
+ },
+ {
+  "season": 2025,
+  "conference": "Big Ten",
+  "place": 4,
+  "team": "PSU"
+ },
+ {
+  "season": 2025,
+  "conference": "C-USA",
+  "place": 1,
+  "team": "SHSU"
+ },
+ {
+  "season": 2025,
+  "conference": "C-USA",
+  "place": 2,
+  "team": "FIU"
+ },
+ {
+  "season": 2025,
+  "conference": "C-USA",
+  "place": 3,
+  "team": "LIB"
+ },
+ {
+  "season": 2025,
+  "conference": "C-USA",
+  "place": 4,
+  "team": "MTSU"
+ },
+ {
+  "season": 2025,
+  "conference": "Independents",
+  "place": 1,
+  "team": "ND"
+ },
+ {
+  "season": 2025,
+  "conference": "Independents",
+  "place": 2,
+  "team": "CONN"
+ },
+ {
+  "season": 2025,
+  "conference": "MAC",
+  "place": 1,
+  "team": "BALL"
+ },
+ {
+  "season": 2025,
+  "conference": "MAC",
+  "place": 2,
+  "team": "BUFF"
+ },
+ {
+  "season": 2025,
+  "conference": "MAC",
+  "place": 3,
+  "team": "TOL"
+ },
+ {
+  "season": 2025,
+  "conference": "MAC",
+  "place": 4,
+  "team": "CMU"
+ },
+ {
+  "season": 2025,
+  "conference": "Mountain West",
+  "place": 1,
+  "team": "SJSU"
+ },
+ {
+  "season": 2025,
+  "conference": "Mountain West",
+  "place": 2,
+  "team": "USU"
+ },
+ {
+  "season": 2025,
+  "conference": "Mountain West",
+  "place": 3,
+  "team": "NEV"
+ },
+ {
+  "season": 2025,
+  "conference": "Mountain West",
+  "place": 4,
+  "team": "AFA"
+ },
+ {
+  "season": 2025,
+  "conference": "Pac-12",
+  "place": 1,
+  "team": "CAL"
+ },
+ {
+  "season": 2025,
+  "conference": "Pac-12",
+  "place": 2,
+  "team": "WSU"
+ },
+ {
+  "season": 2025,
+  "conference": "Pac-12",
+  "place": 3,
+  "team": "ORST"
+ },
+ {
+  "season": 2025,
+  "conference": "Pac-12",
+  "place": 4,
+  "team": "UW"
+ },
+ {
+  "season": 2025,
+  "conference": "SEC",
+  "place": 1,
+  "team": "BAMA"
+ },
+ {
+  "season": 2025,
+  "conference": "SEC",
+  "place": 2,
+  "team": "TEX"
+ },
+ {
+  "season": 2025,
+  "conference": "SEC",
+  "place": 3,
+  "team": "UGA"
+ },
+ {
+  "season": 2025,
+  "conference": "SEC",
+  "place": 4,
+  "team": "UT"
+ },
+ {
+  "season": 2025,
+  "conference": "Sun Belt",
+  "place": 1,
+  "team": "TXST"
+ },
+ {
+  "season": 2025,
+  "conference": "Sun Belt",
+  "place": 2,
+  "team": "MRSH"
+ },
+ {
+  "season": 2025,
+  "conference": "Sun Belt",
+  "place": 3,
+  "team": "UL"
+ },
+ {
+  "season": 2025,
+  "conference": "Sun Belt",
+  "place": 4,
+  "team": "GSU"
+ },
+ {
+  "season": 2026,
+  "conference": "AAC",
+  "place": 1,
+  "team": "TULN"
+ },
+ {
+  "season": 2026,
+  "conference": "AAC",
+  "place": 2,
+  "team": "UNT"
+ },
+ {
+  "season": 2026,
+  "conference": "AAC",
+  "place": 3,
+  "team": "UAB"
+ },
+ {
+  "season": 2026,
+  "conference": "AAC",
+  "place": 4,
+  "team": "RICE"
+ },
+ {
+  "season": 2026,
+  "conference": "ACC",
+  "place": 1,
+  "team": "MIA"
+ },
+ {
+  "season": 2026,
+  "conference": "ACC",
+  "place": 2,
+  "team": "CLEM"
+ },
+ {
+  "season": 2026,
+  "conference": "ACC",
+  "place": 3,
+  "team": "PITT"
+ },
+ {
+  "season": 2026,
+  "conference": "ACC",
+  "place": 4,
+  "team": "BC"
+ },
+ {
+  "season": 2026,
+  "conference": "Big 12",
+  "place": 1,
+  "team": "KSU"
+ },
+ {
+  "season": 2026,
+  "conference": "Big 12",
+  "place": 2,
+  "team": "ASU"
+ },
+ {
+  "season": 2026,
+  "conference": "Big 12",
+  "place": 3,
+  "team": "CLEV"
+ },
+ {
+  "season": 2026,
+  "conference": "Big 12",
+  "place": 4,
+  "team": "M-OH"
+ },
+ {
+  "season": 2026,
+  "conference": "Big Ten",
+  "place": 1,
+  "team": "USC"
+ },
+ {
+  "season": 2026,
+  "conference": "Big Ten",
+  "place": 2,
+  "team": "ORE"
+ },
+ {
+  "season": 2026,
+  "conference": "Big Ten",
+  "place": 3,
+  "team": "OSU"
+ },
+ {
+  "season": 2026,
+  "conference": "Big Ten",
+  "place": 4,
+  "team": "UMD"
+ },
+ {
+  "season": 2026,
+  "conference": "C-USA",
+  "place": 1,
+  "team": "LIB"
+ },
+ {
+  "season": 2026,
+  "conference": "C-USA",
+  "place": 2,
+  "team": "MTSU"
+ },
+ {
+  "season": 2026,
+  "conference": "C-USA",
+  "place": 3,
+  "team": "JKST"
+ },
+ {
+  "season": 2026,
+  "conference": "C-USA",
+  "place": 4,
+  "team": "SHSU"
+ },
+ {
+  "season": 2026,
+  "conference": "Independents",
+  "place": 1,
+  "team": "ND"
+ },
+ {
+  "season": 2026,
+  "conference": "Independents",
+  "place": 2,
+  "team": "CONN"
+ },
+ {
+  "season": 2026,
+  "conference": "MAC",
+  "place": 1,
+  "team": "CMU"
+ },
+ {
+  "season": 2026,
+  "conference": "MAC",
+  "place": 2,
+  "team": "BUFF"
+ },
+ {
+  "season": 2026,
+  "conference": "MAC",
+  "place": 3,
+  "team": "BALL"
+ },
+ {
+  "season": 2026,
+  "conference": "MAC",
+  "place": 4,
+  "team": "TOL"
+ },
+ {
+  "season": 2026,
+  "conference": "Mountain West",
+  "place": 1,
+  "team": "NEV"
+ },
+ {
+  "season": 2026,
+  "conference": "Mountain West",
+  "place": 2,
+  "team": "UNLV"
+ },
+ {
+  "season": 2026,
+  "conference": "Mountain West",
+  "place": 3,
+  "team": "AFA"
+ },
+ {
+  "season": 2026,
+  "conference": "Mountain West",
+  "place": 4,
+  "team": "USU"
+ },
+ {
+  "season": 2026,
+  "conference": "Pac-12",
+  "place": 1,
+  "team": "BOIS"
+ },
+ {
+  "season": 2026,
+  "conference": "Pac-12",
+  "place": 2,
+  "team": "STAN"
+ },
+ {
+  "season": 2026,
+  "conference": "Pac-12",
+  "place": 3,
+  "team": "WSU"
+ },
+ {
+  "season": 2026,
+  "conference": "Pac-12",
+  "place": 4,
+  "team": "CAL"
+ },
+ {
+  "season": 2026,
+  "conference": "SEC",
+  "place": 1,
+  "team": "FLA"
+ },
+ {
+  "season": 2026,
+  "conference": "SEC",
+  "place": 2,
+  "team": "UGA"
+ },
+ {
+  "season": 2026,
+  "conference": "SEC",
+  "place": 3,
+  "team": "BAMA"
+ },
+ {
+  "season": 2026,
+  "conference": "SEC",
+  "place": 4,
+  "team": "TAMU"
+ },
+ {
+  "season": 2026,
+  "conference": "Sun Belt",
+  "place": 1,
+  "team": "UL"
+ },
+ {
+  "season": 2026,
+  "conference": "Sun Belt",
+  "place": 2,
+  "team": "APP"
+ },
+ {
+  "season": 2026,
+  "conference": "Sun Belt",
+  "place": 3,
+  "team": "MRSH"
+ },
+ {
+  "season": 2026,
+  "conference": "Sun Belt",
+  "place": 4,
+  "team": "TXST"
+ },
+ {
+  "season": 2027,
+  "conference": "AAC",
+  "place": 1,
+  "team": "RICE"
+ },
+ {
+  "season": 2027,
+  "conference": "AAC",
+  "place": 2,
+  "team": "TEM"
+ },
+ {
+  "season": 2027,
+  "conference": "AAC",
+  "place": 3,
+  "team": "ECU"
+ },
+ {
+  "season": 2027,
+  "conference": "AAC",
+  "place": 4,
+  "team": "UNT"
+ },
+ {
+  "season": 2027,
+  "conference": "ACC",
+  "place": 1,
+  "team": "UC"
+ },
+ {
+  "season": 2027,
+  "conference": "ACC",
+  "place": 2,
+  "team": "NCST"
+ },
+ {
+  "season": 2027,
+  "conference": "ACC",
+  "place": 3,
+  "team": "MIA"
+ },
+ {
+  "season": 2027,
+  "conference": "ACC",
+  "place": 4,
+  "team": "VT"
+ },
+ {
+  "season": 2027,
+  "conference": "Big 12",
+  "place": 1,
+  "team": "OHIO"
+ },
+ {
+  "season": 2027,
+  "conference": "Big 12",
+  "place": 2,
+  "team": "COLO"
+ },
+ {
+  "season": 2027,
+  "conference": "Big 12",
+  "place": 3,
+  "team": "M-OH"
+ },
+ {
+  "season": 2027,
+  "conference": "Big 12",
+  "place": 4,
+  "team": "CLEV"
+ },
+ {
+  "season": 2027,
+  "conference": "Big Ten",
+  "place": 1,
+  "team": "USC"
+ },
+ {
+  "season": 2027,
+  "conference": "Big Ten",
+  "place": 2,
+  "team": "PSU"
+ },
+ {
+  "season": 2027,
+  "conference": "Big Ten",
+  "place": 3,
+  "team": "WASH"
+ },
+ {
+  "season": 2027,
+  "conference": "Big Ten",
+  "place": 4,
+  "team": "ORE"
+ },
+ {
+  "season": 2027,
+  "conference": "C-USA",
+  "place": 1,
+  "team": "WKU"
+ },
+ {
+  "season": 2027,
+  "conference": "C-USA",
+  "place": 2,
+  "team": "MTSU"
+ },
+ {
+  "season": 2027,
+  "conference": "C-USA",
+  "place": 3,
+  "team": "JKST"
+ },
+ {
+  "season": 2027,
+  "conference": "C-USA",
+  "place": 4,
+  "team": "UTEP"
+ },
+ {
+  "season": 2027,
+  "conference": "Independents",
+  "place": 1,
+  "team": "ND"
+ },
+ {
+  "season": 2027,
+  "conference": "Independents",
+  "place": 2,
+  "team": "CONN"
+ },
+ {
+  "season": 2027,
+  "conference": "MAC",
+  "place": 1,
+  "team": "MASS"
+ },
+ {
+  "season": 2027,
+  "conference": "MAC",
+  "place": 2,
+  "team": "AKR"
+ },
+ {
+  "season": 2027,
+  "conference": "MAC",
+  "place": 3,
+  "team": "TOL"
+ },
+ {
+  "season": 2027,
+  "conference": "MAC",
+  "place": 4,
+  "team": "BALL"
+ },
+ {
+  "season": 2027,
+  "conference": "Mountain West",
+  "place": 1,
+  "team": "SJSU"
+ },
+ {
+  "season": 2027,
+  "conference": "Mountain West",
+  "place": 2,
+  "team": "CSU"
+ },
+ {
+  "season": 2027,
+  "conference": "Mountain West",
+  "place": 3,
+  "team": "NEV"
+ },
+ {
+  "season": 2027,
+  "conference": "Mountain West",
+  "place": 4,
+  "team": "UNLV"
+ },
+ {
+  "season": 2027,
+  "conference": "Pac-12",
+  "place": 1,
+  "team": "ORST"
+ },
+ {
+  "season": 2027,
+  "conference": "Pac-12",
+  "place": 2,
+  "team": "CAL"
+ },
+ {
+  "season": 2027,
+  "conference": "Pac-12",
+  "place": 3,
+  "team": "UW"
+ },
+ {
+  "season": 2027,
+  "conference": "Pac-12",
+  "place": 4,
+  "team": "WSU"
+ },
+ {
+  "season": 2027,
+  "conference": "SEC",
+  "place": 1,
+  "team": "TAMU"
+ },
+ {
+  "season": 2027,
+  "conference": "SEC",
+  "place": 2,
+  "team": "BAMA"
+ },
+ {
+  "season": 2027,
+  "conference": "SEC",
+  "place": 3,
+  "team": "OU"
+ },
+ {
+  "season": 2027,
+  "conference": "SEC",
+  "place": 4,
+  "team": "LSU"
+ },
+ {
+  "season": 2027,
+  "conference": "Sun Belt",
+  "place": 1,
+  "team": "UL"
+ },
+ {
+  "season": 2027,
+  "conference": "Sun Belt",
+  "place": 2,
+  "team": "USA"
+ },
+ {
+  "season": 2027,
+  "conference": "Sun Belt",
+  "place": 3,
+  "team": "ODU"
+ },
+ {
+  "season": 2027,
+  "conference": "Sun Belt",
+  "place": 4,
+  "team": "TROY"
+ },
+ {
+  "season": 2028,
+  "conference": "AAC",
+  "place": 1,
+  "team": "CHAR"
+ },
+ {
+  "season": 2028,
+  "conference": "AAC",
+  "place": 2,
+  "team": "UNT"
+ },
+ {
+  "season": 2028,
+  "conference": "AAC",
+  "place": 3,
+  "team": "ECU"
+ },
+ {
+  "season": 2028,
+  "conference": "AAC",
+  "place": 4,
+  "team": "TLSA"
+ },
+ {
+  "season": 2028,
+  "conference": "ACC",
+  "place": 1,
+  "team": "NCST"
+ },
+ {
+  "season": 2028,
+  "conference": "ACC",
+  "place": 2,
+  "team": "CLEM"
+ },
+ {
+  "season": 2028,
+  "conference": "ACC",
+  "place": 3,
+  "team": "FSU"
+ },
+ {
+  "season": 2028,
+  "conference": "ACC",
+  "place": 4,
+  "team": "MIA"
+ },
+ {
+  "season": 2028,
+  "conference": "Big 12",
+  "place": 1,
+  "team": "CLEV"
+ },
+ {
+  "season": 2028,
+  "conference": "Big 12",
+  "place": 2,
+  "team": "OHIO"
+ },
+ {
+  "season": 2028,
+  "conference": "Big 12",
+  "place": 3,
+  "team": "KSU"
+ },
+ {
+  "season": 2028,
+  "conference": "Big 12",
+  "place": 4,
+  "team": "M-OH"
+ },
+ {
+  "season": 2028,
+  "conference": "Big Ten",
+  "place": 1,
+  "team": "ORE"
+ },
+ {
+  "season": 2028,
+  "conference": "Big Ten",
+  "place": 2,
+  "team": "USC"
+ },
+ {
+  "season": 2028,
+  "conference": "Big Ten",
+  "place": 3,
+  "team": "MICH"
+ },
+ {
+  "season": 2028,
+  "conference": "Big Ten",
+  "place": 4,
+  "team": "PSU"
+ },
+ {
+  "season": 2028,
+  "conference": "C-USA",
+  "place": 1,
+  "team": "MTSU"
+ },
+ {
+  "season": 2028,
+  "conference": "C-USA",
+  "place": 2,
+  "team": "LT"
+ },
+ {
+  "season": 2028,
+  "conference": "C-USA",
+  "place": 3,
+  "team": "WKU"
+ },
+ {
+  "season": 2028,
+  "conference": "C-USA",
+  "place": 4,
+  "team": "SHSU"
+ },
+ {
+  "season": 2028,
+  "conference": "Independents",
+  "place": 1,
+  "team": "ND"
+ },
+ {
+  "season": 2028,
+  "conference": "Independents",
+  "place": 2,
+  "team": "CONN"
+ },
+ {
+  "season": 2028,
+  "conference": "MAC",
+  "place": 1,
+  "team": "MASS"
+ },
+ {
+  "season": 2028,
+  "conference": "MAC",
+  "place": 2,
+  "team": "BALL"
+ },
+ {
+  "season": 2028,
+  "conference": "MAC",
+  "place": 3,
+  "team": "BUFF"
+ },
+ {
+  "season": 2028,
+  "conference": "MAC",
+  "place": 4,
+  "team": "WMU"
+ },
+ {
+  "season": 2028,
+  "conference": "Mountain West",
+  "place": 1,
+  "team": "AFA"
+ },
+ {
+  "season": 2028,
+  "conference": "Mountain West",
+  "place": 2,
+  "team": "UNM"
+ },
+ {
+  "season": 2028,
+  "conference": "Mountain West",
+  "place": 3,
+  "team": "UNLV"
+ },
+ {
+  "season": 2028,
+  "conference": "Mountain West",
+  "place": 4,
+  "team": "HAW"
+ },
+ {
+  "season": 2028,
+  "conference": "Pac-12",
+  "place": 1,
+  "team": "CAL"
+ },
+ {
+  "season": 2028,
+  "conference": "Pac-12",
+  "place": 2,
+  "team": "SDSU"
+ },
+ {
+  "season": 2028,
+  "conference": "Pac-12",
+  "place": 3,
+  "team": "STAN"
+ },
+ {
+  "season": 2028,
+  "conference": "Pac-12",
+  "place": 4,
+  "team": "ORST"
+ },
+ {
+  "season": 2028,
+  "conference": "SEC",
+  "place": 1,
+  "team": "UGA"
+ },
+ {
+  "season": 2028,
+  "conference": "SEC",
+  "place": 2,
+  "team": "LSU"
+ },
+ {
+  "season": 2028,
+  "conference": "SEC",
+  "place": 3,
+  "team": "TAMU"
+ },
+ {
+  "season": 2028,
+  "conference": "SEC",
+  "place": 4,
+  "team": "MSST"
+ },
+ {
+  "season": 2028,
+  "conference": "Sun Belt",
+  "place": 1,
+  "team": "UL"
+ },
+ {
+  "season": 2028,
+  "conference": "Sun Belt",
+  "place": 2,
+  "team": "MRSH"
+ },
+ {
+  "season": 2028,
+  "conference": "Sun Belt",
+  "place": 3,
+  "team": "ARST"
+ },
+ {
+  "season": 2028,
+  "conference": "Sun Belt",
+  "place": 4,
+  "team": "JMU"
+ },
+ {
+  "season": 2029,
+  "conference": "AAC",
+  "place": 1,
+  "team": "TULN"
+ },
+ {
+  "season": 2029,
+  "conference": "AAC",
+  "place": 2,
+  "team": "UTSA"
+ },
+ {
+  "season": 2029,
+  "conference": "AAC",
+  "place": 3,
+  "team": "MEM"
+ },
+ {
+  "season": 2029,
+  "conference": "AAC",
+  "place": 4,
+  "team": "FAU"
+ },
+ {
+  "season": 2029,
+  "conference": "ACC",
+  "place": 1,
+  "team": "UC"
+ },
+ {
+  "season": 2029,
+  "conference": "ACC",
+  "place": 2,
+  "team": "GT"
+ },
+ {
+  "season": 2029,
+  "conference": "ACC",
+  "place": 3,
+  "team": "NCST"
+ },
+ {
+  "season": 2029,
+  "conference": "ACC",
+  "place": 4,
+  "team": "SYR"
+ },
+ {
+  "season": 2029,
+  "conference": "Big 12",
+  "place": 1,
+  "team": "M-OH"
+ },
+ {
+  "season": 2029,
+  "conference": "Big 12",
+  "place": 2,
+  "team": "OHIO"
+ },
+ {
+  "season": 2029,
+  "conference": "Big 12",
+  "place": 3,
+  "team": "CLEV"
+ },
+ {
+  "season": 2029,
+  "conference": "Big 12",
+  "place": 4,
+  "team": "SMU"
+ },
+ {
+  "season": 2029,
+  "conference": "Big Ten",
+  "place": 1,
+  "team": "ORE"
+ },
+ {
+  "season": 2029,
+  "conference": "Big Ten",
+  "place": 2,
+  "team": "ILL"
+ },
+ {
+  "season": 2029,
+  "conference": "Big Ten",
+  "place": 3,
+  "team": "MSU"
+ },
+ {
+  "season": 2029,
+  "conference": "Big Ten",
+  "place": 4,
+  "team": "WIS"
+ },
+ {
+  "season": 2029,
+  "conference": "C-USA",
+  "place": 1,
+  "team": "NMS"
+ },
+ {
+  "season": 2029,
+  "conference": "C-USA",
+  "place": 2,
+  "team": "UTEP"
+ },
+ {
+  "season": 2029,
+  "conference": "C-USA",
+  "place": 3,
+  "team": "LIB"
+ },
+ {
+  "season": 2029,
+  "conference": "C-USA",
+  "place": 4,
+  "team": "LT"
+ },
+ {
+  "season": 2029,
+  "conference": "Independents",
+  "place": 1,
+  "team": "ND"
+ },
+ {
+  "season": 2029,
+  "conference": "Independents",
+  "place": 2,
+  "team": "CONN"
+ },
+ {
+  "season": 2029,
+  "conference": "MAC",
+  "place": 1,
+  "team": "MASS"
+ },
+ {
+  "season": 2029,
+  "conference": "MAC",
+  "place": 2,
+  "team": "BUFF"
+ },
+ {
+  "season": 2029,
+  "conference": "MAC",
+  "place": 3,
+  "team": "AKR"
+ },
+ {
+  "season": 2029,
+  "conference": "MAC",
+  "place": 4,
+  "team": "CMU"
+ },
+ {
+  "season": 2029,
+  "conference": "Mountain West",
+  "place": 1,
+  "team": "SJSU"
+ },
+ {
+  "season": 2029,
+  "conference": "Mountain West",
+  "place": 2,
+  "team": "USU"
+ },
+ {
+  "season": 2029,
+  "conference": "Mountain West",
+  "place": 3,
+  "team": "CSU"
+ },
+ {
+  "season": 2029,
+  "conference": "Mountain West",
+  "place": 4,
+  "team": "HAW"
+ },
+ {
+  "season": 2029,
+  "conference": "Pac-12",
+  "place": 1,
+  "team": "STAN"
+ },
+ {
+  "season": 2029,
+  "conference": "Pac-12",
+  "place": 2,
+  "team": "ORST"
+ },
+ {
+  "season": 2029,
+  "conference": "Pac-12",
+  "place": 3,
+  "team": "CAL"
+ },
+ {
+  "season": 2029,
+  "conference": "Pac-12",
+  "place": 4,
+  "team": "UW"
+ },
+ {
+  "season": 2029,
+  "conference": "SEC",
+  "place": 1,
+  "team": "OU"
+ },
+ {
+  "season": 2029,
+  "conference": "SEC",
+  "place": 2,
+  "team": "UGA"
+ },
+ {
+  "season": 2029,
+  "conference": "SEC",
+  "place": 3,
+  "team": "UK"
+ },
+ {
+  "season": 2029,
+  "conference": "SEC",
+  "place": 4,
+  "team": "LSU"
+ },
+ {
+  "season": 2029,
+  "conference": "Sun Belt",
+  "place": 1,
+  "team": "TXST"
+ },
+ {
+  "season": 2029,
+  "conference": "Sun Belt",
+  "place": 2,
+  "team": "UL"
+ },
+ {
+  "season": 2029,
+  "conference": "Sun Belt",
+  "place": 3,
+  "team": "ARST"
+ },
+ {
+  "season": 2029,
+  "conference": "Sun Belt",
+  "place": 4,
+  "team": "ODU"
+ },
+ {
+  "season": 2030,
+  "conference": "AAC",
+  "place": 1,
+  "team": "TULN"
+ },
+ {
+  "season": 2030,
+  "conference": "AAC",
+  "place": 2,
+  "team": "ARMY"
+ },
+ {
+  "season": 2030,
+  "conference": "AAC",
+  "place": 3,
+  "team": "UAB"
+ },
+ {
+  "season": 2030,
+  "conference": "AAC",
+  "place": 4,
+  "team": "TLSA"
+ },
+ {
+  "season": 2030,
+  "conference": "ACC",
+  "place": 1,
+  "team": "FSU"
+ },
+ {
+  "season": 2030,
+  "conference": "ACC",
+  "place": 2,
+  "team": "MIA"
+ },
+ {
+  "season": 2030,
+  "conference": "ACC",
+  "place": 3,
+  "team": "CLEM"
+ },
+ {
+  "season": 2030,
+  "conference": "ACC",
+  "place": 4,
+  "team": "UNC"
+ },
+ {
+  "season": 2030,
+  "conference": "Big 12",
+  "place": 1,
+  "team": "CLEV"
+ },
+ {
+  "season": 2030,
+  "conference": "Big 12",
+  "place": 2,
+  "team": "OHIO"
+ },
+ {
+  "season": 2030,
+  "conference": "Big 12",
+  "place": 3,
+  "team": "KSU"
+ },
+ {
+  "season": 2030,
+  "conference": "Big 12",
+  "place": 4,
+  "team": "M-OH"
+ },
+ {
+  "season": 2030,
+  "conference": "Big Ten",
+  "place": 1,
+  "team": "MSU"
+ },
+ {
+  "season": 2030,
+  "conference": "Big Ten",
+  "place": 2,
+  "team": "ORE"
+ },
+ {
+  "season": 2030,
+  "conference": "Big Ten",
+  "place": 3,
+  "team": "IU"
+ },
+ {
+  "season": 2030,
+  "conference": "Big Ten",
+  "place": 4,
+  "team": "MICH"
+ },
+ {
+  "season": 2030,
+  "conference": "C-USA",
+  "place": 1,
+  "team": "FIU"
+ },
+ {
+  "season": 2030,
+  "conference": "C-USA",
+  "place": 2,
+  "team": "WKU"
+ },
+ {
+  "season": 2030,
+  "conference": "C-USA",
+  "place": 3,
+  "team": "JKST"
+ },
+ {
+  "season": 2030,
+  "conference": "C-USA",
+  "place": 4,
+  "team": "LIB"
+ },
+ {
+  "season": 2030,
+  "conference": "Independents",
+  "place": 1,
+  "team": "CONN"
+ },
+ {
+  "season": 2030,
+  "conference": "Independents",
+  "place": 2,
+  "team": "ND"
+ },
+ {
+  "season": 2030,
+  "conference": "MAC",
+  "place": 1,
+  "team": "BALL"
+ },
+ {
+  "season": 2030,
+  "conference": "MAC",
+  "place": 2,
+  "team": "WMU"
+ },
+ {
+  "season": 2030,
+  "conference": "MAC",
+  "place": 3,
+  "team": "AKR"
+ },
+ {
+  "season": 2030,
+  "conference": "MAC",
+  "place": 4,
+  "team": "BUFF"
+ },
+ {
+  "season": 2030,
+  "conference": "Mountain West",
+  "place": 1,
+  "team": "SJSU"
+ },
+ {
+  "season": 2030,
+  "conference": "Mountain West",
+  "place": 2,
+  "team": "UNLV"
+ },
+ {
+  "season": 2030,
+  "conference": "Mountain West",
+  "place": 3,
+  "team": "AFA"
+ },
+ {
+  "season": 2030,
+  "conference": "Mountain West",
+  "place": 4,
+  "team": "NEV"
+ },
+ {
+  "season": 2030,
+  "conference": "Pac-12",
+  "place": 1,
+  "team": "FRES"
+ },
+ {
+  "season": 2030,
+  "conference": "Pac-12",
+  "place": 2,
+  "team": "STAN"
+ },
+ {
+  "season": 2030,
+  "conference": "Pac-12",
+  "place": 3,
+  "team": "CAL"
+ },
+ {
+  "season": 2030,
+  "conference": "Pac-12",
+  "place": 4,
+  "team": "BOIS"
+ },
+ {
+  "season": 2030,
+  "conference": "SEC",
+  "place": 1,
+  "team": "UT"
+ },
+ {
+  "season": 2030,
+  "conference": "SEC",
+  "place": 2,
+  "team": "OU"
+ },
+ {
+  "season": 2030,
+  "conference": "SEC",
+  "place": 3,
+  "team": "TAMU"
+ },
+ {
+  "season": 2030,
+  "conference": "SEC",
+  "place": 4,
+  "team": "MISS"
+ },
+ {
+  "season": 2030,
+  "conference": "Sun Belt",
+  "place": 1,
+  "team": "MRSH"
+ },
+ {
+  "season": 2030,
+  "conference": "Sun Belt",
+  "place": 2,
+  "team": "TROY"
+ },
+ {
+  "season": 2030,
+  "conference": "Sun Belt",
+  "place": 3,
+  "team": "ARST"
+ },
+ {
+  "season": 2030,
+  "conference": "Sun Belt",
+  "place": 4,
+  "team": "GSU"
+ },
+ {
+  "season": 2031,
+  "conference": "AAC",
+  "place": 1,
+  "team": "MEM"
+ },
+ {
+  "season": 2031,
+  "conference": "AAC",
+  "place": 2,
+  "team": "USF"
+ },
+ {
+  "season": 2031,
+  "conference": "AAC",
+  "place": 3,
+  "team": "UNT"
+ },
+ {
+  "season": 2031,
+  "conference": "AAC",
+  "place": 4,
+  "team": "CHAR"
+ },
+ {
+  "season": 2031,
+  "conference": "ACC",
+  "place": 1,
+  "team": "NCST"
+ },
+ {
+  "season": 2031,
+  "conference": "ACC",
+  "place": 2,
+  "team": "MIA"
+ },
+ {
+  "season": 2031,
+  "conference": "ACC",
+  "place": 3,
+  "team": "UNC"
+ },
+ {
+  "season": 2031,
+  "conference": "ACC",
+  "place": 4,
+  "team": "SYR"
+ },
+ {
+  "season": 2031,
+  "conference": "Big 12",
+  "place": 1,
+  "team": "CLEV"
+ },
+ {
+  "season": 2031,
+  "conference": "Big 12",
+  "place": 2,
+  "team": "KSU"
+ },
+ {
+  "season": 2031,
+  "conference": "Big 12",
+  "place": 3,
+  "team": "OHIO"
+ },
+ {
+  "season": 2031,
+  "conference": "Big 12",
+  "place": 4,
+  "team": "M-OH"
+ },
+ {
+  "season": 2031,
+  "conference": "Big Ten",
+  "place": 1,
+  "team": "MICH"
+ },
+ {
+  "season": 2031,
+  "conference": "Big Ten",
+  "place": 2,
+  "team": "WASH"
+ },
+ {
+  "season": 2031,
+  "conference": "Big Ten",
+  "place": 3,
+  "team": "USC"
+ },
+ {
+  "season": 2031,
+  "conference": "Big Ten",
+  "place": 4,
+  "team": "MSU"
+ },
+ {
+  "season": 2031,
+  "conference": "C-USA",
+  "place": 1,
+  "team": "MTSU"
+ },
+ {
+  "season": 2031,
+  "conference": "C-USA",
+  "place": 2,
+  "team": "NMS"
+ },
+ {
+  "season": 2031,
+  "conference": "C-USA",
+  "place": 3,
+  "team": "LIB"
+ },
+ {
+  "season": 2031,
+  "conference": "C-USA",
+  "place": 4,
+  "team": "WKU"
+ },
+ {
+  "season": 2031,
+  "conference": "Independents",
+  "place": 1,
+  "team": "ND"
+ },
+ {
+  "season": 2031,
+  "conference": "Independents",
+  "place": 2,
+  "team": "CONN"
+ },
+ {
+  "season": 2031,
+  "conference": "MAC",
+  "place": 1,
+  "team": "AKR"
+ },
+ {
+  "season": 2031,
+  "conference": "MAC",
+  "place": 2,
+  "team": "CMU"
+ },
+ {
+  "season": 2031,
+  "conference": "MAC",
+  "place": 3,
+  "team": "BUFF"
+ },
+ {
+  "season": 2031,
+  "conference": "MAC",
+  "place": 4,
+  "team": "TOL"
+ },
+ {
+  "season": 2031,
+  "conference": "Mountain West",
+  "place": 1,
+  "team": "CSU"
+ },
+ {
+  "season": 2031,
+  "conference": "Mountain West",
+  "place": 2,
+  "team": "SJSU"
+ },
+ {
+  "season": 2031,
+  "conference": "Mountain West",
+  "place": 3,
+  "team": "AFA"
+ },
+ {
+  "season": 2031,
+  "conference": "Mountain West",
+  "place": 4,
+  "team": "UNLV"
+ },
+ {
+  "season": 2031,
+  "conference": "Pac-12",
+  "place": 1,
+  "team": "FRES"
+ },
+ {
+  "season": 2031,
+  "conference": "Pac-12",
+  "place": 2,
+  "team": "CAL"
+ },
+ {
+  "season": 2031,
+  "conference": "Pac-12",
+  "place": 3,
+  "team": "STAN"
+ },
+ {
+  "season": 2031,
+  "conference": "Pac-12",
+  "place": 4,
+  "team": "WSU"
+ },
+ {
+  "season": 2031,
+  "conference": "SEC",
+  "place": 1,
+  "team": "UGA"
+ },
+ {
+  "season": 2031,
+  "conference": "SEC",
+  "place": 2,
+  "team": "BAMA"
+ },
+ {
+  "season": 2031,
+  "conference": "SEC",
+  "place": 3,
+  "team": "LSU"
+ },
+ {
+  "season": 2031,
+  "conference": "SEC",
+  "place": 4,
+  "team": "OU"
+ },
+ {
+  "season": 2031,
+  "conference": "Sun Belt",
+  "place": 1,
+  "team": "MRSH"
+ },
+ {
+  "season": 2031,
+  "conference": "Sun Belt",
+  "place": 2,
+  "team": "UL"
+ },
+ {
+  "season": 2031,
+  "conference": "Sun Belt",
+  "place": 3,
+  "team": "TROY"
+ },
+ {
+  "season": 2031,
+  "conference": "Sun Belt",
+  "place": 4,
+  "team": "ARST"
+ },
+ {
+  "season": 2032,
+  "conference": "AAC",
+  "place": 1,
+  "team": "ECU"
+ },
+ {
+  "season": 2032,
+  "conference": "AAC",
+  "place": 2,
+  "team": "RICE"
+ },
+ {
+  "season": 2032,
+  "conference": "AAC",
+  "place": 3,
+  "team": "TULN"
+ },
+ {
+  "season": 2032,
+  "conference": "AAC",
+  "place": 4,
+  "team": "ARMY"
+ },
+ {
+  "season": 2032,
+  "conference": "ACC",
+  "place": 1,
+  "team": "UNC"
+ },
+ {
+  "season": 2032,
+  "conference": "ACC",
+  "place": 2,
+  "team": "CLEM"
+ },
+ {
+  "season": 2032,
+  "conference": "ACC",
+  "place": 3,
+  "team": "DUKE"
+ },
+ {
+  "season": 2032,
+  "conference": "ACC",
+  "place": 4,
+  "team": "FSU"
+ },
+ {
+  "season": 2032,
+  "conference": "Big 12",
+  "place": 1,
+  "team": "CLEV"
+ },
+ {
+  "season": 2032,
+  "conference": "Big 12",
+  "place": 2,
+  "team": "OHIO"
+ },
+ {
+  "season": 2032,
+  "conference": "Big 12",
+  "place": 3,
+  "team": "KSU"
+ },
+ {
+  "season": 2032,
+  "conference": "Big 12",
+  "place": 4,
+  "team": "M-OH"
+ },
+ {
+  "season": 2032,
+  "conference": "Big Ten",
+  "place": 1,
+  "team": "ORE"
+ },
+ {
+  "season": 2032,
+  "conference": "Big Ten",
+  "place": 2,
+  "team": "MICH"
+ },
+ {
+  "season": 2032,
+  "conference": "Big Ten",
+  "place": 3,
+  "team": "OSU"
+ },
+ {
+  "season": 2032,
+  "conference": "Big Ten",
+  "place": 4,
+  "team": "WIS"
+ },
+ {
+  "season": 2032,
+  "conference": "C-USA",
+  "place": 1,
+  "team": "SHSU"
+ },
+ {
+  "season": 2032,
+  "conference": "C-USA",
+  "place": 2,
+  "team": "UTEP"
+ },
+ {
+  "season": 2032,
+  "conference": "C-USA",
+  "place": 3,
+  "team": "WKU"
+ },
+ {
+  "season": 2032,
+  "conference": "C-USA",
+  "place": 4,
+  "team": "MTSU"
+ },
+ {
+  "season": 2032,
+  "conference": "Independents",
+  "place": 1,
+  "team": "CONN"
+ },
+ {
+  "season": 2032,
+  "conference": "Independents",
+  "place": 2,
+  "team": "ND"
+ },
+ {
+  "season": 2032,
+  "conference": "MAC",
+  "place": 1,
+  "team": "BUFF"
+ },
+ {
+  "season": 2032,
+  "conference": "MAC",
+  "place": 2,
+  "team": "CMU"
+ },
+ {
+  "season": 2032,
+  "conference": "MAC",
+  "place": 3,
+  "team": "WMU"
+ },
+ {
+  "season": 2032,
+  "conference": "MAC",
+  "place": 4,
+  "team": "AKR"
+ },
+ {
+  "season": 2032,
+  "conference": "Mountain West",
+  "place": 1,
+  "team": "CSU"
+ },
+ {
+  "season": 2032,
+  "conference": "Mountain West",
+  "place": 2,
+  "team": "NMS"
+ },
+ {
+  "season": 2032,
+  "conference": "Mountain West",
+  "place": 3,
+  "team": "NEV"
+ },
+ {
+  "season": 2032,
+  "conference": "Mountain West",
+  "place": 4,
+  "team": "AFA"
+ },
+ {
+  "season": 2032,
+  "conference": "Pac-12",
+  "place": 1,
+  "team": "STAN"
+ },
+ {
+  "season": 2032,
+  "conference": "Pac-12",
+  "place": 2,
+  "team": "WSU"
+ },
+ {
+  "season": 2032,
+  "conference": "Pac-12",
+  "place": 3,
+  "team": "ORST"
+ },
+ {
+  "season": 2032,
+  "conference": "Pac-12",
+  "place": 4,
+  "team": "BOIS"
+ },
+ {
+  "season": 2032,
+  "conference": "SEC",
+  "place": 1,
+  "team": "OU"
+ },
+ {
+  "season": 2032,
+  "conference": "SEC",
+  "place": 2,
+  "team": "FLA"
+ },
+ {
+  "season": 2032,
+  "conference": "SEC",
+  "place": 3,
+  "team": "UGA"
+ },
+ {
+  "season": 2032,
+  "conference": "SEC",
+  "place": 4,
+  "team": "AUB"
+ },
+ {
+  "season": 2032,
+  "conference": "Sun Belt",
+  "place": 1,
+  "team": "UL"
+ },
+ {
+  "season": 2032,
+  "conference": "Sun Belt",
+  "place": 2,
+  "team": "GSU"
+ },
+ {
+  "season": 2032,
+  "conference": "Sun Belt",
+  "place": 3,
+  "team": "MRSH"
+ },
+ {
+  "season": 2032,
+  "conference": "Sun Belt",
+  "place": 4,
+  "team": "USA"
+ },
+ {
+  "season": 2033,
+  "conference": "AAC",
+  "place": 1,
+  "team": "MEM"
+ },
+ {
+  "season": 2033,
+  "conference": "AAC",
+  "place": 2,
+  "team": "TLSA"
+ },
+ {
+  "season": 2033,
+  "conference": "AAC",
+  "place": 3,
+  "team": "ECU"
+ },
+ {
+  "season": 2033,
+  "conference": "AAC",
+  "place": 4,
+  "team": "UAB"
+ },
+ {
+  "season": 2033,
+  "conference": "ACC",
+  "place": 1,
+  "team": "MIA"
+ },
+ {
+  "season": 2033,
+  "conference": "ACC",
+  "place": 2,
+  "team": "FSU"
+ },
+ {
+  "season": 2033,
+  "conference": "ACC",
+  "place": 3,
+  "team": "CLEM"
+ },
+ {
+  "season": 2033,
+  "conference": "ACC",
+  "place": 4,
+  "team": "NCST"
+ },
+ {
+  "season": 2033,
+  "conference": "Big 12",
+  "place": 1,
+  "team": "OHIO"
+ },
+ {
+  "season": 2033,
+  "conference": "Big 12",
+  "place": 2,
+  "team": "M-OH"
+ },
+ {
+  "season": 2033,
+  "conference": "Big 12",
+  "place": 3,
+  "team": "CLEV"
+ },
+ {
+  "season": 2033,
+  "conference": "Big 12",
+  "place": 4,
+  "team": "TCU"
+ },
+ {
+  "season": 2033,
+  "conference": "Big Ten",
+  "place": 1,
+  "team": "IOWA"
+ },
+ {
+  "season": 2033,
+  "conference": "Big Ten",
+  "place": 2,
+  "team": "NEB"
+ },
+ {
+  "season": 2033,
+  "conference": "Big Ten",
+  "place": 3,
+  "team": "OSU"
+ },
+ {
+  "season": 2033,
+  "conference": "Big Ten",
+  "place": 4,
+  "team": "PSU"
+ },
+ {
+  "season": 2033,
+  "conference": "C-USA",
+  "place": 1,
+  "team": "MTSU"
+ },
+ {
+  "season": 2033,
+  "conference": "C-USA",
+  "place": 2,
+  "team": "WKU"
+ },
+ {
+  "season": 2033,
+  "conference": "C-USA",
+  "place": 3,
+  "team": "LT"
+ },
+ {
+  "season": 2033,
+  "conference": "C-USA",
+  "place": 4,
+  "team": "UTEP"
+ },
+ {
+  "season": 2033,
+  "conference": "Independents",
+  "place": 1,
+  "team": "ND"
+ },
+ {
+  "season": 2033,
+  "conference": "Independents",
+  "place": 2,
+  "team": "CONN"
+ },
+ {
+  "season": 2033,
+  "conference": "MAC",
+  "place": 1,
+  "team": "BUFF"
+ },
+ {
+  "season": 2033,
+  "conference": "MAC",
+  "place": 2,
+  "team": "BALL"
+ },
+ {
+  "season": 2033,
+  "conference": "MAC",
+  "place": 3,
+  "team": "WMU"
+ },
+ {
+  "season": 2033,
+  "conference": "MAC",
+  "place": 4,
+  "team": "MASS"
+ },
+ {
+  "season": 2033,
+  "conference": "Mountain West",
+  "place": 1,
+  "team": "CSU"
+ },
+ {
+  "season": 2033,
+  "conference": "Mountain West",
+  "place": 2,
+  "team": "SJSU"
+ },
+ {
+  "season": 2033,
+  "conference": "Mountain West",
+  "place": 3,
+  "team": "HAW"
+ },
+ {
+  "season": 2033,
+  "conference": "Mountain West",
+  "place": 4,
+  "team": "UNM"
+ },
+ {
+  "season": 2033,
+  "conference": "Pac-12",
+  "place": 1,
+  "team": "FRES"
+ },
+ {
+  "season": 2033,
+  "conference": "Pac-12",
+  "place": 2,
+  "team": "STAN"
+ },
+ {
+  "season": 2033,
+  "conference": "Pac-12",
+  "place": 3,
+  "team": "UW"
+ },
+ {
+  "season": 2033,
+  "conference": "Pac-12",
+  "place": 4,
+  "team": "BOIS"
+ },
+ {
+  "season": 2033,
+  "conference": "SEC",
+  "place": 1,
+  "team": "OU"
+ },
+ {
+  "season": 2033,
+  "conference": "SEC",
+  "place": 2,
+  "team": "TAMU"
+ },
+ {
+  "season": 2033,
+  "conference": "SEC",
+  "place": 3,
+  "team": "AUB"
+ },
+ {
+  "season": 2033,
+  "conference": "SEC",
+  "place": 4,
+  "team": "BAMA"
+ },
+ {
+  "season": 2033,
+  "conference": "Sun Belt",
+  "place": 1,
+  "team": "MRSH"
+ },
+ {
+  "season": 2033,
+  "conference": "Sun Belt",
+  "place": 2,
+  "team": "ODU"
+ },
+ {
+  "season": 2033,
+  "conference": "Sun Belt",
+  "place": 3,
+  "team": "TROY"
+ },
+ {
+  "season": 2033,
+  "conference": "Sun Belt",
+  "place": 4,
+  "team": "TXST"
+ },
+ {
+  "season": 2034,
+  "conference": "AAC",
+  "place": 1,
+  "team": "MEM"
+ },
+ {
+  "season": 2034,
+  "conference": "AAC",
+  "place": 2,
+  "team": "CHAR"
+ },
+ {
+  "season": 2034,
+  "conference": "AAC",
+  "place": 3,
+  "team": "RICE"
+ },
+ {
+  "season": 2034,
+  "conference": "AAC",
+  "place": 4,
+  "team": "ECU"
+ },
+ {
+  "season": 2034,
+  "conference": "ACC",
+  "place": 1,
+  "team": "MIA"
+ },
+ {
+  "season": 2034,
+  "conference": "ACC",
+  "place": 2,
+  "team": "UNC"
+ },
+ {
+  "season": 2034,
+  "conference": "ACC",
+  "place": 3,
+  "team": "CLEM"
+ },
+ {
+  "season": 2034,
+  "conference": "ACC",
+  "place": 4,
+  "team": "DUKE"
+ },
+ {
+  "season": 2034,
+  "conference": "Big 12",
+  "place": 1,
+  "team": "M-OH"
+ },
+ {
+  "season": 2034,
+  "conference": "Big 12",
+  "place": 2,
+  "team": "CLEV"
+ },
+ {
+  "season": 2034,
+  "conference": "Big 12",
+  "place": 3,
+  "team": "OHIO"
+ },
+ {
+  "season": 2034,
+  "conference": "Big 12",
+  "place": 4,
+  "team": "TCU"
+ },
+ {
+  "season": 2034,
+  "conference": "Big Ten",
+  "place": 1,
+  "team": "ORE"
+ },
+ {
+  "season": 2034,
+  "conference": "Big Ten",
+  "place": 2,
+  "team": "UCLA"
+ },
+ {
+  "season": 2034,
+  "conference": "Big Ten",
+  "place": 3,
+  "team": "OSU"
+ },
+ {
+  "season": 2034,
+  "conference": "Big Ten",
+  "place": 4,
+  "team": "RUTG"
+ },
+ {
+  "season": 2034,
+  "conference": "C-USA",
+  "place": 1,
+  "team": "MTSU"
+ },
+ {
+  "season": 2034,
+  "conference": "C-USA",
+  "place": 2,
+  "team": "LT"
+ },
+ {
+  "season": 2034,
+  "conference": "C-USA",
+  "place": 3,
+  "team": "FAU"
+ },
+ {
+  "season": 2034,
+  "conference": "C-USA",
+  "place": 4,
+  "team": "LIB"
+ },
+ {
+  "season": 2034,
+  "conference": "Independents",
+  "place": 1,
+  "team": "ND"
+ },
+ {
+  "season": 2034,
+  "conference": "Independents",
+  "place": 2,
+  "team": "CONN"
+ },
+ {
+  "season": 2034,
+  "conference": "MAC",
+  "place": 1,
+  "team": "BUFF"
+ },
+ {
+  "season": 2034,
+  "conference": "MAC",
+  "place": 2,
+  "team": "EMU"
+ },
+ {
+  "season": 2034,
+  "conference": "MAC",
+  "place": 3,
+  "team": "CMU"
+ },
+ {
+  "season": 2034,
+  "conference": "MAC",
+  "place": 4,
+  "team": "AKR"
+ },
+ {
+  "season": 2034,
+  "conference": "Mountain West",
+  "place": 1,
+  "team": "CSU"
+ },
+ {
+  "season": 2034,
+  "conference": "Mountain West",
+  "place": 2,
+  "team": "SJSU"
+ },
+ {
+  "season": 2034,
+  "conference": "Mountain West",
+  "place": 3,
+  "team": "AFA"
+ },
+ {
+  "season": 2034,
+  "conference": "Mountain West",
+  "place": 4,
+  "team": "UNLV"
+ },
+ {
+  "season": 2034,
+  "conference": "Pac-12",
+  "place": 1,
+  "team": "STAN"
+ },
+ {
+  "season": 2034,
+  "conference": "Pac-12",
+  "place": 2,
+  "team": "ORST"
+ },
+ {
+  "season": 2034,
+  "conference": "Pac-12",
+  "place": 3,
+  "team": "UW"
+ },
+ {
+  "season": 2034,
+  "conference": "Pac-12",
+  "place": 4,
+  "team": "FRES"
+ },
+ {
+  "season": 2034,
+  "conference": "SEC",
+  "place": 1,
+  "team": "TEX"
+ },
+ {
+  "season": 2034,
+  "conference": "SEC",
+  "place": 2,
+  "team": "UGA"
+ },
+ {
+  "season": 2034,
+  "conference": "SEC",
+  "place": 3,
+  "team": "TAMU"
+ },
+ {
+  "season": 2034,
+  "conference": "SEC",
+  "place": 4,
+  "team": "MSST"
+ },
+ {
+  "season": 2034,
+  "conference": "Sun Belt",
+  "place": 1,
+  "team": "MRSH"
+ },
+ {
+  "season": 2034,
+  "conference": "Sun Belt",
+  "place": 2,
+  "team": "TROY"
+ },
+ {
+  "season": 2034,
+  "conference": "Sun Belt",
+  "place": 3,
+  "team": "GSU"
+ },
+ {
+  "season": 2034,
+  "conference": "Sun Belt",
+  "place": 4,
+  "team": "UL"
+ },
+ {
+  "season": 2035,
+  "conference": "AAC",
+  "place": 1,
+  "team": "ECU"
+ },
+ {
+  "season": 2035,
+  "conference": "AAC",
+  "place": 2,
+  "team": "NAVY"
+ },
+ {
+  "season": 2035,
+  "conference": "AAC",
+  "place": 3,
+  "team": "TULN"
+ },
+ {
+  "season": 2035,
+  "conference": "AAC",
+  "place": 4,
+  "team": "UAB"
+ },
+ {
+  "season": 2035,
+  "conference": "ACC",
+  "place": 1,
+  "team": "FSU"
+ },
+ {
+  "season": 2035,
+  "conference": "ACC",
+  "place": 2,
+  "team": "DUKE"
+ },
+ {
+  "season": 2035,
+  "conference": "ACC",
+  "place": 3,
+  "team": "UC"
+ },
+ {
+  "season": 2035,
+  "conference": "ACC",
+  "place": 4,
+  "team": "NCST"
+ },
+ {
+  "season": 2035,
+  "conference": "Big 12",
+  "place": 1,
+  "team": "M-OH"
+ },
+ {
+  "season": 2035,
+  "conference": "Big 12",
+  "place": 2,
+  "team": "OKST"
+ },
+ {
+  "season": 2035,
+  "conference": "Big 12",
+  "place": 3,
+  "team": "CLEV"
+ },
+ {
+  "season": 2035,
+  "conference": "Big 12",
+  "place": 4,
+  "team": "KSU"
+ },
+ {
+  "season": 2035,
+  "conference": "Big Ten",
+  "place": 1,
+  "team": "ORE"
+ },
+ {
+  "season": 2035,
+  "conference": "Big Ten",
+  "place": 2,
+  "team": "WASH"
+ },
+ {
+  "season": 2035,
+  "conference": "Big Ten",
+  "place": 3,
+  "team": "IOWA"
+ },
+ {
+  "season": 2035,
+  "conference": "Big Ten",
+  "place": 4,
+  "team": "USC"
+ },
+ {
+  "season": 2035,
+  "conference": "C-USA",
+  "place": 1,
+  "team": "NMS"
+ },
+ {
+  "season": 2035,
+  "conference": "C-USA",
+  "place": 2,
+  "team": "LT"
+ },
+ {
+  "season": 2035,
+  "conference": "C-USA",
+  "place": 3,
+  "team": "MTSU"
+ },
+ {
+  "season": 2035,
+  "conference": "C-USA",
+  "place": 4,
+  "team": "JKST"
+ },
+ {
+  "season": 2035,
+  "conference": "Independents",
+  "place": 1,
+  "team": "ND"
+ },
+ {
+  "season": 2035,
+  "conference": "Independents",
+  "place": 2,
+  "team": "CONN"
+ },
+ {
+  "season": 2035,
+  "conference": "MAC",
+  "place": 1,
+  "team": "CMU"
+ },
+ {
+  "season": 2035,
+  "conference": "MAC",
+  "place": 2,
+  "team": "BUFF"
+ },
+ {
+  "season": 2035,
+  "conference": "MAC",
+  "place": 3,
+  "team": "EMU"
+ },
+ {
+  "season": 2035,
+  "conference": "MAC",
+  "place": 4,
+  "team": "MASS"
+ },
+ {
+  "season": 2035,
+  "conference": "Mountain West",
+  "place": 1,
+  "team": "CSU"
+ },
+ {
+  "season": 2035,
+  "conference": "Mountain West",
+  "place": 2,
+  "team": "UNLV"
+ },
+ {
+  "season": 2035,
+  "conference": "Mountain West",
+  "place": 3,
+  "team": "AFA"
+ },
+ {
+  "season": 2035,
+  "conference": "Mountain West",
+  "place": 4,
+  "team": "SJSU"
+ },
+ {
+  "season": 2035,
+  "conference": "Pac-12",
+  "place": 1,
+  "team": "STAN"
+ },
+ {
+  "season": 2035,
+  "conference": "Pac-12",
+  "place": 2,
+  "team": "CAL"
+ },
+ {
+  "season": 2035,
+  "conference": "Pac-12",
+  "place": 3,
+  "team": "UW"
+ },
+ {
+  "season": 2035,
+  "conference": "Pac-12",
+  "place": 4,
+  "team": "FRES"
+ },
+ {
+  "season": 2035,
+  "conference": "SEC",
+  "place": 1,
+  "team": "TAMU"
+ },
+ {
+  "season": 2035,
+  "conference": "SEC",
+  "place": 2,
+  "team": "LSU"
+ },
+ {
+  "season": 2035,
+  "conference": "SEC",
+  "place": 3,
+  "team": "UGA"
+ },
+ {
+  "season": 2035,
+  "conference": "SEC",
+  "place": 4,
+  "team": "TEX"
+ },
+ {
+  "season": 2035,
+  "conference": "Sun Belt",
+  "place": 1,
+  "team": "MRSH"
+ },
+ {
+  "season": 2035,
+  "conference": "Sun Belt",
+  "place": 2,
+  "team": "UL"
+ },
+ {
+  "season": 2035,
+  "conference": "Sun Belt",
+  "place": 3,
+  "team": "JMU"
+ },
+ {
+  "season": 2035,
+  "conference": "Sun Belt",
+  "place": 4,
+  "team": "TROY"
+ },
+ {
+  "season": 2036,
+  "conference": "AAC",
+  "place": 1,
+  "team": "USF"
+ },
+ {
+  "season": 2036,
+  "conference": "AAC",
+  "place": 2,
+  "team": "CHAR"
+ },
+ {
+  "season": 2036,
+  "conference": "AAC",
+  "place": 3,
+  "team": "ECU"
+ },
+ {
+  "season": 2036,
+  "conference": "AAC",
+  "place": 4,
+  "team": "TEM"
+ },
+ {
+  "season": 2036,
+  "conference": "ACC",
+  "place": 1,
+  "team": "DUKE"
+ },
+ {
+  "season": 2036,
+  "conference": "ACC",
+  "place": 2,
+  "team": "FSU"
+ },
+ {
+  "season": 2036,
+  "conference": "ACC",
+  "place": 3,
+  "team": "CLEM"
+ },
+ {
+  "season": 2036,
+  "conference": "ACC",
+  "place": 4,
+  "team": "MIA"
+ },
+ {
+  "season": 2036,
+  "conference": "Big 12",
+  "place": 1,
+  "team": "OHIO"
+ },
+ {
+  "season": 2036,
+  "conference": "Big 12",
+  "place": 2,
+  "team": "M-OH"
+ },
+ {
+  "season": 2036,
+  "conference": "Big 12",
+  "place": 3,
+  "team": "CLEV"
+ },
+ {
+  "season": 2036,
+  "conference": "Big 12",
+  "place": 4,
+  "team": "UCF"
+ },
+ {
+  "season": 2036,
+  "conference": "Big Ten",
+  "place": 1,
+  "team": "IOWA"
+ },
+ {
+  "season": 2036,
+  "conference": "Big Ten",
+  "place": 2,
+  "team": "MICH"
+ },
+ {
+  "season": 2036,
+  "conference": "Big Ten",
+  "place": 3,
+  "team": "OSU"
+ },
+ {
+  "season": 2036,
+  "conference": "Big Ten",
+  "place": 4,
+  "team": "WIS"
+ },
+ {
+  "season": 2036,
+  "conference": "C-USA",
+  "place": 1,
+  "team": "LIB"
+ },
+ {
+  "season": 2036,
+  "conference": "C-USA",
+  "place": 2,
+  "team": "JKST"
+ },
+ {
+  "season": 2036,
+  "conference": "C-USA",
+  "place": 3,
+  "team": "KENN"
+ },
+ {
+  "season": 2036,
+  "conference": "C-USA",
+  "place": 4,
+  "team": "SHSU"
+ },
+ {
+  "season": 2036,
+  "conference": "Independents",
+  "place": 1,
+  "team": "ND"
+ },
+ {
+  "season": 2036,
+  "conference": "Independents",
+  "place": 2,
+  "team": "CONN"
+ },
+ {
+  "season": 2036,
+  "conference": "MAC",
+  "place": 1,
+  "team": "AKR"
+ },
+ {
+  "season": 2036,
+  "conference": "MAC",
+  "place": 2,
+  "team": "EMU"
+ },
+ {
+  "season": 2036,
+  "conference": "MAC",
+  "place": 3,
+  "team": "TOL"
+ },
+ {
+  "season": 2036,
+  "conference": "MAC",
+  "place": 4,
+  "team": "BALL"
+ },
+ {
+  "season": 2036,
+  "conference": "Mountain West",
+  "place": 1,
+  "team": "NEV"
+ },
+ {
+  "season": 2036,
+  "conference": "Mountain West",
+  "place": 2,
+  "team": "UNLV"
+ },
+ {
+  "season": 2036,
+  "conference": "Mountain West",
+  "place": 3,
+  "team": "HAW"
+ },
+ {
+  "season": 2036,
+  "conference": "Mountain West",
+  "place": 4,
+  "team": "AFA"
+ },
+ {
+  "season": 2036,
+  "conference": "Pac-12",
+  "place": 1,
+  "team": "STAN"
+ },
+ {
+  "season": 2036,
+  "conference": "Pac-12",
+  "place": 2,
+  "team": "ORST"
+ },
+ {
+  "season": 2036,
+  "conference": "Pac-12",
+  "place": 3,
+  "team": "BOIS"
+ },
+ {
+  "season": 2036,
+  "conference": "Pac-12",
+  "place": 4,
+  "team": "CAL"
+ },
+ {
+  "season": 2036,
+  "conference": "SEC",
+  "place": 1,
+  "team": "AUB"
+ },
+ {
+  "season": 2036,
+  "conference": "SEC",
+  "place": 2,
+  "team": "BAMA"
+ },
+ {
+  "season": 2036,
+  "conference": "SEC",
+  "place": 3,
+  "team": "LSU"
+ },
+ {
+  "season": 2036,
+  "conference": "SEC",
+  "place": 4,
+  "team": "UT"
+ },
+ {
+  "season": 2036,
+  "conference": "Sun Belt",
+  "place": 1,
+  "team": "ARST"
+ },
+ {
+  "season": 2036,
+  "conference": "Sun Belt",
+  "place": 2,
+  "team": "MRSH"
+ },
+ {
+  "season": 2036,
+  "conference": "Sun Belt",
+  "place": 3,
+  "team": "TROY"
+ },
+ {
+  "season": 2036,
+  "conference": "Sun Belt",
+  "place": 4,
+  "team": "APP"
+ },
+ {
+  "season": 2037,
+  "conference": "AAC",
+  "place": 1,
+  "team": "UNT"
+ },
+ {
+  "season": 2037,
+  "conference": "AAC",
+  "place": 2,
+  "team": "UAB"
+ },
+ {
+  "season": 2037,
+  "conference": "AAC",
+  "place": 3,
+  "team": "USF"
+ },
+ {
+  "season": 2037,
+  "conference": "AAC",
+  "place": 4,
+  "team": "TEM"
+ },
+ {
+  "season": 2037,
+  "conference": "ACC",
+  "place": 1,
+  "team": "FSU"
+ },
+ {
+  "season": 2037,
+  "conference": "ACC",
+  "place": 2,
+  "team": "UVA"
+ },
+ {
+  "season": 2037,
+  "conference": "ACC",
+  "place": 3,
+  "team": "SYR"
+ },
+ {
+  "season": 2037,
+  "conference": "ACC",
+  "place": 4,
+  "team": "WVU"
+ },
+ {
+  "season": 2037,
+  "conference": "Big 12",
+  "place": 1,
+  "team": "M-OH"
+ },
+ {
+  "season": 2037,
+  "conference": "Big 12",
+  "place": 2,
+  "team": "CLEV"
+ },
+ {
+  "season": 2037,
+  "conference": "Big 12",
+  "place": 3,
+  "team": "OHIO"
+ },
+ {
+  "season": 2037,
+  "conference": "Big 12",
+  "place": 4,
+  "team": "UH"
+ },
+ {
+  "season": 2037,
+  "conference": "Big Ten",
+  "place": 1,
+  "team": "ORE"
+ },
+ {
+  "season": 2037,
+  "conference": "Big Ten",
+  "place": 2,
+  "team": "IOWA"
+ },
+ {
+  "season": 2037,
+  "conference": "Big Ten",
+  "place": 3,
+  "team": "UCLA"
+ },
+ {
+  "season": 2037,
+  "conference": "Big Ten",
+  "place": 4,
+  "team": "NEB"
+ },
+ {
+  "season": 2037,
+  "conference": "C-USA",
+  "place": 1,
+  "team": "LIB"
+ },
+ {
+  "season": 2037,
+  "conference": "C-USA",
+  "place": 2,
+  "team": "WKU"
+ },
+ {
+  "season": 2037,
+  "conference": "C-USA",
+  "place": 3,
+  "team": "SHSU"
+ },
+ {
+  "season": 2037,
+  "conference": "C-USA",
+  "place": 4,
+  "team": "MTSU"
+ },
+ {
+  "season": 2037,
+  "conference": "Independents",
+  "place": 1,
+  "team": "ND"
+ },
+ {
+  "season": 2037,
+  "conference": "Independents",
+  "place": 2,
+  "team": "CONN"
+ },
+ {
+  "season": 2037,
+  "conference": "MAC",
+  "place": 1,
+  "team": "BUFF"
+ },
+ {
+  "season": 2037,
+  "conference": "MAC",
+  "place": 2,
+  "team": "AKR"
+ },
+ {
+  "season": 2037,
+  "conference": "MAC",
+  "place": 3,
+  "team": "EMU"
+ },
+ {
+  "season": 2037,
+  "conference": "MAC",
+  "place": 4,
+  "team": "WMU"
+ },
+ {
+  "season": 2037,
+  "conference": "Mountain West",
+  "place": 1,
+  "team": "AFA"
+ },
+ {
+  "season": 2037,
+  "conference": "Mountain West",
+  "place": 2,
+  "team": "UNLV"
+ },
+ {
+  "season": 2037,
+  "conference": "Mountain West",
+  "place": 3,
+  "team": "HAW"
+ },
+ {
+  "season": 2037,
+  "conference": "Mountain West",
+  "place": 4,
+  "team": "CSU"
+ },
+ {
+  "season": 2037,
+  "conference": "Pac-12",
+  "place": 1,
+  "team": "BOIS"
+ },
+ {
+  "season": 2037,
+  "conference": "Pac-12",
+  "place": 2,
+  "team": "ORST"
+ },
+ {
+  "season": 2037,
+  "conference": "Pac-12",
+  "place": 3,
+  "team": "STAN"
+ },
+ {
+  "season": 2037,
+  "conference": "Pac-12",
+  "place": 4,
+  "team": "CAL"
+ },
+ {
+  "season": 2037,
+  "conference": "SEC",
+  "place": 1,
+  "team": "UK"
+ },
+ {
+  "season": 2037,
+  "conference": "SEC",
+  "place": 2,
+  "team": "LSU"
+ },
+ {
+  "season": 2037,
+  "conference": "SEC",
+  "place": 3,
+  "team": "ARK"
+ },
+ {
+  "season": 2037,
+  "conference": "SEC",
+  "place": 4,
+  "team": "UGA"
+ },
+ {
+  "season": 2037,
+  "conference": "Sun Belt",
+  "place": 1,
+  "team": "ARST"
+ },
+ {
+  "season": 2037,
+  "conference": "Sun Belt",
+  "place": 2,
+  "team": "MRSH"
+ },
+ {
+  "season": 2037,
+  "conference": "Sun Belt",
+  "place": 3,
+  "team": "ODU"
+ },
+ {
+  "season": 2037,
+  "conference": "Sun Belt",
+  "place": 4,
+  "team": "TROY"
+ }
+]

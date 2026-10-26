@@ -1,0 +1,145 @@
+[
+ {
+  "id": "CLEV",
+  "school": "Cleveland State",
+  "nickname": "Vikings",
+  "coach": "Josh Dolan",
+  "conference": "Big 12",
+  "logo": "assets/logos/CLEV.png",
+  "colors": {
+   "primary": "#024731",
+   "text": null
+  },
+  "first_season": 2024,
+  "last_season": 2037,
+  "career": {
+   "w": 180,
+   "l": 29,
+   "win_pct": 0.861
+  },
+  "national_titles": [
+   2028,
+   2037
+  ],
+  "national_runner_up": [
+   2029,
+   2031,
+   2034,
+   2035,
+   2036
+  ],
+  "big12_titles": [
+   2028,
+   2030,
+   2031,
+   2032
+  ],
+  "playoff_appearances": [
+   2028,
+   2029,
+   2030,
+   2031,
+   2032,
+   2033,
+   2034,
+   2035,
+   2036,
+   2037
+  ],
+  "ap_top25_finishes": 13
+ },
+ {
+  "id": "OHIO",
+  "school": "Ohio",
+  "nickname": "Bobcats",
+  "coach": "Tim Slocombe",
+  "conference": "Big 12",
+  "logo": "assets/logos/OHIO.png",
+  "colors": {
+   "primary": "#00694E",
+   "text": "#FFFFFF"
+  },
+  "first_season": 2024,
+  "last_season": 2037,
+  "career": {
+   "w": 175,
+   "l": 34,
+   "win_pct": 0.837
+  },
+  "national_titles": [
+   2029,
+   2030,
+   2031,
+   2032,
+   2033
+  ],
+  "national_runner_up": [
+   2037
+  ],
+  "big12_titles": [
+   2027,
+   2033,
+   2036
+  ],
+  "playoff_appearances": [
+   2027,
+   2028,
+   2029,
+   2030,
+   2031,
+   2032,
+   2033,
+   2034,
+   2035,
+   2036,
+   2037
+  ],
+  "ap_top25_finishes": 11
+ },
+ {
+  "id": "M-OH",
+  "school": "Miami (OH)",
+  "nickname": "RedHawks",
+  "coach": "Joe Snyderwine",
+  "conference": "Big 12",
+  "logo": "assets/logos/M-OH.png",
+  "colors": {
+   "primary": "#B61E2E",
+   "text": "#FFFFFF"
+  },
+  "first_season": 2024,
+  "last_season": 2037,
+  "career": {
+   "w": 174,
+   "l": 32,
+   "win_pct": 0.845
+  },
+  "national_titles": [
+   2034,
+   2035,
+   2036
+  ],
+  "national_runner_up": [
+   2027
+  ],
+  "big12_titles": [
+   2029,
+   2034,
+   2035,
+   2037
+  ],
+  "playoff_appearances": [
+   2027,
+   2028,
+   2029,
+   2031,
+   2032,
+   2033,
+   2034,
+   2035,
+   2036,
+   2037
+  ],
+  "ap_top25_finishes": 12
+ }
+]

@@ -1,0 +1,1100 @@
+[
+ {
+  "scope": "season",
+  "category": "passing",
+  "stat": "yds",
+  "label": "Passing Yards",
+  "leaders": [
+   {
+    "player": "Elijah Pashos",
+    "season": 2037,
+    "value": 6883
+   },
+   {
+    "player": "Elijah Pashos",
+    "season": 2036,
+    "value": 6228
+   },
+   {
+    "player": "Kaleb DuBose",
+    "season": 2035,
+    "value": 6064
+   },
+   {
+    "player": "Greg Price",
+    "season": 2031,
+    "value": 5979
+   },
+   {
+    "player": "Kaleb DuBose",
+    "season": 2034,
+    "value": 5977
+   },
+   {
+    "player": "Kaleb DuBose",
+    "season": 2033,
+    "value": 5718
+   },
+   {
+    "player": "Amar'e Hocker",
+    "season": 2028,
+    "value": 5364
+   },
+   {
+    "player": "Amar'e Hocker",
+    "season": 2027,
+    "value": 5317
+   },
+   {
+    "player": "Greg Price",
+    "season": 2032,
+    "value": 5146
+   },
+   {
+    "player": "Greg Price",
+    "season": 2029,
+    "value": 5121
+   }
+  ]
+ },
+ {
+  "scope": "career",
+  "category": "passing",
+  "stat": "yds",
+  "label": "Passing Yards",
+  "leaders": [
+   {
+    "player": "Amar'e Hocker",
+    "value": 18874,
+    "first": 2025,
+    "last": 2028
+   },
+   {
+    "player": "Kaleb DuBose",
+    "value": 17759,
+    "first": 2033,
+    "last": 2035
+   },
+   {
+    "player": "Greg Price",
+    "value": 16422,
+    "first": 2029,
+    "last": 2032
+   },
+   {
+    "player": "Elijah Pashos",
+    "value": 13120,
+    "first": 2034,
+    "last": 2037
+   },
+   {
+    "player": "Dave Shelley",
+    "value": 5823,
+    "first": 2029,
+    "last": 2032
+   },
+   {
+    "player": "Connor Bazelak",
+    "value": 3962,
+    "first": 2024,
+    "last": 2024
+   },
+   {
+    "player": "Joshua Talib",
+    "value": 622,
+    "first": 2033,
+    "last": 2033
+   },
+   {
+    "player": "Morgan Landry",
+    "value": 350,
+    "first": 2025,
+    "last": 2028
+   },
+   {
+    "player": "Chad Ogletree",
+    "value": 331,
+    "first": 2035,
+    "last": 2036
+   },
+   {
+    "player": "Mitchell Westbrook",
+    "value": 173,
+    "first": 2037,
+    "last": 2037
+   }
+  ]
+ },
+ {
+  "scope": "season",
+  "category": "passing",
+  "stat": "td",
+  "label": "Passing TD",
+  "leaders": [
+   {
+    "player": "Elijah Pashos",
+    "season": 2037,
+    "value": 93
+   },
+   {
+    "player": "Elijah Pashos",
+    "season": 2036,
+    "value": 86
+   },
+   {
+    "player": "Kaleb DuBose",
+    "season": 2034,
+    "value": 83
+   },
+   {
+    "player": "Kaleb DuBose",
+    "season": 2035,
+    "value": 76
+   },
+   {
+    "player": "Kaleb DuBose",
+    "season": 2033,
+    "value": 71
+   },
+   {
+    "player": "Greg Price",
+    "season": 2031,
+    "value": 69
+   },
+   {
+    "player": "Greg Price",
+    "season": 2032,
+    "value": 69
+   },
+   {
+    "player": "Amar'e Hocker",
+    "season": 2028,
+    "value": 63
+   },
+   {
+    "player": "Amar'e Hocker",
+    "season": 2027,
+    "value": 55
+   },
+   {
+    "player": "Greg Price",
+    "season": 2029,
+    "value": 53
+   }
+  ]
+ },
+ {
+  "scope": "career",
+  "category": "passing",
+  "stat": "td",
+  "label": "Passing TD",
+  "leaders": [
+   {
+    "player": "Kaleb DuBose",
+    "value": 230,
+    "first": 2033,
+    "last": 2035
+   },
+   {
+    "player": "Amar'e Hocker",
+    "value": 192,
+    "first": 2025,
+    "last": 2028
+   },
+   {
+    "player": "Greg Price",
+    "value": 192,
+    "first": 2029,
+    "last": 2032
+   },
+   {
+    "player": "Elijah Pashos",
+    "value": 179,
+    "first": 2034,
+    "last": 2037
+   },
+   {
+    "player": "Dave Shelley",
+    "value": 66,
+    "first": 2029,
+    "last": 2032
+   },
+   {
+    "player": "Connor Bazelak",
+    "value": 35,
+    "first": 2024,
+    "last": 2024
+   },
+   {
+    "player": "Joshua Talib",
+    "value": 9,
+    "first": 2033,
+    "last": 2033
+   },
+   {
+    "player": "Morgan Landry",
+    "value": 4,
+    "first": 2025,
+    "last": 2028
+   },
+   {
+    "player": "Mitchell Westbrook",
+    "value": 4,
+    "first": 2037,
+    "last": 2037
+   },
+   {
+    "player": "Chad Ogletree",
+    "value": 3,
+    "first": 2035,
+    "last": 2036
+   }
+  ]
+ },
+ {
+  "scope": "season",
+  "category": "passing",
+  "stat": "comp",
+  "label": "Completions",
+  "leaders": [
+   {
+    "player": "Elijah Pashos",
+    "season": 2037,
+    "value": 377
+   },
+   {
+    "player": "Amar'e Hocker",
+    "season": 2027,
+    "value": 358
+   },
+   {
+    "player": "Amar'e Hocker",
+    "season": 2028,
+    "value": 349
+   },
+   {
+    "player": "Elijah Pashos",
+    "season": 2036,
+    "value": 349
+   },
+   {
+    "player": "Kaleb DuBose",
+    "season": 2034,
+    "value": 347
+   },
+   {
+    "player": "Dave Shelley",
+    "season": 2030,
+    "value": 332
+   },
+   {
+    "player": "Greg Price",
+    "season": 2029,
+    "value": 331
+   },
+   {
+    "player": "Amar'e Hocker",
+    "season": 2026,
+    "value": 315
+   },
+   {
+    "player": "Greg Price",
+    "season": 2031,
+    "value": 308
+   },
+   {
+    "player": "Kaleb DuBose",
+    "season": 2035,
+    "value": 306
+   }
+  ]
+ },
+ {
+  "scope": "career",
+  "category": "passing",
+  "stat": "comp",
+  "label": "Completions",
+  "leaders": [
+   {
+    "player": "Amar'e Hocker",
+    "value": 1311,
+    "first": 2025,
+    "last": 2028
+   },
+   {
+    "player": "Kaleb DuBose",
+    "value": 939,
+    "first": 2033,
+    "last": 2035
+   },
+   {
+    "player": "Greg Price",
+    "value": 926,
+    "first": 2029,
+    "last": 2032
+   },
+   {
+    "player": "Elijah Pashos",
+    "value": 727,
+    "first": 2034,
+    "last": 2037
+   },
+   {
+    "player": "Dave Shelley",
+    "value": 382,
+    "first": 2029,
+    "last": 2032
+   },
+   {
+    "player": "Connor Bazelak",
+    "value": 301,
+    "first": 2024,
+    "last": 2024
+   },
+   {
+    "player": "Joshua Talib",
+    "value": 29,
+    "first": 2033,
+    "last": 2033
+   },
+   {
+    "player": "Morgan Landry",
+    "value": 24,
+    "first": 2025,
+    "last": 2028
+   },
+   {
+    "player": "Chad Ogletree",
+    "value": 15,
+    "first": 2035,
+    "last": 2036
+   },
+   {
+    "player": "Mitchell Westbrook",
+    "value": 11,
+    "first": 2037,
+    "last": 2037
+   }
+  ]
+ },
+ {
+  "scope": "season",
+  "category": "rushing",
+  "stat": "yds",
+  "label": "Rushing Yards",
+  "leaders": [
+   {
+    "player": "Baraka Nwangwu",
+    "season": 2029,
+    "value": 2536
+   },
+   {
+    "player": "Robert Okoronkwo",
+    "season": 2031,
+    "value": 2405
+   },
+   {
+    "player": "Baraka Nwangwu",
+    "season": 2028,
+    "value": 2329
+   },
+   {
+    "player": "Sam Fatafehi",
+    "season": 2034,
+    "value": 2220
+   },
+   {
+    "player": "Davonte Sizer",
+    "season": 2037,
+    "value": 1958
+   },
+   {
+    "player": "Robert Okoronkwo",
+    "season": 2030,
+    "value": 1889
+   },
+   {
+    "player": "Sam Fatafehi",
+    "season": 2033,
+    "value": 1590
+   },
+   {
+    "player": "Rodney Duggan",
+    "season": 2036,
+    "value": 1472
+   },
+   {
+    "player": "Melvin Hillhouse",
+    "season": 2035,
+    "value": 1369
+   },
+   {
+    "player": "Sam Fatafehi",
+    "season": 2032,
+    "value": 1212
+   }
+  ]
+ },
+ {
+  "scope": "career",
+  "category": "rushing",
+  "stat": "yds",
+  "label": "Rushing Yards",
+  "leaders": [
+   {
+    "player": "Baraka Nwangwu",
+    "value": 6074,
+    "first": 2026,
+    "last": 2029
+   },
+   {
+    "player": "Sam Fatafehi",
+    "value": 5148,
+    "first": 2031,
+    "last": 2034
+   },
+   {
+    "player": "Robert Okoronkwo",
+    "value": 4294,
+    "first": 2030,
+    "last": 2031
+   },
+   {
+    "player": "Stephon Ali",
+    "value": 2936,
+    "first": 2035,
+    "last": 2037
+   },
+   {
+    "player": "Davonte Sizer",
+    "value": 2395,
+    "first": 2035,
+    "last": 2037
+   },
+   {
+    "player": "Terion Stewart",
+    "value": 2183,
+    "first": 2024,
+    "last": 2025
+   },
+   {
+    "player": "Melvin Hillhouse",
+    "value": 2151,
+    "first": 2034,
+    "last": 2035
+   },
+   {
+    "player": "Rodney Duggan",
+    "value": 2002,
+    "first": 2032,
+    "last": 2036
+   },
+   {
+    "player": "Collin Sandland",
+    "value": 1374,
+    "first": 2029,
+    "last": 2032
+   },
+   {
+    "player": "Greg Price",
+    "value": 1267,
+    "first": 2029,
+    "last": 2032
+   }
+  ]
+ },
+ {
+  "scope": "season",
+  "category": "rushing",
+  "stat": "td",
+  "label": "Rushing TD",
+  "leaders": [
+   {
+    "player": "Robert Okoronkwo",
+    "season": 2031,
+    "value": 41
+   },
+   {
+    "player": "Baraka Nwangwu",
+    "season": 2029,
+    "value": 30
+   },
+   {
+    "player": "Sam Fatafehi",
+    "season": 2034,
+    "value": 29
+   },
+   {
+    "player": "Robert Okoronkwo",
+    "season": 2030,
+    "value": 27
+   },
+   {
+    "player": "Amar'e Hocker",
+    "season": 2028,
+    "value": 24
+   },
+   {
+    "player": "Stephon Ali",
+    "season": 2035,
+    "value": 18
+   },
+   {
+    "player": "Amar'e Hocker",
+    "season": 2026,
+    "value": 17
+   },
+   {
+    "player": "Baraka Nwangwu",
+    "season": 2028,
+    "value": 15
+   },
+   {
+    "player": "Terion Stewart",
+    "season": 2025,
+    "value": 14
+   },
+   {
+    "player": "Sam Fatafehi",
+    "season": 2032,
+    "value": 14
+   }
+  ]
+ },
+ {
+  "scope": "career",
+  "category": "rushing",
+  "stat": "td",
+  "label": "Rushing TD",
+  "leaders": [
+   {
+    "player": "Robert Okoronkwo",
+    "value": 68,
+    "first": 2030,
+    "last": 2031
+   },
+   {
+    "player": "Amar'e Hocker",
+    "value": 56,
+    "first": 2025,
+    "last": 2028
+   },
+   {
+    "player": "Sam Fatafehi",
+    "value": 56,
+    "first": 2031,
+    "last": 2034
+   },
+   {
+    "player": "Baraka Nwangwu",
+    "value": 53,
+    "first": 2026,
+    "last": 2029
+   },
+   {
+    "player": "Stephon Ali",
+    "value": 42,
+    "first": 2035,
+    "last": 2037
+   },
+   {
+    "player": "Terion Stewart",
+    "value": 27,
+    "first": 2024,
+    "last": 2025
+   },
+   {
+    "player": "Greg Price",
+    "value": 23,
+    "first": 2029,
+    "last": 2032
+   },
+   {
+    "player": "Rodney Duggan",
+    "value": 22,
+    "first": 2032,
+    "last": 2036
+   },
+   {
+    "player": "Davonte Sizer",
+    "value": 18,
+    "first": 2035,
+    "last": 2037
+   },
+   {
+    "player": "Collin Sandland",
+    "value": 15,
+    "first": 2029,
+    "last": 2032
+   }
+  ]
+ },
+ {
+  "scope": "season",
+  "category": "receiving",
+  "stat": "rec",
+  "label": "Receptions",
+  "leaders": [
+   {
+    "player": "Dakota McNitt",
+    "season": 2029,
+    "value": 978
+   },
+   {
+    "player": "Stephen Everett",
+    "season": 2029,
+    "value": 756
+   },
+   {
+    "player": "Nazir McNitt",
+    "season": 2029,
+    "value": 713
+   },
+   {
+    "player": "Isaiah Boutte",
+    "season": 2029,
+    "value": 527
+   },
+   {
+    "player": "Baraka Nwangwu",
+    "season": 2029,
+    "value": 427
+   },
+   {
+    "player": "Titus Reece",
+    "season": 2033,
+    "value": 160
+   },
+   {
+    "player": "Paul Flannigan",
+    "season": 2037,
+    "value": 116
+   },
+   {
+    "player": "Dakota McNitt",
+    "season": 2030,
+    "value": 109
+   },
+   {
+    "player": "Titus Reece",
+    "season": 2035,
+    "value": 108
+   },
+   {
+    "player": "Lyle Sawyer",
+    "season": 2036,
+    "value": 105
+   }
+  ]
+ },
+ {
+  "scope": "career",
+  "category": "receiving",
+  "stat": "rec",
+  "label": "Receptions",
+  "leaders": [
+   {
+    "player": "Dakota McNitt",
+    "value": 1263,
+    "first": 2028,
+    "last": 2032
+   },
+   {
+    "player": "Nazir McNitt",
+    "value": 814,
+    "first": 2029,
+    "last": 2031
+   },
+   {
+    "player": "Stephen Everett",
+    "value": 810,
+    "first": 2028,
+    "last": 2030
+   },
+   {
+    "player": "Isaiah Boutte",
+    "value": 687,
+    "first": 2028,
+    "last": 2031
+   },
+   {
+    "player": "Baraka Nwangwu",
+    "value": 554,
+    "first": 2026,
+    "last": 2029
+   },
+   {
+    "player": "Titus Reece",
+    "value": 370,
+    "first": 2033,
+    "last": 2035
+   },
+   {
+    "player": "Kenny Tongues",
+    "value": 284,
+    "first": 2027,
+    "last": 2029
+   },
+   {
+    "player": "Lyle Sawyer",
+    "value": 232,
+    "first": 2035,
+    "last": 2037
+   },
+   {
+    "player": "Rashaud Exum",
+    "value": 182,
+    "first": 2026,
+    "last": 2028
+   },
+   {
+    "player": "Paul Flannigan",
+    "value": 155,
+    "first": 2036,
+    "last": 2037
+   }
+  ]
+ },
+ {
+  "scope": "season",
+  "category": "receiving",
+  "stat": "yds",
+  "label": "Receiving Yards",
+  "leaders": [
+   {
+    "player": "Titus Reece",
+    "season": 2033,
+    "value": 3631
+   },
+   {
+    "player": "Titus Reece",
+    "season": 2035,
+    "value": 2921
+   },
+   {
+    "player": "Dakota McNitt",
+    "season": 2031,
+    "value": 2252
+   },
+   {
+    "player": "Paul Flannigan",
+    "season": 2037,
+    "value": 2231
+   },
+   {
+    "player": "Titus Reece",
+    "season": 2034,
+    "value": 2178
+   },
+   {
+    "player": "Lyle Sawyer",
+    "season": 2037,
+    "value": 2158
+   },
+   {
+    "player": "Lyle Sawyer",
+    "season": 2036,
+    "value": 1892
+   },
+   {
+    "player": "Dakota McNitt",
+    "season": 2032,
+    "value": 1853
+   },
+   {
+    "player": "Kenny Tongues",
+    "season": 2029,
+    "value": 1771
+   },
+   {
+    "player": "Kenny Tongues",
+    "season": 2028,
+    "value": 1685
+   }
+  ]
+ },
+ {
+  "scope": "career",
+  "category": "receiving",
+  "stat": "yds",
+  "label": "Receiving Yards",
+  "leaders": [
+   {
+    "player": "Titus Reece",
+    "value": 8730,
+    "first": 2033,
+    "last": 2035
+   },
+   {
+    "player": "Dakota McNitt",
+    "value": 6664,
+    "first": 2028,
+    "last": 2032
+   },
+   {
+    "player": "Kenny Tongues",
+    "value": 4901,
+    "first": 2027,
+    "last": 2029
+   },
+   {
+    "player": "Lyle Sawyer",
+    "value": 4452,
+    "first": 2035,
+    "last": 2037
+   },
+   {
+    "player": "Isaiah Boutte",
+    "value": 3289,
+    "first": 2028,
+    "last": 2031
+   },
+   {
+    "player": "Stephen Baggs",
+    "value": 3247,
+    "first": 2032,
+    "last": 2035
+   },
+   {
+    "player": "Paul Flannigan",
+    "value": 2807,
+    "first": 2036,
+    "last": 2037
+   },
+   {
+    "player": "Rashaud Exum",
+    "value": 2733,
+    "first": 2026,
+    "last": 2028
+   },
+   {
+    "player": "Nazir McNitt",
+    "value": 2622,
+    "first": 2029,
+    "last": 2031
+   },
+   {
+    "player": "Zach Francis",
+    "value": 2239,
+    "first": 2032,
+    "last": 2034
+   }
+  ]
+ },
+ {
+  "scope": "season",
+  "category": "receiving",
+  "stat": "td",
+  "label": "Receiving TD",
+  "leaders": [
+   {
+    "player": "Titus Reece",
+    "season": 2033,
+    "value": 51
+   },
+   {
+    "player": "Titus Reece",
+    "season": 2035,
+    "value": 46
+   },
+   {
+    "player": "Paul Flannigan",
+    "season": 2037,
+    "value": 41
+   },
+   {
+    "player": "Lyle Sawyer",
+    "season": 2036,
+    "value": 35
+   },
+   {
+    "player": "Lyle Sawyer",
+    "season": 2037,
+    "value": 32
+   },
+   {
+    "player": "Titus Reece",
+    "season": 2034,
+    "value": 29
+   },
+   {
+    "player": "Dakota McNitt",
+    "season": 2031,
+    "value": 28
+   },
+   {
+    "player": "Dakota McNitt",
+    "season": 2032,
+    "value": 28
+   },
+   {
+    "player": "Kenny Tongues",
+    "season": 2028,
+    "value": 26
+   },
+   {
+    "player": "Branden Honeycutt",
+    "season": 2036,
+    "value": 24
+   }
+  ]
+ },
+ {
+  "scope": "career",
+  "category": "receiving",
+  "stat": "td",
+  "label": "Receiving TD",
+  "leaders": [
+   {
+    "player": "Titus Reece",
+    "value": 126,
+    "first": 2033,
+    "last": 2035
+   },
+   {
+    "player": "Dakota McNitt",
+    "value": 87,
+    "first": 2028,
+    "last": 2032
+   },
+   {
+    "player": "Lyle Sawyer",
+    "value": 72,
+    "first": 2035,
+    "last": 2037
+   },
+   {
+    "player": "Kenny Tongues",
+    "value": 71,
+    "first": 2027,
+    "last": 2029
+   },
+   {
+    "player": "Paul Flannigan",
+    "value": 54,
+    "first": 2036,
+    "last": 2037
+   },
+   {
+    "player": "Stephen Baggs",
+    "value": 45,
+    "first": 2032,
+    "last": 2035
+   },
+   {
+    "player": "Isaiah Boutte",
+    "value": 42,
+    "first": 2028,
+    "last": 2031
+   },
+   {
+    "player": "Zach Francis",
+    "value": 33,
+    "first": 2032,
+    "last": 2034
+   },
+   {
+    "player": "Branden Honeycutt",
+    "value": 29,
+    "first": 2034,
+    "last": 2036
+   },
+   {
+    "player": "Rashaud Exum",
+    "value": 28,
+    "first": 2026,
+    "last": 2028
+   }
+  ]
+ },
+ {
+  "scope": "season",
+  "category": "kicking",
+  "stat": "fgm",
+  "label": "Field Goals Made",
+  "leaders": [
+   {
+    "player": "Jackson Kleather",
+    "season": 2024,
+    "value": 13
+   },
+   {
+    "player": "Rashaud Boiman",
+    "season": 2030,
+    "value": 11
+   },
+   {
+    "player": "Rashaud Boiman",
+    "season": 2027,
+    "value": 10
+   },
+   {
+    "player": "Jackson Kleather",
+    "season": 2025,
+    "value": 9
+   },
+   {
+    "player": "Jackson Kleather",
+    "season": 2026,
+    "value": 9
+   },
+   {
+    "player": "Rashaud Boiman",
+    "season": 2029,
+    "value": 9
+   },
+   {
+    "player": "Afa Potoa'e",
+    "season": 2036,
+    "value": 9
+   },
+   {
+    "player": "Rashaud Boiman",
+    "season": 2028,
+    "value": 8
+   },
+   {
+    "player": "Afa Potoa'e",
+    "season": 2037,
+    "value": 8
+   },
+   {
+    "player": "Afa Potoa'e",
+    "season": 2035,
+    "value": 6
+   }
+  ]
+ },
+ {
+  "scope": "career",
+  "category": "kicking",
+  "stat": "fgm",
+  "label": "Field Goals Made",
+  "leaders": [
+   {
+    "player": "Rashaud Boiman",
+    "value": 38,
+    "first": 2027,
+    "last": 2030
+   },
+   {
+    "player": "Jackson Kleather",
+    "value": 31,
+    "first": 2024,
+    "last": 2026
+   },
+   {
+    "player": "Afa Potoa'e",
+    "value": 23,
+    "first": 2035,
+    "last": 2037
+   },
+   {
+    "player": "Bernie Stubbs",
+    "value": 16,
+    "first": 2031,
+    "last": 2034
+   }
+  ]
+ }
+]

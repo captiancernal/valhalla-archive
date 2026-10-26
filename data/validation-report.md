@@ -1,0 +1,80 @@
+# Validation report
+
+76 passed, 0 failed.
+
+- PASS: CLEV career record 180-29
+- PASS: OHIO career record 175-34
+- PASS: M-OH career record 174-32
+- PASS: CLEV national titles 2028, 2037
+- PASS: OHIO national titles 2029-33
+- PASS: M-OH national titles 2034-36
+- PASS: CLEV 2037 is 16-1
+- PASS: CLEV 2034 is 15-2 (F02)
+- PASS: 2037 title game CLEV 56-39 OHIO (F05)
+- PASS: 2036 playoff vs LSU 37-3 (F05)
+- PASS: 2027 national champion BAMA (F05)
+- PASS: 2029 Big 12 champion M-OH (F03)
+- PASS: 2034 MAC #2 is EMU (F16)
+- PASS: 2032 receiving leader Dakota McNitt 1853 (F04)
+- PASS: CLEV 2025 class stars 2/6/11 from list (F13)
+- PASS: CLEV 2026 stars not tracked (F14)
+- PASS: CLEV 2024 games add up to coach-sheet record
+- PASS: CLEV 2025 games add up to coach-sheet record
+- PASS: CLEV 2026 games add up to coach-sheet record
+- PASS: CLEV 2027 games add up to coach-sheet record
+- PASS: CLEV 2028 games add up to coach-sheet record
+- PASS: CLEV 2029 games add up to coach-sheet record
+- PASS: CLEV 2030 games add up to coach-sheet record
+- PASS: CLEV 2031 games add up to coach-sheet record
+- PASS: CLEV 2032 games add up to coach-sheet record
+- PASS: CLEV 2033 games add up to coach-sheet record
+- PASS: CLEV 2034 games add up to coach-sheet record
+- PASS: CLEV 2035 games add up to coach-sheet record
+- PASS: CLEV 2036 games add up to coach-sheet record
+- PASS: CLEV 2037 games add up to coach-sheet record
+- PASS: CLEV 2024 passing leader matches stats tab
+- PASS: CLEV 2024 rushing leader matches stats tab
+- PASS: CLEV 2024 receiving leader matches stats tab
+- PASS: CLEV 2025 passing leader matches stats tab
+- PASS: CLEV 2025 rushing leader matches stats tab
+- PASS: CLEV 2025 receiving leader matches stats tab
+- PASS: CLEV 2026 passing leader matches stats tab
+- PASS: CLEV 2026 rushing leader matches stats tab
+- PASS: CLEV 2026 receiving leader matches stats tab
+- PASS: CLEV 2027 passing leader matches stats tab
+- PASS: CLEV 2027 rushing leader matches stats tab
+- PASS: CLEV 2027 receiving leader matches stats tab
+- PASS: CLEV 2028 passing leader matches stats tab
+- PASS: CLEV 2028 rushing leader matches stats tab
+- PASS: CLEV 2028 receiving leader matches stats tab
+- PASS: CLEV 2029 passing leader matches stats tab
+- PASS: CLEV 2029 rushing leader matches stats tab
+- PASS: CLEV 2029 receiving leader matches stats tab
+- PASS: CLEV 2030 passing leader matches stats tab
+- PASS: CLEV 2030 rushing leader matches stats tab
+- PASS: CLEV 2030 receiving leader matches stats tab
+- PASS: CLEV 2031 passing leader matches stats tab
+- PASS: CLEV 2031 rushing leader matches stats tab
+- PASS: CLEV 2031 receiving leader matches stats tab
+- PASS: CLEV 2032 passing leader matches stats tab
+- PASS: CLEV 2032 rushing leader matches stats tab
+- PASS: CLEV 2032 receiving leader matches stats tab
+- PASS: CLEV 2033 passing leader matches stats tab
+- PASS: CLEV 2033 rushing leader matches stats tab
+- PASS: CLEV 2033 receiving leader matches stats tab
+- PASS: CLEV 2034 passing leader matches stats tab
+- PASS: CLEV 2034 rushing leader matches stats tab
+- PASS: CLEV 2034 receiving leader matches stats tab
+- PASS: CLEV 2035 passing leader matches stats tab
+- PASS: CLEV 2035 rushing leader matches stats tab
+- PASS: CLEV 2035 receiving leader matches stats tab
+- PASS: CLEV 2036 passing leader matches stats tab
+- PASS: CLEV 2036 rushing leader matches stats tab
+- PASS: CLEV 2036 receiving leader matches stats tab
+- PASS: CLEV 2037 passing leader matches stats tab
+- PASS: CLEV 2037 rushing leader matches stats tab
+- PASS: CLEV 2037 receiving leader matches stats tab
+- PASS: every stat line links to a player
+- PASS: no malformed player names
+- PASS: no non-canonical name spellings remain
+- PASS: every CLEV opponent has a school name

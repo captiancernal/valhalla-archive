@@ -1,0 +1,1682 @@
+[
+ {
+  "season": 2023,
+  "award": "Heisman",
+  "award_note": "Player of the Year",
+  "player": "Jayden Daniels",
+  "school": "LSU"
+ },
+ {
+  "season": 2023,
+  "award": "Maxwell",
+  "award_note": "Player of the Year",
+  "player": "Michael Penix Jr.",
+  "school": "WASH"
+ },
+ {
+  "season": 2023,
+  "award": "Camp",
+  "award_note": "Most Outstanding Player",
+  "player": "Jayden Daniels",
+  "school": "LSU"
+ },
+ {
+  "season": 2023,
+  "award": "Bednarik",
+  "award_note": "Defensive Player of the Year",
+  "player": "Payton Wilson",
+  "school": "NCST"
+ },
+ {
+  "season": 2023,
+  "award": "Nagurski",
+  "award_note": "Defensive Player of the Year",
+  "player": "Xavier Watts",
+  "school": "ND"
+ },
+ {
+  "season": 2023,
+  "award": "O'Brien",
+  "award_note": "Nation's best QB",
+  "player": "Jayden Daniels",
+  "school": "LSU"
+ },
+ {
+  "season": 2023,
+  "award": "Walker",
+  "award_note": "Nation's best RB",
+  "player": "Ollie Gordon III",
+  "school": "OKST"
+ },
+ {
+  "season": 2023,
+  "award": "Biletnikoff",
+  "award_note": "Nation's best WR",
+  "player": "Marvin Harrison Jr.",
+  "school": "OSU"
+ },
+ {
+  "season": 2023,
+  "award": "Mackey",
+  "award_note": "Nation's best TE",
+  "player": "Brock Bowers",
+  "school": "UGA"
+ },
+ {
+  "season": 2023,
+  "award": "Outland",
+  "award_note": "Nation's best interior lineman",
+  "player": "T'Vondre Sweat",
+  "school": "TEX"
+ },
+ {
+  "season": 2023,
+  "award": "Rimington",
+  "award_note": "Nation's best center",
+  "player": "J. Powers-Johnson",
+  "school": "ORE"
+ },
+ {
+  "season": 2023,
+  "award": "Lombardi",
+  "award_note": "Nation's top lineman or linebacker",
+  "player": "Laiatu Latu",
+  "school": "UCLA"
+ },
+ {
+  "season": 2023,
+  "award": "Butkus",
+  "award_note": "Nation's best LB",
+  "player": "Laiatu Latu",
+  "school": "UCLA"
+ },
+ {
+  "season": 2023,
+  "award": "Thorpe",
+  "award_note": "Nation's best DB",
+  "player": "Trey Taylor",
+  "school": "IOWA"
+ },
+ {
+  "season": 2023,
+  "award": "Groza",
+  "award_note": "Nation's best K",
+  "player": "Graham Nicholson",
+  "school": "AFA"
+ },
+ {
+  "season": 2023,
+  "award": "Guy",
+  "award_note": "Nation's best P",
+  "player": "Tory Taylor",
+  "school": "IOWA"
+ },
+ {
+  "season": 2024,
+  "award": "Heisman",
+  "award_note": "Player of the Year",
+  "player": "Jalen Milroe",
+  "school": "BAMA"
+ },
+ {
+  "season": 2024,
+  "award": "Maxwell",
+  "award_note": "Player of the Year",
+  "player": "Jalen Milroe",
+  "school": "BAMA"
+ },
+ {
+  "season": 2024,
+  "award": "Camp",
+  "award_note": "Most Outstanding Player",
+  "player": "Cade McDonald",
+  "school": "M-OH"
+ },
+ {
+  "season": 2024,
+  "award": "Bednarik",
+  "award_note": "Defensive Player of the Year",
+  "player": "Donovan Ezeiruaku",
+  "school": "BC"
+ },
+ {
+  "season": 2024,
+  "award": "Nagurski",
+  "award_note": "Defensive Player of the Year",
+  "player": "Suntarine Perkins",
+  "school": "MISS"
+ },
+ {
+  "season": 2024,
+  "award": "O'Brien",
+  "award_note": "Nation's best QB",
+  "player": "Jalen Milroe",
+  "school": "BAMA"
+ },
+ {
+  "season": 2024,
+  "award": "Walker",
+  "award_note": "Nation's best RB",
+  "player": "Cam Skattebo",
+  "school": "ASU"
+ },
+ {
+  "season": 2024,
+  "award": "Biletnikoff",
+  "award_note": "Nation's best WR",
+  "player": "Cade McDonald",
+  "school": "M-OH"
+ },
+ {
+  "season": 2024,
+  "award": "Mackey",
+  "award_note": "Nation's best TE",
+  "player": "Harold Fannin Jr.",
+  "school": "CLEV"
+ },
+ {
+  "season": 2024,
+  "award": "Outland",
+  "award_note": "Nation's best interior lineman",
+  "player": "Tate Ratledge",
+  "school": "UGA"
+ },
+ {
+  "season": 2024,
+  "award": "Rimington",
+  "award_note": "Nation's best center",
+  "player": "Jacob Gardner",
+  "school": "CSU"
+ },
+ {
+  "season": 2024,
+  "award": "Lombardi",
+  "award_note": "Nation's top lineman or linebacker",
+  "player": "Donovan Ezeiruaku",
+  "school": "BC"
+ },
+ {
+  "season": 2024,
+  "award": "Butkus",
+  "award_note": "Nation's best LB",
+  "player": "Suntarine Perkins",
+  "school": "MISS"
+ },
+ {
+  "season": 2024,
+  "award": "Thorpe",
+  "award_note": "Nation's best DB",
+  "player": "Malachi Moore",
+  "school": "BAMA"
+ },
+ {
+  "season": 2024,
+  "award": "Groza",
+  "award_note": "Nation's best K",
+  "player": "Jonah Dalmas",
+  "school": "BOIS"
+ },
+ {
+  "season": 2024,
+  "award": "Guy",
+  "award_note": "Nation's best P",
+  "player": "Alex Mastromanno",
+  "school": "FSU"
+ },
+ {
+  "season": 2025,
+  "award": "Heisman",
+  "award_note": "Player of the Year",
+  "player": "Ty Simpson",
+  "school": "BAMA"
+ },
+ {
+  "season": 2025,
+  "award": "Maxwell",
+  "award_note": "Player of the Year",
+  "player": "Cade Klubnik",
+  "school": "CLEM"
+ },
+ {
+  "season": 2025,
+  "award": "Camp",
+  "award_note": "Most Outstanding Player",
+  "player": "Lynel Billups-Williams",
+  "school": "M-OH"
+ },
+ {
+  "season": 2025,
+  "award": "Bednarik",
+  "award_note": "Defensive Player of the Year",
+  "player": "Jo'Laison Landry",
+  "school": "TXST"
+ },
+ {
+  "season": 2025,
+  "award": "Nagurski",
+  "award_note": "Defensive Player of the Year",
+  "player": "Travion Barnes",
+  "school": "FIU"
+ },
+ {
+  "season": 2025,
+  "award": "O'Brien",
+  "award_note": "Nation's best QB",
+  "player": "Cade Klubnik",
+  "school": "CLEM"
+ },
+ {
+  "season": 2025,
+  "award": "Walker",
+  "award_note": "Nation's best RB",
+  "player": "DJ Giddens",
+  "school": "KSU"
+ },
+ {
+  "season": 2025,
+  "award": "Biletnikoff",
+  "award_note": "Nation's best WR",
+  "player": "Lynel Billups-Williams",
+  "school": "M-OH"
+ },
+ {
+  "season": 2025,
+  "award": "Mackey",
+  "award_note": "Nation's best TE",
+  "player": "Oscar Delp",
+  "school": "UGA"
+ },
+ {
+  "season": 2025,
+  "award": "Outland",
+  "award_note": "Nation's best interior lineman",
+  "player": "Tyler Booker",
+  "school": "BAMA"
+ },
+ {
+  "season": 2025,
+  "award": "Rimington",
+  "award_note": "Nation's best center",
+  "player": "Jake Slaughter",
+  "school": "FLA"
+ },
+ {
+  "season": 2025,
+  "award": "Lombardi",
+  "award_note": "Nation's top lineman or linebacker",
+  "player": "Romello Height",
+  "school": "GT"
+ },
+ {
+  "season": 2025,
+  "award": "Butkus",
+  "award_note": "Nation's best LB",
+  "player": "Kobe King",
+  "school": "PSU"
+ },
+ {
+  "season": 2025,
+  "award": "Thorpe",
+  "award_note": "Nation's best DB",
+  "player": "Kamari Wilson",
+  "school": "BAMA"
+ },
+ {
+  "season": 2025,
+  "award": "Groza",
+  "award_note": "Nation's best K",
+  "player": "Peyton Woodring",
+  "school": "UGA"
+ },
+ {
+  "season": 2025,
+  "award": "Guy",
+  "award_note": "Nation's best P",
+  "player": "Ryan Eckley",
+  "school": "MSU"
+ },
+ {
+  "season": 2026,
+  "award": "Heisman",
+  "award_note": "Player of the Year",
+  "player": "Lynel Billups-Williams",
+  "school": "M-OH"
+ },
+ {
+  "season": 2026,
+  "award": "Maxwell",
+  "award_note": "Player of the Year",
+  "player": "Cam Coleman",
+  "school": "FLA"
+ },
+ {
+  "season": 2026,
+  "award": "Camp",
+  "award_note": "Most Outstanding Player",
+  "player": "Amar'e Hocker",
+  "school": "CLEV"
+ },
+ {
+  "season": 2026,
+  "award": "Bednarik",
+  "award_note": "Defensive Player of the Year",
+  "player": "Red Murdock",
+  "school": "BUFF"
+ },
+ {
+  "season": 2026,
+  "award": "Nagurski",
+  "award_note": "Defensive Player of the Year",
+  "player": "Kamran James",
+  "school": "FLA"
+ },
+ {
+  "season": 2026,
+  "award": "O'Brien",
+  "award_note": "Nation's best QB",
+  "player": "DJ Lagway",
+  "school": "FLA"
+ },
+ {
+  "season": 2026,
+  "award": "Walker",
+  "award_note": "Nation's best RB",
+  "player": "Rickey Hunt Jr.",
+  "school": "OHIO"
+ },
+ {
+  "season": 2026,
+  "award": "Biletnikoff",
+  "award_note": "Nation's best WR",
+  "player": "Lynel Billups-Williams",
+  "school": "M-OH"
+ },
+ {
+  "season": 2026,
+  "award": "Mackey",
+  "award_note": "Nation's best TE",
+  "player": "Jelani Thurman",
+  "school": "OSU"
+ },
+ {
+  "season": 2026,
+  "award": "Outland",
+  "award_note": "Nation's best interior lineman",
+  "player": "Cade Bourd",
+  "school": "IOWA"
+ },
+ {
+  "season": 2026,
+  "award": "Rimington",
+  "award_note": "Nation's best center",
+  "player": "Cade Bourd",
+  "school": "IOWA"
+ },
+ {
+  "season": 2026,
+  "award": "Lombardi",
+  "award_note": "Nation's top lineman or linebacker",
+  "player": "T.J. Parker",
+  "school": "CLEM"
+ },
+ {
+  "season": 2026,
+  "award": "Butkus",
+  "award_note": "Nation's best LB",
+  "player": "Red Murdock",
+  "school": "BUFF"
+ },
+ {
+  "season": 2026,
+  "award": "Thorpe",
+  "award_note": "Nation's best DB",
+  "player": "OJ Frederique Jr.",
+  "school": "MIA"
+ },
+ {
+  "season": 2026,
+  "award": "Groza",
+  "award_note": "Nation's best K",
+  "player": "Tyler Robles",
+  "school": "USC"
+ },
+ {
+  "season": 2026,
+  "award": "Guy",
+  "award_note": "Nation's best P",
+  "player": "Jacob Ulrich",
+  "school": "KENN"
+ },
+ {
+  "season": 2027,
+  "award": "Heisman",
+  "award_note": "Player of the Year",
+  "player": "Lynel Billups-Williams",
+  "school": "M-OH"
+ },
+ {
+  "season": 2027,
+  "award": "Maxwell",
+  "award_note": "Player of the Year",
+  "player": "Lynel Billups-Williams",
+  "school": "M-OH"
+ },
+ {
+  "season": 2027,
+  "award": "Camp",
+  "award_note": "Most Outstanding Player",
+  "player": "Lynel Billups-Williams",
+  "school": "M-OH"
+ },
+ {
+  "season": 2027,
+  "award": "Bednarik",
+  "award_note": "Defensive Player of the Year",
+  "player": "Tavares Jameson",
+  "school": "ORE"
+ },
+ {
+  "season": 2027,
+  "award": "Nagurski",
+  "award_note": "Defensive Player of the Year",
+  "player": "Jeffery Rush",
+  "school": "MISS"
+ },
+ {
+  "season": 2027,
+  "award": "O'Brien",
+  "award_note": "Nation's best QB",
+  "player": "Marcel Reed",
+  "school": "TAMU"
+ },
+ {
+  "season": 2027,
+  "award": "Walker",
+  "award_note": "Nation's best RB",
+  "player": "Rickey Hunt Jr.",
+  "school": "OHIO"
+ },
+ {
+  "season": 2027,
+  "award": "Biletnikoff",
+  "award_note": "Nation's best WR",
+  "player": "Lynel Billups-Williams",
+  "school": "M-OH"
+ },
+ {
+  "season": 2027,
+  "award": "Mackey",
+  "award_note": "Nation's best TE",
+  "player": "Darren Klein",
+  "school": "CLEV"
+ },
+ {
+  "season": 2027,
+  "award": "Outland",
+  "award_note": "Nation's best interior lineman",
+  "player": "Noah Dunham",
+  "school": "WSU"
+ },
+ {
+  "season": 2027,
+  "award": "Rimington",
+  "award_note": "Nation's best center",
+  "player": "Noah Dunham",
+  "school": "WSU"
+ },
+ {
+  "season": 2027,
+  "award": "Lombardi",
+  "award_note": "Nation's top lineman or linebacker",
+  "player": "Jeffery Rush",
+  "school": "MISS"
+ },
+ {
+  "season": 2027,
+  "award": "Butkus",
+  "award_note": "Nation's best LB",
+  "player": "Tavares Jameson",
+  "school": "ORE"
+ },
+ {
+  "season": 2027,
+  "award": "Thorpe",
+  "award_note": "Nation's best DB",
+  "player": "Terry Bussey",
+  "school": "TAMU"
+ },
+ {
+  "season": 2027,
+  "award": "Groza",
+  "award_note": "Nation's best K",
+  "player": "Caden Chittenden",
+  "school": "UNLV"
+ },
+ {
+  "season": 2027,
+  "award": "Guy",
+  "award_note": "Nation's best P",
+  "player": "Devin Wayne",
+  "school": "AFA"
+ },
+ {
+  "season": 2028,
+  "award": "Heisman",
+  "award_note": "Player of the Year",
+  "player": "Amar'e Hocker",
+  "school": "CLEV"
+ },
+ {
+  "season": 2028,
+  "award": "Maxwell",
+  "award_note": "Player of the Year",
+  "player": "Amar'e Hocker",
+  "school": "CLEV"
+ },
+ {
+  "season": 2028,
+  "award": "Camp",
+  "award_note": "Most Outstanding Player",
+  "player": "Amar'e Hocker",
+  "school": "CLEV"
+ },
+ {
+  "season": 2028,
+  "award": "Bednarik",
+  "award_note": "Defensive Player of the Year",
+  "player": "Owen Long",
+  "school": "CSU"
+ },
+ {
+  "season": 2028,
+  "award": "Nagurski",
+  "award_note": "Defensive Player of the Year",
+  "player": "Will Smith",
+  "school": "TLSA"
+ },
+ {
+  "season": 2028,
+  "award": "O'Brien",
+  "award_note": "Nation's best QB",
+  "player": "Amar'e Hocker",
+  "school": "CLEV"
+ },
+ {
+  "season": 2028,
+  "award": "Walker",
+  "award_note": "Nation's best RB",
+  "player": "Baraka Nwangwu",
+  "school": "CLEV"
+ },
+ {
+  "season": 2028,
+  "award": "Biletnikoff",
+  "award_note": "Nation's best WR",
+  "player": "Gordon Buggs",
+  "school": "M-OH"
+ },
+ {
+  "season": 2028,
+  "award": "Mackey",
+  "award_note": "Nation's best TE",
+  "player": "Kareem Duggan",
+  "school": "CLEV"
+ },
+ {
+  "season": 2028,
+  "award": "Outland",
+  "award_note": "Nation's best interior lineman",
+  "player": "Sullivan Absher",
+  "school": "ND"
+ },
+ {
+  "season": 2028,
+  "award": "Rimington",
+  "award_note": "Nation's best center",
+  "player": "Garrison Yusaf",
+  "school": "STAN"
+ },
+ {
+  "season": 2028,
+  "award": "Lombardi",
+  "award_note": "Nation's top lineman or linebacker",
+  "player": "Chris Burge",
+  "school": "UAB"
+ },
+ {
+  "season": 2028,
+  "award": "Butkus",
+  "award_note": "Nation's best LB",
+  "player": "Owen Long",
+  "school": "CSU"
+ },
+ {
+  "season": 2028,
+  "award": "Thorpe",
+  "award_note": "Nation's best DB",
+  "player": "Nate Cavka",
+  "school": "CLEV"
+ },
+ {
+  "season": 2028,
+  "award": "Groza",
+  "award_note": "Nation's best K",
+  "player": "Vinny LeClair",
+  "school": "LT"
+ },
+ {
+  "season": 2028,
+  "award": "Guy",
+  "award_note": "Nation's best P",
+  "player": "Robert McCracken",
+  "school": "SDSU"
+ },
+ {
+  "season": 2029,
+  "award": "Heisman",
+  "award_note": "Player of the Year",
+  "player": "Keke Odighizuwa",
+  "school": "M-OH"
+ },
+ {
+  "season": 2029,
+  "award": "Maxwell",
+  "award_note": "Player of the Year",
+  "player": "Keke Odighizuwa",
+  "school": "M-OH"
+ },
+ {
+  "season": 2029,
+  "award": "Camp",
+  "award_note": "Most Outstanding Player",
+  "player": "Cornell Tavares",
+  "school": "M-OH"
+ },
+ {
+  "season": 2029,
+  "award": "Bednarik",
+  "award_note": "Defensive Player of the Year",
+  "player": "Nelson Kumar",
+  "school": "M-OH"
+ },
+ {
+  "season": 2029,
+  "award": "Nagurski",
+  "award_note": "Defensive Player of the Year",
+  "player": "Josh Eason",
+  "school": "UGA"
+ },
+ {
+  "season": 2029,
+  "award": "O'Brien",
+  "award_note": "Nation's best QB",
+  "player": "Cornell Tavares",
+  "school": "M-OH"
+ },
+ {
+  "season": 2029,
+  "award": "Walker",
+  "award_note": "Nation's best RB",
+  "player": "Baraka Nwangwu",
+  "school": "CLEV"
+ },
+ {
+  "season": 2029,
+  "award": "Biletnikoff",
+  "award_note": "Nation's best WR",
+  "player": "Keke Odighizuwa",
+  "school": "M-OH"
+ },
+ {
+  "season": 2029,
+  "award": "Mackey",
+  "award_note": "Nation's best TE",
+  "player": "Alani Hope",
+  "school": "ORE"
+ },
+ {
+  "season": 2029,
+  "award": "Outland",
+  "award_note": "Nation's best interior lineman",
+  "player": "Garrison Yusaf",
+  "school": "STAN"
+ },
+ {
+  "season": 2029,
+  "award": "Rimington",
+  "award_note": "Nation's best center",
+  "player": "Garrison Yusaf",
+  "school": "STAN"
+ },
+ {
+  "season": 2029,
+  "award": "Lombardi",
+  "award_note": "Nation's top lineman or linebacker",
+  "player": "Steve Fuentes",
+  "school": "MISS"
+ },
+ {
+  "season": 2029,
+  "award": "Butkus",
+  "award_note": "Nation's best LB",
+  "player": "Nelson Kumar",
+  "school": "M-OH"
+ },
+ {
+  "season": 2029,
+  "award": "Thorpe",
+  "award_note": "Nation's best DB",
+  "player": "Santiago Huertelou",
+  "school": "STAN"
+ },
+ {
+  "season": 2029,
+  "award": "Groza",
+  "award_note": "Nation's best K",
+  "player": "Erik Teamer",
+  "school": "GSU"
+ },
+ {
+  "season": 2029,
+  "award": "Guy",
+  "award_note": "Nation's best P",
+  "player": "Clyde Garrison",
+  "school": "EMU"
+ },
+ {
+  "season": 2030,
+  "award": "Heisman",
+  "award_note": "Player of the Year",
+  "player": "Dave Shelley",
+  "school": "CLEV"
+ },
+ {
+  "season": 2030,
+  "award": "Maxwell",
+  "award_note": "Player of the Year",
+  "player": "Dave Shelley",
+  "school": "CLEV"
+ },
+ {
+  "season": 2030,
+  "award": "Camp",
+  "award_note": "Most Outstanding Player",
+  "player": "Dave Shelley",
+  "school": "CLEV"
+ },
+ {
+  "season": 2030,
+  "award": "Bednarik",
+  "award_note": "Defensive Player of the Year",
+  "player": "Dave Darling",
+  "school": "WMU"
+ },
+ {
+  "season": 2030,
+  "award": "Nagurski",
+  "award_note": "Defensive Player of the Year",
+  "player": "Ramon Harvey",
+  "school": "UT"
+ },
+ {
+  "season": 2030,
+  "award": "O'Brien",
+  "award_note": "Nation's best QB",
+  "player": "Dave Shelley",
+  "school": "CLEV"
+ },
+ {
+  "season": 2030,
+  "award": "Walker",
+  "award_note": "Nation's best RB",
+  "player": "John Ybarra",
+  "school": "OHIO"
+ },
+ {
+  "season": 2030,
+  "award": "Biletnikoff",
+  "award_note": "Nation's best WR",
+  "player": "Keke Odighizuwa",
+  "school": "M-OH"
+ },
+ {
+  "season": 2030,
+  "award": "Mackey",
+  "award_note": "Nation's best TE",
+  "player": "Cade Scharff",
+  "school": "M-OH"
+ },
+ {
+  "season": 2030,
+  "award": "Outland",
+  "award_note": "Nation's best interior lineman",
+  "player": "George Clements",
+  "school": "MIA"
+ },
+ {
+  "season": 2030,
+  "award": "Rimington",
+  "award_note": "Nation's best center",
+  "player": "Jaime Newcombe",
+  "school": "TTU"
+ },
+ {
+  "season": 2030,
+  "award": "Lombardi",
+  "award_note": "Nation's top lineman or linebacker",
+  "player": "Tyree Breeze",
+  "school": "MSST"
+ },
+ {
+  "season": 2030,
+  "award": "Butkus",
+  "award_note": "Nation's best LB",
+  "player": "Emanuel Alvarado",
+  "school": "BAMA"
+ },
+ {
+  "season": 2030,
+  "award": "Thorpe",
+  "award_note": "Nation's best DB",
+  "player": "Nate Cavka",
+  "school": "CLEV"
+ },
+ {
+  "season": 2030,
+  "award": "Groza",
+  "award_note": "Nation's best K",
+  "player": "Dominiqe Burns",
+  "school": "BUFF"
+ },
+ {
+  "season": 2030,
+  "award": "Guy",
+  "award_note": "Nation's best P",
+  "player": "Rodney Wooden",
+  "school": "STAN"
+ },
+ {
+  "season": 2031,
+  "award": "Heisman",
+  "award_note": "Player of the Year",
+  "player": "Robert Okoronkwo",
+  "school": "CLEV"
+ },
+ {
+  "season": 2031,
+  "award": "Maxwell",
+  "award_note": "Player of the Year",
+  "player": "Keke Odighizuwa",
+  "school": "M-OH"
+ },
+ {
+  "season": 2031,
+  "award": "Camp",
+  "award_note": "Most Outstanding Player",
+  "player": "Robert Okoronkwo",
+  "school": "CLEV"
+ },
+ {
+  "season": 2031,
+  "award": "Bednarik",
+  "award_note": "Defensive Player of the Year",
+  "player": "Cordell Witherspoon",
+  "school": "UGA"
+ },
+ {
+  "season": 2031,
+  "award": "Nagurski",
+  "award_note": "Defensive Player of the Year",
+  "player": "Eli Blizzard",
+  "school": "UGA"
+ },
+ {
+  "season": 2031,
+  "award": "O'Brien",
+  "award_note": "Nation's best QB",
+  "player": "Greg Price",
+  "school": "CLEV"
+ },
+ {
+  "season": 2031,
+  "award": "Walker",
+  "award_note": "Nation's best RB",
+  "player": "Robert Okoronkwo",
+  "school": "CLEV"
+ },
+ {
+  "season": 2031,
+  "award": "Biletnikoff",
+  "award_note": "Nation's best WR",
+  "player": "Keke Odighizuwa",
+  "school": "M-OH"
+ },
+ {
+  "season": 2031,
+  "award": "Mackey",
+  "award_note": "Nation's best TE",
+  "player": "Britton Durham",
+  "school": "UGA"
+ },
+ {
+  "season": 2031,
+  "award": "Outland",
+  "award_note": "Nation's best interior lineman",
+  "player": "Wyatt McQuaide",
+  "school": "UGA"
+ },
+ {
+  "season": 2031,
+  "award": "Rimington",
+  "award_note": "Nation's best center",
+  "player": "Terrance Clemons",
+  "school": "ULM"
+ },
+ {
+  "season": 2031,
+  "award": "Lombardi",
+  "award_note": "Nation's top lineman or linebacker",
+  "player": "Cordell Witherspoon",
+  "school": "UGA"
+ },
+ {
+  "season": 2031,
+  "award": "Butkus",
+  "award_note": "Nation's best LB",
+  "player": "Gill Kinder",
+  "school": "UGA"
+ },
+ {
+  "season": 2031,
+  "award": "Thorpe",
+  "award_note": "Nation's best DB",
+  "player": "Eli Blizzard",
+  "school": "UGA"
+ },
+ {
+  "season": 2031,
+  "award": "Groza",
+  "award_note": "Nation's best K",
+  "player": "Ronald Wells",
+  "school": "CAL"
+ },
+ {
+  "season": 2031,
+  "award": "Guy",
+  "award_note": "Nation's best P",
+  "player": "Tim Dinapoli",
+  "school": "ARST"
+ },
+ {
+  "season": 2032,
+  "award": "Heisman",
+  "award_note": "Player of the Year",
+  "player": "Alfonso Augustine",
+  "school": "M-OH"
+ },
+ {
+  "season": 2032,
+  "award": "Maxwell",
+  "award_note": "Player of the Year",
+  "player": "Alfonso Augustine",
+  "school": "M-OH"
+ },
+ {
+  "season": 2032,
+  "award": "Camp",
+  "award_note": "Most Outstanding Player",
+  "player": "Alfonso Augustine",
+  "school": "M-OH"
+ },
+ {
+  "season": 2032,
+  "award": "Bednarik",
+  "award_note": "Defensive Player of the Year",
+  "player": "Quin Calloway",
+  "school": "UTEP"
+ },
+ {
+  "season": 2032,
+  "award": "Nagurski",
+  "award_note": "Defensive Player of the Year",
+  "player": "Manu Cabral",
+  "school": "KENN"
+ },
+ {
+  "season": 2032,
+  "award": "O'Brien",
+  "award_note": "Nation's best QB",
+  "player": "Alfonso Augustine",
+  "school": "M-OH"
+ },
+ {
+  "season": 2032,
+  "award": "Walker",
+  "award_note": "Nation's best RB",
+  "player": "Samuel Peace",
+  "school": "OHIO"
+ },
+ {
+  "season": 2032,
+  "award": "Biletnikoff",
+  "award_note": "Nation's best WR",
+  "player": "Brad DeWitt",
+  "school": "M-OH"
+ },
+ {
+  "season": 2032,
+  "award": "Mackey",
+  "award_note": "Nation's best TE",
+  "player": "Robby Clinton",
+  "school": "OU"
+ },
+ {
+  "season": 2032,
+  "award": "Outland",
+  "award_note": "Nation's best interior lineman",
+  "player": "Seth Molinaro",
+  "school": "CLEV"
+ },
+ {
+  "season": 2032,
+  "award": "Rimington",
+  "award_note": "Nation's best center",
+  "player": "Bobby John",
+  "school": "CLEV"
+ },
+ {
+  "season": 2032,
+  "award": "Lombardi",
+  "award_note": "Nation's top lineman or linebacker",
+  "player": "Quin Calloway",
+  "school": "UTEP"
+ },
+ {
+  "season": 2032,
+  "award": "Butkus",
+  "award_note": "Nation's best LB",
+  "player": "Iosefa Savoie",
+  "school": "CLEV"
+ },
+ {
+  "season": 2032,
+  "award": "Thorpe",
+  "award_note": "Nation's best DB",
+  "player": "Marvin Carden",
+  "school": "LT"
+ },
+ {
+  "season": 2032,
+  "award": "Groza",
+  "award_note": "Nation's best K",
+  "player": "Martin McQueen",
+  "school": "RICE"
+ },
+ {
+  "season": 2032,
+  "award": "Guy",
+  "award_note": "Nation's best P",
+  "player": "Wayne Hixon",
+  "school": "SYR"
+ },
+ {
+  "season": 2033,
+  "award": "Heisman",
+  "award_note": "Player of the Year",
+  "player": "Titus Reece",
+  "school": "CLEV"
+ },
+ {
+  "season": 2033,
+  "award": "Maxwell",
+  "award_note": "Player of the Year",
+  "player": "Matt Tolson",
+  "school": "OHIO"
+ },
+ {
+  "season": 2033,
+  "award": "Camp",
+  "award_note": "Most Outstanding Player",
+  "player": "Matt Tolson",
+  "school": "OHIO"
+ },
+ {
+  "season": 2033,
+  "award": "Bednarik",
+  "award_note": "Defensive Player of the Year",
+  "player": "Caesar Lauletta",
+  "school": "TCU"
+ },
+ {
+  "season": 2033,
+  "award": "Nagurski",
+  "award_note": "Defensive Player of the Year",
+  "player": "DeQuan Way",
+  "school": "OHIO"
+ },
+ {
+  "season": 2033,
+  "award": "O'Brien",
+  "award_note": "Nation's best QB",
+  "player": "Terrell Keglar",
+  "school": "M-OH"
+ },
+ {
+  "season": 2033,
+  "award": "Walker",
+  "award_note": "Nation's best RB",
+  "player": "Matt Tolson",
+  "school": "OHIO"
+ },
+ {
+  "season": 2033,
+  "award": "Biletnikoff",
+  "award_note": "Nation's best WR",
+  "player": "Titus Reece",
+  "school": "CLEV"
+ },
+ {
+  "season": 2033,
+  "award": "Mackey",
+  "award_note": "Nation's best TE",
+  "player": "Eric Duck",
+  "school": "TAMU"
+ },
+ {
+  "season": 2033,
+  "award": "Outland",
+  "award_note": "Nation's best interior lineman",
+  "player": "Seth Molinaro",
+  "school": "CLEV"
+ },
+ {
+  "season": 2033,
+  "award": "Rimington",
+  "award_note": "Nation's best center",
+  "player": "Amari Dotson",
+  "school": "LSU"
+ },
+ {
+  "season": 2033,
+  "award": "Lombardi",
+  "award_note": "Nation's top lineman or linebacker",
+  "player": "Bobby Swayne",
+  "school": "OHIO"
+ },
+ {
+  "season": 2033,
+  "award": "Butkus",
+  "award_note": "Nation's best LB",
+  "player": "Caesar Lauletta",
+  "school": "TCU"
+ },
+ {
+  "season": 2033,
+  "award": "Thorpe",
+  "award_note": "Nation's best DB",
+  "player": "DeQuan Way",
+  "school": "OHIO"
+ },
+ {
+  "season": 2033,
+  "award": "Groza",
+  "award_note": "Nation's best K",
+  "player": "Eric Garcon",
+  "school": "TLSA"
+ },
+ {
+  "season": 2033,
+  "award": "Guy",
+  "award_note": "Nation's best P",
+  "player": "Denzel Baker",
+  "school": "IU"
+ },
+ {
+  "season": 2034,
+  "award": "Heisman",
+  "award_note": "Player of the Year",
+  "player": "Terrell Keglar",
+  "school": "M-OH"
+ },
+ {
+  "season": 2034,
+  "award": "Maxwell",
+  "award_note": "Player of the Year",
+  "player": "Terrell Keglar",
+  "school": "M-OH"
+ },
+ {
+  "season": 2034,
+  "award": "Camp",
+  "award_note": "Most Outstanding Player",
+  "player": "Terrell Keglar",
+  "school": "M-OH"
+ },
+ {
+  "season": 2034,
+  "award": "Bednarik",
+  "award_note": "Defensive Player of the Year",
+  "player": "Karlos Rubin",
+  "school": "UCLA"
+ },
+ {
+  "season": 2034,
+  "award": "Nagurski",
+  "award_note": "Defensive Player of the Year",
+  "player": "Tim Mama",
+  "school": "M-OH"
+ },
+ {
+  "season": 2034,
+  "award": "O'Brien",
+  "award_note": "Nation's best QB",
+  "player": "Terrell Keglar",
+  "school": "M-OH"
+ },
+ {
+  "season": 2034,
+  "award": "Walker",
+  "award_note": "Nation's best RB",
+  "player": "Kadeem Dunham",
+  "school": "M-OH"
+ },
+ {
+  "season": 2034,
+  "award": "Biletnikoff",
+  "award_note": "Nation's best WR",
+  "player": "Devonte Hand",
+  "school": "M-OH"
+ },
+ {
+  "season": 2034,
+  "award": "Mackey",
+  "award_note": "Nation's best TE",
+  "player": "Von Paul",
+  "school": "M-OH"
+ },
+ {
+  "season": 2034,
+  "award": "Outland",
+  "award_note": "Nation's best interior lineman",
+  "player": "Dakota Clemens",
+  "school": "OHIO"
+ },
+ {
+  "season": 2034,
+  "award": "Rimington",
+  "award_note": "Nation's best center",
+  "player": "Marco Masifio",
+  "school": "TCU"
+ },
+ {
+  "season": 2034,
+  "award": "Lombardi",
+  "award_note": "Nation's top lineman or linebacker",
+  "player": "Karlos Rubin",
+  "school": "UCLA"
+ },
+ {
+  "season": 2034,
+  "award": "Butkus",
+  "award_note": "Nation's best LB",
+  "player": "Jason Shelley",
+  "school": "ORE"
+ },
+ {
+  "season": 2034,
+  "award": "Thorpe",
+  "award_note": "Nation's best DB",
+  "player": "Tim Mama",
+  "school": "M-OH"
+ },
+ {
+  "season": 2034,
+  "award": "Groza",
+  "award_note": "Nation's best K",
+  "player": "Rick Romberg",
+  "school": "CSU"
+ },
+ {
+  "season": 2034,
+  "award": "Guy",
+  "award_note": "Nation's best P",
+  "player": "James Clapp",
+  "school": "ORE"
+ },
+ {
+  "season": 2035,
+  "award": "Heisman",
+  "award_note": "Player of the Year",
+  "player": "Mister Tickletime",
+  "school": "M-OH"
+ },
+ {
+  "season": 2035,
+  "award": "Maxwell",
+  "award_note": "Player of the Year",
+  "player": "Mister Tickletime",
+  "school": "M-OH"
+ },
+ {
+  "season": 2035,
+  "award": "Camp",
+  "award_note": "Most Outstanding Player",
+  "player": "Mister Tickletime",
+  "school": "M-OH"
+ },
+ {
+  "season": 2035,
+  "award": "Bednarik",
+  "award_note": "Defensive Player of the Year",
+  "player": "Jimmy Simms",
+  "school": "M-OH"
+ },
+ {
+  "season": 2035,
+  "award": "Nagurski",
+  "award_note": "Defensive Player of the Year",
+  "player": "Zach Cantrell",
+  "school": "CLEV"
+ },
+ {
+  "season": 2035,
+  "award": "O'Brien",
+  "award_note": "Nation's best QB",
+  "player": "Mister Tickletime",
+  "school": "M-OH"
+ },
+ {
+  "season": 2035,
+  "award": "Walker",
+  "award_note": "Nation's best RB",
+  "player": "Orlando Foucha",
+  "school": "M-OH"
+ },
+ {
+  "season": 2035,
+  "award": "Biletnikoff",
+  "award_note": "Nation's best WR",
+  "player": "Titus Reece",
+  "school": "CLEV"
+ },
+ {
+  "season": 2035,
+  "award": "Mackey",
+  "award_note": "Nation's best TE",
+  "player": "Von Paul",
+  "school": "M-OH"
+ },
+ {
+  "season": 2035,
+  "award": "Outland",
+  "award_note": "Nation's best interior lineman",
+  "player": "Miles Flinn",
+  "school": "TEX"
+ },
+ {
+  "season": 2035,
+  "award": "Rimington",
+  "award_note": "Nation's best center",
+  "player": "Kevin Wells",
+  "school": "IU"
+ },
+ {
+  "season": 2035,
+  "award": "Lombardi",
+  "award_note": "Nation's top lineman or linebacker",
+  "player": "Jimmy Simms",
+  "school": "M-OH"
+ },
+ {
+  "season": 2035,
+  "award": "Butkus",
+  "award_note": "Nation's best LB",
+  "player": "Martin Lorello",
+  "school": "M-OH"
+ },
+ {
+  "season": 2035,
+  "award": "Thorpe",
+  "award_note": "Nation's best DB",
+  "player": "Tevin Boozer",
+  "school": "M-OH"
+ },
+ {
+  "season": 2035,
+  "award": "Groza",
+  "award_note": "Nation's best K",
+  "player": "Tobias Ezeala",
+  "school": "TROY"
+ },
+ {
+  "season": 2035,
+  "award": "Guy",
+  "award_note": "Nation's best P",
+  "player": "Ramon Heredia",
+  "school": "UH"
+ },
+ {
+  "season": 2036,
+  "award": "Heisman",
+  "award_note": "Player of the Year",
+  "player": "Damian Ferrario",
+  "school": "M-OH"
+ },
+ {
+  "season": 2036,
+  "award": "Maxwell",
+  "award_note": "Player of the Year",
+  "player": "Damian Ferrario",
+  "school": "M-OH"
+ },
+ {
+  "season": 2036,
+  "award": "Camp",
+  "award_note": "Most Outstanding Player",
+  "player": "Damian Ferrario",
+  "school": "M-OH"
+ },
+ {
+  "season": 2036,
+  "award": "Bednarik",
+  "award_note": "Defensive Player of the Year",
+  "player": "Calvin LaRocque",
+  "school": "M-OH"
+ },
+ {
+  "season": 2036,
+  "award": "Nagurski",
+  "award_note": "Defensive Player of the Year",
+  "player": "Vonn Ladd",
+  "school": "CLEV"
+ },
+ {
+  "season": 2036,
+  "award": "O'Brien",
+  "award_note": "Nation's best QB",
+  "player": "Damian Ferrario",
+  "school": "M-OH"
+ },
+ {
+  "season": 2036,
+  "award": "Walker",
+  "award_note": "Nation's best RB",
+  "player": "Cameron Honeycutt",
+  "school": "M-OH"
+ },
+ {
+  "season": 2036,
+  "award": "Biletnikoff",
+  "award_note": "Nation's best WR",
+  "player": "C.J. Rhodes",
+  "school": "M-OH"
+ },
+ {
+  "season": 2036,
+  "award": "Mackey",
+  "award_note": "Nation's best TE",
+  "player": "Von Paul",
+  "school": "M-OH"
+ },
+ {
+  "season": 2036,
+  "award": "Outland",
+  "award_note": "Nation's best interior lineman",
+  "player": "Zach Singletary",
+  "school": "OHIO"
+ },
+ {
+  "season": 2036,
+  "award": "Rimington",
+  "award_note": "Nation's best center",
+  "player": "Christian Wolfe",
+  "school": "ND"
+ },
+ {
+  "season": 2036,
+  "award": "Lombardi",
+  "award_note": "Nation's top lineman or linebacker",
+  "player": "Calvin LaRocque",
+  "school": "M-OH"
+ },
+ {
+  "season": 2036,
+  "award": "Butkus",
+  "award_note": "Nation's best LB",
+  "player": "Vonn Ladd",
+  "school": "CLEV"
+ },
+ {
+  "season": 2036,
+  "award": "Thorpe",
+  "award_note": "Nation's best DB",
+  "player": "Matthew Hoge",
+  "school": "M-OH"
+ },
+ {
+  "season": 2036,
+  "award": "Groza",
+  "award_note": "Nation's best K",
+  "player": "Cortez Thompkins",
+  "school": "ARST"
+ },
+ {
+  "season": 2036,
+  "award": "Guy",
+  "award_note": "Nation's best P",
+  "player": "Finau Chung",
+  "school": "WSU"
+ },
+ {
+  "season": 2037,
+  "award": "Heisman",
+  "award_note": "Player of the Year",
+  "player": "Damian Ferrario",
+  "school": "M-OH"
+ },
+ {
+  "season": 2037,
+  "award": "Maxwell",
+  "award_note": "Player of the Year",
+  "player": "Damian Ferrario",
+  "school": "M-OH"
+ },
+ {
+  "season": 2037,
+  "award": "Camp",
+  "award_note": "Most Outstanding Player",
+  "player": "C.J. Rhodes",
+  "school": "M-OH"
+ },
+ {
+  "season": 2037,
+  "award": "Bednarik",
+  "award_note": "Defensive Player of the Year",
+  "player": "Marquez Rossouw",
+  "school": "CLEV"
+ },
+ {
+  "season": 2037,
+  "award": "Nagurski",
+  "award_note": "Defensive Player of the Year",
+  "player": "Emeka Zombo",
+  "school": "M-OH"
+ },
+ {
+  "season": 2037,
+  "award": "O'Brien",
+  "award_note": "Nation's best QB",
+  "player": "Damian Ferrario",
+  "school": "M-OH"
+ },
+ {
+  "season": 2037,
+  "award": "Walker",
+  "award_note": "Nation's best RB",
+  "player": "Paul Pape",
+  "school": "M-OH"
+ },
+ {
+  "season": 2037,
+  "award": "Biletnikoff",
+  "award_note": "Nation's best WR",
+  "player": "C.J. Rhodes",
+  "school": "M-OH"
+ },
+ {
+  "season": 2037,
+  "award": "Mackey",
+  "award_note": "Nation's best TE",
+  "player": "Paul Flannigan",
+  "school": "CLEV"
+ },
+ {
+  "season": 2037,
+  "award": "Outland",
+  "award_note": "Nation's best interior lineman",
+  "player": "Richard Montanez",
+  "school": "OSU"
+ },
+ {
+  "season": 2037,
+  "award": "Rimington",
+  "award_note": "Nation's best center",
+  "player": "Amani Stumph",
+  "school": "LOU"
+ },
+ {
+  "season": 2037,
+  "award": "Lombardi",
+  "award_note": "Nation's top lineman or linebacker",
+  "player": "Marquez Rossouw",
+  "school": "CLEV"
+ },
+ {
+  "season": 2037,
+  "award": "Butkus",
+  "award_note": "Nation's best LB",
+  "player": "Joshua Abraham",
+  "school": "M-OH"
+ },
+ {
+  "season": 2037,
+  "award": "Thorpe",
+  "award_note": "Nation's best DB",
+  "player": "Matthew Hoge",
+  "school": "M-OH"
+ },
+ {
+  "season": 2037,
+  "award": "Groza",
+  "award_note": "Nation's best K",
+  "player": "Alex Isaac",
+  "school": "ORE"
+ },
+ {
+  "season": 2037,
+  "award": "Guy",
+  "award_note": "Nation's best P",
+  "player": "Enrique Goodin",
+  "school": "TROY"
+ }
+]

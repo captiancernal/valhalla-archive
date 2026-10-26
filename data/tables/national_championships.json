@@ -1,0 +1,107 @@
+[
+ {
+  "season": 2023,
+  "champion": "MICH",
+  "runner_up": "WASH",
+  "score": "34-13",
+  "byes": null
+ },
+ {
+  "season": 2024,
+  "champion": "ORE",
+  "runner_up": "ND",
+  "score": "38-16",
+  "byes": "MIA, ORE, ASU, BAMA"
+ },
+ {
+  "season": 2025,
+  "champion": "PSU",
+  "runner_up": "CLEM",
+  "score": "56-38",
+  "byes": "First round Byes"
+ },
+ {
+  "season": 2026,
+  "champion": "UGA",
+  "runner_up": "ORE",
+  "score": "45-17",
+  "byes": null
+ },
+ {
+  "season": 2027,
+  "champion": "BAMA",
+  "runner_up": "M-OH",
+  "score": "31-17",
+  "byes": "First round Byes"
+ },
+ {
+  "season": 2028,
+  "champion": "CLEV",
+  "runner_up": "UGA",
+  "score": "34-24",
+  "byes": "First round Byes"
+ },
+ {
+  "season": 2029,
+  "champion": "OHIO",
+  "runner_up": "CLEV",
+  "score": "52-36",
+  "byes": "First round Byes"
+ },
+ {
+  "season": 2030,
+  "champion": "OHIO",
+  "runner_up": "OU",
+  "score": "38-13",
+  "byes": null
+ },
+ {
+  "season": 2031,
+  "champion": "OHIO",
+  "runner_up": "CLEV",
+  "score": "35-34",
+  "byes": null
+ },
+ {
+  "season": 2032,
+  "champion": "OHIO",
+  "runner_up": "OU",
+  "score": "42-31",
+  "byes": null
+ },
+ {
+  "season": 2033,
+  "champion": "OHIO",
+  "runner_up": "MIA",
+  "score": "42-13",
+  "byes": null
+ },
+ {
+  "season": 2034,
+  "champion": "M-OH",
+  "runner_up": "CLEV",
+  "score": "61-52",
+  "byes": null
+ },
+ {
+  "season": 2035,
+  "champion": "M-OH",
+  "runner_up": "CLEV",
+  "score": "73-70",
+  "byes": null
+ },
+ {
+  "season": 2036,
+  "champion": "M-OH",
+  "runner_up": "CLEV",
+  "score": "56-35",
+  "byes": null
+ },
+ {
+  "season": 2037,
+  "champion": "CLEV",
+  "runner_up": "OHIO",
+  "score": "56-39",
+  "byes": null
+ }
+]

@@ -1,0 +1,1877 @@
+[
+ {
+  "season": 2023,
+  "rank": 1,
+  "team": "MICH"
+ },
+ {
+  "season": 2023,
+  "rank": 2,
+  "team": "WASH"
+ },
+ {
+  "season": 2023,
+  "rank": 3,
+  "team": "TEX"
+ },
+ {
+  "season": 2023,
+  "rank": 4,
+  "team": "UGA"
+ },
+ {
+  "season": 2023,
+  "rank": 5,
+  "team": "BAMA"
+ },
+ {
+  "season": 2023,
+  "rank": 6,
+  "team": "ORE"
+ },
+ {
+  "season": 2023,
+  "rank": 7,
+  "team": "FSU"
+ },
+ {
+  "season": 2023,
+  "rank": 8,
+  "team": "MIZ"
+ },
+ {
+  "season": 2023,
+  "rank": 9,
+  "team": "MISS"
+ },
+ {
+  "season": 2023,
+  "rank": 10,
+  "team": "OSU"
+ },
+ {
+  "season": 2023,
+  "rank": 11,
+  "team": "ARIZ"
+ },
+ {
+  "season": 2023,
+  "rank": 12,
+  "team": "LSU"
+ },
+ {
+  "season": 2023,
+  "rank": 13,
+  "team": "PSU"
+ },
+ {
+  "season": 2023,
+  "rank": 14,
+  "team": "ND"
+ },
+ {
+  "season": 2023,
+  "rank": 15,
+  "team": "OU"
+ },
+ {
+  "season": 2023,
+  "rank": 16,
+  "team": "OKST"
+ },
+ {
+  "season": 2023,
+  "rank": 17,
+  "team": "UT"
+ },
+ {
+  "season": 2023,
+  "rank": 18,
+  "team": "KSU"
+ },
+ {
+  "season": 2023,
+  "rank": 19,
+  "team": "LOU"
+ },
+ {
+  "season": 2023,
+  "rank": 20,
+  "team": "CLEM"
+ },
+ {
+  "season": 2023,
+  "rank": 21,
+  "team": "NCST"
+ },
+ {
+  "season": 2023,
+  "rank": 22,
+  "team": "SMU"
+ },
+ {
+  "season": 2023,
+  "rank": 23,
+  "team": "KU"
+ },
+ {
+  "season": 2023,
+  "rank": 24,
+  "team": "IOWA"
+ },
+ {
+  "season": 2023,
+  "rank": 25,
+  "team": "LIB"
+ },
+ {
+  "season": 2024,
+  "rank": 1,
+  "team": "ORE"
+ },
+ {
+  "season": 2024,
+  "rank": 2,
+  "team": "ND"
+ },
+ {
+  "season": 2024,
+  "rank": 3,
+  "team": "MIA"
+ },
+ {
+  "season": 2024,
+  "rank": 4,
+  "team": "BAMA"
+ },
+ {
+  "season": 2024,
+  "rank": 5,
+  "team": "OSU"
+ },
+ {
+  "season": 2024,
+  "rank": 6,
+  "team": "MISS"
+ },
+ {
+  "season": 2024,
+  "rank": 7,
+  "team": "UGA"
+ },
+ {
+  "season": 2024,
+  "rank": 8,
+  "team": "CLEM"
+ },
+ {
+  "season": 2024,
+  "rank": 9,
+  "team": "TEX"
+ },
+ {
+  "season": 2024,
+  "rank": 10,
+  "team": "KSU"
+ },
+ {
+  "season": 2024,
+  "rank": 11,
+  "team": "PSU"
+ },
+ {
+  "season": 2024,
+  "rank": 12,
+  "team": "ASU"
+ },
+ {
+  "season": 2024,
+  "rank": 13,
+  "team": "UMD"
+ },
+ {
+  "season": 2024,
+  "rank": 14,
+  "team": "UTAH"
+ },
+ {
+  "season": 2024,
+  "rank": 15,
+  "team": "NCST"
+ },
+ {
+  "season": 2024,
+  "rank": 16,
+  "team": "ECU"
+ },
+ {
+  "season": 2024,
+  "rank": 17,
+  "team": "BOIS"
+ },
+ {
+  "season": 2024,
+  "rank": 18,
+  "team": "MIZ"
+ },
+ {
+  "season": 2024,
+  "rank": 19,
+  "team": "UNT"
+ },
+ {
+  "season": 2024,
+  "rank": 20,
+  "team": "WSU"
+ },
+ {
+  "season": 2024,
+  "rank": 21,
+  "team": "SYR"
+ },
+ {
+  "season": 2024,
+  "rank": 22,
+  "team": "MRSH"
+ },
+ {
+  "season": 2024,
+  "rank": 23,
+  "team": "PITT"
+ },
+ {
+  "season": 2024,
+  "rank": 24,
+  "team": "UNLV"
+ },
+ {
+  "season": 2024,
+  "rank": 25,
+  "team": "NEV"
+ },
+ {
+  "season": 2025,
+  "rank": 1,
+  "team": "PSU"
+ },
+ {
+  "season": 2025,
+  "rank": 2,
+  "team": "CLEM"
+ },
+ {
+  "season": 2025,
+  "rank": 3,
+  "team": "BAMA"
+ },
+ {
+  "season": 2025,
+  "rank": 4,
+  "team": "ORE"
+ },
+ {
+  "season": 2025,
+  "rank": 5,
+  "team": "TEX"
+ },
+ {
+  "season": 2025,
+  "rank": 6,
+  "team": "KSU"
+ },
+ {
+  "season": 2025,
+  "rank": 7,
+  "team": "UGA"
+ },
+ {
+  "season": 2025,
+  "rank": 8,
+  "team": "ILL"
+ },
+ {
+  "season": 2025,
+  "rank": 9,
+  "team": "BC"
+ },
+ {
+  "season": 2025,
+  "rank": 10,
+  "team": "BU"
+ },
+ {
+  "season": 2025,
+  "rank": 11,
+  "team": "CLEV"
+ },
+ {
+  "season": 2025,
+  "rank": 12,
+  "team": "GT"
+ },
+ {
+  "season": 2025,
+  "rank": 13,
+  "team": "CAL"
+ },
+ {
+  "season": 2025,
+  "rank": 14,
+  "team": "USC"
+ },
+ {
+  "season": 2025,
+  "rank": 15,
+  "team": "TULN"
+ },
+ {
+  "season": 2025,
+  "rank": 16,
+  "team": "TLSA"
+ },
+ {
+  "season": 2025,
+  "rank": 17,
+  "team": "MICH"
+ },
+ {
+  "season": 2025,
+  "rank": 18,
+  "team": "UT"
+ },
+ {
+  "season": 2025,
+  "rank": 19,
+  "team": "TXST"
+ },
+ {
+  "season": 2025,
+  "rank": 20,
+  "team": "SMU"
+ },
+ {
+  "season": 2025,
+  "rank": 21,
+  "team": "BALL"
+ },
+ {
+  "season": 2025,
+  "rank": 22,
+  "team": "UK"
+ },
+ {
+  "season": 2025,
+  "rank": 23,
+  "team": "LIB"
+ },
+ {
+  "season": 2025,
+  "rank": 24,
+  "team": "OU"
+ },
+ {
+  "season": 2025,
+  "rank": 25,
+  "team": "SHSU"
+ },
+ {
+  "season": 2026,
+  "rank": 1,
+  "team": "UGA"
+ },
+ {
+  "season": 2026,
+  "rank": 2,
+  "team": "ORE"
+ },
+ {
+  "season": 2026,
+  "rank": 3,
+  "team": "FLA"
+ },
+ {
+  "season": 2026,
+  "rank": 4,
+  "team": "BAMA"
+ },
+ {
+  "season": 2026,
+  "rank": 5,
+  "team": "KSU"
+ },
+ {
+  "season": 2026,
+  "rank": 6,
+  "team": "OSU"
+ },
+ {
+  "season": 2026,
+  "rank": 7,
+  "team": "PITT"
+ },
+ {
+  "season": 2026,
+  "rank": 8,
+  "team": "CLEM"
+ },
+ {
+  "season": 2026,
+  "rank": 9,
+  "team": "UMD"
+ },
+ {
+  "season": 2026,
+  "rank": 10,
+  "team": "ND"
+ },
+ {
+  "season": 2026,
+  "rank": 11,
+  "team": "CLEV"
+ },
+ {
+  "season": 2026,
+  "rank": 12,
+  "team": "MIA"
+ },
+ {
+  "season": 2026,
+  "rank": 13,
+  "team": "WASH"
+ },
+ {
+  "season": 2026,
+  "rank": 14,
+  "team": "USC"
+ },
+ {
+  "season": 2026,
+  "rank": 15,
+  "team": "TULN"
+ },
+ {
+  "season": 2026,
+  "rank": 16,
+  "team": "TAMU"
+ },
+ {
+  "season": 2026,
+  "rank": 17,
+  "team": "UT"
+ },
+ {
+  "season": 2026,
+  "rank": 18,
+  "team": "BC"
+ },
+ {
+  "season": 2026,
+  "rank": 19,
+  "team": "BUFF"
+ },
+ {
+  "season": 2026,
+  "rank": 20,
+  "team": "UAB"
+ },
+ {
+  "season": 2026,
+  "rank": 21,
+  "team": "UNT"
+ },
+ {
+  "season": 2026,
+  "rank": 22,
+  "team": "ASU"
+ },
+ {
+  "season": 2026,
+  "rank": 23,
+  "team": "UL"
+ },
+ {
+  "season": 2026,
+  "rank": 24,
+  "team": "ISU"
+ },
+ {
+  "season": 2026,
+  "rank": 25,
+  "team": "M-OH"
+ },
+ {
+  "season": 2027,
+  "rank": 1,
+  "team": "BAMA"
+ },
+ {
+  "season": 2027,
+  "rank": 2,
+  "team": "M-OH"
+ },
+ {
+  "season": 2027,
+  "rank": 3,
+  "team": "TAMU"
+ },
+ {
+  "season": 2027,
+  "rank": 4,
+  "team": "OHIO"
+ },
+ {
+  "season": 2027,
+  "rank": 5,
+  "team": "PSU"
+ },
+ {
+  "season": 2027,
+  "rank": 6,
+  "team": "USC"
+ },
+ {
+  "season": 2027,
+  "rank": 7,
+  "team": "WASH"
+ },
+ {
+  "season": 2027,
+  "rank": 8,
+  "team": "VT"
+ },
+ {
+  "season": 2027,
+  "rank": 9,
+  "team": "PITT"
+ },
+ {
+  "season": 2027,
+  "rank": 10,
+  "team": "NCST"
+ },
+ {
+  "season": 2027,
+  "rank": 11,
+  "team": "CLEV"
+ },
+ {
+  "season": 2027,
+  "rank": 12,
+  "team": "LSU"
+ },
+ {
+  "season": 2027,
+  "rank": 13,
+  "team": "ND"
+ },
+ {
+  "season": 2027,
+  "rank": 14,
+  "team": "OU"
+ },
+ {
+  "season": 2027,
+  "rank": 15,
+  "team": "UCLA"
+ },
+ {
+  "season": 2027,
+  "rank": 16,
+  "team": "USA"
+ },
+ {
+  "season": 2027,
+  "rank": 17,
+  "team": "MTST"
+ },
+ {
+  "season": 2027,
+  "rank": 18,
+  "team": "UL"
+ },
+ {
+  "season": 2027,
+  "rank": 19,
+  "team": "WKU"
+ },
+ {
+  "season": 2027,
+  "rank": 20,
+  "team": "AKR"
+ },
+ {
+  "season": 2027,
+  "rank": 21,
+  "team": "BC"
+ },
+ {
+  "season": 2027,
+  "rank": 22,
+  "team": "SJSU"
+ },
+ {
+  "season": 2027,
+  "rank": 23,
+  "team": "MIA"
+ },
+ {
+  "season": 2027,
+  "rank": 24,
+  "team": "CSU"
+ },
+ {
+  "season": 2027,
+  "rank": 25,
+  "team": "COLO"
+ },
+ {
+  "season": 2028,
+  "rank": 1,
+  "team": "CLEV"
+ },
+ {
+  "season": 2028,
+  "rank": 2,
+  "team": "UGA"
+ },
+ {
+  "season": 2028,
+  "rank": 3,
+  "team": "M-OH"
+ },
+ {
+  "season": 2028,
+  "rank": 4,
+  "team": "KSU"
+ },
+ {
+  "season": 2028,
+  "rank": 5,
+  "team": "MTSU"
+ },
+ {
+  "season": 2028,
+  "rank": 6,
+  "team": "OHIO"
+ },
+ {
+  "season": 2028,
+  "rank": 7,
+  "team": "CHAR"
+ },
+ {
+  "season": 2028,
+  "rank": 8,
+  "team": "ND"
+ },
+ {
+  "season": 2028,
+  "rank": 9,
+  "team": "NCST"
+ },
+ {
+  "season": 2028,
+  "rank": 10,
+  "team": "OSU"
+ },
+ {
+  "season": 2028,
+  "rank": 11,
+  "team": "TULN"
+ },
+ {
+  "season": 2028,
+  "rank": 12,
+  "team": "USC"
+ },
+ {
+  "season": 2028,
+  "rank": 13,
+  "team": "TAMU"
+ },
+ {
+  "season": 2028,
+  "rank": 14,
+  "team": "BU"
+ },
+ {
+  "season": 2028,
+  "rank": 15,
+  "team": "MIA"
+ },
+ {
+  "season": 2028,
+  "rank": 16,
+  "team": "MASS"
+ },
+ {
+  "season": 2028,
+  "rank": 17,
+  "team": "CAL"
+ },
+ {
+  "season": 2028,
+  "rank": 18,
+  "team": "MICH"
+ },
+ {
+  "season": 2028,
+  "rank": 19,
+  "team": "ORST"
+ },
+ {
+  "season": 2028,
+  "rank": 20,
+  "team": "WAKE"
+ },
+ {
+  "season": 2028,
+  "rank": 21,
+  "team": "IOWA"
+ },
+ {
+  "season": 2028,
+  "rank": 22,
+  "team": "TLSA"
+ },
+ {
+  "season": 2028,
+  "rank": 23,
+  "team": "CLEM"
+ },
+ {
+  "season": 2028,
+  "rank": 24,
+  "team": "PSU"
+ },
+ {
+  "season": 2028,
+  "rank": 25,
+  "team": "SDSU"
+ },
+ {
+  "season": 2029,
+  "rank": 1,
+  "team": "OHIO"
+ },
+ {
+  "season": 2029,
+  "rank": 2,
+  "team": "CLEV"
+ },
+ {
+  "season": 2029,
+  "rank": 3,
+  "team": "ORE"
+ },
+ {
+  "season": 2029,
+  "rank": 4,
+  "team": "UGA"
+ },
+ {
+  "season": 2029,
+  "rank": 5,
+  "team": "M-OH"
+ },
+ {
+  "season": 2029,
+  "rank": 6,
+  "team": "ND"
+ },
+ {
+  "season": 2029,
+  "rank": 7,
+  "team": "LSU"
+ },
+ {
+  "season": 2029,
+  "rank": 8,
+  "team": "MICH"
+ },
+ {
+  "season": 2029,
+  "rank": 9,
+  "team": "MIA"
+ },
+ {
+  "season": 2029,
+  "rank": 10,
+  "team": "OU"
+ },
+ {
+  "season": 2029,
+  "rank": 11,
+  "team": "ILL"
+ },
+ {
+  "season": 2029,
+  "rank": 12,
+  "team": "MSU"
+ },
+ {
+  "season": 2029,
+  "rank": 13,
+  "team": "UL"
+ },
+ {
+  "season": 2029,
+  "rank": 14,
+  "team": "MASS"
+ },
+ {
+  "season": 2029,
+  "rank": 15,
+  "team": "STAN"
+ },
+ {
+  "season": 2029,
+  "rank": 16,
+  "team": "TXST"
+ },
+ {
+  "season": 2029,
+  "rank": 17,
+  "team": "UTEP"
+ },
+ {
+  "season": 2029,
+  "rank": 18,
+  "team": "NMS"
+ },
+ {
+  "season": 2029,
+  "rank": 19,
+  "team": "ARST"
+ },
+ {
+  "season": 2029,
+  "rank": 20,
+  "team": "ISU"
+ },
+ {
+  "season": 2029,
+  "rank": 21,
+  "team": "TULN"
+ },
+ {
+  "season": 2029,
+  "rank": 22,
+  "team": "SMU"
+ },
+ {
+  "season": 2029,
+  "rank": 23,
+  "team": "UCLA"
+ },
+ {
+  "season": 2029,
+  "rank": 24,
+  "team": "WASH"
+ },
+ {
+  "season": 2029,
+  "rank": 25,
+  "team": "NCST"
+ },
+ {
+  "season": 2030,
+  "rank": 1,
+  "team": "OHIO"
+ },
+ {
+  "season": 2030,
+  "rank": 2,
+  "team": "OU"
+ },
+ {
+  "season": 2030,
+  "rank": 3,
+  "team": "UT"
+ },
+ {
+  "season": 2030,
+  "rank": 4,
+  "team": "CLEV"
+ },
+ {
+  "season": 2030,
+  "rank": 5,
+  "team": "TAMU"
+ },
+ {
+  "season": 2030,
+  "rank": 6,
+  "team": "ND"
+ },
+ {
+  "season": 2030,
+  "rank": 7,
+  "team": "CLEM"
+ },
+ {
+  "season": 2030,
+  "rank": 8,
+  "team": "TULN"
+ },
+ {
+  "season": 2030,
+  "rank": 9,
+  "team": "CONN"
+ },
+ {
+  "season": 2030,
+  "rank": 10,
+  "team": "FSU"
+ },
+ {
+  "season": 2030,
+  "rank": 11,
+  "team": "ORE"
+ },
+ {
+  "season": 2030,
+  "rank": 12,
+  "team": "M-OH"
+ },
+ {
+  "season": 2030,
+  "rank": 13,
+  "team": "KSU"
+ },
+ {
+  "season": 2030,
+  "rank": 14,
+  "team": "TROY"
+ },
+ {
+  "season": 2030,
+  "rank": 15,
+  "team": "BUFF"
+ },
+ {
+  "season": 2030,
+  "rank": 16,
+  "team": "FIU"
+ },
+ {
+  "season": 2030,
+  "rank": 17,
+  "team": "TEX"
+ },
+ {
+  "season": 2030,
+  "rank": 18,
+  "team": "STAN"
+ },
+ {
+  "season": 2030,
+  "rank": 19,
+  "team": "BALL"
+ },
+ {
+  "season": 2030,
+  "rank": 20,
+  "team": "FLA"
+ },
+ {
+  "season": 2030,
+  "rank": 21,
+  "team": "WMU"
+ },
+ {
+  "season": 2030,
+  "rank": 22,
+  "team": "AFA"
+ },
+ {
+  "season": 2030,
+  "rank": 23,
+  "team": "MSU"
+ },
+ {
+  "season": 2030,
+  "rank": 24,
+  "team": "MIA"
+ },
+ {
+  "season": 2030,
+  "rank": 25,
+  "team": "ASU"
+ },
+ {
+  "season": 2031,
+  "rank": 1,
+  "team": "OHIO"
+ },
+ {
+  "season": 2031,
+  "rank": 2,
+  "team": "CLEV"
+ },
+ {
+  "season": 2031,
+  "rank": 3,
+  "team": "UGA"
+ },
+ {
+  "season": 2031,
+  "rank": 4,
+  "team": "MEM"
+ },
+ {
+  "season": 2031,
+  "rank": 5,
+  "team": "OU"
+ },
+ {
+  "season": 2031,
+  "rank": 6,
+  "team": "M-OH"
+ },
+ {
+  "season": 2031,
+  "rank": 7,
+  "team": "KSU"
+ },
+ {
+  "season": 2031,
+  "rank": 8,
+  "team": "WASH"
+ },
+ {
+  "season": 2031,
+  "rank": 9,
+  "team": "MICH"
+ },
+ {
+  "season": 2031,
+  "rank": 10,
+  "team": "SYR"
+ },
+ {
+  "season": 2031,
+  "rank": 11,
+  "team": "ARK"
+ },
+ {
+  "season": 2031,
+  "rank": 12,
+  "team": "USF"
+ },
+ {
+  "season": 2031,
+  "rank": 13,
+  "team": "TEX"
+ },
+ {
+  "season": 2031,
+  "rank": 14,
+  "team": "KU"
+ },
+ {
+  "season": 2031,
+  "rank": 15,
+  "team": "NCST"
+ },
+ {
+  "season": 2031,
+  "rank": 16,
+  "team": "IU"
+ },
+ {
+  "season": 2031,
+  "rank": 17,
+  "team": "FRES"
+ },
+ {
+  "season": 2031,
+  "rank": 18,
+  "team": "UT"
+ },
+ {
+  "season": 2031,
+  "rank": 19,
+  "team": "NEB"
+ },
+ {
+  "season": 2031,
+  "rank": 20,
+  "team": "PSU"
+ },
+ {
+  "season": 2031,
+  "rank": 21,
+  "team": "BAMA"
+ },
+ {
+  "season": 2031,
+  "rank": 22,
+  "team": "STAN"
+ },
+ {
+  "season": 2031,
+  "rank": 23,
+  "team": "USC"
+ },
+ {
+  "season": 2031,
+  "rank": 24,
+  "team": "CLEM"
+ },
+ {
+  "season": 2031,
+  "rank": 25,
+  "team": "CMU"
+ },
+ {
+  "season": 2032,
+  "rank": 1,
+  "team": "OHIO"
+ },
+ {
+  "season": 2032,
+  "rank": 2,
+  "team": "OU"
+ },
+ {
+  "season": 2032,
+  "rank": 3,
+  "team": "UNC"
+ },
+ {
+  "season": 2032,
+  "rank": 4,
+  "team": "CLEV"
+ },
+ {
+  "season": 2032,
+  "rank": 5,
+  "team": "WSU"
+ },
+ {
+  "season": 2032,
+  "rank": 6,
+  "team": "M-OH"
+ },
+ {
+  "season": 2032,
+  "rank": 7,
+  "team": "FLA"
+ },
+ {
+  "season": 2032,
+  "rank": 8,
+  "team": "CLEM"
+ },
+ {
+  "season": 2032,
+  "rank": 9,
+  "team": "KSU"
+ },
+ {
+  "season": 2032,
+  "rank": 10,
+  "team": "STAN"
+ },
+ {
+  "season": 2032,
+  "rank": 11,
+  "team": "FSU"
+ },
+ {
+  "season": 2032,
+  "rank": 12,
+  "team": "BYU"
+ },
+ {
+  "season": 2032,
+  "rank": 13,
+  "team": "RUTG"
+ },
+ {
+  "season": 2032,
+  "rank": 14,
+  "team": "ORE"
+ },
+ {
+  "season": 2032,
+  "rank": 15,
+  "team": "DUKE"
+ },
+ {
+  "season": 2032,
+  "rank": 16,
+  "team": "OKST"
+ },
+ {
+  "season": 2032,
+  "rank": 17,
+  "team": "TCU"
+ },
+ {
+  "season": 2032,
+  "rank": 18,
+  "team": "WIS"
+ },
+ {
+  "season": 2032,
+  "rank": 19,
+  "team": "PSU"
+ },
+ {
+  "season": 2032,
+  "rank": 20,
+  "team": "UTEP"
+ },
+ {
+  "season": 2032,
+  "rank": 21,
+  "team": "BUFF"
+ },
+ {
+  "season": 2032,
+  "rank": 22,
+  "team": "UMD"
+ },
+ {
+  "season": 2032,
+  "rank": 23,
+  "team": "USC"
+ },
+ {
+  "season": 2032,
+  "rank": 24,
+  "team": "TROY"
+ },
+ {
+  "season": 2032,
+  "rank": 25,
+  "team": "SHSU"
+ },
+ {
+  "season": 2033,
+  "rank": 1,
+  "team": "OHIO"
+ },
+ {
+  "season": 2033,
+  "rank": 2,
+  "team": "MIA"
+ },
+ {
+  "season": 2033,
+  "rank": 3,
+  "team": "OU"
+ },
+ {
+  "season": 2033,
+  "rank": 4,
+  "team": "M-OH"
+ },
+ {
+  "season": 2033,
+  "rank": 5,
+  "team": "TAMU"
+ },
+ {
+  "season": 2033,
+  "rank": 6,
+  "team": "KSU"
+ },
+ {
+  "season": 2033,
+  "rank": 7,
+  "team": "TCU"
+ },
+ {
+  "season": 2033,
+  "rank": 8,
+  "team": "CLEV"
+ },
+ {
+  "season": 2033,
+  "rank": 9,
+  "team": "ND"
+ },
+ {
+  "season": 2033,
+  "rank": 10,
+  "team": "CLEM"
+ },
+ {
+  "season": 2033,
+  "rank": 11,
+  "team": "FSU"
+ },
+ {
+  "season": 2033,
+  "rank": 12,
+  "team": "MEM"
+ },
+ {
+  "season": 2033,
+  "rank": 13,
+  "team": "NEB"
+ },
+ {
+  "season": 2033,
+  "rank": 14,
+  "team": "MTSU"
+ },
+ {
+  "season": 2033,
+  "rank": 15,
+  "team": "IOWA"
+ },
+ {
+  "season": 2033,
+  "rank": 16,
+  "team": "OSU"
+ },
+ {
+  "season": 2033,
+  "rank": 17,
+  "team": "KU"
+ },
+ {
+  "season": 2033,
+  "rank": 18,
+  "team": "MSST"
+ },
+ {
+  "season": 2033,
+  "rank": 19,
+  "team": "TLSA"
+ },
+ {
+  "season": 2033,
+  "rank": 20,
+  "team": "BYU"
+ },
+ {
+  "season": 2033,
+  "rank": 21,
+  "team": "AUB"
+ },
+ {
+  "season": 2033,
+  "rank": 22,
+  "team": "COLO"
+ },
+ {
+  "season": 2033,
+  "rank": 23,
+  "team": "MASS"
+ },
+ {
+  "season": 2033,
+  "rank": 24,
+  "team": "BOIS"
+ },
+ {
+  "season": 2033,
+  "rank": 25,
+  "team": "BUFF"
+ },
+ {
+  "season": 2034,
+  "rank": 1,
+  "team": "M-OH"
+ },
+ {
+  "season": 2034,
+  "rank": 2,
+  "team": "CLEV"
+ },
+ {
+  "season": 2034,
+  "rank": 3,
+  "team": "TAMU"
+ },
+ {
+  "season": 2034,
+  "rank": 4,
+  "team": "OHIO"
+ },
+ {
+  "season": 2034,
+  "rank": 5,
+  "team": "ORE"
+ },
+ {
+  "season": 2034,
+  "rank": 6,
+  "team": "UCLA"
+ },
+ {
+  "season": 2034,
+  "rank": 7,
+  "team": "CLEM"
+ },
+ {
+  "season": 2034,
+  "rank": 8,
+  "team": "NCST"
+ },
+ {
+  "season": 2034,
+  "rank": 9,
+  "team": "MIA"
+ },
+ {
+  "season": 2034,
+  "rank": 10,
+  "team": "STAN"
+ },
+ {
+  "season": 2034,
+  "rank": 11,
+  "team": "MEM"
+ },
+ {
+  "season": 2034,
+  "rank": 12,
+  "team": "MSST"
+ },
+ {
+  "season": 2034,
+  "rank": 13,
+  "team": "DUKE"
+ },
+ {
+  "season": 2034,
+  "rank": 14,
+  "team": "UGA"
+ },
+ {
+  "season": 2034,
+  "rank": 15,
+  "team": "OSU"
+ },
+ {
+  "season": 2034,
+  "rank": 16,
+  "team": "MTSU"
+ },
+ {
+  "season": 2034,
+  "rank": 17,
+  "team": "TCU"
+ },
+ {
+  "season": 2034,
+  "rank": 18,
+  "team": "TROY"
+ },
+ {
+  "season": 2034,
+  "rank": 19,
+  "team": "AUB"
+ },
+ {
+  "season": 2034,
+  "rank": 20,
+  "team": "TEX"
+ },
+ {
+  "season": 2034,
+  "rank": 21,
+  "team": "LT"
+ },
+ {
+  "season": 2034,
+  "rank": 22,
+  "team": "MRSH"
+ },
+ {
+  "season": 2034,
+  "rank": 23,
+  "team": "UNC"
+ },
+ {
+  "season": 2034,
+  "rank": 24,
+  "team": "BUFF"
+ },
+ {
+  "season": 2034,
+  "rank": 25,
+  "team": "ND"
+ },
+ {
+  "season": 2035,
+  "rank": 1,
+  "team": "M-OH"
+ },
+ {
+  "season": 2035,
+  "rank": 2,
+  "team": "CLEV"
+ },
+ {
+  "season": 2035,
+  "rank": 3,
+  "team": "FSU"
+ },
+ {
+  "season": 2035,
+  "rank": 4,
+  "team": "KSU"
+ },
+ {
+  "season": 2035,
+  "rank": 5,
+  "team": "OHIO"
+ },
+ {
+  "season": 2035,
+  "rank": 6,
+  "team": "TAMU"
+ },
+ {
+  "season": 2035,
+  "rank": 7,
+  "team": "UGA"
+ },
+ {
+  "season": 2035,
+  "rank": 8,
+  "team": "OKST"
+ },
+ {
+  "season": 2035,
+  "rank": 9,
+  "team": "NCST"
+ },
+ {
+  "season": 2035,
+  "rank": 10,
+  "team": "TEX"
+ },
+ {
+  "season": 2035,
+  "rank": 11,
+  "team": "SYR"
+ },
+ {
+  "season": 2035,
+  "rank": 12,
+  "team": "TCU"
+ },
+ {
+  "season": 2035,
+  "rank": 13,
+  "team": "DUKE"
+ },
+ {
+  "season": 2035,
+  "rank": 14,
+  "team": "ND"
+ },
+ {
+  "season": 2035,
+  "rank": 15,
+  "team": "UNLV"
+ },
+ {
+  "season": 2035,
+  "rank": 16,
+  "team": "CSU"
+ },
+ {
+  "season": 2035,
+  "rank": 17,
+  "team": "LSU"
+ },
+ {
+  "season": 2035,
+  "rank": 18,
+  "team": "MTSU"
+ },
+ {
+  "season": 2035,
+  "rank": 19,
+  "team": "MRSH"
+ },
+ {
+  "season": 2035,
+  "rank": 20,
+  "team": "ORE"
+ },
+ {
+  "season": 2035,
+  "rank": 21,
+  "team": "NMS"
+ },
+ {
+  "season": 2035,
+  "rank": 22,
+  "team": "MSU"
+ },
+ {
+  "season": 2035,
+  "rank": 23,
+  "team": "ECU"
+ },
+ {
+  "season": 2035,
+  "rank": 24,
+  "team": "STAN"
+ },
+ {
+  "season": 2035,
+  "rank": 25,
+  "team": "BUFF"
+ },
+ {
+  "season": 2036,
+  "rank": 1,
+  "team": "M-OH"
+ },
+ {
+  "season": 2036,
+  "rank": 2,
+  "team": "CLEV"
+ },
+ {
+  "season": 2036,
+  "rank": 3,
+  "team": "FSU"
+ },
+ {
+  "season": 2036,
+  "rank": 4,
+  "team": "BAMA"
+ },
+ {
+  "season": 2036,
+  "rank": 5,
+  "team": "OHIO"
+ },
+ {
+  "season": 2036,
+  "rank": 6,
+  "team": "AUB"
+ },
+ {
+  "season": 2036,
+  "rank": 7,
+  "team": "LSU"
+ },
+ {
+  "season": 2036,
+  "rank": 8,
+  "team": "DUKE"
+ },
+ {
+  "season": 2036,
+  "rank": 9,
+  "team": "UT"
+ },
+ {
+  "season": 2036,
+  "rank": 10,
+  "team": "IOWA"
+ },
+ {
+  "season": 2036,
+  "rank": 11,
+  "team": "MIA"
+ },
+ {
+  "season": 2036,
+  "rank": 12,
+  "team": "BOIS"
+ },
+ {
+  "season": 2036,
+  "rank": 13,
+  "team": "CLEM"
+ },
+ {
+  "season": 2036,
+  "rank": 14,
+  "team": "LIB"
+ },
+ {
+  "season": 2036,
+  "rank": 15,
+  "team": "UCF"
+ },
+ {
+  "season": 2036,
+  "rank": 16,
+  "team": "MICH"
+ },
+ {
+  "season": 2036,
+  "rank": 17,
+  "team": "USF"
+ },
+ {
+  "season": 2036,
+  "rank": 18,
+  "team": "ND"
+ },
+ {
+  "season": 2036,
+  "rank": 19,
+  "team": "MSU"
+ },
+ {
+  "season": 2036,
+  "rank": 20,
+  "team": "UAB"
+ },
+ {
+  "season": 2036,
+  "rank": 21,
+  "team": "APP"
+ },
+ {
+  "season": 2036,
+  "rank": 22,
+  "team": "STAN"
+ },
+ {
+  "season": 2036,
+  "rank": 23,
+  "team": "TROY"
+ },
+ {
+  "season": 2036,
+  "rank": 24,
+  "team": "ORST"
+ },
+ {
+  "season": 2036,
+  "rank": 25,
+  "team": "JKST"
+ },
+ {
+  "season": 2037,
+  "rank": 1,
+  "team": "CLEV"
+ },
+ {
+  "season": 2037,
+  "rank": 2,
+  "team": "OHIO"
+ },
+ {
+  "season": 2037,
+  "rank": 3,
+  "team": "M-OH"
+ },
+ {
+  "season": 2037,
+  "rank": 4,
+  "team": "ND"
+ },
+ {
+  "season": 2037,
+  "rank": 5,
+  "team": "FSU"
+ },
+ {
+  "season": 2037,
+  "rank": 6,
+  "team": "BOIS"
+ },
+ {
+  "season": 2037,
+  "rank": 7,
+  "team": "UK"
+ },
+ {
+  "season": 2037,
+  "rank": 8,
+  "team": "UVA"
+ },
+ {
+  "season": 2037,
+  "rank": 9,
+  "team": "UNT"
+ },
+ {
+  "season": 2037,
+  "rank": 10,
+  "team": "WVU"
+ },
+ {
+  "season": 2037,
+  "rank": 11,
+  "team": "BUFF"
+ },
+ {
+  "season": 2037,
+  "rank": 12,
+  "team": "LIB"
+ },
+ {
+  "season": 2037,
+  "rank": 13,
+  "team": "CONN"
+ },
+ {
+  "season": 2037,
+  "rank": 14,
+  "team": "USF"
+ },
+ {
+  "season": 2037,
+  "rank": 15,
+  "team": "UT"
+ },
+ {
+  "season": 2037,
+  "rank": 16,
+  "team": "PUR"
+ },
+ {
+  "season": 2037,
+  "rank": 17,
+  "team": "ORE"
+ },
+ {
+  "season": 2037,
+  "rank": 18,
+  "team": "ARST"
+ },
+ {
+  "season": 2037,
+  "rank": 19,
+  "team": "MTSU"
+ },
+ {
+  "season": 2037,
+  "rank": 20,
+  "team": "LSU"
+ },
+ {
+  "season": 2037,
+  "rank": 21,
+  "team": "UH"
+ },
+ {
+  "season": 2037,
+  "rank": 22,
+  "team": "NEB"
+ },
+ {
+  "season": 2037,
+  "rank": 23,
+  "team": "TROY"
+ },
+ {
+  "season": 2037,
+  "rank": 24,
+  "team": "OSU"
+ },
+ {
+  "season": 2037,
+  "rank": 25,
+  "team": "UNLV"
+ }
+]

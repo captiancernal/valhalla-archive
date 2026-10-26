@@ -1,0 +1,2431 @@
+[
+ {
+  "id": "2024-CLEV",
+  "program": "CLEV",
+  "season": 2024,
+  "coach": "Josh Dolan",
+  "w": 9,
+  "l": 4,
+  "win_pct": 0.692,
+  "conf_w": 5,
+  "conf_l": 4,
+  "conf_rank": 5,
+  "conf_rank_text": "5th",
+  "leaders": {
+   "passing": {
+    "player": "Connor Bazelak",
+    "value": 3962,
+    "class": "SR (RS)"
+   },
+   "rushing": {
+    "player": "Terion Stewart",
+    "value": 1098,
+    "class": "JR (RS)"
+   },
+   "receiving": {
+    "player": "Harold Fannin Jr.",
+    "value": 1119,
+    "class": "JR"
+   },
+   "tackles": {
+    "player": "Darius McClendon",
+    "value": 55,
+    "class": "SR (RS)"
+   },
+   "sacks": {
+    "player": "Ali Saad",
+    "value": 9.0,
+    "class": "SR (RS)"
+   },
+   "interceptions": {
+    "player": "Brock Horne",
+    "value": 2,
+    "class": "SR (RS)"
+   }
+  },
+  "team": {
+   "pass_yds": 3962,
+   "rush_yds": 1745,
+   "ppg": 30,
+   "ppg_rank": 49
+  },
+  "ap_final_rank": null,
+  "national_champion": false,
+  "national_runner_up": false,
+  "conference_champion": false,
+  "conference_title_game": false,
+  "playoff": null,
+  "bowl": {
+   "name": "Liberty Bowl",
+   "opponent": "ARMY",
+   "result": "W",
+   "score": "31-21"
+  },
+  "games_record_check": "9-4"
+ },
+ {
+  "id": "2025-CLEV",
+  "program": "CLEV",
+  "season": 2025,
+  "coach": "Josh Dolan",
+  "w": 10,
+  "l": 3,
+  "win_pct": 0.769,
+  "conf_w": 5,
+  "conf_l": 3,
+  "conf_rank": 5,
+  "conf_rank_text": "5th",
+  "leaders": {
+   "passing": {
+    "player": "Amar'e Hocker",
+    "value": 3817,
+    "class": "FR"
+   },
+   "rushing": {
+    "player": "Terion Stewart",
+    "value": 1085,
+    "class": "SR (RS)"
+   },
+   "receiving": {
+    "player": "Elijah Boyd",
+    "value": 844,
+    "class": "JR (RS)"
+   },
+   "tackles": {
+    "player": "Donny Stephens",
+    "value": 66,
+    "class": "SR"
+   },
+   "sacks": {
+    "player": "Elias Owens",
+    "value": 4.0,
+    "class": "FR (RS)"
+   },
+   "interceptions": {
+    "player": "Larry Yates",
+    "value": 4,
+    "class": "SO"
+   }
+  },
+  "team": {
+   "pass_yds": 3879,
+   "rush_yds": 1617,
+   "ppg": 33.8,
+   "ppg_rank": 13
+  },
+  "ap_final_rank": 11,
+  "national_champion": false,
+  "national_runner_up": false,
+  "conference_champion": false,
+  "conference_title_game": false,
+  "playoff": null,
+  "bowl": {
+   "name": "Texas Bowl",
+   "opponent": "UT",
+   "result": "W",
+   "score": "31-24"
+  },
+  "games_record_check": "10-3"
+ },
+ {
+  "id": "2026-CLEV",
+  "program": "CLEV",
+  "season": 2026,
+  "coach": "Josh Dolan",
+  "w": 11,
+  "l": 2,
+  "win_pct": 0.846,
+  "conf_w": 8,
+  "conf_l": 1,
+  "conf_rank": 3,
+  "conf_rank_text": "3rd",
+  "leaders": {
+   "passing": {
+    "player": "Amar'e Hocker",
+    "value": 4376,
+    "class": "SO"
+   },
+   "rushing": {
+    "player": "Nakai Amachree",
+    "value": 668,
+    "class": "SO (RS)"
+   },
+   "receiving": {
+    "player": "Rashaud Exum",
+    "value": 989,
+    "class": "SO (RS)"
+   },
+   "tackles": {
+    "player": "Bryce Eliuk",
+    "value": 66,
+    "class": "SR"
+   },
+   "sacks": {
+    "player": "Justin Eklund",
+    "value": 7.0,
+    "class": "SR (RS)"
+   },
+   "interceptions": {
+    "player": "Jayden Bellamy",
+    "value": 6,
+    "class": "SR (RS)"
+   }
+  },
+  "team": {
+   "pass_yds": 4376,
+   "rush_yds": 1382,
+   "ppg": 38.8,
+   "ppg_rank": 4
+  },
+  "ap_final_rank": 11,
+  "national_champion": false,
+  "national_runner_up": false,
+  "conference_champion": false,
+  "conference_title_game": false,
+  "playoff": null,
+  "bowl": {
+   "name": "Alamo Bowl",
+   "opponent": "IOWA",
+   "result": "W",
+   "score": "38-28"
+  },
+  "games_record_check": "11-2"
+ },
+ {
+  "id": "2027-CLEV",
+  "program": "CLEV",
+  "season": 2027,
+  "coach": "Josh Dolan",
+  "w": 11,
+  "l": 2,
+  "win_pct": 0.846,
+  "conf_w": 7,
+  "conf_l": 2,
+  "conf_rank": 4,
+  "conf_rank_text": "4th",
+  "leaders": {
+   "passing": {
+    "player": "Amar'e Hocker",
+    "value": 5317,
+    "class": "JR"
+   },
+   "rushing": {
+    "player": "Baraka Nwangwu",
+    "value": 817,
+    "class": "SO"
+   },
+   "receiving": {
+    "player": "Kenny Tongues",
+    "value": 1445,
+    "class": "FR"
+   },
+   "tackles": {
+    "player": "Marquel Bakhtiari",
+    "value": 75,
+    "class": "FR (RS)"
+   },
+   "sacks": {
+    "player": "Joe Shimko",
+    "value": 5.0,
+    "class": "JR (RS)"
+   },
+   "interceptions": {
+    "player": "Mitch Mesko",
+    "value": 3,
+    "class": "JR"
+   }
+  },
+  "team": {
+   "pass_yds": 5416,
+   "rush_yds": 1253,
+   "ppg": 43.5,
+   "ppg_rank": 1
+  },
+  "ap_final_rank": 11,
+  "national_champion": false,
+  "national_runner_up": false,
+  "conference_champion": false,
+  "conference_title_game": false,
+  "playoff": null,
+  "bowl": {
+   "name": "Pop-tart Bowl",
+   "opponent": "LOU",
+   "result": "W",
+   "score": "30-13"
+  },
+  "games_record_check": "11-2"
+ },
+ {
+  "id": "2028-CLEV",
+  "program": "CLEV",
+  "season": 2028,
+  "coach": "Josh Dolan",
+  "w": 15,
+  "l": 1,
+  "win_pct": 0.938,
+  "conf_w": 8,
+  "conf_l": 1,
+  "conf_rank": 1,
+  "conf_rank_text": "1st",
+  "leaders": {
+   "passing": {
+    "player": "Amar'e Hocker",
+    "value": 5364,
+    "class": "SR"
+   },
+   "rushing": {
+    "player": "Baraka Nwangwu",
+    "value": 2329,
+    "class": "JR"
+   },
+   "receiving": {
+    "player": "Kenny Tongues",
+    "value": 1685,
+    "class": "SO"
+   },
+   "tackles": {
+    "player": "Dorian Pringle",
+    "value": 72,
+    "class": "SR (RS)"
+   },
+   "sacks": {
+    "player": "Martreece Dillard",
+    "value": 7.5,
+    "class": "SR (RS)"
+   },
+   "interceptions": {
+    "player": "Deandre Salaam",
+    "value": 5,
+    "class": "SR"
+   }
+  },
+  "team": {
+   "pass_yds": 5553,
+   "rush_yds": 3022,
+   "ppg": 49.6,
+   "ppg_rank": 2
+  },
+  "ap_final_rank": 1,
+  "national_champion": true,
+  "national_runner_up": false,
+  "conference_champion": true,
+  "conference_title_game": true,
+  "playoff": {
+   "games": 3,
+   "wins": 3,
+   "exit_round": "National Championship",
+   "won_title": true
+  },
+  "bowl": null,
+  "games_record_check": "15-1"
+ },
+ {
+  "id": "2029-CLEV",
+  "program": "CLEV",
+  "season": 2029,
+  "coach": "Josh Dolan",
+  "w": 13,
+  "l": 4,
+  "win_pct": 0.765,
+  "conf_w": 7,
+  "conf_l": 2,
+  "conf_rank": 2,
+  "conf_rank_text": "2nd",
+  "leaders": {
+   "passing": {
+    "player": "Greg Price",
+    "value": 5121,
+    "class": "FR (RS)"
+   },
+   "rushing": {
+    "player": "Baraka Nwangwu",
+    "value": 2536,
+    "class": "SR"
+   },
+   "receiving": {
+    "player": "Kenny Tongues",
+    "value": 1771,
+    "class": "JR"
+   },
+   "tackles": {
+    "player": "Nate Cavka",
+    "value": 74,
+    "class": "SR"
+   },
+   "sacks": {
+    "player": "Jeremy Peppers",
+    "value": 6.5,
+    "class": "SR"
+   },
+   "interceptions": {
+    "player": "Randy Andrews",
+    "value": 7,
+    "class": "FR"
+   }
+  },
+  "team": {
+   "pass_yds": 5584,
+   "rush_yds": 3646,
+   "ppg": 47.2,
+   "ppg_rank": 2
+  },
+  "ap_final_rank": 2,
+  "national_champion": false,
+  "national_runner_up": true,
+  "conference_champion": false,
+  "conference_title_game": true,
+  "playoff": {
+   "games": 4,
+   "wins": 3,
+   "exit_round": "National Championship",
+   "won_title": false
+  },
+  "bowl": null,
+  "games_record_check": "13-4"
+ },
+ {
+  "id": "2030-CLEV",
+  "program": "CLEV",
+  "season": 2030,
+  "coach": "Josh Dolan",
+  "w": 14,
+  "l": 1,
+  "win_pct": 0.933,
+  "conf_w": 9,
+  "conf_l": 0,
+  "conf_rank": 1,
+  "conf_rank_text": "1st",
+  "leaders": {
+   "passing": {
+    "player": "Dave Shelley",
+    "value": 4763,
+    "class": "SO (RS)"
+   },
+   "rushing": {
+    "player": "Robert Okoronkwo",
+    "value": 1889,
+    "class": "FR (RS)"
+   },
+   "receiving": {
+    "player": "Dakota McNitt",
+    "value": 1557,
+    "class": "SO (RS)"
+   },
+   "tackles": {
+    "player": "Marquel Bakhtiari",
+    "value": 103,
+    "class": "SR (RS)"
+   },
+   "sacks": {
+    "player": "Chip Lennon",
+    "value": 6.0,
+    "class": "FR (RS)"
+   },
+   "interceptions": {
+    "player": "Nate Cavka",
+    "value": 6,
+    "class": "SR (RS)"
+   }
+  },
+  "team": {
+   "pass_yds": 4939,
+   "rush_yds": 3374,
+   "ppg": 51.1,
+   "ppg_rank": 2
+  },
+  "ap_final_rank": 4,
+  "national_champion": false,
+  "national_runner_up": false,
+  "conference_champion": true,
+  "conference_title_game": true,
+  "playoff": {
+   "games": 2,
+   "wins": 1,
+   "exit_round": "Semifinal",
+   "won_title": false
+  },
+  "bowl": null,
+  "games_record_check": "14-1"
+ },
+ {
+  "id": "2031-CLEV",
+  "program": "CLEV",
+  "season": 2031,
+  "coach": "Josh Dolan",
+  "w": 15,
+  "l": 1,
+  "win_pct": 0.938,
+  "conf_w": 8,
+  "conf_l": 0,
+  "conf_rank": 1,
+  "conf_rank_text": "1st",
+  "leaders": {
+   "passing": {
+    "player": "Greg Price",
+    "value": 5979,
+    "class": "JR (RS)"
+   },
+   "rushing": {
+    "player": "Robert Okoronkwo",
+    "value": 2405,
+    "class": "SO (RS)"
+   },
+   "receiving": {
+    "player": "Dakota McNitt",
+    "value": 2252,
+    "class": "JR (RS)"
+   },
+   "tackles": {
+    "player": "Josh Posey",
+    "value": 101,
+    "class": "SR (RS)"
+   },
+   "sacks": {
+    "player": "Joe Goodin",
+    "value": 10.5,
+    "class": "SR (RS)"
+   },
+   "interceptions": {
+    "player": "Kona Vakapuna",
+    "value": 8,
+    "class": "SR (RS)"
+   }
+  },
+  "team": {
+   "pass_yds": 6359,
+   "rush_yds": 3466,
+   "ppg": 58.8,
+   "ppg_rank": 1
+  },
+  "ap_final_rank": 2,
+  "national_champion": false,
+  "national_runner_up": true,
+  "conference_champion": true,
+  "conference_title_game": true,
+  "playoff": {
+   "games": 3,
+   "wins": 2,
+   "exit_round": "National Championship",
+   "won_title": false
+  },
+  "bowl": null,
+  "games_record_check": "15-1"
+ },
+ {
+  "id": "2032-CLEV",
+  "program": "CLEV",
+  "season": 2032,
+  "coach": "Josh Dolan",
+  "w": 12,
+  "l": 2,
+  "win_pct": 0.857,
+  "conf_w": 8,
+  "conf_l": 1,
+  "conf_rank": 2,
+  "conf_rank_text": "2nd",
+  "leaders": {
+   "passing": {
+    "player": "Greg Price",
+    "value": 5146,
+    "class": "SR (RS)"
+   },
+   "rushing": {
+    "player": "Sam Fatafehi",
+    "value": 1212,
+    "class": "SO (RS)"
+   },
+   "receiving": {
+    "player": "Dakota McNitt",
+    "value": 1853,
+    "class": "SR (RS)"
+   },
+   "tackles": {
+    "player": "Cole Roseman",
+    "value": 104,
+    "class": "SR (RS)"
+   },
+   "sacks": {
+    "player": "Josh McAdoo",
+    "value": 13.5,
+    "class": "SO (RS)"
+   },
+   "interceptions": {
+    "player": "Randy Andrews",
+    "value": 5,
+    "class": "SR"
+   }
+  },
+  "team": {
+   "pass_yds": 5378,
+   "rush_yds": 2348,
+   "ppg": 53.1,
+   "ppg_rank": 2
+  },
+  "ap_final_rank": 4,
+  "national_champion": false,
+  "national_runner_up": false,
+  "conference_champion": true,
+  "conference_title_game": true,
+  "playoff": {
+   "games": 1,
+   "wins": 0,
+   "exit_round": "Quarterfinal",
+   "won_title": false
+  },
+  "bowl": null,
+  "games_record_check": "12-2"
+ },
+ {
+  "id": "2033-CLEV",
+  "program": "CLEV",
+  "season": 2033,
+  "coach": "Josh Dolan",
+  "w": 11,
+  "l": 2,
+  "win_pct": 0.846,
+  "conf_w": 8,
+  "conf_l": 1,
+  "conf_rank": 3,
+  "conf_rank_text": "3rd",
+  "leaders": {
+   "passing": {
+    "player": "Kaleb DuBose",
+    "value": 5718,
+    "class": "FR (RS)"
+   },
+   "rushing": {
+    "player": "Sam Fatafehi",
+    "value": 1590,
+    "class": "JR (RS)"
+   },
+   "receiving": {
+    "player": "Titus Reece",
+    "value": 3631,
+    "class": "FR"
+   },
+   "tackles": {
+    "player": "Emanuel Longo",
+    "value": 67,
+    "class": "JR (RS)"
+   },
+   "sacks": {
+    "player": "Gene Daniels",
+    "value": 14.0,
+    "class": "SO (RS)"
+   },
+   "interceptions": {
+    "player": "Lyle Chick",
+    "value": 4,
+    "class": "JR (RS)"
+   }
+  },
+  "team": {
+   "pass_yds": 6340,
+   "rush_yds": 2200,
+   "ppg": 56.8,
+   "ppg_rank": 2
+  },
+  "ap_final_rank": 8,
+  "national_champion": false,
+  "national_runner_up": false,
+  "conference_champion": false,
+  "conference_title_game": false,
+  "playoff": {
+   "games": 1,
+   "wins": 0,
+   "exit_round": "First Round",
+   "won_title": false
+  },
+  "bowl": null,
+  "games_record_check": "11-2"
+ },
+ {
+  "id": "2034-CLEV",
+  "program": "CLEV",
+  "season": 2034,
+  "coach": "Josh Dolan",
+  "w": 15,
+  "l": 2,
+  "win_pct": 0.882,
+  "conf_w": 9,
+  "conf_l": 0,
+  "conf_rank": 2,
+  "conf_rank_text": "2nd",
+  "leaders": {
+   "passing": {
+    "player": "Kaleb DuBose",
+    "value": 5977,
+    "class": "SO (RS)"
+   },
+   "rushing": {
+    "player": "Sam Fatafehi",
+    "value": 2220,
+    "class": "SR (RS)"
+   },
+   "receiving": {
+    "player": "Titus Reece",
+    "value": 2178,
+    "class": "SO"
+   },
+   "tackles": {
+    "player": "Dalvin Osborne",
+    "value": 103,
+    "class": "SR"
+   },
+   "sacks": {
+    "player": "Bryce Schaffer",
+    "value": 14.0,
+    "class": "JR (RS)"
+   },
+   "interceptions": {
+    "player": "Lyle Chick",
+    "value": 3,
+    "class": "SR (RS)"
+   }
+  },
+  "team": {
+   "pass_yds": 5986,
+   "rush_yds": 3861,
+   "ppg": 52.0,
+   "ppg_rank": 3
+  },
+  "ap_final_rank": 2,
+  "national_champion": false,
+  "national_runner_up": true,
+  "conference_champion": false,
+  "conference_title_game": true,
+  "playoff": {
+   "games": 4,
+   "wins": 3,
+   "exit_round": "National Championship",
+   "won_title": false
+  },
+  "bowl": null,
+  "games_record_check": "15-2"
+ },
+ {
+  "id": "2035-CLEV",
+  "program": "CLEV",
+  "season": 2035,
+  "coach": "Josh Dolan",
+  "w": 14,
+  "l": 2,
+  "win_pct": 0.875,
+  "conf_w": 8,
+  "conf_l": 1,
+  "conf_rank": 3,
+  "conf_rank_text": "3rd",
+  "leaders": {
+   "passing": {
+    "player": "Kaleb DuBose",
+    "value": 6064,
+    "class": "JR (RS)"
+   },
+   "rushing": {
+    "player": "Melvin Hillhouse",
+    "value": 1369,
+    "class": "SR"
+   },
+   "receiving": {
+    "player": "Titus Reece",
+    "value": 2921,
+    "class": "JR"
+   },
+   "tackles": {
+    "player": "Spencer James",
+    "value": 85,
+    "class": "JR (RS)"
+   },
+   "sacks": {
+    "player": "Zach Cantrell",
+    "value": 19,
+    "class": "SR (RS)"
+   },
+   "interceptions": {
+    "player": "Stanley Christmas",
+    "value": 5,
+    "class": "JR (RS)"
+   }
+  },
+  "team": {
+   "pass_yds": 5297,
+   "rush_yds": 3251,
+   "ppg": 53.4,
+   "ppg_rank": 2
+  },
+  "ap_final_rank": 2,
+  "national_champion": false,
+  "national_runner_up": true,
+  "conference_champion": false,
+  "conference_title_game": false,
+  "playoff": {
+   "games": 4,
+   "wins": 3,
+   "exit_round": "National Championship",
+   "won_title": false
+  },
+  "bowl": null,
+  "games_record_check": "14-2"
+ },
+ {
+  "id": "2036-CLEV",
+  "program": "CLEV",
+  "season": 2036,
+  "coach": "Josh Dolan",
+  "w": 14,
+  "l": 2,
+  "win_pct": 0.875,
+  "conf_w": 8,
+  "conf_l": 1,
+  "conf_rank": 3,
+  "conf_rank_text": "3rd",
+  "leaders": {
+   "passing": {
+    "player": "Elijah Pashos",
+    "value": 6228,
+    "class": "JR (RS)"
+   },
+   "rushing": {
+    "player": "Rodney Duggan",
+    "value": 1472,
+    "class": "SR (RS)"
+   },
+   "receiving": {
+    "player": "Lyle Sawyer",
+    "value": 1892,
+    "class": "SO (RS)"
+   },
+   "tackles": {
+    "player": "Vonn Ladd",
+    "value": 70,
+    "class": "SR (RS)"
+   },
+   "sacks": {
+    "player": "Vonn Ladd",
+    "value": 21.5,
+    "class": "SR (RS)"
+   },
+   "interceptions": {
+    "player": "Spencer James",
+    "value": 4,
+    "class": "SR (RS)"
+   }
+  },
+  "team": {
+   "pass_yds": 6414,
+   "rush_yds": 3044,
+   "ppg": 55.0,
+   "ppg_rank": 2
+  },
+  "ap_final_rank": 2,
+  "national_champion": false,
+  "national_runner_up": true,
+  "conference_champion": false,
+  "conference_title_game": false,
+  "playoff": {
+   "games": 4,
+   "wins": 3,
+   "exit_round": "National Championship",
+   "won_title": false
+  },
+  "bowl": null,
+  "games_record_check": "14-2"
+ },
+ {
+  "id": "2037-CLEV",
+  "program": "CLEV",
+  "season": 2037,
+  "coach": "Josh Dolan",
+  "w": 16,
+  "l": 1,
+  "win_pct": 0.941,
+  "conf_w": 9,
+  "conf_l": 0,
+  "conf_rank": 2,
+  "conf_rank_text": "2nd",
+  "leaders": {
+   "passing": {
+    "player": "Elijah Pashos",
+    "value": 6883,
+    "class": "SR (RS)"
+   },
+   "rushing": {
+    "player": "Davonte Sizer",
+    "value": 1958,
+    "class": "JR"
+   },
+   "receiving": {
+    "player": "Paul Flannigan",
+    "value": 2231,
+    "class": "SO (RS)"
+   },
+   "tackles": {
+    "player": "Josh Costanzo",
+    "value": 85,
+    "class": "JR (RS)"
+   },
+   "sacks": {
+    "player": "Marquez Rossouw",
+    "value": 18.5,
+    "class": "SO (RS)"
+   },
+   "interceptions": {
+    "player": "Angel Waiters",
+    "value": 3,
+    "class": "SO (RS)"
+   }
+  },
+  "team": {
+   "pass_yds": 7056,
+   "rush_yds": 3188,
+   "ppg": 55.2,
+   "ppg_rank": 2
+  },
+  "ap_final_rank": 1,
+  "national_champion": true,
+  "national_runner_up": false,
+  "conference_champion": false,
+  "conference_title_game": true,
+  "playoff": {
+   "games": 4,
+   "wins": 4,
+   "exit_round": "National Championship",
+   "won_title": true
+  },
+  "bowl": null,
+  "games_record_check": "16-1"
+ },
+ {
+  "id": "2024-OHIO",
+  "program": "OHIO",
+  "season": 2024,
+  "coach": "Tim Slocombe",
+  "w": 6,
+  "l": 6,
+  "win_pct": 0.5,
+  "conf_w": 3,
+  "conf_l": 6,
+  "conf_rank": 13,
+  "conf_rank_text": "13th",
+  "leaders": {
+   "passing": {
+    "player": "Parker Navarro",
+    "value": 2551
+   },
+   "rushing": {
+    "player": "Anthony Tyus III",
+    "value": 1345
+   },
+   "receiving": {
+    "player": "Coleman Owen",
+    "value": 887
+   },
+   "tackles": {
+    "player": "Miles Fleming",
+    "value": 66
+   },
+   "sacks": {
+    "player": "Bradley Weaver",
+    "value": 4.0
+   },
+   "interceptions": {
+    "player": "Tank Pearson",
+    "value": 2
+   }
+  },
+  "team": {
+   "pass_yds": 2551,
+   "rush_yds": 1922,
+   "ppg": 27.9,
+   "ppg_rank": 76
+  },
+  "ap_final_rank": null,
+  "national_champion": false,
+  "national_runner_up": false,
+  "conference_champion": false,
+  "conference_title_game": false,
+  "playoff": null
+ },
+ {
+  "id": "2025-OHIO",
+  "program": "OHIO",
+  "season": 2025,
+  "coach": "Tim Slocombe",
+  "w": 7,
+  "l": 6,
+  "win_pct": 0.538,
+  "conf_w": 4,
+  "conf_l": 4,
+  "conf_rank": 9,
+  "conf_rank_text": "9th",
+  "leaders": {
+   "passing": {
+    "player": "Nick Poulos",
+    "value": 1811
+   },
+   "rushing": {
+    "player": "Rickey Hunt Jr.",
+    "value": 1678
+   },
+   "receiving": {
+    "player": "Chase Hendrick",
+    "value": 535
+   },
+   "tackles": {
+    "player": "DJ Walker",
+    "value": 67
+   },
+   "sacks": {
+    "player": "Bradley Weaver",
+    "value": 3.5
+   },
+   "interceptions": {
+    "player": "Michael Mack II",
+    "value": 5
+   }
+  },
+  "team": {
+   "pass_yds": 1821,
+   "rush_yds": 2771,
+   "ppg": 29.0,
+   "ppg_rank": 49
+  },
+  "ap_final_rank": null,
+  "national_champion": false,
+  "national_runner_up": false,
+  "conference_champion": false,
+  "conference_title_game": false,
+  "playoff": null
+ },
+ {
+  "id": "2026-OHIO",
+  "program": "OHIO",
+  "season": 2026,
+  "coach": "Tim Slocombe",
+  "w": 9,
+  "l": 4,
+  "win_pct": 0.692,
+  "conf_w": 6,
+  "conf_l": 3,
+  "conf_rank": 5,
+  "conf_rank_text": "5th",
+  "leaders": {
+   "passing": {
+    "player": "James Erbach",
+    "value": 2294
+   },
+   "rushing": {
+    "player": "Rickey Hunt Jr.",
+    "value": 1664
+   },
+   "receiving": {
+    "player": "Chase Hendrick",
+    "value": 799
+   },
+   "tackles": {
+    "player": "Jack Fries",
+    "value": 56
+   },
+   "sacks": {
+    "player": "RJ Keuchler",
+    "value": 5.0
+   },
+   "interceptions": {
+    "player": "Tony Mathis",
+    "value": 3
+   }
+  },
+  "team": {
+   "pass_yds": 2350,
+   "rush_yds": 2776,
+   "ppg": 36.5,
+   "ppg_rank": 6
+  },
+  "ap_final_rank": null,
+  "national_champion": false,
+  "national_runner_up": false,
+  "conference_champion": false,
+  "conference_title_game": false,
+  "playoff": null
+ },
+ {
+  "id": "2027-OHIO",
+  "program": "OHIO",
+  "season": 2027,
+  "coach": "Tim Slocombe",
+  "w": 12,
+  "l": 2,
+  "win_pct": 0.857,
+  "conf_w": 8,
+  "conf_l": 1,
+  "conf_rank": 1,
+  "conf_rank_text": "1st",
+  "leaders": {
+   "passing": {
+    "player": "James Erbach",
+    "value": 2456
+   },
+   "rushing": {
+    "player": "Rickey Hunt Jr.",
+    "value": 1823
+   },
+   "receiving": {
+    "player": "Ben Emery",
+    "value": 712
+   },
+   "tackles": {
+    "player": "Nasir Biggums",
+    "value": 68
+   },
+   "sacks": {
+    "player": "RJ Keuchler",
+    "value": 5.5
+   },
+   "interceptions": {
+    "player": "Kendall Bannister",
+    "value": 4
+   }
+  },
+  "team": {
+   "pass_yds": 2579,
+   "rush_yds": 3009,
+   "ppg": 31.4,
+   "ppg_rank": 22
+  },
+  "ap_final_rank": 4,
+  "national_champion": false,
+  "national_runner_up": false,
+  "conference_champion": true,
+  "conference_title_game": true,
+  "playoff": {
+   "games": 1,
+   "wins": 0,
+   "exit_round": "Quarterfinal",
+   "won_title": false
+  }
+ },
+ {
+  "id": "2028-OHIO",
+  "program": "OHIO",
+  "season": 2028,
+  "coach": "Tim Slocombe",
+  "w": 12,
+  "l": 3,
+  "win_pct": 0.8,
+  "conf_w": 8,
+  "conf_l": 1,
+  "conf_rank": 4,
+  "conf_rank_text": "4th",
+  "leaders": {
+   "passing": {
+    "player": "Marques Rees",
+    "value": 2238
+   },
+   "rushing": {
+    "player": "John Ybarra",
+    "value": 1744
+   },
+   "receiving": {
+    "player": "Kwabena Capers",
+    "value": 725
+   },
+   "tackles": {
+    "player": "Nasir Biggums",
+    "value": 81
+   },
+   "sacks": {
+    "player": "Troy Regovich",
+    "value": 8.5
+   },
+   "interceptions": {
+    "player": "Thad Mckoy",
+    "value": 3
+   }
+  },
+  "team": {
+   "pass_yds": 2298,
+   "rush_yds": 3165,
+   "ppg": 32.3,
+   "ppg_rank": 15
+  },
+  "ap_final_rank": 6,
+  "national_champion": false,
+  "national_runner_up": false,
+  "conference_champion": false,
+  "conference_title_game": true,
+  "playoff": {
+   "games": 2,
+   "wins": 1,
+   "exit_round": "Quarterfinal",
+   "won_title": false
+  }
+ },
+ {
+  "id": "2029-OHIO",
+  "program": "OHIO",
+  "season": 2029,
+  "coach": "Tim Slocombe",
+  "w": 14,
+  "l": 2,
+  "win_pct": 0.875,
+  "conf_w": 7,
+  "conf_l": 2,
+  "conf_rank": 3,
+  "conf_rank_text": "3rd",
+  "leaders": {
+   "passing": {
+    "player": "James Erbach",
+    "value": 2798
+   },
+   "rushing": {
+    "player": "John Ybarra",
+    "value": 1638
+   },
+   "receiving": {
+    "player": "Kwabena Capers",
+    "value": 799
+   },
+   "tackles": {
+    "player": "Nasir Biggums",
+    "value": 64
+   },
+   "sacks": {
+    "player": "Antoine Farr",
+    "value": 9.0
+   },
+   "interceptions": {
+    "player": "Nasir Biggums",
+    "value": 4
+   }
+  },
+  "team": {
+   "pass_yds": 2922,
+   "rush_yds": 3444,
+   "ppg": 36.9,
+   "ppg_rank": 4
+  },
+  "ap_final_rank": 1,
+  "national_champion": true,
+  "national_runner_up": false,
+  "conference_champion": false,
+  "conference_title_game": false,
+  "playoff": {
+   "games": 4,
+   "wins": 4,
+   "exit_round": "National Championship",
+   "won_title": true
+  }
+ },
+ {
+  "id": "2030-OHIO",
+  "program": "OHIO",
+  "season": 2030,
+  "coach": "Tim Slocombe",
+  "w": 15,
+  "l": 2,
+  "win_pct": 0.882,
+  "conf_w": 8,
+  "conf_l": 1,
+  "conf_rank": 2,
+  "conf_rank_text": "2nd",
+  "leaders": {
+   "passing": {
+    "player": "Siaki Fogg",
+    "value": 4503
+   },
+   "rushing": {
+    "player": "John Ybarra",
+    "value": 1806
+   },
+   "receiving": {
+    "player": "Derek Ghee",
+    "value": 2421
+   },
+   "tackles": {
+    "player": "Danny Eifler",
+    "value": 94
+   },
+   "sacks": {
+    "player": "Alexander Lamar",
+    "value": 10.5
+   },
+   "interceptions": {
+    "player": "Shakim Downs",
+    "value": 6
+   }
+  },
+  "team": {
+   "pass_yds": 4714,
+   "rush_yds": 3318,
+   "ppg": 51.1,
+   "ppg_rank": 3
+  },
+  "ap_final_rank": 1,
+  "national_champion": true,
+  "national_runner_up": false,
+  "conference_champion": false,
+  "conference_title_game": true,
+  "playoff": {
+   "games": 4,
+   "wins": 4,
+   "exit_round": "National Championship",
+   "won_title": true
+  }
+ },
+ {
+  "id": "2031-OHIO",
+  "program": "OHIO",
+  "season": 2031,
+  "coach": "Tim Slocombe",
+  "w": 15,
+  "l": 1,
+  "win_pct": 0.938,
+  "conf_w": 8,
+  "conf_l": 1,
+  "conf_rank": 3,
+  "conf_rank_text": "3rd",
+  "leaders": {
+   "passing": {
+    "player": "Siaki Fogg",
+    "value": 4415
+   },
+   "rushing": {
+    "player": "Paul Boren",
+    "value": 1450
+   },
+   "receiving": {
+    "player": "Derek Ghee",
+    "value": 1517
+   },
+   "tackles": {
+    "player": "Fredrick Dorsey",
+    "value": 78
+   },
+   "sacks": {
+    "player": "Bobby Swayne",
+    "value": 9.0
+   },
+   "interceptions": {
+    "player": "Antwan Loudermilk",
+    "value": 10
+   }
+  },
+  "team": {
+   "pass_yds": 4724,
+   "rush_yds": 3255,
+   "ppg": 51.3,
+   "ppg_rank": 3
+  },
+  "ap_final_rank": 1,
+  "national_champion": true,
+  "national_runner_up": false,
+  "conference_champion": false,
+  "conference_title_game": false,
+  "playoff": {
+   "games": 4,
+   "wins": 4,
+   "exit_round": "National Championship",
+   "won_title": true
+  }
+ },
+ {
+  "id": "2032-OHIO",
+  "program": "OHIO",
+  "season": 2032,
+  "coach": "Tim Slocombe",
+  "w": 16,
+  "l": 1,
+  "win_pct": 0.941,
+  "conf_w": 9,
+  "conf_l": 0,
+  "conf_rank": 1,
+  "conf_rank_text": "1st",
+  "leaders": {
+   "passing": {
+    "player": "Siaki Fogg",
+    "value": 5058
+   },
+   "rushing": {
+    "player": "Samuel Peace",
+    "value": 2190
+   },
+   "receiving": {
+    "player": "Austin Kohler",
+    "value": 1687
+   },
+   "tackles": {
+    "player": "Fredrick Dorsey",
+    "value": 76
+   },
+   "sacks": {
+    "player": "Angelo Block",
+    "value": 7.0
+   },
+   "interceptions": {
+    "player": "Damarr Fantuz",
+    "value": 6
+   }
+  },
+  "team": {
+   "pass_yds": 5378,
+   "rush_yds": 3711,
+   "ppg": 50.6,
+   "ppg_rank": 3
+  },
+  "ap_final_rank": 1,
+  "national_champion": true,
+  "national_runner_up": false,
+  "conference_champion": false,
+  "conference_title_game": true,
+  "playoff": {
+   "games": 4,
+   "wins": 4,
+   "exit_round": "National Championship",
+   "won_title": true
+  }
+ },
+ {
+  "id": "2033-OHIO",
+  "program": "OHIO",
+  "season": 2033,
+  "coach": "Tim Slocombe",
+  "w": 16,
+  "l": 0,
+  "win_pct": 1.0,
+  "conf_w": 9,
+  "conf_l": 0,
+  "conf_rank": 1,
+  "conf_rank_text": "1st",
+  "leaders": {
+   "passing": {
+    "player": "Alfonso Tobin",
+    "value": 4508
+   },
+   "rushing": {
+    "player": "Matt Tolson",
+    "value": 2957
+   },
+   "receiving": {
+    "player": "Austin Kohler",
+    "value": 1436
+   },
+   "tackles": {
+    "player": "Fredrick Dorsey",
+    "value": 89
+   },
+   "sacks": {
+    "player": "Bobby Swayne",
+    "value": 10.5
+   },
+   "interceptions": {
+    "player": "Tevin Flinn",
+    "value": 4
+   }
+  },
+  "team": {
+   "pass_yds": 4733,
+   "rush_yds": 4120,
+   "ppg": 52.3,
+   "ppg_rank": 3
+  },
+  "ap_final_rank": 1,
+  "national_champion": true,
+  "national_runner_up": false,
+  "conference_champion": true,
+  "conference_title_game": true,
+  "playoff": {
+   "games": 3,
+   "wins": 3,
+   "exit_round": "National Championship",
+   "won_title": true
+  }
+ },
+ {
+  "id": "2034-OHIO",
+  "program": "OHIO",
+  "season": 2034,
+  "coach": "Tim Slocombe",
+  "w": 13,
+  "l": 2,
+  "win_pct": 0.867,
+  "conf_w": 8,
+  "conf_l": 1,
+  "conf_rank": 3,
+  "conf_rank_text": "3rd",
+  "leaders": {
+   "passing": {
+    "player": "Alfonso Tobin",
+    "value": 4250
+   },
+   "rushing": {
+    "player": "Lee Fatukasi",
+    "value": 2188
+   },
+   "receiving": {
+    "player": "Ben Vallos",
+    "value": 1753
+   },
+   "tackles": {
+    "player": "Nathan Cooke",
+    "value": 71
+   },
+   "sacks": {
+    "player": "Giovanni Kasay",
+    "value": 9.0
+   },
+   "interceptions": {
+    "player": "Wayne Kilgo",
+    "value": 4
+   }
+  },
+  "team": {
+   "pass_yds": 4827,
+   "rush_yds": 3779,
+   "ppg": 53.9,
+   "ppg_rank": 2
+  },
+  "ap_final_rank": 4,
+  "national_champion": false,
+  "national_runner_up": false,
+  "conference_champion": false,
+  "conference_title_game": false,
+  "playoff": {
+   "games": 3,
+   "wins": 2,
+   "exit_round": "Semifinal",
+   "won_title": false
+  }
+ },
+ {
+  "id": "2035-OHIO",
+  "program": "OHIO",
+  "season": 2035,
+  "coach": "Tim Slocombe",
+  "w": 12,
+  "l": 3,
+  "win_pct": 0.8,
+  "conf_w": 7,
+  "conf_l": 2,
+  "conf_rank": 4,
+  "conf_rank_text": "4th",
+  "leaders": {
+   "passing": {
+    "player": "Trent York",
+    "value": 3752
+   },
+   "rushing": {
+    "player": "Lee Fatukasi",
+    "value": 2533
+   },
+   "receiving": {
+    "player": "Ben Vallos",
+    "value": 1132
+   },
+   "tackles": {
+    "player": "Barry Dawkins",
+    "value": 83
+   },
+   "sacks": {
+    "player": "Steve Crook",
+    "value": 12.5
+   },
+   "interceptions": {
+    "player": "Keke Kwenkeu",
+    "value": 3
+   }
+  },
+  "team": {
+   "pass_yds": 3911,
+   "rush_yds": 3374,
+   "ppg": 45.6,
+   "ppg_rank": 3
+  },
+  "ap_final_rank": 5,
+  "national_champion": false,
+  "national_runner_up": false,
+  "conference_champion": false,
+  "conference_title_game": false,
+  "playoff": {
+   "games": 3,
+   "wins": 1,
+   "exit_round": "Semifinal",
+   "won_title": false
+  }
+ },
+ {
+  "id": "2036-OHIO",
+  "program": "OHIO",
+  "season": 2036,
+  "coach": "Tim Slocombe",
+  "w": 13,
+  "l": 1,
+  "win_pct": 0.929,
+  "conf_w": 9,
+  "conf_l": 0,
+  "conf_rank": 1,
+  "conf_rank_text": "1st",
+  "leaders": {
+   "passing": {
+    "player": "Marquez Baxter",
+    "value": 3830
+   },
+   "rushing": {
+    "player": "Titus Ivie",
+    "value": 1676
+   },
+   "receiving": {
+    "player": "Greg Flint",
+    "value": 1166
+   },
+   "tackles": {
+    "player": "Steven Anenih",
+    "value": 69
+   },
+   "sacks": {
+    "player": "Steve Crook",
+    "value": 7.0
+   },
+   "interceptions": {
+    "player": "Dre Stevens",
+    "value": 4
+   }
+  },
+  "team": {
+   "pass_yds": 3886,
+   "rush_yds": 2558,
+   "ppg": 47.6,
+   "ppg_rank": 3
+  },
+  "ap_final_rank": 5,
+  "national_champion": false,
+  "national_runner_up": false,
+  "conference_champion": true,
+  "conference_title_game": true,
+  "playoff": {
+   "games": 1,
+   "wins": 0,
+   "exit_round": "Quarterfinal",
+   "won_title": false
+  }
+ },
+ {
+  "id": "2037-OHIO",
+  "program": "OHIO",
+  "season": 2037,
+  "coach": "Tim Slocombe",
+  "w": 15,
+  "l": 1,
+  "win_pct": 0.938,
+  "conf_w": 9,
+  "conf_l": 0,
+  "conf_rank": 2,
+  "conf_rank_text": "2nd",
+  "leaders": {
+   "passing": {
+    "player": "Nick Yeast",
+    "value": 5333
+   },
+   "rushing": {
+    "player": "Emmanuel Nijman",
+    "value": 2391
+   },
+   "receiving": {
+    "player": "Burt Oldenburg",
+    "value": 2351
+   },
+   "tackles": {
+    "player": "Steven Anenih",
+    "value": 102
+   },
+   "sacks": {
+    "player": "Antwan Irving",
+    "value": 10.5
+   },
+   "interceptions": {
+    "player": "Keke Kwenkeu",
+    "value": 5
+   }
+  },
+  "team": {
+   "pass_yds": 5472,
+   "rush_yds": 3249,
+   "ppg": 50.8,
+   "ppg_rank": 3
+  },
+  "ap_final_rank": 2,
+  "national_champion": false,
+  "national_runner_up": true,
+  "conference_champion": false,
+  "conference_title_game": false,
+  "playoff": {
+   "games": 4,
+   "wins": 3,
+   "exit_round": "National Championship",
+   "won_title": false
+  }
+ },
+ {
+  "id": "2024-M-OH",
+  "program": "M-OH",
+  "season": 2024,
+  "coach": "Joe Snyderwine",
+  "w": 8,
+  "l": 5,
+  "win_pct": 0.615,
+  "conf_w": 5,
+  "conf_l": 4,
+  "conf_rank": 9,
+  "conf_rank_text": "9th",
+  "leaders": {
+   "passing": {
+    "player": "Brett Gabbert",
+    "value": 4205
+   },
+   "rushing": {
+    "player": "Keyon Mozee",
+    "value": 915
+   },
+   "receiving": {
+    "player": "Cade McDonald",
+    "value": 1735
+   },
+   "tackles": {
+    "player": "Ty Wise",
+    "value": 90
+   },
+   "sacks": {
+    "player": "Matt Salopek",
+    "value": 4.0
+   },
+   "interceptions": {
+    "player": "Raion Strader",
+    "value": 2
+   }
+  },
+  "team": {
+   "pass_yds": 4205,
+   "rush_yds": 1260,
+   "ppg": 29.3,
+   "offense_rank": 59
+  },
+  "ap_final_rank": null,
+  "national_champion": false,
+  "national_runner_up": false,
+  "conference_champion": false,
+  "conference_title_game": false,
+  "playoff": null
+ },
+ {
+  "id": "2025-M-OH",
+  "program": "M-OH",
+  "season": 2025,
+  "coach": "Joe Snyderwine",
+  "w": 7,
+  "l": 6,
+  "win_pct": 0.538,
+  "conf_w": 4,
+  "conf_l": 5,
+  "conf_rank": 12,
+  "conf_rank_text": "12th",
+  "leaders": {
+   "passing": {
+    "player": "Henry Hesson",
+    "value": 4483
+   },
+   "rushing": {
+    "player": "Jordan Brunson",
+    "value": 1062
+   },
+   "receiving": {
+    "player": "Lynel Billups-Williams",
+    "value": 1952
+   },
+   "tackles": {
+    "player": "Brenton Kumar",
+    "value": 95
+   },
+   "sacks": {
+    "player": "Corban Hondru",
+    "value": 6.5
+   },
+   "interceptions": {
+    "player": "Ryan Kahn",
+    "value": 2
+   }
+  },
+  "team": {
+   "pass_yds": 4483,
+   "rush_yds": 1214,
+   "ppg": 35.8,
+   "offense_rank": 7
+  },
+  "ap_final_rank": null,
+  "national_champion": false,
+  "national_runner_up": false,
+  "conference_champion": false,
+  "conference_title_game": false,
+  "playoff": null
+ },
+ {
+  "id": "2026-M-OH",
+  "program": "M-OH",
+  "season": 2026,
+  "coach": "Joe Snyderwine",
+  "w": 9,
+  "l": 4,
+  "win_pct": 0.692,
+  "conf_w": 5,
+  "conf_l": 4,
+  "conf_rank": 6,
+  "conf_rank_text": "6th",
+  "leaders": {
+   "passing": {
+    "player": "Cornell Tavares",
+    "value": 5804
+   },
+   "rushing": {
+    "player": "Kai Atogwe",
+    "value": 555
+   },
+   "receiving": {
+    "player": "Lynel Billups-Williams",
+    "value": 2617
+   },
+   "tackles": {
+    "player": "Ryan Kahn",
+    "value": 89
+   },
+   "sacks": {
+    "player": "Oyeka Alexander",
+    "value": 8.0
+   },
+   "interceptions": {
+    "player": "Ryan Kahn",
+    "value": 2
+   }
+  },
+  "team": {
+   "pass_yds": 5804,
+   "rush_yds": 877,
+   "ppg": 41.5,
+   "offense_rank": 2
+  },
+  "ap_final_rank": 25,
+  "national_champion": false,
+  "national_runner_up": false,
+  "conference_champion": false,
+  "conference_title_game": false,
+  "playoff": null
+ },
+ {
+  "id": "2027-M-OH",
+  "program": "M-OH",
+  "season": 2027,
+  "coach": "Joe Snyderwine",
+  "w": 14,
+  "l": 2,
+  "win_pct": 0.875,
+  "conf_w": 8,
+  "conf_l": 1,
+  "conf_rank": 3,
+  "conf_rank_text": "3rd",
+  "leaders": {
+   "passing": {
+    "player": "Cornell Tavares",
+    "value": 6047
+   },
+   "rushing": {
+    "player": "Josh Ringer",
+    "value": 1176
+   },
+   "receiving": {
+    "player": "Lynel Billups-Williams",
+    "value": 3428
+   },
+   "tackles": {
+    "player": "Brenton Kumar",
+    "value": 109
+   },
+   "sacks": {
+    "player": "Dalvin Ellerbe",
+    "value": 7.0
+   },
+   "interceptions": {
+    "player": "Barry Jurovich",
+    "value": 5
+   }
+  },
+  "team": {
+   "pass_yds": 6359,
+   "rush_yds": 1666,
+   "ppg": 41.8,
+   "offense_rank": 2
+  },
+  "ap_final_rank": 2,
+  "national_champion": false,
+  "national_runner_up": true,
+  "conference_champion": false,
+  "conference_title_game": false,
+  "playoff": {
+   "games": 4,
+   "wins": 3,
+   "exit_round": "National Championship",
+   "won_title": false
+  }
+ },
+ {
+  "id": "2028-M-OH",
+  "program": "M-OH",
+  "season": 2028,
+  "coach": "Joe Snyderwine",
+  "w": 13,
+  "l": 2,
+  "win_pct": 0.867,
+  "conf_w": 8,
+  "conf_l": 1,
+  "conf_rank": 3,
+  "conf_rank_text": "3rd",
+  "leaders": {
+   "passing": {
+    "player": "Cornell Tavares",
+    "value": 6732
+   },
+   "rushing": {
+    "player": "Josh Ringer",
+    "value": 1458
+   },
+   "receiving": {
+    "player": "Gordon Buggs",
+    "value": 1908
+   },
+   "tackles": {
+    "player": "Brenton Kumar",
+    "value": 88
+   },
+   "sacks": {
+    "player": "Josh Thorne",
+    "value": 10.0
+   },
+   "interceptions": {
+    "player": "Barry Jurovich",
+    "value": 6
+   }
+  },
+  "team": {
+   "pass_yds": 6732,
+   "rush_yds": 1799,
+   "ppg": 49.7,
+   "offense_rank": 1
+  },
+  "ap_final_rank": 3,
+  "national_champion": false,
+  "national_runner_up": false,
+  "conference_champion": false,
+  "conference_title_game": false,
+  "playoff": {
+   "games": 3,
+   "wins": 2,
+   "exit_round": "Semifinal",
+   "won_title": false
+  }
+ },
+ {
+  "id": "2029-M-OH",
+  "program": "M-OH",
+  "season": 2029,
+  "coach": "Joe Snyderwine",
+  "w": 13,
+  "l": 1,
+  "win_pct": 0.929,
+  "conf_w": 9,
+  "conf_l": 0,
+  "conf_rank": 1,
+  "conf_rank_text": "1st",
+  "leaders": {
+   "passing": {
+    "player": "Cornell Tavares",
+    "value": 7140
+   },
+   "rushing": {
+    "player": "Doug Major",
+    "value": 1655
+   },
+   "receiving": {
+    "player": "Keke Odighizuwa",
+    "value": 3181
+   },
+   "tackles": {
+    "player": "Devon Bullock",
+    "value": 109
+   },
+   "sacks": {
+    "player": "Nelson Kumar",
+    "value": 10.0
+   },
+   "interceptions": {
+    "player": "Larry Whitted",
+    "value": 5
+   }
+  },
+  "team": {
+   "pass_yds": 7333,
+   "rush_yds": 2263,
+   "ppg": 65.1,
+   "offense_rank": 1
+  },
+  "ap_final_rank": 5,
+  "national_champion": false,
+  "national_runner_up": false,
+  "conference_champion": true,
+  "conference_title_game": true,
+  "playoff": {
+   "games": 1,
+   "wins": 0,
+   "exit_round": "Quarterfinal",
+   "won_title": false
+  }
+ },
+ {
+  "id": "2030-M-OH",
+  "program": "M-OH",
+  "season": 2030,
+  "coach": "Joe Snyderwine",
+  "w": 11,
+  "l": 2,
+  "win_pct": 0.846,
+  "conf_w": 7,
+  "conf_l": 2,
+  "conf_rank": 4,
+  "conf_rank_text": "4th",
+  "leaders": {
+   "passing": {
+    "player": "Kordell Darr",
+    "value": 6718
+   },
+   "rushing": {
+    "player": "Doug Major",
+    "value": 887
+   },
+   "receiving": {
+    "player": "Keke Odighizuwa",
+    "value": 2328
+   },
+   "tackles": {
+    "player": "Marquez Coats",
+    "value": 99
+   },
+   "sacks": {
+    "player": "Edward Hicks",
+    "value": 8.5
+   },
+   "interceptions": {
+    "player": "Skylar Stoner",
+    "value": 4
+   }
+  },
+  "team": {
+   "pass_yds": 7454,
+   "rush_yds": 1111,
+   "ppg": 60.8,
+   "offense_rank": 1
+  },
+  "ap_final_rank": 12,
+  "national_champion": false,
+  "national_runner_up": false,
+  "conference_champion": false,
+  "conference_title_game": false,
+  "playoff": null
+ },
+ {
+  "id": "2031-M-OH",
+  "program": "M-OH",
+  "season": 2031,
+  "coach": "Joe Snyderwine",
+  "w": 12,
+  "l": 3,
+  "win_pct": 0.8,
+  "conf_w": 7,
+  "conf_l": 2,
+  "conf_rank": 4,
+  "conf_rank_text": "4th",
+  "leaders": {
+   "passing": {
+    "player": "Alfonso Augustine",
+    "value": 7511
+   },
+   "rushing": {
+    "player": "Doug Major",
+    "value": 1422
+   },
+   "receiving": {
+    "player": "Keke Odighizuwa",
+    "value": 4083
+   },
+   "tackles": {
+    "player": "Tyler Valenzuela",
+    "value": 83
+   },
+   "sacks": {
+    "player": "Finau Umana",
+    "value": 9.0
+   },
+   "interceptions": {
+    "player": "Tyler Valenzuela",
+    "value": 5
+   }
+  },
+  "team": {
+   "pass_yds": 7713,
+   "rush_yds": 1807,
+   "ppg": 57.9,
+   "offense_rank": 2
+  },
+  "ap_final_rank": 6,
+  "national_champion": false,
+  "national_runner_up": false,
+  "conference_champion": false,
+  "conference_title_game": false,
+  "playoff": {
+   "games": 3,
+   "wins": 1,
+   "exit_round": "Semifinal",
+   "won_title": false
+  }
+ },
+ {
+  "id": "2032-M-OH",
+  "program": "M-OH",
+  "season": 2032,
+  "coach": "Joe Snyderwine",
+  "w": 12,
+  "l": 3,
+  "win_pct": 0.8,
+  "conf_w": 7,
+  "conf_l": 2,
+  "conf_rank": 4,
+  "conf_rank_text": "4th",
+  "leaders": {
+   "passing": {
+    "player": "Alfonso Augustine",
+    "value": 7453
+   },
+   "rushing": {
+    "player": "Ron Steiner",
+    "value": 1359
+   },
+   "receiving": {
+    "player": "Brad DeWitt",
+    "value": 2012
+   },
+   "tackles": {
+    "player": "Tevin Buechele",
+    "value": 88
+   },
+   "sacks": {
+    "player": "John Minter",
+    "value": 13.5
+   },
+   "interceptions": {
+    "player": "Kerry Levine",
+    "value": 6
+   }
+  },
+  "team": {
+   "pass_yds": 7684,
+   "rush_yds": 2283,
+   "ppg": 62.7,
+   "offense_rank": 1
+  },
+  "ap_final_rank": 6,
+  "national_champion": false,
+  "national_runner_up": false,
+  "conference_champion": false,
+  "conference_title_game": false,
+  "playoff": {
+   "games": 3,
+   "wins": 2,
+   "exit_round": "Semifinal",
+   "won_title": false
+  }
+ },
+ {
+  "id": "2033-M-OH",
+  "program": "M-OH",
+  "season": 2033,
+  "coach": "Joe Snyderwine",
+  "w": 13,
+  "l": 2,
+  "win_pct": 0.867,
+  "conf_w": 9,
+  "conf_l": 0,
+  "conf_rank": 2,
+  "conf_rank_text": "2nd",
+  "leaders": {
+   "passing": {
+    "player": "Terrell Keglar",
+    "value": 8293
+   },
+   "rushing": {
+    "player": "Kadeem Dunham",
+    "value": 1713
+   },
+   "receiving": {
+    "player": "Devonte Hand",
+    "value": 3115
+   },
+   "tackles": {
+    "player": "Jamal Carswell",
+    "value": 86
+   },
+   "sacks": {
+    "player": "Alan Rasheed",
+    "value": 9.5
+   },
+   "interceptions": {
+    "player": "Tim Mama",
+    "value": 6
+   }
+  },
+  "team": {
+   "pass_yds": 8571,
+   "rush_yds": 2658,
+   "ppg": 70.1,
+   "offense_rank": 1
+  },
+  "ap_final_rank": 4,
+  "national_champion": false,
+  "national_runner_up": false,
+  "conference_champion": false,
+  "conference_title_game": true,
+  "playoff": {
+   "games": 2,
+   "wins": 1,
+   "exit_round": "Quarterfinal",
+   "won_title": false
+  }
+ },
+ {
+  "id": "2034-M-OH",
+  "program": "M-OH",
+  "season": 2034,
+  "coach": "Joe Snyderwine",
+  "w": 16,
+  "l": 0,
+  "win_pct": 1.0,
+  "conf_w": 9,
+  "conf_l": 0,
+  "conf_rank": 1,
+  "conf_rank_text": "1st",
+  "leaders": {
+   "passing": {
+    "player": "Terrell Keglar",
+    "value": 8923
+   },
+   "rushing": {
+    "player": "Kadeem Dunham",
+    "value": 1418
+   },
+   "receiving": {
+    "player": "Devonte Hand",
+    "value": 2198
+   },
+   "tackles": {
+    "player": "Martin Lorello",
+    "value": 111
+   },
+   "sacks": {
+    "player": "Josh Valenzuela",
+    "value": 16.0
+   },
+   "interceptions": {
+    "player": "Tim Mama",
+    "value": 13
+   }
+  },
+  "team": {
+   "pass_yds": 9298,
+   "rush_yds": 2776,
+   "ppg": 75.6,
+   "offense_rank": 1
+  },
+  "ap_final_rank": 1,
+  "national_champion": true,
+  "national_runner_up": false,
+  "conference_champion": true,
+  "conference_title_game": true,
+  "playoff": {
+   "games": 3,
+   "wins": 3,
+   "exit_round": "National Championship",
+   "won_title": true
+  }
+ },
+ {
+  "id": "2035-M-OH",
+  "program": "M-OH",
+  "season": 2035,
+  "coach": "Joe Snyderwine",
+  "w": 16,
+  "l": 0,
+  "win_pct": 1.0,
+  "conf_w": 9,
+  "conf_l": 0,
+  "conf_rank": 1,
+  "conf_rank_text": "1st",
+  "leaders": {
+   "passing": {
+    "player": "Mister Tickletime",
+    "value": 8459
+   },
+   "rushing": {
+    "player": "Orlando Foucha",
+    "value": 1738
+   },
+   "receiving": {
+    "player": "Zak Bowanko",
+    "value": 2301
+   },
+   "tackles": {
+    "player": "George Casas",
+    "value": 86
+   },
+   "sacks": {
+    "player": "Dakoda Magoolaghan",
+    "value": 15.0
+   },
+   "interceptions": {
+    "player": "Eric Ramesh",
+    "value": 3
+   }
+  },
+  "team": {
+   "pass_yds": 8783,
+   "rush_yds": 2439,
+   "ppg": 63.3,
+   "offense_rank": 1
+  },
+  "ap_final_rank": 1,
+  "national_champion": true,
+  "national_runner_up": false,
+  "conference_champion": true,
+  "conference_title_game": true,
+  "playoff": {
+   "games": 3,
+   "wins": 3,
+   "exit_round": "National Championship",
+   "won_title": true
+  }
+ },
+ {
+  "id": "2036-M-OH",
+  "program": "M-OH",
+  "season": 2036,
+  "coach": "Joe Snyderwine",
+  "w": 16,
+  "l": 1,
+  "win_pct": 0.941,
+  "conf_w": 9,
+  "conf_l": 0,
+  "conf_rank": 1,
+  "conf_rank_text": "1st",
+  "leaders": {
+   "passing": {
+    "player": "Damian Ferrario",
+    "value": 10666
+   },
+   "rushing": {
+    "player": "Cameron Honeycutt",
+    "value": 1477
+   },
+   "receiving": {
+    "player": "C.J. Rhodes",
+    "value": 2943
+   },
+   "tackles": {
+    "player": "Joshua Abraham",
+    "value": 90
+   },
+   "sacks": {
+    "player": "Calvin LaRocque",
+    "value": 18.0
+   },
+   "interceptions": {
+    "player": "Matthew Hoge",
+    "value": 6
+   }
+  },
+  "team": {
+   "pass_yds": 10823,
+   "rush_yds": 2364,
+   "ppg": 72.6,
+   "offense_rank": 1
+  },
+  "ap_final_rank": 1,
+  "national_champion": true,
+  "national_runner_up": false,
+  "conference_champion": false,
+  "conference_title_game": true,
+  "playoff": {
+   "games": 4,
+   "wins": 4,
+   "exit_round": "National Championship",
+   "won_title": true
+  }
+ },
+ {
+  "id": "2037-M-OH",
+  "program": "M-OH",
+  "season": 2037,
+  "coach": "Joe Snyderwine",
+  "w": 14,
+  "l": 1,
+  "win_pct": 0.933,
+  "conf_w": 9,
+  "conf_l": 0,
+  "conf_rank": 1,
+  "conf_rank_text": "1st",
+  "leaders": {
+   "passing": {
+    "player": "Damian Ferrario",
+    "value": 9885
+   },
+   "rushing": {
+    "player": "Paul Pape",
+    "value": 1648
+   },
+   "receiving": {
+    "player": "C.J. Rhodes",
+    "value": 3854
+   },
+   "tackles": {
+    "player": "Joshua Abraham",
+    "value": 101
+   },
+   "sacks": {
+    "player": "Emeka Zombo",
+    "value": 13.0
+   },
+   "interceptions": {
+    "player": "Matthew Hoge",
+    "value": 8
+   }
+  },
+  "team": {
+   "pass_yds": 9985,
+   "rush_yds": 2484,
+   "ppg": 82.6,
+   "offense_rank": 1
+  },
+  "ap_final_rank": 3,
+  "national_champion": false,
+  "national_runner_up": false,
+  "conference_champion": true,
+  "conference_title_game": true,
+  "playoff": {
+   "games": 2,
+   "wins": 1,
+   "exit_round": "Semifinal",
+   "won_title": false
+  }
+ }
+]

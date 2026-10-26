@@ -1,0 +1,1516 @@
+[
+ {
+  "id": "AFA",
+  "school": "Air Force",
+  "fcs": false,
+  "colors": {
+   "primary": "#003087",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/AFA.png"
+ },
+ {
+  "id": "AKR",
+  "school": "Akron",
+  "fcs": false,
+  "colors": {
+   "primary": "#041E42",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/AKR.png"
+ },
+ {
+  "id": "APP",
+  "school": "App State",
+  "fcs": false,
+  "colors": {
+   "primary": "#222222",
+   "text": "#FFCC00"
+  },
+  "logo": "assets/logos/APP.png"
+ },
+ {
+  "id": "ARIZ",
+  "school": "Arizona",
+  "fcs": false,
+  "colors": {
+   "primary": "#CC0033",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/ARIZ.png"
+ },
+ {
+  "id": "ARK",
+  "school": "Arkansas",
+  "fcs": false,
+  "colors": {
+   "primary": "#9D2235",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/ARK.png"
+ },
+ {
+  "id": "ARMY",
+  "school": "Army",
+  "fcs": false,
+  "colors": {
+   "primary": "#000000",
+   "text": "#D4BF91"
+  },
+  "logo": "assets/logos/ARMY.png"
+ },
+ {
+  "id": "ARST",
+  "school": "Arkansas State",
+  "fcs": false,
+  "colors": {
+   "primary": "#CC092F",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/ARST.png"
+ },
+ {
+  "id": "ASU",
+  "school": "Arizona State",
+  "fcs": false,
+  "colors": {
+   "primary": "#8C1D40",
+   "text": "#FFC627"
+  },
+  "logo": "assets/logos/ASU.png"
+ },
+ {
+  "id": "AUB",
+  "school": "Auburn",
+  "fcs": false,
+  "colors": {
+   "primary": "#0C2340",
+   "text": "#EC6F00"
+  },
+  "logo": "assets/logos/AUB.png"
+ },
+ {
+  "id": "BALL",
+  "school": "Ball State",
+  "fcs": false,
+  "colors": {
+   "primary": "#BA0C2F",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/BALL.png"
+ },
+ {
+  "id": "BAMA",
+  "school": "Alabama",
+  "fcs": false,
+  "colors": {
+   "primary": "#9E1B32",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/BAMA.png"
+ },
+ {
+  "id": "BC",
+  "school": "Boston College",
+  "fcs": false,
+  "colors": {
+   "primary": "#98002E",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/BC.png"
+ },
+ {
+  "id": "BGSU",
+  "school": "Bowling Green",
+  "fcs": false,
+  "colors": {
+   "primary": "#FE5000",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/BGSU.png"
+ },
+ {
+  "id": "BOIS",
+  "school": "Boise State",
+  "fcs": false,
+  "colors": {
+   "primary": "#0033A0",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/BOIS.png"
+ },
+ {
+  "id": "BU",
+  "school": "Baylor",
+  "fcs": false,
+  "colors": {
+   "primary": "#154734",
+   "text": "#FFB81C"
+  },
+  "logo": "assets/logos/BU.png"
+ },
+ {
+  "id": "BUFF",
+  "school": "Buffalo",
+  "fcs": false,
+  "colors": {
+   "primary": "#005BBB",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/BUFF.png"
+ },
+ {
+  "id": "BYU",
+  "school": "BYU",
+  "fcs": false,
+  "colors": {
+   "primary": "#0062B8",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/BYU.png"
+ },
+ {
+  "id": "CAL",
+  "school": "California",
+  "fcs": false,
+  "colors": {
+   "primary": "#003262",
+   "text": "#FDB515"
+  },
+  "logo": "assets/logos/CAL.png"
+ },
+ {
+  "id": "CCU",
+  "school": "Coastal Carolina",
+  "fcs": false,
+  "colors": {
+   "primary": "#006F71",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/CCU.png"
+ },
+ {
+  "id": "CHAR",
+  "school": "Charlotte",
+  "fcs": false,
+  "colors": {
+   "primary": "#046A38",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/CHAR.png"
+ },
+ {
+  "id": "CLEM",
+  "school": "Clemson",
+  "fcs": false,
+  "colors": {
+   "primary": "#F56600",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/CLEM.png"
+ },
+ {
+  "id": "CLEV",
+  "school": "Cleveland State",
+  "fcs": false,
+  "colors": {
+   "primary": "#024731",
+   "text": null
+  },
+  "logo": "assets/logos/CLEV.png"
+ },
+ {
+  "id": "CMU",
+  "school": "Central Michigan",
+  "fcs": false,
+  "colors": {
+   "primary": "#6A0032",
+   "text": "#FFC82E"
+  },
+  "logo": "assets/logos/CMU.png"
+ },
+ {
+  "id": "COLO",
+  "school": "Colorado",
+  "fcs": false,
+  "colors": {
+   "primary": "#000000",
+   "text": "#CFB87C"
+  },
+  "logo": "assets/logos/COLO.png"
+ },
+ {
+  "id": "CONN",
+  "school": "UConn",
+  "fcs": false,
+  "colors": {
+   "primary": "#000E2F",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/CONN.png"
+ },
+ {
+  "id": "CSM",
+  "school": "Charleston Southern",
+  "fcs": true,
+  "colors": {
+   "primary": "#21314D",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/CSM.png"
+ },
+ {
+  "id": "CSU",
+  "school": "Colorado State",
+  "fcs": false,
+  "colors": {
+   "primary": "#1E4D2B",
+   "text": "#C8C372"
+  },
+  "logo": "assets/logos/CSU.png"
+ },
+ {
+  "id": "DEL",
+  "school": "Delaware",
+  "fcs": true,
+  "colors": {
+   "primary": "#00539F",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/DEL.png"
+ },
+ {
+  "id": "DUKE",
+  "school": "Duke",
+  "fcs": false,
+  "colors": {
+   "primary": "#003087",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/DUKE.png"
+ },
+ {
+  "id": "ECU",
+  "school": "East Carolina",
+  "fcs": false,
+  "colors": {
+   "primary": "#592A8A",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/ECU.png"
+ },
+ {
+  "id": "EKU",
+  "school": "Eastern Kentucky",
+  "fcs": true,
+  "colors": {
+   "primary": "#8A0039",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/EKU.png"
+ },
+ {
+  "id": "EMU",
+  "school": "Eastern Michigan",
+  "fcs": false,
+  "colors": {
+   "primary": "#006633",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/EMU.png"
+ },
+ {
+  "id": "EWU",
+  "school": "Eastern Washington",
+  "fcs": true,
+  "colors": {
+   "primary": "#A10022",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/EWU.png"
+ },
+ {
+  "id": "FAU",
+  "school": "Florida Atlantic",
+  "fcs": false,
+  "colors": {
+   "primary": "#003366",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/FAU.png"
+ },
+ {
+  "id": "FCS SE",
+  "school": "FCS Southeast",
+  "fcs": true,
+  "colors": null,
+  "logo": null
+ },
+ {
+  "id": "FCSNW",
+  "school": "FCS Northwest",
+  "fcs": true,
+  "colors": null,
+  "logo": null
+ },
+ {
+  "id": "FIU",
+  "school": "FIU",
+  "fcs": false,
+  "colors": {
+   "primary": "#081E3F",
+   "text": "#B6862C"
+  },
+  "logo": "assets/logos/FIU.png"
+ },
+ {
+  "id": "FLA",
+  "school": "Florida",
+  "fcs": false,
+  "colors": {
+   "primary": "#0021A5",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/FLA.png"
+ },
+ {
+  "id": "FRES",
+  "school": "Fresno State",
+  "fcs": false,
+  "colors": {
+   "primary": "#DB0032",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/FRES.png"
+ },
+ {
+  "id": "FSU",
+  "school": "Florida State",
+  "fcs": false,
+  "colors": {
+   "primary": "#782F40",
+   "text": "#CEB888"
+  },
+  "logo": "assets/logos/FSU.png"
+ },
+ {
+  "id": "FUR",
+  "school": "Furman",
+  "fcs": true,
+  "colors": {
+   "primary": "#582C83",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/FUR.png"
+ },
+ {
+  "id": "GRAM",
+  "school": "Grambling State",
+  "fcs": true,
+  "colors": {
+   "primary": "#000000",
+   "text": "#F1C232"
+  },
+  "logo": "assets/logos/GRAM.png"
+ },
+ {
+  "id": "GS",
+  "school": "Georgia Southern",
+  "fcs": false,
+  "colors": {
+   "primary": "#011E41",
+   "text": "#D9D9D9"
+  },
+  "logo": "assets/logos/GS.png"
+ },
+ {
+  "id": "GSU",
+  "school": "Georgia State",
+  "fcs": false,
+  "colors": {
+   "primary": "#0039A6",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/GSU.png"
+ },
+ {
+  "id": "GT",
+  "school": "Georgia Tech",
+  "fcs": false,
+  "colors": {
+   "primary": "#B3A369",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/GT.png"
+ },
+ {
+  "id": "HAW",
+  "school": "Hawai'i",
+  "fcs": false,
+  "colors": {
+   "primary": "#024731",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/HAW.png"
+ },
+ {
+  "id": "ILL",
+  "school": "Illinois",
+  "fcs": false,
+  "colors": {
+   "primary": "#13294B",
+   "text": "#E84A27"
+  },
+  "logo": "assets/logos/ILL.png"
+ },
+ {
+  "id": "IOWA",
+  "school": "Iowa",
+  "fcs": false,
+  "colors": {
+   "primary": "#000000",
+   "text": "#FFCD00"
+  },
+  "logo": "assets/logos/IOWA.png"
+ },
+ {
+  "id": "ISU",
+  "school": "Iowa State",
+  "fcs": false,
+  "colors": {
+   "primary": "#C8102E",
+   "text": "#F1BE48"
+  },
+  "logo": "assets/logos/ISU.png"
+ },
+ {
+  "id": "IU",
+  "school": "Indiana",
+  "fcs": false,
+  "colors": {
+   "primary": "#990000",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/IU.png"
+ },
+ {
+  "id": "JKST",
+  "school": "Jacksonville State",
+  "fcs": false,
+  "colors": {
+   "primary": "#CC0000",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/JKST.png"
+ },
+ {
+  "id": "JMU",
+  "school": "James Madison",
+  "fcs": false,
+  "colors": {
+   "primary": "#450084",
+   "text": "#CBB677"
+  },
+  "logo": "assets/logos/JMU.png"
+ },
+ {
+  "id": "KENN",
+  "school": "Kennesaw State",
+  "fcs": false,
+  "colors": {
+   "primary": "#FDBB30",
+   "text": "#000000"
+  },
+  "logo": "assets/logos/KENN.png"
+ },
+ {
+  "id": "KENT",
+  "school": "Kent State",
+  "fcs": false,
+  "colors": {
+   "primary": "#002664",
+   "text": "#EAAB00"
+  },
+  "logo": "assets/logos/KENT.png"
+ },
+ {
+  "id": "KSU",
+  "school": "Kansas State",
+  "fcs": false,
+  "colors": {
+   "primary": "#512888",
+   "text": "#D9D9D9"
+  },
+  "logo": "assets/logos/KSU.png"
+ },
+ {
+  "id": "KU",
+  "school": "Kansas",
+  "fcs": false,
+  "colors": {
+   "primary": "#0051BA",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/KU.png"
+ },
+ {
+  "id": "LIB",
+  "school": "Liberty",
+  "fcs": false,
+  "colors": {
+   "primary": "#002D62",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/LIB.png"
+ },
+ {
+  "id": "LOU",
+  "school": "Louisville",
+  "fcs": false,
+  "colors": {
+   "primary": "#AD0000",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/LOU.png"
+ },
+ {
+  "id": "LSU",
+  "school": "LSU",
+  "fcs": false,
+  "colors": {
+   "primary": "#461D7C",
+   "text": "#FDD023"
+  },
+  "logo": "assets/logos/LSU.png"
+ },
+ {
+  "id": "LT",
+  "school": "Louisiana Tech",
+  "fcs": false,
+  "colors": {
+   "primary": "#002F8B",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/LT.png"
+ },
+ {
+  "id": "M-OH",
+  "school": "Miami (OH)",
+  "fcs": false,
+  "colors": {
+   "primary": "#B61E2E",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/M-OH.png"
+ },
+ {
+  "id": "MASS",
+  "school": "UMass",
+  "fcs": false,
+  "colors": {
+   "primary": "#971B2F",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/MASS.png"
+ },
+ {
+  "id": "MEM",
+  "school": "Memphis",
+  "fcs": false,
+  "colors": {
+   "primary": "#003087",
+   "text": "#D9D9D9"
+  },
+  "logo": "assets/logos/MEM.png"
+ },
+ {
+  "id": "MIA",
+  "school": "Miami",
+  "fcs": false,
+  "colors": {
+   "primary": "#F47321",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/MIA.png"
+ },
+ {
+  "id": "MICH",
+  "school": "Michigan",
+  "fcs": false,
+  "colors": {
+   "primary": "#00274C",
+   "text": "#FFCB05"
+  },
+  "logo": "assets/logos/MICH.png"
+ },
+ {
+  "id": "MINN",
+  "school": "Minnesota",
+  "fcs": false,
+  "colors": {
+   "primary": "#7A0019",
+   "text": "#FFCC33"
+  },
+  "logo": "assets/logos/MINN.png"
+ },
+ {
+  "id": "MISS",
+  "school": "Ole Miss",
+  "fcs": false,
+  "colors": {
+   "primary": "#CE1126",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/MISS.png"
+ },
+ {
+  "id": "MIZ",
+  "school": "Missouri",
+  "fcs": false,
+  "colors": {
+   "primary": "#000000",
+   "text": "#F1B82D"
+  },
+  "logo": "assets/logos/MIZ.png"
+ },
+ {
+  "id": "MONT",
+  "school": "Montana",
+  "fcs": true,
+  "colors": {
+   "primary": "#660033",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/MONT.png"
+ },
+ {
+  "id": "MRSH",
+  "school": "Marshall",
+  "fcs": false,
+  "colors": {
+   "primary": "#00B140",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/MRSH.png"
+ },
+ {
+  "id": "MSST",
+  "school": "Mississippi State",
+  "fcs": false,
+  "colors": {
+   "primary": "#660000",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/MSST.png"
+ },
+ {
+  "id": "MSU",
+  "school": "Michigan State",
+  "fcs": false,
+  "colors": {
+   "primary": "#18453B",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/MSU.png"
+ },
+ {
+  "id": "MTST",
+  "school": "Montana State",
+  "fcs": true,
+  "colors": {
+   "primary": "#00205B",
+   "text": "#B9975B"
+  },
+  "logo": "assets/logos/MTST.png"
+ },
+ {
+  "id": "MTSU",
+  "school": "Middle Tennessee",
+  "fcs": false,
+  "colors": {
+   "primary": "#0066CC",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/MTSU.png"
+ },
+ {
+  "id": "NAVY",
+  "school": "Navy",
+  "fcs": false,
+  "colors": {
+   "primary": "#00205B",
+   "text": "#C5B783"
+  },
+  "logo": "assets/logos/NAVY.png"
+ },
+ {
+  "id": "NCST",
+  "school": "NC State",
+  "fcs": false,
+  "colors": {
+   "primary": "#CC0000",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/NCST.png"
+ },
+ {
+  "id": "ND",
+  "school": "Notre Dame",
+  "fcs": false,
+  "colors": {
+   "primary": "#0C2340",
+   "text": "#AE9142"
+  },
+  "logo": "assets/logos/ND.png"
+ },
+ {
+  "id": "NDSU",
+  "school": "North Dakota State",
+  "fcs": true,
+  "colors": {
+   "primary": "#0A5640",
+   "text": "#FFC72A"
+  },
+  "logo": "assets/logos/NDSU.png"
+ },
+ {
+  "id": "NEB",
+  "school": "Nebraska",
+  "fcs": false,
+  "colors": {
+   "primary": "#E41C38",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/NEB.png"
+ },
+ {
+  "id": "NEV",
+  "school": "Nevada",
+  "fcs": false,
+  "colors": {
+   "primary": "#003366",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/NEV.png"
+ },
+ {
+  "id": "NIU",
+  "school": "Northern Illinois",
+  "fcs": false,
+  "colors": {
+   "primary": "#000000",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/NIU.png"
+ },
+ {
+  "id": "NMS",
+  "school": "New Mexico State",
+  "fcs": false,
+  "colors": {
+   "primary": "#9E1B32",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/NMS.png"
+ },
+ {
+  "id": "NOVA",
+  "school": "Villanova",
+  "fcs": true,
+  "colors": {
+   "primary": "#00205B",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/NOVA.png"
+ },
+ {
+  "id": "NU",
+  "school": "Northwestern",
+  "fcs": false,
+  "colors": {
+   "primary": "#4E2A84",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/NU.png"
+ },
+ {
+  "id": "ODU",
+  "school": "Old Dominion",
+  "fcs": false,
+  "colors": {
+   "primary": "#003057",
+   "text": "#D9D9D9"
+  },
+  "logo": "assets/logos/ODU.png"
+ },
+ {
+  "id": "OHIO",
+  "school": "Ohio",
+  "fcs": false,
+  "colors": {
+   "primary": "#00694E",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/OHIO.png"
+ },
+ {
+  "id": "OKST",
+  "school": "Oklahoma State",
+  "fcs": false,
+  "colors": {
+   "primary": "#000000",
+   "text": "#FF7300"
+  },
+  "logo": "assets/logos/OKST.png"
+ },
+ {
+  "id": "ORE",
+  "school": "Oregon",
+  "fcs": false,
+  "colors": {
+   "primary": "#007030",
+   "text": "#FEE123"
+  },
+  "logo": "assets/logos/ORE.png"
+ },
+ {
+  "id": "ORST",
+  "school": "Oregon State",
+  "fcs": false,
+  "colors": {
+   "primary": "#DC4405",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/ORST.png"
+ },
+ {
+  "id": "OSU",
+  "school": "Ohio State",
+  "fcs": false,
+  "colors": {
+   "primary": "#BB0000",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/OSU.png"
+ },
+ {
+  "id": "OU",
+  "school": "Oklahoma",
+  "fcs": false,
+  "colors": {
+   "primary": "#841617",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/OU.png"
+ },
+ {
+  "id": "PITT",
+  "school": "Pittsburgh",
+  "fcs": false,
+  "colors": {
+   "primary": "#003594",
+   "text": "#FFB81C"
+  },
+  "logo": "assets/logos/PITT.png"
+ },
+ {
+  "id": "PSU",
+  "school": "Penn State",
+  "fcs": false,
+  "colors": {
+   "primary": "#041E42",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/PSU.png"
+ },
+ {
+  "id": "PUR",
+  "school": "Purdue",
+  "fcs": false,
+  "colors": {
+   "primary": "#000000",
+   "text": "#CEB888"
+  },
+  "logo": "assets/logos/PUR.png"
+ },
+ {
+  "id": "RICE",
+  "school": "Rice",
+  "fcs": false,
+  "colors": {
+   "primary": "#00205B",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/RICE.png"
+ },
+ {
+  "id": "RICH",
+  "school": "Richmond",
+  "fcs": true,
+  "colors": {
+   "primary": "#990000",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/RICH.png"
+ },
+ {
+  "id": "RUTG",
+  "school": "Rutgers",
+  "fcs": false,
+  "colors": {
+   "primary": "#CC0033",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/RUTG.png"
+ },
+ {
+  "id": "SCAR",
+  "school": "South Carolina",
+  "fcs": false,
+  "colors": {
+   "primary": "#73000A",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/SCAR.png"
+ },
+ {
+  "id": "SDSU",
+  "school": "San Diego State",
+  "fcs": false,
+  "colors": {
+   "primary": "#0033A0",
+   "text": "#FFD100"
+  },
+  "logo": "assets/logos/SDSU.png"
+ },
+ {
+  "id": "SHSU",
+  "school": "Sam Houston",
+  "fcs": false,
+  "colors": {
+   "primary": "#FE5100",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/SHSU.png"
+ },
+ {
+  "id": "SIU",
+  "school": "Southern Illinois",
+  "fcs": true,
+  "colors": {
+   "primary": "#720000",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/SIU.png"
+ },
+ {
+  "id": "SJSU",
+  "school": "San Jose State",
+  "fcs": false,
+  "colors": {
+   "primary": "#0055A2",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/SJSU.png"
+ },
+ {
+  "id": "SMU",
+  "school": "SMU",
+  "fcs": false,
+  "colors": {
+   "primary": "#0033A0",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/SMU.png"
+ },
+ {
+  "id": "STAN",
+  "school": "Stanford",
+  "fcs": false,
+  "colors": {
+   "primary": "#8C1515",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/STAN.png"
+ },
+ {
+  "id": "SYR",
+  "school": "Syracuse",
+  "fcs": false,
+  "colors": {
+   "primary": "#F76900",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/SYR.png"
+ },
+ {
+  "id": "TAMU",
+  "school": "Texas A&M",
+  "fcs": false,
+  "colors": {
+   "primary": "#500000",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/TAMU.png"
+ },
+ {
+  "id": "TCU",
+  "school": "TCU",
+  "fcs": false,
+  "colors": {
+   "primary": "#4D1979",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/TCU.png"
+ },
+ {
+  "id": "TEM",
+  "school": "Temple",
+  "fcs": false,
+  "colors": {
+   "primary": "#9D2235",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/TEM.png"
+ },
+ {
+  "id": "TEX",
+  "school": "Texas",
+  "fcs": false,
+  "colors": {
+   "primary": "#BF5700",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/TEX.png"
+ },
+ {
+  "id": "TLSA",
+  "school": "Tulsa",
+  "fcs": false,
+  "colors": {
+   "primary": "#002D72",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/TLSA.png"
+ },
+ {
+  "id": "TOL",
+  "school": "Toledo",
+  "fcs": false,
+  "colors": {
+   "primary": "#15397F",
+   "text": "#FFDA00"
+  },
+  "logo": "assets/logos/TOL.png"
+ },
+ {
+  "id": "TROY",
+  "school": "Troy",
+  "fcs": false,
+  "colors": {
+   "primary": "#8A2432",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/TROY.png"
+ },
+ {
+  "id": "TTU",
+  "school": "Texas Tech",
+  "fcs": false,
+  "colors": {
+   "primary": "#C00000",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/TTU.png"
+ },
+ {
+  "id": "TULN",
+  "school": "Tulane",
+  "fcs": false,
+  "colors": {
+   "primary": "#006747",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/TULN.png"
+ },
+ {
+  "id": "TXST",
+  "school": "Texas State",
+  "fcs": false,
+  "colors": {
+   "primary": "#501214",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/TXST.png"
+ },
+ {
+  "id": "UAB",
+  "school": "UAB",
+  "fcs": false,
+  "colors": {
+   "primary": "#006341",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/UAB.png"
+ },
+ {
+  "id": "UC",
+  "school": "Cincinnati",
+  "fcs": false,
+  "colors": {
+   "primary": "#E00122",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/UC.png"
+ },
+ {
+  "id": "UCF",
+  "school": "UCF",
+  "fcs": false,
+  "colors": {
+   "primary": "#000000",
+   "text": "#BA9B37"
+  },
+  "logo": "assets/logos/UCF.png"
+ },
+ {
+  "id": "UCLA",
+  "school": "UCLA",
+  "fcs": false,
+  "colors": {
+   "primary": "#2D68C4",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/UCLA.png"
+ },
+ {
+  "id": "UGA",
+  "school": "Georgia",
+  "fcs": false,
+  "colors": {
+   "primary": "#BA0C2F",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/UGA.png"
+ },
+ {
+  "id": "UH",
+  "school": "Houston",
+  "fcs": false,
+  "colors": {
+   "primary": "#C8102E",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/UH.png"
+ },
+ {
+  "id": "UK",
+  "school": "Kentucky",
+  "fcs": false,
+  "colors": {
+   "primary": "#0033A0",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/UK.png"
+ },
+ {
+  "id": "UL",
+  "school": "Louisiana",
+  "fcs": false,
+  "colors": {
+   "primary": "#CE181E",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/UL.png"
+ },
+ {
+  "id": "ULM",
+  "school": "Louisiana-Monroe",
+  "fcs": false,
+  "colors": {
+   "primary": "#840029",
+   "text": "#FDB913"
+  },
+  "logo": "assets/logos/ULM.png"
+ },
+ {
+  "id": "UMD",
+  "school": "Maryland",
+  "fcs": false,
+  "colors": {
+   "primary": "#E03A3E",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/UMD.png"
+ },
+ {
+  "id": "UNC",
+  "school": "North Carolina",
+  "fcs": false,
+  "colors": {
+   "primary": "#7BAFD4",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/UNC.png"
+ },
+ {
+  "id": "UNH",
+  "school": "New Hampshire",
+  "fcs": true,
+  "colors": {
+   "primary": "#041E42",
+   "text": "#D9D9D9"
+  },
+  "logo": "assets/logos/UNH.png"
+ },
+ {
+  "id": "UNI",
+  "school": "Northern Iowa",
+  "fcs": true,
+  "colors": {
+   "primary": "#4B116F",
+   "text": "#FFCC00"
+  },
+  "logo": "assets/logos/UNI.png"
+ },
+ {
+  "id": "UNLV",
+  "school": "UNLV",
+  "fcs": false,
+  "colors": {
+   "primary": "#CF0A2C",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/UNLV.png"
+ },
+ {
+  "id": "UNM",
+  "school": "New Mexico",
+  "fcs": false,
+  "colors": {
+   "primary": "#BA0C2F",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/UNM.png"
+ },
+ {
+  "id": "UNT",
+  "school": "North Texas",
+  "fcs": false,
+  "colors": {
+   "primary": "#00853E",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/UNT.png"
+ },
+ {
+  "id": "USA",
+  "school": "South Alabama",
+  "fcs": false,
+  "colors": {
+   "primary": "#00205B",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/USA.png"
+ },
+ {
+  "id": "USC",
+  "school": "USC",
+  "fcs": false,
+  "colors": {
+   "primary": "#990000",
+   "text": "#FFC72C"
+  },
+  "logo": "assets/logos/USC.png"
+ },
+ {
+  "id": "USF",
+  "school": "South Florida",
+  "fcs": false,
+  "colors": {
+   "primary": "#006747",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/USF.png"
+ },
+ {
+  "id": "USM",
+  "school": "Southern Miss",
+  "fcs": false,
+  "colors": {
+   "primary": "#000000",
+   "text": "#FDB515"
+  },
+  "logo": "assets/logos/USM.png"
+ },
+ {
+  "id": "USU",
+  "school": "Utah State",
+  "fcs": false,
+  "colors": {
+   "primary": "#00263A",
+   "text": "#B7B7B7"
+  },
+  "logo": "assets/logos/USU.png"
+ },
+ {
+  "id": "UT",
+  "school": "Tennessee",
+  "fcs": false,
+  "colors": {
+   "primary": "#FF8200",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/UT.png"
+ },
+ {
+  "id": "UTAH",
+  "school": "Utah",
+  "fcs": false,
+  "colors": {
+   "primary": "#CC0000",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/UTAH.png"
+ },
+ {
+  "id": "UTEP",
+  "school": "UTEP",
+  "fcs": false,
+  "colors": {
+   "primary": "#041E42",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/UTEP.png"
+ },
+ {
+  "id": "UTSA",
+  "school": "UTSA",
+  "fcs": false,
+  "colors": {
+   "primary": "#0C2340",
+   "text": "#F15A22"
+  },
+  "logo": "assets/logos/UTSA.png"
+ },
+ {
+  "id": "UVA",
+  "school": "Virginia",
+  "fcs": false,
+  "colors": {
+   "primary": "#232D4B",
+   "text": "#F84C1E"
+  },
+  "logo": "assets/logos/UVA.png"
+ },
+ {
+  "id": "UW",
+  "school": "Wyoming",
+  "fcs": false,
+  "colors": {
+   "primary": "#492F24",
+   "text": "#FFC425"
+  },
+  "logo": "assets/logos/UW.png"
+ },
+ {
+  "id": "VAN",
+  "school": "Vanderbilt",
+  "fcs": false,
+  "colors": {
+   "primary": "#000000",
+   "text": "#CFAE70"
+  },
+  "logo": "assets/logos/VAN.png"
+ },
+ {
+  "id": "VT",
+  "school": "Virginia Tech",
+  "fcs": false,
+  "colors": {
+   "primary": "#630031",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/VT.png"
+ },
+ {
+  "id": "WAKE",
+  "school": "Wake Forest",
+  "fcs": false,
+  "colors": {
+   "primary": "#000000",
+   "text": "#CFB989"
+  },
+  "logo": "assets/logos/WAKE.png"
+ },
+ {
+  "id": "WASH",
+  "school": "Washington",
+  "fcs": false,
+  "colors": {
+   "primary": "#4B2E83",
+   "text": "#B7A57A"
+  },
+  "logo": "assets/logos/WASH.png"
+ },
+ {
+  "id": "WIS",
+  "school": "Wisconsin",
+  "fcs": false,
+  "colors": {
+   "primary": "#C5050C",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/WIS.png"
+ },
+ {
+  "id": "WKU",
+  "school": "Western Kentucky",
+  "fcs": false,
+  "colors": {
+   "primary": "#C60C30",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/WKU.png"
+ },
+ {
+  "id": "WMU",
+  "school": "Western Michigan",
+  "fcs": false,
+  "colors": {
+   "primary": "#6C4023",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/WMU.png"
+ },
+ {
+  "id": "WSU",
+  "school": "Washington State",
+  "fcs": false,
+  "colors": {
+   "primary": "#981E32",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/WSU.png"
+ },
+ {
+  "id": "WVU",
+  "school": "West Virginia",
+  "fcs": false,
+  "colors": {
+   "primary": "#002855",
+   "text": "#EAAA00"
+  },
+  "logo": "assets/logos/WVU.png"
+ },
+ {
+  "id": "YSU",
+  "school": "Youngstown State",
+  "fcs": true,
+  "colors": {
+   "primary": "#C8102E",
+   "text": "#FFFFFF"
+  },
+  "logo": "assets/logos/YSU.png"
+ }
+]

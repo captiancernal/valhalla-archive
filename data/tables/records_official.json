@@ -1,0 +1,191 @@
+[
+ {
+  "player": "Amar'e Hocker",
+  "position": "QB",
+  "magnitude": "NCAA",
+  "duration": "Career",
+  "type": "Passing TD",
+  "value": 192,
+  "year_set": "2025-28"
+ },
+ {
+  "player": "Amar'e Hocker",
+  "position": "QB",
+  "magnitude": "Big 12",
+  "duration": "Career",
+  "type": "Passing TD",
+  "value": 192,
+  "year_set": "2025-28"
+ },
+ {
+  "player": "Amar'e Hocker",
+  "position": "QB",
+  "magnitude": "Cleveland State",
+  "duration": "Career",
+  "type": "Passing TD",
+  "value": 192,
+  "year_set": "2025-28"
+ },
+ {
+  "player": "Amar'e Hocker",
+  "position": "QB",
+  "magnitude": "Cleveland State",
+  "duration": "Season",
+  "type": "Passing TD",
+  "value": 63,
+  "year_set": "2028"
+ },
+ {
+  "player": "Amar'e Hocker",
+  "position": "QB",
+  "magnitude": "Big 12",
+  "duration": "Game",
+  "type": "Passing TD",
+  "value": 9,
+  "year_set": "2027"
+ },
+ {
+  "player": "Amar'e Hocker",
+  "position": "QB",
+  "magnitude": "Cleveland State",
+  "duration": "Game",
+  "type": "Passing TD",
+  "value": 9,
+  "year_set": "2027"
+ },
+ {
+  "player": "Amar'e Hocker",
+  "position": "QB",
+  "magnitude": "Big 12",
+  "duration": "Career",
+  "type": "Passing Yards",
+  "value": 18874,
+  "year_set": "2025-28"
+ },
+ {
+  "player": "Amar'e Hocker",
+  "position": "QB",
+  "magnitude": "Cleveland State",
+  "duration": "Career",
+  "type": "Passing Yards",
+  "value": 18874,
+  "year_set": "2025-28"
+ },
+ {
+  "player": "Amar'e Hocker",
+  "position": "QB",
+  "magnitude": "Cleveland State",
+  "duration": "Season",
+  "type": "Passing Yards",
+  "value": 5364,
+  "year_set": "2028"
+ },
+ {
+  "player": "Amar'e Hocker",
+  "position": "QB",
+  "magnitude": "Cleveland State",
+  "duration": "Game",
+  "type": "Passing Yards",
+  "value": 562,
+  "year_set": "2027"
+ },
+ {
+  "player": "Amar'e Hocker",
+  "position": "QB",
+  "magnitude": "Cleveland State",
+  "duration": "Career",
+  "type": "Rushing TD",
+  "value": 56,
+  "year_set": "2025-28"
+ },
+ {
+  "player": "Amar'e Hocker",
+  "position": "QB",
+  "magnitude": "Cleveland State",
+  "duration": "Season",
+  "type": "Rushing TD",
+  "value": 24,
+  "year_set": "2028"
+ },
+ {
+  "player": "Baraka Nwangwu",
+  "position": "HB",
+  "magnitude": "Cleveland State",
+  "duration": "Career",
+  "type": "Rushing Yards",
+  "value": 4849,
+  "year_set": "2026-29"
+ },
+ {
+  "player": "Baraka Nwangwu",
+  "position": "HB",
+  "magnitude": "Big 12",
+  "duration": "Season",
+  "type": "Rushing Yards",
+  "value": 2329,
+  "year_set": "2028"
+ },
+ {
+  "player": "Baraka Nwangwu",
+  "position": "HB",
+  "magnitude": "Cleveland State",
+  "duration": "Season",
+  "type": "Rushing Yards",
+  "value": 2329,
+  "year_set": "2028"
+ },
+ {
+  "player": "Baraka Nwangwu",
+  "position": "HB",
+  "magnitude": "Cleveland State",
+  "duration": "Game",
+  "type": "Rushing Yards",
+  "value": 300,
+  "year_set": "2029"
+ },
+ {
+  "player": "Kenny Tongues",
+  "position": "WR",
+  "magnitude": "Cleveland State",
+  "duration": "Career",
+  "type": "Receiving Yards",
+  "value": 4254,
+  "year_set": "2027-"
+ },
+ {
+  "player": "Kenny Tongues",
+  "position": "WR",
+  "magnitude": "Cleveland State",
+  "duration": "Career",
+  "type": "Receiving TD",
+  "value": 64,
+  "year_set": "2027-"
+ },
+ {
+  "player": "Kenny Tongues",
+  "position": "WR",
+  "magnitude": "Cleveland State",
+  "duration": "Season",
+  "type": "Receiving TD",
+  "value": 26,
+  "year_set": "2028"
+ },
+ {
+  "player": "Kenny Tongues",
+  "position": "WR",
+  "magnitude": "Cleveland State",
+  "duration": "Game",
+  "type": "Receiving Yards",
+  "value": 319,
+  "year_set": "2027"
+ },
+ {
+  "player": "Kenny Tongues",
+  "position": "WR",
+  "magnitude": "Cleveland State",
+  "duration": "Game",
+  "type": "Receiving TD",
+  "value": 7,
+  "year_set": "2027"
+ }
+]

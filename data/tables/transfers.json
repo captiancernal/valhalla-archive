@@ -1,0 +1,362 @@
+[
+ {
+  "cycle": 2024,
+  "arrival_season": 2025,
+  "player": "Jacob Rizy",
+  "class": "JR",
+  "position": "C",
+  "to": "CLEV",
+  "from": "FSU"
+ },
+ {
+  "cycle": 2024,
+  "arrival_season": 2025,
+  "player": "Nolan McCormick",
+  "class": "JR",
+  "position": "HB",
+  "to": "CLEV",
+  "from": "OHIO"
+ },
+ {
+  "cycle": 2025,
+  "arrival_season": 2026,
+  "player": "Jayden Bellamy",
+  "class": null,
+  "position": "CB",
+  "to": "CLEV",
+  "from": "SYR"
+ },
+ {
+  "cycle": 2025,
+  "arrival_season": 2026,
+  "player": "Bryce Eliuk",
+  "class": null,
+  "position": "MLB",
+  "to": "CLEV",
+  "from": "EMU"
+ },
+ {
+  "cycle": 2025,
+  "arrival_season": 2026,
+  "player": "Michael Richard",
+  "class": null,
+  "position": "FS",
+  "to": "CLEV",
+  "from": "CMU"
+ },
+ {
+  "cycle": 2025,
+  "arrival_season": 2026,
+  "player": "Jalen Slappy",
+  "class": null,
+  "position": "RG",
+  "to": "CLEV",
+  "from": "MRSH"
+ },
+ {
+  "cycle": 2025,
+  "arrival_season": 2026,
+  "player": "Emmett Mosley V",
+  "class": null,
+  "position": "WR",
+  "to": "CLEV",
+  "from": "STAN"
+ },
+ {
+  "cycle": 2025,
+  "arrival_season": 2026,
+  "player": "Marcus Sanders Jr.",
+  "class": null,
+  "position": "WR",
+  "to": "CLEV",
+  "from": "GSU"
+ },
+ {
+  "cycle": 2026,
+  "arrival_season": 2027,
+  "player": "Marquese Williams",
+  "class": "SR",
+  "position": "HB",
+  "to": "CLEV",
+  "from": "AKR"
+ },
+ {
+  "cycle": 2026,
+  "arrival_season": 2027,
+  "player": "Shareef Bradbury",
+  "class": "JR",
+  "position": "HB",
+  "to": "CLEV",
+  "from": "MRSH"
+ },
+ {
+  "cycle": 2026,
+  "arrival_season": 2027,
+  "player": "Marquel Bakhtiari",
+  "class": "FR (RS)",
+  "position": "MLB",
+  "to": "CLEV",
+  "from": "ECU"
+ },
+ {
+  "cycle": 2026,
+  "arrival_season": 2027,
+  "player": "Steven Magnum",
+  "class": "SO",
+  "position": "CB",
+  "to": "CLEV",
+  "from": "AKR"
+ },
+ {
+  "cycle": 2027,
+  "arrival_season": 2028,
+  "player": "Deliyon Freeman",
+  "class": "SO",
+  "position": "CB",
+  "to": "CLEV",
+  "from": "HAW"
+ },
+ {
+  "cycle": 2027,
+  "arrival_season": 2028,
+  "player": "Tavares Kalu",
+  "class": "JR",
+  "position": "SS",
+  "to": "CLEV",
+  "from": "BOIS"
+ },
+ {
+  "cycle": 2027,
+  "arrival_season": 2028,
+  "player": "Andrew Dennis",
+  "class": "SO",
+  "position": "LG",
+  "to": "CLEV",
+  "from": "LOU"
+ },
+ {
+  "cycle": 2028,
+  "arrival_season": 2029,
+  "player": "Lee Dailey",
+  "class": "FR",
+  "position": "HB",
+  "to": "CLEV",
+  "from": "PITT"
+ },
+ {
+  "cycle": 2028,
+  "arrival_season": 2029,
+  "player": "Tyler Jameson",
+  "class": "SO",
+  "position": "RG",
+  "to": "CLEV",
+  "from": "UK"
+ },
+ {
+  "cycle": 2029,
+  "arrival_season": 2030,
+  "player": "Patrick Bickley",
+  "class": "JR",
+  "position": "LE",
+  "to": "CLEV",
+  "from": "BUFF"
+ },
+ {
+  "cycle": 2029,
+  "arrival_season": 2030,
+  "player": "Joe Goodin",
+  "class": "SO",
+  "position": "RE",
+  "to": "CLEV",
+  "from": "JMU"
+ },
+ {
+  "cycle": 2029,
+  "arrival_season": 2030,
+  "player": "Jon Donaldson",
+  "class": "SO",
+  "position": "TE",
+  "to": "CLEV",
+  "from": "OSU"
+ },
+ {
+  "cycle": 2029,
+  "arrival_season": 2030,
+  "player": "Willie Ausbon",
+  "class": "JR",
+  "position": "LG",
+  "to": "CLEV",
+  "from": "TOL"
+ },
+ {
+  "cycle": 2029,
+  "arrival_season": 2030,
+  "player": "Jesus Mond",
+  "class": null,
+  "position": "FS",
+  "to": "CLEV",
+  "from": "NAVY"
+ },
+ {
+  "cycle": 2030,
+  "arrival_season": 2031,
+  "player": "Antoine Breida",
+  "class": "JR",
+  "position": "ROLB",
+  "to": "CLEV",
+  "from": "MIZ"
+ },
+ {
+  "cycle": 2030,
+  "arrival_season": 2031,
+  "player": "Hasheem Ajirotutu",
+  "class": "FR",
+  "position": "ROLB",
+  "to": "CLEV",
+  "from": "VT"
+ },
+ {
+  "cycle": 2030,
+  "arrival_season": 2031,
+  "player": "John Adeyanju",
+  "class": "JR",
+  "position": "ROLB",
+  "to": "CLEV",
+  "from": "USC"
+ },
+ {
+  "cycle": 2030,
+  "arrival_season": 2031,
+  "player": "Ryan Abraham",
+  "class": "JR",
+  "position": "TE",
+  "to": "CLEV",
+  "from": "IU"
+ },
+ {
+  "cycle": 2031,
+  "arrival_season": 2032,
+  "player": "Austin Barnes",
+  "class": "JR",
+  "position": "LG",
+  "to": "CLEV",
+  "from": "UAB"
+ },
+ {
+  "cycle": 2031,
+  "arrival_season": 2032,
+  "player": "Chad Hodel",
+  "class": "JR",
+  "position": "LE",
+  "to": "CLEV",
+  "from": "BC"
+ },
+ {
+  "cycle": 2031,
+  "arrival_season": 2032,
+  "player": "Zac Peele",
+  "class": "SO",
+  "position": "FS",
+  "to": "CLEV",
+  "from": "MASS"
+ },
+ {
+  "cycle": 2031,
+  "arrival_season": 2032,
+  "player": "Steve October",
+  "class": "SO",
+  "position": "RT",
+  "to": "CLEV",
+  "from": "WIS"
+ },
+ {
+  "cycle": 2031,
+  "arrival_season": 2032,
+  "player": "Ray Bromell",
+  "class": "JR",
+  "position": "RG",
+  "to": "CLEV",
+  "from": "IU"
+ },
+ {
+  "cycle": 2032,
+  "arrival_season": 2033,
+  "player": "Frank Bryant",
+  "class": "SO",
+  "position": "CB",
+  "to": "CLEV",
+  "from": "ISU"
+ },
+ {
+  "cycle": 2032,
+  "arrival_season": 2033,
+  "player": "Martin Friesz",
+  "class": "SO",
+  "position": "RG",
+  "to": "CLEV",
+  "from": "WVU"
+ },
+ {
+  "cycle": 2032,
+  "arrival_season": 2033,
+  "player": "Deveon Woodhead",
+  "class": "SO",
+  "position": "DT",
+  "to": "CLEV",
+  "from": "ILL"
+ },
+ {
+  "cycle": 2032,
+  "arrival_season": 2033,
+  "player": "Enrique Velasco",
+  "class": "SO",
+  "position": "ROLB",
+  "to": "CLEV",
+  "from": "NEB"
+ },
+ {
+  "cycle": 2033,
+  "arrival_season": 2034,
+  "player": "Dalvin Osborne",
+  "class": "JR",
+  "position": "MLB",
+  "to": "CLEV",
+  "from": "UNT"
+ },
+ {
+  "cycle": 2034,
+  "arrival_season": 2035,
+  "player": "Dom Iverson",
+  "class": "FR",
+  "position": "RG",
+  "to": "CLEV",
+  "from": "TOL"
+ },
+ {
+  "cycle": 2034,
+  "arrival_season": 2035,
+  "player": "Greg Biggs",
+  "class": "JR",
+  "position": "TE",
+  "to": "OHIO",
+  "from": "JMU"
+ },
+ {
+  "cycle": 2035,
+  "arrival_season": 2036,
+  "player": "Jeremiah Tryon",
+  "class": "JR",
+  "position": "MLB",
+  "to": "CLEV",
+  "from": "PSU"
+ },
+ {
+  "cycle": 2036,
+  "arrival_season": 2037,
+  "player": "K.C. Hennessy",
+  "class": "JR",
+  "position": "LT",
+  "to": "CLEV",
+  "from": "TLSA"
+ }
+]

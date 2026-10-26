@@ -1,0 +1,16 @@
+{
+ "current_season": 2037,
+ "current_phase": "Season Recap",
+ "phase_display": "Post-Championship Season Recap",
+ "phases": [
+  "Season Recap",
+  "Final Recruiting",
+  "Player Departures and Draft",
+  "Transfer Window",
+  "2038 Preseason"
+ ],
+ "latest_season_in_tracker": 2037,
+ "last_updated": "2026-10-26",
+ "source_file": "2026-10-26 CSU Vikings Tracker.xlsx",
+ "source_sha256": "d1ecf275043cf4ddc57830e1ca329f262a715d697dc00c1e34ead8d6ff30bf8f"
+}
