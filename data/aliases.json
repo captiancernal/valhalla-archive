@@ -5,7 +5,8 @@
     "B1": "2026-10-26",
     "B2": "2026-10-26",
     "B3": "2026-10-26",
-    "B4": "2026-10-26"
+    "B4": "2026-10-26",
+    "B5": "2026-10-26"
   },
   "players": {
     "Alan Rasheed": [
@@ -166,6 +167,9 @@
     ],
     "Chad Ogletree": [
       "Caleb Ogletree"
+    ],
+    "DeQuan Way": [
+      "DaQuan Way"
     ]
   },
   "not_the_same_person": [
