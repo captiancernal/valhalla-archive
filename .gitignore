@@ -19,3 +19,6 @@ __pycache__/
 Thumbs.db
 desktop.ini
 ~$*
+
+# Private local notes (Drive folder IDs etc.)
+CLAUDE.local.md
