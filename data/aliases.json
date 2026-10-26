@@ -8,7 +8,8 @@
     "B4": "2026-10-26",
     "B5": "2026-10-26",
     "B6": "2026-10-26",
-    "B7": "2026-10-26"
+    "B7": "2026-10-26",
+    "B8": "2026-10-26"
   },
   "players": {
     "Alan Rasheed": [
@@ -178,6 +179,9 @@
     ],
     "Nyles Wylie": [
       "Niles Wylie"
+    ],
+    "Walter Nolen": [
+      "Walter Nolan"
     ]
   },
   "not_the_same_person": [
@@ -213,6 +217,7 @@
   ],
   "coaches": {},
   "notes": {
-    "Kenny Tongues": "Owner: the name was changed in-game; use Kenny Tongues everywhere (approved 2026-10-26)."
+    "Kenny Tongues": "Owner: the name was changed in-game; use Kenny Tongues everywhere (approved 2026-10-26).",
+    "Walter Nolen": "Owner: same player; transferred from MISS (2024) to MICH (2025)."
   }
 }
