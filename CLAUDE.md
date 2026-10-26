@@ -27,7 +27,7 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 
 ## Milestone status
 - [x] M0 Setup Day: repo created and linked, folder layout made, Drive folders created, tracker copied to source/
-- [ ] M1 Workbook inventory, logo extraction, data-health queue (one fix at a time)
+- [~] M1 Workbook inventory, logo extraction, data-health queue (one fix at a time). Inventory and logos done; queue in `data/data-health.md`, being resolved item by item.
 - [ ] M2 Clean data tables + build scripts
 - [ ] M3 Design system (palettes need owner approval)
 - [ ] M4 Program / season / game / player pages
@@ -42,6 +42,17 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 ## Decisions log (approved by the owner after the spec)
 - 2026-10-26: Project lives at `C:\Users\Owner\Documents\valhalla-archive` (not the OneDrive Desktop, to avoid sync clashes with Git).
 - 2026-10-26: `source/` is git-ignored. Tracker copies are never pushed to the public repo.
+
+## Workbook facts learned in M1 (see data/data-health.md for the full picture)
+- Python: run scripts as `py -P scripts/<name>.py` (openpyxl + pillow installed with `--user`; `-I` would hide them).
+- Sheet "Coach Tim Slocombe " has a trailing space in its name.
+- Only CLEV has schedule, stat tables, depth chart, recruit lists, graduates and transfers. All three coach sheets have the same fields; columns sit in slightly different places.
+- Stats tabs use real Excel tables (4 per tab: passing, rushing, receiving, kicking). Conference Champions has 15 Excel tables (2024-2038; the first has no year in its title).
+- Standings blocks (top 4 each) in order: AAC, ACC, Big 12, Big Ten, C-USA, Independents, MAC, Mountain West, Pac-12, SEC, Sun Belt. Row 3 = national champion, row 4 = runner-up.
+- Recruiting summary rows 41-43 (2024 at C-H, 2025 at K-P) are CLEV, M-OH, OHIO (identified by logos). 2029-31 summaries are copies of 2025.
+- Depth chart cells are "Name - OVR"; bold = 90+, italic = drafted, * = transfer. Coaching staff (HC/OC/DC) with footnotes sits in rows 25-31.
+- Playoff Tree: one 16-row block per year starting at row 2 (2023) in a fixed bracket layout; logos overlay the cells.
+- Logos: `site/assets/logos/<ABBR>.png` (resized to 256px), conference marks in `site/assets/conferences/`. Team colors in `data/source-meta/team-colors.json`.
 
 ## Data model
 To be written in M2.

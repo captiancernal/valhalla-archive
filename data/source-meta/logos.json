@@ -1,0 +1,912 @@
+{
+  "logos": {
+    "CLEV": {
+      "file": "CLEV.png",
+      "hash": "a7c5650721",
+      "row": 1,
+      "col": 2
+    },
+    "TTU": {
+      "file": "TTU.png",
+      "hash": "92cfaf8eeb",
+      "row": 1,
+      "col": 5
+    },
+    "AFA": {
+      "file": "AFA.png",
+      "hash": "1c44ee8535",
+      "row": 2,
+      "col": 2
+    },
+    "MTSU": {
+      "file": "MTSU.png",
+      "hash": "911b2a7421",
+      "row": 2,
+      "col": 5
+    },
+    "AKR": {
+      "file": "AKR.png",
+      "hash": "53b610b353",
+      "row": 3,
+      "col": 2
+    },
+    "MINN": {
+      "file": "MINN.png",
+      "hash": "2d8d6fee5d",
+      "row": 3,
+      "col": 5
+    },
+    "BAMA": {
+      "file": "BAMA.png",
+      "hash": "e24ccd96bc",
+      "row": 4,
+      "col": 2
+    },
+    "MSST": {
+      "file": "MSST.png",
+      "hash": "bfc7ac9e64",
+      "row": 4,
+      "col": 5
+    },
+    "APP": {
+      "file": "APP.png",
+      "hash": "90883a50f3",
+      "row": 5,
+      "col": 2
+    },
+    "MIZ": {
+      "file": "MIZ.png",
+      "hash": "a242a4bb3e",
+      "row": 5,
+      "col": 5
+    },
+    "ARIZ": {
+      "file": "ARIZ.png",
+      "hash": "95700de86e",
+      "row": 6,
+      "col": 2
+    },
+    "NAVY": {
+      "file": "NAVY.png",
+      "hash": "18ca44d0cd",
+      "row": 6,
+      "col": 5
+    },
+    "ASU": {
+      "file": "ASU.png",
+      "hash": "06222c0ddf",
+      "row": 7,
+      "col": 2
+    },
+    "NCST": {
+      "file": "NCST.png",
+      "hash": "ab59e14b78",
+      "row": 7,
+      "col": 5
+    },
+    "ARK": {
+      "file": "ARK.png",
+      "hash": "0ab63824db",
+      "row": 8,
+      "col": 2
+    },
+    "NEB": {
+      "file": "NEB.png",
+      "hash": "3b3d2dd52d",
+      "row": 8,
+      "col": 5
+    },
+    "ARST": {
+      "file": "ARST.png",
+      "hash": "58c630a181",
+      "row": 9,
+      "col": 2
+    },
+    "NEV": {
+      "file": "NEV.png",
+      "hash": "c84a49112c",
+      "row": 9,
+      "col": 5
+    },
+    "ARMY": {
+      "file": "ARMY.png",
+      "hash": "091e1fef07",
+      "row": 10,
+      "col": 2
+    },
+    "UNM": {
+      "file": "UNM.png",
+      "hash": "fd0b7b81d3",
+      "row": 10,
+      "col": 5
+    },
+    "AUB": {
+      "file": "AUB.png",
+      "hash": "e5c6250f8d",
+      "row": 11,
+      "col": 2
+    },
+    "NMS": {
+      "file": "NMS.png",
+      "hash": "a2e2d94ece",
+      "row": 11,
+      "col": 5
+    },
+    "BALL": {
+      "file": "BALL.png",
+      "hash": "88633820e3",
+      "row": 12,
+      "col": 2
+    },
+    "UNC": {
+      "file": "UNC.png",
+      "hash": "bc4cdfd2da",
+      "row": 12,
+      "col": 5
+    },
+    "BU": {
+      "file": "BU.png",
+      "hash": "efd5c514e1",
+      "row": 13,
+      "col": 2
+    },
+    "UNT": {
+      "file": "UNT.png",
+      "hash": "c22da50305",
+      "row": 13,
+      "col": 5
+    },
+    "BOIS": {
+      "file": "BOIS.png",
+      "hash": "94ff0f2e62",
+      "row": 14,
+      "col": 2
+    },
+    "NIU": {
+      "file": "NIU.png",
+      "hash": "c87ad9af79",
+      "row": 14,
+      "col": 5
+    },
+    "BC": {
+      "file": "BC.png",
+      "hash": "ce35f15760",
+      "row": 15,
+      "col": 2
+    },
+    "NU": {
+      "file": "NU.png",
+      "hash": "6aef2f02f9",
+      "row": 15,
+      "col": 5
+    },
+    "BGSU": {
+      "file": "BGSU.png",
+      "hash": "e809e0f275",
+      "row": 16,
+      "col": 2
+    },
+    "ND": {
+      "file": "ND.png",
+      "hash": "cdf66b2739",
+      "row": 16,
+      "col": 5
+    },
+    "BUFF": {
+      "file": "BUFF.png",
+      "hash": "7f32c11563",
+      "row": 17,
+      "col": 2
+    },
+    "OHIO": {
+      "file": "OHIO.png",
+      "hash": "b50898567b",
+      "row": 17,
+      "col": 5
+    },
+    "BYU": {
+      "file": "BYU.png",
+      "hash": "91bdbc10f0",
+      "row": 18,
+      "col": 2
+    },
+    "OSU": {
+      "file": "OSU.png",
+      "hash": "ed63802352",
+      "row": 18,
+      "col": 5
+    },
+    "CAL": {
+      "file": "CAL.png",
+      "hash": "db86ac3400",
+      "row": 19,
+      "col": 2
+    },
+    "OU": {
+      "file": "OU.png",
+      "hash": "811e68b244",
+      "row": 19,
+      "col": 5
+    },
+    "CMU": {
+      "file": "CMU.png",
+      "hash": "18d9c5812c",
+      "row": 20,
+      "col": 2
+    },
+    "OKST": {
+      "file": "OKST.png",
+      "hash": "71d47db815",
+      "row": 20,
+      "col": 5
+    },
+    "CHAR": {
+      "file": "CHAR.png",
+      "hash": "9e962d43f5",
+      "row": 21,
+      "col": 2
+    },
+    "ODU": {
+      "file": "ODU.png",
+      "hash": "56f37626f3",
+      "row": 21,
+      "col": 5
+    },
+    "UC": {
+      "file": "UC.png",
+      "hash": "9316f7b3e5",
+      "row": 22,
+      "col": 2
+    },
+    "MISS": {
+      "file": "MISS.png",
+      "hash": "412d571858",
+      "row": 22,
+      "col": 5
+    },
+    "CLEM": {
+      "file": "CLEM.png",
+      "hash": "e50cf82cfa",
+      "row": 23,
+      "col": 2
+    },
+    "ORE": {
+      "file": "ORE.png",
+      "hash": "885b79c37e",
+      "row": 23,
+      "col": 5
+    },
+    "CCU": {
+      "file": "CCU.png",
+      "hash": "39bb984c19",
+      "row": 24,
+      "col": 2
+    },
+    "ORST": {
+      "file": "ORST.png",
+      "hash": "5f85f299ca",
+      "row": 24,
+      "col": 5
+    },
+    "COLO": {
+      "file": "COLO.png",
+      "hash": "4bfd1aa9a7",
+      "row": 25,
+      "col": 2
+    },
+    "PSU": {
+      "file": "PSU.png",
+      "hash": "15a0d252ed",
+      "row": 25,
+      "col": 5
+    },
+    "CSU": {
+      "file": "CSU.png",
+      "hash": "041060c5df",
+      "row": 26,
+      "col": 2
+    },
+    "PITT": {
+      "file": "PITT.png",
+      "hash": "a748770666",
+      "row": 26,
+      "col": 5
+    },
+    "DUKE": {
+      "file": "DUKE.png",
+      "hash": "22fdd6dc8f",
+      "row": 27,
+      "col": 2
+    },
+    "PUR": {
+      "file": "PUR.png",
+      "hash": "d1af63ea0f",
+      "row": 27,
+      "col": 5
+    },
+    "ECU": {
+      "file": "ECU.png",
+      "hash": "3bc5dddea5",
+      "row": 28,
+      "col": 2
+    },
+    "RICE": {
+      "file": "RICE.png",
+      "hash": "f0c25d653a",
+      "row": 28,
+      "col": 5
+    },
+    "EMU": {
+      "file": "EMU.png",
+      "hash": "dcdc5583e8",
+      "row": 29,
+      "col": 2
+    },
+    "RUTG": {
+      "file": "RUTG.png",
+      "hash": "e12eae1b05",
+      "row": 29,
+      "col": 5
+    },
+    "FAU": {
+      "file": "FAU.png",
+      "hash": "e48e21eb29",
+      "row": 30,
+      "col": 2
+    },
+    "SHSU": {
+      "file": "SHSU.png",
+      "hash": "9c80a70b91",
+      "row": 30,
+      "col": 5
+    },
+    "FIU": {
+      "file": "FIU.png",
+      "hash": "15e90c83fc",
+      "row": 31,
+      "col": 2
+    },
+    "SDSU": {
+      "file": "SDSU.png",
+      "hash": "fa9c56f4f7",
+      "row": 31,
+      "col": 5,
+      "alternates": [
+        "12eb31f1bb"
+      ]
+    },
+    "FLA": {
+      "file": "FLA.png",
+      "hash": "b98c8853cd",
+      "row": 32,
+      "col": 2
+    },
+    "SJSU": {
+      "file": "SJSU.png",
+      "hash": "9208168cc4",
+      "row": 32,
+      "col": 5
+    },
+    "FSU": {
+      "file": "FSU.png",
+      "hash": "24d4100322",
+      "row": 33,
+      "col": 2
+    },
+    "SMU": {
+      "file": "SMU.png",
+      "hash": "b83ef6ad11",
+      "row": 33,
+      "col": 5
+    },
+    "FRES": {
+      "file": "FRES.png",
+      "hash": "d019b2ae5d",
+      "row": 36,
+      "col": 2
+    },
+    "USA": {
+      "file": "USA.png",
+      "hash": "a9868febde",
+      "row": 36,
+      "col": 5
+    },
+    "UGA": {
+      "file": "UGA.png",
+      "hash": "e9a73cf4e3",
+      "row": 37,
+      "col": 2
+    },
+    "SCAR": {
+      "file": "SCAR.png",
+      "hash": "ae61426ff8",
+      "row": 37,
+      "col": 5
+    },
+    "GS": {
+      "file": "GS.png",
+      "hash": "90aa6aa4dc",
+      "row": 38,
+      "col": 2
+    },
+    "USF": {
+      "file": "USF.png",
+      "hash": "72bc1b9886",
+      "row": 38,
+      "col": 5
+    },
+    "GSU": {
+      "file": "GSU.png",
+      "hash": "b280d27f77",
+      "row": 39,
+      "col": 2
+    },
+    "USM": {
+      "file": "USM.png",
+      "hash": "c3af04e6ca",
+      "row": 39,
+      "col": 5,
+      "alternates": [
+        "c08532ec9f"
+      ]
+    },
+    "GT": {
+      "file": "GT.png",
+      "hash": "6f9c2fb1a2",
+      "row": 40,
+      "col": 2
+    },
+    "STAN": {
+      "file": "STAN.png",
+      "hash": "82380242e9",
+      "row": 40,
+      "col": 5
+    },
+    "HAW": {
+      "file": "HAW.png",
+      "hash": "3a3c025be8",
+      "row": 41,
+      "col": 2
+    },
+    "SYR": {
+      "file": "SYR.png",
+      "hash": "4f69752f6f",
+      "row": 41,
+      "col": 5
+    },
+    "UH": {
+      "file": "UH.png",
+      "hash": "b34a17f742",
+      "row": 42,
+      "col": 2
+    },
+    "TCU": {
+      "file": "TCU.png",
+      "hash": "4a8825b51e",
+      "row": 42,
+      "col": 5
+    },
+    "ILL": {
+      "file": "ILL.png",
+      "hash": "f1427a56e1",
+      "row": 43,
+      "col": 2
+    },
+    "TEM": {
+      "file": "TEM.png",
+      "hash": "e5b0e0c29c",
+      "row": 43,
+      "col": 5
+    },
+    "IU": {
+      "file": "IU.png",
+      "hash": "e66d5672f7",
+      "row": 44,
+      "col": 2
+    },
+    "UT": {
+      "file": "UT.png",
+      "hash": "0b12cfc07c",
+      "row": 44,
+      "col": 5
+    },
+    "IOWA": {
+      "file": "IOWA.png",
+      "hash": "49f9a4532e",
+      "row": 45,
+      "col": 2
+    },
+    "TEX": {
+      "file": "TEX.png",
+      "hash": "43287b5997",
+      "row": 45,
+      "col": 5
+    },
+    "ISU": {
+      "file": "ISU.png",
+      "hash": "ac02f9a182",
+      "row": 46,
+      "col": 2
+    },
+    "TAMU": {
+      "file": "TAMU.png",
+      "hash": "5a0cd6d0b3",
+      "row": 46,
+      "col": 5
+    },
+    "JKST": {
+      "file": "JKST.png",
+      "hash": "daa12b9f90",
+      "row": 47,
+      "col": 2
+    },
+    "TXST": {
+      "file": "TXST.png",
+      "hash": "8f093a5f14",
+      "row": 47,
+      "col": 5
+    },
+    "JMU": {
+      "file": "JMU.png",
+      "hash": "cdea3a71ce",
+      "row": 48,
+      "col": 2
+    },
+    "KU": {
+      "file": "KU.png",
+      "hash": "3ddc0899d1",
+      "row": 49,
+      "col": 2
+    },
+    "TOL": {
+      "file": "TOL.png",
+      "hash": "14c1bf1cba",
+      "row": 49,
+      "col": 5
+    },
+    "KSU": {
+      "file": "KSU.png",
+      "hash": "e8d0dc7077",
+      "row": 50,
+      "col": 2
+    },
+    "TROY": {
+      "file": "TROY.png",
+      "hash": "e054bc9207",
+      "row": 50,
+      "col": 5
+    },
+    "KENN": {
+      "file": "KENN.png",
+      "hash": "8fea91d8ce",
+      "row": 51,
+      "col": 2
+    },
+    "TLSA": {
+      "file": "TLSA.png",
+      "hash": "57980c2dd3",
+      "row": 51,
+      "col": 5
+    },
+    "KENT": {
+      "file": "KENT.png",
+      "hash": "9cd32b7ef2",
+      "row": 52,
+      "col": 2
+    },
+    "UAB": {
+      "file": "UAB.png",
+      "hash": "55d023e7db",
+      "row": 52,
+      "col": 5
+    },
+    "UK": {
+      "file": "UK.png",
+      "hash": "0cf342faf6",
+      "row": 53,
+      "col": 2
+    },
+    "UCF": {
+      "file": "UCF.png",
+      "hash": "f60d92fe9a",
+      "row": 53,
+      "col": 5
+    },
+    "LIB": {
+      "file": "LIB.png",
+      "hash": "c403643e01",
+      "row": 54,
+      "col": 2
+    },
+    "UCLA": {
+      "file": "UCLA.png",
+      "hash": "59716f0da0",
+      "row": 54,
+      "col": 5
+    },
+    "UL": {
+      "file": "UL.png",
+      "hash": "e5c864514d",
+      "row": 55,
+      "col": 2
+    },
+    "CONN": {
+      "file": "CONN.png",
+      "hash": "0eedd8cdf3",
+      "row": 55,
+      "col": 5
+    },
+    "ULM": {
+      "file": "ULM.png",
+      "hash": "f3c20025b0",
+      "row": 56,
+      "col": 2
+    },
+    "MASS": {
+      "file": "MASS.png",
+      "hash": "f60a55fb21",
+      "row": 56,
+      "col": 5
+    },
+    "LT": {
+      "file": "LT.png",
+      "hash": "80aaf8fb4d",
+      "row": 57,
+      "col": 2
+    },
+    "UNLV": {
+      "file": "UNLV.png",
+      "hash": "fc8b341412",
+      "row": 57,
+      "col": 5
+    },
+    "LOU": {
+      "file": "LOU.png",
+      "hash": "377d544a77",
+      "row": 58,
+      "col": 2
+    },
+    "USC": {
+      "file": "USC.png",
+      "hash": "c46622e381",
+      "row": 58,
+      "col": 5
+    },
+    "LSU": {
+      "file": "LSU.png",
+      "hash": "40ab5a855e",
+      "row": 59,
+      "col": 2
+    },
+    "UTEP": {
+      "file": "UTEP.png",
+      "hash": "1fe9eb975e",
+      "row": 59,
+      "col": 5
+    },
+    "MRSH": {
+      "file": "MRSH.png",
+      "hash": "5abe840768",
+      "row": 60,
+      "col": 2
+    },
+    "UTSA": {
+      "file": "UTSA.png",
+      "hash": "74d2d98b05",
+      "row": 60,
+      "col": 5
+    },
+    "UMD": {
+      "file": "UMD.png",
+      "hash": "d910f18266",
+      "row": 61,
+      "col": 2
+    },
+    "UTAH": {
+      "file": "UTAH.png",
+      "hash": "109aa76de6",
+      "row": 61,
+      "col": 5
+    },
+    "MEM": {
+      "file": "MEM.png",
+      "hash": "6118bb3c36",
+      "row": 62,
+      "col": 2
+    },
+    "USU": {
+      "file": "USU.png",
+      "hash": "33eae6149b",
+      "row": 62,
+      "col": 5
+    },
+    "MIA": {
+      "file": "MIA.png",
+      "hash": "160f12dd67",
+      "row": 63,
+      "col": 2
+    },
+    "VAN": {
+      "file": "VAN.png",
+      "hash": "b995276233",
+      "row": 63,
+      "col": 5
+    },
+    "M-OH": {
+      "file": "M-OH.png",
+      "hash": "a4508c2b9b",
+      "row": 64,
+      "col": 2
+    },
+    "UVA": {
+      "file": "UVA.png",
+      "hash": "8438e3a17e",
+      "row": 64,
+      "col": 5
+    },
+    "MICH": {
+      "file": "MICH.png",
+      "hash": "68cbffced1",
+      "row": 65,
+      "col": 2
+    },
+    "VT": {
+      "file": "VT.png",
+      "hash": "29b5b6d4ef",
+      "row": 65,
+      "col": 5
+    },
+    "MSU": {
+      "file": "MSU.png",
+      "hash": "e02097e319",
+      "row": 66,
+      "col": 2
+    },
+    "WAKE": {
+      "file": "WAKE.png",
+      "hash": "efe02cbb3e",
+      "row": 66,
+      "col": 5
+    },
+    "WMU": {
+      "file": "WMU.png",
+      "hash": "a394b59a14",
+      "row": 67,
+      "col": 5
+    },
+    "WIS": {
+      "file": "WIS.png",
+      "hash": "4471dee448",
+      "row": 68,
+      "col": 5
+    },
+    "UW": {
+      "file": "UW.png",
+      "hash": "74696c9e98",
+      "row": 69,
+      "col": 5
+    },
+    "TULN": {
+      "file": "TULN.png",
+      "hash": "0fa933c354",
+      "row": 70,
+      "col": 5
+    },
+    "WASH": {
+      "file": "WASH.png",
+      "hash": "6b34a96b70",
+      "row": 71,
+      "col": 5
+    },
+    "WSU": {
+      "file": "WSU.png",
+      "hash": "a681c54fd1",
+      "row": 72,
+      "col": 5
+    },
+    "WVU": {
+      "file": "WVU.png",
+      "hash": "0326fd7ae5",
+      "row": 73,
+      "col": 5
+    },
+    "WKU": {
+      "file": "WKU.png",
+      "hash": "0c5deabb3e",
+      "row": 74,
+      "col": 5
+    },
+    "MONT": {
+      "file": "MONT.png",
+      "hash": "d2cefd1836",
+      "row": 141,
+      "col": 2
+    },
+    "NDSU": {
+      "file": "NDSU.png",
+      "hash": "7521de78fe",
+      "row": 142,
+      "col": 2
+    },
+    "NOVA": {
+      "file": "NOVA.png",
+      "hash": "612b6e4673",
+      "row": 143,
+      "col": 2
+    },
+    "DEL": {
+      "file": "DEL.png",
+      "hash": "c589974c65",
+      "row": 144,
+      "col": 2
+    },
+    "EWU": {
+      "file": "EWU.png",
+      "hash": "e3f2dd872c",
+      "row": 145,
+      "col": 2
+    },
+    "GRAM": {
+      "file": "GRAM.png",
+      "hash": "71f28fe613",
+      "row": 146,
+      "col": 2
+    },
+    "MTST": {
+      "file": "MTST.png",
+      "hash": "bade8f2e78",
+      "row": 147,
+      "col": 2
+    },
+    "YSU": {
+      "file": "YSU.png",
+      "hash": "5e1ea6efca",
+      "row": 148,
+      "col": 2
+    },
+    "EKU": {
+      "file": "EKU.png",
+      "hash": "6614fc8d4e",
+      "row": 149,
+      "col": 2
+    },
+    "FUR": {
+      "file": "FUR.png",
+      "hash": "d791800e98",
+      "row": 150,
+      "col": 2
+    },
+    "RICH": {
+      "file": "RICH.png",
+      "hash": "a33fffb47d",
+      "row": 151,
+      "col": 2
+    },
+    "UNI": {
+      "file": "UNI.png",
+      "hash": "50ac65d172",
+      "row": 152,
+      "col": 2
+    },
+    "SIU": {
+      "file": "SIU.png",
+      "hash": "4f93223dc7",
+      "row": 153,
+      "col": 2
+    },
+    "CSM": {
+      "file": "CSM.png",
+      "hash": "8b17fd8b89",
+      "row": 154,
+      "col": 2
+    },
+    "UNH": {
+      "file": "UNH.png",
+      "hash": "cea0d724ba",
+      "row": 155,
+      "col": 2
+    }
+  },
+  "unmatched": [],
+  "same_image_multiple_teams": {}
+}

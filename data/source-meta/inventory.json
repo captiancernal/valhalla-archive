@@ -1,0 +1,563 @@
+[
+  {
+    "sheet": "Instructions",
+    "dims": "A1:AA322",
+    "max_row": 322,
+    "max_col": 27,
+    "tables": {},
+    "images": 20,
+    "merged": 25,
+    "value_types": {
+      "str": 169,
+      "float": 1
+    },
+    "error_cells": {}
+  },
+  {
+    "sheet": "Logos",
+    "dims": "A1:L355",
+    "max_row": 355,
+    "max_col": 12,
+    "tables": {},
+    "images": 223,
+    "merged": 0,
+    "value_types": {
+      "str": 225
+    },
+    "error_cells": {}
+  },
+  {
+    "sheet": "Schedule",
+    "dims": "A1:JA39",
+    "max_row": 39,
+    "max_col": 261,
+    "tables": {},
+    "images": 0,
+    "merged": 94,
+    "value_types": {
+      "str": 1593,
+      "float": 274,
+      "int": 4
+    },
+    "error_cells": {
+      "#REF!": 16
+    }
+  },
+  {
+    "sheet": "Depth Chart",
+    "dims": "A1:MW83",
+    "max_row": 83,
+    "max_col": 361,
+    "tables": {},
+    "images": 0,
+    "merged": 1624,
+    "value_types": {
+      "float": 30,
+      "str": 3808
+    },
+    "error_cells": {}
+  },
+  {
+    "sheet": "Coach Josh Dolan",
+    "dims": "A1:AJ37",
+    "max_row": 37,
+    "max_col": 36,
+    "tables": {},
+    "images": 0,
+    "merged": 2,
+    "value_types": {
+      "str": 377,
+      "float": 26,
+      "int": 29
+    },
+    "error_cells": {
+      "#DIV/0!": 16
+    }
+  },
+  {
+    "sheet": "Coach Tim Slocombe ",
+    "dims": "A1:AJ37",
+    "max_row": 37,
+    "max_col": 36,
+    "tables": {},
+    "images": 0,
+    "merged": 2,
+    "value_types": {
+      "str": 376,
+      "float": 25,
+      "int": 30
+    },
+    "error_cells": {
+      "#DIV/0!": 16
+    }
+  },
+  {
+    "sheet": "Coach Joe Snyderwine",
+    "dims": "A1:AK37",
+    "max_row": 37,
+    "max_col": 37,
+    "tables": {},
+    "images": 0,
+    "merged": 1,
+    "value_types": {
+      "str": 345,
+      "float": 24,
+      "int": 31
+    },
+    "error_cells": {
+      "#DIV/0!": 16
+    }
+  },
+  {
+    "sheet": "RecordsHall of Fame",
+    "dims": "A1:I1002",
+    "max_row": 1002,
+    "max_col": 9,
+    "tables": {},
+    "images": 0,
+    "merged": 0,
+    "value_types": {
+      "str": 121,
+      "float": 33
+    },
+    "error_cells": {}
+  },
+  {
+    "sheet": "Conference Champions",
+    "dims": "A1:N179",
+    "max_row": 179,
+    "max_col": 14,
+    "tables": {
+      "Table_1": "A1:F11",
+      "Table_2": "A13:F23",
+      "Table_3": "A25:F35",
+      "Table_4": "A37:F47",
+      "Table_5": "A49:F59",
+      "Table_6": "A61:F71",
+      "Table_7": "A73:F83",
+      "Table_8": "A85:F95",
+      "Table_9": "A97:F107",
+      "Table_10": "A109:F119",
+      "Table_11": "A121:F131",
+      "Table_12": "A133:F143",
+      "Table_13": "A145:F155",
+      "Table_14": "A157:F167",
+      "Table_15": "A169:F179"
+    },
+    "images": 0,
+    "merged": 0,
+    "value_types": {
+      "str": 949
+    },
+    "error_cells": {}
+  },
+  {
+    "sheet": "Standings",
+    "dims": "A1:AH79",
+    "max_row": 79,
+    "max_col": 34,
+    "tables": {},
+    "images": 12,
+    "merged": 0,
+    "value_types": {
+      "float": 34,
+      "int": 29,
+      "str": 664
+    },
+    "error_cells": {}
+  },
+  {
+    "sheet": "AP Top 25",
+    "dims": "A1:AG42",
+    "max_row": 42,
+    "max_col": 33,
+    "tables": {},
+    "images": 1,
+    "merged": 0,
+    "value_types": {
+      "float": 26,
+      "int": 29,
+      "str": 375
+    },
+    "error_cells": {}
+  },
+  {
+    "sheet": "CFB Playoff Tree",
+    "dims": "A1:Q671",
+    "max_row": 671,
+    "max_col": 17,
+    "tables": {},
+    "images": 238,
+    "merged": 188,
+    "value_types": {
+      "float": 313,
+      "str": 519,
+      "int": 28
+    },
+    "error_cells": {}
+  },
+  {
+    "sheet": "All-Americans",
+    "dims": "A1:EV37",
+    "max_row": 37,
+    "max_col": 152,
+    "tables": {},
+    "images": 2,
+    "merged": 30,
+    "value_types": {
+      "float": 1,
+      "int": 29,
+      "str": 1593
+    },
+    "error_cells": {}
+  },
+  {
+    "sheet": "Awards",
+    "dims": "A1:BM36",
+    "max_row": 36,
+    "max_col": 65,
+    "tables": {},
+    "images": 18,
+    "merged": 0,
+    "value_types": {
+      "str": 512,
+      "float": 1,
+      "int": 29
+    },
+    "error_cells": {}
+  },
+  {
+    "sheet": "Recruiting",
+    "dims": "A1:GT60",
+    "max_row": 60,
+    "max_col": 202,
+    "tables": {},
+    "images": 16,
+    "merged": 33,
+    "value_types": {
+      "str": 1092,
+      "float": 649,
+      "int": 27
+    },
+    "error_cells": {}
+  },
+  {
+    "sheet": "Graduates",
+    "dims": "A1:EA39",
+    "max_row": 39,
+    "max_col": 131,
+    "tables": {
+      "Table_16": "D4:I36",
+      "Table_17": "K4:P28",
+      "Table_18": "R4:W15"
+    },
+    "images": 0,
+    "merged": 35,
+    "value_types": {
+      "str": 1194,
+      "float": 224
+    },
+    "error_cells": {}
+  },
+  {
+    "sheet": "Transfers",
+    "dims": "A1:FU37",
+    "max_row": 37,
+    "max_col": 177,
+    "tables": {},
+    "images": 0,
+    "merged": 31,
+    "value_types": {
+      "float": 7,
+      "int": 28,
+      "str": 345
+    },
+    "error_cells": {}
+  },
+  {
+    "sheet": "2024 Stats",
+    "dims": "A1:Q230",
+    "max_row": 230,
+    "max_col": 17,
+    "tables": {
+      "Table_19": "A1:O3",
+      "Table_20": "A5:N12",
+      "Table_21": "A14:L27",
+      "Table_22": "A29:Q30"
+    },
+    "images": 0,
+    "merged": 0,
+    "value_types": {
+      "str": 108,
+      "float": 241,
+      "int": 11
+    },
+    "error_cells": {
+      "#DIV/0!": 3
+    }
+  },
+  {
+    "sheet": "2025 Stats",
+    "dims": "A1:Q229",
+    "max_row": 229,
+    "max_col": 17,
+    "tables": {
+      "Table_23": "A1:O3",
+      "Table_24": "A5:N13",
+      "Table_25": "A15:L26",
+      "Table_26": "A28:Q29"
+    },
+    "images": 0,
+    "merged": 0,
+    "value_types": {
+      "str": 103,
+      "float": 241,
+      "int": 6
+    },
+    "error_cells": {}
+  },
+  {
+    "sheet": "2026 Stats",
+    "dims": "A1:Q229",
+    "max_row": 229,
+    "max_col": 17,
+    "tables": {
+      "Table_27": "A1:O3",
+      "Table_28": "A5:N13",
+      "Table_29": "A15:L26",
+      "Table_30": "A28:Q29"
+    },
+    "images": 0,
+    "merged": 0,
+    "value_types": {
+      "str": 109,
+      "float": 236,
+      "int": 5
+    },
+    "error_cells": {
+      "#DIV/0!": 6
+    }
+  },
+  {
+    "sheet": "2027 Stats",
+    "dims": "A1:Q228",
+    "max_row": 228,
+    "max_col": 17,
+    "tables": {
+      "Table_31": "A1:O3",
+      "Table_32": "A5:N12",
+      "Table_33": "A14:L25",
+      "Table_34": "A27:Q28"
+    },
+    "images": 0,
+    "merged": 0,
+    "value_types": {
+      "str": 101,
+      "float": 227,
+      "int": 8
+    },
+    "error_cells": {}
+  },
+  {
+    "sheet": "2028 Stats",
+    "dims": "A1:Q228",
+    "max_row": 228,
+    "max_col": 17,
+    "tables": {
+      "Table_35": "A1:O3",
+      "Table_36": "A5:N12",
+      "Table_37": "A14:L25",
+      "Table_38": "A27:Q28"
+    },
+    "images": 0,
+    "merged": 0,
+    "value_types": {
+      "str": 101,
+      "float": 228,
+      "int": 7
+    },
+    "error_cells": {}
+  },
+  {
+    "sheet": "2029 Stats",
+    "dims": "A1:Q228",
+    "max_row": 228,
+    "max_col": 17,
+    "tables": {
+      "Table_39": "A1:O3",
+      "Table_41": "A5:N12",
+      "Table_44": "A14:L25",
+      "Table_46": "A27:Q28"
+    },
+    "images": 0,
+    "merged": 0,
+    "value_types": {
+      "str": 101,
+      "float": 226,
+      "int": 9
+    },
+    "error_cells": {}
+  },
+  {
+    "sheet": "2030 Stats",
+    "dims": "A1:Q228",
+    "max_row": 228,
+    "max_col": 17,
+    "tables": {
+      "Table_40": "A1:O3",
+      "Table_42": "A5:N12",
+      "Table_43": "A14:L25",
+      "Table_45": "A27:Q28"
+    },
+    "images": 0,
+    "merged": 0,
+    "value_types": {
+      "str": 101,
+      "float": 229,
+      "int": 6
+    },
+    "error_cells": {}
+  },
+  {
+    "sheet": "2031 Stats",
+    "dims": "A1:Q228",
+    "max_row": 228,
+    "max_col": 17,
+    "tables": {
+      "Table_47": "A1:O3",
+      "Table_48": "A5:N12",
+      "Table_49": "A14:L25",
+      "Table_50": "A27:Q28"
+    },
+    "images": 0,
+    "merged": 0,
+    "value_types": {
+      "str": 98,
+      "float": 218,
+      "int": 5
+    },
+    "error_cells": {}
+  },
+  {
+    "sheet": "2032 Stats",
+    "dims": "A1:Q228",
+    "max_row": 228,
+    "max_col": 17,
+    "tables": {
+      "Table_51": "A1:O3",
+      "Table_53": "A5:N12",
+      "Table_54": "A14:L25",
+      "Table_56": "A27:Q28"
+    },
+    "images": 0,
+    "merged": 0,
+    "value_types": {
+      "str": 98,
+      "float": 222,
+      "int": 1
+    },
+    "error_cells": {}
+  },
+  {
+    "sheet": "2033 Stats",
+    "dims": "A1:Q228",
+    "max_row": 228,
+    "max_col": 17,
+    "tables": {
+      "Table_52": "A1:O3",
+      "Table_55": "A5:N12",
+      "Table_57": "A14:L25",
+      "Table_58": "A27:Q28"
+    },
+    "images": 0,
+    "merged": 0,
+    "value_types": {
+      "str": 94,
+      "float": 192,
+      "int": 7
+    },
+    "error_cells": {}
+  },
+  {
+    "sheet": "2034 Stats",
+    "dims": "A1:Q228",
+    "max_row": 228,
+    "max_col": 17,
+    "tables": {
+      "Table_59": "A1:O3",
+      "Table_61": "A5:N12",
+      "Table_63": "A14:L25",
+      "Table_65": "A27:Q28"
+    },
+    "images": 0,
+    "merged": 0,
+    "value_types": {
+      "str": 95,
+      "float": 196,
+      "int": 2
+    },
+    "error_cells": {
+      "#DIV/0!": 1
+    }
+  },
+  {
+    "sheet": "2035 Stats",
+    "dims": "A1:Q228",
+    "max_row": 228,
+    "max_col": 17,
+    "tables": {
+      "Table_60": "A1:O3",
+      "Table_62": "A5:N12",
+      "Table_64": "A14:L25",
+      "Table_66": "A27:Q28"
+    },
+    "images": 0,
+    "merged": 0,
+    "value_types": {
+      "str": 96,
+      "float": 208,
+      "int": 3
+    },
+    "error_cells": {}
+  },
+  {
+    "sheet": "2036 Stats",
+    "dims": "A1:Q228",
+    "max_row": 228,
+    "max_col": 17,
+    "tables": {
+      "Table_67": "A1:O3",
+      "Table_68": "A5:N12",
+      "Table_69": "A14:L25",
+      "Table_70": "A27:Q28"
+    },
+    "images": 0,
+    "merged": 0,
+    "value_types": {
+      "str": 94,
+      "float": 195,
+      "int": 4
+    },
+    "error_cells": {}
+  },
+  {
+    "sheet": "2037 Stats",
+    "dims": "A1:Q228",
+    "max_row": 228,
+    "max_col": 17,
+    "tables": {
+      "Table_71": "A1:O3",
+      "Table_72": "A5:N12",
+      "Table_73": "A14:L25",
+      "Table_74": "A27:Q28"
+    },
+    "images": 0,
+    "merged": 0,
+    "value_types": {
+      "str": 94,
+      "float": 198,
+      "int": 1
+    },
+    "error_cells": {}
+  }
+]

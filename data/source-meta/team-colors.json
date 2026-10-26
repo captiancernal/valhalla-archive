@@ -1,0 +1,762 @@
+{
+  "AFA": {
+    "fill": "#003087",
+    "font": "#FFFFFF",
+    "cell": "B26"
+  },
+  "MTSU": {
+    "fill": "#0066CC",
+    "font": "#FFFFFF",
+    "cell": "F26"
+  },
+  "AKR": {
+    "fill": "#041E42",
+    "font": "#FFFFFF",
+    "cell": "B27"
+  },
+  "MINN": {
+    "fill": "#7A0019",
+    "font": "#FFCC33",
+    "cell": "F27"
+  },
+  "BAMA": {
+    "fill": "#9E1B32",
+    "font": "#FFFFFF",
+    "cell": "B28"
+  },
+  "MSST": {
+    "fill": "#660000",
+    "font": "#FFFFFF",
+    "cell": "F28"
+  },
+  "APP": {
+    "fill": "#222222",
+    "font": "#FFCC00",
+    "cell": "B29"
+  },
+  "MIZ": {
+    "fill": "#000000",
+    "font": "#F1B82D",
+    "cell": "F29"
+  },
+  "ARIZ": {
+    "fill": "#CC0033",
+    "font": "#FFFFFF",
+    "cell": "B30"
+  },
+  "NAVY": {
+    "fill": "#00205B",
+    "font": "#C5B783",
+    "cell": "F30"
+  },
+  "ASU": {
+    "fill": "#8C1D40",
+    "font": "#FFC627",
+    "cell": "B31"
+  },
+  "NCST": {
+    "fill": "#CC0000",
+    "font": "#FFFFFF",
+    "cell": "F31"
+  },
+  "ARK": {
+    "fill": "#9D2235",
+    "font": "#FFFFFF",
+    "cell": "B32"
+  },
+  "NEB": {
+    "fill": "#E41C38",
+    "font": "#FFFFFF",
+    "cell": "F32"
+  },
+  "ARST": {
+    "fill": "#CC092F",
+    "font": "#FFFFFF",
+    "cell": "B33"
+  },
+  "NEV": {
+    "fill": "#003366",
+    "font": "#FFFFFF",
+    "cell": "F33"
+  },
+  "ARMY": {
+    "fill": "#000000",
+    "font": "#D4BF91",
+    "cell": "B34"
+  },
+  "UNM": {
+    "fill": "#BA0C2F",
+    "font": "#FFFFFF",
+    "cell": "F34"
+  },
+  "AUB": {
+    "fill": "#0C2340",
+    "font": "#EC6F00",
+    "cell": "B35"
+  },
+  "NMS": {
+    "fill": "#9E1B32",
+    "font": "#FFFFFF",
+    "cell": "F35"
+  },
+  "BALL": {
+    "fill": "#BA0C2F",
+    "font": "#FFFFFF",
+    "cell": "B36"
+  },
+  "UNC": {
+    "fill": "#7BAFD4",
+    "font": "#FFFFFF",
+    "cell": "F36"
+  },
+  "BU": {
+    "fill": "#154734",
+    "font": "#FFB81C",
+    "cell": "B37"
+  },
+  "UNT": {
+    "fill": "#00853E",
+    "font": "#FFFFFF",
+    "cell": "F37"
+  },
+  "BOIS": {
+    "fill": "#0033A0",
+    "font": "#FFFFFF",
+    "cell": "B38"
+  },
+  "NIU": {
+    "fill": "#000000",
+    "font": "#FFFFFF",
+    "cell": "F38"
+  },
+  "BC": {
+    "fill": "#98002E",
+    "font": "#FFFFFF",
+    "cell": "B39"
+  },
+  "NU": {
+    "fill": "#4E2A84",
+    "font": "#FFFFFF",
+    "cell": "F39"
+  },
+  "BGSU": {
+    "fill": "#FE5000",
+    "font": "#FFFFFF",
+    "cell": "B40"
+  },
+  "ND": {
+    "fill": "#0C2340",
+    "font": "#AE9142",
+    "cell": "F40"
+  },
+  "BUFF": {
+    "fill": "#005BBB",
+    "font": "#FFFFFF",
+    "cell": "B41"
+  },
+  "OHIO": {
+    "fill": "#00694E",
+    "font": "#FFFFFF",
+    "cell": "F41"
+  },
+  "BYU": {
+    "fill": "#0062B8",
+    "font": "#FFFFFF",
+    "cell": "B42"
+  },
+  "OSU": {
+    "fill": "#BB0000",
+    "font": "#FFFFFF",
+    "cell": "F42"
+  },
+  "CAL": {
+    "fill": "#003262",
+    "font": "#FDB515",
+    "cell": "B43"
+  },
+  "OU": {
+    "fill": "#841617",
+    "font": "#FFFFFF",
+    "cell": "F43"
+  },
+  "CMU": {
+    "fill": "#6A0032",
+    "font": "#FFC82E",
+    "cell": "B44"
+  },
+  "OKST": {
+    "fill": "#000000",
+    "font": "#FF7300",
+    "cell": "F44"
+  },
+  "CHAR": {
+    "fill": "#046A38",
+    "font": "#FFFFFF",
+    "cell": "B45"
+  },
+  "ODU": {
+    "fill": "#003057",
+    "font": "#D9D9D9",
+    "cell": "F45"
+  },
+  "UC": {
+    "fill": "#E00122",
+    "font": "#FFFFFF",
+    "cell": "B46"
+  },
+  "MISS": {
+    "fill": "#CE1126",
+    "font": "#FFFFFF",
+    "cell": "F46"
+  },
+  "CLEM": {
+    "fill": "#F56600",
+    "font": "#FFFFFF",
+    "cell": "B47"
+  },
+  "ORE": {
+    "fill": "#007030",
+    "font": "#FEE123",
+    "cell": "F47"
+  },
+  "CCU": {
+    "fill": "#006F71",
+    "font": "#FFFFFF",
+    "cell": "B48"
+  },
+  "ORST": {
+    "fill": "#DC4405",
+    "font": "#FFFFFF",
+    "cell": "F48"
+  },
+  "COLO": {
+    "fill": "#000000",
+    "font": "#CFB87C",
+    "cell": "B49"
+  },
+  "PSU": {
+    "fill": "#041E42",
+    "font": "#FFFFFF",
+    "cell": "F49"
+  },
+  "CLEV": {
+    "fill": "#024731",
+    "font": null,
+    "cell": "B50"
+  },
+  "PITT": {
+    "fill": "#003594",
+    "font": "#FFB81C",
+    "cell": "F50"
+  },
+  "CSU": {
+    "fill": "#1E4D2B",
+    "font": "#C8C372",
+    "cell": "B51"
+  },
+  "PUR": {
+    "fill": "#000000",
+    "font": "#CEB888",
+    "cell": "F51"
+  },
+  "DUKE": {
+    "fill": "#003087",
+    "font": "#FFFFFF",
+    "cell": "B52"
+  },
+  "RICE": {
+    "fill": "#00205B",
+    "font": "#FFFFFF",
+    "cell": "F52"
+  },
+  "ECU": {
+    "fill": "#592A8A",
+    "font": "#FFFFFF",
+    "cell": "B53"
+  },
+  "RUTG": {
+    "fill": "#CC0033",
+    "font": "#FFFFFF",
+    "cell": "F53"
+  },
+  "EMU": {
+    "fill": "#006633",
+    "font": "#FFFFFF",
+    "cell": "B54"
+  },
+  "SHSU": {
+    "fill": "#FE5100",
+    "font": "#FFFFFF",
+    "cell": "F54"
+  },
+  "FAU": {
+    "fill": "#003366",
+    "font": "#FFFFFF",
+    "cell": "B55"
+  },
+  "SDSU": {
+    "fill": "#0033A0",
+    "font": "#FFD100",
+    "cell": "B94"
+  },
+  "FIU": {
+    "fill": "#081E3F",
+    "font": "#B6862C",
+    "cell": "B56"
+  },
+  "SJSU": {
+    "fill": "#0055A2",
+    "font": "#FFFFFF",
+    "cell": "F56"
+  },
+  "FLA": {
+    "fill": "#0021A5",
+    "font": "#FFFFFF",
+    "cell": "B57"
+  },
+  "SMU": {
+    "fill": "#0033A0",
+    "font": "#FFFFFF",
+    "cell": "F57"
+  },
+  "FSU": {
+    "fill": "#782F40",
+    "font": "#CEB888",
+    "cell": "B58"
+  },
+  "USA": {
+    "fill": "#00205B",
+    "font": "#FFFFFF",
+    "cell": "F58"
+  },
+  "FRES": {
+    "fill": "#DB0032",
+    "font": "#FFFFFF",
+    "cell": "B59"
+  },
+  "SCAR": {
+    "fill": "#73000A",
+    "font": "#FFFFFF",
+    "cell": "F59"
+  },
+  "UGA": {
+    "fill": "#BA0C2F",
+    "font": "#FFFFFF",
+    "cell": "B60"
+  },
+  "USF": {
+    "fill": "#006747",
+    "font": "#FFFFFF",
+    "cell": "F60"
+  },
+  "GS": {
+    "fill": "#011E41",
+    "font": "#D9D9D9",
+    "cell": "B61"
+  },
+  "USM": {
+    "fill": "#000000",
+    "font": "#FDB515",
+    "cell": "F61"
+  },
+  "GSU": {
+    "fill": "#0039A6",
+    "font": "#FFFFFF",
+    "cell": "B62"
+  },
+  "STAN": {
+    "fill": "#8C1515",
+    "font": "#FFFFFF",
+    "cell": "F62"
+  },
+  "GT": {
+    "fill": "#B3A369",
+    "font": "#FFFFFF",
+    "cell": "B63"
+  },
+  "SYR": {
+    "fill": "#F76900",
+    "font": "#FFFFFF",
+    "cell": "F63"
+  },
+  "HAW": {
+    "fill": "#024731",
+    "font": "#FFFFFF",
+    "cell": "B64"
+  },
+  "TCU": {
+    "fill": "#4D1979",
+    "font": "#FFFFFF",
+    "cell": "F64"
+  },
+  "UH": {
+    "fill": "#C8102E",
+    "font": "#FFFFFF",
+    "cell": "B65"
+  },
+  "TEM": {
+    "fill": "#9D2235",
+    "font": "#FFFFFF",
+    "cell": "F65"
+  },
+  "ILL": {
+    "fill": "#13294B",
+    "font": "#E84A27",
+    "cell": "B66"
+  },
+  "UT": {
+    "fill": "#FF8200",
+    "font": "#FFFFFF",
+    "cell": "F66"
+  },
+  "IU": {
+    "fill": "#990000",
+    "font": "#FFFFFF",
+    "cell": "B67"
+  },
+  "TEX": {
+    "fill": "#BF5700",
+    "font": "#FFFFFF",
+    "cell": "F67"
+  },
+  "IOWA": {
+    "fill": "#000000",
+    "font": "#FFCD00",
+    "cell": "B68"
+  },
+  "TAMU": {
+    "fill": "#500000",
+    "font": "#FFFFFF",
+    "cell": "F68"
+  },
+  "ISU": {
+    "fill": "#C8102E",
+    "font": "#F1BE48",
+    "cell": "B69"
+  },
+  "TXST": {
+    "fill": "#501214",
+    "font": "#FFFFFF",
+    "cell": "F69"
+  },
+  "JKST": {
+    "fill": "#CC0000",
+    "font": "#FFFFFF",
+    "cell": "B70"
+  },
+  "TTU": {
+    "fill": "#C00000",
+    "font": "#FFFFFF",
+    "cell": "F70"
+  },
+  "JMU": {
+    "fill": "#450084",
+    "font": "#CBB677",
+    "cell": "B71"
+  },
+  "TOL": {
+    "fill": "#15397F",
+    "font": "#FFDA00",
+    "cell": "F71"
+  },
+  "KU": {
+    "fill": "#0051BA",
+    "font": "#FFFFFF",
+    "cell": "B72"
+  },
+  "TROY": {
+    "fill": "#8A2432",
+    "font": "#FFFFFF",
+    "cell": "F72"
+  },
+  "KSU": {
+    "fill": "#512888",
+    "font": "#D9D9D9",
+    "cell": "B73"
+  },
+  "TLSA": {
+    "fill": "#002D72",
+    "font": "#FFFFFF",
+    "cell": "F73"
+  },
+  "KENN": {
+    "fill": "#FDBB30",
+    "font": "#000000",
+    "cell": "B74"
+  },
+  "UAB": {
+    "fill": "#006341",
+    "font": "#FFFFFF",
+    "cell": "F74"
+  },
+  "KENT": {
+    "fill": "#002664",
+    "font": "#EAAB00",
+    "cell": "B75"
+  },
+  "UCF": {
+    "fill": "#000000",
+    "font": "#BA9B37",
+    "cell": "F75"
+  },
+  "UK": {
+    "fill": "#0033A0",
+    "font": "#FFFFFF",
+    "cell": "B76"
+  },
+  "UCLA": {
+    "fill": "#2D68C4",
+    "font": "#FFFFFF",
+    "cell": "F76"
+  },
+  "LIB": {
+    "fill": "#002D62",
+    "font": "#FFFFFF",
+    "cell": "B77"
+  },
+  "CONN": {
+    "fill": "#000E2F",
+    "font": "#FFFFFF",
+    "cell": "F77"
+  },
+  "UL": {
+    "fill": "#CE181E",
+    "font": "#FFFFFF",
+    "cell": "B78"
+  },
+  "MASS": {
+    "fill": "#971B2F",
+    "font": "#FFFFFF",
+    "cell": "F78"
+  },
+  "ULM": {
+    "fill": "#840029",
+    "font": "#FDB913",
+    "cell": "B79"
+  },
+  "UNLV": {
+    "fill": "#CF0A2C",
+    "font": "#FFFFFF",
+    "cell": "F79"
+  },
+  "LT": {
+    "fill": "#002F8B",
+    "font": "#FFFFFF",
+    "cell": "B80"
+  },
+  "USC": {
+    "fill": "#990000",
+    "font": "#FFC72C",
+    "cell": "F80"
+  },
+  "LOU": {
+    "fill": "#AD0000",
+    "font": "#FFFFFF",
+    "cell": "B81"
+  },
+  "UTEP": {
+    "fill": "#041E42",
+    "font": "#FFFFFF",
+    "cell": "F81"
+  },
+  "LSU": {
+    "fill": "#461D7C",
+    "font": "#FDD023",
+    "cell": "B82"
+  },
+  "UTSA": {
+    "fill": "#0C2340",
+    "font": "#F15A22",
+    "cell": "F82"
+  },
+  "MRSH": {
+    "fill": "#00B140",
+    "font": "#FFFFFF",
+    "cell": "B83"
+  },
+  "UTAH": {
+    "fill": "#CC0000",
+    "font": "#FFFFFF",
+    "cell": "F83"
+  },
+  "UMD": {
+    "fill": "#E03A3E",
+    "font": "#FFFFFF",
+    "cell": "B84"
+  },
+  "USU": {
+    "fill": "#00263A",
+    "font": "#B7B7B7",
+    "cell": "F84"
+  },
+  "MEM": {
+    "fill": "#003087",
+    "font": "#D9D9D9",
+    "cell": "B85"
+  },
+  "VAN": {
+    "fill": "#000000",
+    "font": "#CFAE70",
+    "cell": "F85"
+  },
+  "MIA": {
+    "fill": "#F47321",
+    "font": "#FFFFFF",
+    "cell": "B86"
+  },
+  "UVA": {
+    "fill": "#232D4B",
+    "font": "#F84C1E",
+    "cell": "F86"
+  },
+  "M-OH": {
+    "fill": "#B61E2E",
+    "font": "#FFFFFF",
+    "cell": "B87"
+  },
+  "VT": {
+    "fill": "#630031",
+    "font": "#FFFFFF",
+    "cell": "F87"
+  },
+  "MICH": {
+    "fill": "#00274C",
+    "font": "#FFCB05",
+    "cell": "B88"
+  },
+  "WAKE": {
+    "fill": "#000000",
+    "font": "#CFB989",
+    "cell": "F88"
+  },
+  "MSU": {
+    "fill": "#18453B",
+    "font": "#FFFFFF",
+    "cell": "B89"
+  },
+  "WASH": {
+    "fill": "#4B2E83",
+    "font": "#B7A57A",
+    "cell": "F89"
+  },
+  "W": {
+    "fill": "#00AC44",
+    "font": "#FFFFFF",
+    "cell": "B90"
+  },
+  "WSU": {
+    "fill": "#981E32",
+    "font": "#FFFFFF",
+    "cell": "F90"
+  },
+  "L": {
+    "fill": "#E10000",
+    "font": "#FFFFFF",
+    "cell": "B91"
+  },
+  "WVU": {
+    "fill": "#002855",
+    "font": "#EAAA00",
+    "cell": "F91"
+  },
+  "WKU": {
+    "fill": "#C60C30",
+    "font": "#FFFFFF",
+    "cell": "F92"
+  },
+  "WMU": {
+    "fill": "#6C4023",
+    "font": "#FFFFFF",
+    "cell": "F93"
+  },
+  "WIS": {
+    "fill": "#C5050C",
+    "font": "#FFFFFF",
+    "cell": "F94"
+  },
+  "MONT": {
+    "fill": "#660033",
+    "font": "#FFFFFF",
+    "cell": "B95"
+  },
+  "UW": {
+    "fill": "#492F24",
+    "font": "#FFC425",
+    "cell": "F95"
+  },
+  "NDSU": {
+    "fill": "#0A5640",
+    "font": "#FFC72A",
+    "cell": "B96"
+  },
+  "TULN": {
+    "fill": "#006747",
+    "font": "#FFFFFF",
+    "cell": "F96"
+  },
+  "NOVA": {
+    "fill": "#00205B",
+    "font": "#FFFFFF",
+    "cell": "B97"
+  },
+  "DEL": {
+    "fill": "#00539F",
+    "font": "#FFFFFF",
+    "cell": "B98"
+  },
+  "EWU": {
+    "fill": "#A10022",
+    "font": "#FFFFFF",
+    "cell": "B99"
+  },
+  "GRAM": {
+    "fill": "#000000",
+    "font": "#F1C232",
+    "cell": "B100"
+  },
+  "MTST": {
+    "fill": "#00205B",
+    "font": "#B9975B",
+    "cell": "B101"
+  },
+  "YSU": {
+    "fill": "#C8102E",
+    "font": "#FFFFFF",
+    "cell": "B102"
+  },
+  "EKU": {
+    "fill": "#8A0039",
+    "font": "#FFFFFF",
+    "cell": "B103"
+  },
+  "FUR": {
+    "fill": "#582C83",
+    "font": "#FFFFFF",
+    "cell": "B104"
+  },
+  "RICH": {
+    "fill": "#990000",
+    "font": "#FFFFFF",
+    "cell": "B105"
+  },
+  "UNI": {
+    "fill": "#4B116F",
+    "font": "#FFCC00",
+    "cell": "B106"
+  },
+  "SIU": {
+    "fill": "#720000",
+    "font": "#FFFFFF",
+    "cell": "B107"
+  },
+  "CSM": {
+    "fill": "#21314D",
+    "font": "#FFFFFF",
+    "cell": "B108"
+  },
+  "UNH": {
+    "fill": "#041E42",
+    "font": "#D9D9D9",
+    "cell": "B109"
+  }
+}
