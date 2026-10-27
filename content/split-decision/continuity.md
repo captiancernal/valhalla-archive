@@ -18,6 +18,7 @@ Running bits and life details already used, so later columns stay consistent. Up
 2025: Jess Reyes (Texas Bowl, Houston; wore Leo's helmet; "MICKEY, WE WON").
 2026: none (Mickey traveled to Salt Lake City; sang with ~40 traveling fans).
 2027: none.
+2028: none (a stranger in a Vikings beanie called Mickey "Pop" at the Ohio State quarterfinal).
 
 ## Places and people used in 2024 (and what happened)
 - **Big Stan's:** counter council voted 6 to 1 on Dolan (Chester abstained, Chester always abstains); Stan's extra pickle "for the doubter"; Chester *stood up* during the Oklahoma State win; Stan promised to name a sandwich after the first Viking who wins a bowl (deferred to 2025: "naming the sandwich next season").
@@ -33,6 +34,7 @@ Running bits and life details already used, so later columns stay consistent. Up
 - **Ken in Florida:** drove from Orlando to Sarasota after UCF.
 
 ## "Lil" origin stories used
+2028: a fourth-grade crossing-guard job (the little one with the sign; the big one had a whistle).
 2027: a ventriloquist's dummy named Ken at his 6th birthday (he was the smaller one); a wedding place card said "Lil Ken" (nobody admits writing it; Mickey denies, Donna won't make eye contact); "a calligrapher's error" ("I've since learned it was not an error").
 2026: college band "Lil Ken and the Standard Deviations" (one show, in a library); hospital bracelet error at birth ("Lil Ken" instead of "Baby Ken"); a 2003 sports-radio call-in name the screener misheard; "a typo in a church bulletin" reused as a deflection for "sincerely."
 2025: a mini-golf summer job (the bigger Ken worked the windmill hole); a lifeguard certification (shortest guy on the kiddie pool); a DMV clerk mishearing him (on a learner's permit in Parma); his grandmother's crossword clue ("four letters, small Ken"); "out the window" again after Athens.
@@ -40,6 +42,7 @@ Running bits and life details already used, so later columns stay consistent. Up
 
 ## Doom Model status
 - End of 2024: "filed a formal complaint"; the door is open a crack.
+- 2028: predicted wins "with an asterisk" (later bold); secretly ran playoff scenarios in a file named "just in case" (renamed "in case" after the Big 12 title); opened to a single cell "OK" before the title game; after the title: "OK. Fine. Wow."
 - 2027: returned from vacation "in a better mood"; orange icon ("mild concern") for Oklahoma State; "softened" (secondhand from Teresa); aligned with Ken on the bowl picture.
 - 2026: froze after Tulsa (a single "?" cell, restarted itself); called Colorado "volatile but whatever"; answered "points" for Miami (OH); assigned Ohio a mood ("tense") instead of a prediction.
 - 2025: sent an error message after Louisville ("Recalculate?"); a skull icon for K-State that later blinked; given the offseason off.
@@ -80,8 +83,22 @@ Running bits and life details already used, so later columns stay consistent. Up
 - **Lantern Room:** Nadia's gold trophy "2027 — WE'LL SEE" (moved under a spotlight after the CLEV win; draped in a black ribbon after Miami (OH) lost the title game to Alabama); Nadia lost the bet a 4th straight year ("Today."); Ken bought her a drink: "Next year." "Next year."
 - **Ray:** asked if Ken was seeing anyone ("Good. Somebody in the family should be normal"); "Write that down, Kenny" after beating Ohio by 28; **called Ken on his own** after Stillwater ("Are we still good, Kenny?"); met Teresa by phone: "Kenny's girl? Good. Make him go outside more."
 
+## 2028 details (places, people, events)
+- **Big Stan's:** a fourth board painted **RESERVED** in August (dusted daily; Gerald told "Don't" when he asked about it); Walt's national-title seating chart (breast pocket, then taped to the wall); Chester put his hand on the board before the title game and said "One more"; after the title Stan painted **THE CHAMPION** (every sandwich on the board, stacked, on a platter "for the whole city"); nobody went home; Mickey wrote the title column at 4 a.m. at the deli. Stan said the "C-word" (champions) in September; a tray of pierogi "FOR THE REMATCH"; a frozen pierogi labeled for the Big 12 title game, thawed after the win.
+- **Gerald (the ham man):** now trained to sit when Stan turns off the slicer; stayed till dawn on title night.
+- **Sal:** "Stillwater's gonna get you again"; pennant faced Mickey until Ohio; after the 41-38 loss charged Mickey half price ("you're the best team in the conference. We just know your address"); after the Big 12 title the pennant was **gone**, replaced by a note: "Congratulations, Mick. Now don't embarrass the conference." Even sideburns.
+- **Bridget:** after 41-38: "this one doesn't count. you'll see"; called (not texted) before the title game: "Wear the cardigan"; held a press-box sign "PROUD OF YOU, DAD. NOW GO WIN THE WHOLE THING"; nodded at Ken in the press box; after the national title: "congratulations, national champion. I love you. don't make it weird."
+- **Reyes:** Leo (10) made his first real clean tackle ("I GOT HIM," pointed at Mickey); called himself "Coach Leo" and gave a postgame speech mentioning the other parish team, also called the Bobcats; Lakers went 6-2 (first winning season in seven years); Sofia (8) translated the fight song into Spanish with her abuela ("as strong as grandma's soup" is now the second verse); Marco, four years in, in a hand-knit Vikings scarf: "I *am* a Clevelander"; the neighbors past the Reyeses are Browns fans who complain about the porch yelling. Leo held the "KENNY FAN SECTION" sign at the title game.
+- **Donna:** labels jerseys with masking tape "for the estate sale"; 3-0 in Oxford ("Michael, is defense illegal now?"); the green cape is permanently hers; held the "THE KENNY FAN SECTION" sign at the title game.
+- **Teresa:** has been to every game, brings a book, never opens it; "Lean back, Kenny" (first time Ken leaned back since 2014); preventive soup before Ohio ("I'm going to need to meet this Ohio"); "I'm a Kenny fan. It's adjacent" (at a downtown sports bar; ordered a salad, clapped like at the opera); held Ken's hand through the whole fourth quarter of the Ohio State quarterfinal ("I've worked trauma nights calmer than that"); her apartment is a one-bedroom in Tremont with a knocking radiator; Sam carved a third oak chair with a **T** on the back at Thanksgiving (she cried; Ken blamed horseradish).
+- **Ken:** apologized to Phil, Kent State's SID of twenty years ("Sorry, Phil." "Don't be."); trivia team won its first round (Sports) — Nadia rang the bell; sticky note "Except Sports" on the plaque.
+- **Nadia:** lost the Miami (OH) bet a 5th straight year after 84-70 ("But mine scored seventy, Ken"); replaced the black ribbon on "WE'LL SEE" with a tiny green one ("For you. Don't get used to it").
+- **Ray (age 76):** "Is the kid still the kid?" (Hocker's senior year: "Then you better enjoy it, Kenny"); "That's playoff, Kenny" ("I'm seventy-six. I'll say what I want"); "Then you better marry her" (about the carved chair); called from the press box after the Big 12 title ("that doesn't happen... write it down"); practiced Ken's number all afternoon and dialed himself before the title game ("When I was a boy, we couldn't beat Kent State"); after the title, clear-voiced: "Kenny, we did it" and "Pops never had a lead like this."
+- **Ken's title column:** Marlene cut his 1,200 words on regression to the mean to "Fine. Wow." (per the bible).
+
 ## Season arcs
 - **2024 (9-4, Liberty Bowl champions):** year one of the Dolan era. Lost at home to Ohio 49-24 (Bridget's "sorry, Dad"; Ken's storm-radar respect for Slocombe begins). Beat Miami (OH) 46-45 in Oxford the Saturday after Thanksgiving (Donna's game). Ken said "Merry Christmas, Mick" in print.
 - **2025 (10-3, Texas Bowl champions, final AP No. 11):** freshman QB Amar'e Hocker; 6-0 start ended at Colorado again; beat Miami (OH) 35-33 (Nadia's bobblehead to the wall); won 56-38 at Ohio (Sal's pennant to the wall, breakfast with Bridget); lost big at K-State after Thanksgiving; first ranked finish of the Dolan era.
 - **2026 (11-2, Alamo Bowl champions, final AP No. 11, Hocker won the Camp):** shocking home loss to Tulsa; Kate engaged; Boulder curse broken; nine straight wins incl. five straight road games (Lubbock, Oxford 59-53, Orlando on Halloween, Salt Lake City, Tucson 25-24); lost 43-42 at home to Ohio two days after Thanksgiving; Ken's door "propped open."
 - **2027 (11-2, Pop-Tart Bowl champions, final AP No. 11, nation's top scoring offense):** 7-0 start incl. 53-49 over Miami (OH) (4th straight win over the RedHawks); freshman WR "the good Kenny" Tongues; Kate's wedding in the bye week; Ken met Teresa; lost 59-27 at UCF on Halloween; beat Ohio 35-7 in Athens (Ohio still made the Big 12 title game); Klein won the Mackey; Miami (OH) lost the national title game to Alabama.
+- **2028 (15-1, NATIONAL CHAMPIONS, Big 12 champions, AP No. 1):** 7-0 start; lost 41-38 at home to Ohio (third straight home loss to Ohio); 84-70 at Miami (OH); beat Ohio 48-17 for the first Big 12 title; first playoff run (bye, beat Ohio State 45-38, Charlotte 45-28, Georgia 34-24); Hocker swept the Heisman, Maxwell, Camp and O'Brien; Nwangwu Walker + Big 12 rushing record; Tongues school receiving-TD record; Duggan the third Mackey; Cavka the Thorpe. OC David Morales hired as Arizona State's OC after the season.

@@ -28,7 +28,7 @@ Source: `2026-10-26 CSU Vikings Tracker.xlsx`
 - teams: 152
 - hall_of_fame: 6
 - clips: 0
-- columns: 52
+- columns: 68
 
 ## Notes
 
@@ -37,4 +37,4 @@ Source: `2026-10-26 CSU Vikings Tracker.xlsx`
 - Conference title games: 140 across 14 seasons
 - F04 applied: 2032 Sam Fatafehi receiving yards 2219 -> 219
 - Hall of Fame: 6 eligible, 0 awaiting a vote
-- Split Decision: 52 columns
+- Split Decision: 68 columns
