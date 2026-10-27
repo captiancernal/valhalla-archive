@@ -16,6 +16,7 @@ Running bits and life details already used, so later columns stay consistent. Up
 ## Second-seat guests used (now used sparingly, for big games)
 2024: Bernard (retired pipefitter from Akron, at UCF).
 2025: Jess Reyes (Texas Bowl, Houston; wore Leo's helmet; "MICKEY, WE WON").
+2026: none (Mickey traveled to Salt Lake City; sang with ~40 traveling fans).
 
 ## Places and people used in 2024 (and what happened)
 - **Big Stan's:** counter council voted 6 to 1 on Dolan (Chester abstained, Chester always abstains); Stan's extra pickle "for the doubter"; Chester *stood up* during the Oklahoma State win; Stan promised to name a sandwich after the first Viking who wins a bowl (deferred to 2025: "naming the sandwich next season").
@@ -31,11 +32,13 @@ Running bits and life details already used, so later columns stay consistent. Up
 - **Ken in Florida:** drove from Orlando to Sarasota after UCF.
 
 ## "Lil" origin stories used
+2026: college band "Lil Ken and the Standard Deviations" (one show, in a library); hospital bracelet error at birth ("Lil Ken" instead of "Baby Ken"); a 2003 sports-radio call-in name the screener misheard; "a typo in a church bulletin" reused as a deflection for "sincerely."
 2025: a mini-golf summer job (the bigger Ken worked the windmill hole); a lifeguard certification (shortest guy on the kiddie pool); a DMV clerk mishearing him (on a learner's permit in Parma); his grandmother's crossword clue ("four letters, small Ken"); "out the window" again after Athens.
 2024: youth-league coach couldn't pronounce "Kenneth"; a taller cousin also named Ken; a typo in a 2001 church bulletin; a hockey thing he can't legally discuss; a Viking naming tradition; "climbing out a window for unrelated reasons."
 
 ## Doom Model status
 - End of 2024: "filed a formal complaint"; the door is open a crack.
+- 2026: froze after Tulsa (a single "?" cell, restarted itself); called Colorado "volatile but whatever"; answered "points" for Miami (OH); assigned Ohio a mood ("tense") instead of a prediction.
 - 2025: sent an error message after Louisville ("Recalculate?"); a skull icon for K-State that later blinked; given the offseason off.
 
 ## 2025 details (places, people, events)
@@ -50,6 +53,19 @@ Running bits and life details already used, so later columns stay consistent. Up
 - **Thanksgiving 2025:** Bridget (no lanyard), Kate and Sam (fixed the table leg), Ken argued Ohio's offensive line with Bridget for 45 minutes and lost.
 - **Mickey's doctor:** noted record November pierogi intake (keep light; heart scare is 2034).
 
+## 2026 details (places, people, events)
+- **Big Stan's:** taped the recruiting list to the cooler (pointing with a salami at Jamie Cleveland); second sandwich **The Jamie Cleveland** (corned beef, pastrami, potato pancake, Swiss, coleslaw, double rye; comes with a second plate "for blocking"); Chester took half home "like a casket"; Stan nearly renamed The Bazelak "The Sam" (voted down; Chester abstained); Stan lifted Mickey off the ground after Arizona; Chester's second sentence in two years: "Five road wins." Stan ordered a third sandwich board after the bowl.
+- **Kate & Sam:** Sam asked Mickey's permission (hat in hands) the Friday before Iowa State; proposed Saturday at the West Side Market in front of Teddy's stall; Teddy gave them a free ring of kielbasa. Wedding is 2027.
+- **Sal:** keeps the shop open late on game Saturdays with a TV; "Bermuda Triangle's closed" after Boulder; the pennant crept back to face the room by November; "Saturday, Mick" before Ohio.
+- **Reyes:** Leo (8) a full Little Laker; threw a spiral after four into the hedge; Sofia (6) threw into the hedge "on purpose"; Halloween: the Reyes kids handed out Mickey's candy while he was in Orlando: Leo a Viking (3rd year, dented horns), Sofia dressed as Big Stan ("One per customer"; Stan wants it framed).
+- **Donna:** wore the green felt cape to Oxford; "undefeated in Oxford" (2-0, both shootouts); calls it "her cape now."
+- **Bridget:** "Good game, Dad. Don't get used to it" (after Miami (OH)); Thanksgiving prayer "let everyone play well and nobody get hurt"; after Ohio 43-42: "sorry, Dad" + "it was the best game I've ever worked"; after the bowl: "congrats, Dad, for real."
+- **Lantern Room:** a second plaque "Defending" under "Most Consistent Team"; Nadia lost the Miami (OH) bet a third straight year, said "for now," and turned the bobblehead to face Ken ("He's watching you now"); Halloween: Nadia as a RedHawk, made Ken say "caw"; before Ohio: "Who do you *have*?" "I don't know." (she poured him water).
+- **Ken's records:** walking-bass record after Boulder (neighbor: "Good or bad?" "Good." pencil thumbs-up); Spin Cycle owner set aside a big band record "For the doubter, for when you stop"; Ken bought it after Utah and played it after Arizona (shoulders moved).
+- **Ray:** foggy after Tulsa ("Bad fishing happens. You go back out"); "That's basketball, Kenny" after 59-53 (told four times); "Ohio's always tough, Kenny" again after the 43-42 loss; after the bowl: "Did he get cocky?" "No, Dad. He listened."
+- **Mickey traveled:** Salt Lake City (streets so clean; "You people are a lot." "Thank you.").
+
 ## Season arcs
 - **2024 (9-4, Liberty Bowl champions):** year one of the Dolan era. Lost at home to Ohio 49-24 (Bridget's "sorry, Dad"; Ken's storm-radar respect for Slocombe begins). Beat Miami (OH) 46-45 in Oxford the Saturday after Thanksgiving (Donna's game). Ken said "Merry Christmas, Mick" in print.
 - **2025 (10-3, Texas Bowl champions, final AP No. 11):** freshman QB Amar'e Hocker; 6-0 start ended at Colorado again; beat Miami (OH) 35-33 (Nadia's bobblehead to the wall); won 56-38 at Ohio (Sal's pennant to the wall, breakfast with Bridget); lost big at K-State after Thanksgiving; first ranked finish of the Dolan era.
+- **2026 (11-2, Alamo Bowl champions, final AP No. 11, Hocker won the Camp):** shocking home loss to Tulsa; Kate engaged; Boulder curse broken; nine straight wins incl. five straight road games (Lubbock, Oxford 59-53, Orlando on Halloween, Salt Lake City, Tucson 25-24); lost 43-42 at home to Ohio two days after Thanksgiving; Ken's door "propped open."
