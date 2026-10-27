@@ -128,5 +128,135 @@
   "words": 419,
   "verdict": "Nine wins, a bowl trophy, a Mackey Award, a crayon Viking on the fridge, and a doubter who said \"Merry Christmas\" in print, which is basically a confession.",
   "path": "content/split-decision/columns/2024/2024-CLEV-13.md"
+ },
+ {
+  "id": "2025-CLEV-01",
+  "game": "2025-CLEV-01",
+  "season": 2025,
+  "headline": "The Bazelak Is on the Board, and the Freshman Is in Charge",
+  "pierogi": 4,
+  "words": 392,
+  "verdict": "A freshman in charge, a sandwich on the board, and Ken's first secret compliment of the year delivered to a kielbasa.",
+  "path": "content/split-decision/columns/2025/2025-CLEV-01.md"
+ },
+ {
+  "id": "2025-CLEV-02",
+  "game": "2025-CLEV-02",
+  "season": 2025,
+  "headline": "The Air Force Can't Fly Over This Defense, and Leo Reyes Has a Flag",
+  "pierogi": 3,
+  "words": 376,
+  "verdict": "Two wins, one flag pulled, and a jazz record that perfectly captures Ken's refusal to enjoy anything.",
+  "path": "content/split-decision/columns/2025/2025-CLEV-02.md"
+ },
+ {
+  "id": "2025-CLEV-03",
+  "game": "2025-CLEV-03",
+  "season": 2025,
+  "headline": "Vikings Defeat an Entire Region, 56-13",
+  "pierogi": 3,
+  "words": 382,
+  "verdict": "Fifty-six points against a region, a sausage prophecy fulfilled, and the best laugh Ray Hogmanes has had all year.",
+  "path": "content/split-decision/columns/2025/2025-CLEV-03.md"
+ },
+ {
+  "id": "2025-CLEV-04",
+  "game": "2025-CLEV-04",
+  "season": 2025,
+  "headline": "Louisville Is a City, and the Vikings Just Annexed It",
+  "pierogi": 5,
+  "words": 407,
+  "verdict": "Sixty-two points, a city annexed, a slicer silenced, and Nadia accidentally saying something nice.",
+  "path": "content/split-decision/columns/2025/2025-CLEV-04.md"
+ },
+ {
+  "id": "2025-CLEV-05",
+  "game": "2025-CLEV-05",
+  "season": 2025,
+  "headline": "Houston, We Have a Five-and-Oh",
+  "pierogi": 3,
+  "words": 389,
+  "verdict": "Five and oh, a barber's grudge, and one piece of advice for a freshman quarterback from a father in Sarasota.",
+  "path": "content/split-decision/columns/2025/2025-CLEV-05.md"
+ },
+ {
+  "id": "2025-CLEV-06",
+  "game": "2025-CLEV-06",
+  "season": 2025,
+  "headline": "Six and Oh in the Cornfields, and the Lunch Table Is Losing Its Mind",
+  "pierogi": 4,
+  "words": 412,
+  "verdict": "Six and oh in the cornfields, Chester has spoken, and Big Stan has a napkin under the register that Ken is legally prevented from describing.",
+  "path": "content/split-decision/columns/2025/2025-CLEV-06.md"
+ },
+ {
+  "id": "2025-CLEV-07",
+  "game": "2025-CLEV-07",
+  "season": 2025,
+  "headline": "Boulder Again. Of Course It Was Boulder.",
+  "pierogi": null,
+  "words": 406,
+  "verdict": "The undefeated dream ends in Boulder again, Donna makes tea, and Ken admits, very briefly, that he'd started to believe.",
+  "path": "content/split-decision/columns/2025/2025-CLEV-07.md"
+ },
+ {
+  "id": "2025-CLEV-08",
+  "game": "2025-CLEV-08",
+  "season": 2025,
+  "headline": "Two Points, One Bobblehead, and a Bet Ken Will Never Let Go",
+  "pierogi": 5,
+  "words": 397,
+  "verdict": "A rivalry win by two, a green felt cape that refuses to come off, and one bobblehead turned toward the wall in Ohio City.",
+  "path": "content/split-decision/columns/2025/2025-CLEV-08.md"
+ },
+ {
+  "id": "2025-CLEV-09",
+  "game": "2025-CLEV-09",
+  "season": 2025,
+  "headline": "Arizona Wins the Day, and the Counter Council Goes Quiet",
+  "pierogi": null,
+  "words": 398,
+  "verdict": "A hard loss on a hard week, a quiet deli, and one white lie in Sarasota that was the kindest thing anyone did all Saturday.",
+  "path": "content/split-decision/columns/2025/2025-CLEV-09.md"
+ },
+ {
+  "id": "2025-CLEV-10",
+  "game": "2025-CLEV-10",
+  "season": 2025,
+  "headline": "56-38 in Athens: Mickey Texts His Daughter Back",
+  "pierogi": 5,
+  "words": 409,
+  "verdict": "Fifty-six in Athens, the storm passed, a \"sorry, kiddo\" a year in the making, and breakfast with the enemy, who is also family.",
+  "path": "content/split-decision/columns/2025/2025-CLEV-10.md"
+ },
+ {
+  "id": "2025-CLEV-11",
+  "game": "2025-CLEV-11",
+  "season": 2025,
+  "headline": "Nine Wins, a Turned Pennant and an Eleven-Week Losing Streak at Trivia",
+  "pierogi": 3,
+  "words": 411,
+  "verdict": "Nine wins, a pennant facing the wall, a plaque for consistency, and a skull icon in a spreadsheet pointing straight at Manhattan, Kansas.",
+  "path": "content/split-decision/columns/2025/2025-CLEV-11.md"
+ },
+ {
+  "id": "2025-CLEV-12",
+  "game": "2025-CLEV-12",
+  "season": 2025,
+  "headline": "Leftovers in Manhattan, Kansas: K-State Hands Us the Bill",
+  "pierogi": null,
+  "words": 420,
+  "verdict": "A rough night in Kansas, a much better Thursday in Old Brooklyn, and a father in Florida who remembered the pierogi.",
+  "path": "content/split-decision/columns/2025/2025-CLEV-12.md"
+ },
+ {
+  "id": "2025-CLEV-13",
+  "game": "2025-CLEV-13",
+  "season": 2025,
+  "headline": "Texas Bowl Champions, Ten Wins and a Number Next to Our Name",
+  "pierogi": 5,
+  "words": 406,
+  "verdict": "Ten wins, a Texas Bowl trophy, a number next to our name, a neighbor who now says \"we,\" and a father in Florida who remembered.",
+  "path": "content/split-decision/columns/2025/2025-CLEV-13.md"
  }
 ]

@@ -178,8 +178,8 @@ A dry, mid-range tenor with crisp consonants. Even and quick, with long pointed 
 | Season | Life events (fiction) | Football context (from data) |
 |---|---|---|
 | 2024 | Column launches. The Reyes family moves in next door. Bridget's first season in Ohio's athletic office. Donna attends the Miami (OH) game. Ken's Sunday calls with Ray are new and careful. | 9-4, Liberty Bowl champions; lost to Ohio 49-24 |
-| 2025 | Leo Reyes joins Mickey's Lakers. Ken's trivia team finishes last a record 11 straight weeks. | 10-3, Texas Bowl champions |
-| 2026 | Kate gets engaged (to Sam, a quiet Lakewood carpenter). Big Stan names his first sandwich after a Viking. | 11-2, Alamo Bowl champions |
+| 2025 | Big Stan unveils his first Vikings sandwich, "The Bazelak." Leo Reyes (7) joins the Little Lakers flag-football squad. Ken's trivia team finishes last a record 11 straight weeks. | 10-3, Texas Bowl champions; won at Ohio 56-38 |
+| 2026 | Kate gets engaged (to Sam, a quiet Lakewood carpenter). Big Stan adds a second sandwich to the board. | 11-2, Alamo Bowl champions |
 | 2027 | Kate's wedding (Mickey plays the fight song on a borrowed kazoo at the reception). **Ken meets Teresa** at Spin Cycle Records. | 11-2, Pop-Tart Bowl champions; beat Ohio |
 | 2028 | The national title. Ken calls Ray from the press box; Ray knows exactly what happened. Mickey frames the scoreboard. | 15-1, **National Champions** |
 | 2029 | Ken and Teresa move in together. Ohio's run begins; Sal turns the pennant and leaves it. | 13-4; lost title game to Ohio |
