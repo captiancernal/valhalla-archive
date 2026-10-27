@@ -17,6 +17,7 @@ Running bits and life details already used, so later columns stay consistent. Up
 2024: Bernard (retired pipefitter from Akron, at UCF).
 2025: Jess Reyes (Texas Bowl, Houston; wore Leo's helmet; "MICKEY, WE WON").
 2026: none (Mickey traveled to Salt Lake City; sang with ~40 traveling fans).
+2027: none.
 
 ## Places and people used in 2024 (and what happened)
 - **Big Stan's:** counter council voted 6 to 1 on Dolan (Chester abstained, Chester always abstains); Stan's extra pickle "for the doubter"; Chester *stood up* during the Oklahoma State win; Stan promised to name a sandwich after the first Viking who wins a bowl (deferred to 2025: "naming the sandwich next season").
@@ -32,12 +33,14 @@ Running bits and life details already used, so later columns stay consistent. Up
 - **Ken in Florida:** drove from Orlando to Sarasota after UCF.
 
 ## "Lil" origin stories used
+2027: a ventriloquist's dummy named Ken at his 6th birthday (he was the smaller one); a wedding place card said "Lil Ken" (nobody admits writing it; Mickey denies, Donna won't make eye contact); "a calligrapher's error" ("I've since learned it was not an error").
 2026: college band "Lil Ken and the Standard Deviations" (one show, in a library); hospital bracelet error at birth ("Lil Ken" instead of "Baby Ken"); a 2003 sports-radio call-in name the screener misheard; "a typo in a church bulletin" reused as a deflection for "sincerely."
 2025: a mini-golf summer job (the bigger Ken worked the windmill hole); a lifeguard certification (shortest guy on the kiddie pool); a DMV clerk mishearing him (on a learner's permit in Parma); his grandmother's crossword clue ("four letters, small Ken"); "out the window" again after Athens.
 2024: youth-league coach couldn't pronounce "Kenneth"; a taller cousin also named Ken; a typo in a 2001 church bulletin; a hockey thing he can't legally discuss; a Viking naming tradition; "climbing out a window for unrelated reasons."
 
 ## Doom Model status
 - End of 2024: "filed a formal complaint"; the door is open a crack.
+- 2027: returned from vacation "in a better mood"; orange icon ("mild concern") for Oklahoma State; "softened" (secondhand from Teresa); aligned with Ken on the bowl picture.
 - 2026: froze after Tulsa (a single "?" cell, restarted itself); called Colorado "volatile but whatever"; answered "points" for Miami (OH); assigned Ohio a mood ("tense") instead of a prediction.
 - 2025: sent an error message after Louisville ("Recalculate?"); a skull icon for K-State that later blinked; given the offseason off.
 
@@ -65,7 +68,20 @@ Running bits and life details already used, so later columns stay consistent. Up
 - **Ray:** foggy after Tulsa ("Bad fishing happens. You go back out"); "That's basketball, Kenny" after 59-53 (told four times); "Ohio's always tough, Kenny" again after the 43-42 loss; after the bowl: "Did he get cocky?" "No, Dad. He listened."
 - **Mickey traveled:** Salt Lake City (streets so clean; "You people are a lot." "Thank you.").
 
+## 2027 details (places, people, events)
+- **Big Stan's:** third board, **The Hocker** (brisket, fried egg, hot peppers, pierogi on a Kaiser roll, "a cannon arm of mustard"); Stan proofread Mickey's wedding toast (cut Hocker and the Liberty Bowl; the sandwich paragraph stayed); after Tucson Stan just said "Good"; fourth sandwich board ordered after the bowl.
+- **"The good Kenny":** Mickey's name for freshman WR Kenny Tongues; the student section chants "KEN-NY" and fans turn to look at Ken in the press box (his foot taps; "coffee").
+- **Teresa Kowalczyk:** met Ken at Spin Cycle Records reaching for the same quiet piano trio (Sept); first coffee at 7 a.m. at a diner on Lorain ("Is that the sun one?"); first game (Akron), brought a book and never opened it, checked his pulse; met Mickey at a stoplight ("YOU MUST BE TERESA"); Ken's plus-one at Kate's wedding; sang the fight song with wrong words (Ken hums it at home); fell asleep on Ken's shoulder at the Miami (OH) game and asked "Did we win?" (we); soup and a bossa nova record the night of the UCF loss (Ken missed the game); photo of Ken smiling, framed "next to a solar eclipse, for rarity"; note on his door after Stillwater ("Soup's in the fridge. They'll win the next one. – T."); pumpkin pie at Thanksgiving; talked to Ray on the phone after the bowl.
+- **Kate & Sam's wedding (bye week, October):** grandmother's veil; Sam cried; Bridget's reading; Sal came in a suit; Mickey's toast had one football reference (a sandwich); Mickey played the fight song on a ring bearer's kazoo; Sam's grandmother from Toledo sang along; Mickey's cousin Walt introduced Ken as "the guy who's going to marry that nurse someday."
+- **Sam:** made two oak chairs for Thanksgiving ("for whoever Ken brings").
+- **Bridget:** after 35-7 in Athens: "Dad. Seven points. SEVEN." and "I'm proud of your guys. Don't tell anyone"; gave Teresa a speech on Ohio at Thanksgiving and was defused by "Kenny says you're very good at your job"; "sorry about Okie State, Dad" (regular heart).
+- **Sal:** pennant to the wall after Athens; "We're still winning the conference, Mick" (Ohio played in the Big 12 title game).
+- **Reyes:** Marco on the flight to Phoenix ("the heat's a twelfth man"), his mother's tamales; Leo (9) moved up to pads as a cornerback ("I GOT HIM"), push-ups during commercials, first official tackle (a hug, "the kid committed"); Lakers finished 4-4 (best in six years); Sofia (7) made a "BEAT THE RED BIRDS" sign (on the storm door until spring); Halloween: Sofia as a girl Viking ("The Vikings are *trying*").
+- **Lantern Room:** Nadia's gold trophy "2027 — WE'LL SEE" (moved under a spotlight after the CLEV win; draped in a black ribbon after Miami (OH) lost the title game to Alabama); Nadia lost the bet a 4th straight year ("Today."); Ken bought her a drink: "Next year." "Next year."
+- **Ray:** asked if Ken was seeing anyone ("Good. Somebody in the family should be normal"); "Write that down, Kenny" after beating Ohio by 28; **called Ken on his own** after Stillwater ("Are we still good, Kenny?"); met Teresa by phone: "Kenny's girl? Good. Make him go outside more."
+
 ## Season arcs
 - **2024 (9-4, Liberty Bowl champions):** year one of the Dolan era. Lost at home to Ohio 49-24 (Bridget's "sorry, Dad"; Ken's storm-radar respect for Slocombe begins). Beat Miami (OH) 46-45 in Oxford the Saturday after Thanksgiving (Donna's game). Ken said "Merry Christmas, Mick" in print.
 - **2025 (10-3, Texas Bowl champions, final AP No. 11):** freshman QB Amar'e Hocker; 6-0 start ended at Colorado again; beat Miami (OH) 35-33 (Nadia's bobblehead to the wall); won 56-38 at Ohio (Sal's pennant to the wall, breakfast with Bridget); lost big at K-State after Thanksgiving; first ranked finish of the Dolan era.
 - **2026 (11-2, Alamo Bowl champions, final AP No. 11, Hocker won the Camp):** shocking home loss to Tulsa; Kate engaged; Boulder curse broken; nine straight wins incl. five straight road games (Lubbock, Oxford 59-53, Orlando on Halloween, Salt Lake City, Tucson 25-24); lost 43-42 at home to Ohio two days after Thanksgiving; Ken's door "propped open."
+- **2027 (11-2, Pop-Tart Bowl champions, final AP No. 11, nation's top scoring offense):** 7-0 start incl. 53-49 over Miami (OH) (4th straight win over the RedHawks); freshman WR "the good Kenny" Tongues; Kate's wedding in the bye week; Ken met Teresa; lost 59-27 at UCF on Halloween; beat Ohio 35-7 in Athens (Ohio still made the Big 12 title game); Klein won the Mackey; Miami (OH) lost the national title game to Alabama.
