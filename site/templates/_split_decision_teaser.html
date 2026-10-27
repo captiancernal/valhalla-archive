@@ -1,0 +1,13 @@
+{% set L = latest_col %}
+<div class="sd-teaser">
+  <div class="sdt-head">
+    <div><div class="kicker">Split Decision</div><h2 id="sd-title" class="sdt-title"><a href="{{ base }}split-decision/{{ L.c.id }}/">{{ L.c.headline }}</a></h2>
+    <p class="muted sdt-meta">{{ L.facts.season }} {{ L.facts.game }} · {{ 'W' if L.g.result == 'W' else 'L' }} {{ L.facts.score }} vs {{ L.facts.opp_name }}</p></div>
+  </div>
+  <div class="sdt-split">
+    <div class="sdt-take mickey"><span class="sd-avatar m" aria-hidden="true">MB</span><div><b>Mickey Bridges</b><p>{{ L.mickey|striptags|truncate(210) }}</p></div></div>
+    <div class="sdt-take ken"><span class="sd-avatar k" aria-hidden="true">KH</span><div><b>"Lil" Ken Hogmanes</b><p>{{ L.ken|striptags|truncate(210) }}</p></div></div>
+  </div>
+  <p class="sdt-verdict"><b>Final Verdict:</b> {{ L.verdict|striptags }}</p>
+  <p class="as-more"><a href="{{ base }}split-decision/{{ L.c.id }}/">Read the column →</a> &nbsp; <a href="{{ base }}split-decision/">All {{ columns|length }} columns →</a></p>
+</div>

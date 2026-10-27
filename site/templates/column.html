@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<article class="sd-article">
+  <header class="sd-mast">
+    <div class="wrap">
+      <a class="sd-brand" href="{{ base }}split-decision/">Split Decision</a>
+      <h1>{{ c.headline }}</h1>
+      <p class="sd-byline">Mickey Bridges and "Lil" Ken Hogmanes · {{ facts.season }} {{ facts.game }}, {{ "at" if g.site == "away" else "vs" }} {{ facts.opp_name }}</p>
+    </div>
+  </header>
+  <div class="wrap sd-wrap">
+    {% include "_column_body.html" %}
+    <nav class="pager sd-pager" aria-label="Columns">
+      {% if prev %}<a href="{{ base }}split-decision/{{ prev.id }}/">← {{ prev.headline|truncate(48) }}</a>{% else %}<span></span>{% endif %}
+      {% if nxt %}<a href="{{ base }}split-decision/{{ nxt.id }}/">{{ nxt.headline|truncate(48) }} →</a>{% else %}<span></span>{% endif %}
+    </nav>
+    <p class="note sd-disclaimer">Split Decision is fiction: Mickey Bridges, Ken Hogmanes and The Lakefront Ledger are made up. The game facts come from the Archive's data.</p>
+  </div>
+</article>
+{% endblock %}

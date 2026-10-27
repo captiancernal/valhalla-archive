@@ -31,6 +31,14 @@
     <div><span class="k">Season</span><span class="v"><a href="{{ season_href('CLEV', g.season) }}">{{ season.w }}-{{ season.l }}{% if season.national_champion %}, National Champions{% endif %}</a></span></div>
   </div>
 
+  {% if column %}
+  <a class="sd-latest" style="margin-top:22px" href="{{ base }}split-decision/{{ column.id }}/">
+    <span class="sdl-meta">Split Decision · Mickey &amp; Ken on this game</span>
+    <span class="sdl-head">{{ column.headline }}</span>
+    <span class="sdl-verdict">{{ column.verdict }}</span>
+  </a>
+  {% endif %}
+
   <h2 class="section">All-time vs {{ opp.school or g.opponent }} <span class="muted" style="font:500 15px var(--font-ui)">· CLEV {{ series_rec }}</span></h2>
   <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Season</th><th scope="col">Game</th><th scope="col">Result</th></tr></thead><tbody>
   {% for x in series %}<tr{% if x.id == g.id %} class="hl"{% endif %}><th scope="row">{{ x.season }}</th><td><a href="{{ game_href(x.id) }}">{{ x.name or ('Week ' ~ x.week) }}</a></td><td class="{{ 'res-w' if x.result == 'W' else 'res-l' }}">{{ x.result }} {{ x.clev_score }}-{{ x.opp_score }}</td></tr>{% endfor %}

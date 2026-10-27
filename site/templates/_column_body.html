@@ -1,0 +1,37 @@
+{# Shared column layout: expects c, g, facts, mickey, ken, exchange, verdict #}
+<div class="sd-facts" aria-label="Game facts">
+  <div class="sdf-title">Game facts</div>
+  <div class="sdf-score">
+    <span class="sdf-team">{{ team('CLEV', link=False) }}<b>{{ g.clev_score }}</b></span>
+    <span class="sdf-team">{{ team(g.opponent, link=False) }}<b>{{ g.opp_score }}</b></span>
+  </div>
+  <dl>
+    <div><dt>Game</dt><dd>{{ facts.season }} {{ facts.game }}</dd></div>
+    {% if facts.date %}<div><dt>Date</dt><dd>{{ facts.date }}</dd></div>{% endif %}
+    <div><dt>Site</dt><dd>{{ facts.site }}</dd></div>
+    <div><dt>Result</dt><dd class="{{ 'res-w' if facts.result == 'W' else 'res-l' }}">{{ 'Win' if facts.result == 'W' else 'Loss' }}</dd></div>
+    <div><dt>Record</dt><dd>{{ facts.record }}</dd></div>
+  </dl>
+  <div class="sdf-links"><a href="{{ game_href(g.id) }}">Game page</a> · <a href="{{ season_href('CLEV', g.season) }}">{{ g.season }} season</a></div>
+</div>
+
+<div class="sd-split">
+  <section class="sd-take mickey" aria-label="Mickey's take">
+    <header><span class="sd-avatar m" aria-hidden="true">MB</span><span><b>Mickey Bridges</b><span class="sd-role">The Believer</span></span></header>
+    <div class="sd-text">{{ mickey }}</div>
+    {% if c.pierogi %}<div class="pierogi" aria-label="Pierogi Index: {{ c.pierogi }} of 5"><span class="pz-label">Pierogi Index</span>{% for i in range(5) %}<span class="pz{% if i < c.pierogi %} on{% endif %}" aria-hidden="true"></span>{% endfor %}</div>{% endif %}
+  </section>
+  <section class="sd-take ken" aria-label="Ken's rebuttal">
+    <header><span class="sd-avatar k" aria-hidden="true">KH</span><span><b>"Lil" Ken Hogmanes</b><span class="sd-role">The Doubter</span></span></header>
+    <div class="sd-text">{{ ken }}</div>
+  </section>
+</div>
+
+{% if exchange %}
+<section class="sd-exchange" aria-label="Back and forth">
+  <h2>Back and forth</h2>
+  {% for e in exchange %}<div class="bubble {{ e.who|lower }}"><span class="who">{{ e.who }}</span>{{ e.text }}</div>{% endfor %}
+</section>
+{% endif %}
+
+<section class="sd-verdict" aria-label="Final Verdict"><span class="v-label">Final Verdict</span>{{ verdict }}</section>

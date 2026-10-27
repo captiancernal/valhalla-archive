@@ -33,7 +33,7 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 - [x] M4 Program / season / game / player pages: 1,158 pages (program sections, 42 season pages, 209 game pages, 886 player cards, searchable index). Awaiting owner sign-off.
 - [x] M5 Almanac (almanac/, almanac/<year>/, almanac/awards/), Records Book (records/), Rivalry Hub + Coaches' Cup (rivalry/), Hall of Fame (hall-of-fame/). Class of 2037 inducted: Fannin, Nwangwu, Okoronkwo, Molinaro, Reece, Ladd. Awaiting owner sign-off.
 - [x] M6 Front page: champion masthead, awards showcase (year picker, CSU winners first + spotlit), Road to next season (phase tracker + 4 teasers that unlock from logged data). Split Decision and highlight-reel modules render only when columns/clips exist (templates _split_decision_teaser.html / _highlight_reel.html to be written in M7 / M10). Awaiting owner sign-off.
-- [ ] M7 Split Decision (bible, 2024 pilot, backfill)
+- [~] M7 Split Decision: bible approved 2026-10-26; 2024 pilot (13 columns) written, awaiting voice approval; then backfill one season at a time with a checkpoint between seasons.
 - [ ] M8 Games
 - [ ] M9 Road to 2038, Record Watch, phase tracker
 - [ ] M10 Clips pipeline, print mode, accessibility, QA
@@ -74,6 +74,11 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 - Hall of Fame: eligibility computed in build_data.py (table hall_of_fame); votes in data/hof-decisions.json via `py -P scripts/hof_review.py [decide "<name>" yes|no]`.
 - Coaches' Cup (my format, owner may change): 8 categories, 3/2/1 points, ties share the higher score.
 - Fonts load from Google Fonts for now; self-host before launch (M10).
+
+## Split Decision (M7)
+- Bible: content/split-decision/character-bible.md (approved). Continuity log: content/split-decision/continuity.md (update every season).
+- Columns: content/split-decision/columns/<season>/<game-id>.md (front matter: game, headline, pierogi for wins). Check with `py -P scripts/columns.py check <season>` (0 errors required).
+- Facts box is generated from data at build time. Pages: split-decision/ and split-decision/<game-id>/; game pages link to their column; front page shows the latest.
 
 ## Data model and build (M2)
 - Full table list and conventions: [docs/data-model.md](docs/data-model.md).

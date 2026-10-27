@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="sd-hub-head">
+  <div class="wrap">
+    <div class="kicker">A weekly first take</div>
+    <h1>Split Decision</h1>
+    <p>Two columnists, one page, zero agreement. <b>Mickey Bridges</b> believes in the Cleveland State Vikings with his whole heart. <b>"Lil" Ken Hogmanes</b> will believe it when it's in the case. A column on every Vikings game.</p>
+    <div class="sd-duo">
+      <div><span class="sd-avatar m" aria-hidden="true">MB</span><span><b>Mickey Bridges</b><br><span class="muted">56, Cleveland lifer, owner of a jersey closet and a Pierogi Index</span></span></div>
+      <div><span class="sd-avatar k" aria-hidden="true">KH</span><span><b>"Lil" Ken Hogmanes</b><br><span class="muted">38, keeper of the Doom Model; the nickname story changes weekly</span></span></div>
+    </div>
+  </div>
+</section>
+<div class="wrap">
+  <h2 class="section">Latest column</h2>
+  <a class="sd-latest" href="{{ base }}split-decision/{{ latest.c.id }}/">
+    <span class="sdl-meta">{{ latest.facts.season }} {{ latest.facts.game }} · {{ 'W' if latest.g.result == 'W' else 'L' }} {{ latest.facts.score }} vs {{ latest.facts.opp_name }}</span>
+    <span class="sdl-head">{{ latest.c.headline }}</span>
+    <span class="sdl-verdict">{{ latest.verdict|striptags }}</span>
+  </a>
+
+  {% for season, cols in seasons %}
+  <h2 class="section">{{ season }} season <span class="muted" style="font:500 15px var(--font-ui)">· {{ cols|length }} columns</span></h2>
+  <ol class="sd-list">
+    {% for c in cols %}
+    <li><a href="{{ base }}split-decision/{{ c.id }}/">
+      <span class="sdi-game">{{ c.g.name or ('Week ' ~ c.g.week) }}</span>
+      <span class="sdi-res {{ 'res-w' if c.g.result == 'W' else 'res-l' }}">{{ c.g.result }} {{ c.g.clev_score }}-{{ c.g.opp_score }}</span>
+      <span class="sdi-opp">{{ c.opp }}</span>
+      <span class="sdi-head">{{ c.headline }}</span>
+    </a></li>
+    {% endfor %}
+  </ol>
+  {% endfor %}
+  <p class="note sd-disclaimer">Split Decision is fiction: Mickey Bridges, Ken Hogmanes and The Lakefront Ledger are made up. The game facts come from the Archive's data.</p>
+</div>
+{% endblock %}

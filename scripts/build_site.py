@@ -14,6 +14,10 @@ from collections import Counter, defaultdict
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markupsafe import Markup, escape
+import markdown as md_lib
+import sys as _sys
+_sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import columns as sd_columns  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TABLES = os.path.join(ROOT, "data", "tables")
@@ -82,7 +86,7 @@ class Site:
         T = {n: load(n) for n in ["site_control", "programs", "seasons", "games", "playoffs", "conference_championships",
                                    "national_championships", "standings", "ap_top25", "player_seasons", "players",
                                    "recruits", "recruiting_classes", "transfers", "departures", "depth_chart", "awards",
-                                   "all_americans", "records_official", "records_computed", "teams", "coaches", "hall_of_fame"]}
+                                   "all_americans", "records_official", "records_computed", "teams", "coaches", "hall_of_fame", "columns"]}
         self.T = T
         self.site = T["site_control"]
         self.build_id = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
@@ -108,6 +112,7 @@ class Site:
         for p in self.programs:
             self.nav.append({"key": p["id"], "label": p["short"], "href": p["href"], "logo": p["logo"]})
         self.nav += [{"sep": True},
+                     {"key": "split", "label": "Split Decision", "href": "split-decision/", "footer": True},
                      {"key": "players", "label": "Players", "href": "players/", "footer": True},
                      {"key": "almanac", "label": "Almanac", "href": "almanac/", "footer": True},
                      {"key": "records", "label": "Records", "href": "records/", "footer": True},
@@ -398,7 +403,8 @@ class Site:
             opp = self.teams.get(g["opponent"], {})
             label = g["name"] or f"Week {g['week']}"
             title = f"{g['season']} {label}: Cleveland State {g['clev_score']}, {opp.get('school') or g['opponent']} {g['opp_score']}"
-            self.render("game.html", f"games/{g['id']}/", program=p, active_nav="CLEV", theme_color=p["colors"]["primary"],
+            col = next((c for c in self.T["columns"] if c["game"] == g["id"]), None)
+            self.render("game.html", f"games/{g['id']}/", program=p, active_nav="CLEV", theme_color=p["colors"]["primary"], column=col,
                         g=g, label=label, prev=prev, nxt=nxt, record_after=f"{w}-{l}", series=series,
                         series_rec=f"{sw}-{len(series) - sw}", opp=opp, season=self.season("CLEV", g["season"]),
                         page_title=f"{title} · The Valhalla Archive",
@@ -685,6 +691,52 @@ class Site:
                     description=f"The Ring of Honor: {len(inducted)} inductees, the best of the Valhalla Archive.")
 
 
+
+    # ---------------------------------------------------------------- split decision
+    def column_context(self, c):
+        """Render a column's Markdown sections and build its data-only facts box."""
+        parsed = sd_columns.parse(os.path.join(ROOT, c["path"]))
+        conv = lambda t: Markup(md_lib.markdown(t, extensions=["smarty"]))
+        g = next(x for x in self.T["games"] if x["id"] == c["game"])
+        season_games = [x for x in self.T["games"] if x["season"] == g["season"]]
+        idx = season_games.index(g)
+        w = sum(1 for x in season_games[: idx + 1] if x["result"] == "W")
+        opp = self.teams.get(g["opponent"], {})
+        facts = {"game": g["name"] or f"Week {g['week']}", "date": g["date"], "opponent": g["opponent"], "opp_name": opp.get("school") or g["opponent"],
+                 "site": {"home": "Home", "away": "Away", "neutral": "Neutral site"}[g["site"]],
+                 "score": f"{g['clev_score']}-{g['opp_score']}", "result": g["result"], "record": f"{w}-{idx + 1 - w}", "season": g["season"]}
+        exchange = []
+        for line in parsed["sections"].get("Back and forth", "").splitlines():
+            m = re.match(r"^\*\*(Mickey|Ken):\*\*\s*(.+)$", line.strip())
+            if m:
+                exchange.append({"who": m.group(1), "text": conv(m.group(2))})
+        return {"c": c, "g": g, "facts": facts, "mickey": conv(parsed["sections"].get("Mickey", "")),
+                "ken": conv(parsed["sections"].get("Ken", "")), "exchange": exchange,
+                "verdict": conv(parsed["sections"].get("Final Verdict", ""))}
+
+    def build_split_decision(self):
+        cols = self.T["columns"]
+        if not cols:
+            return
+        games = {g["id"]: g for g in self.T["games"]}
+        p = self.prog["CLEV"]
+        for i, c in enumerate(cols):
+            ctx = self.column_context(c)
+            prev = cols[i - 1] if i > 0 else None
+            nxt = cols[i + 1] if i + 1 < len(cols) else None
+            self.render("column.html", f"split-decision/{c['id']}/", active_nav="split", prev=prev, nxt=nxt, **ctx,
+                        page_title=f"{c['headline']} · Split Decision · The Valhalla Archive",
+                        description=f"Split Decision on {ctx['facts']['season']} {ctx['facts']['game']}: Cleveland State {ctx['facts']['score']} vs {ctx['facts']['opp_name']}. Mickey Bridges and Lil Ken Hogmanes argue it out.")
+        by_season = defaultdict(list)
+        for c in cols:
+            g = games[c["game"]]
+            by_season[c["season"]].append({**c, "g": g, "opp": self.teams.get(g["opponent"], {}).get("school") or g["opponent"]})
+        latest = cols[-1]
+        self.render("split_decision.html", "split-decision/", active_nav="split", seasons=sorted(by_season.items(), key=lambda kv: -kv[0]),
+                    latest=self.column_context(latest), count=len(cols),
+                    page_title="Split Decision · The Valhalla Archive",
+                    description="Split Decision: Mickey Bridges believes, Lil Ken Hogmanes doubts. A column on every Cleveland State game.")
+
     # ---------------------------------------------------------------- front page
     def build_home(self):
         T = self.T
@@ -748,7 +800,7 @@ class Site:
                                 + (f"{self.prog[champ['champion']]['school']} {self.prog[champ['champion']]['nickname']}." if champ_season else f"{(self.teams.get(champ['champion'], {}) or {}).get('school', '')}." if champ else ""),
                     years=years, award_year=years[0], award_json=award_json, cur=cur, nxt=nxt,
                     phases=phases, phase_idx=phase_idx, teasers=teasers, champ=champ, champ_season=champ_season,
-                    columns=columns[:1], clips=clips)
+                    latest_col=self.column_context(columns[-1]) if columns else None, columns=columns, clips=clips)
 
     # ---------------------------------------------------------------- run
     def build(self):
@@ -767,6 +819,7 @@ class Site:
         self.build_records()
         self.build_rivalry()
         self.build_hof()
+        self.build_split_decision()
         print(f"Built {self.pages} pages into _site/ (base path {BASE})")
 
 

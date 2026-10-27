@@ -1,1 +1,132 @@
-[]
+[
+ {
+  "id": "2024-CLEV-01",
+  "game": "2024-CLEV-01",
+  "season": 2024,
+  "headline": "One Game Into the Dolan Era, Mickey Has Already Ordered the Banner",
+  "pierogi": 3,
+  "words": 339,
+  "verdict": "One down, a banner already ordered, and Ken's grudging respect currently measured at three points.",
+  "path": "content/split-decision/columns/2024/2024-CLEV-01.md"
+ },
+ {
+  "id": "2024-CLEV-02",
+  "game": "2024-CLEV-02",
+  "season": 2024,
+  "headline": "Kansas State Brings Ken's Favorite Thing to Town: Evidence",
+  "pierogi": null,
+  "words": 352,
+  "verdict": "The offense is real, the defense is a rumor, and Ken slept like a baby, which is to say he woke up every two hours to check the Doom Model.",
+  "path": "content/split-decision/columns/2024/2024-CLEV-02.md"
+ },
+ {
+  "id": "2024-CLEV-03",
+  "game": "2024-CLEV-03",
+  "season": 2024,
+  "headline": "A 45-42 Shootout, and Both of Us Need a Nap",
+  "pierogi": 4,
+  "words": 336,
+  "verdict": "Forty-five scored, forty-two allowed, and one beagle who ate the fifth pierogi and has never looked happier.",
+  "path": "content/split-decision/columns/2024/2024-CLEV-03.md"
+ },
+ {
+  "id": "2024-CLEV-04",
+  "game": "2024-CLEV-04",
+  "season": 2024,
+  "headline": "Aloha Means Hello, Goodbye, and 3-1",
+  "pierogi": 3,
+  "words": 346,
+  "verdict": "A tidy win, a happy groundskeeper, and Ken's mood upgraded from grim to concerning.",
+  "path": "content/split-decision/columns/2024/2024-CLEV-04.md"
+ },
+ {
+  "id": "2024-CLEV-05",
+  "game": "2024-CLEV-05",
+  "season": 2024,
+  "headline": "Ken Said 'Let's See It in Lubbock.' Lubbock Has Been Seen.",
+  "pierogi": null,
+  "words": 353,
+  "verdict": "A gutsy road loss, a defense with a pulse, and an offense that owes the rest of the team a pretzel.",
+  "path": "content/split-decision/columns/2024/2024-CLEV-05.md"
+ },
+ {
+  "id": "2024-CLEV-06",
+  "game": "2024-CLEV-06",
+  "season": 2024,
+  "headline": "Dallas, Dealt With: Vikings Bounce Back at SMU",
+  "pierogi": 4,
+  "words": 357,
+  "verdict": "A road win with a spine, and Ken briefly said something nice before claiming it was a misprint.",
+  "path": "content/split-decision/columns/2024/2024-CLEV-06.md"
+ },
+ {
+  "id": "2024-CLEV-07",
+  "game": "2024-CLEV-07",
+  "season": 2024,
+  "headline": "Three Points Short in Boulder, and the Air Was Thin in More Ways Than One",
+  "pierogi": null,
+  "words": 363,
+  "verdict": "Close again, short again, and Mickey ate a salad, which is the most alarming development of the season.",
+  "path": "content/split-decision/columns/2024/2024-CLEV-07.md"
+ },
+ {
+  "id": "2024-CLEV-08",
+  "game": "2024-CLEV-08",
+  "season": 2024,
+  "headline": "Kansas Comes to Cleveland and Leaves With a Lesson",
+  "pierogi": 4,
+  "words": 378,
+  "verdict": "A complete, comfortable win, Agnes never opened her book, and Ken is watching the Ohio forecast with a helmet on.",
+  "path": "content/split-decision/columns/2024/2024-CLEV-08.md"
+ },
+ {
+  "id": "2024-CLEV-09",
+  "game": "2024-CLEV-09",
+  "season": 2024,
+  "headline": "The Bobcats Came, Saw and Kept Scoring",
+  "pierogi": null,
+  "words": 381,
+  "verdict": "Ohio taught the class, the Vikings took notes, and a twelve-year-old named Marcus is the only person who left the building happy.",
+  "path": "content/split-decision/columns/2024/2024-CLEV-09.md"
+ },
+ {
+  "id": "2024-CLEV-10",
+  "game": "2024-CLEV-10",
+  "season": 2024,
+  "headline": "Cowboys Corralled: A Three-Point Answer to a 25-Point Question",
+  "pierogi": 4,
+  "words": 370,
+  "verdict": "A gutsy answer after the Ohio lesson, a bowl ticket punched, and a math teacher's blessing on every field goal.",
+  "path": "content/split-decision/columns/2024/2024-CLEV-10.md"
+ },
+ {
+  "id": "2024-CLEV-11",
+  "game": "2024-CLEV-11",
+  "season": 2024,
+  "headline": "Orlando Was Warm, the Win Was Warmer",
+  "pierogi": 3,
+  "words": 349,
+  "verdict": "Seven wins, a happy pipefitter from Akron, and the Doom Model now openly questioning its own existence.",
+  "path": "content/split-decision/columns/2024/2024-CLEV-11.md"
+ },
+ {
+  "id": "2024-CLEV-12",
+  "game": "2024-CLEV-12",
+  "season": 2024,
+  "headline": "46-45. That's It. That's the Headline.",
+  "pierogi": 5,
+  "words": 377,
+  "verdict": "One point, five pierogi, one converted wife, and one doubter who will deny the yelling until the end of time.",
+  "path": "content/split-decision/columns/2024/2024-CLEV-12.md"
+ },
+ {
+  "id": "2024-CLEV-13",
+  "game": "2024-CLEV-13",
+  "season": 2024,
+  "headline": "Liberty Bowl Champions: Mickey's Closet Needs a Bigger Door",
+  "pierogi": 5,
+  "words": 377,
+  "verdict": "Nine wins, a bowl trophy, a Mackey Award, and a doubter who has, against every instinct, opened the door a crack.",
+  "path": "content/split-decision/columns/2024/2024-CLEV-13.md"
+ }
+]

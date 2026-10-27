@@ -25,6 +25,7 @@ from openpyxl.utils import get_column_letter as CL
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from parse_playoffs import parse as parse_playoff_tree  # noqa: E402
+import columns as sd_columns  # noqa: E402
 
 warnings.filterwarnings("ignore")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -1011,6 +1012,21 @@ def build(path):
     hof.sort(key=lambda h: (h["left_after"] or 0, h["player"]))
     note(f"Hall of Fame: {len(hof)} eligible, {sum(1 for h in hof if h['status'] == 'pending')} awaiting a vote")
 
+    # Split Decision columns (content/split-decision/columns/<season>/<game>.md)
+    game_ids = {g["id"] for g in games}
+    cols = []
+    for c in sd_columns.load_all():
+        gid = c["meta"].get("game")
+        if gid not in game_ids:
+            note(f"Split Decision: {c['path']} points at unknown game {gid}")
+            continue
+        cols.append({"id": gid, "game": gid, "season": int(gid[:4]), "headline": c["meta"]["headline"],
+                     "pierogi": c["meta"].get("pierogi"), "words": c["words"],
+                     "verdict": c["sections"].get("Final Verdict", ""),
+                     "path": os.path.relpath(c["path"], ROOT).replace(os.sep, "/")})
+    cols.sort(key=lambda c: c["id"])
+    note(f"Split Decision: {len(cols)} columns")
+
     # Team table
     teams = []
     names = TEAMS_REF["teams"]
@@ -1040,7 +1056,7 @@ def build(path):
         "player_seasons": pstats, "players": sorted(players.values(), key=lambda p: p["id"]), "recruits": recruits,
         "recruiting_classes": sorted(rclasses, key=lambda c: (c["program"], c["cycle"])), "transfers": transfers,
         "departures": departures, "depth_chart": depth, "awards": awards, "all_americans": aas,
-        "records_official": records, "records_computed": bests, "teams": teams, "hall_of_fame": hof, "clips": [], "columns": [],
+        "records_official": records, "records_computed": bests, "teams": teams, "hall_of_fame": hof, "clips": [], "columns": cols,
     }
     os.makedirs(OUT, exist_ok=True)
     manifest = {}
