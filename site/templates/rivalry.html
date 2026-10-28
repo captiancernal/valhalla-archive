@@ -4,7 +4,7 @@
   <div class="wrap">
     <div class="eyebrow">The Archive</div>
     <h1>Rivalry Hub</h1>
-    <p>Three coaches, one conference, fourteen seasons. Who's really running the Big 12?</p>
+    {% set nw = ['zero','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen','twenty'] %}<p>Three coaches, one conference, {{ nw[years|length] if years|length < 21 else years|length }} seasons. Who's really running the Big 12?</p>
   </div>
 </section>
 <div class="wrap">
@@ -44,7 +44,7 @@
         <span class="vs">vs</span>
         <span class="sh-team"><b>{{ s.wb }}</b>{{ team(s.b) }}</span>
       </div>
-      <p class="muted series-note">{% if s.streak > 1 %}{{ (programs|selectattr('id', 'equalto', s.streak_team)|first).short }} has won the last {{ s.streak }}.{% endif %}{% if not s.complete %} Only playoff and Big 12 title-game meetings are tracked for this matchup.{% endif %}</p>
+      <p class="muted series-note">{% if s.streak > 1 %}{{ (programs|selectattr('id', 'equalto', s.streak_team)|first).short }} has won the last {{ s.streak }}.{% endif %}{% if not s.complete %} Playoff and Big 12 title-game meetings only.{% endif %}</p>
       <div class="table-wrap"><table class="data"><tbody>
       {% for m in s.games %}<tr><th scope="row">{{ m.season }}</th><td>{% if m.id %}<a href="{{ game_href(m.id) }}">{{ m.name }}</a>{% else %}{{ m.name }}{% endif %}</td><td>{{ team(m.winner, link=False) }}</td><td class="r">{{ m.score }}</td></tr>{% endfor %}
       </tbody></table></div>

@@ -1,6 +1,6 @@
 # The Valhalla Archive
 
-The official unofficial almanac of a College Football 25 dynasty: the Cleveland State Vikings, with equal coverage of the Ohio Bobcats and the Miami (OH) RedHawks.
+The official unofficial almanac of a College Football 25 dynasty: the Cleveland State Vikings, the Ohio Bobcats and the Miami (OH) RedHawks.
 
 **Live site: https://captiancernal.github.io/valhalla-archive/**
 

@@ -2,7 +2,6 @@
 {% block content %}
 <div class="wrap">
   <h2 class="section">Season leaders</h2>
-  <p class="note">The player who led {{ program.school }} in each category, every season.</p>
   <div class="leader-tables">
   {% for c in cats if c.rows %}
     <section class="lt">
@@ -16,8 +15,8 @@
   </div>
 
   {% if career %}
-  <h2 class="section">Career leaders (from the season stats)</h2>
-  <p class="note">Totals add up every season in the stats tabs (2024 onward).</p>
+  <h2 class="section">Career leaders</h2>
+  <p class="note">Career totals since 2024.</p>
   <div class="leader-tables">
   {% for r in career %}
     <section class="lt">

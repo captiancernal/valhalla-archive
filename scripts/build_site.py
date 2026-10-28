@@ -4,7 +4,9 @@ Usage:
   py -P scripts/build_site.py                                # local build, links start at "/"
   BASE_PATH=/valhalla-archive/ py -P scripts/build_site.py   # GitHub Pages build
 """
+import base64
 import datetime
+import hashlib
 import json
 import os
 import re
@@ -36,6 +38,15 @@ SITE_URL_DISPLAY = "captiancernal.github.io/valhalla-archive/"  # shown on print
 BASE = os.environ.get("BASE_PATH", "/")
 if not BASE.endswith("/"):
     BASE += "/"
+
+# Security policy for every page: only the site's own scripts, styles, fonts, images and data
+# may load. The one inline script (print view, run before the page paints) is allowed by its hash.
+PRINT_BOOT = 'try{if(sessionStorage.getItem("va-print")==="1")document.documentElement.classList.add("print-mode")}catch(e){}'
+_boot_hash = base64.b64encode(hashlib.sha256(PRINT_BOOT.encode()).digest()).decode()
+CSP = ("default-src 'self'; "
+       f"script-src 'self' 'sha256-{_boot_hash}'; "
+       "style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; media-src 'self'; "
+       "connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'")
 
 PROGRAMS = ["CLEV", "OHIO", "M-OH"]
 PROGRAM_SLUGS = {"CLEV": "cleveland-state", "OHIO": "ohio", "M-OH": "miami-oh"}
@@ -282,6 +293,7 @@ class Site:
                     "build_id": self.build_id, "program": None, "description": "", "theme_color": None,
                     "page_path": path, "site_url_display": SITE_URL_DISPLAY, "font_preloads": self.font_preloads,
                     "page_url": SITE_URL + path, "site_url": SITE_URL, "print_edition": None,
+                    "csp": CSP, "print_boot": Markup(PRINT_BOOT),
                     "no_print": template.startswith("play_")}  # games have their own print (word search)
         base_ctx.update(ctx)
         if not base_ctx.get("og_image"):
@@ -394,7 +406,7 @@ class Site:
                                   for m in ["NCAA", "Big 12", "Cleveland State"] if m in off],
                         computed=self.T["records_computed"],
                         page_title=f"Records · {name} · The Valhalla Archive",
-                        description="Cleveland State records: official NCAA, Big 12 and school records, plus season and career bests from the stats.")
+                        description="Cleveland State records: official NCAA, Big 12 and school records, plus season and career bests.")
             classes = sorted((c for c in self.T["recruiting_classes"] if c["program"] == "CLEV" and c.get("signees")),
                              key=lambda c: -c["cycle"])
             recruits = defaultdict(list)
@@ -715,20 +727,20 @@ class Site:
         meetings = defaultdict(list)
         for g in T["games"]:
             if g["opponent"] in ("OHIO", "M-OH"):
-                meetings[("CLEV", g["opponent"])].append({"season": g["season"], "name": g["name"] or f"Week {g['week']}", "id": g["id"],
+                meetings[("CLEV", g["opponent"])].append({"season": g["season"], "order": g["game_no"], "name": g["name"] or f"Week {g['week']}", "id": g["id"],
                                                           "winner": "CLEV" if g["result"] == "W" else g["opponent"],
                                                           "score": f"{max(g['clev_score'], g['opp_score'])}-{min(g['clev_score'], g['opp_score'])}"})
         for x in T["playoffs"]:
             if {x["team_a"], x["team_b"]} == {"OHIO", "M-OH"}:
-                meetings[("OHIO", "M-OH")].append({"season": x["season"], "name": "CFP " + x["round_name"] if x["round"] != "final" else "National Championship",
+                meetings[("OHIO", "M-OH")].append({"season": x["season"], "order": 100 + x["round_order"], "name": "CFP " + x["round_name"] if x["round"] != "final" else "National Championship",
                                                    "id": None, "winner": x["winner"], "score": f"{max(x['score_a'], x['score_b'])}-{min(x['score_a'], x['score_b'])}"})
         for c in T["conference_championships"]:
             if {c["champion"], c["runner_up"]} == {"OHIO", "M-OH"}:
-                meetings[("OHIO", "M-OH")].append({"season": c["season"], "name": "Big 12 Championship", "id": None, "winner": c["champion"],
+                meetings[("OHIO", "M-OH")].append({"season": c["season"], "order": 50, "name": "Big 12 Championship", "id": None, "winner": c["champion"],
                                                    "score": f"{c['champion_score']}-{c['runner_up_score']}"})
         series = []
         for (a, b), ms in meetings.items():
-            ms.sort(key=lambda m: -m["season"])
+            ms.sort(key=lambda m: (-m["season"], -m["order"]))  # newest first, latest game of a season first
             wa = sum(1 for m in ms if m["winner"] == a)
             streak_team, streak = None, 0
             for m in ms:
@@ -898,10 +910,10 @@ class Site:
              "rows": [{"name": d["player"], "meta": f"{d['position']} · {d['overall']} OVR", "tag": (f"Rd {d['draft_round']}" if d["drafted"] else None)} for d in deps[:5]]},
             {"key": "depth", "title": f"Projected {nxt} depth chart", "unlocked": bool(proj),
              "unlock_phase": f"{nxt} Preseason",
-             "summary": f"Early look at the {nxt} starters" + (" (players still listed as departing are flagged)" if any(d["departing"] for d in proj) else ""),
+             "summary": f"Early look at the {nxt} starters" + ("; departing players are flagged" if any(d["departing"] for d in proj) else ""),
              "rows": [{"name": d["player"], "meta": d["slot"].replace("CB1", "CB"), "tag": "Departing" if d["departing"] else None} for d in proj_show]},
             {"key": "recruits", "title": f"Incoming {nxt} recruits", "unlocked": bool(incoming), "unlock_phase": "Final Recruiting",
-             "summary": f"{len(incoming)} signees logged" if incoming else "Cards reveal as each recruit is logged",
+             "summary": f"{len(incoming)} signee{'s' if len(incoming) != 1 else ''} so far" if incoming else "Signees appear here during Final Recruiting",
              "rows": [{"name": r["player"], "meta": f"{r['position'] or ''} · #{r['natl_rank']}" if r["natl_rank"] else (r["position"] or ""), "tag": (f"{int(r['stars'])}★" if r["stars"] else None)} for r in incoming[:5]]},
             {"key": "schedule", "title": f"{nxt} schedule & rivalry previews", "unlocked": bool(next_games), "unlock_phase": f"{nxt} Preseason",
              "summary": f"{len(next_games)} games set" if next_games else "Unlocks when the schedule is set",
@@ -935,9 +947,9 @@ class Site:
         phase_idx = phases.index(cur_phase) if cur_phase in phases else 0
         desc = {
             "Season Recap": f"The {cur} season is over. Departing seniors are known, and Record Watch looks ahead.",
-            "Final Recruiting": f"Signing day. Each {nxt} recruit's card reveals as the signee is logged.",
+            "Final Recruiting": f"Signing day for the {nxt} class.",
             "Player Departures and Draft": "Draft results arrive for the departing seniors.",
-            "Transfer Window": "Transfers in and out are logged.",
+            "Transfer Window": "The portal opens: transfers in and out.",
             f"{nxt} Preseason": f"The {nxt} schedule is set and the depth chart firms up.",
         }
         phase_info = [{"name": ph, "desc": desc.get(ph, "")} for ph in phases]
@@ -986,7 +998,7 @@ class Site:
                         break
                     n += 1
                 who = "Vikings" if r0 == "W" else SHORT[opp]
-                streak = f"{who} have won the last {n}" if n > 1 else f"{who} won the last meeting"
+                streak = f"{who} {'have' if r0 == 'W' else 'has'} won the last {n}" if n > 1 else f"{who} won the last meeting"
             rivals.append({"id": opp, "name": SHORT[opp], "logo": self.prog[opp]["logo"], "w": w, "l": len(gs) - w,
                            "meetings": len(gs), "streak": streak, "last": list(reversed(gs[-5:]))})
         watch = road_gen.record_watch(T, cur)
@@ -1001,7 +1013,7 @@ class Site:
         ]
         self.road_summary = {"watch": watch, "chase": chase}
         self.render("road.html", "road/", active_nav="road", page_title=f"Road to {nxt} · The Valhalla Archive",
-                    description=f"The {nxt} offseason tracker: Record Watch, departing seniors, the projected depth chart, recruits, transfers and rivalry previews.",
+                    description=f"The road to {nxt}: Record Watch, departing seniors, the projected depth chart, recruits, transfers and rivalry previews.",
                     cur=cur, nxt=nxt, phase_info=phase_info, phase_idx=phase_idx, departures=departures, drafted_n=drafted_n,
                     depth=depth, returning_starters=returning_starters, starter_slots=len(starters), recruits=recruits,
                     last_class=last_class, placeholders=placeholders, transfers=transfers, last_transfers=last_transfers,
@@ -1031,7 +1043,7 @@ class Site:
             {"key": "trivia", "ready": True, "href": "play/trivia/", "kicker": "Ten questions a round", "title": "Archive Trivia",
              "text": "Champions, awards, stat leaders, big games and recruits. Pick a program, an era and a difficulty."},
             {"key": "higherlower", "ready": True, "href": "play/higher-lower/", "kicker": "Stat duel", "title": "Higher or Lower",
-             "text": "Two real stat lines or records. Which one is bigger?"},
+             "text": "Two stat lines. Which one is bigger?"},
             {"key": "playerdle", "ready": True, "href": "play/playerdle/", "kicker": "Daily puzzle", "title": "Playerdle",
              "text": "Guess the mystery player in eight tries using clues about program, position, seasons, honors and more."},
             {"key": "grid", "ready": True, "href": "play/grid/", "kicker": "Nine squares", "title": "The Grid",
@@ -1040,12 +1052,12 @@ class Site:
              "text": "Themed grids of rosters, award winners and program legends."},
         ]
         self.render("play_hub.html", "play/", active_nav="play", page_title="Games · The Valhalla Archive",
-                    description="Trivia and puzzle games built from the Valhalla Archive's dynasty data.", games=games)
+                    description="Trivia, stat duels and daily puzzles from the Valhalla Archive.", games=games)
         self.render("play_trivia.html", "play/trivia/", active_nav="play", page_title="Archive Trivia · The Valhalla Archive",
                     description=f"Trivia from the dynasty's records: {len(qs)} questions on Cleveland State, Ohio, Miami (OH) and the league.",
                     eras=eras, total=f"{len(qs):,}")
         self.render("play_higherlower.html", "play/higher-lower/", active_nav="play", page_title="Higher or Lower · The Valhalla Archive",
-                    description="Guess whether the next real stat line from the dynasty is higher or lower. Keep the streak alive.",
+                    description="Guess whether the next stat line from the dynasty is higher or lower. Keep the streak alive.",
                     total=f"{len(hl['cards']):,}")
         self.render("play_playerdle.html", "play/playerdle/", active_nav="play", page_title="Playerdle · The Valhalla Archive",
                     description="Guess the mystery player from the dynasty in eight tries. A new daily puzzle every day, plus unlimited practice.")

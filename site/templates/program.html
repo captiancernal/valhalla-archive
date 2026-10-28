@@ -55,7 +55,7 @@
   <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Cycle</th><th scope="col" class="r">National rank</th><th scope="col" class="r">5★</th><th scope="col" class="r">4★</th><th scope="col" class="r">3★</th></tr></thead><tbody>
   {% for c in class_ranks %}<tr><th scope="row">{{ c.cycle }}</th><td class="r">{{ c.natl_rank_text }}</td><td class="r">{{ c.summary_stars['5'] }}</td><td class="r">{{ c.summary_stars['4'] }}</td><td class="r">{{ c.summary_stars['3'] }}</td></tr>{% endfor %}
   </tbody></table></div>
-  <p class="note">Class rankings were recorded for 2024 and 2025.</p>
+  <p class="note">Rankings are available for the 2024 and 2025 classes only.</p>
   {% endif %}
 </div>
 {% endblock %}

@@ -67,6 +67,7 @@
     renderPlay(false);
   }
 
+  function esc(x) { return String(x == null ? '' : x).replace(/[&<>"]/g, function (ch) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]; }); }
   function cardHTML(c, hidden, deck) {
     var logo = BASE + 'assets/logos/sm/' + c.p + '.png';
     return '<div class="hl-card" data-prog="' + c.p + '">' +
@@ -74,15 +75,15 @@
       '<div class="hl-name"></div>' +
       '<div class="hl-sub"></div>' +
       '<div class="hl-val">' + (hidden ? '<span class="q">?</span>' : '<b>' + fmt(c.v) + '</b>') + '</div>' +
-      '<div class="hl-unit">' + deck.unit + '</div>' +
-      (c.r && !hidden ? '<div class="hl-rev">' + c.r + '</div>' : '<div class="hl-rev"></div>') +
+      '<div class="hl-unit">' + esc(deck.unit) + '</div>' +
+      (c.r && !hidden ? '<div class="hl-rev">' + esc(c.r) + '</div>' : '<div class="hl-rev"></div>') +
       '</div>';
   }
 
   function renderPlay() {
     var deck = deckInfo(state.cur);
     play.innerHTML =
-      '<div class="hl-bar"><span class="gm-chip ghost">' + (state.deck === 'mixed' ? 'Mixed · ' : '') + deck.label + '</span>' +
+      '<div class="hl-bar"><span class="gm-chip ghost">' + (state.deck === 'mixed' ? 'Mixed · ' : '') + esc(deck.label) + '</span>' +
       '<span class="hl-streak">Streak <b>' + state.streak + '</b></span></div>' +
       '<div class="hl-pair">' + cardHTML(state.left, false, deck) +
       '<div class="hl-vs" aria-hidden="true">vs</div>' + cardHTML(state.right, true, deck) + '</div>' +
@@ -144,7 +145,7 @@
     var s = VAGames.record('higherlower', upd);
     var deck = deckInfo(state.deck);
     over.innerHTML = '<div class="tv-score"><div class="n"><b>' + state.streak + '</b><span>in a row</span></div>' +
-      '<p class="line"></p><p class="muted">Best ' + deck.label.toLowerCase() + ' streak: ' + (s['best_' + state.deck] || 0) +
+      '<p class="line"></p><p class="muted">Best ' + esc(deck.label.toLowerCase()) + ' streak: ' + (s['best_' + state.deck] || 0) +
       ' · Best overall: ' + (s.best || 0) + '</p></div>' +
       '<div class="gm-actions" style="justify-content:center"><button type="button" class="gm-btn" data-again>Play again</button>' +
       '<button type="button" class="gm-btn ghost" data-decks-btn>Change deck</button></div>';

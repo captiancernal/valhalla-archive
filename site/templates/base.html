@@ -2,8 +2,10 @@
 <html lang="en"{% if no_print %} data-noprint{% endif %}>
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="{{ csp }}">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{% if not no_print %}<script>try{if(sessionStorage.getItem("va-print")==="1")document.documentElement.classList.add("print-mode")}catch(e){}</script>{% endif %}
+{% if not no_print %}<script>{{ print_boot }}</script>{% endif %}
 <title>{% block title %}{{ page_title }}{% endblock %}</title>
 <meta name="description" content="{{ description }}">
 <meta property="og:site_name" content="The Valhalla Archive">
@@ -81,7 +83,7 @@
   <div class="wrap">
     <div>
       <p class="brandline">The Valhalla Archive</p>
-      <p>The almanac of a College Football 25 dynasty: the Cleveland State Vikings, with equal coverage of Ohio and Miami (OH). Data through the {{ site.latest_season_in_tracker }} season.</p>
+      <p>The almanac of a College Football 25 dynasty: the Cleveland State Vikings, the Ohio Bobcats and the Miami (OH) RedHawks. Data through the {{ site.latest_season_in_tracker }} season.</p>
     </div>
     <div>
       <h2>Programs</h2>

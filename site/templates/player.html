@@ -78,7 +78,6 @@
   <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Level</th><th scope="col">Record</th><th scope="col" class="r">Mark</th><th scope="col">Set</th></tr></thead><tbody>
   {% for r in p.records %}<tr><td>{{ r.magnitude }}</td><td>{{ r.duration }} {{ r.type|lower }}</td><td class="r"><b>{{ fmt(r.value) }}</b></td><td>{{ r.year_set }}</td></tr>{% endfor %}
   </tbody></table></div>
-  <p class="note">Official records as entered in the tracker.</p>
   {% endif %}
 
   {% if player_clips %}

@@ -2,10 +2,10 @@
 {% block content %}
 <div class="wrap">
   <h2 class="section">Recruiting classes</h2>
-  <p class="note">A class is listed under the cycle it signed; those players arrive the following season. Star counts come from the recruit lists.</p>
+  <p class="note">Classes are listed by signing year; players enroll the following season.</p>
   <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Cycle</th><th scope="col">Arrives</th><th scope="col" class="r">Signees</th><th scope="col" class="r">5★</th><th scope="col" class="r">4★</th><th scope="col" class="r">3★</th><th scope="col" class="r">Class rank</th></tr></thead><tbody>
   {% for c in classes %}<tr><th scope="row"><a href="#class-{{ c.cycle }}">{{ c.cycle }}</a></th><td>{{ c.cycle + 1 }}</td><td class="r">{{ c.signees }}</td>
-  {% if c.stars %}<td class="r">{{ c.stars['5'] }}</td><td class="r">{{ c.stars['4'] }}</td><td class="r">{{ c.stars['3'] }}</td>{% else %}<td class="r muted" colspan="3">stars not tracked</td>{% endif %}
+  {% if c.stars %}<td class="r">{{ c.stars['5'] }}</td><td class="r">{{ c.stars['4'] }}</td><td class="r">{{ c.stars['3'] }}</td>{% else %}<td class="r muted" colspan="3">not listed</td>{% endif %}
   <td class="r">{{ c.natl_rank_text or '' }}</td></tr>{% endfor %}
   </tbody></table></div>
 

@@ -110,6 +110,12 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 - 404.html is generated (noindex). Test the Pages build with `MSYS_NO_PATHCONV=1 BASE_PATH=/valhalla-archive/ py -P scripts/build_site.py` (Git Bash otherwise mangles the path), then check_links with the same BASE_PATH.
 - Privacy: commits use GitHub's private address 173638619+captiancernal@users.noreply.github.com (set in this repo's git config; history re-labelled 2026-10-28 with the owner's OK, before the first push). Never commit with the Gmail address. A pre-rewrite backup bundle sits outside the repo at Documents/valhalla-archive-backup-2026-10-28.bundle (local only, never push it).
 
+## Security and page wording (review, 2026-10-28)
+- Every page carries a Content-Security-Policy meta tag (CSP in build_site.py): only the site's own scripts, styles, fonts, images and data load. The one inline script (PRINT_BOOT, print view) is allowed by its hash. Put any new page script in a file under assets/js/; never use inline `<script>` or onclick-style attributes. check_links.py fails the build if one appears.
+- Page scripts that build HTML from data must escape it (esc() helpers in home.js, higherlower.js) or use textContent.
+- The workflow is read-only except the deploy job (pages + id-token). Checkout keeps no credentials.
+- Reader-facing wording: write like an almanac, not like a build log. Don't mention "the tracker", "logged", "as entered", "computed from the stats", "real" stat lines or "built from the data" on pages. Say what a reader needs (for example "Since 2024" or "Opens during Transfer Window"). This doesn't apply to Split Decision columns.
+
 ## Split Decision (M7)
 - Bible: content/split-decision/character-bible.md (approved). Continuity log: content/split-decision/continuity.md (update every season).
 - Columns: content/split-decision/columns/<season>/<game-id>.md (front matter: game, headline, pierogi for wins). Check with `py -P scripts/columns.py check <season>` (0 errors required).

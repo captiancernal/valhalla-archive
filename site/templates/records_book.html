@@ -4,14 +4,13 @@
   <div class="wrap">
     <div class="eyebrow">The Archive</div>
     <h1>Records Book</h1>
-    <p>The official records as entered in the tracker, plus bests calculated from the season stats and the three coaches' season sheets.</p>
+    <p>NCAA, Big 12 and school records, plus the best seasons and careers at Cleveland State, Ohio and Miami (OH).</p>
   </div>
 </section>
 <div class="wrap">
   <nav class="chips" aria-label="Sections"><a href="#official">Official records</a><a href="#team">Team-season bests</a><a href="#leaders">Individual season bests</a><a href="#clev">Cleveland State season &amp; career</a></nav>
 
   <h2 class="section" id="official">Official records</h2>
-  <p class="note">NCAA, Big 12 and Cleveland State records exactly as the tracker lists them.</p>
   {% for mag, groups in official %}
     <h3 class="sub-h">{{ mag }}</h3>
     <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Type</th><th scope="col">Record</th><th scope="col" class="r">Mark</th><th scope="col">Player</th><th scope="col">Set</th></tr></thead><tbody>
@@ -40,10 +39,10 @@
     </section>
   {% endfor %}
   </div>
-  <p class="note">Ohio and Miami (OH) only track their team leaders, so these lists compare each program's top player in each category.</p>
+  <p class="note">Drawn from each program's season stat leaders.</p>
 
   <h2 class="section" id="clev">Cleveland State season &amp; career bests</h2>
-  <p class="note">Calculated from the Cleveland State season stats, 2024 onward. These include marks set after the Records sheet was last updated.</p>
+  <p class="note">Since 2024, including marks set after the official records were last updated.</p>
   <div class="leader-tables">
   {% for r in computed %}
     <section class="lt"><h3>{{ r.label }} <span class="muted">· {{ r.scope }}</span></h3>

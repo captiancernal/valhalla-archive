@@ -113,7 +113,7 @@
     // Answer key for printing: the same grid with the hidden words in bold.
     var on = {};
     cur.placed.forEach(function (pw) { pw.cells.forEach(function (x) { on[x[0] + ',' + x[1]] = 1; }); });
-    var html = '<h2>Answer key: ' + cur.p.title + '</h2><div class="ws-keygrid" style="--n:' + cur.size + '">';
+    var html = '<h2>Answer key: ' + String(cur.p.title).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }) + '</h2><div class="ws-keygrid" style="--n:' + cur.size + '">';
     for (var r = 0; r < cur.size; r++) for (var c = 0; c < cur.size; c++) {
       html += '<span' + (on[r + ',' + c] ? ' class="on"' : '') + '>' + cur.grid[r][c] + '</span>';
     }

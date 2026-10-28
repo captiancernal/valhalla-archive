@@ -2,7 +2,6 @@
 {% block content %}
 <div class="wrap">
   <h2 class="section">Official records</h2>
-  <p class="note">As entered in the tracker's Records sheet.</p>
   {% for mag, groups in official %}
     <h3 class="sub-h">{{ mag }}</h3>
     <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Type</th><th scope="col">Record</th><th scope="col" class="r">Mark</th><th scope="col">Player</th><th scope="col">Set</th></tr></thead><tbody>
@@ -10,8 +9,8 @@
     </tbody></table></div>
   {% endfor %}
 
-  <h2 class="section">Season &amp; career bests (computed from the stats)</h2>
-  <p class="note">Calculated from the season stats tabs, 2024 onward. These include marks set after the Records sheet was last updated.</p>
+  <h2 class="section">Season &amp; career bests</h2>
+  <p class="note">Since 2024, including marks set after the official records were last updated.</p>
   <div class="leader-tables">
   {% for r in computed %}
     <section class="lt">

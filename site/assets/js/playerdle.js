@@ -43,8 +43,8 @@
 
   function compare(g, a, k) {
     var gv = g[k], av = a[k];
-    if (av === null || av === undefined) return { cls: 'na', text: '?', note: 'Not tracked for the mystery player' };
-    if (gv === null || gv === undefined) return { cls: 'miss', text: '—', note: 'Not tracked for your guess' };
+    if (av === null || av === undefined) return { cls: 'na', text: '?', note: 'Not on file for the mystery player' };
+    if (gv === null || gv === undefined) return { cls: 'miss', text: '—', note: 'Not on file for your guess' };
     if (k === 'p') return { cls: gv === av ? 'hit' : 'miss', text: TILE[gv] };
     if (k === 'pos' || k === 'st') return { cls: gv === av ? 'hit' : 'miss', text: gv };
     if (gv === av) return { cls: 'hit', text: String(gv) };
