@@ -153,3 +153,15 @@ details.class-list .table-wrap { border: 0; border-top: 1px solid var(--rule); b
   table.data td, table.data th, table.data tbody th { padding: 8px 9px; }
 }
 .hof-pill { text-decoration: none; display: inline-block; margin: 2px 0 8px; }
+
+/* ---------- Highlight clips */
+.clip-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px; }
+.clip { margin: 0; background: var(--paper); border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; }
+.clip-media { background: #000; }
+.clip video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #000; }
+.clip figcaption { padding: 12px 14px 14px; }
+.clip-what { margin: 0; font: 600 16px/1.35 var(--font-ui); }
+.clip-meta { margin: 6px 0 0; font-size: 13px; color: var(--muted); }
+.clip-meta a, .clip-players a { color: inherit; text-underline-offset: 3px; }
+.clip-players { margin: 6px 0 0; font-size: 13px; }
+@media (max-width: 400px) { .clip-grid { grid-template-columns: 1fr; } }

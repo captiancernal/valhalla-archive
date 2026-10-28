@@ -29,6 +29,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TABLES = os.path.join(ROOT, "data", "tables")
 SRC = os.path.join(ROOT, "site")
 OUT = os.path.join(ROOT, "_site")
+CLIPS = os.environ.get("CLIPS_DIR") or os.path.join(ROOT, "content", "clips")
 SITE_URL_DISPLAY = "captiancernal.github.io/valhalla-archive/"  # shown on printed pages
 BASE = os.environ.get("BASE_PATH", "/")
 if not BASE.endswith("/"):
@@ -114,12 +115,14 @@ class Site:
             p["tagline"] = f"National champions {year_ranges(titles)}" if titles else f"{p['career']['w']}-{p['career']['l']} since {p['first_season']}"
             self.programs.append(p)
         self.prog = {p["id"]: p for p in self.programs}
+        self.clips = self.load_clips()
 
         self.nav = [{"key": "home", "label": "Home", "href": "", "footer": True}, {"sep": True}]
         for p in self.programs:
             self.nav.append({"key": p["id"], "label": p["short"], "href": p["href"], "logo": p["logo"]})
         self.nav += [{"sep": True},
                      {"key": "split", "label": "Split Decision", "href": "split-decision/", "footer": True},
+                     *([{"key": "clips", "label": "Highlights", "href": "highlights/", "footer": True}] if self.clips else []),
                      {"key": "players", "label": "Players", "href": "players/", "footer": True},
                      {"key": "almanac", "label": "Almanac", "href": "almanac/", "footer": True},
                      {"key": "records", "label": "Records", "href": "records/", "footer": True},
@@ -189,6 +192,52 @@ class Site:
         if bowl:
             return f"{'Won' if bowl['result'] == 'W' else 'Lost'} {bowl['name']}"
         return ""
+
+    # ---------------------------------------------------------------- highlight clips (M10)
+    def load_clips(self):
+        """content/clips/clips.json -> clips ready for templates, newest first. A clip saved before its
+        game was logged links to the game once exactly one matching game exists."""
+        path = os.path.join(CLIPS, "clips.json")
+        if not os.path.exists(path):
+            return []
+        with open(path, encoding="utf-8") as f:
+            raw = json.load(f)["clips"]
+        games = {g["id"]: g for g in self.T["games"]}
+        out = []
+        for c in raw:
+            c = dict(c)
+            g = games.get(c.get("game") or "")
+            if not g:
+                hits = [x for x in self.T["games"] if x["season"] == c["season"] and x["opponent"] == c["opponent"]]
+                g = hits[0] if len(hits) == 1 else None
+            c["g"] = g
+            c["opp_name"] = (self.teams.get(c["opponent"]) or {}).get("school") or c["opponent"]
+            c["player_list"] = [self.players[pid] for pid in c.get("players", []) if pid in self.players]
+            c["src_href"] = "assets/clips/" + c["file"]
+            c["poster_href"] = "assets/clips/" + c["poster"]
+            secs = int(round(c["duration"]))
+            c["duration_text"] = f"{secs // 60}:{secs % 60:02d}"
+            out.append(c)
+        # Newest first: most recently added, then latest season and game
+        out.sort(key=lambda c: (c.get("added") or "", c["season"], c["g"]["game_no"] if c["g"] else 0), reverse=True)
+        return out
+
+    def build_highlights(self):
+        if not self.clips:
+            return
+        dest = os.path.join(OUT, "assets", "clips")
+        os.makedirs(dest, exist_ok=True)
+        for c in self.clips:
+            for k in ("file", "poster"):
+                shutil.copy2(os.path.join(CLIPS, c[k]), os.path.join(dest, c[k]))
+        by = defaultdict(list)
+        for c in self.clips:
+            by[c["season"]].append(c)
+        for items in by.values():
+            items.sort(key=lambda c: (c["g"]["game_no"] if c["g"] else 99, c["id"]))
+        self.render("highlights.html", "highlights/", active_nav="clips", clips=self.clips,
+                    by_season=sorted(by.items(), key=lambda kv: -kv[0]), page_title="Highlights · The Valhalla Archive",
+                    description=f"{len(self.clips)} highlight clips from the College Football 25 dynasty.")
 
     def render(self, template, path, **ctx):
         base_ctx = {"base": BASE, "site": self.site, "programs": self.programs, "nav": self.nav, "banner": self.banner,
@@ -416,6 +465,7 @@ class Site:
             title = f"{g['season']} {label}: Cleveland State {g['clev_score']}, {opp.get('school') or g['opponent']} {g['opp_score']}"
             col = next((c for c in self.T["columns"] if c["game"] == g["id"]), None)
             self.render("game.html", f"games/{g['id']}/", program=p, active_nav="CLEV", theme_color=p["colors"]["primary"], column=col,
+                        game_clips=[c for c in self.clips if c["g"] and c["g"]["id"] == g["id"]],
                         g=g, label=label, prev=prev, nxt=nxt, record_after=f"{w}-{l}", series=series,
                         series_rec=f"{sw}-{len(series) - sw}", opp=opp, season=self.season("CLEV", g["season"]),
                         page_title=f"{title} · The Valhalla Archive",
@@ -480,7 +530,7 @@ class Site:
                 honors.append(", ".join(f"{a['season']} {a['award']}" for a in p["awards"]))
             if p["all_american"]:
                 honors.append(f"All-American {year_ranges([a['season'] for a in p['all_american']])}")
-            self.render("player.html", f"players/{p['id']}/", program=prog, active_nav="players",
+            self.render("player.html", f"players/{p['id']}/", player_clips=[c for c in self.clips if p["id"] in c.get("players", [])], program=prog, active_nav="players",
                         theme_color=prog["colors"]["primary"] if prog else None, p=p, stats=stats, spark=spark,
                         ratings=ratings, journey=journey, seasons_text=seasons_text,
                         hof=next((h for h in self.T["hall_of_fame"] if h["id"] == p["id"] and h["status"] == "inducted"), None),
@@ -811,7 +861,7 @@ class Site:
         champ = next((n for n in T["national_championships"] if n["season"] == cur), None)
         champ_season = self.season(champ["champion"], cur) if champ and champ["champion"] in self.prog else None
         columns = T.get("columns") or []
-        clips = T.get("clips") or []
+        clips = self.clips
         self.render("home.html", "", page_title="The Valhalla Archive", active_nav="home",
                     description=f"The almanac of a College Football 25 dynasty: Cleveland State, Ohio and Miami (OH). {cur} national champions: "
                                 + (f"{self.prog[champ['champion']]['school']} {self.prog[champ['champion']]['nickname']}." if champ_season else f"{(self.teams.get(champ['champion'], {}) or {}).get('school', '')}." if champ else ""),
@@ -970,6 +1020,7 @@ class Site:
         self.build_split_decision()
         self.build_play()
         self.build_road()
+        self.build_highlights()
         print(f"Built {self.pages} pages into _site/ (base path {BASE})")
 
 

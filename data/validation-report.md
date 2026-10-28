@@ -1,6 +1,6 @@
 # Validation report
 
-82 passed, 0 failed.
+82 passed, 1 failed.
 
 - PASS: CLEV career record 180-29
 - PASS: OHIO career record 175-34
@@ -84,3 +84,4 @@
 - PASS: no malformed player names
 - PASS: no non-canonical name spellings remain
 - PASS: every CLEV opponent has a school name
+- FAIL: highlight clips: files, games, players and size budget OK  (['2038-kent-1: missing 2038-kent-1.mp4'])

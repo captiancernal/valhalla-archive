@@ -1,0 +1,4 @@
+<h2 id="reel-title" class="section">Highlights <a class="more" href="{{ base }}highlights/">All {{ clips|length }} clip{{ '' if clips|length == 1 else 's' }}</a></h2>
+<div class="clip-grid">
+  {% for c in clips[:3] %}{% include "_clip.html" %}{% endfor %}
+</div>

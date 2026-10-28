@@ -114,6 +114,12 @@ used = {g["opponent"] for g in games}
 unnamed = sorted(t for t in used if not (teams.get(t) or {}).get("school"))
 check("every CLEV opponent has a school name", not unnamed, unnamed)
 
+# --- Highlight clips (M10): files present, games/players real, size caps and budget kept
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import clips as clips_mod  # noqa: E402
+clip_problems = clips_mod.problems()
+check("highlight clips: files, games, players and size budget OK", not clip_problems, clip_problems[:5])
+
 fails = [r for r in results if not r[0]]
 with open(os.path.join(ROOT, "data", "validation-report.md"), "w", encoding="utf-8") as f:
     f.write(f"# Validation report\n\n{len(results) - len(fails)} passed, {len(fails)} failed.\n\n")

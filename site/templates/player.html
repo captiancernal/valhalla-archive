@@ -80,5 +80,10 @@
   </tbody></table></div>
   <p class="note">Official records as entered in the tracker.</p>
   {% endif %}
+
+  {% if player_clips %}
+  <h2 class="section">Highlights</h2>
+  <div class="clip-grid">{% for c in player_clips %}{% include "_clip.html" %}{% endfor %}</div>
+  {% endif %}
 </div>
 {% endblock %}

@@ -39,6 +39,11 @@
   </a>
   {% endif %}
 
+  {% if game_clips %}
+  <h2 class="section">Highlights</h2>
+  <div class="clip-grid">{% for c in game_clips %}{% include "_clip.html" %}{% endfor %}</div>
+  {% endif %}
+
   <h2 class="section">All-time vs {{ opp.school or g.opponent }} <span class="muted" style="font:500 15px var(--font-ui)">· CLEV {{ series_rec }}</span></h2>
   <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Season</th><th scope="col">Game</th><th scope="col">Result</th></tr></thead><tbody>
   {% for x in series %}<tr{% if x.id == g.id %} class="hl"{% endif %}><th scope="row">{{ x.season }}</th><td><a href="{{ game_href(x.id) }}">{{ x.name or ('Week ' ~ x.week) }}</a></td><td class="{{ 'res-w' if x.result == 'W' else 'res-l' }}">{{ x.result }} {{ x.clev_score }}-{{ x.opp_score }}</td></tr>{% endfor %}

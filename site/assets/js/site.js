@@ -11,7 +11,7 @@
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && btn.getAttribute('aria-expanded') === 'true') { set(false); btn.focus(); }
   });
-  window.matchMedia('(min-width: 1181px)').addEventListener('change', function (m) { if (m.matches) set(false); });
+  window.matchMedia('(min-width: 1640px)').addEventListener('change', function (m) { if (m.matches) set(false); });
 })();
 
 // Print view: a footer toggle re-lays out the page for printing. Remembered for this tab only.

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">The Archive</p>
+    <h1>Highlights</h1>
+    <p>Plays from the dynasty, captured in game. {{ clips|length }} clip{{ '' if clips|length == 1 else 's' }}, newest season first.</p>
+  </div>
+</section>
+<div class="wrap">
+  {% for season, items in by_season %}
+  <h2 class="section" id="s{{ season }}">{{ season }}</h2>
+  <div class="clip-grid">
+    {% for c in items %}{% include "_clip.html" %}{% endfor %}
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

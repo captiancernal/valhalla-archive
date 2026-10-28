@@ -23,7 +23,7 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 
 ## Tools on this machine (Windows 11)
 - git 2.47, gh 2.102 (signed in as captiancernal), Node 24 / npm 11, Python 3.14 (run it as `py` or `python`; `python3` is not available)
-- ffmpeg: NOT installed yet. Install it at M10 (clips pipeline).
+- ffmpeg 9.0.2 (installed 2026-10-28 with `winget install --id Gyan.FFmpeg`). scripts/clips.py finds it on PATH or in the winget folder, so a fresh shell isn't needed.
 
 ## Milestone status
 - [x] M0 Setup Day: repo created and linked, folder layout made, Drive folders created, tracker copied to source/
@@ -90,6 +90,14 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 - Footer "Print view" toggle (remembered per browser tab in sessionStorage `va-print`); the browser's own Print gets the same layout automatically (beforeprint/afterprint in site.js). Save as PDF button appears only in print view.
 - Styles: site/assets/css/print.css, all scoped to `html.print-mode`. Too-wide tables are scaled to fit by site.js (min 55%).
 - "Print Edition" masthead on season recaps, the Records Book and player cards (`print_edition=` in build_site.py). Games pages (play_*) have no print view; Word Search keeps its own Print button.
+
+## Highlight clips (M10)
+- Owner drops videos in content/clips/incoming/ (git-ignored). Ask the owner for each clip's caption: season, opponent, what happened (never invent one); optionally the players in it.
+- `py -P scripts/clips.py status` | `add "<file>" --season N --opponent ABBR --what "..." [--game ID] [--player "Name"]... [--poster-at S]` | `list` | `remove <id>` | `check`.
+- Output: content/clips/<id>.mp4 (H.264 CRF 24, max 1080p/60fps, maxrate 5M, fast-start) + <id>.jpg poster + clips.json. Over 25 MB re-encodes at 720p to fit. Budget 500 MB total, warning at 75% (about 13 minutes of 1080p). No Git LFS. Removed clips stay in git history, so warn before committing big ones.
+- Originals move to content/clips/originals/ (git-ignored); the owner archives them in Drive "02 Clips Source".
+- Site: highlights/ page + "Highlights" menu link (only when clips exist), front-page reel (3 newest), clips on their game page and on tagged players' cards. A clip for a game not yet in the tracker links up automatically once the game is logged. validate.py checks clips. CLIPS_DIR env var points scripts at a test folder.
+- Menu: full horizontal menu only from 1640px wide (it needs ~1,520px); below that the Menu button opens a multi-column list.
 
 ## Split Decision (M7)
 - Bible: content/split-decision/character-bible.md (approved). Continuity log: content/split-decision/continuity.md (update every season).

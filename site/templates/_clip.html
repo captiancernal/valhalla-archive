@@ -1,0 +1,19 @@
+{# One highlight clip. Expects `c` (a prepared clip from Site.load_clips). #}
+<figure class="clip">
+  <div class="clip-media">
+    <video controls preload="none" playsinline poster="{{ base }}{{ c.poster_href }}" width="{{ c.width }}" height="{{ c.height }}" aria-label="Highlight video: {{ c.what }}">
+      <source src="{{ base }}{{ c.src_href }}" type="video/mp4">
+      <a href="{{ base }}{{ c.src_href }}">Open the clip</a>
+    </video>
+  </div>
+  <figcaption>
+    <p class="clip-what">{{ c.what }}</p>
+    <p class="clip-meta">
+      {% if c.g %}<a href="{{ game_href(c.g.id) }}">{{ c.season }} {{ c.g.name or ('Week ' ~ c.g.week) }}</a>
+        · <span class="{{ 'res-w' if c.g.result == 'W' else 'res-l' }}">{{ c.g.result }} {{ c.g.clev_score }}-{{ c.g.opp_score }}</span> vs {{ c.opp_name }}
+      {% else %}{{ c.season }} vs {{ c.opp_name }}{% endif %}
+      · {{ c.duration_text }}
+    </p>
+    {% if c.player_list %}<p class="clip-players">{% for p in c.player_list %}<a href="{{ base }}players/{{ p.id }}/">{{ p.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
+  </figcaption>
+</figure>
