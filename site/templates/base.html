@@ -1,8 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="en"{% if no_print %} data-noprint{% endif %}>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{% if not no_print %}<script>try{if(sessionStorage.getItem("va-print")==="1")document.documentElement.classList.add("print-mode")}catch(e){}</script>{% endif %}
 <title>{% block title %}{{ page_title }}{% endblock %}</title>
 <meta name="description" content="{{ description }}">
 <meta property="og:site_name" content="The Valhalla Archive">
@@ -21,11 +22,24 @@
 <link rel="stylesheet" href="{{ base }}assets/css/components.css?v={{ build_id }}">
 <link rel="stylesheet" href="{{ base }}assets/css/archive.css?v={{ build_id }}">
 <link rel="stylesheet" href="{{ base }}assets/css/split.css?v={{ build_id }}">
+{% if not no_print %}<link rel="stylesheet" href="{{ base }}assets/css/print.css?v={{ build_id }}">{% endif %}
 {% if active_nav == "home" %}<link rel="stylesheet" href="{{ base }}assets/css/home.css?v={{ build_id }}">{% endif %}
 {% block head %}{% endblock %}
 </head>
-<body{% if program %} data-program="{{ program.id }}"{% endif %}>
+<body{% if program %} data-program="{{ program.id }}"{% endif %}{% if print_edition %} class="print-edition"{% endif %}>
 <a class="skip" href="#main">Skip to content</a>
+{% if not no_print %}<div class="print-bar" role="region" aria-label="Print view">
+  <div class="wrap">
+    <p class="pb-text"><strong>Print view</strong><span class="pb-hint">In the print window, choose “Save as PDF” as the printer.</span></p>
+    <button type="button" class="pb-save" data-print-save>Save as PDF</button>
+    <button type="button" class="pb-exit" data-print-toggle>Exit print view</button>
+  </div>
+</div>
+<div class="print-masthead">
+  <p class="pm-brand">The Valhalla Archive</p>
+  {% if print_edition %}<p class="pm-edition">{{ print_edition }} · Print Edition</p>{% endif %}
+  <p class="pm-meta">{{ site_url_display }}{{ page_path }} · Data through the {{ site.latest_season_in_tracker }} season · Updated {{ site.last_updated_display }}</p>
+</div>{% endif %}
 {% if banner %}
 <div class="banner" role="note">
   <div class="wrap">
@@ -76,7 +90,7 @@
     </div>
     <div class="legal">
       <span>Unofficial fan site. Not affiliated with Cleveland State University, any other school, EA Sports or the NCAA. Dynasty content is fictional.</span>
-      <span>Updated {{ site.last_updated_display }}</span>
+      <span>Updated {{ site.last_updated_display }}{% if not no_print %} <button type="button" class="print-toggle" data-print-toggle aria-pressed="false">Print view</button>{% endif %}</span>
     </div>
   </div>
 </footer>

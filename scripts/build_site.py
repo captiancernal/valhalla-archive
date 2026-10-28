@@ -29,6 +29,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TABLES = os.path.join(ROOT, "data", "tables")
 SRC = os.path.join(ROOT, "site")
 OUT = os.path.join(ROOT, "_site")
+SITE_URL_DISPLAY = "captiancernal.github.io/valhalla-archive/"  # shown on printed pages
 BASE = os.environ.get("BASE_PATH", "/")
 if not BASE.endswith("/"):
     BASE += "/"
@@ -191,7 +192,9 @@ class Site:
 
     def render(self, template, path, **ctx):
         base_ctx = {"base": BASE, "site": self.site, "programs": self.programs, "nav": self.nav, "banner": self.banner,
-                    "build_id": self.build_id, "program": None, "description": "", "theme_color": None}
+                    "build_id": self.build_id, "program": None, "description": "", "theme_color": None,
+                    "page_path": path, "site_url_display": SITE_URL_DISPLAY, "print_edition": None,
+                    "no_print": template.startswith("play_")}  # games have their own print (word search)
         base_ctx.update(ctx)
         html = self.env.get_template(template).render(**base_ctx)
         dest = os.path.join(OUT, path, "index.html")
@@ -390,7 +393,7 @@ class Site:
             desc += f", {s['conf_rank_text']} in the Big 12"
         if s["national_champion"]:
             desc += ", National Champions"
-        self.render("season.html", f"{p['href']}{yr}/", **ctx, page_title=f"{title} · The Valhalla Archive", description=desc + ".")
+        self.render("season.html", f"{p['href']}{yr}/", **ctx, page_title=f"{title} · The Valhalla Archive", description=desc + ".", print_edition="Season Recap")
 
     # ---------------------------------------------------------------- game pages
     def build_games(self):
@@ -482,7 +485,7 @@ class Site:
                         ratings=ratings, journey=journey, seasons_text=seasons_text,
                         hof=next((h for h in self.T["hall_of_fame"] if h["id"] == p["id"] and h["status"] == "inducted"), None),
                         page_title=f"{title} · The Valhalla Archive",
-                        description=" · ".join(desc_bits + honors) or f"{title} in the Valhalla Archive.")
+                        description=" · ".join(desc_bits + honors) or f"{title} in the Valhalla Archive.", print_edition="Player Card")
             index.append({"id": p["id"], "n": p["name"], "t": pid or (p["teams"][0] if p["teams"] else ""),
                           "f": p.get("position_family") or "", "pos": "/".join(p["positions"][:2]),
                           "y": seasons_text or year_ranges([a["season"] for a in p["awards"] + p["all_american"]]),
@@ -598,7 +601,7 @@ class Site:
         self.render("records_book.html", "records/", active_nav="records", official=official, computed=T["records_computed"],
                     team_bests=team_bests, leader_bests=leader_bests,
                     page_title="Records Book · The Valhalla Archive",
-                    description="Official NCAA, Big 12 and Cleveland State records, plus team and individual bests across Cleveland State, Ohio and Miami (OH).")
+                    description="Official NCAA, Big 12 and Cleveland State records, plus team and individual bests across Cleveland State, Ohio and Miami (OH).", print_edition="Records Book")
 
     # ---------------------------------------------------------------- rivalry hub
     def build_rivalry(self):
