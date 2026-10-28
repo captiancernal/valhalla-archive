@@ -24,12 +24,14 @@ import playerdle as pd_gen  # noqa: E402
 import grid as grid_gen  # noqa: E402
 import wordsearch as ws_gen  # noqa: E402
 import road as road_gen  # noqa: E402
+import share_images  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TABLES = os.path.join(ROOT, "data", "tables")
 SRC = os.path.join(ROOT, "site")
 OUT = os.path.join(ROOT, "_site")
 CLIPS = os.environ.get("CLIPS_DIR") or os.path.join(ROOT, "content", "clips")
+SITE_URL = os.environ.get("SITE_URL", "https://captiancernal.github.io/valhalla-archive/")  # the live address, for share links
 SITE_URL_DISPLAY = "captiancernal.github.io/valhalla-archive/"  # shown on printed pages
 BASE = os.environ.get("BASE_PATH", "/")
 if not BASE.endswith("/"):
@@ -51,6 +53,23 @@ DEPTH_UNITS = [
 def load(name):
     with open(os.path.join(TABLES, f"{name}.json"), encoding="utf-8") as f:
         return json.load(f)
+
+
+def small_logo(path):
+    """assets/logos/X.png -> assets/logos/sm/X.png (64px copy made at build time, for logos drawn at 20-34px)."""
+    return path.replace("assets/logos/", "assets/logos/sm/", 1)
+
+
+def make_small_logos():
+    from PIL import Image
+    src = os.path.join(OUT, "assets", "logos")
+    dst = os.path.join(src, "sm")
+    os.makedirs(dst, exist_ok=True)
+    for f in os.listdir(src):
+        if f.lower().endswith(".png"):
+            im = Image.open(os.path.join(src, f)).convert("RGBA")
+            im.thumbnail((64, 64), Image.LANCZOS)
+            im.quantize(256, method=Image.Quantize.FASTOCTREE).save(os.path.join(dst, f), optimize=True)  # ~2 KB each
 
 
 def slug(s):
@@ -116,13 +135,14 @@ class Site:
             self.programs.append(p)
         self.prog = {p["id"]: p for p in self.programs}
         self.clips = self.load_clips()
+        self.share = {}
         # Preload the two fonts every page uses (Latin set), so text doesn't swap visibly
         fdir = os.path.join(SRC, "assets", "fonts")
         self.font_preloads = sorted(f for f in os.listdir(fdir) if re.match(r"(inter|source-serif-4)-normal-latin-[0-9a-f]{6}\.woff2$", f)) if os.path.isdir(fdir) else []
 
         self.nav = [{"key": "home", "label": "Home", "href": "", "footer": True}, {"sep": True}]
         for p in self.programs:
-            self.nav.append({"key": p["id"], "label": p["short"], "href": p["href"], "logo": p["logo"]})
+            self.nav.append({"key": p["id"], "label": p["short"], "href": p["href"], "logo": small_logo(p["logo"])})
         self.nav += [{"sep": True},
                      {"key": "split", "label": "Split Decision", "href": "split-decision/", "footer": True},
                      *([{"key": "clips", "label": "Highlights", "href": "highlights/", "footer": True}] if self.clips else []),
@@ -141,7 +161,7 @@ class Site:
             cp = self.prog[champ["champion"]]
             rec = self.season(cp["id"], cur)
             self.banner = {"text": f"{cur} National Champions: {cp['school']} {cp['nickname']}, {rec['w']}-{rec['l']}",
-                           "href": f"{cp['href']}{cur}/", "logo": cp["logo"]}
+                           "href": f"{cp['href']}{cur}/", "logo": small_logo(cp["logo"])}
 
         # Jinja helpers
         g = self.env.globals
@@ -164,7 +184,7 @@ class Site:
             return ""
         t = self.teams.get(abbr, {})
         name = SHORT.get(abbr) if short and abbr in SHORT else (t.get("school") or abbr)
-        img = f'<img class="tlogo" src="{BASE}{t["logo"]}" alt="" loading="lazy" width="20" height="20">' if logo and t.get("logo") else ""
+        img = f'<img class="tlogo" src="{BASE}{small_logo(t["logo"])}" alt="" loading="lazy" width="20" height="20">' if logo and t.get("logo") else ""
         inner = f'{img}<span>{escape(name)}</span>'
         if link and abbr in self.prog:
             return Markup(f'<a class="team" href="{BASE}{self.prog[abbr]["href"]}">{inner}</a>')
@@ -195,6 +215,14 @@ class Site:
         if bowl:
             return f"{'Won' if bowl['result'] == 'W' else 'Lost'} {bowl['name']}"
         return ""
+
+    def player_description(self, p, bits, honors):
+        hof = next((h for h in self.T["hall_of_fame"] if h["id"] == p["id"] and h["status"] == "inducted"), None)
+        d = p["name"] + (": " + " · ".join(bits) if bits else "") + "."
+        extra = list(honors) + ([f"Hall of Fame Class of {hof['class_of']}"] if hof and hof.get("class_of") else [])
+        if extra:
+            d += " " + "; ".join(extra) + "."
+        return d + " Player card from The Valhalla Archive."
 
     # ---------------------------------------------------------------- highlight clips (M10)
     def load_clips(self):
@@ -245,9 +273,16 @@ class Site:
     def render(self, template, path, **ctx):
         base_ctx = {"base": BASE, "site": self.site, "programs": self.programs, "nav": self.nav, "banner": self.banner,
                     "build_id": self.build_id, "program": None, "description": "", "theme_color": None,
-                    "page_path": path, "site_url_display": SITE_URL_DISPLAY, "font_preloads": self.font_preloads, "print_edition": None,
+                    "page_path": path, "site_url_display": SITE_URL_DISPLAY, "font_preloads": self.font_preloads,
+                    "page_url": SITE_URL + path, "site_url": SITE_URL, "print_edition": None,
                     "no_print": template.startswith("play_")}  # games have their own print (word search)
         base_ctx.update(ctx)
+        if not base_ctx.get("og_image"):
+            prog = base_ctx.get("program")
+            card = self.share.get(prog["id"]) if prog else None
+            base_ctx["og_image"] = SITE_URL + "assets/share/" + (card or self.share["archive"])
+            base_ctx["og_image_alt"] = (f"{prog['school']} {prog['nickname']} in The Valhalla Archive" if card
+                                        else "The Valhalla Archive: the almanac of a College Football 25 dynasty")
         html = self.env.get_template(template).render(**base_ctx)
         dest = os.path.join(OUT, path, "index.html")
         os.makedirs(os.path.dirname(dest), exist_ok=True)
@@ -443,8 +478,14 @@ class Site:
         desc = f"{title}: {s['w']}-{s['l']}"
         if s["conf_rank_text"]:
             desc += f", {s['conf_rank_text']} in the Big 12"
+        post = self.postseason_text(s)
         if s["national_champion"]:
             desc += ", National Champions"
+        elif post:
+            desc += f", {post[0].lower() + post[1:]}"
+        if s.get("coach"):
+            desc += f". Coach {s['coach']}"
+        desc += ". Schedule, leaders and honors" if pid == "CLEV" else ". Leaders and honors"
         self.render("season.html", f"{p['href']}{yr}/", **ctx, page_title=f"{title} · The Valhalla Archive", description=desc + ".", print_edition="Season Recap")
 
     # ---------------------------------------------------------------- game pages
@@ -538,7 +579,7 @@ class Site:
                         ratings=ratings, journey=journey, seasons_text=seasons_text,
                         hof=next((h for h in self.T["hall_of_fame"] if h["id"] == p["id"] and h["status"] == "inducted"), None),
                         page_title=f"{title} · The Valhalla Archive",
-                        description=" · ".join(desc_bits + honors) or f"{title} in the Valhalla Archive.", print_edition="Player Card")
+                        description=self.player_description(p, desc_bits, honors), print_edition="Player Card")
             index.append({"id": p["id"], "n": p["name"], "t": pid or (p["teams"][0] if p["teams"] else ""),
                           "f": p.get("position_family") or "", "pos": "/".join(p["positions"][:2]),
                           "y": seasons_text or year_ranges([a["season"] for a in p["awards"] + p["all_american"]]),
@@ -813,7 +854,7 @@ class Site:
             pl = self.player_by_name.get(a["player"])
             by_year[a["season"]].append({
                 "award": a["award"], "note": a["award_note"], "player": a["player"], "school": a["school"],
-                "school_name": t.get("school") or a["school"], "logo": (BASE + t["logo"]) if t.get("logo") else None,
+                "school_name": t.get("school") or a["school"], "logo": (BASE + small_logo(t["logo"])) if t.get("logo") else None,
                 "href": f"{BASE}players/{pl['id']}/" if pl else None, "ours": a["school"] in PROGRAMS})
         for y in by_year:
             by_year[y].sort(key=lambda a: (a["school"] != "CLEV", order.index(a["award"]) if a["award"] in order else 99))
@@ -1010,7 +1051,15 @@ class Site:
         os.makedirs(OUT)
         shutil.copytree(os.path.join(SRC, "assets"), os.path.join(OUT, "assets"))
         shutil.copytree(os.path.join(SRC, "design"), os.path.join(OUT, "design"))
+        make_small_logos()
         open(os.path.join(OUT, ".nojekyll"), "w").close()
+        champ = next((n for n in self.T["national_championships"] if n["season"] == self.site["current_season"]), None)
+        champ_line = None
+        if champ:
+            who = self.prog.get(champ["champion"])
+            champ_line = f"{champ['season']} national champions: " + (f"{who['school']} {who['nickname']}" if who else (self.teams.get(champ["champion"]) or {}).get("school", champ["champion"]))
+        self.share = share_images.make_all(os.path.join(OUT, "assets", "share"), self.programs, self.site,
+                                           os.path.join(SRC, "assets", "logos"), champ_line)
         self.build_home()
         for p in self.programs:
             self.build_program(p)

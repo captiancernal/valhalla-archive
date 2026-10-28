@@ -126,7 +126,7 @@
     var prog = k.indexOf('prog:') === 0 ? k.slice(5) : null;
     if (prog) {
       d.setAttribute('data-prog', prog);
-      d.innerHTML = '<img src="' + BASE + 'assets/logos/' + prog + '.png" alt="" width="34" height="34"><span></span>';
+      d.innerHTML = '<img src="' + BASE + 'assets/logos/sm/' + prog + '.png" alt="" width="34" height="34"><span></span>';
     } else {
       d.innerHTML = '<span></span>';
     }

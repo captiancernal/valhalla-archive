@@ -68,7 +68,7 @@
   }
 
   function cardHTML(c, hidden, deck) {
-    var logo = BASE + 'assets/logos/' + c.p + '.png';
+    var logo = BASE + 'assets/logos/sm/' + c.p + '.png';
     return '<div class="hl-card" data-prog="' + c.p + '">' +
       '<div class="hl-top"><img src="' + logo + '" alt="" width="28" height="28"><span class="gm-chip" data-cat="' + c.p + '">' + PROG[c.p] + '</span></div>' +
       '<div class="hl-name"></div>' +
