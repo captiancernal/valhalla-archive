@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block head %}<link rel="stylesheet" href="{{ base }}assets/css/games.css?v={{ build_id }}">{% endblock %}
+{% block content %}
+<section class="gm-head">
+  <div class="wrap">
+    <a class="gm-back" href="{{ base }}play/">Games</a>
+    <h1>The Grid</h1>
+    <p>Nine squares. Fill each one with a player who fits both its row and its column. Each player can be used once, and you have twelve guesses.</p>
+  </div>
+</section>
+<div class="wrap">
+  <div id="grid" class="pd gr" data-src="{{ base }}assets/data/grid.json?v={{ build_id }}" data-base="{{ base }}">
+    <div class="pd-top">
+      <div class="pd-tabs" role="tablist" aria-label="Mode">
+        <button type="button" role="tab" data-mode="daily" aria-selected="true">Daily</button>
+        <button type="button" role="tab" data-mode="practice" aria-selected="false">Practice</button>
+      </div>
+      <label class="pd-filter" data-typewrap hidden>Grid type
+        <select id="gr-type">
+          <option value="surprise">Surprise me</option>
+          <option value="programs">Programs grid</option>
+          <option value="open">Open grid</option>
+        </select>
+      </label>
+    </div>
+    <div class="tv-setup pd-panel">
+      <div class="pd-head"><h2 data-title>Daily grid</h2><span class="muted" data-left></span></div>
+      <div class="gr-board" data-board></div>
+      <div class="gr-guess" data-panel hidden>
+        <form data-form role="search" autocomplete="off">
+          <label for="gr-input" class="pd-lab">Guess for: <span data-prompt></span></label>
+          <div class="pd-combo">
+            <input id="gr-input" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="gr-list" placeholder="Type a player's name">
+            <ul id="gr-list" role="listbox" class="pd-list" hidden></ul>
+          </div>
+          <button type="button" class="gm-link" data-cancel>Cancel</button>
+        </form>
+      </div>
+      <p class="sr-status" data-status aria-live="polite"></p>
+      <div class="pd-end" data-end hidden></div>
+    </div>
+    <details class="pd-help">
+      <summary>How it works</summary>
+      <ul>
+        <li>Pick a square, then type a player who fits both its row and its column. A wrong guess still uses one of your twelve.</li>
+        <li><b>Programs grids</b> put Cleveland State, Ohio and Miami (OH) across the top. <b>Open grids</b> mix any conditions, so they lean on Cleveland State, where the tracker keeps the most detail.</li>
+        <li>"1 of 14" under a name means fourteen players would have fit that square.</li>
+        <li>Conditions come straight from the tracker: positions, national awards, All-American teams, team stat leaders, seasons played, recruit stars, home state, transfers, the draft and peak ratings.</li>
+      </ul>
+    </details>
+    <p class="note">Every square on every grid has at least two real answers, and a full solution with nine different players always exists. The daily grid is the same for everyone and alternates between Programs and Open grids.</p>
+    <p class="note" data-storage-note hidden>Your browser is blocking storage, so today's progress and your stats won't be remembered after you leave this page.</p>
+  </div>
+  <p class="note gm-foot">Built from the Archive's data ({{ total }} players). Your results are saved only in this browser.</p>
+</div>
+<script src="{{ base }}assets/js/games-core.js?v={{ build_id }}" defer></script>
+<script src="{{ base }}assets/js/grid.js?v={{ build_id }}" defer></script>
+{% endblock %}
