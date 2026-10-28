@@ -76,6 +76,8 @@
       if (!meta.lastDay) return 0;
       return dayDiff(meta.lastDay, today()) <= 1 ? (meta.streak || 0) : 0;
     },
+    getItem: function (key) { return readAll()[key]; },
+    setItem: function (key, value) { var all = readAll(); all[key] = value; writeAll(all); },
     reset: function () { writeAll({}); },
     today: today
   };

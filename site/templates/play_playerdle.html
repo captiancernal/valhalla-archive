@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block head %}<link rel="stylesheet" href="{{ base }}assets/css/games.css?v={{ build_id }}">{% endblock %}
+{% block content %}
+<section class="gm-head">
+  <div class="wrap">
+    <a class="gm-back" href="{{ base }}play/">Games</a>
+    <h1>Playerdle</h1>
+    <p>Guess the mystery player in eight tries. Each guess shows how close you are on program, position, seasons, honors, home state, recruit stars and peak rating.</p>
+  </div>
+</section>
+<div class="wrap">
+  <div id="pd" class="pd" data-src="{{ base }}assets/data/playerdle.json?v={{ build_id }}" data-base="{{ base }}">
+    <div class="pd-top">
+      <div class="pd-tabs" role="tablist" aria-label="Mode">
+        <button type="button" role="tab" data-mode="daily" aria-selected="true">Daily</button>
+        <button type="button" role="tab" data-mode="practice" aria-selected="false">Practice</button>
+      </div>
+      <label class="pd-filter" data-filter hidden>Program
+        <select id="pd-prog">
+          <option value="all">All programs</option>
+          <option value="CLEV">Cleveland State</option>
+          <option value="OHIO">Ohio</option>
+          <option value="M-OH">Miami (OH)</option>
+        </select>
+      </label>
+    </div>
+    <div class="tv-setup pd-panel">
+      <div class="pd-head"><h2 data-title>Daily puzzle</h2><span class="muted" data-left></span></div>
+      <form class="pd-form" data-form role="search" autocomplete="off">
+        <label for="pd-input" class="pd-lab">Type a player's name</label>
+        <div class="pd-combo">
+          <input id="pd-input" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="pd-list" placeholder="Start typing, e.g. Hocker" disabled>
+          <ul id="pd-list" role="listbox" class="pd-list" hidden></ul>
+        </div>
+      </form>
+      <p class="sr-status" data-status aria-live="polite"></p>
+      <div class="pd-board" data-board></div>
+      <div class="pd-end" data-end hidden></div>
+    </div>
+    <details class="pd-help">
+      <summary>How the clues work</summary>
+      <ul>
+        <li><span class="pd-key hit">Green</span> means an exact match.</li>
+        <li><span class="pd-key near">Yellow</span> means close: within 2 seasons, 1 honor or 3 rating points.</li>
+        <li>An arrow (↑ or ↓) shows whether the mystery player's number is higher or lower than your guess.</li>
+        <li><span class="pd-key na">?</span> means the tracker doesn't record that detail for the mystery player. Ohio and Miami (OH) players mostly have program, position, seasons and honors only.</li>
+        <li>Honors counts national awards plus All-American selections.</li>
+      </ul>
+    </details>
+    <p class="note">The player pool is <span data-pool>…</span> notable players from all three programs: award winners, All-Americans and season stat leaders. The daily puzzle is the same for everyone each day and is drawn from players with enough clues to be fair (a known position or at least one honor); practice uses the whole pool and is unlimited.</p>
+    <p class="note" data-storage-note hidden>Your browser is blocking storage, so today's progress and your stats won't be remembered after you leave this page.</p>
+  </div>
+  <p class="note gm-foot">Built from the Archive's data. Your results are saved only in this browser.</p>
+</div>
+<script src="{{ base }}assets/js/games-core.js?v={{ build_id }}" defer></script>
+<script src="{{ base }}assets/js/playerdle.js?v={{ build_id }}" defer></script>
+{% endblock %}

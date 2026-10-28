@@ -20,6 +20,7 @@ _sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import columns as sd_columns  # noqa: E402
 import trivia as trivia_gen  # noqa: E402
 import higher_lower as hl_gen  # noqa: E402
+import playerdle as pd_gen  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TABLES = os.path.join(ROOT, "data", "tables")
@@ -815,13 +816,16 @@ class Site:
         hl = hl_gen.generate(self.T)
         with open(os.path.join(data_dir, "higherlower.json"), "w", encoding="utf-8") as f:
             json.dump(hl, f, ensure_ascii=False, separators=(",", ":"))
+        pdl = pd_gen.generate(self.T)
+        with open(os.path.join(data_dir, "playerdle.json"), "w", encoding="utf-8") as f:
+            json.dump(pdl, f, ensure_ascii=False, separators=(",", ":"))
         eras = [{"key": k, "label": f"{a}-{b}"} for k, a, b in trivia_gen.ERAS]
         games = [
             {"key": "trivia", "ready": True, "href": "play/trivia/", "kicker": "Ten questions a round", "title": "Archive Trivia",
              "text": "Champions, awards, stat leaders, big games and recruits. Pick a program, an era and a difficulty."},
             {"key": "higherlower", "ready": True, "href": "play/higher-lower/", "kicker": "Stat duel", "title": "Higher or Lower",
              "text": "Two real stat lines or records. Which one is bigger?"},
-            {"key": "playerdle", "ready": False, "kicker": "Daily puzzle", "title": "Playerdle",
+            {"key": "playerdle", "ready": True, "href": "play/playerdle/", "kicker": "Daily puzzle", "title": "Playerdle",
              "text": "Guess the mystery player in a few tries using clues about program, position, class and more."},
             {"key": "grid", "ready": False, "kicker": "Nine squares", "title": "The Grid",
              "text": "Fill each square with a player who fits both its row and its column."},
@@ -836,6 +840,8 @@ class Site:
         self.render("play_higherlower.html", "play/higher-lower/", active_nav="play", page_title="Higher or Lower · The Valhalla Archive",
                     description="Guess whether the next real stat line from the dynasty is higher or lower. Keep the streak alive.",
                     total=f"{len(hl['cards']):,}")
+        self.render("play_playerdle.html", "play/playerdle/", active_nav="play", page_title="Playerdle · The Valhalla Archive",
+                    description="Guess the mystery player from the dynasty in eight tries. A new daily puzzle every day, plus unlimited practice.")
 
     # ---------------------------------------------------------------- run
     def build(self):
