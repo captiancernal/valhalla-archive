@@ -636,31 +636,6 @@
   "label": "Receptions",
   "leaders": [
    {
-    "player": "Dakota McNitt",
-    "season": 2029,
-    "value": 978
-   },
-   {
-    "player": "Stephen Everett",
-    "season": 2029,
-    "value": 756
-   },
-   {
-    "player": "Nazir McNitt",
-    "season": 2029,
-    "value": 713
-   },
-   {
-    "player": "Isaiah Boutte",
-    "season": 2029,
-    "value": 527
-   },
-   {
-    "player": "Baraka Nwangwu",
-    "season": 2029,
-    "value": 427
-   },
-   {
     "player": "Titus Reece",
     "season": 2033,
     "value": 160
@@ -684,6 +659,31 @@
     "player": "Lyle Sawyer",
     "season": 2036,
     "value": 105
+   },
+   {
+    "player": "Lyle Sawyer",
+    "season": 2037,
+    "value": 104
+   },
+   {
+    "player": "Titus Reece",
+    "season": 2034,
+    "value": 102
+   },
+   {
+    "player": "Kenny Tongues",
+    "season": 2028,
+    "value": 100
+   },
+   {
+    "player": "Kenny Tongues",
+    "season": 2027,
+    "value": 96
+   },
+   {
+    "player": "Isaiah Boutte",
+    "season": 2031,
+    "value": 93
    }
   ]
  },
@@ -694,40 +694,16 @@
   "label": "Receptions",
   "leaders": [
    {
-    "player": "Dakota McNitt",
-    "value": 1263,
-    "first": 2028,
-    "last": 2032
-   },
-   {
-    "player": "Nazir McNitt",
-    "value": 814,
-    "first": 2029,
-    "last": 2031
-   },
-   {
-    "player": "Stephen Everett",
-    "value": 810,
-    "first": 2028,
-    "last": 2030
-   },
-   {
-    "player": "Isaiah Boutte",
-    "value": 687,
-    "first": 2028,
-    "last": 2031
-   },
-   {
-    "player": "Baraka Nwangwu",
-    "value": 554,
-    "first": 2026,
-    "last": 2029
-   },
-   {
     "player": "Titus Reece",
     "value": 370,
     "first": 2033,
     "last": 2035
+   },
+   {
+    "player": "Dakota McNitt",
+    "value": 341,
+    "first": 2028,
+    "last": 2032
    },
    {
     "player": "Kenny Tongues",
@@ -742,16 +718,40 @@
     "last": 2037
    },
    {
+    "player": "Isaiah Boutte",
+    "value": 198,
+    "first": 2028,
+    "last": 2031
+   },
+   {
     "player": "Rashaud Exum",
     "value": 182,
     "first": 2026,
     "last": 2028
    },
    {
+    "player": "Baraka Nwangwu",
+    "value": 169,
+    "first": 2026,
+    "last": 2029
+   },
+   {
     "player": "Paul Flannigan",
     "value": 155,
     "first": 2036,
     "last": 2037
+   },
+   {
+    "player": "Caleb Goodloe",
+    "value": 153,
+    "first": 2025,
+    "last": 2027
+   },
+   {
+    "player": "Stephen Baggs",
+    "value": 153,
+    "first": 2032,
+    "last": 2035
    }
   ]
  },

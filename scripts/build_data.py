@@ -247,6 +247,10 @@ def parse_coach_sheets(wb):
                     conf_w, conf_l = wl(val)
                 elif ordinal(val) is not None and conf_rank is None:
                     conf_rank = ordinal(val)
+            for fx in FIXES["F26-2029-big12-rank"]["set"]:  # F26
+                if prog == fx["program"] and year == fx["season"] and conf_rank == ordinal(fx["seen_value"]):
+                    conf_rank = ordinal(fx["value"])
+                    note(f"F26 applied: {year} {prog} conference rank {fx['seen_value']} -> {fx['value']}")
             rec = {
                 "id": f"{year}-{prog}", "program": prog, "season": year, "coach": canon_coach(f"Coach {name.replace('Coach ', '')}".replace("Coach ", "")),
                 "w": w, "l": l, "win_pct": r1(div(w, w + l), 3),
@@ -701,6 +705,13 @@ def parse_stats(wb, seasons_played):
         if r["season"] == 2032 and r["category"] == "receiving" and r["player"] == canon(f["match"]["player"]) and r.get("YARDS") == f["match"]["seen_value"]:
             r["YARDS"] = f["set"]["YARDS"]
             note("F04 applied: 2032 Sam Fatafehi receiving yards 2219 -> 219")
+    # F25: 2029 catch counts (yards had been pasted into REC)
+    for s in FIXES["F25-2029-receptions"]["set"]:
+        for r in rows:
+            if (r["season"] == 2029 and r["category"] == "receiving" and r["player"] == canon(s["player"])
+                    and r.get("REC") == s["seen_value"]):
+                r["REC"] = s["value"]
+                note(f"F25 applied: 2029 {s['player']} catches {s['seen_value']} -> {s['value']}")
     # Normalize field names and recompute averages (F10)
     out = []
     for r in rows:

@@ -479,6 +479,77 @@
           "why": "23 + 26 + 22 (2027-29 stats tabs)"
         }
       ]
+    },
+    {
+      "id": "F25-2029-receptions",
+      "approved": "2026-10-27",
+      "sheets": [
+        "2029 Stats"
+      ],
+      "problem": "Five 2029 receiving rows had the yards pasted into the REC column (catches = yards).",
+      "rule": "override_value",
+      "source": "Owner supplied the real catch counts from the game (screenshot, 2026-10-27).",
+      "set": [
+        {
+          "cell": "C16",
+          "player": "Dakota McNitt",
+          "seen_value": 978,
+          "value": 56
+        },
+        {
+          "cell": "C17",
+          "player": "Stephen Everett",
+          "seen_value": 756,
+          "value": 52
+        },
+        {
+          "cell": "C18",
+          "player": "Nazir McNitt",
+          "seen_value": 713,
+          "value": 48
+        },
+        {
+          "cell": "C19",
+          "player": "Isaiah Boutte",
+          "seen_value": 527,
+          "value": 38
+        },
+        {
+          "cell": "C20",
+          "player": "Baraka Nwangwu",
+          "seen_value": 427,
+          "value": 42
+        }
+      ]
+    },
+    {
+      "id": "F26-2029-big12-rank",
+      "approved": "2026-10-27",
+      "sheets": [
+        "Coach Josh Dolan",
+        "Coach Tim Slocombe "
+      ],
+      "problem": "2029 Big 12 finish: coach sheets said CLEV 2nd / OHIO 3rd; the Conference Standings block says OHIO 2nd / CLEV 3rd.",
+      "rule": "override_value",
+      "decision": "Owner: keep the standings (OHIO 2nd, CLEV 3rd); coach-sheet ranks follow.",
+      "set": [
+        {
+          "sheet": "Coach Josh Dolan",
+          "cell": "J8",
+          "program": "CLEV",
+          "season": 2029,
+          "seen_value": "2nd",
+          "value": "3rd"
+        },
+        {
+          "sheet": "Coach Tim Slocombe ",
+          "cell": "K8",
+          "program": "OHIO",
+          "season": 2029,
+          "seen_value": "3rd",
+          "value": "2nd"
+        }
+      ]
     }
   ]
 }

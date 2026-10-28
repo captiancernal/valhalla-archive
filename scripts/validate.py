@@ -70,6 +70,12 @@ ro = {(r["player"], r["duration"], r["type"]): r["value"] for r in load("records
 f24 = [ro.get(("Baraka Nwangwu", "Career", "Rushing Yards")), ro.get(("Kenny Tongues", "Career", "Receiving Yards")),
        ro.get(("Kenny Tongues", "Career", "Receiving TD"))]
 check("career records are full totals 6074 / 4901 / 71 (F24)", f24 == [6074, 4901, 71], f24)
+rec29 = {r["player"]: r["rec"] for r in pseasons if r["season"] == 2029 and r["category"] == "receiving"}
+f25 = [rec29.get(p) for p in ("Dakota McNitt", "Stephen Everett", "Nazir McNitt", "Isaiah Boutte", "Baraka Nwangwu")]
+check("2029 catch counts 56/52/48/38/42 (F25)", f25 == [56, 52, 48, 38, 42], f25)
+check("2029 Big 12 rank CLEV 3rd, OHIO 2nd (F26)",
+      (s[("CLEV", 2029)]["conf_rank"], s[("OHIO", 2029)]["conf_rank"]) == (3, 2),
+      (s[("CLEV", 2029)]["conf_rank"], s[("OHIO", 2029)]["conf_rank"]))
 
 # --- Internal consistency
 by = defaultdict(lambda: [0, 0])

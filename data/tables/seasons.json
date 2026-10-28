@@ -329,8 +329,8 @@
   "win_pct": 0.765,
   "conf_w": 7,
   "conf_l": 2,
-  "conf_rank": 2,
-  "conf_rank_text": "2nd",
+  "conf_rank": 3,
+  "conf_rank_text": "3rd",
   "leaders": {
    "passing": {
     "player": "Greg Price",
@@ -1170,8 +1170,8 @@
   "win_pct": 0.875,
   "conf_w": 7,
   "conf_l": 2,
-  "conf_rank": 3,
-  "conf_rank_text": "3rd",
+  "conf_rank": 2,
+  "conf_rank_text": "2nd",
   "leaders": {
    "passing": {
     "player": "James Erbach",
