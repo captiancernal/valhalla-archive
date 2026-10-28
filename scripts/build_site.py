@@ -155,13 +155,13 @@ class Site:
                      {"key": "road", "label": f"Road to {self.site['current_season'] + 1}", "href": "road/", "footer": True}]
 
         cur = self.site["current_season"]
-        champ = next((n for n in T["national_championships"] if n["season"] == cur), None)
+        champ = self.latest_champion()
         self.banner = None
         if champ and champ["champion"] in self.prog:
-            cp = self.prog[champ["champion"]]
-            rec = self.season(cp["id"], cur)
-            self.banner = {"text": f"{cur} National Champions: {cp['school']} {cp['nickname']}, {rec['w']}-{rec['l']}",
-                           "href": f"{cp['href']}{cur}/", "logo": small_logo(cp["logo"])}
+            cp, cy = self.prog[champ["champion"]], champ["season"]
+            rec = self.season(cp["id"], cy)
+            self.banner = {"text": f"{cy} National Champions: {cp['school']} {cp['nickname']}, {rec['w']}-{rec['l']}",
+                           "href": f"{cp['href']}{cy}/", "logo": small_logo(cp["logo"])}
 
         # Jinja helpers
         g = self.env.globals
@@ -171,6 +171,13 @@ class Site:
         self.pages = 0
 
     # ---------------------------------------------------------------- helpers
+    def latest_champion(self):
+        """The most recent national championship at or before the current season. Mid-season there is
+        no champion for the season in progress yet, so the site keeps showing the last one."""
+        cur = self.site["current_season"]
+        done = [n for n in self.T["national_championships"] if n["season"] <= cur]
+        return max(done, key=lambda n: n["season"]) if done else None
+
     def season(self, prog, year):
         return next((s for s in self.T["seasons"] if s["program"] == prog and s["season"] == year), None)
 
@@ -906,15 +913,16 @@ class Site:
                                        else "No returning player is within reach of a record yet"),
                            "rows": [{"name": w["player"], "meta": f"needs {fmt(w['gap'])} {w['type'][0].lower() + w['type'][1:]} ({w['duration'].lower()})",
                                      "tag": "/".join("School" if l == "Cleveland State" else l for l in w["levels"])} for w in watch[:5]]})
-        champ = next((n for n in T["national_championships"] if n["season"] == cur), None)
-        champ_season = self.season(champ["champion"], cur) if champ and champ["champion"] in self.prog else None
+        champ = self.latest_champion()
+        champ_year = champ["season"] if champ else cur
+        champ_season = self.season(champ["champion"], champ_year) if champ and champ["champion"] in self.prog else None
         columns = T.get("columns") or []
         clips = self.clips
         self.render("home.html", "", page_title="The Valhalla Archive", active_nav="home",
-                    description=f"The almanac of a College Football 25 dynasty: Cleveland State, Ohio and Miami (OH). {cur} national champions: "
+                    description=f"The almanac of a College Football 25 dynasty: Cleveland State, Ohio and Miami (OH). {champ_year} national champions: "
                                 + (f"{self.prog[champ['champion']]['school']} {self.prog[champ['champion']]['nickname']}." if champ_season else f"{(self.teams.get(champ['champion'], {}) or {}).get('school', '')}." if champ else ""),
                     years=years, award_year=years[0], award_json=award_json, cur=cur, nxt=nxt,
-                    phases=phases, phase_idx=phase_idx, teasers=teasers, champ=champ, champ_season=champ_season,
+                    phases=phases, phase_idx=phase_idx, teasers=teasers, champ=champ, champ_season=champ_season, champ_year=champ_year,
                     latest_col=self.column_context(columns[-1]) if columns else None, columns=columns, clips=clips)
 
     # ---------------------------------------------------------------- road to next season (M9)
@@ -1057,7 +1065,7 @@ class Site:
         shutil.copytree(os.path.join(SRC, "design"), os.path.join(OUT, "design"))
         make_small_logos()
         open(os.path.join(OUT, ".nojekyll"), "w").close()
-        champ = next((n for n in self.T["national_championships"] if n["season"] == self.site["current_season"]), None)
+        champ = self.latest_champion()
         champ_line = None
         if champ:
             who = self.prog.get(champ["champion"])

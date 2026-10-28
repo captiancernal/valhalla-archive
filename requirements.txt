@@ -1,0 +1,7 @@
+# Python packages the build needs (the same versions used on the owner's computer).
+Jinja2==3.1.6
+MarkupSafe==3.0.4
+Markdown==3.11.2
+pillow==13.0.0
+PyYAML==6.0.3
+openpyxl==3.1.5

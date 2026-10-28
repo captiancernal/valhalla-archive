@@ -1,0 +1,66 @@
+# Builds the site from the committed data and publishes it to GitHub Pages
+# (https://captiancernal.github.io/valhalla-archive/) on every push to main.
+# The tracker itself is never uploaded: the build uses the data tables in data/tables/,
+# which scripts/build_data.py makes on the owner's computer.
+name: Build and publish the site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:   # lets the owner re-publish by hand from the Actions tab
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+          cache: pip
+
+      - name: Install the build tools
+        run: pip install -r requirements.txt
+
+      - name: Validate the data (stops the publish if any check fails)
+        run: python -P scripts/validate.py
+
+      - name: Fact-check the Split Decision columns
+        run: python -P scripts/columns.py check
+
+      - name: Build the site
+        env:
+          BASE_PATH: /valhalla-archive/
+        run: python -P scripts/build_site.py
+
+      - name: Check every link
+        env:
+          BASE_PATH: /valhalla-archive/
+        run: python -P scripts/check_links.py
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -135,7 +135,7 @@ def chasers(T, cur):
 
 if __name__ == "__main__":
     T = load_tables()
-    cur = 2037
+    cur = load_tables()["site_control"]["current_season"]
     print(len(returning_players(T, cur)), "returning players")
     for c in chasers(T, cur):
         print("CHASE", c["duration"], c["type"], c["levels"], c["record"], c["holder"], "|", c["player"], c["current"], f"{c['pct']}%")

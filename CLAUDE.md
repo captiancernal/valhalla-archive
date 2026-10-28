@@ -47,8 +47,8 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
   - Page road/ (nav label "Road to <next season>"); scripts/road.py computes returning players, Record Watch (within reach: career gap <= 1.25x best season, or best season >= 70% of a season record; school/Big 12/NCAA season+career records; game records skipped) and the closest returning chaser per record. Sections unlock from data (departures, projected depth chart, recruits, transfers, schedule); rivalry previews always open. Phase tracker reads data/site-control.json. Front page gains a Record Watch teaser and a "Full tracker" link.
   - Fix F28 (owner-approved): NCAA/Big 12 career passing TD -> DuBose 230; Big 12 season rushing -> Nwangwu 2,536. Validation now checks no league record sits below a Vikings stat line.
   - Data note shown as entered: the projected 2038 depth chart repeats a few names (Quincy Reddick at C, Johnnie Floyd at CB3).
-- [~] M10 Clips pipeline, print mode, accessibility, QA (all four parts built 2026-10-28; print view, clips, accessibility + fonts approved by the owner; QA awaiting sign-off)
-- [ ] M11 Deploy, README, hand-off
+- [x] M10 Clips pipeline, print mode, accessibility, QA (approved 2026-10-28)
+- [~] M11 Deploy, README, hand-off (started 2026-10-28)
 - [ ] **Final task (owner request, 2026-10-26):** produce a corrected COPY of the latest tracker (`source/corrected/<date> CSU Vikings Tracker (corrected).xlsx`) with every approved fix from `data/fixes.json` and every alias from `data/aliases.json` applied, plus a "Valhalla Changes" sheet listing sheet / cell / old value / new value / fix id, so the owner can copy-paste the edits into the live spreadsheet. Never modify the original or any dated copy in `source/`.
 
 ## Decisions log (approved by the owner after the spec)
@@ -122,5 +122,10 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 - Fixes are applied in code by fix id (search `FIXES[` in build_data.py). A new fix in fixes.json needs matching code.
 - Owner-set inputs not in the tracker: `data/site-control.json` (season + phase), `data/reference/teams.json` (abbreviation -> school).
 
-## Update workflow
-To be written when `/update-archive` is built (see spec section 13).
+## Update workflow (M11)
+- `/update-archive` (.claude/commands/update-archive.md): new tracker copy -> build_data + validate -> data questions one at a time -> plain-English summary -> clips -> Split Decision drafts -> Hall of Fame votes -> phase -> rebuild + all checks + local preview -> commit -> ask -> push -> watch the Actions run.
+- `/new-season` (.claude/commands/new-season.md): run once when the first game of a new season is logged. Rolls site-control to the new season with phases ["N Season", "Season Recap", ..., "N+1 Preseason"]; the in-season look (banner keeps the last champion via Site.latest_champion(); Road goes to N+1) was smoke-tested with a simulated 2038 setting but needs a careful real-data preview the first time.
+- Publishing: .github/workflows/pages.yml builds on every push to main (Python 3.14, requirements.txt), runs validate.py, columns.py check, build_site.py and check_links.py with BASE_PATH=/valhalla-archive/, then deploys to Pages. A failed check publishes nothing.
+- check_links.py is case-exact (GitHub's Linux runners are case-sensitive) and also checks data-src files and CSS url() fonts.
+- Trivia and Grid eras stretch automatically to the newest season (extend_last_era).
+- Owner guide: docs/HANDOFF.md. Public overview: README.md.

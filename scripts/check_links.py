@@ -1,5 +1,7 @@
-"""Check that every internal link and image in _site/ points at a file that exists.
+"""Check that every internal link, image, data file and stylesheet font in _site/ points at a file that exists.
 
+Matching is case-exact, because GitHub Pages runs on Linux where CLEV.png and clev.png are different
+files (Windows treats them as the same, so a case slip would only break online).
 Usage: py -P scripts/check_links.py     (exit code 1 on broken links)
 """
 import os
@@ -11,7 +13,28 @@ from urllib.parse import urlparse, unquote
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "_site")
 BASE = os.environ.get("BASE_PATH", "/")
-ATTR = re.compile(r'(?:href|src)="([^"#?]*)(?:[?#][^"]*)?"')
+ATTR = re.compile(r'(?:href|src|data-src)="([^"#?]*)(?:[?#][^"]*)?"')
+CSSURL = re.compile(r"""url\(["']?([^"')#?]+)""")
+_listing = {}
+
+
+def exists_exact(path):
+    """True if the path exists with exactly this upper/lower case in every part."""
+    path = os.path.normpath(path)
+    if not os.path.exists(path):
+        return False
+    rel = os.path.relpath(path, OUT)
+    cur = OUT
+    for part in rel.split(os.sep):
+        if part in (".", ""):
+            continue
+        if cur not in _listing:
+            _listing[cur] = set(os.listdir(cur))
+        if part not in _listing[cur]:
+            return False
+        cur = os.path.join(cur, part)
+    return True
+
 
 broken = defaultdict(set)
 pages = 0
@@ -34,8 +57,19 @@ for dirpath, _, files in os.walk(OUT):
                 target = os.path.join(dirpath, u)
             if target.endswith(("/", "\\")) or os.path.isdir(target):
                 target = os.path.join(target, "index.html")
-            if not os.path.exists(target):
+            if not exists_exact(target):
                 broken[u].add(os.path.relpath(path, OUT))
+
+# Fonts and images referenced from stylesheets
+for dirpath, _, files in os.walk(os.path.join(OUT, "assets", "css")):
+    for fn in files:
+        if fn.endswith(".css"):
+            css = open(os.path.join(dirpath, fn), encoding="utf-8").read()
+            for u in CSSURL.findall(css):
+                if u.startswith(("data:", "http:", "https:")):
+                    continue
+                if not exists_exact(os.path.join(dirpath, unquote(u))):
+                    broken[u].add(os.path.join("assets", "css", fn))
 
 print(f"Checked {pages} pages: {len(broken)} broken targets")
 for u, srcs in sorted(broken.items())[:30]:

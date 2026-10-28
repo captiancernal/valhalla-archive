@@ -6,7 +6,7 @@
     {% if champ_season %}<img class="mh-logo" src="{{ base }}{{ programs|selectattr('id', 'equalto', champ.champion)|map(attribute='logo')|first }}" alt="" width="120" height="120">{% endif %}
     <div class="mh-text">
       <div class="eyebrow">{{ site.phase_display }} · {{ cur }}</div>
-      <h1>{{ cur }} National Champions</h1>
+      <h1>{{ champ_year }} National Champions</h1>
       <p class="mh-sub">{{ team(champ.champion) }}{% if champ_season %} <span>{{ champ_season.w }}-{{ champ_season.l }}</span>{% endif %} <span class="mh-dot">·</span> <span>def. {{ team(champ.runner_up, link=False) }} {{ champ.score }}</span></p>
     </div>
   </div>

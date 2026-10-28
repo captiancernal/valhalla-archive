@@ -20,6 +20,13 @@ TABLES = os.path.join(ROOT, "data", "tables")
 PROGRAMS = ["CLEV", "OHIO", "M-OH"]
 SHORT = {"CLEV": "Cleveland State", "OHIO": "Ohio", "M-OH": "Miami (OH)"}
 ERAS = [("2023-27", 2023, 2027), ("2028-32", 2028, 2032), ("2033-37", 2033, 2037)]
+
+
+def extend_last_era(latest):
+    """The last era runs to the newest season in the data (so 2038 lands in "2033-38")."""
+    name, a, b = ERAS[-1]
+    if latest > b:
+        ERAS[-1] = (f"{a}-{str(latest)[2:]}", a, latest)
 LEADER_TEXT = {"passing": ("passing", "passing yards"), "rushing": ("rushing", "rushing yards"),
                "receiving": ("receiving", "receiving yards"), "tackles": ("tackles", "tackles"),
                "sacks": ("sacks", "sacks"), "interceptions": ("interceptions", "interceptions")}
@@ -263,7 +270,7 @@ class Gen:
             titles = p.get("national_titles") or []
             if titles:
                 self.add(f"titles:{p['id']}", p["id"], None, 1,
-                         f"How many national championships did {SHORT[p['id']]} win from 2024 to 2037?",
+                         f"How many national championships did {SHORT[p['id']]} win from {p['first_season']} to {p['last_season']}?",
                          str(len(titles)), [str(n) for n in range(0, 7)],
                          f"{SHORT[p['id']]} won {len(titles)}: {', '.join(map(str, titles))}.", "Champions")
             self.add(f"coach:{p['id']}", p["id"], None, 1, f"Who is the head coach of {SHORT[p['id']]}?", p["coach"],
@@ -332,7 +339,7 @@ class Gen:
             b12 = p.get("big12_titles") or []
             if b12:
                 self.add(f"firstb12:{p['id']}", p["id"], b12[0], 1, f"In what year did {SHORT[p['id']]} win its first Big 12 title of the dynasty?",
-                         str(b12[0]), [str(y) for y in range(2024, 2038)], f"{SHORT[p['id']]}'s first Big 12 title came in {b12[0]}.", "Champions")
+                         str(b12[0]), [str(y) for y in range(p['first_season'], p['last_season'] + 1)], f"{SHORT[p['id']]}'s first Big 12 title came in {b12[0]}.", "Champions")
         heis = defaultdict(int)
         for a in T["awards"]:
             if a["award"] == "Heisman" and a["school"] in PROGRAMS:
@@ -366,6 +373,7 @@ def load_tables():
 
 
 def generate(T):
+    extend_last_era(max(s["season"] for s in T["seasons"]))
     return Gen(T).run()
 
 
