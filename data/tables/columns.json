@@ -1598,5 +1598,165 @@
   "words": 489,
   "verdict": "The RedHawks win it all undefeated, the Vikings end Ohio's run and fall one game short, Nadia keeps the ribbon, and a believer who almost wasn't there was there for every minute.",
   "path": "content/split-decision/columns/2034/2034-CLEV-17.md"
+ },
+ {
+  "id": "2035-CLEV-01",
+  "game": "2035-CLEV-01",
+  "season": 2035,
+  "headline": "Akron, Where It Started for Teresa, and a New Beagle Named Five",
+  "pierogi": 4,
+  "words": 511,
+  "verdict": "Thirty-four points in Akron, a book opened and closed because the game was too good, a half marathon finished past a lawn chair, and a puppy named Five by a four-year-old who knows things.",
+  "path": "content/split-decision/columns/2035/2035-CLEV-01.md"
+ },
+ {
+  "id": "2035-CLEV-02",
+  "game": "2035-CLEV-02",
+  "season": 2035,
+  "headline": "Eighty Points, and Phil Comes to Cleveland",
+  "pierogi": 3,
+  "words": 451,
+  "verdict": "Eighty points against Kent State, Phil in Cleveland at last with a firm handshake and a truth for Mickey, and an old sports information director's advice: watch without keeping stats.",
+  "path": "content/split-decision/columns/2035/2035-CLEV-02.md"
+ },
+ {
+  "id": "2035-CLEV-03",
+  "game": "2035-CLEV-03",
+  "season": 2035,
+  "headline": "Nine Straight Over the Sun Devils, and Leo Commits",
+  "pierogi": 4,
+  "words": 476,
+  "verdict": "Nine straight over the Sun Devils, a seventeen-year-old cornerback headed to college with a framed pencil scouting report left behind, and a message from Sarasota that it gets less lonely there too.",
+  "path": "content/split-decision/columns/2035/2035-CLEV-03.md"
+ },
+ {
+  "id": "2035-CLEV-04",
+  "game": "2035-CLEV-04",
+  "season": 2035,
+  "headline": "Tucson Again, and Rose Learns Two Fight Songs",
+  "pierogi": 4,
+  "words": 486,
+  "verdict": "Forty-two points in Tucson, a defensive end angry at quarterbacks, and a four-year-old on a kitchen chair in Athens who sang two rival fight songs into one.",
+  "path": "content/split-decision/columns/2035/2035-CLEV-04.md"
+ },
+ {
+  "id": "2035-CLEV-05",
+  "game": "2035-CLEV-05",
+  "season": 2035,
+  "headline": "BYU Makes Us Work, and Teddy Retires His Apron",
+  "pierogi": 4,
+  "words": 478,
+  "verdict": "A fourteen-point lesson from BYU, the last Saturday of Teddy's forty-three years at the West Side Market, a folded note waiting in a wallet, and a believer insisting, unasked, that he isn't next.",
+  "path": "content/split-decision/columns/2035/2035-CLEV-05.md"
+ },
+ {
+  "id": "2035-CLEV-06",
+  "game": "2035-CLEV-06",
+  "season": 2035,
+  "headline": "Dallas, a Shootout, and Mickey Starts Counting",
+  "pierogi": 4,
+  "words": 432,
+  "verdict": "Six and oh after a Dallas shootout, a believer doing the math on forty-two seasons, and a doubter who says any number he picks will be the right one.",
+  "path": "content/split-decision/columns/2035/2035-CLEV-06.md"
+ },
+ {
+  "id": "2035-CLEV-07",
+  "game": "2035-CLEV-07",
+  "season": 2035,
+  "headline": "Cal Comes to Cleveland, and Sofia Gets a Headset Upgrade",
+  "pierogi": 4,
+  "words": 515,
+  "verdict": "Seven and oh against a first-time visitor from Berkeley, a fifteen-year-old calling blitzes from a high school press box, and a lesson in watching the whole field, not the ball.",
+  "path": "content/split-decision/columns/2035/2035-CLEV-07.md"
+ },
+ {
+  "id": "2035-CLEV-08",
+  "game": "2035-CLEV-08",
+  "season": 2035,
+  "headline": "Seventy to Sixteen, and Leo Plays His Last Home Game",
+  "pierogi": 5,
+  "words": 478,
+  "verdict": "Eight and oh and a freshman-turned-junior applauded twice by Iowa State, a boy who waved his old flag-football coach onto the field on senior night, and a spreadsheet tab called \"Who Shows Up.\"",
+  "path": "content/split-decision/columns/2035/2035-CLEV-08.md"
+ },
+ {
+  "id": "2035-CLEV-09",
+  "game": "2035-CLEV-09",
+  "season": 2035,
+  "headline": "Boulder Again, and Sal Lets the Sixth Nail Go",
+  "pierogi": 4,
+  "words": 505,
+  "verdict": "A second straight win in Boulder, a barber pulling the empty sixth nail out of his wall and handing it over, and a father in Sarasota asking if it's still the season.",
+  "path": "content/split-decision/columns/2035/2035-CLEV-09.md"
+ },
+ {
+  "id": "2035-CLEV-10",
+  "game": "2035-CLEV-10",
+  "season": 2035,
+  "headline": "Ten and Oh in Houston, and Rose Has a Request",
+  "pierogi": 4,
+  "words": 480,
+  "verdict": "Ten and oh for the fifth time in six years, a four-year-old summoning her grandfather to the Bobcat seats, and the hardest two weeks of the season waiting at the end.",
+  "path": "content/split-decision/columns/2035/2035-CLEV-10.md"
+ },
+ {
+  "id": "2035-CLEV-11",
+  "game": "2035-CLEV-11",
+  "season": 2035,
+  "headline": "Eleven and Oh in Athens, From the Bobcat Seats",
+  "pierogi": 5,
+  "words": 463,
+  "verdict": "Eleven and oh with a fifth win in six trips to Athens, a grandfather happy quietly in the Bobcat seats, a coffee in an empty press box chair, and a doubter who saves the seat.",
+  "path": "content/split-decision/columns/2035/2035-CLEV-11.md"
+ },
+ {
+  "id": "2035-CLEV-12",
+  "game": "2035-CLEV-12",
+  "season": 2035,
+  "headline": "The RedHawks Come to Cleveland, and Ken Pours Again",
+  "pierogi": null,
+  "words": 501,
+  "verdict": "The undefeated RedHawks take Cleveland by twenty-eight, Ken pours for the third time in twelve years, the cape comes along for company, and Leo's grace thanks the believer and the doubter both.",
+  "path": "content/split-decision/columns/2035/2035-CLEV-12.md"
+ },
+ {
+  "id": "2035-CLEV-13",
+  "game": "2035-CLEV-13",
+  "season": 2035,
+  "headline": "Sixty-Nine to Three, and the Long Road Starts Again",
+  "pierogi": 5,
+  "words": 473,
+  "verdict": "Sixty-nine to three to start the long road again, Chester's second bite becoming tradition, and a believer saying on the drive home that after this season he'll decide the number.",
+  "path": "content/split-decision/columns/2035/2035-CLEV-13.md"
+ },
+ {
+  "id": "2035-CLEV-14",
+  "game": "2035-CLEV-14",
+  "season": 2035,
+  "headline": "Twenty-Three to Seventeen: A Different Kind of Win",
+  "pierogi": 5,
+  "words": 471,
+  "verdict": "A low-scoring quarterfinal won by a defense that chases quarterbacks like debts, a semifinal against Ohio again, and a sign at the Lantern Room that hopes both parts.",
+  "path": "content/split-decision/columns/2035/2035-CLEV-14.md"
+ },
+ {
+  "id": "2035-CLEV-15",
+  "game": "2035-CLEV-15",
+  "season": 2035,
+  "headline": "Past Ohio Again, and the RedHawks Wait",
+  "pierogi": 5,
+  "words": 471,
+  "verdict": "A second straight semifinal win over Ohio, a granddaughter who waved the sad flag for her mother's team, a list called \"Things That Don't Happen\" with one entry left, and a father who remembered Mickey's name.",
+  "path": "content/split-decision/columns/2035/2035-CLEV-15.md"
+ },
+ {
+  "id": "2035-CLEV-16",
+  "game": "2035-CLEV-16",
+  "season": 2035,
+  "headline": "73-70: The Thing",
+  "pierogi": null,
+  "words": 500,
+  "verdict": "The RedHawks repeat by three in a game Cleveland will only ever call The Thing, a believer's private mark in his own notebook, and a month to sleep on the number.",
+  "path": "content/split-decision/columns/2035/2035-CLEV-16.md"
  }
 ]
