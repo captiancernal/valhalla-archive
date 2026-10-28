@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block head %}<link rel="stylesheet" href="{{ base }}assets/css/games.css?v={{ build_id }}">{% endblock %}
+{% block content %}
+<section class="gm-head">
+  <div class="wrap">
+    <a class="gm-back" href="{{ base }}play/">Games</a>
+    <h1>Archive Trivia</h1>
+    <p>Ten questions a round, built from the dynasty's own records: champions, awards, stat leaders, big games, recruits and more. Pick a program, an era and a difficulty, or mix it all.</p>
+  </div>
+</section>
+<div class="wrap">
+  <div id="trivia" class="tv is-loading" data-src="{{ base }}assets/data/trivia.json?v={{ build_id }}">
+    <div data-view="setup" class="tv-setup">
+      <div class="tv-fields">
+        <label>Program
+          <select id="tv-cat">
+            <option value="all">All programs</option>
+            <option value="CLEV">Cleveland State</option>
+            <option value="OHIO">Ohio</option>
+            <option value="M-OH">Miami (OH)</option>
+            <option value="LEAGUE">League (everyone else)</option>
+          </select>
+        </label>
+        <label>Era
+          <select id="tv-era">
+            <option value="all">All seasons</option>
+            {% for e in eras %}<option value="{{ e.key }}">{{ e.label }}</option>{% endfor %}
+          </select>
+        </label>
+        <label>Difficulty
+          <select id="tv-diff">
+            <option value="mixed">Mixed</option>
+            <option value="1">Easy</option>
+            <option value="2">Medium</option>
+            <option value="3">Hard</option>
+          </select>
+        </label>
+      </div>
+      <p class="tv-count" data-count aria-live="polite">Loading questions…</p>
+      <div class="gm-actions">
+        <button type="button" class="gm-btn" data-start disabled>Start a round</button>
+        <span class="muted" data-best></span>
+      </div>
+      <p class="note">Tip: press 1 to 4 to answer. You'll see a one-line explanation after each question and your score at the end.</p>
+      <p class="note" data-storage-note hidden>Your browser is blocking storage, so your scores won't be remembered after you leave this page.</p>
+    </div>
+    <div data-view="play" class="tv-play" hidden></div>
+    <div data-view="done" class="tv-done" hidden></div>
+  </div>
+  <p class="note gm-foot">Questions are generated from the Archive's data ({{ total }} in the bank) and refresh whenever the Archive is updated. Your scores are saved only in this browser.</p>
+</div>
+<script src="{{ base }}assets/js/games-core.js?v={{ build_id }}" defer></script>
+<script src="{{ base }}assets/js/trivia.js?v={{ build_id }}" defer></script>
+{% endblock %}

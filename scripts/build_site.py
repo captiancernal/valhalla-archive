@@ -18,6 +18,7 @@ import markdown as md_lib
 import sys as _sys
 _sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import columns as sd_columns  # noqa: E402
+import trivia as trivia_gen  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TABLES = os.path.join(ROOT, "data", "tables")
@@ -117,7 +118,8 @@ class Site:
                      {"key": "almanac", "label": "Almanac", "href": "almanac/", "footer": True},
                      {"key": "records", "label": "Records", "href": "records/", "footer": True},
                      {"key": "rivalry", "label": "Rivalry", "href": "rivalry/", "footer": True},
-                     {"key": "hof", "label": "Hall of Fame", "href": "hall-of-fame/", "footer": True}]
+                     {"key": "hof", "label": "Hall of Fame", "href": "hall-of-fame/", "footer": True},
+                     {"key": "play", "label": "Games", "href": "play/", "footer": True}]
 
         cur = self.site["current_season"]
         champ = next((n for n in T["national_championships"] if n["season"] == cur), None)
@@ -802,6 +804,32 @@ class Site:
                     phases=phases, phase_idx=phase_idx, teasers=teasers, champ=champ, champ_season=champ_season,
                     latest_col=self.column_context(columns[-1]) if columns else None, columns=columns, clips=clips)
 
+    # ---------------------------------------------------------------- games (M8)
+    def build_play(self):
+        qs = trivia_gen.generate(self.T)
+        data_dir = os.path.join(OUT, "assets", "data")
+        os.makedirs(data_dir, exist_ok=True)
+        with open(os.path.join(data_dir, "trivia.json"), "w", encoding="utf-8") as f:
+            json.dump({"generated": self.site.get("last_updated"), "questions": qs}, f, ensure_ascii=False, separators=(",", ":"))
+        eras = [{"key": k, "label": f"{a}-{b}"} for k, a, b in trivia_gen.ERAS]
+        games = [
+            {"key": "trivia", "ready": True, "href": "play/trivia/", "kicker": "Ten questions a round", "title": "Archive Trivia",
+             "text": "Champions, awards, stat leaders, big games and recruits. Pick a program, an era and a difficulty."},
+            {"key": "higherlower", "ready": False, "kicker": "Stat duel", "title": "Higher or Lower",
+             "text": "Two real stat lines or records. Which one is bigger?"},
+            {"key": "playerdle", "ready": False, "kicker": "Daily puzzle", "title": "Playerdle",
+             "text": "Guess the mystery player in a few tries using clues about program, position, class and more."},
+            {"key": "grid", "ready": False, "kicker": "Nine squares", "title": "The Grid",
+             "text": "Fill each square with a player who fits both its row and its column."},
+            {"key": "wordsearch", "ready": False, "kicker": "Printable too", "title": "Word Search",
+             "text": "Themed grids of rosters, award winners and program legends."},
+        ]
+        self.render("play_hub.html", "play/", active_nav="play", page_title="Games · The Valhalla Archive",
+                    description="Trivia and puzzle games built from the Valhalla Archive's dynasty data.", games=games)
+        self.render("play_trivia.html", "play/trivia/", active_nav="play", page_title="Archive Trivia · The Valhalla Archive",
+                    description=f"Trivia from the dynasty's records: {len(qs)} questions on Cleveland State, Ohio, Miami (OH) and the league.",
+                    eras=eras, total=f"{len(qs):,}")
+
     # ---------------------------------------------------------------- run
     def build(self):
         if os.path.isdir(OUT):
@@ -820,6 +848,7 @@ class Site:
         self.build_rivalry()
         self.build_hof()
         self.build_split_decision()
+        self.build_play()
         print(f"Built {self.pages} pages into _site/ (base path {BASE})")
 
 

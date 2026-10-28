@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block head %}<link rel="stylesheet" href="{{ base }}assets/css/games.css?v={{ build_id }}">{% endblock %}
+{% block content %}
+<section class="gm-head">
+  <div class="wrap">
+    <div class="kicker">The Archive at play</div>
+    <h1>Games</h1>
+    <p>Games built from the dynasty's own data: Cleveland State, Ohio and Miami (OH). Everything runs in your browser, and your stats are kept on this device only.</p>
+  </div>
+</section>
+<div class="wrap">
+  <h2 class="section">Your stats</h2>
+  <div class="gm-stats" id="gm-stats">
+    <div class="stat"><div class="n" data-stat="rounds">0</div><div class="l">Games played</div></div>
+    <div class="stat"><div class="n" data-stat="streak">0</div><div class="l">Day streak</div></div>
+    <div class="stat"><div class="n" data-stat="tbest">–</div><div class="l">Trivia best (of 10)</div></div>
+    <div class="stat"><div class="n" data-stat="tacc">–</div><div class="l">Trivia accuracy</div></div>
+  </div>
+  <p class="note" data-storage-note hidden>Your browser is blocking storage, so stats can't be saved on this device.</p>
+
+  <h2 class="section">Play</h2>
+  <div class="gm-cards">
+    {% for g in games %}
+      {% if g.ready %}
+      <a class="gm-card" href="{{ base }}{{ g.href }}">
+        <span class="gm-card-kicker">{{ g.kicker }}</span>
+        <span class="gm-card-title">{{ g.title }}</span>
+        <span class="gm-card-text">{{ g.text }}</span>
+        <span class="gm-card-meta" data-game-meta="{{ g.key }}"></span>
+      </a>
+      {% else %}
+      <div class="gm-card is-soon" aria-disabled="true">
+        <span class="gm-card-kicker">{{ g.kicker }}</span>
+        <span class="gm-card-title">{{ g.title }}</span>
+        <span class="gm-card-text">{{ g.text }}</span>
+        <span class="gm-card-meta">Coming soon</span>
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <p class="note gm-foot">No accounts and no leaderboard: your stats live in this browser only. <button type="button" class="gm-link" id="gm-reset">Reset my stats</button></p>
+</div>
+<script src="{{ base }}assets/js/games-core.js?v={{ build_id }}" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var all = VAGames.all();
+  var rounds = 0;
+  Object.keys(all).forEach(function (k) { if (k[0] !== '_' && all[k].plays) rounds += all[k].plays; });
+  var t = all.trivia || {};
+  function set(k, v) { var el = document.querySelector('[data-stat="' + k + '"]'); if (el) el.textContent = v; }
+  set('rounds', rounds);
+  set('streak', VAGames.streak());
+  if (t.plays) {
+    set('tbest', t.best || 0);
+    set('tacc', Math.round((t.correct / Math.max(1, t.answered)) * 100) + '%');
+    var m = document.querySelector('[data-game-meta="trivia"]');
+    if (m) m.textContent = t.plays + ' round' + (t.plays === 1 ? '' : 's') + ' played · best ' + (t.best || 0) + ' of 10';
+  }
+  if (!VAGames.isPersistent()) document.querySelector('[data-storage-note]').hidden = false;
+  document.getElementById('gm-reset').addEventListener('click', function () {
+    if (window.confirm('Reset all your game stats on this device? This cannot be undone.')) { VAGames.reset(); location.reload(); }
+  });
+});
+</script>
+{% endblock %}
