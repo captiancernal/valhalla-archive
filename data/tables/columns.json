@@ -848,5 +848,155 @@
   "words": 513,
   "verdict": "Ohio's first national title in a run nobody saw coming, a father hugging his daughter outside the winners' press room, and a granola bar slid across a press-box table without a word.",
   "path": "content/split-decision/columns/2029/2029-CLEV-17.md"
+ },
+ {
+  "id": "2030-CLEV-01",
+  "game": "2030-CLEV-01",
+  "season": 2030,
+  "headline": "A New Quarterback, Again, and Ken Grows a Beard",
+  "pierogi": 4,
+  "words": 425,
+  "verdict": "Forty-two points in Greenville, two five-star quarterbacks and one starting job, a second jersey rack, and a beard grown on purpose.",
+  "path": "content/split-decision/columns/2030/2030-CLEV-01.md"
+ },
+ {
+  "id": "2030-CLEV-02",
+  "game": "2030-CLEV-02",
+  "season": 2030,
+  "headline": "Sixty-Three to Three, and Six Years of Kansas State Finally Settled",
+  "pierogi": 5,
+  "words": 401,
+  "verdict": "Kansas State paid back two old debts in one afternoon, Chester spoke for the whole counter, and Ken's sister diagnosed him from two hours away.",
+  "path": "content/split-decision/columns/2030/2030-CLEV-02.md"
+ },
+ {
+  "id": "2030-CLEV-03",
+  "game": "2030-CLEV-03",
+  "season": 2030,
+  "headline": "Eighty-Four Points, and Sam's Grandmother Is Torn",
+  "pierogi": 5,
+  "words": 414,
+  "verdict": "Eighty-four points for the refrigerator, an 89-year-old grandmother from Toledo practicing diplomacy, and a father in Sarasota still loyal to the quarterback who listened.",
+  "path": "content/split-decision/columns/2030/2030-CLEV-03.md"
+ },
+ {
+  "id": "2030-CLEV-04",
+  "game": "2030-CLEV-04",
+  "season": 2030,
+  "headline": "Twenty Points in Waco, and Leo Reyes Wants to Coach",
+  "pierogi": 4,
+  "words": 475,
+  "verdict": "A normal twenty-point win in Waco, a twelve-year-old assistant coach in charge of morale, and Ken's beard finally paying for itself on a Tuesday.",
+  "path": "content/split-decision/columns/2030/2030-CLEV-04.md"
+ },
+ {
+  "id": "2030-CLEV-05",
+  "game": "2030-CLEV-05",
+  "season": 2030,
+  "headline": "BYU Comes to Cleveland, and Teddy Gets His Number Back",
+  "pierogi": 4,
+  "words": 434,
+  "verdict": "BYU caught in a sideways rain, a sausage oracle back on his game, and a record called \"Undefeated\" sitting face out on a shelf, waiting.",
+  "path": "content/split-decision/columns/2030/2030-CLEV-05.md"
+ },
+ {
+  "id": "2030-CLEV-06",
+  "game": "2030-CLEV-06",
+  "season": 2030,
+  "headline": "Sixty-Six in Tempe, With Marco Reyes in the Next Seat",
+  "pierogi": 5,
+  "words": 456,
+  "verdict": "Sixty-six points in the desert, a neighbor home in a wool scarf, a tamale in a parking garage, and Ken learning to walk with confidence.",
+  "path": "content/split-decision/columns/2030/2030-CLEV-06.md"
+ },
+ {
+  "id": "2030-CLEV-07",
+  "game": "2030-CLEV-07",
+  "season": 2030,
+  "headline": "Seven and Oh, and Ohio Is Coming to Cleveland",
+  "pierogi": 4,
+  "words": 446,
+  "verdict": "Seven and oh with a list being crossed off, Ohio two weeks away, and a seventy-eight-year-old man in Sarasota practicing, unsuccessfully, not to say the truest thing he knows.",
+  "path": "content/split-decision/columns/2030/2030-CLEV-07.md"
+ },
+ {
+  "id": "2030-CLEV-08",
+  "game": "2030-CLEV-08",
+  "season": 2030,
+  "headline": "Eight and Oh in Dallas, and Big Stan Clears a Wall",
+  "pierogi": 4,
+  "words": 451,
+  "verdict": "Eight and oh in Dallas, a deli wall cleared for something nobody will name, and Ken obeying a breathing record before the biggest home game in years.",
+  "path": "content/split-decision/columns/2030/2030-CLEV-08.md"
+ },
+ {
+  "id": "2030-CLEV-09",
+  "game": "2030-CLEV-09",
+  "season": 2030,
+  "headline": "38-37: Ohio Finally Loses in Cleveland, and Mickey Says He's Done",
+  "pierogi": 5,
+  "words": 472,
+  "verdict": "Ohio finally beaten in Cleveland by a single point, a believer's first retirement announcement, and a napkin in Sarasota with a brand-new line written on it.",
+  "path": "content/split-decision/columns/2030/2030-CLEV-09.md"
+ },
+ {
+  "id": "2030-CLEV-10",
+  "game": "2030-CLEV-10",
+  "season": 2030,
+  "headline": "Ten and Oh in Salt Lake City, and Nobody Believes Mickey",
+  "pierogi": 4,
+  "words": 454,
+  "verdict": "Ten and oh at altitude, a rocking chair waiting for its stain, a countdown over a bar in Ohio City, and Ken saying the quiet part once.",
+  "path": "content/split-decision/columns/2030/2030-CLEV-10.md"
+ },
+ {
+  "id": "2030-CLEV-11",
+  "game": "2030-CLEV-11",
+  "season": 2030,
+  "headline": "Donna and Nadia Meet in Oxford, and the Bet Flips Back",
+  "pierogi": 5,
+  "words": 474,
+  "verdict": "The cape goes five and oh away from home, the bet flips back, and two women from opposite sides of a rivalry trade phone numbers in the fourth quarter.",
+  "path": "content/split-decision/columns/2030/2030-CLEV-11.md"
+ },
+ {
+  "id": "2030-CLEV-12",
+  "game": "2030-CLEV-12",
+  "season": 2030,
+  "headline": "Twelve and Oh, and Bridget Brings Someone to Thanksgiving",
+  "pierogi": 5,
+  "words": 457,
+  "verdict": "A perfect regular season, the last revenge game crossed off the list, and a calm chemistry teacher from Athens who survived an hour of questions with a pie.",
+  "path": "content/split-decision/columns/2030/2030-CLEV-12.md"
+ },
+ {
+  "id": "2030-CLEV-13",
+  "game": "2030-CLEV-13",
+  "season": 2030,
+  "headline": "Big 12 Champions Again, and Stan Fills the Wall",
+  "pierogi": 5,
+  "words": 445,
+  "verdict": "Big 12 champions, Ohio beaten twice, two frames and a brass plate that says TWICE, and a researcher in a jewelry store who wanted his best friend to find out.",
+  "path": "content/split-decision/columns/2030/2030-CLEV-13.md"
+ },
+ {
+  "id": "2030-CLEV-14",
+  "game": "2030-CLEV-14",
+  "season": 2030,
+  "headline": "Fourteen and Oh, and Ohio a Third Time",
+  "pierogi": 5,
+  "words": 473,
+  "verdict": "Fourteen and oh for the first time ever, a stained walnut rocking chair waiting on the porch \"either way,\" and Ohio, a third time, mad.",
+  "path": "content/split-decision/columns/2030/2030-CLEV-14.md"
+ },
+ {
+  "id": "2030-CLEV-15",
+  "game": "2030-CLEV-15",
+  "season": 2030,
+  "headline": "Ohio Wins the Third One, and Mickey Un-Retires",
+  "pierogi": null,
+  "words": 502,
+  "verdict": "Ohio wins the rubber match and a fourteen-and-oh run ends one game short, a believer un-retires for a grandchild, and a walnut rocking chair finds its real purpose.",
+  "path": "content/split-decision/columns/2030/2030-CLEV-15.md"
  }
 ]

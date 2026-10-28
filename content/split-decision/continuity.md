@@ -20,6 +20,7 @@ Running bits and life details already used, so later columns stay consistent. Up
 2027: none.
 2028: none (a stranger in a Vikings beanie called Mickey "Pop" at the Ohio State quarterfinal).
 2029: none (Leo watched the Oklahoma first-round game on the porch with Mickey).
+2030: Marco Reyes at Arizona State in Tempe (his mother's tamales at the airport; Marco wore the scarf in the heat). Nadia sat with Donna in the visitors' section in Oxford.
 
 ## Places and people used in 2024 (and what happened)
 - **Big Stan's:** counter council voted 6 to 1 on Dolan (Chester abstained, Chester always abstains); Stan's extra pickle "for the doubter"; Chester *stood up* during the Oklahoma State win; Stan promised to name a sandwich after the first Viking who wins a bowl (deferred to 2025: "naming the sandwich next season").
@@ -35,6 +36,7 @@ Running bits and life details already used, so later columns stay consistent. Up
 - **Ken in Florida:** drove from Orlando to Sarasota after UCF.
 
 ## "Lil" origin stories used
+2030: a high school drama club play about a family of Kens (he was cast as "Little Ken").
 2029: a 1997 summer-camp cabin with the smallest bunks; a 2015 moving-company estimate that listed his apartment as "lil".
 2028: a fourth-grade crossing-guard job (the little one with the sign; the big one had a whistle).
 2027: a ventriloquist's dummy named Ken at his 6th birthday (he was the smaller one); a wedding place card said "Lil Ken" (nobody admits writing it; Mickey denies, Donna won't make eye contact); "a calligrapher's error" ("I've since learned it was not an error").
@@ -44,6 +46,7 @@ Running bits and life details already used, so later columns stay consistent. Up
 
 ## Doom Model status
 - End of 2024: "filed a formal complaint"; the door is open a crack.
+- 2030: made a "Perfect?" tab on its own (blinking, then still before Ohio); "Perfect? (1 game)" before the semifinal.
 - 2029: flagged the Miami (OH) game red (then blinking); grew an "Ohio" tab on its own that later read "Again?"; generated "Scenarios: January" (closed tab reopens itself); a "Rubber Match" tab (empty, then a single "?").
 - 2028: predicted wins "with an asterisk" (later bold); secretly ran playoff scenarios in a file named "just in case" (renamed "in case" after the Big 12 title); opened to a single cell "OK" before the title game; after the title: "OK. Fine. Wow."
 - 2027: returned from vacation "in a better mood"; orange icon ("mild concern") for Oklahoma State; "softened" (secondhand from Teresa); aligned with Ken on the bowl picture.
@@ -114,6 +117,25 @@ Running bits and life details already used, so later columns stay consistent. Up
 - **Ken:** apologized to Phil (Kent State SID) again: "Again?" "You keep saying that."
 - **Ray (age 77):** asked three times whether Teresa "had the plant" ("Keep it alive, Kenny. That's the test"); watching old game tape ("He seems happy in there," Carol); remembered Greg Price's name five minutes later ("Tell Price not to get cocky"); foggy at Thanksgiving ("You have a house?"); "in my day if you played a team three times, two of 'em were fights... Then win the fight"; "Ohio's always tough, Kenny" before and after the title game; "But you were tougher than last time... Then next year."
 
+## 2030 details (places, people, events)
+- **Quarterbacks:** Dave Shelley (RS SO, 83, five-star from Michigan) won the job over Greg Price (83, five-star from Oklahoma, the 2029 starter); Price helped on the sideline with a headset. Ray stays loyal to Price ("That's a shame. He listened").
+- **Mickey's jersey closet:** jersey 37; Donna started a second rack "for the overflow."
+- **Mickey's first retirement threat:** announced after beating Ohio 38-37 at home ("I mean it." Donna: "I know you do," went to bed smiling); told the counter, Sal ("sure, Mick"), Leo ("can I have your whistle"); nobody believed him; **un-retired** after the semifinal because Bridget is pregnant ("Somebody has to teach that baby the right fight song").
+- **Sam's rocking chair:** started as a "retirement rocking chair," waited to stain it until there was evidence; delivered stained dark walnut before the semifinal ("Kate says you'll need it either way"); it's now for the grandbaby ("big enough for two").
+- **Bridget & Eli Marsh:** Eli is a tall, quiet high school chemistry teacher in Athens, together with Bridget two years before Mickey knew; came to Thanksgiving 2030 (at the Bridges' house) in an Ohio sweater with a pie; survived an hour of questions ("Respectfully, sir, I have to live in Athens"); asked Mickey his favorite Vikings team and listened for 40 minutes. After the semifinal Bridget told Mickey (Eli there) she's **pregnant, due summer 2031** (Rose). Bridget texts: "see you soon" before Ohio; "congrats, dad. that one was for you" after 38-37; "see you in the bracket."
+- **Big Stan's:** cleared the back wall before Ohio (the weatherman photo went to storage); after the Big 12 title hung two scoreboard frames (38-37 photo by a crying Walt; the title game) over a brass plate: **TWICE**; Chester pointed at the empty space beside them. No new sandwich yet (The Baraka stays).
+- **Chester:** third sentence in six years: "That's for 2025" (after 63-3 over Kansas State); counter council voted not to say "perfect" until it was.
+- **Sam's grandmother Rosalind** (89, Toledo): came to the 84-14 game in a Toledo sweatshirt and a Vikings scarf ("being diplomatic"); "you people are very rude to my city"; Donna sent kolaczki as reparations.
+- **Reyes:** Leo (12) aged out and is now Mickey's assistant coach (bought his own whistle; in charge of water, cones and "morale"; "keep showing up" is in its third generation); Sofia (10) is the Lakers' quarterback and still keeps stats; Marco went home to Phoenix with Mickey for the ASU game ("I'm from here, but I'm *from* Cleveland now").
+- **Teddy:** gift back: "Fifty-six, Mick" before BYU (the pierogi lady sold out by nine).
+- **Ken:** grew a close-trimmed beard "for gravitas" (Teresa: "a librarian who's been through a divorce"; Nadia: "like you lost a bet"; Donna: "a Civil War general, a losing one"); trivia team finished 2nd thanks to a "Beards Throughout History" round; ballroom: waltz (four toes), foxtrot ("a walk with confidence," one toe); Spin Cycle set aside a 1961 jazz trio record called **"Undefeated"** ("Don't play it yet"; still unplayed, Teresa dusts around it); visited a jewelry store in Tremont and "researched" for 20 minutes (bought nothing "yet"); wrote it in the column so Mickey would find out.
+- **Teresa:** record picks: mariachi "for the beard," "Breathing Exercises for Beginners" before Ohio (plus preventive soup); squeezed Ken's hand at Thanksgiving watching Eli and Bridget.
+- **Dana (Ken's sister, Columbus):** texts "relax" every game ("You don't look relaxed").
+- **Lantern Room:** Nadia's "DAYS UNTIL OXFORD" countdown ("Bring the ribbon"); drove to Oxford and sat with Donna in the visitors' section ("Cape business"); they swapped numbers ("the most dangerous alliance in northeast Ohio"); Nadia lost the bet a 6th time in 7 years and told Ken to keep the ribbon ("You're on a run").
+- **Donna:** 4-0 in Oxford, 5-0 against the RedHawks away from home; "Everything's for sale, Michael, except the beagle."
+- **Ray (age 78):** called on a Wednesday on his own, "practicing" not saying "Ohio's always tough" (failed: "Damn it"); wrote 38-37 on a napkin and added "But not today" (Carol mailing the napkin to Ken); "Pops never had eleven" (Ken's grandfather, gone since 1988); repeated "two of 'em were fights" without remembering; "Then they'll be mad"; after the semifinal: "Tell him I said it's the best job there is" (being a grandpa).
+- **Stranger in the Vikings beanie** (from 2028) patted Mickey after 38-37: "Pop, it's over. We won."
+
 ## Season arcs
 - **2024 (9-4, Liberty Bowl champions):** year one of the Dolan era. Lost at home to Ohio 49-24 (Bridget's "sorry, Dad"; Ken's storm-radar respect for Slocombe begins). Beat Miami (OH) 46-45 in Oxford the Saturday after Thanksgiving (Donna's game). Ken said "Merry Christmas, Mick" in print.
 - **2025 (10-3, Texas Bowl champions, final AP No. 11):** freshman QB Amar'e Hocker; 6-0 start ended at Colorado again; beat Miami (OH) 35-33 (Nadia's bobblehead to the wall); won 56-38 at Ohio (Sal's pennant to the wall, breakfast with Bridget); lost big at K-State after Thanksgiving; first ranked finish of the Dolan era.
@@ -121,3 +143,4 @@ Running bits and life details already used, so later columns stay consistent. Up
 - **2027 (11-2, Pop-Tart Bowl champions, final AP No. 11, nation's top scoring offense):** 7-0 start incl. 53-49 over Miami (OH) (4th straight win over the RedHawks); freshman WR "the good Kenny" Tongues; Kate's wedding in the bye week; Ken met Teresa; lost 59-27 at UCF on Halloween; beat Ohio 35-7 in Athens (Ohio still made the Big 12 title game); Klein won the Mackey; Miami (OH) lost the national title game to Alabama.
 - **2028 (15-1, NATIONAL CHAMPIONS, Big 12 champions, AP No. 1):** 7-0 start; lost 41-38 at home to Ohio (third straight home loss to Ohio); 84-70 at Miami (OH); beat Ohio 48-17 for the first Big 12 title; first playoff run (bye, beat Ohio State 45-38, Charlotte 45-28, Georgia 34-24); Hocker swept the Heisman, Maxwell, Camp and O'Brien; Nwangwu Walker + Big 12 rushing record; Tongues school receiving-TD record; Duggan the third Mackey; Cavka the Thorpe. OC David Morales hired as Arizona State's OC after the season.
 - **2029 (13-4, national runner-up, AP No. 2, 7-2 Big 12):** redshirt freshman QB Greg Price; 6-0 start; lost 51-29 at home to an undefeated Miami (OH) (end of the five-year streak; Ken pays Nadia's bet); won 49-21 in Athens (third straight win there); held Utah to 6 (fewest points CLEV has allowed); lost 34-20 at Texas Tech; lost the Big 12 title game 34-28 to Miami (OH); playoff run without a bye: beat Oklahoma 51-21, Miami (OH) 48-42 in the rubber match, Georgia 31-14; lost the title game 52-36 to Ohio (Ohio's first national title; the 2029-33 Ohio run begins). Nwangwu's second straight Walker + All-American, Everett All-American. Ken and Teresa moved in together.
+- **2030 (14-1, Big 12 champions 9-0, lost CFP semifinal to Ohio):** RS SO QB Dave Shelley won the job over Greg Price and swept the Heisman, Maxwell, Camp and O'Brien; new DC Lonnie Arnold; 63-3 over Kansas State, 84-14 over Toledo; **first home win over Ohio** 38-37; 52-42 in Oxford; first unbeaten regular season of the Dolan era; beat Ohio 45-42 for the Big 12 title; bye, beat Texas A&M 42-13; lost the semifinal to Ohio 38-23 (Ohio went on to win the title over Oklahoma, not mentioned in the columns). Dolan Coach of the Year; OC Brian Draft OC of the Year, left to be West Virginia's head coach; Cavka's second Thorpe. Mickey's first retirement threat, withdrawn for the grandbaby.
