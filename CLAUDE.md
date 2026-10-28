@@ -48,7 +48,7 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
   - Fix F28 (owner-approved): NCAA/Big 12 career passing TD -> DuBose 230; Big 12 season rushing -> Nwangwu 2,536. Validation now checks no league record sits below a Vikings stat line.
   - Data note shown as entered: the projected 2038 depth chart repeats a few names (Quincy Reddick at C, Johnnie Floyd at CB3).
 - [x] M10 Clips pipeline, print mode, accessibility, QA (approved 2026-10-28)
-- [x] M11 Deploy, README, hand-off: approved 2026-10-28. LIVE at https://captiancernal.github.io/valhalla-archive/ (Pages source = GitHub Actions; first run green). Follow-up: bump workflow actions off Node 20 (deprecation warning in the first run).
+- [x] M11 Deploy, README, hand-off: approved 2026-10-28. LIVE at https://captiancernal.github.io/valhalla-archive/ (Pages source = GitHub Actions; first run green). Workflow actions moved to Node 24 versions on 2026-10-28 (run 40730144229 green, no Node 20 warning).
 - [x] **Final task (owner request, 2026-10-26): corrected tracker copy.** Approved 2026-10-28: `py -P scripts/corrected_tracker.py` writes `source/corrected/<date> CSU Vikings Tracker (corrected).xlsx` (git-ignored) with 184 cell edits (fixes F01-F28 incl. F05's implied Schedule edits, plus aliases) and a "Valhalla Changes" sheet; the list is also in data/corrected-tracker-changes.md. Excel (COM) makes the edits so the 186 images survive (openpyxl would drop them); the script verifies every other cell is unchanged and all 530 picture placements remain. Re-run it whenever new fixes are approved. Never modify the original or any dated copy in `source/`.
 
 ## Decisions log (approved by the owner after the spec)
