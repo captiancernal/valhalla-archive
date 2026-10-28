@@ -47,7 +47,7 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
   - Page road/ (nav label "Road to <next season>"); scripts/road.py computes returning players, Record Watch (within reach: career gap <= 1.25x best season, or best season >= 70% of a season record; school/Big 12/NCAA season+career records; game records skipped) and the closest returning chaser per record. Sections unlock from data (departures, projected depth chart, recruits, transfers, schedule); rivalry previews always open. Phase tracker reads data/site-control.json. Front page gains a Record Watch teaser and a "Full tracker" link.
   - Fix F28 (owner-approved): NCAA/Big 12 career passing TD -> DuBose 230; Big 12 season rushing -> Nwangwu 2,536. Validation now checks no league record sits below a Vikings stat line.
   - Data note shown as entered: the projected 2038 depth chart repeats a few names (Quincy Reddick at C, Johnnie Floyd at CB3).
-- [~] M10 Clips pipeline, print mode, accessibility, QA (started 2026-10-28; order: print mode, clips, accessibility + fonts, QA)
+- [~] M10 Clips pipeline, print mode, accessibility, QA (all four parts built 2026-10-28; print view, clips, accessibility + fonts approved by the owner; QA awaiting sign-off)
 - [ ] M11 Deploy, README, hand-off
 - [ ] **Final task (owner request, 2026-10-26):** produce a corrected COPY of the latest tracker (`source/corrected/<date> CSU Vikings Tracker (corrected).xlsx`) with every approved fix from `data/fixes.json` and every alias from `data/aliases.json` applied, plus a "Valhalla Changes" sheet listing sheet / cell / old value / new value / fix id, so the owner can copy-paste the edits into the live spreadsheet. Never modify the original or any dated copy in `source/`.
 
@@ -102,6 +102,13 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 ## Accessibility (M10)
 - axe-core scan (WCAG 2.2 AA + best practice) is clean on 34 page types at 1280px and 375px, plus mid-game states, the open menu and print view. Re-run it after big template changes (temporary install outside the repo; inject into _site pages).
 - Rules kept: every page has landmarks (champion banner is an <aside>; the page band sits inside <main>); tables wider than the screen become focusable named regions (site.js); progress bars use role="img" + aria-label; focus ring is gold with an ink inner ring; smooth scrolling respects reduced motion; all images have alt (decorative logos use alt="").
+
+## QA and launch checks (M10)
+- `py -P scripts/spot_check.py` re-reads the tracker (read-only) its own way and compares it with the BUILT site: every season's record, Big 12 finish and six leaders for all three programs, career records, every national champion/runner-up. Writes data/spot-check.md. Must show 0 unexplained (F26 differences are expected). Run it after every update.
+- Share previews: scripts/share_images.py draws 1200x630 cards (Archive + one per program) at build time into assets/share/; every page has og:image, og:url, canonical, twitter summary_large_image. SITE_URL env var (default the live Pages address).
+- Speed: build makes 64px reduced-color copies of every logo in assets/logos/sm/ (small_logo() in build_site.py); use them anywhere a logo is drawn under ~40px. Heaviest page ~195 KB of images; median ~51 KB.
+- 404.html is generated (noindex). Test the Pages build with `MSYS_NO_PATHCONV=1 BASE_PATH=/valhalla-archive/ py -P scripts/build_site.py` (Git Bash otherwise mangles the path), then check_links with the same BASE_PATH.
+- Privacy: commits use GitHub's private address 173638619+captiancernal@users.noreply.github.com (set in this repo's git config; history re-labelled 2026-10-28 with the owner's OK, before the first push). Never commit with the Gmail address. A pre-rewrite backup bundle sits outside the repo at Documents/valhalla-archive-backup-2026-10-28.bundle (local only, never push it).
 
 ## Split Decision (M7)
 - Bible: content/split-decision/character-bible.md (approved). Continuity log: content/split-decision/continuity.md (update every season).

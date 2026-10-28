@@ -270,7 +270,7 @@ class Site:
                     by_season=sorted(by.items(), key=lambda kv: -kv[0]), page_title="Highlights · The Valhalla Archive",
                     description=f"{len(self.clips)} highlight clips from the College Football 25 dynasty.")
 
-    def render(self, template, path, **ctx):
+    def base_ctx_for(self, template, path, **ctx):
         base_ctx = {"base": BASE, "site": self.site, "programs": self.programs, "nav": self.nav, "banner": self.banner,
                     "build_id": self.build_id, "program": None, "description": "", "theme_color": None,
                     "page_path": path, "site_url_display": SITE_URL_DISPLAY, "font_preloads": self.font_preloads,
@@ -283,6 +283,10 @@ class Site:
             base_ctx["og_image"] = SITE_URL + "assets/share/" + (card or self.share["archive"])
             base_ctx["og_image_alt"] = (f"{prog['school']} {prog['nickname']} in The Valhalla Archive" if card
                                         else "The Valhalla Archive: the almanac of a College Football 25 dynasty")
+        return base_ctx
+
+    def render(self, template, path, **ctx):
+        base_ctx = self.base_ctx_for(template, path, **ctx)
         html = self.env.get_template(template).render(**base_ctx)
         dest = os.path.join(OUT, path, "index.html")
         os.makedirs(os.path.dirname(dest), exist_ok=True)
@@ -1073,6 +1077,11 @@ class Site:
         self.build_play()
         self.build_road()
         self.build_highlights()
+        # GitHub Pages shows 404.html for any missing address
+        html = self.env.get_template("404.html").render(**{**self.base_ctx_for("404.html", ""), "page_title": "Page not found · The Valhalla Archive",
+                                                           "description": "This page isn't in the Valhalla Archive.", "no_print": True})
+        with open(os.path.join(OUT, "404.html"), "w", encoding="utf-8") as f:
+            f.write(re.sub(r'<link rel="canonical"[^>]*>', '<meta name="robots" content="noindex">', html, count=1))
         print(f"Built {self.pages} pages into _site/ (base path {BASE})")
 
 
