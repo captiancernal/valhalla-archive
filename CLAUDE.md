@@ -43,7 +43,10 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
   - Word Search: scripts/wordsearch.py builds 49 themes (season starters from the depth chart, award winners by year, program legends, Vikings schedules); the page lays out grids in the browser (Easy: across/down, 12-14 size; Hard: 8 directions, 14-15 size), drag or tap-tap or keyboard, print stylesheet with optional answer key on page 2.
   - All five games built; M8 awaiting owner sign-off.
   - Ohio and Miami (OH) players have few attributes in the tracker (no position/home state/rating for most); player-attribute games will need a pool decision.
-- [~] M9 Road to 2038, Record Watch, phase tracker (started 2026-10-28)
+- [~] M9 Road to 2038, Record Watch, phase tracker (built 2026-10-28, awaiting sign-off)
+  - Page road/ (nav label "Road to <next season>"); scripts/road.py computes returning players, Record Watch (within reach: career gap <= 1.25x best season, or best season >= 70% of a season record; school/Big 12/NCAA season+career records; game records skipped) and the closest returning chaser per record. Sections unlock from data (departures, projected depth chart, recruits, transfers, schedule); rivalry previews always open. Phase tracker reads data/site-control.json. Front page gains a Record Watch teaser and a "Full tracker" link.
+  - Fix F28 (owner-approved): NCAA/Big 12 career passing TD -> DuBose 230; Big 12 season rushing -> Nwangwu 2,536. Validation now checks no league record sits below a Vikings stat line.
+  - Data note shown as entered: the projected 2038 depth chart repeats a few names (Quincy Reddick at C, Johnnie Floyd at CB3).
 - [ ] M10 Clips pipeline, print mode, accessibility, QA
 - [ ] M11 Deploy, README, hand-off
 - [ ] **Final task (owner request, 2026-10-26):** produce a corrected COPY of the latest tracker (`source/corrected/<date> CSU Vikings Tracker (corrected).xlsx`) with every approved fix from `data/fixes.json` and every alias from `data/aliases.json` applied, plus a "Valhalla Changes" sheet listing sheet / cell / old value / new value / fix id, so the owner can copy-paste the edits into the live spreadsheet. Never modify the original or any dated copy in `source/`.

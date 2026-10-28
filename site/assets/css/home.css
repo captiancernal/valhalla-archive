@@ -120,3 +120,6 @@
   .aw-school { font-size: 12px; }
   .as-chip { font-size: 12px; }
 }
+.road-more { margin-left: 12px; font: 700 14px var(--font-ui); color: var(--brass-bright); text-decoration: none; vertical-align: middle; white-space: nowrap; }
+.road-more::after { content: " →"; }
+.road-more:hover { text-decoration: underline; }

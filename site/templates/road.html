@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+{% block head %}<link rel="stylesheet" href="{{ base }}assets/css/home.css?v={{ build_id }}"><link rel="stylesheet" href="{{ base }}assets/css/road.css?v={{ build_id }}">{% endblock %}
+{% block content %}
+<section class="road road-page-head">
+  <div class="wrap">
+    <div class="kicker">The offseason · {{ site.phase_display }}</div>
+    <h1 class="road-title">Road to {{ nxt }}</h1>
+    <p class="rd-lede">The {{ cur }} season is in the books. Everything below is built from the tracker, and each locked card opens on its own as soon as the matching data is logged.</p>
+    <ol class="phases phases-big" aria-label="Offseason phases">
+      {% for ph in phase_info %}
+      <li class="{% if loop.index0 < phase_idx %}done{% elif loop.index0 == phase_idx %}now{% endif %}"{% if loop.index0 == phase_idx %} aria-current="step"{% endif %}>
+        <span class="dot"></span><span class="ph">{{ ph.name }}</span>{% if loop.index0 == phase_idx %}<span class="now-tag">Now</span>{% endif %}
+        <span class="ph-desc">{{ ph.desc }}</span>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<div class="wrap rd">
+  <nav class="rd-jump" aria-label="On this page">
+    {% for s in sections %}<a href="#{{ s.key }}"{% if not s.unlocked %} class="is-locked"{% endif %}>{% if not s.unlocked %}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 11V8a5 5 0 0 1 10 0v3M5 11h14v10H5z"/></svg>{% endif %}{{ s.title }}</a>{% endfor %}
+  </nav>
+
+  {# ---------- Record Watch #}
+  <section id="record-watch" class="rd-sec">
+    <div class="rd-sec-head"><h2 class="section">Record Watch</h2><span class="rd-badge open">Open</span></div>
+    <p class="rd-intro">Returning Vikings measured against the school, Big 12 and NCAA records for a season and a career. Single-game records are left out because the tracker doesn't keep game-by-game player stats.</p>
+    {% if watch %}
+    <h3 class="rd-h3">Within reach</h3>
+    <div class="rw-cards">
+      {% for w in watch %}
+      <article class="rw-card">
+        <div class="rw-levels">{% for l in w.levels %}<span class="rw-level" data-level="{{ l }}">{{ 'School' if l == 'Cleveland State' else l }}</span>{% endfor %} <span class="muted">{{ w.duration|lower }} record</span></div>
+        <h4>{{ plink(w.player) }}{% if w.pos %} <span class="muted">{{ w.pos }}</span>{% endif %}</h4>
+        <p class="rw-type">{{ w.type }} in a {{ 'season' if w.duration == 'Season' else 'career' }}</p>
+        <div class="rw-bar" role="img" aria-label="{{ fmt(w.current) }} of {{ fmt(w.record) }}, {{ w.pct }} percent"><span style="width: {{ w.pct }}%"></span></div>
+        <p class="rw-nums"><b>{{ fmt(w.current) }}</b> {{ 'best season (' ~ w.best_season ~ ')' if w.duration == 'Season' else 'career so far' }} · record <b>{{ fmt(w.record) }}</b> by {{ plink(w.holder) }} ({{ w.year_set }})</p>
+        <p class="rw-gap">Needs <b>{{ fmt(w.gap) }}</b> more{% if w.duration == 'Season' %} in one season{% else %} to break it{% endif %}.</p>
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p class="note">No returning player is within reach of a season or career record yet.</p>
+    {% endif %}
+    <h3 class="rd-h3">Closest returning chaser for every record</h3>
+    <div class="table-wrap"><table class="data rw-table">
+      <thead><tr><th scope="col">Record</th><th scope="col">Level</th><th scope="col">Holder</th><th scope="col" class="num">Mark</th><th scope="col">Closest returner</th><th scope="col" class="num">His mark</th><th scope="col">Progress</th></tr></thead>
+      <tbody>
+      {% for c in chase %}
+      <tr>
+        <th scope="row">{{ c.type }} <span class="muted">({{ c.duration|lower }})</span></th>
+        <td>{{ c.levels|join(', ')|replace('Cleveland State', 'School') }}</td>
+        <td>{{ plink(c.holder) }} <span class="muted">{{ c.year_set }}</span></td>
+        <td class="num">{{ fmt(c.record) }}</td>
+        {% if c.pct >= 10 %}
+        <td>{{ plink(c.player) }}</td>
+        <td class="num">{{ fmt(c.current) }}</td>
+        <td><span class="rw-mini" aria-label="{{ c.pct }} percent"><span style="width: {{ c.pct }}%"></span></span> {{ c.pct|round|int }}%</td>
+        {% else %}
+        <td colspan="3" class="muted">No returning chaser yet</td>
+        {% endif %}
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table></div>
+    <p class="note">"Within reach" means a returning player could break the record with a season like his best one: a career record within 1.25 times his best season, or a season record he has already reached 70% of. Records come from the Records Book.</p>
+  </section>
+
+  {# ---------- Departing seniors and draft watch #}
+  <section id="departures" class="rd-sec">
+    <div class="rd-sec-head"><h2 class="section">Departing seniors &amp; draft watch</h2><span class="rd-badge {{ 'open' if departures else 'locked' }}">{{ 'Open' if departures else 'Locked' }}</span></div>
+    {% if departures %}
+    <p class="rd-intro">{{ departures|length }} Vikings are leaving after {{ cur }}.{% if drafted_n %} {{ drafted_n }} have been drafted.{% else %} Draft results appear here once they're logged during <b>Player Departures and Draft</b>.{% endif %}</p>
+    <div class="table-wrap"><table class="data">
+      <thead><tr><th scope="col">Player</th><th scope="col">Pos</th><th scope="col">Class</th><th scope="col" class="num">OVR</th><th scope="col">Draft</th></tr></thead>
+      <tbody>{% for d in departures %}<tr><th scope="row">{{ plink(d.player) }}</th><td>{{ d.position }}</td><td>{{ d.class or '' }}</td><td class="num">{{ d.overall or '' }}</td><td>{% if d.drafted %}<span class="pill gold">Round {{ d.draft_round }}</span>{% elif d.outcome == 'graduated' %}Graduated{% else %}<span class="muted">Pending</span>{% endif %}</td></tr>{% endfor %}</tbody>
+    </table></div>
+    {% else %}
+    <div class="rd-lock"><span>Unlocks during <b>Season Recap</b>, when the graduates list is logged.</span></div>
+    {% endif %}
+  </section>
+
+  {# ---------- Projected depth chart #}
+  <section id="depth" class="rd-sec">
+    <div class="rd-sec-head"><h2 class="section">Projected {{ nxt }} depth chart</h2><span class="rd-badge {{ 'open' if depth else 'locked' }}">{{ 'Open' if depth else 'Locked' }}</span></div>
+    {% if depth %}
+    <p class="rd-intro"><b>{{ returning_starters }} of {{ starter_slots }}</b> projected starters also started in {{ cur }}. This is the tracker's early projection, so it will change as recruits, departures and transfers are logged.</p>
+    <div class="depth">
+    {% for u in depth %}
+      <section class="depth-unit"><h3>{{ u.unit }}</h3>
+      <dl>{% for row in u.rows %}<div class="drow"><dt>{{ row.slot }}</dt><dd>{% for d in row.players %}<span class="dp{% if loop.first %} starter{% endif %}{% if d.departing %} departing{% endif %}">{{ plink(d.player) }}{% if loop.first and d.returning %}<span class="rd-tag ret" title="Started in {{ cur }}">Returning</span>{% endif %}{% if d.departing %}<span class="rd-tag dep" title="On the {{ cur }} graduates list">Departing</span>{% endif %}</span>{% endfor %}</dd></div>{% endfor %}</dl>
+      </section>
+    {% endfor %}
+    </div>
+    {% else %}
+    <div class="rd-lock"><span>Unlocks during <b>{{ nxt }} Preseason</b>, when the projected depth chart is logged.</span></div>
+    {% endif %}
+  </section>
+
+  {# ---------- Recruits #}
+  <section id="recruits" class="rd-sec">
+    <div class="rd-sec-head"><h2 class="section">Incoming {{ nxt }} recruits</h2><span class="rd-badge {{ 'open' if recruits else 'locked' }}">{{ 'Open' if recruits else 'Locked' }}</span></div>
+    {% if recruits %}
+    <p class="rd-intro">{{ recruits|length }} signees logged so far. More cards reveal as each recruit is entered.</p>
+    {% else %}
+    <p class="rd-intro">The {{ nxt }} class is still being recruited. Cards reveal one by one during <b>Final Recruiting</b> as each signee is logged{% if last_class %}; last year's class brought in {{ last_class.n }} players{% if last_class.five %}, including {{ last_class.five }} five-star{{ 's' if last_class.five != 1 }}{% endif %}{% endif %}.</p>
+    {% endif %}
+    <div class="rc-cards">
+      {% for r in recruits %}
+      <article class="rc-card"><span class="rc-stars">{{ stars(r.stars) }}</span><h4>{{ plink(r.player) }}</h4><p>{{ r.position or '' }}{% if r.state %} · {{ r.state }}{% endif %}</p>{% if r.natl_rank %}<p class="muted">No. {{ r.natl_rank }} nationally</p>{% endif %}</article>
+      {% endfor %}
+      {% for i in range(placeholders) %}
+      <article class="rc-card is-hidden" aria-hidden="true"><span class="rc-q">?</span><h4>Signee {{ recruits|length + i + 1 }}</h4><p>Not yet logged</p></article>
+      {% endfor %}
+    </div>
+  </section>
+
+  {# ---------- Transfers #}
+  <section id="transfers" class="rd-sec">
+    <div class="rd-sec-head"><h2 class="section">Transfer window</h2><span class="rd-badge {{ 'open' if transfers else 'locked' }}">{{ 'Open' if transfers else 'Locked' }}</span></div>
+    {% if transfers %}
+    <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Player</th><th scope="col">Pos</th><th scope="col">Class</th><th scope="col">From</th></tr></thead>
+    <tbody>{% for t in transfers %}<tr><th scope="row">{{ plink(t.player) }}</th><td>{{ t.position }}</td><td>{{ t.class or '' }}</td><td>{{ team(t['from']) }}</td></tr>{% endfor %}</tbody></table></div>
+    {% else %}
+    <div class="rd-lock"><span>Unlocks during <b>Transfer Window</b>, when incoming transfers are logged{% if last_transfers %}. Last year the Vikings added {{ last_transfers }}{% endif %}.</span></div>
+    {% endif %}
+  </section>
+
+  {# ---------- Schedule and rivalry previews #}
+  <section id="schedule" class="rd-sec">
+    <div class="rd-sec-head"><h2 class="section">{{ nxt }} schedule &amp; rivalry previews</h2><span class="rd-badge {{ 'open' if schedule else 'partly' }}">{{ 'Open' if schedule else 'Rivalries open' }}</span></div>
+    {% if schedule %}
+    <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Game</th><th scope="col">Opponent</th><th scope="col">Site</th><th scope="col">Series</th></tr></thead>
+    <tbody>{% for g in schedule %}<tr><th scope="row">{{ g.label }}</th><td>{{ team(g.opponent) }}</td><td>{{ g.site }}</td><td>{{ g.series }}</td></tr>{% endfor %}</tbody></table></div>
+    {% else %}
+    <div class="rd-lock"><span>The {{ nxt }} schedule unlocks during <b>{{ nxt }} Preseason</b>. Until then, here's where the rivalries stand.</span></div>
+    {% endif %}
+    <div class="rv-cards">
+      {% for r in rivals %}
+      <article class="rv-card" data-program="{{ r.id }}">
+        <header><img src="{{ base }}{{ r.logo }}" alt="" width="40" height="40"><div><h3>Cleveland State vs {{ r.name }}</h3><p class="muted">Since 2024 · {{ r.meetings }} meetings</p></div></header>
+        <p class="rv-series">{% if r.w > r.l %}Vikings lead <b>{{ r.w }}-{{ r.l }}</b>{% elif r.w < r.l %}{{ r.name }} leads <b>{{ r.l }}-{{ r.w }}</b>{% else %}Series tied <b>{{ r.w }}-{{ r.l }}</b>{% endif %}{% if r.streak %}<span class="rv-streak">{{ r.streak }}</span>{% endif %}</p>
+        <ol class="rv-last">{% for g in r.last %}<li><a href="{{ game_href(g.id) }}"><span class="{{ 'res-w' if g.result == 'W' else 'res-l' }}">{{ g.result }} {{ g.clev_score }}-{{ g.opp_score }}</span> <span class="muted">{{ g.season }} · {{ g.name or 'Regular season' }}</span></a></li>{% endfor %}</ol>
+        <a class="rv-more" href="{{ base }}rivalry/">Full rivalry hub</a>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+</div>
+{% endblock %}

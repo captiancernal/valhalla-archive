@@ -63,7 +63,7 @@
 <section class="road" aria-labelledby="road-title">
   <div class="wrap">
     <div class="kicker">The offseason</div>
-    <h2 id="road-title" class="road-title">Road to {{ nxt }}</h2>
+    <h2 id="road-title" class="road-title">Road to {{ nxt }} <a class="road-more" href="{{ base }}road/">Full tracker</a></h2>
     <ol class="phases" aria-label="Offseason phases">
       {% for ph in phases %}<li class="{% if loop.index0 < phase_idx %}done{% elif loop.index0 == phase_idx %}now{% endif %}"{% if loop.index0 == phase_idx %} aria-current="step"{% endif %}><span class="dot"></span><span class="ph">{{ ph }}</span>{% if loop.index0 == phase_idx %}<span class="now-tag">Now</span>{% endif %}</li>{% endfor %}
     </ol>

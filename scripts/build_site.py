@@ -23,6 +23,7 @@ import higher_lower as hl_gen  # noqa: E402
 import playerdle as pd_gen  # noqa: E402
 import grid as grid_gen  # noqa: E402
 import wordsearch as ws_gen  # noqa: E402
+import road as road_gen  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TABLES = os.path.join(ROOT, "data", "tables")
@@ -123,7 +124,8 @@ class Site:
                      {"key": "records", "label": "Records", "href": "records/", "footer": True},
                      {"key": "rivalry", "label": "Rivalry", "href": "rivalry/", "footer": True},
                      {"key": "hof", "label": "Hall of Fame", "href": "hall-of-fame/", "footer": True},
-                     {"key": "play", "label": "Games", "href": "play/", "footer": True}]
+                     {"key": "play", "label": "Games", "href": "play/", "footer": True},
+                     {"key": "road", "label": f"Road to {self.site['current_season'] + 1}", "href": "road/", "footer": True}]
 
         cur = self.site["current_season"]
         champ = next((n for n in T["national_championships"] if n["season"] == cur), None)
@@ -797,6 +799,12 @@ class Site:
              "summary": f"{len(next_games)} games set" if next_games else "Unlocks when the schedule is set",
              "rows": [{"name": self.teams.get(g["opponent"], {}).get("school") or g["opponent"], "meta": g["name"] or f"Week {g['week']}", "tag": None} for g in next_games[:5]]},
         ]
+        watch = road_gen.record_watch(T, cur)
+        teasers.insert(0, {"key": "watch", "title": f"Record Watch {nxt}", "unlocked": True, "unlock_phase": "Season Recap",
+                           "summary": (f"{len(watch)} returning Viking{'s' if len(watch) != 1 else ''} within reach of a record" if watch
+                                       else "No returning player is within reach of a record yet"),
+                           "rows": [{"name": w["player"], "meta": f"needs {fmt(w['gap'])} {w['type'][0].lower() + w['type'][1:]} ({w['duration'].lower()})",
+                                     "tag": "/".join("School" if l == "Cleveland State" else l for l in w["levels"])} for w in watch[:5]]})
         champ = next((n for n in T["national_championships"] if n["season"] == cur), None)
         champ_season = self.season(champ["champion"], cur) if champ and champ["champion"] in self.prog else None
         columns = T.get("columns") or []
@@ -807,6 +815,88 @@ class Site:
                     years=years, award_year=years[0], award_json=award_json, cur=cur, nxt=nxt,
                     phases=phases, phase_idx=phase_idx, teasers=teasers, champ=champ, champ_season=champ_season,
                     latest_col=self.column_context(columns[-1]) if columns else None, columns=columns, clips=clips)
+
+    # ---------------------------------------------------------------- road to next season (M9)
+    def build_road(self):
+        T = self.T
+        cur = self.site["current_season"]
+        nxt = cur + 1
+        phases = self.site["phases"]
+        cur_phase = self.site["current_phase"]
+        phase_idx = phases.index(cur_phase) if cur_phase in phases else 0
+        desc = {
+            "Season Recap": f"The {cur} season is over. Departing seniors are known, and Record Watch looks ahead.",
+            "Final Recruiting": f"Signing day. Each {nxt} recruit's card reveals as the signee is logged.",
+            "Player Departures and Draft": "Draft results arrive for the departing seniors.",
+            "Transfer Window": "Transfers in and out are logged.",
+            f"{nxt} Preseason": f"The {nxt} schedule is set and the depth chart firms up.",
+        }
+        phase_info = [{"name": ph, "desc": desc.get(ph, "")} for ph in phases]
+        departures = sorted([d for d in T["departures"] if d["season"] == cur and d["program"] == "CLEV"],
+                            key=lambda d: (d["draft_round"] or 99, -(d["overall"] or 0)))
+        drafted_n = sum(1 for d in departures if d["drafted"])
+        prev_starters = {d["player"] for d in T["depth_chart"] if d["season"] == cur and d["depth"] == 1 and not d.get("projected")}
+        dc = [dict(d, returning=d["player"] in prev_starters) for d in T["depth_chart"] if d["season"] == nxt]
+        depth = []
+        for unit, slots in DEPTH_UNITS:
+            rows = []
+            for sl in slots:
+                ps_ = sorted([d for d in dc if d["slot"] == sl], key=lambda d: d["depth"])
+                if ps_:
+                    rows.append({"slot": sl.replace("CB1", "CB 1").replace("CB2", "CB 2").replace("CB3", "CB 3"), "players": ps_})
+            if rows:
+                depth.append({"unit": unit, "rows": rows})
+        starters = [d for d in dc if d["depth"] == 1]
+        returning_starters = sum(1 for d in starters if d["returning"] and not d.get("departing"))
+        recruits = sorted([r for r in T["recruits"] if r["arrival_season"] == nxt], key=lambda r: r["natl_rank"] or 99999)
+        last = [r for r in T["recruits"] if r["arrival_season"] == cur]
+        last_class = {"n": len(last), "five": sum(1 for r in last if r.get("stars") == 5)} if last else None
+        placeholders = max(0, (len(last) or 12) - len(recruits)) if len(recruits) < (len(last) or 12) else 0
+        placeholders = min(placeholders, 12)
+        transfers = [t for t in T["transfers"] if t["arrival_season"] == nxt and t["to"] == "CLEV"]
+        last_transfers = len([t for t in T["transfers"] if t["arrival_season"] == cur and t["to"] == "CLEV"])
+        games_all = T["games"]
+        def series_text(opp):
+            gs = [g for g in games_all if g["opponent"] == opp and g["season"] <= cur]
+            if not gs:
+                return "First meeting"
+            w = sum(1 for g in gs if g["result"] == "W")
+            return f"{w}-{len(gs) - w}"
+        schedule = [{"label": g["name"] or f"Week {g['week']}", "opponent": g["opponent"], "site": g["site"].title(),
+                     "series": series_text(g["opponent"])} for g in games_all if g["season"] == nxt]
+        rivals = []
+        for opp in ("OHIO", "M-OH"):
+            gs = sorted([g for g in games_all if g["opponent"] == opp and g["season"] <= cur], key=lambda g: (g["season"], g["game_no"]))
+            w = sum(1 for g in gs if g["result"] == "W")
+            streak = ""
+            if gs:
+                r0 = gs[-1]["result"]
+                n = 0
+                for g in reversed(gs):
+                    if g["result"] != r0:
+                        break
+                    n += 1
+                who = "Vikings" if r0 == "W" else SHORT[opp]
+                streak = f"{who} have won the last {n}" if n > 1 else f"{who} won the last meeting"
+            rivals.append({"id": opp, "name": SHORT[opp], "logo": self.prog[opp]["logo"], "w": w, "l": len(gs) - w,
+                           "meetings": len(gs), "streak": streak, "last": list(reversed(gs[-5:]))})
+        watch = road_gen.record_watch(T, cur)
+        chase = road_gen.chasers(T, cur)
+        sections = [
+            {"key": "record-watch", "title": "Record Watch", "unlocked": True},
+            {"key": "departures", "title": "Departing seniors", "unlocked": bool(departures)},
+            {"key": "depth", "title": "Depth chart", "unlocked": bool(depth)},
+            {"key": "recruits", "title": "Recruits", "unlocked": bool(recruits)},
+            {"key": "transfers", "title": "Transfers", "unlocked": bool(transfers)},
+            {"key": "schedule", "title": "Schedule & rivals", "unlocked": True},
+        ]
+        self.road_summary = {"watch": watch, "chase": chase}
+        self.render("road.html", "road/", active_nav="road", page_title=f"Road to {nxt} · The Valhalla Archive",
+                    description=f"The {nxt} offseason tracker: Record Watch, departing seniors, the projected depth chart, recruits, transfers and rivalry previews.",
+                    cur=cur, nxt=nxt, phase_info=phase_info, phase_idx=phase_idx, departures=departures, drafted_n=drafted_n,
+                    depth=depth, returning_starters=returning_starters, starter_slots=len(starters), recruits=recruits,
+                    last_class=last_class, placeholders=placeholders, transfers=transfers, last_transfers=last_transfers,
+                    schedule=schedule, rivals=rivals, watch=watch, chase=chase, sections=sections)
 
     # ---------------------------------------------------------------- games (M8)
     def build_play(self):
@@ -876,6 +966,7 @@ class Site:
         self.build_hof()
         self.build_split_decision()
         self.build_play()
+        self.build_road()
         print(f"Built {self.pages} pages into _site/ (base path {BASE})")
 
 
