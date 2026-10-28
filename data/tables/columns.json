@@ -1428,5 +1428,175 @@
   "words": 433,
   "verdict": "A first-round loss to the Hurricanes ends it early, a true freshman wins the Heisman, a believer keeps his promise to sit down, and a son spends Christmas on a porch in Sarasota listening.",
   "path": "content/split-decision/columns/2033/2033-CLEV-13.md"
+ },
+ {
+  "id": "2034-CLEV-01",
+  "game": "2034-CLEV-01",
+  "season": 2034,
+  "headline": "Back in the Press Box, With a Stent and a Story About Ken",
+  "pierogi": 4,
+  "words": 499,
+  "verdict": "A believer back in the press box after a stent in April, a sixteen-year-old who held his hand on the front steps, and a doubter caught being kind every day for nine days.",
+  "path": "content/split-decision/columns/2034/2034-CLEV-01.md"
+ },
+ {
+  "id": "2034-CLEV-02",
+  "game": "2034-CLEV-02",
+  "season": 2034,
+  "headline": "Toledo, Rosalind at Ninety-Three, and a Card From the Counter",
+  "pierogi": 4,
+  "words": 469,
+  "verdict": "Seven straight over Toledo, a ninety-three-year-old who thinks a loss would be good for Mickey's heart, and four words from Chester that took an hour to write.",
+  "path": "content/split-decision/columns/2034/2034-CLEV-02.md"
+ },
+ {
+  "id": "2034-CLEV-03",
+  "game": "2034-CLEV-03",
+  "season": 2034,
+  "headline": "Forty-Nine to Nothing in Tucson",
+  "pierogi": 5,
+  "words": 483,
+  "verdict": "A forty-nine-point shutout in the desert, a circle that closes at zero, a believer celebrating in slow motion for his heart, and a sign at the Lantern Room pointing at the title game.",
+  "path": "content/split-decision/columns/2034/2034-CLEV-03.md"
+ },
+ {
+  "id": "2034-CLEV-04",
+  "game": "2034-CLEV-04",
+  "season": 2034,
+  "headline": "Eight Straight Over the Sun Devils, and Rose Is Three",
+  "pierogi": 4,
+  "words": 443,
+  "verdict": "Eight straight over the Sun Devils, a defense that needs a thesaurus, a three-year-old's two-flag treaty, and a one-line call to Sarasota that Ken will keep making.",
+  "path": "content/split-decision/columns/2034/2034-CLEV-04.md"
+ },
+ {
+  "id": "2034-CLEV-05",
+  "game": "2034-CLEV-05",
+  "season": 2034,
+  "headline": "Fresno, a New Opponent, and Sofia Takes the Clipboard to High School",
+  "pierogi": 4,
+  "words": 487,
+  "verdict": "A first trip to Fresno for a forty-seven-point win, a defense best described as cheap, and a fourteen-year-old statistician who invented a stat for things that don't happen.",
+  "path": "content/split-decision/columns/2034/2034-CLEV-05.md"
+ },
+ {
+  "id": "2034-CLEV-06",
+  "game": "2034-CLEV-06",
+  "season": 2034,
+  "headline": "Forty-Nine to Three in Dallas, and Big Stan's Corn Board Arrives",
+  "pierogi": 5,
+  "words": 472,
+  "verdict": "Forty-nine to three in Dallas, a Heisman winner eating a sandwich the size of a hubcap at Big Stan's counter, and a son with a new thing to tell his father every Sunday.",
+  "path": "content/split-decision/columns/2034/2034-CLEV-06.md"
+ },
+ {
+  "id": "2034-CLEV-07",
+  "game": "2034-CLEV-07",
+  "season": 2034,
+  "headline": "Back to Boulder, and Sal Takes a Little Off the Sides",
+  "pierogi": 5,
+  "words": 473,
+  "verdict": "A first trip back to Boulder in eight years, a sixth empty nail in Sal's shop, a haircut \"for April,\" and two people in Sarasota remembering a girl who ran fast in 1969.",
+  "path": "content/split-decision/columns/2034/2034-CLEV-07.md"
+ },
+ {
+  "id": "2034-CLEV-08",
+  "game": "2034-CLEV-08",
+  "season": 2034,
+  "headline": "Kansas State, Eight and Oh, and the Counter Votes on a Walk",
+  "pierogi": 4,
+  "words": 495,
+  "verdict": "Eight and oh with a defense that keeps getting cheaper, a council motion that Mickey walk to the deli, and Chester stopping at the corner of Fleet Avenue to watch a hawk.",
+  "path": "content/split-decision/columns/2034/2034-CLEV-08.md"
+ },
+ {
+  "id": "2034-CLEV-09",
+  "game": "2034-CLEV-09",
+  "season": 2034,
+  "headline": "Seventy to Seven, and Leo Gets a Letter",
+  "pierogi": 4,
+  "words": 453,
+  "verdict": "Seventy to seven and a defense with no words left, a small letter from a small college for the biggest small deal on the block, and a believer who learned to watch because he couldn't play.",
+  "path": "content/split-decision/columns/2034/2034-CLEV-09.md"
+ },
+ {
+  "id": "2034-CLEV-10",
+  "game": "2034-CLEV-10",
+  "season": 2034,
+  "headline": "Ten and Oh, and Utah Finally Doesn't Scare Anyone",
+  "pierogi": 4,
+  "words": 464,
+  "verdict": "Ten and oh and a comfortable win over the team that kept scaring us, a six-month checkup that says keep doing it, and eleven miles past the stadium on a Saturday morning.",
+  "path": "content/split-decision/columns/2034/2034-CLEV-10.md"
+ },
+ {
+  "id": "2034-CLEV-11",
+  "game": "2034-CLEV-11",
+  "season": 2034,
+  "headline": "Houston Hangs Around, and Viking Takes His Last Walk",
+  "pierogi": 3,
+  "words": 459,
+  "verdict": "Eleven and oh in a hard game, and the third Viking, fifteen, laid to rest under the maple with a walnut marker that says he waited at the curb.",
+  "path": "content/split-decision/columns/2034/2034-CLEV-11.md"
+ },
+ {
+  "id": "2034-CLEV-12",
+  "game": "2034-CLEV-12",
+  "season": 2034,
+  "headline": "Twelve and Oh, a Third Perfect Regular Season, and the RedHawks Wait",
+  "pierogi": 5,
+  "words": 449,
+  "verdict": "A third perfect regular season in five years, the RedHawks waiting undefeated, a blanket left folded by the radiator, and a three-year-old's one wave at a marker under the maple.",
+  "path": "content/split-decision/columns/2034/2034-CLEV-12.md"
+ },
+ {
+  "id": "2034-CLEV-13",
+  "game": "2034-CLEV-13",
+  "season": 2034,
+  "headline": "The RedHawks Win the Big 12, and Ken Pours",
+  "pierogi": null,
+  "words": 469,
+  "verdict": "The RedHawks take the Big 12 undefeated, Ken pours for the second time in a decade and gets a hug for it, and a believer's wife waves from the stands that it's going to be okay.",
+  "path": "content/split-decision/columns/2034/2034-CLEV-13.md"
+ },
+ {
+  "id": "2034-CLEV-14",
+  "game": "2034-CLEV-14",
+  "season": 2034,
+  "headline": "Seventy Points in the First Round, and Stanford Goes Home",
+  "pierogi": 5,
+  "words": 480,
+  "verdict": "Seventy points over Stanford on the long road, a second bite saved by a quiet man who did the math, and a phone retrieved from the freezer at 2 a.m.",
+  "path": "content/split-decision/columns/2034/2034-CLEV-14.md"
+ },
+ {
+  "id": "2034-CLEV-15",
+  "game": "2034-CLEV-15",
+  "season": 2034,
+  "headline": "Oregon Falls, and It's Ohio in the Semifinal",
+  "pierogi": 5,
+  "words": 475,
+  "verdict": "Oregon handled by eighteen, a hot towel and a promise from Sal, a three-year-old with both flags ready, and a father handing his own words back to his son.",
+  "path": "content/split-decision/columns/2034/2034-CLEV-15.md"
+ },
+ {
+  "id": "2034-CLEV-16",
+  "game": "2034-CLEV-16",
+  "season": 2034,
+  "headline": "51-46: The Run Ends, and Sal Takes One Down",
+  "pierogi": 5,
+  "words": 463,
+  "verdict": "Ohio's five-year title run ends in the semifinal, a granddaughter who waved the sad flag, a pennant folded on a barbershop counter for a week, and a father who added \"but not forever.\"",
+  "path": "content/split-decision/columns/2034/2034-CLEV-16.md"
+ },
+ {
+  "id": "2034-CLEV-17",
+  "game": "2034-CLEV-17",
+  "season": 2034,
+  "headline": "The RedHawks Are National Champions, and Nadia Keeps the Ribbon",
+  "pierogi": null,
+  "words": 489,
+  "verdict": "The RedHawks win it all undefeated, the Vikings end Ohio's run and fall one game short, Nadia keeps the ribbon, and a believer who almost wasn't there was there for every minute.",
+  "path": "content/split-decision/columns/2034/2034-CLEV-17.md"
  }
 ]
