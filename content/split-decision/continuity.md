@@ -20,6 +20,7 @@ Running bits and life details already used, so later columns stay consistent. Up
 2027: none.
 2028: none (a stranger in a Vikings beanie called Mickey "Pop" at the Ohio State quarterfinal).
 2029: none (Leo watched the Oklahoma first-round game on the porch with Mickey).
+2033: none (Ken flew to Orlando for UCF and drove to Sarasota afterward, like 2024; Ken and Teresa spent Christmas in Sarasota).
 2032: Chester and Walt rode to Ames with Mickey again (Chester: "Athens next week... Be ready, Mick"); Ken and Teresa met Teddy with Mickey before Athens.
 2031: none (Mickey sat in the Ohio family section in Athens in a plain gray sweatshirt holding Rose; Nadia drove Donna to Oxford).
 2030: Marco Reyes at Arizona State in Tempe (his mother's tamales at the airport; Marco wore the scarf in the heat). Nadia sat with Donna in the visitors' section in Oxford.
@@ -38,6 +39,7 @@ Running bits and life details already used, so later columns stay consistent. Up
 - **Ken in Florida:** drove from Orlando to Sarasota after UCF.
 
 ## "Lil" origin stories used
+2033: a high school swim meet program misprint ("the lightest lane assignment").
 2032: ring bearer at a cousin's wedding in 1989 (Teresa: "You're lying").
 2031: a hospital nursery card ("Lil Hogmanes," the nurse ran out of room); the coat-check girl at his junior prom ("Here you go, Lil," the smallest coat).
 2030: a high school drama club play about a family of Kens (he was cast as "Little Ken").
@@ -50,6 +52,7 @@ Running bits and life details already used, so later columns stay consistent. Up
 
 ## Doom Model status
 - End of 2024: "filed a formal complaint"; the door is open a crack.
+- 2033: barely mentioned; Ken's attention shifted to the notebook of Ray calls.
 - 2032: a "Married" tab with one cell: "OK"; left the Ohio cell blank in the "Teddy" tab; Ken added Ray's "tougher in December."
 - 2031: new cell "Opponent is a direction (Y/N)"; "Perfect?" and "Ohio?" tabs both blinking; a **"Teddy" tab** (Teddy's 52 for the semifinal got a green check mark).
 - 2030: made a "Perfect?" tab on its own (blinking, then still before Ohio); "Perfect? (1 game)" before the semifinal.
@@ -177,6 +180,20 @@ Running bits and life details already used, so later columns stay consistent. Up
 - **Ray (age 80):** knew Ken all day at the wedding; Parma cornerback in 1968; foggy after Athens ("Ohio's always tough, Kenny"); "Did we bounce back?... That's the only stat I ever cared about"; called on his own after the Big 12 title ("we got 'em... we're tougher in December"); "He listened, Kenny. Tell him that" (Price's last game).
 - **Coaches:** new DC Larry Trufant; OC Patrick Ezeudu left after the season to be Georgia Tech's head coach (not in the columns).
 
+## 2033 details (places, people, events)
+- **Freshmen:** RS FR QB Kaleb DuBose (five-star from Texas; his grandmother, "Mrs. DuBose," waved at the TV camera in Houston in a green jersey with his number) and true FR WR Titus Reece (five-star from Iowa, top-10 recruit; Iowa State's own fans applauded him; "forty thousand people inhaling at once"). Depth-chart ratings aren't tracked after 2032, so no ratings are cited.
+- **Mickey's heart (seeds the 2034 stent):** out of breath at Sal's; Sal noticed, didn't charge him ("Go see somebody, Mick. For me"); sat on the bench outside the press box twice; Ken wrote "move the appointment up" in print; Donna called Ken ("Thank you for saying something"); Mickey went early: "your heart is working harder than it should. We're going to watch it." A **small pill every morning**, walk 30 minutes a day, **"fewer pierogi"** ("Mr. Bridges, I've read your column"); walks around the block past the Reyes house and the Browns fans' house (Viking waits at the curb after half a block; Leo walks with him on weekends; Leo's photo caption "WALKING"); **sits down in the fourth quarter** now (Bridget asked; Donna's hand on his knee). Mickey is 65; jersey 40 (second rack "almost full"; asked Sam about a third).
+- **Big Stan's:** called Mickey's cardiologist at the Clinic as "Mickey's brother" and painted a salad board, **The Mickey** (grilled chicken, spinach, roasted beets, goat cheese, one pierogi in a tiny paper cup "for morale"); **Chester voted** for the first time in nine years (no, Mickey can't order anything else; then patted his hand); a board for Reece is coming ("something with corn"). Donna's "The Mickey, Home Edition" at Thanksgiving (two pierogi).
+- **Sam:** the "wood left over" was a **walnut record cabinet** for Ken and Teresa (8 ft, 16 compartments, brass plate HOGMANES; the biggest compartment is "Kenny After Ohio"; Teresa had "a very different theory" and laughed on the curb); Sam built a wall shelf for the four chairs (T, R, two oak) with room left over.
+- **Rose (2):** full sentences; stuffed bear named **Gerald** after the ham man (the real Gerald: "is it a nice bear?" then sat for an hour); "Hi Grandpa, Go Bobcats... and Go Vikings" (whispered).
+- **Reyes:** Leo (15, sophomore) made **varsity** as a cornerback, broke up a pass on the last play (Marco and Jess called crying); Leo's message for Ray: "Tell him it's less lonely already" (Ray: "That's true. It does... Good boy"). Viking (14) still walks half a block.
+- **Rosalind** (92): a two-sided sign, "GO ROCKETS" / "BE NICE, MICHAEL" (held the Be Nice side up at Ken too); kolaczki for the drive home is now tradition.
+- **Phil:** sent a card: "We're even now. You married well. We lost by seventy-four. The universe balances." (on the fridge by Ray's napkin).
+- **Lantern Room:** **no Miami (OH) game, no bet** for the first time (Nadia put the bobblehead in a little black scarf; "we'll have to root for each other").
+- **Teresa:** training for a 10K in Lakewood in the spring ("You don't run *yet*"); bought Ken the notebook.
+- **Ray (age 81), memory slipping further:** calls are short; Ken writes each one in a **small notebook** ("Wear a coat"; "Good, good... I'll watch Saturday"); didn't ask who the quarterback was; after UCF Ken drove to Sarasota: Ray knew him slowly ("Kenny. You drove. Did we win?... Ten"), **named every bird** from the porch; "Is Kenny coming back?"; Thanksgiving call, clear: "Happy Thanksgiving, Kenny... Who's carving?... Is that the loud one?" (Mickey stepped outside; Ken followed); Christmas in Sarasota with Teresa: knew both of them, "Next year," knew about the freshman Heisman ("In my day, freshmen carried the water"), named the birds while Teresa wrote them down.
+- **Coaches:** OC Matthew Anger (from New Mexico State) left after the season for Kent State's OC job (not in the columns).
+
 ## Season arcs
 - **2024 (9-4, Liberty Bowl champions):** year one of the Dolan era. Lost at home to Ohio 49-24 (Bridget's "sorry, Dad"; Ken's storm-radar respect for Slocombe begins). Beat Miami (OH) 46-45 in Oxford the Saturday after Thanksgiving (Donna's game). Ken said "Merry Christmas, Mick" in print.
 - **2025 (10-3, Texas Bowl champions, final AP No. 11):** freshman QB Amar'e Hocker; 6-0 start ended at Colorado again; beat Miami (OH) 35-33 (Nadia's bobblehead to the wall); won 56-38 at Ohio (Sal's pennant to the wall, breakfast with Bridget); lost big at K-State after Thanksgiving; first ranked finish of the Dolan era.
@@ -187,3 +204,4 @@ Running bits and life details already used, so later columns stay consistent. Up
 - **2030 (14-1, Big 12 champions 9-0, lost CFP semifinal to Ohio):** RS SO QB Dave Shelley won the job over Greg Price and swept the Heisman, Maxwell, Camp and O'Brien; new DC Lonnie Arnold; 63-3 over Kansas State, 84-14 over Toledo; **first home win over Ohio** 38-37; 52-42 in Oxford; first unbeaten regular season of the Dolan era; beat Ohio 45-42 for the Big 12 title; bye, beat Texas A&M 42-13; lost the semifinal to Ohio 38-23 (Ohio went on to win the title over Oklahoma, not mentioned in the columns). Dolan Coach of the Year; OC Brian Draft OC of the Year, left to be West Virginia's head coach; Cavka's second Thorpe. Mickey's first retirement threat, withdrawn for the grandbaby.
 - **2031 (15-1, Big 12 champions 8-0, national runner-up, AP No. 2, nation's top scoring offense):** Greg Price regained the job from Heisman winner Shelley; 98-3 over FAU and 98-0 over FCS Southeast; 63-42 in Athens (4th straight win there); 49-41 in Oxford; 35-29 scare vs Utah; second straight 12-0 regular season; beat Kansas State for the Big 12 title (52-30) and again in the CFP quarterfinal (63-35) after a bye; beat Oklahoma 52-31 (Teddy called 52); lost the title game to Ohio 35-34 (Ohio's third straight title). Okoronkwo: Heisman, Camp, Walker, 2,405 yds, 41 TD; Price the O'Brien; Dolan Coach of the Year again. Rose born in July. Ken proposed; Teresa said yes.
 - **2032 (12-2, Big 12 champions 8-1, lost CFP quarterfinal to Miami (OH)):** Ken and Teresa married in June; 70-3 at Kent; first Colorado game in Cleveland (57-39); 9-0 start; **lost 73-31 in Athens** (worst loss of the Dolan era, end of four straight Athens wins); bounced back 67-59 over Miami (OH); beat Ohio 45-35 for the Big 12 title (4th in 5 years; rivalry 8-7 CLEV since 2024); bye, lost to Miami (OH) 49-35. Price's last season (16,422 career yds, 192 TD tied with Hocker); McNitt the career receiving leader (6,664 / 87); Molinaro Outland, Bobby John Rimington, Savoie Butkus. Ohio won a 4th straight title over Oklahoma (not in the columns).
+- **2033 (11-2, 3rd in the Big 12 at 8-1, lost CFP first round to Miami (FL) 38-31):** 90-16 at Kent; freshmen DuBose and Reece; 10-0 start (third in four years); **lost 55-20 at home to Ohio** (worst home loss of the Dolan era); no Big 12 title game (Ohio beat Miami (OH)); first-ever first-round loss. **Titus Reece won the Heisman as a true freshman** (3,631 yds, 51 TD, both school records; Biletnikoff; All-American); DuBose 5,718 / 71; Molinaro's second Outland. Ohio went 16-0 for a 5th straight title (not in the columns). Mickey's heart diagnosis; Ray's memory slipping.

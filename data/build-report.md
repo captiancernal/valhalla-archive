@@ -28,7 +28,7 @@ Source: `2026-10-26 CSU Vikings Tracker.xlsx`
 - teams: 152
 - hall_of_fame: 6
 - clips: 0
-- columns: 130
+- columns: 143
 
 ## Notes
 
@@ -47,4 +47,4 @@ Source: `2026-10-26 CSU Vikings Tracker.xlsx`
 - F24 applied: Kenny Tongues career Receiving Yards 4254 -> 4901
 - F24 applied: Kenny Tongues career Receiving TD 64 -> 71
 - Hall of Fame: 6 eligible, 0 awaiting a vote
-- Split Decision: 130 columns
+- Split Decision: 143 columns
