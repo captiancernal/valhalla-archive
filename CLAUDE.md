@@ -48,7 +48,7 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
   - Fix F28 (owner-approved): NCAA/Big 12 career passing TD -> DuBose 230; Big 12 season rushing -> Nwangwu 2,536. Validation now checks no league record sits below a Vikings stat line.
   - Data note shown as entered: the projected 2038 depth chart repeats a few names (Quincy Reddick at C, Johnnie Floyd at CB3).
 - [x] M10 Clips pipeline, print mode, accessibility, QA (approved 2026-10-28)
-- [~] M11 Deploy, README, hand-off (started 2026-10-28)
+- [~] M11 Deploy, README, hand-off: LIVE since 2026-10-28 at https://captiancernal.github.io/valhalla-archive/ (Pages source = GitHub Actions; first run green). Awaiting owner sign-off. Follow-up: bump workflow actions off Node 20 (deprecation warning in the first run).
 - [ ] **Final task (owner request, 2026-10-26):** produce a corrected COPY of the latest tracker (`source/corrected/<date> CSU Vikings Tracker (corrected).xlsx`) with every approved fix from `data/fixes.json` and every alias from `data/aliases.json` applied, plus a "Valhalla Changes" sheet listing sheet / cell / old value / new value / fix id, so the owner can copy-paste the edits into the live spreadsheet. Never modify the original or any dated copy in `source/`.
 
 ## Decisions log (approved by the owner after the spec)
