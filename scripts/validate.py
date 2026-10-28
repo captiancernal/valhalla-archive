@@ -66,6 +66,10 @@ check("CLEV 2026 stars not tracked (F14)", c26["stars"] is None)
 aa = load("all_americans")
 og = [a["school"] for a in aa if a["player"] == "Ollie Gordon III" and a["season"] == 2023]
 check("2023 Ollie Gordon III All-American at OKST (F23)", og == ["OKST"], og)
+ro = {(r["player"], r["duration"], r["type"]): r["value"] for r in load("records_official") if r["magnitude"] == "Cleveland State"}
+f24 = [ro.get(("Baraka Nwangwu", "Career", "Rushing Yards")), ro.get(("Kenny Tongues", "Career", "Receiving Yards")),
+       ro.get(("Kenny Tongues", "Career", "Receiving TD"))]
+check("career records are full totals 6074 / 4901 / 71 (F24)", f24 == [6074, 4901, 71], f24)
 
 # --- Internal consistency
 by = defaultdict(lambda: [0, 0])

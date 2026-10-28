@@ -745,6 +745,13 @@ def parse_records(wb):
         out.append({"player": canon(player), "position": sh.v("B", row), "magnitude": mag,
                     "duration": sh.v("D", row), "type": sh.v("E", row), "value": num(sh.v("F", row)),
                     "year_set": str(sh.v("G", row) or "")})
+    # F24: career records entered mid-2029 -> full totals from the stats tabs
+    for s in FIXES["F24-career-records-full-totals"]["set"]:
+        for r in out:
+            if (r["player"] == canon(s["player"]) and r["duration"] == s["duration"] and r["type"] == s["type"]
+                    and r["value"] == s["seen_value"]):
+                r["value"] = s["value"]
+                note(f"F24 applied: {s['player']} career {s['type']} {s['seen_value']} -> {s['value']}")
     return out
 
 

@@ -441,6 +441,44 @@
       "set": {
         "school": "OKST"
       }
+    },
+    {
+      "id": "F24-career-records-full-totals",
+      "approved": "2026-10-27",
+      "sheets": [
+        "RecordsHall of Fame"
+      ],
+      "problem": "Career records for Baraka Nwangwu and Kenny Tongues were entered partway through 2029 and never updated; they are lower than the sum of the players' own season stats.",
+      "rule": "override_value",
+      "set": [
+        {
+          "cell": "F14",
+          "player": "Baraka Nwangwu",
+          "duration": "Career",
+          "type": "Rushing Yards",
+          "seen_value": 4849,
+          "value": 6074,
+          "why": "392 + 817 + 2,329 + 2,536 (2026-29 stats tabs)"
+        },
+        {
+          "cell": "F18",
+          "player": "Kenny Tongues",
+          "duration": "Career",
+          "type": "Receiving Yards",
+          "seen_value": 4254,
+          "value": 4901,
+          "why": "1,445 + 1,685 + 1,771 (2027-29 stats tabs)"
+        },
+        {
+          "cell": "F19",
+          "player": "Kenny Tongues",
+          "duration": "Career",
+          "type": "Receiving TD",
+          "seen_value": 64,
+          "value": 71,
+          "why": "23 + 26 + 22 (2027-29 stats tabs)"
+        }
+      ]
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
- "built": "2026-10-27T22:19:37",
+ "built": "2026-10-27T22:29:32",
  "source_file": "2026-10-26 CSU Vikings Tracker.xlsx",
  "source_sha256": "d1ecf275043cf4ddc57830e1ca329f262a715d697dc00c1e34ead8d6ff30bf8f",
  "fixes_applied": [
@@ -23,7 +23,8 @@
   "F18-class-labels",
   "F19-position-families",
   "F22-2035-title-score-asterisk",
-  "F23-2023-gordon-all-american-school"
+  "F23-2023-gordon-all-american-school",
+  "F24-career-records-full-totals"
  ],
  "row_counts": {
   "site_control": 1,
