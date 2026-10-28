@@ -20,6 +20,7 @@ Running bits and life details already used, so later columns stay consistent. Up
 2027: none.
 2028: none (a stranger in a Vikings beanie called Mickey "Pop" at the Ohio State quarterfinal).
 2029: none (Leo watched the Oklahoma first-round game on the porch with Mickey).
+2032: Chester and Walt rode to Ames with Mickey again (Chester: "Athens next week... Be ready, Mick"); Ken and Teresa met Teddy with Mickey before Athens.
 2031: none (Mickey sat in the Ohio family section in Athens in a plain gray sweatshirt holding Rose; Nadia drove Donna to Oxford).
 2030: Marco Reyes at Arizona State in Tempe (his mother's tamales at the airport; Marco wore the scarf in the heat). Nadia sat with Donna in the visitors' section in Oxford.
 
@@ -37,6 +38,7 @@ Running bits and life details already used, so later columns stay consistent. Up
 - **Ken in Florida:** drove from Orlando to Sarasota after UCF.
 
 ## "Lil" origin stories used
+2032: ring bearer at a cousin's wedding in 1989 (Teresa: "You're lying").
 2031: a hospital nursery card ("Lil Hogmanes," the nurse ran out of room); the coat-check girl at his junior prom ("Here you go, Lil," the smallest coat).
 2030: a high school drama club play about a family of Kens (he was cast as "Little Ken").
 2029: a 1997 summer-camp cabin with the smallest bunks; a 2015 moving-company estimate that listed his apartment as "lil".
@@ -48,6 +50,7 @@ Running bits and life details already used, so later columns stay consistent. Up
 
 ## Doom Model status
 - End of 2024: "filed a formal complaint"; the door is open a crack.
+- 2032: a "Married" tab with one cell: "OK"; left the Ohio cell blank in the "Teddy" tab; Ken added Ray's "tougher in December."
 - 2031: new cell "Opponent is a direction (Y/N)"; "Perfect?" and "Ohio?" tabs both blinking; a **"Teddy" tab** (Teddy's 52 for the semifinal got a green check mark).
 - 2030: made a "Perfect?" tab on its own (blinking, then still before Ohio); "Perfect? (1 game)" before the semifinal.
 - 2029: flagged the Miami (OH) game red (then blinking); grew an "Ohio" tab on its own that later read "Again?"; generated "Scenarios: January" (closed tab reopens itself); a "Rubber Match" tab (empty, then a single "?").
@@ -157,6 +160,23 @@ Running bits and life details already used, so later columns stay consistent. Up
 - **Ray (age 79):** remembered Price ("Good. He listened"); laughed a full minute at "FCS Southeast" ("they ran out of names") without remembering FCS Northwest; "I'm talking about later" after Athens; "Close is good for you, Kenny. Makes you remember"; "Did you ask her yet?"; before the title game: "Ohio's always tough, Kenny... So are you"; at 2 a.m. after the proposal: "Good. Somebody in this family should be normal" (his 2024 line, unremembered).
 - **Coaches:** new OC Patrick Ezeudu (from New Mexico State; faster tempo); DC Lonnie Arnold left after the season to be Arkansas's head coach (not in the columns).
 
+## 2032 details (places, people, events)
+- **The wedding (June 2032):** Ken married Teresa at **St. Stanislaus** in Slavic Village (three blocks from Big Stan's), hottest day of the year; Ken in a gray suit "for gravitas"; Mickey was best man; his toast was 11 minutes, 7.5 about football (70%), incl. the 2014 column, the title night and the coat pocket; Big Stan catered (a pierogi in a white box with a gold ribbon for every guest); **Ray and Carol flew up**; Ray knew Ken all day, said "That's my boy" in the second row, danced with Teresa to Sinatra ("Make him go outside"). Honeymoon: four days at Put-in-Bay (Teresa threw Ken's phone, gently, into a hotel pool; it survived). Teresa has said she'll get Ken on a "real vacation" someday ("You always say that, Kenny, and then I win").
+- **Married life:** Teresa reorganized the record closet by mood, incl. a big shelf **"Kenny After Ohio"**; Nadia's new trivia rule: married couples can't be on the same team; Teresa captains **"The Nurses' Station"** and beat Regression to the Mean by 40; tango at ballroom ("a conversation where both people are right"); Thanksgiving 2032 at Ken & Teresa's (Ken's green bean casserole "tested empirically"; Rose ate only the onions).
+- **Rose:** turned one in July; first word **"GO"** on a video call (Mickey says Vikings, Bridget says Bobcats; Ken's ruling: "inconclusive"; both wrote it in the family Bible); a little Ohio cheerleader outfit with pom-poms for the Athens game (waved them a lot); slept through the Big 12 title game holding them ("she didn't wave them once. she knew").
+- **Sam:** carved a fourth chair with an **R** for Rose; told Ken and Teresa "I have wood left over. Whenever you need it."
+- **Mickey:** jersey 39; Mickey and Stan are both 64 (Stan's back "has opinions"; no more lifting).
+- **Big Stan's:** dusts the empty **nail** every Monday ("This one's waiting... the nail is for the big one"); gave Gerald horseradish (Gerald cried; "appropriate"); seventh board **The Trenches** (two sandwiches stacked, for the linemen) after the season.
+- **Sal:** a third pennant (OHIO NATIONAL CHAMPIONS 2031) and a fourth nail; extra off the sides after beating Colorado "for the old days."
+- **Teddy:** "saving" his number for Athens; met Ken in person ("You're the doubter." "Good. Somebody has to be."), about seventy, big forearms, kind eyes; butcher-paper notes instead of scores: **"Bad day, Mick. Go anyway."** (Athens) and **"Good day, Mick."** (Big 12 title).
+- **Reyes:** Leo (14) a high school freshman cornerback (Mickey yelled once; Leo pointed at him); Ray: "That's the loneliest position on the field. Tell him it gets less lonely" (Ray **played corner at Parma in 1968**, news to Ken); Sofia (12) aged out of the Lakers and is Mickey's assistant ("Statistics and Morale"); Marco's mother overnighted 24 tamales on dry ice ("for the coach, who still coaches my grandchildren, even the girl"); "Mickey, this is a good life"; Viking (13) stole a tamale.
+- **Rosalind** (91, Toledo): "Tell your father it was better this time."
+- **Donna:** left the cape folded on the dining table for the home M-OH game and won ("It's not the cape, Michael. It's me"); Nadia texted Donna her apology after the quarterfinal; Nadia lost the bet an 8th time in 9 years.
+- **Chester:** shook his head slightly at the defense vote; showed up at 5 a.m. for the Ames drive with a thermos and pierogi.
+- **Phil (Kent State SID):** "The score is your wedding present from us."
+- **Ray (age 80):** knew Ken all day at the wedding; Parma cornerback in 1968; foggy after Athens ("Ohio's always tough, Kenny"); "Did we bounce back?... That's the only stat I ever cared about"; called on his own after the Big 12 title ("we got 'em... we're tougher in December"); "He listened, Kenny. Tell him that" (Price's last game).
+- **Coaches:** new DC Larry Trufant; OC Patrick Ezeudu left after the season to be Georgia Tech's head coach (not in the columns).
+
 ## Season arcs
 - **2024 (9-4, Liberty Bowl champions):** year one of the Dolan era. Lost at home to Ohio 49-24 (Bridget's "sorry, Dad"; Ken's storm-radar respect for Slocombe begins). Beat Miami (OH) 46-45 in Oxford the Saturday after Thanksgiving (Donna's game). Ken said "Merry Christmas, Mick" in print.
 - **2025 (10-3, Texas Bowl champions, final AP No. 11):** freshman QB Amar'e Hocker; 6-0 start ended at Colorado again; beat Miami (OH) 35-33 (Nadia's bobblehead to the wall); won 56-38 at Ohio (Sal's pennant to the wall, breakfast with Bridget); lost big at K-State after Thanksgiving; first ranked finish of the Dolan era.
@@ -166,3 +186,4 @@ Running bits and life details already used, so later columns stay consistent. Up
 - **2029 (13-4, national runner-up, AP No. 2, 7-2 Big 12):** redshirt freshman QB Greg Price; 6-0 start; lost 51-29 at home to an undefeated Miami (OH) (end of the five-year streak; Ken pays Nadia's bet); won 49-21 in Athens (third straight win there); held Utah to 6 (fewest points CLEV has allowed); lost 34-20 at Texas Tech; lost the Big 12 title game 34-28 to Miami (OH); playoff run without a bye: beat Oklahoma 51-21, Miami (OH) 48-42 in the rubber match, Georgia 31-14; lost the title game 52-36 to Ohio (Ohio's first national title; the 2029-33 Ohio run begins). Nwangwu's second straight Walker + All-American, Everett All-American. Ken and Teresa moved in together.
 - **2030 (14-1, Big 12 champions 9-0, lost CFP semifinal to Ohio):** RS SO QB Dave Shelley won the job over Greg Price and swept the Heisman, Maxwell, Camp and O'Brien; new DC Lonnie Arnold; 63-3 over Kansas State, 84-14 over Toledo; **first home win over Ohio** 38-37; 52-42 in Oxford; first unbeaten regular season of the Dolan era; beat Ohio 45-42 for the Big 12 title; bye, beat Texas A&M 42-13; lost the semifinal to Ohio 38-23 (Ohio went on to win the title over Oklahoma, not mentioned in the columns). Dolan Coach of the Year; OC Brian Draft OC of the Year, left to be West Virginia's head coach; Cavka's second Thorpe. Mickey's first retirement threat, withdrawn for the grandbaby.
 - **2031 (15-1, Big 12 champions 8-0, national runner-up, AP No. 2, nation's top scoring offense):** Greg Price regained the job from Heisman winner Shelley; 98-3 over FAU and 98-0 over FCS Southeast; 63-42 in Athens (4th straight win there); 49-41 in Oxford; 35-29 scare vs Utah; second straight 12-0 regular season; beat Kansas State for the Big 12 title (52-30) and again in the CFP quarterfinal (63-35) after a bye; beat Oklahoma 52-31 (Teddy called 52); lost the title game to Ohio 35-34 (Ohio's third straight title). Okoronkwo: Heisman, Camp, Walker, 2,405 yds, 41 TD; Price the O'Brien; Dolan Coach of the Year again. Rose born in July. Ken proposed; Teresa said yes.
+- **2032 (12-2, Big 12 champions 8-1, lost CFP quarterfinal to Miami (OH)):** Ken and Teresa married in June; 70-3 at Kent; first Colorado game in Cleveland (57-39); 9-0 start; **lost 73-31 in Athens** (worst loss of the Dolan era, end of four straight Athens wins); bounced back 67-59 over Miami (OH); beat Ohio 45-35 for the Big 12 title (4th in 5 years; rivalry 8-7 CLEV since 2024); bye, lost to Miami (OH) 49-35. Price's last season (16,422 career yds, 192 TD tied with Hocker); McNitt the career receiving leader (6,664 / 87); Molinaro Outland, Bobby John Rimington, Savoie Butkus. Ohio won a 4th straight title over Oklahoma (not in the columns).
