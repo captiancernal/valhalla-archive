@@ -1918,5 +1918,175 @@
   "words": 461,
   "verdict": "The RedHawks three-peat, Donna refuses to take the ribbon on Ken's behalf because fair is a kind of love, Teddy's note waits one more season, and the whole city learns to say \"next one.\"",
   "path": "content/split-decision/columns/2036/2036-CLEV-16.md"
+ },
+ {
+  "id": "2037-CLEV-01",
+  "game": "2037-CLEV-01",
+  "season": 2037,
+  "headline": "Jersey Forty-Four, and Phil Watches Without a Pencil",
+  "pierogi": 4,
+  "words": 495,
+  "verdict": "Forty-two points to open a forty-fourth season, a retired sports information director watching football without a pencil, and a father in Sarasota telling his son to watch it.",
+  "path": "content/split-decision/columns/2037/2037-CLEV-01.md"
+ },
+ {
+  "id": "2037-CLEV-02",
+  "game": "2037-CLEV-02",
+  "season": 2037,
+  "headline": "Nine Straight Over Toledo, and Rosalind Turns Ninety-Six",
+  "pierogi": 4,
+  "words": 459,
+  "verdict": "Nine straight over Toledo and a ninety-six-year-old's whispered verdict that happy and rude are the same thing from different sides, and a cardinal flower on a fire escape in Ohio City watered every Tuesday.",
+  "path": "content/split-decision/columns/2037/2037-CLEV-02.md"
+ },
+ {
+  "id": "2037-CLEV-03",
+  "game": "2037-CLEV-03",
+  "season": 2037,
+  "headline": "Fifty-Two to Three in Tuscaloosa",
+  "pierogi": 5,
+  "words": 474,
+  "verdict": "Fifty-two to three in Tuscaloosa, a black ribbon from 2027 avenged by proxy, and a doubter who put down his pencil for one quarter and finally saw the whole field.",
+  "path": "content/split-decision/columns/2037/2037-CLEV-03.md"
+ },
+ {
+  "id": "2037-CLEV-04",
+  "game": "2037-CLEV-04",
+  "season": 2037,
+  "headline": "Houston Held to Seven, and Sofia Commits",
+  "pierogi": 4,
+  "words": 490,
+  "verdict": "Houston held to seven, a seventeen-year-old who once dressed as a pierogi headed to college to measure what doesn't happen, and a father who remembered her clipboard.",
+  "path": "content/split-decision/columns/2037/2037-CLEV-04.md"
+ },
+ {
+  "id": "2037-CLEV-05",
+  "game": "2037-CLEV-05",
+  "season": 2037,
+  "headline": "Two Points in Lawrence",
+  "pierogi": 3,
+  "words": 476,
+  "verdict": "Two points in Lawrence, a three-pierogi win as ruled by the man who makes the pierogi, and a cardinal flower blooming red on a fire escape for a father in Sarasota who said \"Good.\"",
+  "path": "content/split-decision/columns/2037/2037-CLEV-05.md"
+ },
+ {
+  "id": "2037-CLEV-06",
+  "game": "2037-CLEV-06",
+  "season": 2037,
+  "headline": "Colorado Seven Straight, and Rose Turns Six",
+  "pierogi": 4,
+  "words": 513,
+  "verdict": "Seven straight over Colorado, a six-year-old who wants the box score read like a chapter book, a daughter from Athens predicting a big year, and a father's only scouting question: does he listen.",
+  "path": "content/split-decision/columns/2037/2037-CLEV-06.md"
+ },
+ {
+  "id": "2037-CLEV-07",
+  "game": "2037-CLEV-07",
+  "season": 2037,
+  "headline": "Tucson Eight Straight, and the Fourth Rack Arrives",
+  "pierogi": 4,
+  "words": 512,
+  "verdict": "Eight straight over the Wildcats, a fourth walnut rack starting with jersey thirty-one, two trivia plaques with the same words and opposite meanings, and a father who said keep the empty ones, they're for later.",
+  "path": "content/split-decision/columns/2037/2037-CLEV-07.md"
+ },
+ {
+  "id": "2037-CLEV-08",
+  "game": "2037-CLEV-08",
+  "season": 2037,
+  "headline": "BYU Held to Three, and Big Stan Dusts the Nail Twice",
+  "pierogi": 4,
+  "words": 504,
+  "verdict": "BYU held to a field goal, a nail dusted twice for a feeling, Chester pointing from the nail to Mickey to the TV, and a father in Sarasota who says it's getting close.",
+  "path": "content/split-decision/columns/2037/2037-CLEV-08.md"
+ },
+ {
+  "id": "2037-CLEV-09",
+  "game": "2037-CLEV-09",
+  "season": 2037,
+  "headline": "Waco, Nine and Oh, and Leo's Interception",
+  "pierogi": 4,
+  "words": 507,
+  "verdict": "Nine and oh in Waco for the eighth straight year, a college sophomore's first interception and a point at the sky for the coach on the porch, and a father saying it's worth waiting for.",
+  "path": "content/split-decision/columns/2037/2037-CLEV-09.md"
+ },
+ {
+  "id": "2037-CLEV-10",
+  "game": "2037-CLEV-10",
+  "season": 2037,
+  "headline": "TCU, Ten and Oh, and Mickey Opens His Wallet but Not the Note",
+  "pierogi": 4,
+  "words": 484,
+  "verdict": "Ten and oh again, a folded note held but not opened, a retired oracle on a Tremont porch saying \"close, though,\" and a father flying up from Sarasota for Thanksgiving to see the loud one.",
+  "path": "content/split-decision/columns/2037/2037-CLEV-10.md"
+ },
+ {
+  "id": "2037-CLEV-11",
+  "game": "2037-CLEV-11",
+  "season": 2037,
+  "headline": "Sixty-One to Seven Over Okie State, Ten Years Later",
+  "pierogi": 5,
+  "words": 475,
+  "verdict": "Sixty-one to seven over the team that beat us in Stillwater in 2027, a whole city settling a ten-year-old debt in one week, and a father arriving Wednesday who wants to know if there's soup.",
+  "path": "content/split-decision/columns/2037/2037-CLEV-11.md"
+ },
+ {
+  "id": "2037-CLEV-12",
+  "game": "2037-CLEV-12",
+  "season": 2037,
+  "headline": "Twelve and Oh, and Ray Comes to Thanksgiving",
+  "pierogi": 5,
+  "words": 478,
+  "verdict": "A fourth perfect regular season, a father carried up three flights by a son who runs now, a cardinal that found the flower, and an oak chair with RAY carved on the back.",
+  "path": "content/split-decision/columns/2037/2037-CLEV-12.md"
+ },
+ {
+  "id": "2037-CLEV-13",
+  "game": "2037-CLEV-13",
+  "season": 2037,
+  "headline": "The RedHawks Again, and Ken Pours a Fourth Time",
+  "pierogi": null,
+  "words": 480,
+  "verdict": "The RedHawks take the Big 12 for the fourth straight meeting with Mickey's cap, Ken pours a fourth time and gets a new rule, and a father at the airport who says you get one loss.",
+  "path": "content/split-decision/columns/2037/2037-CLEV-13.md"
+ },
+ {
+  "id": "2037-CLEV-14",
+  "game": "2037-CLEV-14",
+  "season": 2037,
+  "headline": "North Texas in the First Round, and Stan Dusts Three Times",
+  "pierogi": 4,
+  "words": 481,
+  "verdict": "The long road starts again with North Texas, the nail dusted three times with a fourth promised, Walt's wish at seventy-nine, and a father in Sarasota counting the playoff games for his son.",
+  "path": "content/split-decision/columns/2037/2037-CLEV-14.md"
+ },
+ {
+  "id": "2037-CLEV-15",
+  "game": "2037-CLEV-15",
+  "season": 2037,
+  "headline": "Sixty-Six to Six Over Florida State",
+  "pierogi": 5,
+  "words": 461,
+  "verdict": "Sixty-six to six in the quarterfinal, a six-year-old practicing with a flag in each hand in an Athens backyard, Stan saving the dusting for later, and a father in Sarasota counting: that's two.",
+  "path": "content/split-decision/columns/2037/2037-CLEV-15.md"
+ },
+ {
+  "id": "2037-CLEV-16",
+  "game": "2037-CLEV-16",
+  "season": 2037,
+  "headline": "Kentucky Falls, and It's Ohio for Everything",
+  "pierogi": 5,
+  "words": 494,
+  "verdict": "Kentucky falls by forty-two, Ohio beats the RedHawks to set up the oldest fight in the column for everything, Sal asks for the box back, and a father in Sarasota says, after all his lines, one more.",
+  "path": "content/split-decision/columns/2037/2037-CLEV-16.md"
+ },
+ {
+  "id": "2037-CLEV-17",
+  "game": "2037-CLEV-17",
+  "season": 2037,
+  "headline": "56-39: National Champions, and the Sentence",
+  "pierogi": 5,
+  "words": 469,
+  "verdict": "The Vikings beat Ohio for their second national title, a granddaughter waves both flags, Teddy's note says keep showing up, Big Stan's nail finally holds something, and after fourteen years the doubter writes the sentence.",
+  "path": "content/split-decision/columns/2037/2037-CLEV-17.md"
  }
 ]
