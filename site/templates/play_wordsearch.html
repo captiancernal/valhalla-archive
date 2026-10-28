@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block head %}<link rel="stylesheet" href="{{ base }}assets/css/games.css?v={{ build_id }}">{% endblock %}
+{% block content %}
+<section class="gm-head ws-screen">
+  <div class="wrap">
+    <a class="gm-back" href="{{ base }}play/">Games</a>
+    <h1>Word Search</h1>
+    <p>Themed grids from the dynasty: season rosters, award winners, program legends and schedules. Drag across a name, or tap its first and last letter. Every puzzle prints, too.</p>
+  </div>
+</section>
+<div class="wrap">
+  <div id="ws" class="ws" data-src="{{ base }}assets/data/wordsearch.json?v={{ build_id }}">
+    <div class="ws-controls ws-screen">
+      <label class="pd-filter">Puzzle
+        <select id="ws-pick"></select>
+      </label>
+      <fieldset class="ws-diff">
+        <legend>Difficulty</legend>
+        <label><input type="radio" name="ws-diff" value="easy" checked> Easy</label>
+        <label><input type="radio" name="ws-diff" value="hard"> Hard</label>
+      </fieldset>
+      <div class="ws-btns">
+        <button type="button" class="gm-btn ghost" data-relayout>New layout</button>
+        <button type="button" class="gm-btn ghost" data-print>Print</button>
+        <label class="ws-keytoggle"><input type="checkbox" id="ws-key"> Print with answer key</label>
+      </div>
+    </div>
+    <div class="tv-setup ws-board">
+      <div class="ws-titlebar">
+        <div>
+          <h2 data-title>Word Search</h2>
+          <p class="muted ws-blurb" data-blurb></p>
+        </div>
+        <span class="ws-clock ws-screen" data-clock aria-label="Time">0:00</span>
+      </div>
+      <div class="ws-layout">
+        <div class="ws-grid" data-grid role="grid" aria-label="Letter grid"></div>
+        <div class="ws-side">
+          <h3>Find these names</h3>
+          <ul class="ws-words" data-words></ul>
+        </div>
+      </div>
+      <p class="sr-status ws-screen" data-status aria-live="polite"></p>
+    </div>
+    <div class="ws-key" data-key></div>
+    <details class="pd-help ws-screen">
+      <summary>How to play</summary>
+      <ul>
+        <li>Drag across a hidden name, or tap its first letter and then its last letter.</li>
+        <li>Keyboard: use the arrow keys to move, and press Enter on the first and last letter.</li>
+        <li>Names are hidden by surname, with no spaces or punctuation; the list shows the full name. Schedule puzzles hide school names.</li>
+        <li>"New layout" reshuffles the same puzzle. "Print" gives you a clean page, with an optional answer key on a second page.</li>
+      </ul>
+    </details>
+  </div>
+  <p class="note gm-foot ws-screen">Built from the Archive's data ({{ total }} puzzles). Your completed puzzles and fastest time are saved only in this browser.</p>
+</div>
+<script src="{{ base }}assets/js/games-core.js?v={{ build_id }}" defer></script>
+<script src="{{ base }}assets/js/wordsearch.js?v={{ build_id }}" defer></script>
+{% endblock %}

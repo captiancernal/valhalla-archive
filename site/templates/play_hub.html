@@ -52,6 +52,11 @@ document.addEventListener('DOMContentLoaded', function () {
   function set(k, v) { var el = document.querySelector('[data-stat="' + k + '"]'); if (el) el.textContent = v; }
   set('rounds', rounds);
   set('streak', VAGames.streak());
+  var wsx = all.wordsearch || {};
+  if (wsx.plays) {
+    var wm = document.querySelector('[data-game-meta="wordsearch"]');
+    if (wm) wm.textContent = wsx.completed + ' puzzle' + (wsx.completed === 1 ? '' : 's') + ' solved' + (wsx.fastest ? ' · fastest ' + Math.floor(wsx.fastest / 60) + ':' + String(wsx.fastest % 60).padStart(2, '0') : '');
+  }
   var grx = all.grid || {};
   if (grx.plays) {
     var gm = document.querySelector('[data-game-meta="grid"]');

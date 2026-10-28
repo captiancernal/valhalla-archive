@@ -214,3 +214,55 @@ a.gm-card:hover { border-color: var(--ink); box-shadow: 0 6px 18px rgba(0,0,0,.0
 .gr-ans p { margin: 0; font-size: 14px; line-height: 1.5; }
 .gr-ans a { color: var(--ink-2); }
 .gr-ans a.mine { color: var(--win); font-weight: 700; }
+
+/* Word Search */
+.ws { margin: 28px 0 0; }
+.ws-controls { display: flex; flex-wrap: wrap; align-items: end; gap: 12px 22px; margin-bottom: 14px; }
+.ws-diff { border: 0; margin: 0; padding: 0; display: flex; gap: 14px; align-items: center; }
+.ws-diff legend { font: 700 12px var(--font-ui); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+.ws-diff label { display: inline-flex; gap: 6px; align-items: center; font: 600 15px var(--font-ui); min-height: 44px; }
+.ws-diff input, .ws-keytoggle input { width: 18px; height: 18px; accent-color: var(--ink); }
+.ws-btns { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.ws-keytoggle { display: inline-flex; gap: 6px; align-items: center; font: 600 14px var(--font-ui); color: var(--ink-2); }
+.ws-titlebar { display: flex; align-items: flex-start; gap: 12px; }
+.ws-titlebar h2 { font: 800 26px var(--font-display); margin: 0; }
+.ws-blurb { margin: 4px 0 0; font-size: 14px; max-width: 70ch; }
+.ws-clock { margin-left: auto; font: 800 22px var(--font-display); font-variant-numeric: tabular-nums; }
+.ws-layout { display: grid; grid-template-columns: minmax(0, 540px) minmax(240px, 1fr); gap: 24px; align-items: start; margin-top: 14px; }
+@media (max-width: 860px) { .ws-layout { grid-template-columns: 1fr; } }
+.ws-grid { --n: 14; display: grid; grid-template-rows: repeat(var(--n), 1fr); width: 100%; max-width: 540px; aspect-ratio: 1 / 1; user-select: none; -webkit-user-select: none; touch-action: none; border: 2px solid var(--ink); border-radius: 6px; background: #fff; }
+.ws-row { display: grid; grid-template-columns: repeat(var(--n), 1fr); }
+.ws-cell { display: grid; place-items: center; font: 700 clamp(13px, 2.4vw, 18px) var(--font-ui); color: var(--ink); cursor: pointer; border-radius: 4px; }
+.ws-cell:focus-visible { outline: 3px solid var(--brass-bright); outline-offset: -2px; }
+.ws-cell.is-found { background: var(--hl); }
+.ws-cell.is-sel { background: var(--ink); color: var(--bone); }
+.ws-side h3 { font: 700 13px var(--font-ui); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 8px; }
+.ws-words { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 6px; }
+.ws-words li { display: grid; gap: 0; padding: 6px 10px; border-radius: 6px; border: 1px solid var(--rule); background: #fff; }
+.ws-words .w { font: 800 15px var(--font-ui); letter-spacing: .06em; }
+.ws-words .lab { font-size: 13px; color: var(--muted); }
+.ws-words li.is-found { background: var(--hl); border-color: transparent; }
+.ws-words li.is-found .w { text-decoration: line-through; }
+@media (max-width: 860px) { .ws-words { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); } .ws-words .lab { display: none; } }
+.ws.is-done .ws-clock { color: var(--win); }
+.ws-key { display: none; }
+
+@media print {
+  .banner, .site-header, .site-footer, .skip, .ws-screen, .pd-help { display: none !important; }
+  body { background: #fff; }
+  .ws { margin: 0; }
+  .ws-board { border: 0; padding: 0; background: #fff; }
+  .ws-layout { grid-template-columns: 1fr; gap: 14px; }
+  .ws-grid { width: 100%; max-width: 6.8in; border: 2px solid #000; margin: 0 auto; }
+  .ws-cell { font-size: 15pt; color: #000; }
+  .ws-cell.is-found, .ws-cell.is-sel { background: none; color: #000; }
+  .ws-words { grid-template-columns: repeat(3, 1fr); }
+  .ws-words li { border: 0; padding: 2px 0; background: none !important; }
+  .ws-words li.is-found .w { text-decoration: none; }
+  .ws-words .lab { display: block; font-size: 9pt; }
+  .ws.print-key .ws-key { display: block; break-before: page; page-break-before: always; }
+  .ws-key h2 { font: 700 16pt var(--font-display); margin: 0 0 10px; }
+  .ws-keygrid { --n: 14; display: grid; grid-template-columns: repeat(var(--n), 1fr); max-width: 6.8in; border: 2px solid #000; }
+  .ws-keygrid span { display: grid; place-items: center; aspect-ratio: 1 / 1; font: 400 13pt var(--font-ui); color: #999; }
+  .ws-keygrid span.on { color: #000; font-weight: 800; }
+}

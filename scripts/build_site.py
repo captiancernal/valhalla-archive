@@ -22,6 +22,7 @@ import trivia as trivia_gen  # noqa: E402
 import higher_lower as hl_gen  # noqa: E402
 import playerdle as pd_gen  # noqa: E402
 import grid as grid_gen  # noqa: E402
+import wordsearch as ws_gen  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TABLES = os.path.join(ROOT, "data", "tables")
@@ -823,6 +824,9 @@ class Site:
         grd = grid_gen.generate(self.T)
         with open(os.path.join(data_dir, "grid.json"), "w", encoding="utf-8") as f:
             json.dump(grd, f, ensure_ascii=False, separators=(",", ":"))
+        wsd = ws_gen.generate(self.T)
+        with open(os.path.join(data_dir, "wordsearch.json"), "w", encoding="utf-8") as f:
+            json.dump(wsd, f, ensure_ascii=False, separators=(",", ":"))
         eras = [{"key": k, "label": f"{a}-{b}"} for k, a, b in trivia_gen.ERAS]
         games = [
             {"key": "trivia", "ready": True, "href": "play/trivia/", "kicker": "Ten questions a round", "title": "Archive Trivia",
@@ -830,10 +834,10 @@ class Site:
             {"key": "higherlower", "ready": True, "href": "play/higher-lower/", "kicker": "Stat duel", "title": "Higher or Lower",
              "text": "Two real stat lines or records. Which one is bigger?"},
             {"key": "playerdle", "ready": True, "href": "play/playerdle/", "kicker": "Daily puzzle", "title": "Playerdle",
-             "text": "Guess the mystery player in a few tries using clues about program, position, class and more."},
+             "text": "Guess the mystery player in eight tries using clues about program, position, seasons, honors and more."},
             {"key": "grid", "ready": True, "href": "play/grid/", "kicker": "Nine squares", "title": "The Grid",
              "text": "Fill each square with a player who fits both its row and its column."},
-            {"key": "wordsearch", "ready": False, "kicker": "Printable too", "title": "Word Search",
+            {"key": "wordsearch", "ready": True, "href": "play/word-search/", "kicker": "Printable too", "title": "Word Search",
              "text": "Themed grids of rosters, award winners and program legends."},
         ]
         self.render("play_hub.html", "play/", active_nav="play", page_title="Games · The Valhalla Archive",
@@ -849,6 +853,9 @@ class Site:
         self.render("play_grid.html", "play/grid/", active_nav="play", page_title="The Grid · The Valhalla Archive",
                     description="Fill a 3x3 grid with dynasty players who fit both their row and their column. Daily grid plus practice.",
                     total=f"{len(grd['players']):,}")
+        self.render("play_wordsearch.html", "play/word-search/", active_nav="play", page_title="Word Search · The Valhalla Archive",
+                    description="Printable word searches from the dynasty: season rosters, award winners, program legends and schedules.",
+                    total=len(wsd["puzzles"]))
 
     # ---------------------------------------------------------------- run
     def build(self):
