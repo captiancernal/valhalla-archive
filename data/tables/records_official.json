@@ -18,22 +18,22 @@
   "year_set": "2025-28"
  },
  {
-  "player": "Amar'e Hocker",
+  "player": "Kaleb DuBose",
   "position": "QB",
   "magnitude": "Cleveland State",
   "duration": "Career",
   "type": "Passing TD",
-  "value": 192,
-  "year_set": "2025-28"
+  "value": 230,
+  "year_set": "2033-35"
  },
  {
-  "player": "Amar'e Hocker",
+  "player": "Elijah Pashos",
   "position": "QB",
   "magnitude": "Cleveland State",
   "duration": "Season",
   "type": "Passing TD",
-  "value": 63,
-  "year_set": "2028"
+  "value": 93,
+  "year_set": "2037"
  },
  {
   "player": "Amar'e Hocker",
@@ -72,13 +72,13 @@
   "year_set": "2025-28"
  },
  {
-  "player": "Amar'e Hocker",
+  "player": "Elijah Pashos",
   "position": "QB",
   "magnitude": "Cleveland State",
   "duration": "Season",
   "type": "Passing Yards",
-  "value": 5364,
-  "year_set": "2028"
+  "value": 6883,
+  "year_set": "2037"
  },
  {
   "player": "Amar'e Hocker",
@@ -90,22 +90,22 @@
   "year_set": "2027"
  },
  {
-  "player": "Amar'e Hocker",
-  "position": "QB",
+  "player": "Robert Okoronkwo",
+  "position": "HB",
   "magnitude": "Cleveland State",
   "duration": "Career",
   "type": "Rushing TD",
-  "value": 56,
-  "year_set": "2025-28"
+  "value": 68,
+  "year_set": "2030-31"
  },
  {
-  "player": "Amar'e Hocker",
-  "position": "QB",
+  "player": "Robert Okoronkwo",
+  "position": "HB",
   "magnitude": "Cleveland State",
   "duration": "Season",
   "type": "Rushing TD",
-  "value": 24,
-  "year_set": "2028"
+  "value": 41,
+  "year_set": "2031"
  },
  {
   "player": "Baraka Nwangwu",
@@ -131,8 +131,8 @@
   "magnitude": "Cleveland State",
   "duration": "Season",
   "type": "Rushing Yards",
-  "value": 2329,
-  "year_set": "2028"
+  "value": 2536,
+  "year_set": "2029"
  },
  {
   "player": "Baraka Nwangwu",
@@ -144,31 +144,31 @@
   "year_set": "2029"
  },
  {
-  "player": "Kenny Tongues",
+  "player": "Titus Reece",
   "position": "WR",
   "magnitude": "Cleveland State",
   "duration": "Career",
   "type": "Receiving Yards",
-  "value": 4901,
-  "year_set": "2027-"
+  "value": 8730,
+  "year_set": "2033-35"
  },
  {
-  "player": "Kenny Tongues",
+  "player": "Titus Reece",
   "position": "WR",
   "magnitude": "Cleveland State",
   "duration": "Career",
   "type": "Receiving TD",
-  "value": 71,
-  "year_set": "2027-"
+  "value": 126,
+  "year_set": "2033-35"
  },
  {
-  "player": "Kenny Tongues",
+  "player": "Titus Reece",
   "position": "WR",
   "magnitude": "Cleveland State",
   "duration": "Season",
   "type": "Receiving TD",
-  "value": 26,
-  "year_set": "2028"
+  "value": 51,
+  "year_set": "2033"
  },
  {
   "player": "Kenny Tongues",

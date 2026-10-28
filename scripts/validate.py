@@ -69,7 +69,12 @@ check("2023 Ollie Gordon III All-American at OKST (F23)", og == ["OKST"], og)
 ro = {(r["player"], r["duration"], r["type"]): r["value"] for r in load("records_official") if r["magnitude"] == "Cleveland State"}
 f24 = [ro.get(("Baraka Nwangwu", "Career", "Rushing Yards")), ro.get(("Kenny Tongues", "Career", "Receiving Yards")),
        ro.get(("Kenny Tongues", "Career", "Receiving TD"))]
-check("career records are full totals 6074 / 4901 / 71 (F24)", f24 == [6074, 4901, 71], f24)
+check("career rushing record is full total 6074 (F24)", f24[0] == 6074, f24)
+cb = {}
+for b in load("records_computed"):
+    cb[(b["scope"].title(), b["label"])] = b["leaders"][0]["value"]
+stale = [(k, v) for k, v in ro.items() if k[1] in ("Season", "Career") and cb.get((k[1], k[2])) not in (None, v)]
+check("school season/career records match the stats-tab bests (F24, F27)", not stale, stale)
 rec29 = {r["player"]: r["rec"] for r in pseasons if r["season"] == 2029 and r["category"] == "receiving"}
 f25 = [rec29.get(p) for p in ("Dakota McNitt", "Stephen Everett", "Nazir McNitt", "Isaiah Boutte", "Baraka Nwangwu")]
 check("2029 catch counts 56/52/48/38/42 (F25)", f25 == [56, 52, 48, 38, 42], f25)

@@ -46,5 +46,14 @@ Source: `2026-10-26 CSU Vikings Tracker.xlsx`
 - F24 applied: Baraka Nwangwu career Rushing Yards 4849 -> 6074
 - F24 applied: Kenny Tongues career Receiving Yards 4254 -> 4901
 - F24 applied: Kenny Tongues career Receiving TD 64 -> 71
+- F27 applied: CLEV career Passing TD -> Kaleb DuBose 230
+- F27 applied: CLEV season Passing TD -> Elijah Pashos 93
+- F27 applied: CLEV season Passing Yards -> Elijah Pashos 6883
+- F27 applied: CLEV career Rushing TD -> Robert Okoronkwo 68
+- F27 applied: CLEV season Rushing TD -> Robert Okoronkwo 41
+- F27 applied: CLEV season Rushing Yards -> Baraka Nwangwu 2536
+- F27 applied: CLEV career Receiving Yards -> Titus Reece 8730
+- F27 applied: CLEV career Receiving TD -> Titus Reece 126
+- F27 applied: CLEV season Receiving TD -> Titus Reece 51
 - Hall of Fame: 6 eligible, 0 awaiting a vote
 - Split Decision: 209 columns

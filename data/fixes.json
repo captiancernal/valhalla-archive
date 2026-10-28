@@ -550,6 +550,171 @@
           "value": "2nd"
         }
       ]
+    },
+    {
+      "id": "F27-school-records-from-stats",
+      "approved": "2026-10-27",
+      "sheets": [
+        "RecordsHall of Fame"
+      ],
+      "problem": "Nine Cleveland State season/career records on the Records sheet stopped being updated around 2029; the stats tabs show they were broken later.",
+      "rule": "override_value",
+      "scope": "Cleveland State season and career records only. Single-game, Big 12 and NCAA records stay as entered.",
+      "set": [
+        {
+          "row": 4,
+          "cells": {
+            "player": "A4",
+            "position": "B4",
+            "value": "F4",
+            "year_set": "G4"
+          },
+          "duration": "Career",
+          "type": "Passing TD",
+          "seen_player": "Amar'e Hocker",
+          "seen_value": 192,
+          "player": "Kaleb DuBose",
+          "position": "QB",
+          "value": 230,
+          "year_set": "2033-35"
+        },
+        {
+          "row": 5,
+          "cells": {
+            "player": "A5",
+            "position": "B5",
+            "value": "F5",
+            "year_set": "G5"
+          },
+          "duration": "Season",
+          "type": "Passing TD",
+          "seen_player": "Amar'e Hocker",
+          "seen_value": 63,
+          "player": "Elijah Pashos",
+          "position": "QB",
+          "value": 93,
+          "year_set": "2037"
+        },
+        {
+          "row": 10,
+          "cells": {
+            "player": "A10",
+            "position": "B10",
+            "value": "F10",
+            "year_set": "G10"
+          },
+          "duration": "Season",
+          "type": "Passing Yards",
+          "seen_player": "Amar'e Hocker",
+          "seen_value": 5364,
+          "player": "Elijah Pashos",
+          "position": "QB",
+          "value": 6883,
+          "year_set": "2037"
+        },
+        {
+          "row": 12,
+          "cells": {
+            "player": "A12",
+            "position": "B12",
+            "value": "F12",
+            "year_set": "G12"
+          },
+          "duration": "Career",
+          "type": "Rushing TD",
+          "seen_player": "Amar'e Hocker",
+          "seen_value": 56,
+          "player": "Robert Okoronkwo",
+          "position": "HB",
+          "value": 68,
+          "year_set": "2030-31"
+        },
+        {
+          "row": 13,
+          "cells": {
+            "player": "A13",
+            "position": "B13",
+            "value": "F13",
+            "year_set": "G13"
+          },
+          "duration": "Season",
+          "type": "Rushing TD",
+          "seen_player": "Amar'e Hocker",
+          "seen_value": 24,
+          "player": "Robert Okoronkwo",
+          "position": "HB",
+          "value": 41,
+          "year_set": "2031"
+        },
+        {
+          "row": 16,
+          "cells": {
+            "player": "A16",
+            "position": "B16",
+            "value": "F16",
+            "year_set": "G16"
+          },
+          "duration": "Season",
+          "type": "Rushing Yards",
+          "seen_player": "Baraka Nwangwu",
+          "seen_value": 2329,
+          "player": "Baraka Nwangwu",
+          "position": "HB",
+          "value": 2536,
+          "year_set": "2029"
+        },
+        {
+          "row": 18,
+          "cells": {
+            "player": "A18",
+            "position": "B18",
+            "value": "F18",
+            "year_set": "G18"
+          },
+          "duration": "Career",
+          "type": "Receiving Yards",
+          "seen_player": "Kenny Tongues",
+          "seen_value": 4901,
+          "player": "Titus Reece",
+          "position": "WR",
+          "value": 8730,
+          "year_set": "2033-35"
+        },
+        {
+          "row": 19,
+          "cells": {
+            "player": "A19",
+            "position": "B19",
+            "value": "F19",
+            "year_set": "G19"
+          },
+          "duration": "Career",
+          "type": "Receiving TD",
+          "seen_player": "Kenny Tongues",
+          "seen_value": 71,
+          "player": "Titus Reece",
+          "position": "WR",
+          "value": 126,
+          "year_set": "2033-35"
+        },
+        {
+          "row": 20,
+          "cells": {
+            "player": "A20",
+            "position": "B20",
+            "value": "F20",
+            "year_set": "G20"
+          },
+          "duration": "Season",
+          "type": "Receiving TD",
+          "seen_player": "Kenny Tongues",
+          "seen_value": 26,
+          "player": "Titus Reece",
+          "position": "WR",
+          "value": 51,
+          "year_set": "2033"
+        }
+      ]
     }
   ]
 }

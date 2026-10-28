@@ -1,6 +1,6 @@
 # Validation report
 
-80 passed, 0 failed.
+81 passed, 0 failed.
 
 - PASS: CLEV career record 180-29
 - PASS: OHIO career record 175-34
@@ -19,7 +19,8 @@
 - PASS: CLEV 2025 class stars 2/6/11 from list (F13)
 - PASS: CLEV 2026 stars not tracked (F14)
 - PASS: 2023 Ollie Gordon III All-American at OKST (F23)
-- PASS: career records are full totals 6074 / 4901 / 71 (F24)
+- PASS: career rushing record is full total 6074 (F24)
+- PASS: school season/career records match the stats-tab bests (F24, F27)
 - PASS: 2029 catch counts 56/52/48/38/42 (F25)
 - PASS: 2029 Big 12 rank CLEV 3rd, OHIO 2nd (F26)
 - PASS: CLEV 2024 games add up to coach-sheet record

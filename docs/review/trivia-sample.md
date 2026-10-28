@@ -152,15 +152,15 @@ _League · 2033-37 · Hard · Conferences_
 
 > Oregon beat UCLA 27-14 for the Big Ten title.
 
-**16. Who holds the Cleveland State season record for passing yards (as entered in the Records Book)?**  
+**16. Who holds the Cleveland State season record for passing yards?**  
 _Cleveland State · All eras · Medium · Records_
 
-- Greg Price
-- **Amar'e Hocker**
-- Sam Fatafehi
+- Titus Reece
+- **Elijah Pashos**
+- Dave Shelley
 - Afa Potoa'e
 
-> Amar'e Hocker: 5,364 (2028).
+> Elijah Pashos: 6,883 (2037).
 
 **17. In which round of the draft was Braxton Tull (MLB) picked after the 2036 season?**  
 _Cleveland State · 2033-37 · Hard · Draft_

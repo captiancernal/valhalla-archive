@@ -35,6 +35,9 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 - [x] M6 Front page: champion masthead, awards showcase (year picker, CSU winners first + spotlit), Road to next season (phase tracker + 4 teasers that unlock from logged data). Split Decision and highlight-reel modules render only when columns/clips exist (templates _split_decision_teaser.html / _highlight_reel.html to be written in M7 / M10). Awaiting owner sign-off.
 - [x] M7 Split Decision: approved 2026-10-27. All 209 columns (2024-2037) written, fact-checked and approved season by season; continuity log complete through 2037. Data fixes F24-F26 were approved during the backfill.
 - [~] M8 Games (started 2026-10-27): spec section 11 (Trivia, Playerdle, Word search, Higher/Lower, Grid puzzle, Games hub; all in-browser, personal stats in localStorage with fallback).
+  - Built one game at a time with a checkpoint each (owner's choice). URLs: play/ (hub) and play/<game>/ (games/ is taken by game-result pages). Shared JS: assets/js/games-core.js (VAGames: stats, daily streak, seen-list, storage fallback). CSS: assets/css/games.css.
+  - Trivia: scripts/trivia.py generates the bank from data/tables at every build (`py -P scripts/trivia.py stats|sample N seed`); written to _site/assets/data/trivia.json. Sample for review: docs/review/trivia-sample.md. Next: Higher/Lower, Playerdle, Grid, Word search.
+  - Ohio and Miami (OH) players have few attributes in the tracker (no position/home state/rating for most); player-attribute games will need a pool decision.
 - [ ] M9 Road to 2038, Record Watch, phase tracker
 - [ ] M10 Clips pipeline, print mode, accessibility, QA
 - [ ] M11 Deploy, README, hand-off

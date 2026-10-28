@@ -279,7 +279,7 @@ class Gen:
         for r in recs:
             mag = {"Cleveland State": "Cleveland State", "Big 12": "Big 12", "NCAA": "NCAA"}[r["magnitude"]]
             self.add(f"rb:{mag}:{r['duration']}:{r['type']}", "CLEV", None, 2,
-                     f"Who holds the {mag} {r['duration'].lower()} record for {r['type'].lower()} (as entered in the Records Book)?",
+                     f"Who holds the {mag} {r['duration'].lower()} record for {r['type'].lower()}?",
                      r["player"], holders, f"{r['player']}: {fmt(r['value'])} ({r['year_set']}).", "Records")
 
     def roster(self):

@@ -1027,20 +1027,6 @@
     "year_set": "2025-28"
    },
    {
-    "magnitude": "Cleveland State",
-    "duration": "Career",
-    "type": "Passing TD",
-    "value": 192,
-    "year_set": "2025-28"
-   },
-   {
-    "magnitude": "Cleveland State",
-    "duration": "Season",
-    "type": "Passing TD",
-    "value": 63,
-    "year_set": "2028"
-   },
-   {
     "magnitude": "Big 12",
     "duration": "Game",
     "type": "Passing TD",
@@ -1067,13 +1053,6 @@
     "type": "Passing Yards",
     "value": 18874,
     "year_set": "2025-28"
-   },
-   {
-    "magnitude": "Cleveland State",
-    "duration": "Season",
-    "type": "Passing Yards",
-    "value": 5364,
-    "year_set": "2028"
    },
    {
     "magnitude": "Cleveland State",
@@ -1081,20 +1060,6 @@
     "type": "Passing Yards",
     "value": 562,
     "year_set": "2027"
-   },
-   {
-    "magnitude": "Cleveland State",
-    "duration": "Career",
-    "type": "Rushing TD",
-    "value": 56,
-    "year_set": "2025-28"
-   },
-   {
-    "magnitude": "Cleveland State",
-    "duration": "Season",
-    "type": "Rushing TD",
-    "value": 24,
-    "year_set": "2028"
    }
   ],
   "leader_seasons": [
@@ -1991,8 +1956,8 @@
     "magnitude": "Cleveland State",
     "duration": "Season",
     "type": "Rushing Yards",
-    "value": 2329,
-    "year_set": "2028"
+    "value": 2536,
+    "year_set": "2029"
    },
    {
     "magnitude": "Cleveland State",
@@ -9834,7 +9799,22 @@
   },
   "awards": [],
   "all_american": [],
-  "records": [],
+  "records": [
+   {
+    "magnitude": "Cleveland State",
+    "duration": "Season",
+    "type": "Passing TD",
+    "value": 93,
+    "year_set": "2037"
+   },
+   {
+    "magnitude": "Cleveland State",
+    "duration": "Season",
+    "type": "Passing Yards",
+    "value": 6883,
+    "year_set": "2037"
+   }
+  ],
   "leader_seasons": [
    {
     "season": 2036,
@@ -17203,7 +17183,15 @@
   },
   "awards": [],
   "all_american": [],
-  "records": [],
+  "records": [
+   {
+    "magnitude": "Cleveland State",
+    "duration": "Career",
+    "type": "Passing TD",
+    "value": 230,
+    "year_set": "2033-35"
+   }
+  ],
   "leader_seasons": [
    {
     "season": 2033,
@@ -17855,27 +17843,6 @@
    }
   ],
   "records": [
-   {
-    "magnitude": "Cleveland State",
-    "duration": "Career",
-    "type": "Receiving Yards",
-    "value": 4901,
-    "year_set": "2027-"
-   },
-   {
-    "magnitude": "Cleveland State",
-    "duration": "Career",
-    "type": "Receiving TD",
-    "value": 71,
-    "year_set": "2027-"
-   },
-   {
-    "magnitude": "Cleveland State",
-    "duration": "Season",
-    "type": "Receiving TD",
-    "value": 26,
-    "year_set": "2028"
-   },
    {
     "magnitude": "Cleveland State",
     "duration": "Game",
@@ -25377,7 +25344,22 @@
     "school": "CLEV"
    }
   ],
-  "records": [],
+  "records": [
+   {
+    "magnitude": "Cleveland State",
+    "duration": "Career",
+    "type": "Rushing TD",
+    "value": 68,
+    "year_set": "2030-31"
+   },
+   {
+    "magnitude": "Cleveland State",
+    "duration": "Season",
+    "type": "Rushing TD",
+    "value": 41,
+    "year_set": "2031"
+   }
+  ],
   "leader_seasons": [
    {
     "season": 2030,
@@ -29512,7 +29494,29 @@
     "school": "CLEV"
    }
   ],
-  "records": [],
+  "records": [
+   {
+    "magnitude": "Cleveland State",
+    "duration": "Career",
+    "type": "Receiving Yards",
+    "value": 8730,
+    "year_set": "2033-35"
+   },
+   {
+    "magnitude": "Cleveland State",
+    "duration": "Career",
+    "type": "Receiving TD",
+    "value": 126,
+    "year_set": "2033-35"
+   },
+   {
+    "magnitude": "Cleveland State",
+    "duration": "Season",
+    "type": "Receiving TD",
+    "value": 51,
+    "year_set": "2033"
+   }
+  ],
   "leader_seasons": [
    {
     "season": 2033,

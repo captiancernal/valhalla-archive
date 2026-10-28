@@ -763,6 +763,13 @@ def parse_records(wb):
                     and r["value"] == s["seen_value"]):
                 r["value"] = s["value"]
                 note(f"F24 applied: {s['player']} career {s['type']} {s['seen_value']} -> {s['value']}")
+    # F27: school season/career records broken after the sheet stopped being updated
+    for s in FIXES["F27-school-records-from-stats"]["set"]:
+        for r in out:
+            if (r["magnitude"] == "Cleveland State" and r["duration"] == s["duration"] and r["type"] == s["type"]
+                    and r["player"] == canon(s["seen_player"]) and r["value"] == s["seen_value"]):
+                r.update(player=canon(s["player"]), position=s["position"], value=s["value"], year_set=s["year_set"])
+                note(f"F27 applied: CLEV {s['duration'].lower()} {s['type']} -> {s['player']} {s['value']}")
     return out
 
 
