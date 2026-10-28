@@ -1,0 +1,6 @@
+# Extra Python packages used only on the owner's computer (not by the GitHub build).
+# scripts/pull_tracker.py: read-only Google sign-in to download the live tracker.
+-r requirements.txt
+google-auth==2.62.0
+google-auth-oauthlib==1.5.0
+requests==2.34.2

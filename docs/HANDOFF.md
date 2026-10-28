@@ -6,8 +6,8 @@ Everything you need to keep the site up to date, in plain English. You never hav
 
 ## How it fits together
 
-1. **Your tracker** (the Google Sheet) is the single source of truth. You keep playing and logging there like always. The site never changes it.
-2. **This project folder** (`Documents\valhalla-archive`) turns a downloaded copy of the tracker into the website.
+1. **Your tracker** (the Google Sheet) is the single source of truth. You keep playing and logging there like always. The site only reads it and never changes it.
+2. **This project folder** (`Documents\valhalla-archive`) downloads a copy of the tracker (read-only) and turns it into the website.
 3. **GitHub** stores the project online and publishes the site. Every time you approve an update, it rebuilds and publishes the site, usually in about two minutes.
 4. **Google Drive** ("The Valhalla Archive" folder) keeps your dated tracker downloads, raw clips, PDFs and backups.
 
@@ -15,18 +15,16 @@ Everything you need to keep the site up to date, in plain English. You never hav
 
 Do this whenever you've logged new things in the tracker (games, recruits, departures, anything).
 
-1. **Download the tracker.** In Google Sheets: File > Download > Microsoft Excel (.xlsx).
-2. **Put the file in the project.** Move it into `Documents\valhalla-archive\source\`. Don't worry about the name; Claude will give it a dated name. Also drop a copy in Drive > The Valhalla Archive > 01 Original Tracker.
-3. **Open the project in Claude.** In the Claude app, open the Code tab with the `valhalla-archive` folder.
-4. **Type `/update-archive`** and press Enter.
-5. **Answer Claude's questions, one at a time.** Each one comes with a recommended answer. Expect these:
+1. **Open the project in Claude.** In the Claude app, open the Code tab with the `valhalla-archive` folder.
+2. **Type `/update-archive`** and press Enter. Claude downloads the latest version of your Google Sheet by itself (it can only read it, never change it). About once a week your browser asks you to sign in to Google again; just pick your account and allow.
+3. **Answer Claude's questions, one at a time.** Each one comes with a recommended answer. Expect these:
    - any new data problems it spots (for example, a number that disagrees between two sheets);
    - captions for any new highlight clips;
    - whether to approve the new Split Decision columns;
    - Hall of Fame votes for newly eligible players;
    - which offseason phase you're in now.
-6. **Look at the preview.** Claude opens the updated site on your computer (http://localhost:8037/) and tells you which pages changed.
-7. **Say yes to publish.** Nothing goes online until you do. A couple of minutes later the live site has the update.
+4. **Look at the preview.** Claude opens the updated site on your computer (http://localhost:8037/) and tells you which pages changed.
+5. **Say yes to publish.** Nothing goes online until you do. A couple of minutes later the live site has the update.
 
 If you have no new clips or nothing changed in some area, Claude just skips that part.
 
@@ -58,26 +56,28 @@ At the bottom of any page there's a small **Print view** button. It turns the pa
 ## Backups
 
 - GitHub is a full backup of the project (except your tracker copies, which stay private).
-- Your tracker downloads go in Drive > 01 Original Tracker.
+- Every download of your tracker is kept, dated, in `source\` on this computer.
 - Now and then (for example after each season), you can zip the `Documents\valhalla-archive` folder into Drive > 04 Backups. This also covers the tracker copies in `source\`.
+- The Google sign-in Claude uses lives in `C:\Users\Owner\.valhalla-archive\`, outside the project, so it never reaches GitHub. Don't share that folder. To cut the link at any time, remove "Valhalla Archive" at https://myaccount.google.com/permissions.
 - There's also a one-time backup from before your email was hidden: `Documents\valhalla-archive-backup-2026-10-28.bundle`. It contains your Gmail address, so keep it on your computer only. You can delete it once the site is live and you're happy.
 
 ## Things only you can do
 
-- Download the tracker and copy files into Drive (Claude can't reach your Google Sheet).
+- Sign in to Google when the browser asks (Claude never types your password).
+- Copy clip originals into Drive.
 - Say yes before anything is published.
 - Change settings on your GitHub account.
 
 ## Still open
 
-- **Corrected tracker copy:** you asked for a corrected copy of the tracker with every approved fix applied, plus a "Valhalla Changes" sheet listing each change, so you can copy the edits into your live sheet. That's the final task after launch.
+- **Corrected tracker copy:** `source\corrected\` has a copy of the tracker with every approved fix applied, plus a "Valhalla Changes" tab listing each edit by sheet and cell. Copy those edits into your live sheet when you have time. The site gives the same results before and after, so there's no rush.
 - **2038 depth chart:** a few names appear twice (Quincy Reddick twice at center, Johnnie Floyd twice at CB3). If those are typos, fix them in the tracker and they'll clear up on your next update.
 
 ## Quick reference
 
 | You want to... | Do this |
 |---|---|
-| Update the site from the tracker | Download the .xlsx into `source\`, then `/update-archive` |
+| Update the site from the tracker | `/update-archive` (Claude downloads the sheet) |
 | Start a new season | `/new-season` |
 | Add a highlight clip | Drop it in `content\clips\incoming\`, then `/update-archive` |
 | Change the offseason phase | `/update-archive` asks you every time |

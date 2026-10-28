@@ -16,9 +16,13 @@ Keep the task list current as you go. If any step fails, stop, explain it simply
 
 ## 1. Get the new tracker copy
 
-1. Look in `source/` for the newest `.xlsx`. If the owner just gave you a file somewhere else (Downloads, an attachment), copy it into `source/` as `source/YYYY-MM-DD CSU Vikings Tracker.xlsx` (today's date). Never move or rename the owner's original.
-2. If the newest file in `source/` is the one already used for the current build (compare the date in its name with `last_updated` in `data/tables/site_control.json`), ask whether they meant to download a new copy. Recommend: "Download a fresh copy from Google Sheets (File > Download > Microsoft Excel) and drop it in the folder."
-3. Remind them (one line) to also drop the same file in Drive > The Valhalla Archive > 01 Original Tracker.
+1. Download the live Google Sheet: `py -P scripts/pull_tracker.py pull`. It saves `source/YYYY-MM-DD-HHMM CSU Vikings Tracker.xlsx` (read-only sign-in; it never writes to the sheet).
+   - `DOWNLOADED`: carry on with the new file.
+   - `UNCHANGED`: the sheet hasn't changed since the last download. Tell the owner and ask whether there's something else to update (clips, phase, Hall of Fame) or whether to stop. Recommend stopping if they expected new games.
+   - The browser may open for a Google sign-in (the saved sign-in lapses about once a week while the Google app stays in "Testing"). The owner signs in themselves; never type a password for them.
+   - Exit code 2 (setup missing) or any error: explain it and use `py -P scripts/pull_tracker.py status`. As a fallback, the owner can still download the sheet by hand (File > Download > Microsoft Excel); copy that file into `source/` with the same `YYYY-MM-DD-HHMM` naming. Never move or rename the owner's original.
+2. If the owner instead gave you a file somewhere else (Downloads, an attachment), copy it into `source/` with that naming.
+3. The downloaded copy stays in `source/` (git-ignored). The owner's occasional folder zip into Drive > 04 Backups covers it; no manual Drive copy is needed each time.
 
 ## 2. Build the data and find what's new
 

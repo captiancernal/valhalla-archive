@@ -26,3 +26,7 @@ CLAUDE.local.md
 # Generated website (built by scripts/build_site.py)
 _site/
 content/clips/originals/
+
+# Google sign-in files (they belong in %USERPROFILE%\.valhalla-archive\, never in the repo)
+client_secret*.json
+token.json

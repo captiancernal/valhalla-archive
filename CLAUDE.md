@@ -17,7 +17,7 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 ## Where things are
 - GitHub repo: https://github.com/captiancernal/valhalla-archive (public, branch `main`, remote `origin`)
 - Future site URL: https://captiancernal.github.io/valhalla-archive/
-- Tracker copies: `source/YYYY-MM-DD CSU Vikings Tracker.xlsx` (git-ignored; also archived in Drive under `01 Original Tracker`)
+- Tracker copies: `source/YYYY-MM-DD[-HHMM] CSU Vikings Tracker.xlsx` (git-ignored). Downloaded by scripts/pull_tracker.py from the live Google Sheet; the first copy is also archived in Drive under `01 Original Tracker`.
 - Google Drive folders: "The Valhalla Archive" with 01 Original Tracker, 02 Clips Source, 03 Print Exports and 04 Backups. Folder IDs are in `CLAUDE.local.md` (git-ignored).
 - Backlog (not in v1): [BACKLOG.md](BACKLOG.md)
 
@@ -128,8 +128,16 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 - Fixes are applied in code by fix id (search `FIXES[` in build_data.py). A new fix in fixes.json needs matching code.
 - Owner-set inputs not in the tracker: `data/site-control.json` (season + phase), `data/reference/teams.json` (abbreviation -> school).
 
+## Live tracker download (2026-10-28, owner chose "pull when I update")
+- `py -P scripts/pull_tracker.py pull [--force]` | `status` | `set-sheet <ID or link>`: downloads the live Google Sheet as `source/YYYY-MM-DD-HHMM CSU Vikings Tracker.xlsx` (the `-HHMM` makes it sort after older copies; build_data takes the last name). Skips the download when the sheet's Drive modifiedTime hasn't changed (prints UNCHANGED). Exit 2 = setup missing.
+- Read-only: OAuth scope drive.readonly, Drive exportLinks xlsx download (files.export caps at 10 MB; the tracker is ~16 MB). Never write to the sheet.
+- Private files live outside the repo in `%USERPROFILE%\.valhalla-archive\` (client_secret.json, token.json, settings.json with the sheet ID, last_pull.json). The sheet ID is also in CLAUDE.local.md. .gitignore blocks client_secret*.json and token.json as a safety net.
+- Extra packages: `py -m pip install --user -r requirements-local.txt` (google-auth-oauthlib; not needed by the GitHub build).
+- The Google Cloud app stays in Testing mode with the owner as the only test user, so the sign-in lapses about every 7 days and the browser asks again. The owner signs in; never type credentials.
+- Tested 2026-10-28: building from the corrected copy gives identical tables (every fix in build_data.py is safe to re-apply), so pasting the fixes into the live sheet changes nothing on the site.
+
 ## Update workflow (M11)
-- `/update-archive` (.claude/commands/update-archive.md): new tracker copy -> build_data + validate -> data questions one at a time -> plain-English summary -> clips -> Split Decision drafts -> Hall of Fame votes -> phase -> rebuild + all checks + local preview -> commit -> ask -> push -> watch the Actions run.
+- `/update-archive` (.claude/commands/update-archive.md): pull_tracker.py download -> build_data + validate -> data questions one at a time -> plain-English summary -> clips -> Split Decision drafts -> Hall of Fame votes -> phase -> rebuild + all checks + local preview -> commit -> ask -> push -> watch the Actions run.
 - `/new-season` (.claude/commands/new-season.md): run once when the first game of a new season is logged. Rolls site-control to the new season with phases ["N Season", "Season Recap", ..., "N+1 Preseason"]; the in-season look (banner keeps the last champion via Site.latest_champion(); Road goes to N+1) was smoke-tested with a simulated 2038 setting but needs a careful real-data preview the first time.
 - Publishing: .github/workflows/pages.yml builds on every push to main (Python 3.14, requirements.txt), runs validate.py, columns.py check, build_site.py and check_links.py with BASE_PATH=/valhalla-archive/, then deploys to Pages. A failed check publishes nothing.
 - check_links.py is case-exact (GitHub's Linux runners are case-sensitive) and also checks data-src files and CSS url() fonts.
