@@ -33,8 +33,8 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 - [x] M4 Program / season / game / player pages: 1,158 pages (program sections, 42 season pages, 209 game pages, 886 player cards, searchable index). Awaiting owner sign-off.
 - [x] M5 Almanac (almanac/, almanac/<year>/, almanac/awards/), Records Book (records/), Rivalry Hub + Coaches' Cup (rivalry/), Hall of Fame (hall-of-fame/). Class of 2037 inducted: Fannin, Nwangwu, Okoronkwo, Molinaro, Reece, Ladd. Awaiting owner sign-off.
 - [x] M6 Front page: champion masthead, awards showcase (year picker, CSU winners first + spotlit), Road to next season (phase tracker + 4 teasers that unlock from logged data). Split Decision and highlight-reel modules render only when columns/clips exist (templates _split_decision_teaser.html / _highlight_reel.html to be written in M7 / M10). Awaiting owner sign-off.
-- [~] M7 Split Decision: bible approved 2026-10-26; voice approved after the 2024 pilot; all 209 columns (2024-2037) written, fact-checked and approved season by season (2037 awaiting the owner's final OK). Continuity log is complete through 2037. Data fixes F24-F26 were approved during the backfill. Remaining for M7 sign-off: owner approval of 2037.
-- [ ] M8 Games
+- [x] M7 Split Decision: approved 2026-10-27. All 209 columns (2024-2037) written, fact-checked and approved season by season; continuity log complete through 2037. Data fixes F24-F26 were approved during the backfill.
+- [~] M8 Games (started 2026-10-27): spec section 11 (Trivia, Playerdle, Word search, Higher/Lower, Grid puzzle, Games hub; all in-browser, personal stats in localStorage with fallback).
 - [ ] M9 Road to 2038, Record Watch, phase tracker
 - [ ] M10 Clips pipeline, print mode, accessibility, QA
 - [ ] M11 Deploy, README, hand-off
