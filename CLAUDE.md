@@ -34,7 +34,7 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 - [x] M5 Almanac (almanac/, almanac/<year>/, almanac/awards/), Records Book (records/), Rivalry Hub + Coaches' Cup (rivalry/), Hall of Fame (hall-of-fame/). Class of 2037 inducted: Fannin, Nwangwu, Okoronkwo, Molinaro, Reece, Ladd. Awaiting owner sign-off.
 - [x] M6 Front page: champion masthead, awards showcase (year picker, CSU winners first + spotlit), Road to next season (phase tracker + 4 teasers that unlock from logged data). Split Decision and highlight-reel modules render only when columns/clips exist (templates _split_decision_teaser.html / _highlight_reel.html to be written in M7 / M10). Awaiting owner sign-off.
 - [x] M7 Split Decision: approved 2026-10-27. All 209 columns (2024-2037) written, fact-checked and approved season by season; continuity log complete through 2037. Data fixes F24-F26 were approved during the backfill.
-- [~] M8 Games (started 2026-10-27; all five built 2026-10-28, awaiting sign-off): spec section 11 (Trivia, Playerdle, Word search, Higher/Lower, Grid puzzle, Games hub; all in-browser, personal stats in localStorage with fallback).
+- [x] M8 Games: approved 2026-10-28 (Trivia, Higher or Lower, Playerdle, The Grid, Word Search, Games hub): spec section 11 (Trivia, Playerdle, Word search, Higher/Lower, Grid puzzle, Games hub; all in-browser, personal stats in localStorage with fallback).
   - Built one game at a time with a checkpoint each (owner's choice). URLs: play/ (hub) and play/<game>/ (games/ is taken by game-result pages). Shared JS: assets/js/games-core.js (VAGames: stats, daily streak, seen-list, storage fallback). CSS: assets/css/games.css.
   - Trivia: scripts/trivia.py generates the bank from data/tables at every build (`py -P scripts/trivia.py stats|sample N seed`); written to _site/assets/data/trivia.json. Sample for review: docs/review/trivia-sample.md. Trivia approved 2026-10-27.
   - Higher/Lower: scripts/higher_lower.py builds 7 like-for-like decks (541 stat lines; OHIO/M-OH via season leaders) into assets/data/higherlower.json; page play/higher-lower/. Approved 2026-10-28.
@@ -43,7 +43,7 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
   - Word Search: scripts/wordsearch.py builds 49 themes (season starters from the depth chart, award winners by year, program legends, Vikings schedules); the page lays out grids in the browser (Easy: across/down, 12-14 size; Hard: 8 directions, 14-15 size), drag or tap-tap or keyboard, print stylesheet with optional answer key on page 2.
   - All five games built; M8 awaiting owner sign-off.
   - Ohio and Miami (OH) players have few attributes in the tracker (no position/home state/rating for most); player-attribute games will need a pool decision.
-- [ ] M9 Road to 2038, Record Watch, phase tracker
+- [~] M9 Road to 2038, Record Watch, phase tracker (started 2026-10-28)
 - [ ] M10 Clips pipeline, print mode, accessibility, QA
 - [ ] M11 Deploy, README, hand-off
 - [ ] **Final task (owner request, 2026-10-26):** produce a corrected COPY of the latest tracker (`source/corrected/<date> CSU Vikings Tracker (corrected).xlsx`) with every approved fix from `data/fixes.json` and every alias from `data/aliases.json` applied, plus a "Valhalla Changes" sheet listing sheet / cell / old value / new value / fix id, so the owner can copy-paste the edits into the live spreadsheet. Never modify the original or any dated copy in `source/`.
