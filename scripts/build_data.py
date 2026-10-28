@@ -770,6 +770,13 @@ def parse_records(wb):
                     and r["player"] == canon(s["seen_player"]) and r["value"] == s["seen_value"]):
                 r.update(player=canon(s["player"]), position=s["position"], value=s["value"], year_set=s["year_set"])
                 note(f"F27 applied: CLEV {s['duration'].lower()} {s['type']} -> {s['player']} {s['value']}")
+    # F28: Big 12 / NCAA records that a Vikings stat line beats
+    for s in FIXES["F28-league-records-beaten-by-vikings"]["set"]:
+        for r in out:
+            if (r["magnitude"] == s["magnitude"] and r["duration"] == s["duration"] and r["type"] == s["type"]
+                    and r["player"] == canon(s["seen_player"]) and r["value"] == s["seen_value"]):
+                r.update(player=canon(s["player"]), position=s["position"], value=s["value"], year_set=s["year_set"])
+                note(f"F28 applied: {s['magnitude']} {s['duration'].lower()} {s['type']} -> {s['player']} {s['value']}")
     return out
 
 

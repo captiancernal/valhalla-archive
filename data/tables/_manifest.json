@@ -1,5 +1,5 @@
 {
- "built": "2026-10-27T23:53:27",
+ "built": "2026-10-28T00:19:51",
  "source_file": "2026-10-26 CSU Vikings Tracker.xlsx",
  "source_sha256": "d1ecf275043cf4ddc57830e1ca329f262a715d697dc00c1e34ead8d6ff30bf8f",
  "fixes_applied": [
@@ -27,7 +27,8 @@
   "F24-career-records-full-totals",
   "F25-2029-receptions",
   "F26-2029-big12-rank",
-  "F27-school-records-from-stats"
+  "F27-school-records-from-stats",
+  "F28-league-records-beaten-by-vikings"
  ],
  "row_counts": {
   "site_control": 1,

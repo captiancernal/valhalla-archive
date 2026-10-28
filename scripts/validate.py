@@ -75,6 +75,11 @@ for b in load("records_computed"):
     cb[(b["scope"].title(), b["label"])] = b["leaders"][0]["value"]
 stale = [(k, v) for k, v in ro.items() if k[1] in ("Season", "Career") and cb.get((k[1], k[2])) not in (None, v)]
 check("school season/career records match the stats-tab bests (F24, F27)", not stale, stale)
+allrec = load("records_official")
+beaten = [(r["magnitude"], r["duration"], r["type"], r["value"]) for r in allrec
+          if r["magnitude"] != "Cleveland State" and r["duration"] in ("Season", "Career")
+          and (cb.get((r["duration"], r["type"])) or 0) > r["value"]]
+check("no Big 12/NCAA record is lower than a Vikings stat line (F28)", not beaten, beaten)
 rec29 = {r["player"]: r["rec"] for r in pseasons if r["season"] == 2029 and r["category"] == "receiving"}
 f25 = [rec29.get(p) for p in ("Dakota McNitt", "Stephen Everett", "Nazir McNitt", "Isaiah Boutte", "Baraka Nwangwu")]
 check("2029 catch counts 56/52/48/38/42 (F25)", f25 == [56, 52, 48, 38, 42], f25)

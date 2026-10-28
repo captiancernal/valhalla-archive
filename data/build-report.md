@@ -55,5 +55,8 @@ Source: `2026-10-26 CSU Vikings Tracker.xlsx`
 - F27 applied: CLEV career Receiving Yards -> Titus Reece 8730
 - F27 applied: CLEV career Receiving TD -> Titus Reece 126
 - F27 applied: CLEV season Receiving TD -> Titus Reece 51
+- F28 applied: NCAA career Passing TD -> Kaleb DuBose 230
+- F28 applied: Big 12 career Passing TD -> Kaleb DuBose 230
+- F28 applied: Big 12 season Rushing Yards -> Baraka Nwangwu 2536
 - Hall of Fame: 6 eligible, 0 awaiting a vote
 - Split Decision: 209 columns

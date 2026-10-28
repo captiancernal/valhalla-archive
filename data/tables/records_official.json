@@ -1,21 +1,21 @@
 [
  {
-  "player": "Amar'e Hocker",
+  "player": "Kaleb DuBose",
   "position": "QB",
   "magnitude": "NCAA",
   "duration": "Career",
   "type": "Passing TD",
-  "value": 192,
-  "year_set": "2025-28"
+  "value": 230,
+  "year_set": "2033-35"
  },
  {
-  "player": "Amar'e Hocker",
+  "player": "Kaleb DuBose",
   "position": "QB",
   "magnitude": "Big 12",
   "duration": "Career",
   "type": "Passing TD",
-  "value": 192,
-  "year_set": "2025-28"
+  "value": 230,
+  "year_set": "2033-35"
  },
  {
   "player": "Kaleb DuBose",
@@ -122,8 +122,8 @@
   "magnitude": "Big 12",
   "duration": "Season",
   "type": "Rushing Yards",
-  "value": 2329,
-  "year_set": "2028"
+  "value": 2536,
+  "year_set": "2029"
  },
  {
   "player": "Baraka Nwangwu",

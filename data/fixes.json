@@ -715,6 +715,72 @@
           "year_set": "2033"
         }
       ]
+    },
+    {
+      "id": "F28-league-records-beaten-by-vikings",
+      "approved": "2026-10-28",
+      "sheets": [
+        "RecordsHall of Fame"
+      ],
+      "problem": "Three Big 12/NCAA records on the Records sheet are lower than Vikings marks in the stats tabs.",
+      "rule": "override_value",
+      "scope": "Only records a Vikings stat line provably beats. Other schools' stats aren't tracked, so the remaining Big 12 records stay as entered.",
+      "set": [
+        {
+          "row": 2,
+          "cells": {
+            "player": "A2",
+            "position": "B2",
+            "value": "F2",
+            "year_set": "G2"
+          },
+          "magnitude": "NCAA",
+          "duration": "Career",
+          "type": "Passing TD",
+          "seen_player": "Amar'e Hocker",
+          "seen_value": 192,
+          "player": "Kaleb DuBose",
+          "position": "QB",
+          "value": 230,
+          "year_set": "2033-35"
+        },
+        {
+          "row": 3,
+          "cells": {
+            "player": "A3",
+            "position": "B3",
+            "value": "F3",
+            "year_set": "G3"
+          },
+          "magnitude": "Big 12",
+          "duration": "Career",
+          "type": "Passing TD",
+          "seen_player": "Amar'e Hocker",
+          "seen_value": 192,
+          "player": "Kaleb DuBose",
+          "position": "QB",
+          "value": 230,
+          "year_set": "2033-35"
+        },
+        {
+          "row": 15,
+          "cells": {
+            "player": "A15",
+            "position": "B15",
+            "value": "F15",
+            "year_set": "G15"
+          },
+          "magnitude": "Big 12",
+          "duration": "Season",
+          "type": "Rushing Yards",
+          "seen_player": "Baraka Nwangwu",
+          "seen_value": 2329,
+          "player": "Baraka Nwangwu",
+          "position": "HB",
+          "value": 2536,
+          "year_set": "2029"
+        }
+      ]
     }
   ]
 }

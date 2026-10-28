@@ -1013,20 +1013,6 @@
   "all_american": [],
   "records": [
    {
-    "magnitude": "NCAA",
-    "duration": "Career",
-    "type": "Passing TD",
-    "value": 192,
-    "year_set": "2025-28"
-   },
-   {
-    "magnitude": "Big 12",
-    "duration": "Career",
-    "type": "Passing TD",
-    "value": 192,
-    "year_set": "2025-28"
-   },
-   {
     "magnitude": "Big 12",
     "duration": "Game",
     "type": "Passing TD",
@@ -1949,8 +1935,8 @@
     "magnitude": "Big 12",
     "duration": "Season",
     "type": "Rushing Yards",
-    "value": 2329,
-    "year_set": "2028"
+    "value": 2536,
+    "year_set": "2029"
    },
    {
     "magnitude": "Cleveland State",
@@ -17184,6 +17170,20 @@
   "awards": [],
   "all_american": [],
   "records": [
+   {
+    "magnitude": "NCAA",
+    "duration": "Career",
+    "type": "Passing TD",
+    "value": 230,
+    "year_set": "2033-35"
+   },
+   {
+    "magnitude": "Big 12",
+    "duration": "Career",
+    "type": "Passing TD",
+    "value": 230,
+    "year_set": "2033-35"
+   },
    {
     "magnitude": "Cleveland State",
     "duration": "Career",
