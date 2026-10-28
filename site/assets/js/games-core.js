@@ -45,7 +45,7 @@
       var s = all[game] || {};
       Object.keys(update).forEach(function (k) {
         var v = update[k];
-        if (k === 'best') { s.best = Math.max(s.best || 0, v); }
+        if (k.indexOf('best') === 0) { s[k] = Math.max(s[k] || 0, v); }
         else if (typeof v === 'number') { s[k] = (s[k] || 0) + v; }
         else { s[k] = v; }
       });

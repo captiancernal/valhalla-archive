@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block head %}<link rel="stylesheet" href="{{ base }}assets/css/games.css?v={{ build_id }}">{% endblock %}
+{% block content %}
+<section class="gm-head">
+  <div class="wrap">
+    <a class="gm-back" href="{{ base }}play/">Games</a>
+    <h1>Higher or Lower</h1>
+    <p>Two real stat lines from the dynasty. Did the second one beat the first? Keep guessing right to build your streak. One miss and it's over.</p>
+  </div>
+</section>
+<div class="wrap">
+  <div id="hl" class="hl" data-src="{{ base }}assets/data/higherlower.json?v={{ build_id }}" data-base="{{ base }}">
+    <div data-view="setup" class="tv-setup">
+      <fieldset class="hl-decks">
+        <legend>Pick a deck</legend>
+        <div data-decks class="hl-deck-list"></div>
+      </fieldset>
+      <div class="gm-actions">
+        <button type="button" class="gm-btn" data-start disabled>Start</button>
+        <span class="muted" data-best>Loading…</span>
+      </div>
+      <p class="note">Tip: use the ↑ and ↓ arrow keys. Ties count as correct either way.</p>
+      <p class="note" data-storage-note hidden>Your browser is blocking storage, so your streaks won't be remembered after you leave this page.</p>
+    </div>
+    <div data-view="play" class="tv-play hl-play" hidden></div>
+    <div data-view="over" class="tv-done" hidden></div>
+  </div>
+  <p class="note gm-foot">Every stat line comes from the Archive's data ({{ total }} in all). Ohio and Miami (OH) appear through their season stat leaders, which are the individual stats the tracker keeps for them. Your streaks are saved only in this browser.</p>
+</div>
+<script src="{{ base }}assets/js/games-core.js?v={{ build_id }}" defer></script>
+<script src="{{ base }}assets/js/higherlower.js?v={{ build_id }}" defer></script>
+{% endblock %}

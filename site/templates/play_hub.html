@@ -15,6 +15,7 @@
     <div class="stat"><div class="n" data-stat="streak">0</div><div class="l">Day streak</div></div>
     <div class="stat"><div class="n" data-stat="tbest">–</div><div class="l">Trivia best (of 10)</div></div>
     <div class="stat"><div class="n" data-stat="tacc">–</div><div class="l">Trivia accuracy</div></div>
+    <div class="stat"><div class="n" data-stat="hlbest">–</div><div class="l">Higher/Lower best streak</div></div>
   </div>
   <p class="note" data-storage-note hidden>Your browser is blocking storage, so stats can't be saved on this device.</p>
 
@@ -50,6 +51,12 @@ document.addEventListener('DOMContentLoaded', function () {
   function set(k, v) { var el = document.querySelector('[data-stat="' + k + '"]'); if (el) el.textContent = v; }
   set('rounds', rounds);
   set('streak', VAGames.streak());
+  var hl = all.higherlower || {};
+  if (hl.plays) {
+    set('hlbest', hl.best || 0);
+    var hm = document.querySelector('[data-game-meta="higherlower"]');
+    if (hm) hm.textContent = hl.plays + ' game' + (hl.plays === 1 ? '' : 's') + ' played · best streak ' + (hl.best || 0);
+  }
   if (t.plays) {
     set('tbest', t.best || 0);
     set('tacc', Math.round((t.correct / Math.max(1, t.answered)) * 100) + '%');

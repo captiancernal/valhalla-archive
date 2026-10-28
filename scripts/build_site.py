@@ -19,6 +19,7 @@ import sys as _sys
 _sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import columns as sd_columns  # noqa: E402
 import trivia as trivia_gen  # noqa: E402
+import higher_lower as hl_gen  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TABLES = os.path.join(ROOT, "data", "tables")
@@ -811,11 +812,14 @@ class Site:
         os.makedirs(data_dir, exist_ok=True)
         with open(os.path.join(data_dir, "trivia.json"), "w", encoding="utf-8") as f:
             json.dump({"generated": self.site.get("last_updated"), "questions": qs}, f, ensure_ascii=False, separators=(",", ":"))
+        hl = hl_gen.generate(self.T)
+        with open(os.path.join(data_dir, "higherlower.json"), "w", encoding="utf-8") as f:
+            json.dump(hl, f, ensure_ascii=False, separators=(",", ":"))
         eras = [{"key": k, "label": f"{a}-{b}"} for k, a, b in trivia_gen.ERAS]
         games = [
             {"key": "trivia", "ready": True, "href": "play/trivia/", "kicker": "Ten questions a round", "title": "Archive Trivia",
              "text": "Champions, awards, stat leaders, big games and recruits. Pick a program, an era and a difficulty."},
-            {"key": "higherlower", "ready": False, "kicker": "Stat duel", "title": "Higher or Lower",
+            {"key": "higherlower", "ready": True, "href": "play/higher-lower/", "kicker": "Stat duel", "title": "Higher or Lower",
              "text": "Two real stat lines or records. Which one is bigger?"},
             {"key": "playerdle", "ready": False, "kicker": "Daily puzzle", "title": "Playerdle",
              "text": "Guess the mystery player in a few tries using clues about program, position, class and more."},
@@ -829,6 +833,9 @@ class Site:
         self.render("play_trivia.html", "play/trivia/", active_nav="play", page_title="Archive Trivia · The Valhalla Archive",
                     description=f"Trivia from the dynasty's records: {len(qs)} questions on Cleveland State, Ohio, Miami (OH) and the league.",
                     eras=eras, total=f"{len(qs):,}")
+        self.render("play_higherlower.html", "play/higher-lower/", active_nav="play", page_title="Higher or Lower · The Valhalla Archive",
+                    description="Guess whether the next real stat line from the dynasty is higher or lower. Keep the streak alive.",
+                    total=f"{len(hl['cards']):,}")
 
     # ---------------------------------------------------------------- run
     def build(self):

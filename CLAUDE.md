@@ -36,7 +36,8 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 - [x] M7 Split Decision: approved 2026-10-27. All 209 columns (2024-2037) written, fact-checked and approved season by season; continuity log complete through 2037. Data fixes F24-F26 were approved during the backfill.
 - [~] M8 Games (started 2026-10-27): spec section 11 (Trivia, Playerdle, Word search, Higher/Lower, Grid puzzle, Games hub; all in-browser, personal stats in localStorage with fallback).
   - Built one game at a time with a checkpoint each (owner's choice). URLs: play/ (hub) and play/<game>/ (games/ is taken by game-result pages). Shared JS: assets/js/games-core.js (VAGames: stats, daily streak, seen-list, storage fallback). CSS: assets/css/games.css.
-  - Trivia: scripts/trivia.py generates the bank from data/tables at every build (`py -P scripts/trivia.py stats|sample N seed`); written to _site/assets/data/trivia.json. Sample for review: docs/review/trivia-sample.md. Next: Higher/Lower, Playerdle, Grid, Word search.
+  - Trivia: scripts/trivia.py generates the bank from data/tables at every build (`py -P scripts/trivia.py stats|sample N seed`); written to _site/assets/data/trivia.json. Sample for review: docs/review/trivia-sample.md. Trivia approved 2026-10-27.
+  - Higher/Lower: scripts/higher_lower.py builds 7 like-for-like decks (541 stat lines; OHIO/M-OH via season leaders) into assets/data/higherlower.json; page play/higher-lower/. Next: Playerdle, Grid, Word search.
   - Ohio and Miami (OH) players have few attributes in the tracker (no position/home state/rating for most); player-attribute games will need a pool decision.
 - [ ] M9 Road to 2038, Record Watch, phase tracker
 - [ ] M10 Clips pipeline, print mode, accessibility, QA
