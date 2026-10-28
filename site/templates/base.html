@@ -14,9 +14,8 @@
 <meta name="twitter:card" content="summary">
 <meta name="theme-color" content="{{ theme_color or '#15171b' }}">
 <link rel="icon" href="{{ base }}assets/img/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400..800&family=Zilla+Slab:wght@500;600;700&display=swap" rel="stylesheet">
+{% for f in font_preloads %}<link rel="preload" href="{{ base }}assets/fonts/{{ f }}" as="font" type="font/woff2" crossorigin>
+{% endfor %}<link rel="stylesheet" href="{{ base }}assets/css/fonts.css?v={{ build_id }}">
 <link rel="stylesheet" href="{{ base }}assets/css/tokens.css?v={{ build_id }}">
 <link rel="stylesheet" href="{{ base }}assets/css/base.css?v={{ build_id }}">
 <link rel="stylesheet" href="{{ base }}assets/css/components.css?v={{ build_id }}">
@@ -35,18 +34,18 @@
     <button type="button" class="pb-exit" data-print-toggle>Exit print view</button>
   </div>
 </div>
-<div class="print-masthead">
+<div class="print-masthead" aria-hidden="true">
   <p class="pm-brand">The Valhalla Archive</p>
   {% if print_edition %}<p class="pm-edition">{{ print_edition }} · Print Edition</p>{% endif %}
   <p class="pm-meta">{{ site_url_display }}{{ page_path }} · Data through the {{ site.latest_season_in_tracker }} season · Updated {{ site.last_updated_display }}</p>
 </div>{% endif %}
 {% if banner %}
-<div class="banner" role="note">
+<aside class="banner" aria-label="Current national champion">
   <div class="wrap">
     {% if banner.logo %}<img src="{{ base }}{{ banner.logo }}" alt="">{% endif %}
     {% if banner.href %}<a href="{{ base }}{{ banner.href }}">{{ banner.text }}</a>{% else %}<span>{{ banner.text }}</span>{% endif %}
   </div>
-</div>
+</aside>
 {% endif %}
 <header class="site-header">
   <div class="wrap">
@@ -68,9 +67,8 @@
   </div>
 </header>
 
-{% block band %}{% endblock %}
-
 <main id="main" tabindex="-1">
+{% block band %}{% endblock %}
 {% block content %}{% endblock %}
 </main>
 

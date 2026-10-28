@@ -25,7 +25,7 @@
   {% if playoffs %}
   <h2 class="section">College Football Playoff</h2>
   <div class="table-wrap"><table class="data"><thead><tr><th scope="col">Season</th><th scope="col">Round</th><th scope="col">Opponent</th><th scope="col">Result</th></tr></thead><tbody>
-  {% for yr, games in playoffs %}{% for g in games %}<tr><th scope="row">{% if loop.first %}{{ yr }}{% endif %}</th><td>{{ g.round_name }}</td><td>{{ team(g.opp) }}</td><td class="{{ 'res-w' if g.won else 'res-l' }}">{{ 'W' if g.won else 'L' }} {{ g.us }}-{{ g.them }}</td></tr>{% endfor %}{% endfor %}
+  {% for yr, games in playoffs %}{% for g in games %}<tr>{% if loop.first %}<th scope="rowgroup" rowspan="{{ games|length }}">{{ yr }}</th>{% endif %}<td>{{ g.round_name }}</td><td>{{ team(g.opp) }}</td><td class="{{ 'res-w' if g.won else 'res-l' }}">{{ 'W' if g.won else 'L' }} {{ g.us }}-{{ g.them }}</td></tr>{% endfor %}{% endfor %}
   </tbody></table></div>
   {% endif %}
 

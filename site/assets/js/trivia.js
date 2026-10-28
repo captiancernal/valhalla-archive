@@ -23,7 +23,8 @@
 
   function show(view) {
     ['setup', 'play', 'done'].forEach(function (v) { els[v].hidden = v !== view; });
-    window.scrollTo({ top: root.offsetTop - 80, behavior: 'smooth' });
+    var still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: root.offsetTop - 80, behavior: still ? 'auto' : 'smooth' });
   }
 
   function matches() {

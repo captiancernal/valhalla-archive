@@ -27,7 +27,7 @@
 .rw-card { background: var(--paper); border: 1px solid var(--rule); border-top: 4px solid #024731; border-radius: 8px; padding: 16px; }
 .rw-levels { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 13px; }
 .rw-level { font: 700 11px var(--font-ui); letter-spacing: .06em; text-transform: uppercase; padding: 3px 7px; border-radius: 4px; background: #024731; color: #fff; }
-.rw-level[data-level="Big 12"] { background: #b8862b; }
+.rw-level[data-level="Big 12"] { background: #8f6a1f; }
 .rw-level[data-level="NCAA"] { background: var(--ink); }
 .rw-card h4 { font: 800 22px/1.15 var(--font-display); margin: 8px 0 2px; }
 .rw-type { margin: 0 0 10px; color: var(--ink-2); font-weight: 600; }
@@ -39,7 +39,7 @@
 .rw-gap b { color: var(--loss); }
 .rw-table td, .rw-table th { white-space: nowrap; }
 
-.depth .dp.departing { opacity: .6; }
+.depth .dp.departing { color: var(--muted); font-style: italic; }
 .rd-tag { display: inline-block; margin-left: 6px; font: 700 10px var(--font-ui); letter-spacing: .06em; text-transform: uppercase; padding: 2px 6px; border-radius: 4px; vertical-align: middle; }
 .rd-tag.ret { background: #e3f1e7; color: var(--win); }
 .rd-tag.dep { background: #f8e3e5; color: var(--loss); }

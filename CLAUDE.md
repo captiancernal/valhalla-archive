@@ -84,7 +84,7 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 - Link check: `py -P scripts/check_links.py` (must report 0 broken).
 - Hall of Fame: eligibility computed in build_data.py (table hall_of_fame); votes in data/hof-decisions.json via `py -P scripts/hof_review.py [decide "<name>" yes|no]`.
 - Coaches' Cup (my format, owner may change): 8 categories, 3/2/1 points, ties share the higher score.
-- Fonts load from Google Fonts for now; self-host before launch (M10).
+- Fonts are self-hosted (M10): site/assets/fonts/*.woff2 (Latin + Latin Extended) with OFL licenses in fonts/licenses/, @font-face rules in assets/css/fonts.css. Regenerate with `py -P scripts/fetch_fonts.py`. Inter and Source Serif 4 are preloaded.
 
 ## Print view (M10)
 - Footer "Print view" toggle (remembered per browser tab in sessionStorage `va-print`); the browser's own Print gets the same layout automatically (beforeprint/afterprint in site.js). Save as PDF button appears only in print view.
@@ -98,6 +98,10 @@ A static GitHub Pages fan site for the owner's College Football 25 dynasty: the 
 - Originals move to content/clips/originals/ (git-ignored); the owner archives them in Drive "02 Clips Source".
 - Site: highlights/ page + "Highlights" menu link (only when clips exist), front-page reel (3 newest), clips on their game page and on tagged players' cards. A clip for a game not yet in the tracker links up automatically once the game is logged. validate.py checks clips. CLIPS_DIR env var points scripts at a test folder.
 - Menu: full horizontal menu only from 1640px wide (it needs ~1,520px); below that the Menu button opens a multi-column list.
+
+## Accessibility (M10)
+- axe-core scan (WCAG 2.2 AA + best practice) is clean on 34 page types at 1280px and 375px, plus mid-game states, the open menu and print view. Re-run it after big template changes (temporary install outside the repo; inject into _site pages).
+- Rules kept: every page has landmarks (champion banner is an <aside>; the page band sits inside <main>); tables wider than the screen become focusable named regions (site.js); progress bars use role="img" + aria-label; focus ring is gold with an ink inner ring; smooth scrolling respects reduced motion; all images have alt (decorative logos use alt="").
 
 ## Split Decision (M7)
 - Bible: content/split-decision/character-bible.md (approved). Continuity log: content/split-decision/continuity.md (update every season).

@@ -116,6 +116,9 @@ class Site:
             self.programs.append(p)
         self.prog = {p["id"]: p for p in self.programs}
         self.clips = self.load_clips()
+        # Preload the two fonts every page uses (Latin set), so text doesn't swap visibly
+        fdir = os.path.join(SRC, "assets", "fonts")
+        self.font_preloads = sorted(f for f in os.listdir(fdir) if re.match(r"(inter|source-serif-4)-normal-latin-[0-9a-f]{6}\.woff2$", f)) if os.path.isdir(fdir) else []
 
         self.nav = [{"key": "home", "label": "Home", "href": "", "footer": True}, {"sep": True}]
         for p in self.programs:
@@ -242,7 +245,7 @@ class Site:
     def render(self, template, path, **ctx):
         base_ctx = {"base": BASE, "site": self.site, "programs": self.programs, "nav": self.nav, "banner": self.banner,
                     "build_id": self.build_id, "program": None, "description": "", "theme_color": None,
-                    "page_path": path, "site_url_display": SITE_URL_DISPLAY, "print_edition": None,
+                    "page_path": path, "site_url_display": SITE_URL_DISPLAY, "font_preloads": self.font_preloads, "print_edition": None,
                     "no_print": template.startswith("play_")}  # games have their own print (word search)
         base_ctx.update(ctx)
         html = self.env.get_template(template).render(**base_ctx)

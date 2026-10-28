@@ -56,7 +56,7 @@
         {% if c.pct >= 10 %}
         <td>{{ plink(c.player) }}</td>
         <td class="num">{{ fmt(c.current) }}</td>
-        <td><span class="rw-mini" aria-label="{{ c.pct }} percent"><span style="width: {{ c.pct }}%"></span></span> {{ c.pct|round|int }}%</td>
+        <td><span class="rw-mini" role="img" aria-label="{{ c.pct }} percent"><span style="width: {{ c.pct }}%"></span></span> {{ c.pct|round|int }}%</td>
         {% else %}
         <td colspan="3" class="muted">No returning chaser yet</td>
         {% endif %}

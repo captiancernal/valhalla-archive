@@ -69,3 +69,33 @@
   if (on()) { openDetails(); window.addEventListener('load', function () { fitTables(); }); }
   sync();
 })();
+
+// Tables wider than the screen scroll sideways. Make those boxes keyboard-focusable and named,
+// so keyboard users can scroll them with the arrow keys (re-checked when the window resizes).
+(function () {
+  function label(box) {
+    var t = box.querySelector('caption');
+    if (t) return t.textContent.trim();
+    var el = box.previousElementSibling;
+    while (el && !/^H[1-6]$/.test(el.tagName)) el = el.previousElementSibling;
+    if (!el) { var sec = box.closest('section, article'); el = sec && sec.querySelector('h1, h2, h3, .series-head'); }
+    return el ? el.textContent.replace(/\s+/g, ' ').trim() : 'Table';
+  }
+  function mark() {
+    document.querySelectorAll('.table-wrap, .bracket').forEach(function (box) {
+      var scrolls = box.scrollWidth > box.clientWidth + 1;
+      if (scrolls && !box.hasAttribute('tabindex')) {
+        box.setAttribute('tabindex', '0');
+        box.setAttribute('role', 'region');
+        box.setAttribute('aria-label', label(box) + ' (scrolls sideways)');
+        box.dataset.scrollMarked = '1';
+      } else if (!scrolls && box.dataset.scrollMarked) {
+        box.removeAttribute('tabindex'); box.removeAttribute('role'); box.removeAttribute('aria-label');
+        delete box.dataset.scrollMarked;
+      }
+    });
+  }
+  var timer;
+  window.addEventListener('resize', function () { clearTimeout(timer); timer = setTimeout(mark, 200); });
+  if (document.readyState === 'complete') mark(); else window.addEventListener('load', mark);
+})();
