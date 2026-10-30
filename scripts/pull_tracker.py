@@ -130,9 +130,10 @@ def target_name():
 
 def check_workbook(path):
     import openpyxl
-    wb = openpyxl.load_workbook(path, read_only=True)
-    names = wb.sheetnames
-    wb.close()
+    with open(path, "rb") as f:  # a file object, because openpyxl rejects the .part extension
+        wb = openpyxl.load_workbook(f, read_only=True)
+        names = wb.sheetnames
+        wb.close()
     missing = [n for n in REQUIRED_SHEETS if n not in names]
     if missing:
         raise ValueError(f"the download is missing expected tabs: {', '.join(missing)}")
@@ -186,7 +187,7 @@ def status():
     last = load(LAST)
     if last:
         print(f"  Last download: {last['file']} (sheet changed {local_time(last['modifiedTime'])})")
-    if os.path.exists(CLIENT) and sheet_id():
+    if os.path.exists(CLIENT) and os.path.exists(TOKEN) and sheet_id():  # never opens a sign-in by itself
         info = file_info(session(), sheet_id())
         changed = not last or last.get("modifiedTime") != info["modifiedTime"]
         print(f"Live sheet: {info['name'].strip()}, last changed {local_time(info['modifiedTime'])}"

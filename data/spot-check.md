@@ -1,5 +1,5 @@
 # Spot check: tracker vs built site
-Tracker: `2026-10-26 CSU Vikings Tracker.xlsx`
+Tracker: `2026-10-29-2208 CSU Vikings Tracker.xlsx`
 352 matched, 2 explained by approved fixes, 0 unexplained.
 
 ## Explained by approved fixes

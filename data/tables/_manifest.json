@@ -1,7 +1,7 @@
 {
- "built": "2026-10-28T11:40:29",
- "source_file": "2026-10-26 CSU Vikings Tracker.xlsx",
- "source_sha256": "d1ecf275043cf4ddc57830e1ca329f262a715d697dc00c1e34ead8d6ff30bf8f",
+ "built": "2026-10-29T22:08:58",
+ "source_file": "2026-10-29-2208 CSU Vikings Tracker.xlsx",
+ "source_sha256": "23239ec6569b2c8fd112e47c994654f5e5cba9488dc3843a4463fa5922379546",
  "fixes_applied": [
   "F01-career-record-computed",
   "F02-2034-big12-title-game",
