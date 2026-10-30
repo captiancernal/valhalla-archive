@@ -1,0 +1,26 @@
+{
+  "about": "Highlight clips shown on the site. Captions are written by the owner. Managed by scripts/clips.py.",
+  "clips": [
+    {
+      "id": "2037-clev-11-1",
+      "season": 2037,
+      "opponent": "OKST",
+      "game": "2037-CLEV-11",
+      "what": "Elijah Pashos drops back on a fourth and inches, throws to Paul Flannigan but contact sends the ball sailing and into the waiting arms of Lyle Sawyer for the first down.",
+      "players": [
+        "elijah-pashos",
+        "paul-flannigan",
+        "lyle-sawyer"
+      ],
+      "file": "2037-clev-11-1.mp4",
+      "poster": "2037-clev-11-1.jpg",
+      "duration": 18.8,
+      "width": 1920,
+      "height": 1080,
+      "bytes": 9732497,
+      "added": "2026-10-29",
+      "source_name": "2037-wk11-okst-highlight.mp4",
+      "source_bytes": 41479705
+    }
+  ]
+}
