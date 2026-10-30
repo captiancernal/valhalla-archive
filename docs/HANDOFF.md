@@ -32,8 +32,9 @@ If you have no new clips or nothing changed in some area, Claude just skips that
 
 1. Record or export the clip from the game.
 2. Drop the video file into `Documents\valhalla-archive\content\clips\incoming\`.
-3. Run `/update-archive` (or just tell Claude "I added a clip"). Claude asks you for the season, the opponent and what happened, compresses the video and adds it to the Highlights page, the game page and the player cards you name.
-4. Afterwards, move your original from `content\clips\originals\` to Drive > 02 Clips Source.
+3. Run `/update-archive` (or just tell Claude "I added a clip"). Claude watches it, asks which game it is and what happened in your words, and cuts a highlight edit: a title card, the play, a slow-motion replay with the players' names, and the final score. You see a preview before it goes on the site, and you can ask for a plain clip instead.
+4. Once you approve, it goes on the Highlights page, the game page and the player cards you name.
+5. Afterwards, move your originals from `content\clips\originals\` to Drive > 02 Clips Source.
 
 Clips share a 500 MB budget (about 13 minutes of 1080p highlights). Claude warns you at 75%. Short clips of big plays work best.
 

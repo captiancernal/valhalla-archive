@@ -4,3 +4,6 @@
 google-auth==2.62.0
 google-auth-oauthlib==1.5.0
 requests==2.34.2
+# scripts/highlight_edit.py: reads the site's own .woff2 fonts for the video graphics.
+fonttools==4.68.0
+brotli==1.2.1

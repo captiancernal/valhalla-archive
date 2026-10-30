@@ -47,9 +47,14 @@ A short list the owner can scan, for example: "4 new Vikings games (3-1), Pashos
 ## 5. Process new highlight clips
 
 1. Run `py -P scripts/clips.py status`. If nothing is waiting in `content/clips/incoming/`, say so and move on.
-2. For each new video, ask the owner (one clip at a time): season, opponent and what happened (in their words), and optionally which players are in it. Never write the caption yourself.
-3. Run `py -P scripts/clips.py add "<file>" --season N --opponent ABBR --what "..." [--player "Name"]...`. Report the size and the budget line. If the budget warning appears, tell the owner before adding more.
-4. Remind them to move the originals from `content/clips/originals/` to Drive > 02 Clips Source.
+2. For each new video (one clip at a time):
+   1. Look at it: `py -P scripts/highlight_edit.py sheet "<file>"` (then `--from S --to E --fps 4` around the play) and read the contact sheet. Note what the in-game scoreboard shows.
+   2. Ask which game it is, recommending the game the footage points to (opponent, home/away, score, quarter, players' seasons). Never guess silently.
+   3. Ask what happened, in the owner's words, and which players are in it (check each name against data/tables/players.json; ask about any mismatch).
+   4. Cut the edit (the owner approved this style on 2026-10-29): `py -P scripts/highlight_edit.py make "<file>" --game <ID> --live S E --replay S E [--title ...] [--tag ...] [--names ...] [--line ...]`. Live = just before the snap to just after the result, avoiding game menus. Replay = the key moment (it plays at half speed). Title, tag, names and line must come from the owner's words; show any shortened wording to the owner.
+   5. Grab stills from the edit (title card, replay with the name strip, final card) and check them yourself, then send the owner a web-quality preview (CRF 24) and ask for approval. If they want a plain clip, skip the edit and add the raw file.
+3. Run the `clips.py add` command the tool prints, with the owner's caption verbatim and `--player` for each player. Report the size and the budget line. If the budget warning appears, tell the owner before adding more.
+4. Remind them to move the originals (raw capture and full-quality edit) from `content/clips/originals/` to Drive > 02 Clips Source.
 
 ## 6. Draft Split Decision columns for new Vikings games
 
