@@ -2,6 +2,26 @@
   "about": "Highlight clips shown on the site. Captions are written by the owner. Managed by scripts/clips.py.",
   "clips": [
     {
+      "id": "2037-clev-08-1",
+      "season": 2037,
+      "opponent": "BYU",
+      "game": "2037-CLEV-08",
+      "what": "FUMBLEROOSKI! FUMBLEROOSKI! Josh Leeuwenburg fumbles but is redeemed by Dom Iverson who rumbled for a Viking First Down.",
+      "players": [
+        "josh-leeuwenburg",
+        "dom-iverson"
+      ],
+      "file": "2037-clev-08-1.mp4",
+      "poster": "2037-clev-08-1.jpg",
+      "duration": 20.5,
+      "width": 1920,
+      "height": 1080,
+      "bytes": 10702697,
+      "added": "2026-10-29",
+      "source_name": "2037-clev-08-highlight.mp4",
+      "source_bytes": 39597978
+    },
+    {
       "id": "2037-clev-11-1",
       "season": 2037,
       "opponent": "OKST",
